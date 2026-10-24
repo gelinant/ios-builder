@@ -1,0 +1,3 @@
+src=src/f3b-ios-shared
+script=scripts/ios/ci-ipa.sh
+args=
