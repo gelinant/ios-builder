@@ -1,51 +1,51 @@
 === identity chrome-win ===
-  warm-up     HTTP 200  204931  B  133   ms  OK
+  warm-up     HTTP 200  204434  B  154   ms  OK
               <!DOCTYPE html><html itemscope="" itemtype="http://schema.org/Place" lang="en"> <head>   <link href=
-  search      HTTP 200  259096  B  471   ms  OK
-              )]}' [["coffee",[[null,null,null,null,null,null,null,null,"jxbdaparIYKu5NoP0KOOgAQ","2ahUKEwjWrv_LwN
+  search      HTTP 200  268659  B  517   ms  OK
+              )]}' [["coffee",[[null,null,null,null,null,null,null,null,"4xbdavSaJOSu5NoPhozh8Qo","2ahUKEwi0mIn0wN
               feature id found in search: yes
-  reviews-old HTTP 404  1738    B  39    ms  HTTP-404
+  reviews-old HTTP 404  1738    B  50    ms  HTTP-404
               <!DOCTYPE html> <html lang=en>   <meta charset=utf-8>   <meta name=viewport content="initial-scale=1
-  review-feed HTTP 200  48737   B  140   ms  OK
+  review-feed HTTP 200  48738   B  139   ms  OK
               )]}'  48624 [["wrb.fr","qv9Egd","[null,null,[[[\"ChdDSUhNMG9nS0VJQ0FnTUN3ajhyd2pnRRAB\",[\"0x0:0x10d
-  photos      HTTP 200  138     B  45    ms  THIN(<5000B)
-              )]}'  102 [["wrb.fr","hspqX",null,null,null,[3],"generic"],["di",29],["af.httprm",28,"32388250560955
-              photo URLs in reply: 0
-  directions  HTTP 200  109354  B  246   ms  OK
+  photos      HTTP 200  11071   B  119   ms  OK
+              )]}'  10972 [["wrb.fr","hspqX","[[[\"CIABIhAfpdFpSnoPLh7SAM2oOSaQ\",10,12,null,null,null,[\"https://
+              photo URLs in reply: 15
+  directions  HTTP 200  109769  B  228   ms  OK
               )]}' [[[[[[null,null,[null,null,38.55,-121.74],"630 G St, Davis, CA 95616",null,2,null,null,null,nul
   cookies after session: CONSENT SEARCH_SAMESITE SOCS __Secure-ENID
 
 === identity safari-mac ===
-  warm-up     HTTP 200  204923  B  88    ms  OK
+  warm-up     HTTP 200  204485  B  124   ms  OK
               <!DOCTYPE html><html itemscope="" itemtype="http://schema.org/Place" lang="en"> <head>   <link href=
-  search      HTTP 200  231825  B  515   ms  OK
-              )]}' [["coffee",[[null,null,null,null,null,null,null,null,"mhbdapetJ7Of5NoPi9fsiQ4","2ahUKEwiX4qTRwN
+  search      HTTP 200  266416  B  523   ms  OK
+              )]}' [["coffee",[[null,null,null,null,null,null,null,null,"7xbdapr7IOGh5NoP_97W-Qc","2ahUKEwjaruL5wN
               feature id found in search: yes
-  reviews-old HTTP 404  1738    B  46    ms  HTTP-404
+  reviews-old HTTP 404  1738    B  57    ms  HTTP-404
               <!DOCTYPE html> <html lang=en>   <meta charset=utf-8>   <meta name=viewport content="initial-scale=1
-  review-feed HTTP 200  48735   B  106   ms  OK
+  review-feed HTTP 200  48735   B  91    ms  OK
               )]}'  48624 [["wrb.fr","qv9Egd","[null,null,[[[\"ChdDSUhNMG9nS0VJQ0FnTUN3ajhyd2pnRRAB\",[\"0x0:0x10d
-  photos      HTTP 200  139     B  43    ms  THIN(<5000B)
-              )]}'  103 [["wrb.fr","hspqX",null,null,null,[3],"generic"],["di",25],["af.httprm",25,"-7469352376361
-              photo URLs in reply: 0
-  directions  HTTP 200  109354  B  178   ms  OK
+  photos      HTTP 200  11071   B  132   ms  OK
+              )]}'  10972 [["wrb.fr","hspqX","[[[\"CIABIhAfpdFpSnoPLh7SAM2oOSaQ\",10,12,null,null,null,[\"https://
+              photo URLs in reply: 15
+  directions  HTTP 200  112031  B  230   ms  OK
               )]}' [[[[[[null,null,[null,null,38.55,-121.74],"630 G St, Davis, CA 95616",null,2,null,null,null,nul
   cookies after session: CONSENT SEARCH_SAMESITE SOCS __Secure-ENID
 
 === identity safari-ios ===
-  warm-up     HTTP 200  812393  B  205   ms  OK
-              <!DOCTYPE html><html lang="en"> <head> <script type="text/javascript" nonce="81h1w3j4DXwIHdpwHh3wPQ"
-  search      HTTP 200  215083  B  495   ms  OK
-              )]}' [["coffee",[[null,null,null,null,null,null,null,null,"phbdarSIMv7s5NoPuLipqQQ","2ahUKEwi084vXwN
+  warm-up     HTTP 200  812898  B  158   ms  OK
+              <!DOCTYPE html><html lang="en"> <head> <script type="text/javascript" nonce="TCcWbAzdsFWT7jQw03bB_Q"
+  search      HTTP 200  215049  B  469   ms  OK
+              )]}' [["coffee",[[null,null,null,null,null,null,null,null,"-xbdaomOIfjS5NoP9JKywQc","2ahUKEwjJ977_wN
               feature id found in search: yes
-  reviews-old HTTP 404  1738    B  39    ms  HTTP-404
+  reviews-old HTTP 404  1738    B  54    ms  HTTP-404
               <!DOCTYPE html> <html lang=en>   <meta charset=utf-8>   <meta name=viewport content="initial-scale=1
-  review-feed HTTP 200  48736   B  136   ms  OK
+  review-feed HTTP 200  48736   B  99    ms  OK
               )]}'  48624 [["wrb.fr","qv9Egd","[null,null,[[[\"ChdDSUhNMG9nS0VJQ0FnTUN3ajhyd2pnRRAB\",[\"0x0:0x10d
-  photos      HTTP 200  139     B  51    ms  THIN(<5000B)
-              )]}'  103 [["wrb.fr","hspqX",null,null,null,[3],"generic"],["di",33],["af.httprm",32,"-3161849363024
-              photo URLs in reply: 0
-  directions  HTTP 200  109421  B  221   ms  OK
+  photos      HTTP 200  11070   B  120   ms  OK
+              )]}'  10972 [["wrb.fr","hspqX","[[[\"CIABIhAfpdFpSnoPLh7SAM2oOSaQ\",10,12,null,null,null,[\"https://
+              photo URLs in reply: 15
+  directions  HTTP 200  109457  B  142   ms  OK
               )]}' [[[[[[null,null,[null,null,38.55,-121.74],"630 G St, Davis, CA 95616",null,2,null,null,null,nul
   cookies after session: CONSENT SEARCH_SAMESITE SOCS __Secure-ENID
 
