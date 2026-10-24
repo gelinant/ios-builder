@@ -1,0 +1,110 @@
+SPIKE|start|ios 26.5|cid 75778018372833520|scripts ["popular": ["matchesGenerator": true, "sha256": "8a64bcc0a8b8146002e70223394f2ad5ed3986627dc5d7802a8caabb474c5713"], "reviews": ["sha256": "08a993d4473402eac65a7965dee34eebcf0ccb496da8e7cfc58ac7c2ab59bf2f", "matchesGenerator": true], "photos": ["sha256": "149a77624a3c27902afa3d25e42f38ef7211ac62d8de973601652352a3f20e98", "matchesGenerator": true]]
+SPIKE|rules|compiled 12 rules|true
+SPIKE|status|A-desktop-ephemeral-visible: reviews
+SPIKE|A/reviews|360ms load https://www.google.com/maps?cid=75778018372833520&hl=en&gl=us
+SPIKE|A/reviews|6816ms finish #1 https://www.google.com/maps?cid=75778018372833520&hl=en&gl=us
+SPIKE|A/reviews|6832ms page loaded: www.google.com/maps lang=en nav=en-US
+SPIKE|A/reviews|6834ms env: {"ua":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Safari/605.1.15","pf":"MacIntel","mtp":5,"w":1200,"h":1000,"dpr":3,"vis":"visible","focus":false,"lang":"en-US","wd":false}
+SPIKE|A/reviews|6970ms inject
+SPIKE|A/reviews|7582ms onInfo {"start":1,"title":"Google Maps","url":"/maps","ready":"complete","w":1200,"h":1000}
+SPIKE|A/reviews|7592ms onProgress 0
+SPIKE|A/reviews|8563ms onHistogram [783,215,58,17,21]
+SPIKE|A/reviews|8630ms onProgress 3
+SPIKE|A/reviews|8633ms onInfo {"tries":2,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":false,"by":"","cardsNow":3,"acc":3,"w":1200,"h":1000,"main":true,"title":"Google Maps","body":3053,"url":"/maps"}
+SPIKE|A/reviews|12575ms onProgress 5
+SPIKE|A/reviews|13062ms onInfo {"tries":16,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":1000,"main":true,"title":"Davis Food Co-op - Google Maps","body":3689,"url":"/maps/place/Davis+Food+Co-op"}
+SPIKE|A/reviews|17364ms onInfo {"tries":32,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":1000,"main":true,"title":"Davis Food Co-op - Google Maps","body":3669,"url":"/maps/place/Davis+Food+Co-op"}
+SPIKE|A/reviews|22845ms onInfo {"tries":48,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":1000,"main":true,"title":"Davis Food Co-op - Google Maps","body":3669,"url":"/maps/place/Davis+Food+Co-op"}
+SPIKE|A/reviews|27938ms onInfo {"tries":64,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":1000,"main":true,"title":"Davis Food Co-op - Google Maps","body":3669,"url":"/maps/place/Davis+Food+Co-op"}
+SPIKE|A/reviews|31012ms onInfo jserror Error: ~#!#~0~#!#~qf`for 10s`268`1~#!#~ @1545
+SPIKE|A/reviews|32048ms onInfo {"tries":80,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":1000,"main":true,"title":"Davis Food Co-op - Google Maps","body":3669,"url":"/maps/place/Davis+Food+Co-op"}
+SPIKE|A/reviews|36189ms onInfo {"tries":96,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":1000,"main":true,"title":"Davis Food Co-op - Google Maps","body":3669,"url":"/maps/place/Davis+Food+Co-op"}
+SPIKE|A/reviews|40361ms onInfo {"tries":112,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":1000,"main":true,"title":"Davis Food Co-op - Google Maps","body":3669,"url":"/maps/place/Davis+Food+Co-op"}
+SPIKE|A/reviews|43638ms web content process terminated
+SPIKE|snapshot|A-reviews|error An unknown error occurred
+SPIKE|snapshot|A-reviews|none
+SPIKE|result|A/reviews|count 0|ms -1
+SPIKE|status|A-desktop-ephemeral-visible: popular
+SPIKE|A/popular|135ms load https://www.google.com/?hl=en&gl=us
+SPIKE|A/popular|10319ms env: {"ua":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Safari/605.1.15","pf":"iPhone","mtp":5,"w":1200,"h":1000,"dpr":3,"vis":"visible","focus":false,"lang":"en-US","wd":false}
+SPIKE|A/popular|10326ms fetch details
+SPIKE|A/popular|33535ms finish #1 https://www.google.com/?hl=en&gl=us
+SPIKE|snapshot|A-popular|280426 bytes
+SPIKE|result|A/popular|days 0|bytes -1|ms -1
+SPIKE|status|A-desktop-ephemeral-visible: photos
+SPIKE|A/photos|18ms load https://www.google.com/maps?cid=75778018372833520&hl=en&gl=us
+SPIKE|A/photos|7368ms inject
+SPIKE|A/photos|40500ms finish #1 https://www.google.com/maps?cid=75778018372833520&hl=en&gl=us
+SPIKE|snapshot|A-photos|546243 bytes
+SPIKE|result|A/photos|count 0|ms -1
+SPIKE|status|B-desktop-default-offscreen: reviews
+SPIKE|B/reviews|102ms load https://www.google.com/maps?cid=75778018372833520&hl=en&gl=us
+SPIKE|B/reviews|2730ms finish #1 https://www.google.com/maps?cid=75778018372833520&hl=en&gl=us
+SPIKE|B/reviews|2743ms page loaded: www.google.com/maps lang=en nav=en-US
+SPIKE|B/reviews|2745ms env: {"ua":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Safari/605.1.15","pf":"MacIntel","mtp":5,"w":1200,"h":904,"dpr":3,"vis":"visible","focus":false,"lang":"en-US","wd":false}
+SPIKE|B/reviews|2891ms inject
+SPIKE|B/reviews|2910ms onInfo {"start":1,"title":"Google Maps","url":"/maps","ready":"complete","w":1200,"h":904}
+SPIKE|B/reviews|2912ms onProgress 0
+SPIKE|B/reviews|3445ms onHistogram [783,215,58,17,21]
+SPIKE|B/reviews|3448ms onProgress 3
+SPIKE|B/reviews|3449ms onInfo {"tries":2,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":false,"by":"","cardsNow":3,"acc":3,"w":1200,"h":904,"main":true,"title":"Google Maps","body":3032,"url":"/maps"}
+SPIKE|B/reviews|6344ms onProgress 5
+SPIKE|B/reviews|7619ms onInfo {"tries":16,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":904,"main":true,"title":"Davis Food Co-op - Google Maps","body":3689,"url":"/maps/place/Davis+Food+Co-op"}
+SPIKE|B/reviews|12248ms onInfo {"tries":32,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":904,"main":true,"title":"Davis Food Co-op - Google Maps","body":3669,"url":"/maps/place/Davis+Food+Co-op"}
+SPIKE|B/reviews|20366ms onInfo {"tries":48,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":904,"main":true,"title":"Davis Food Co-op - Google Maps","body":3669,"url":"/maps/place/Davis+Food+Co-op"}
+SPIKE|B/reviews|22972ms web content process terminated
+SPIKE|snapshot|B-reviews|error An unknown error occurred
+SPIKE|snapshot|B-reviews|none
+SPIKE|result|B/reviews|count 0|ms -1
+SPIKE|status|B-desktop-default-offscreen: popular
+SPIKE|B/popular|208ms load https://www.google.com/?hl=en&gl=us
+SPIKE|B/popular|3341ms finish #1 https://www.google.com/?hl=en&gl=us
+SPIKE|B/popular|3866ms load https://www.google.com/maps?hl=en&gl=us
+SPIKE|B/popular|15170ms env: eval timeout
+SPIKE|B/popular|15171ms fetch details
+SPIKE|B/popular|19574ms finish #2 https://www.google.com/maps?hl=en&gl=us
+SPIKE|B/popular|26846ms onResult id=5 52035 bytes
+SPIKE|snapshot|B-popular|none
+SPIKE|result|B/popular|days 0|bytes 52035|ms 26846
+SPIKE|status|C-desktop-ephemeral-detached: reviews
+SPIKE|C/reviews|12ms load https://www.google.com/maps?cid=75778018372833520&hl=en&gl=us
+SPIKE|C/reviews|1332ms finish #1 https://www.google.com/maps?cid=75778018372833520&hl=en&gl=us
+SPIKE|C/reviews|1488ms inject
+SPIKE|C/reviews|4349ms page loaded: www.google.com/maps lang=en nav=en-US
+SPIKE|C/reviews|4351ms onInfo {"start":1,"title":"Google Maps","url":"/maps","ready":"complete","w":1200,"h":1000}
+SPIKE|C/reviews|4352ms onProgress 0
+SPIKE|C/reviews|4361ms env: {"ua":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Safari/605.1.15","pf":"MacIntel","mtp":5,"w":1200,"h":1000,"dpr":3,"vis":"hidden","focus":false,"lang":"en-US","wd":false}
+SPIKE|snapshot|B-popular|error An unknown error occurred
+SPIKE|C/reviews|50103ms onInfo {"tries":2,"tabs":[],"sawEntry":false,"opened":false,"by":"","cardsNow":0,"acc":0,"w":1200,"h":1000,"main":false,"title":"Google Maps","body":4,"url":"/maps"}
+SPIKE|snapshot|C-reviews|none
+SPIKE|result|C/reviews|count 0|ms -1
+SPIKE|status|D-mobile-ephemeral-visible: reviews
+SPIKE|D/reviews|72ms load https://www.google.com/maps?cid=75778018372833520&hl=en&gl=us
+SPIKE|D/reviews|7429ms inject
+SPIKE|D/reviews|20458ms finish #1 https://www.google.com/maps?cid=75778018372833520&hl=en&gl=us
+SPIKE|D/reviews|20471ms onInfo {"start":1,"title":"","url":"/maps","ready":"complete","w":402,"h":840}
+SPIKE|D/reviews|20476ms onProgress 0
+SPIKE|D/reviews|20499ms page loaded: www.google.com/maps lang=en nav=en-US
+SPIKE|D/reviews|20581ms env: {"ua":"Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148","pf":"iPhone","mtp":5,"w":402,"h":840,"dpr":3,"vis":"visible","focus":false,"lang":"en-US","wd":false}
+SPIKE|D/reviews|20718ms onInfo {"tries":2,"tabs":[],"sawEntry":false,"opened":false,"by":"","cardsNow":0,"acc":0,"w":402,"h":840,"main":false,"title":"","body":265,"url":"/maps"}
+SPIKE|D/reviews|24270ms onInfo {"tries":16,"tabs":[],"sawEntry":false,"opened":false,"by":"","cardsNow":0,"acc":0,"w":402,"h":840,"main":true,"title":"Davis Food Co-op, Old North Davis - Expl","body":464,"url":"/maps/place/Davis+Food+Co-op,+620+G+St,+Davis,+CA+95616"}
+SPIKE|D/reviews|28343ms onInfo {"tries":32,"tabs":[],"sawEntry":false,"opened":false,"by":"","cardsNow":0,"acc":0,"w":402,"h":840,"main":true,"title":"Davis Food Co-op, Old North Davis - Expl","body":464,"url":"/maps/place/Davis+Food+Co-op,+620+G+St,+Davis,+CA+95616"}
+SPIKE|snapshot|C-reviews|error An unknown error occurred
+SPIKE|D/reviews|32926ms onInfo {"tries":48,"tabs":[],"sawEntry":false,"opened":false,"by":"","cardsNow":0,"acc":0,"w":402,"h":840,"main":true,"title":"Davis Food Co-op, Old North Davis - Expl","body":464,"url":"/maps/place/Davis+Food+Co-op,+620+G+St,+Davis,+CA+95616"}
+SPIKE|D/reviews|36995ms onInfo {"tries":64,"tabs":[],"sawEntry":false,"opened":false,"by":"","cardsNow":0,"acc":0,"w":402,"h":840,"main":true,"title":"Davis Food Co-op, Old North Davis - Expl","body":463,"url":"/maps/place/Davis+Food+Co-op,+620+G+St,+Davis,+CA+95616"}
+SPIKE|D/reviews|37248ms onResult id=7 2 bytes
+SPIKE|snapshot|D-reviews|none
+SPIKE|result|D/reviews|count 0|ms 37248
+SPIKE|status|D-mobile-ephemeral-visible: popular
+SPIKE|D/popular|60ms load https://www.google.com/?hl=en&gl=us
+SPIKE|D/popular|1432ms finish #1 https://www.google.com/?hl=en&gl=us
+SPIKE|D/popular|1963ms load https://www.google.com/maps?hl=en&gl=us
+SPIKE|D/popular|2263ms finish #2 https://www.google.com/maps?hl=en&gl=us
+SPIKE|snapshot|D-reviews|error An unknown error occurred
+SPIKE|D/popular|3540ms env: {"ua":"Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148","pf":"iPhone","mtp":5,"w":402,"h":840,"dpr":3,"vis":"visible","focus":false,"lang":"en-US","wd":false}
+SPIKE|D/popular|3540ms fetch details
+SPIKE|D/popular|3889ms onResult id=8 48436 bytes
+SPIKE|snapshot|D-popular|none
+SPIKE|result|D/popular|days 0|bytes 48436|ms 3889
+SPIKE|status|done
+app.vela.spikeweb: 13397
