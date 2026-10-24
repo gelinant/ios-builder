@@ -1,0 +1,114 @@
+tag=v2-search-ios-20261024-225803-24241 src=src/v2-search-ios 1fa9eda src: 90c3a2ba iOS: restore the SwiftUI imports of MapScreen
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 1fa9eda src: 90c3a2ba iOS: restore the SwiftUI imports of MapScreen
+xcode: Xcode 26.6 Build version 17F113 
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Kotlin: tests and the VelaCore framework (22:59:08)
+gradle: ok in 231 s
+kotlin jvmTest: 30 tests, 0 failures
+kotlin iosSimulatorArm64Test: 28 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  49M, static library 50045160 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  14M, static library 13605704 bytes, SKIE Swift module: yes
+
+== XcodeGen (23:03:00)
+xcodegen: Version: 2.46.0
+
+== Generate the project (23:03:00)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (23:03:01)
+  MapLibre Native: https://github.com/maplibre/maplibre-gl-native-distribution @ 6.31.0
+
+resolved source packages: MapLibre Native
+(resolve: 19 s)
+packages: maplibre-gl-native-distribution@6.31.0
+
+== Pick a simulator (23:03:20)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+
+== Build for the simulator (23:03:21)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 49 s)
+simulator build: ok
+
+== Unit tests (23:04:10)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 391 s)
+tests: ok, Executed 3 tests, with 0 failures
+
+== Launch and screenshot (23:10:41)
+app.vela.ios: 17393
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 5D949AF9-ECCF-46DF-9BED-E56FCDD326E3 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== Search UI test (23:13:20)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(uitest: 107 s)
+search ui test: ok
+search rows: 60
+search screenshots: search-centered.png search-list.png search-map.png 
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (23:15:31)
+242562
+search reply: 242562 bytes, 29 feature ids
+
+== Archive for iOS devices, unsigned (23:15:33)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** ARCHIVE SUCCEEDED **
+
+(archive: 47 s)
+
+== Package the IPA (23:16:21)
+ipa: Vela-unsigned.ipa 4666855 bytes (4.5M)
+app frameworks: MapLibre.framework 
+app binary: arm64, 4588496 bytes
+kotlin code in the device binary: yes
+plist CFBundleIdentifier: app.vela.ios
+plist CFBundleDisplayName: Vela
+plist CFBundleShortVersionString: 0.1.0
+plist MinimumOSVersion: 17.0
+plist UIBackgroundModes: ["location","audio"]
+
+== Summary
+commit: 1fa9eda src: 90c3a2ba iOS: restore the SwiftUI imports of MapScreen
+xcode: Xcode 26.6 Build version 17F113 
+java: openjdk version "17.0.20.1" 2026-08-18
+gradle: ok in 231 s
+kotlin jvmTest: 30 tests, 0 failures
+kotlin iosSimulatorArm64Test: 28 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  49M, static library 50045160 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  14M, static library 13605704 bytes, SKIE Swift module: yes
+xcodegen: Version: 2.46.0
+packages: maplibre-gl-native-distribution@6.31.0
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+simulator build: ok
+tests: ok, Executed 3 tests, with 0 failures
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+search ui test: ok
+search rows: 60
+search screenshots: search-centered.png search-list.png search-map.png 
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+search reply: 242562 bytes, 29 feature ids
+ipa: Vela-unsigned.ipa 4666855 bytes (4.5M)
+app frameworks: MapLibre.framework 
+app binary: arm64, 4588496 bytes
+kotlin code in the device binary: yes
+plist CFBundleIdentifier: app.vela.ios
+plist CFBundleDisplayName: Vela
+plist CFBundleShortVersionString: 0.1.0
+plist MinimumOSVersion: 17.0
+plist UIBackgroundModes: ["location","audio"]
