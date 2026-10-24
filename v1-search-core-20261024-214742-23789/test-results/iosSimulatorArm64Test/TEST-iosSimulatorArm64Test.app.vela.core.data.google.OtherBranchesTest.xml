@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="iosSimulatorArm64Test.app.vela.core.data.google.OtherBranchesTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-24T21:50:53.422Z" hostname="sjc20-bb710-479ea67b-7607-4c7f-9c19-d2fa23e49c0b-8A252CE6F928.local" time="0.001">
+  <properties/>
+  <testcase name="same-name entries in People also search for become results[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.google.OtherBranchesTest" time="0.0"/>
+  <testcase name="a short or unrelated query adds nothing[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.google.OtherBranchesTest" time="0.0"/>
+  <testcase name="a focused reply reads the branches out of its related block[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.google.OtherBranchesTest" time="0.0"/>
+  <testcase name="a focused reply says so and names its focus[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.google.OtherBranchesTest" time="0.0"/>
+  <testcase name="branch names are matched both ways and unrelated places are not[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.google.OtherBranchesTest" time="0.001"/>
+  <testcase name="the same branch from two sources is one row and keeps its address[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.google.OtherBranchesTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
