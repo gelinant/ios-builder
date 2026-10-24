@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RequestShapeTest[jvm]" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-24T23:51:15.574Z" hostname="sjc22-bt147-3cca614e-fa61-4a26-a6d7-3ce28bbcc937-76B3E1E764B2.local" time="0.008">
+  <properties/>
+  <testcase name="directions viewport sits on the trip and not on the captured Davis window[jvm]" classname="app.vela.core.data.google.RequestShapeTest" time="0.003"/>
+  <testcase name="reqid climbs by 100000 from a random start[jvm]" classname="app.vela.core.data.google.RequestShapeTest" time="0.0"/>
+  <testcase name="callback names look like the Maps JavaScript ones and differ[jvm]" classname="app.vela.core.data.google.RequestShapeTest" time="0.001"/>
+  <testcase name="spans are long decimals near the asked value and never repeat[jvm]" classname="app.vela.core.data.google.RequestShapeTest" time="0.002"/>
+  <testcase name="a recalibrated template without the viewport group is left alone[jvm]" classname="app.vela.core.data.google.RequestShapeTest" time="0.0"/>
+  <testcase name="a short trip still gets a sensible window[jvm]" classname="app.vela.core.data.google.RequestShapeTest" time="0.0"/>
+  <testcase name="ech counts up[jvm]" classname="app.vela.core.data.google.RequestShapeTest" time="0.0"/>
+  <testcase name="batch urls get a live reqid and an encoded source path and a gl[jvm]" classname="app.vela.core.data.google.RequestShapeTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

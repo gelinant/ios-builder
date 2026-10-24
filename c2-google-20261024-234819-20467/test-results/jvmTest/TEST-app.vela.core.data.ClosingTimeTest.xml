@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ClosingTimeTest[jvm]" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-24T23:51:15.272Z" hostname="sjc22-bt147-3cca614e-fa61-4a26-a6d7-3ce28bbcc937-76B3E1E764B2.local" time="0.001">
+  <properties/>
+  <testcase name="closedPlaceNeverParses[jvm]" classname="app.vela.core.data.ClosingTimeTest" time="0.0"/>
+  <testcase name="parsesEnglish12h[jvm]" classname="app.vela.core.data.ClosingTimeTest" time="0.0"/>
+  <testcase name="parses24hLocales[jvm]" classname="app.vela.core.data.ClosingTimeTest" time="0.0"/>
+  <testcase name="noonPmIsNoon[jvm]" classname="app.vela.core.data.ClosingTimeTest" time="0.0"/>
+  <testcase name="open24HoursHasNoClosing[jvm]" classname="app.vela.core.data.ClosingTimeTest" time="0.0"/>
+  <testcase name="parsesMinutes[jvm]" classname="app.vela.core.data.ClosingTimeTest" time="0.0"/>
+  <testcase name="nullAndBlankStatus[jvm]" classname="app.vela.core.data.ClosingTimeTest" time="0.0"/>
+  <testcase name="closesSoonStillFindsTheTime[jvm]" classname="app.vela.core.data.ClosingTimeTest" time="0.0"/>
+  <testcase name="midnightClosingIsTonight[jvm]" classname="app.vela.core.data.ClosingTimeTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

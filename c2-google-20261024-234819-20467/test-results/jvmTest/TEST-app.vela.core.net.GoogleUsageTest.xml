@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="GoogleUsageTest[jvm]" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-24T23:51:15.653Z" hostname="sjc22-bt147-3cca614e-fa61-4a26-a6d7-3ce28bbcc937-76B3E1E764B2.local" time="0.009">
+  <properties/>
+  <testcase name="urls classify by purpose[jvm]" classname="app.vela.core.net.GoogleUsageTest" time="0.002"/>
+  <testcase name="counts accumulate per day and restore merges and trims[jvm]" classname="app.vela.core.net.GoogleUsageTest" time="0.006"/>
+  <testcase name="google hosts are recognized others are not[jvm]" classname="app.vela.core.net.GoogleUsageTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

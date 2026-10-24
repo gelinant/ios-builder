@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="iosSimulatorArm64Test.app.vela.core.data.google.AmbientRankingTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-10-24T23:51:03.559Z" hostname="sjc22-bt147-3cca614e-fa61-4a26-a6d7-3ce28bbcc937-76B3E1E764B2.local" time="0.001">
+  <properties/>
+  <testcase name="anchor store beats the in-store tenant at the same spot[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.google.AmbientRankingTest" time="0.0"/>
+  <testcase name="a landmark leads even a nearer low-signal place[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.google.AmbientRankingTest" time="0.0"/>
+  <testcase name="rating breaks ties among equal review counts[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.google.AmbientRankingTest" time="0.0"/>
+  <testcase name="distance only breaks an exact prominence tie[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.google.AmbientRankingTest" time="0.0"/>
+  <testcase name="prominence rises with review count[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.google.AmbientRankingTest" time="0.0"/>
+  <testcase name="an anchor outranks a busier neighbor of an everyday kind[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.google.AmbientRankingTest" time="0.0"/>
+  <testcase name="a supermarket outranks the sushi counter inside it even on reviews alone[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.google.AmbientRankingTest" time="0.0"/>
+  <testcase name="an everyday business is ranked exactly as before the prior existed[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.google.AmbientRankingTest" time="0.0"/>
+  <testcase name="no category at all sinks below an everyday business[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.google.AmbientRankingTest" time="0.0"/>
+  <testcase name="a real landmark still beats an anchor kind with nothing behind it[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.google.AmbientRankingTest" time="0.0"/>
+  <testcase name="empty list is safe[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.google.AmbientRankingTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ReviewFeedParserTest[jvm]" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-24T23:51:15.594Z" hostname="sjc22-bt147-3cca614e-fa61-4a26-a6d7-3ce28bbcc937-76B3E1E764B2.local" time="0.011">
+  <properties/>
+  <testcase name="garbage is null[jvm]" classname="app.vela.core.data.google.parse.ReviewFeedParserTest" time="0.004"/>
+  <testcase name="a full page parses author and stars and time and text and photos[jvm]" classname="app.vela.core.data.google.parse.ReviewFeedParserTest" time="0.006"/>
+  <testcase name="a continuing page carries its next token[jvm]" classname="app.vela.core.data.google.parse.ReviewFeedParserTest" time="0.0"/>
+  <testcase name="the end of the list is flagged[jvm]" classname="app.vela.core.data.google.parse.ReviewFeedParserTest" time="0.001"/>
+  <testcase name="the header-less empty answer is an empty page and not a crash[jvm]" classname="app.vela.core.data.google.parse.ReviewFeedParserTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

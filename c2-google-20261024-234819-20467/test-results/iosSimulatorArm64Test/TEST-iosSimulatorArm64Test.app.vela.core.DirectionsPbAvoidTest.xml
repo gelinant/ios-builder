@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="iosSimulatorArm64Test.app.vela.core.DirectionsPbAvoidTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-24T23:51:03.538Z" hostname="sjc22-bt147-3cca614e-fa61-4a26-a6d7-3ce28bbcc937-76B3E1E764B2.local" time="0.002">
+  <properties/>
+  <testcase name="no flags leaves the template alone[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.DirectionsPbAvoidTest" time="0.0"/>
+  <testcase name="avoid highways adds 1b1 and bumps both counts[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.DirectionsPbAvoidTest" time="0.0"/>
+  <testcase name="avoid tolls adds 2b1 and both adds both[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.DirectionsPbAvoidTest" time="0.0"/>
+  <testcase name="flags only apply to driving[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.DirectionsPbAvoidTest" time="0.0"/>
+  <testcase name="a template without the block is returned untouched rather than corrupted[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.DirectionsPbAvoidTest" time="0.001"/>
+  <testcase name="avoidSupported tells a template with the block from one without[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.DirectionsPbAvoidTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
