@@ -1,0 +1,11 @@
+commit: 762b4a3 src: 71fdfeff iOS: JavaScriptCore JsEngine, SecKey SignatureVerifier, live calibration, UI test harness
+xcode: Xcode 26.6 Build version 17F113 
+java: openjdk version "17.0.20.1" 2026-08-18
+gradle: ok in 175 s
+kotlin jvmTest: 36 tests, 0 failures
+kotlin iosSimulatorArm64Test: 28 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  51M, static library 51758296 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  17M, static library 15732680 bytes, SKIE Swift module: yes
+xcodegen: Version: 2.46.0
+packages: maplibre-gl-native-distribution@6.31.0
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
