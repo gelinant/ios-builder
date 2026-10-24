@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RoadNameShortTest[jvm]" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-24T22:48:22.266Z" hostname="sat12-dp146-deabfbaf-1c79-4bf5-bf1e-585a60c04ab8-16942CD23D00.local" time="0.005">
+  <properties/>
+  <testcase name="theRoadInsideAnInstruction[jvm]" classname="app.vela.core.util.RoadNameShortTest" time="0.003"/>
+  <testcase name="aCompassWordAfterARouteNumberIsItsLetter[jvm]" classname="app.vela.core.util.RoadNameShortTest" time="0.001"/>
+  <testcase name="typesAndTrailingDirections[jvm]" classname="app.vela.core.util.RoadNameShortTest" time="0.0"/>
+  <testcase name="otherLanguagesPassThrough[jvm]" classname="app.vela.core.util.RoadNameShortTest" time="0.0"/>
+  <testcase name="theNameItselfIsKept[jvm]" classname="app.vela.core.util.RoadNameShortTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

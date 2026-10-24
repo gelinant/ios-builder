@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="OtherBranchesTest[jvm]" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-24T22:48:22.174Z" hostname="sat12-dp146-deabfbaf-1c79-4bf5-bf1e-585a60c04ab8-16942CD23D00.local" time="0.009">
+  <properties/>
+  <testcase name="the same branch from two sources is one row and keeps its address[jvm]" classname="app.vela.core.data.google.OtherBranchesTest" time="0.003"/>
+  <testcase name="a focused reply says so and names its focus[jvm]" classname="app.vela.core.data.google.OtherBranchesTest" time="0.003"/>
+  <testcase name="a short or unrelated query adds nothing[jvm]" classname="app.vela.core.data.google.OtherBranchesTest" time="0.001"/>
+  <testcase name="same-name entries in People also search for become results[jvm]" classname="app.vela.core.data.google.OtherBranchesTest" time="0.0"/>
+  <testcase name="branch names are matched both ways and unrelated places are not[jvm]" classname="app.vela.core.data.google.OtherBranchesTest" time="0.0"/>
+  <testcase name="a focused reply reads the branches out of its related block[jvm]" classname="app.vela.core.data.google.OtherBranchesTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

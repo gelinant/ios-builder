@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PlaceStatusTest[jvm]" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-10-24T22:48:22.186Z" hostname="sat12-dp146-deabfbaf-1c79-4bf5-bf1e-585a60c04ab8-16942CD23D00.local" time="0.004">
+  <properties/>
+  <testcase name="STATUS_LANGS covers exactly the shipped status-table languages[jvm]" classname="app.vela.core.data.google.PlaceStatusTest" time="0.001"/>
+  <testcase name="remoteWordTableOverrides[jvm]" classname="app.vela.core.data.google.PlaceStatusTest" time="0.0"/>
+  <testcase name="temporary closure is detected across languages and only when present[jvm]" classname="app.vela.core.data.google.PlaceStatusTest" time="0.001"/>
+  <testcase name="japanese - closed words win first[jvm]" classname="app.vela.core.data.google.PlaceStatusTest" time="0.0"/>
+  <testcase name="english - closed statuses and unknowns[jvm]" classname="app.vela.core.data.google.PlaceStatusTest" time="0.0"/>
+  <testcase name="unknown language falls back to the english table and never to open[jvm]" classname="app.vela.core.data.google.PlaceStatusTest" time="0.001"/>
+  <testcase name="english - genuinely-open statuses still read open[jvm]" classname="app.vela.core.data.google.PlaceStatusTest" time="0.0"/>
+  <testcase name="localized - closed-first ordering disarms every prefix-cousin collision[jvm]" classname="app.vela.core.data.google.PlaceStatusTest" time="0.0"/>
+  <testcase name="hebrew - the-place prefix matches - field bug - every il status began with hamakom[jvm]" classname="app.vela.core.data.google.PlaceStatusTest" time="0.0"/>
+  <testcase name="english - Opens-prefixed statuses are CLOSED and not swallowed by the Open prefix[jvm]" classname="app.vela.core.data.google.PlaceStatusTest" time="0.0"/>
+  <testcase name="romanian - the opens-later and closes-later forms land on the right side[jvm]" classname="app.vela.core.data.google.PlaceStatusTest" time="0.0"/>
+  <testcase name="chinese - both scripts parse and closed words win first[jvm]" classname="app.vela.core.data.google.PlaceStatusTest" time="0.0"/>
+  <testcase name="localized - each supported language classifies its canonical forms[jvm]" classname="app.vela.core.data.google.PlaceStatusTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

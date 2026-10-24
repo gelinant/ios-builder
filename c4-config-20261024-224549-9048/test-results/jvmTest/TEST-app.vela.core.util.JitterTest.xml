@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="JitterTest[jvm]" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-24T22:48:22.247Z" hostname="sat12-dp146-deabfbaf-1c79-4bf5-bf1e-585a60c04ab8-16942CD23D00.local" time="0.015">
+  <properties/>
+  <testcase name="staysInsideTheSpread[jvm]" classname="app.vela.core.util.JitterTest" time="0.013"/>
+  <testcase name="actuallySpreads[jvm]" classname="app.vela.core.util.JitterTest" time="0.0"/>
+  <testcase name="zeroSpreadIsExact[jvm]" classname="app.vela.core.util.JitterTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

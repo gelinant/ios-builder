@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="iosSimulatorArm64Test.app.vela.core.DirectionsPbFerryTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-24T22:48:20.861Z" hostname="sat12-dp146-deabfbaf-1c79-4bf5-bf1e-585a60c04ab8-16942CD23D00.local" time="0.003">
+  <properties/>
+  <testcase name="default template has no ferry flag and its block ends where Google's does[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.DirectionsPbFerryTest" time="0.0"/>
+  <testcase name="every combination on a template without 7b[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.DirectionsPbFerryTest" time="0.0"/>
+  <testcase name="every combination on a template that already carries 7b[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.DirectionsPbFerryTest" time="0.0"/>
+  <testcase name="a 7b nested deeper is not mistaken for the ferry flag[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.DirectionsPbFerryTest" time="0.0"/>
+  <testcase name="ferries only apply to driving[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.DirectionsPbFerryTest" time="0.0"/>
+  <testcase name="a template without the block ignores the ferry flag[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.DirectionsPbFerryTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

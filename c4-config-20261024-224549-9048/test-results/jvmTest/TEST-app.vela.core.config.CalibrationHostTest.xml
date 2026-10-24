@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CalibrationHostTest[jvm]" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-24T22:48:22.050Z" hostname="sat12-dp146-deabfbaf-1c79-4bf5-bf1e-585a60c04ab8-16942CD23D00.local" time="0.008">
+  <properties/>
+  <testcase name="a plain URL gives the same host as java net URI[jvm]" classname="app.vela.core.config.CalibrationHostTest" time="0.006"/>
+  <testcase name="the published endpoints all resolve to google[jvm]" classname="app.vela.core.config.CalibrationHostTest" time="0.001"/>
+  <testcase name="the allowlist decision matches java net URI[jvm]" classname="app.vela.core.config.CalibrationHostTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
