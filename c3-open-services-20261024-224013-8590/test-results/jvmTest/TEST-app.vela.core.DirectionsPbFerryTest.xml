@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="DirectionsPbFerryTest[jvm]" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-24T22:42:42.715Z" hostname="sjc22-be113-8a739075-7bd3-4e4b-9e2a-0b8acce75293-36ACC1F7D0A2.local" time="0.041">
+  <properties/>
+  <testcase name="every combination on a template that already carries 7b[jvm]" classname="app.vela.core.DirectionsPbFerryTest" time="0.018"/>
+  <testcase name="a template without the block ignores the ferry flag[jvm]" classname="app.vela.core.DirectionsPbFerryTest" time="0.0"/>
+  <testcase name="every combination on a template without 7b[jvm]" classname="app.vela.core.DirectionsPbFerryTest" time="0.018"/>
+  <testcase name="a 7b nested deeper is not mistaken for the ferry flag[jvm]" classname="app.vela.core.DirectionsPbFerryTest" time="0.001"/>
+  <testcase name="default template has no ferry flag and its block ends where Google's does[jvm]" classname="app.vela.core.DirectionsPbFerryTest" time="0.001"/>
+  <testcase name="ferries only apply to driving[jvm]" classname="app.vela.core.DirectionsPbFerryTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

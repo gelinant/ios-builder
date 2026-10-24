@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="VelaHttpCallTest[jvm]" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-24T22:42:42.971Z" hostname="sjc22-be113-8a739075-7bd3-4e4b-9e2a-0b8acce75293-36ACC1F7D0A2.local" time="0.182">
+  <properties/>
+  <testcase name="rethrowsTheClientError[jvm]" classname="app.vela.core.platform.VelaHttpCallTest" time="0.138"/>
+  <testcase name="returnsTheResponse[jvm]" classname="app.vela.core.platform.VelaHttpCallTest" time="0.006"/>
+  <testcase name="answersInsideExecuteToo[jvm]" classname="app.vela.core.platform.VelaHttpCallTest" time="0.004"/>
+  <testcase name="joinPathUsesOneSlash[jvm]" classname="app.vela.core.platform.VelaHttpCallTest" time="0.002"/>
+  <testcase name="cancelingTheCoroutineCancelsTheRequest[jvm]" classname="app.vela.core.platform.VelaHttpCallTest" time="0.019"/>
+  <testcase name="anEmptyCallbackIsAnError[jvm]" classname="app.vela.core.platform.VelaHttpCallTest" time="0.007"/>
+  <testcase name="headerLookupIsCaseBlindAndTakesTheLast[jvm]" classname="app.vela.core.platform.VelaHttpCallTest" time="0.001"/>
+  <testcase name="aSecondCallbackIsIgnored[jvm]" classname="app.vela.core.platform.VelaHttpCallTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
