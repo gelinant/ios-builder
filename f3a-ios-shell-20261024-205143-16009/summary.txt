@@ -1,0 +1,17 @@
+commit: 8a45756 src: cb8d126b iOS shell: SwiftUI MapLibre app, XcodeGen spec and unsigned IPA script
+xcode: Xcode 26.6 Build version 17F113 
+xcodegen: Version: 2.46.0
+packages: maplibre-gl-native-distribution@6.31.0
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+simulator build: ok
+tests: ok, Executed 4 tests, with 0 failures
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ipa: Vela-unsigned.ipa 3311693 bytes (3.2M)
+app frameworks: MapLibre.framework 
+app binary: arm64
+plist CFBundleIdentifier: missing
+plist CFBundleDisplayName: missing
+plist CFBundleShortVersionString: missing
+plist MinimumOSVersion: missing
+plist UIBackgroundModes: ["location","audio"]
