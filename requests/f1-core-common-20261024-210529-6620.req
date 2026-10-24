@@ -1,0 +1,3 @@
+src=src/f1-core-common
+script=scripts/ios/ci-kotlin.sh
+args=
