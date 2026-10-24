@@ -1,0 +1,3 @@
+src=src/w2-webview-spike
+script=scripts/ios/ci-webspike.sh
+args=W A
