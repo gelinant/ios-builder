@@ -1,0 +1,3 @@
+src=src/c3-open-services
+script=scripts/ios/ci-kotlin.sh
+args=
