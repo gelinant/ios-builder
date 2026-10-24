@@ -1,0 +1,79 @@
+tag=f3a-ios-shell-20261024-210010-22344 src=src/f3a-ios-shell 27be97d src: 8e19bc58 iOS shell: version from build settings, plist readout, build doc
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 27be97d src: 8e19bc58 iOS shell: version from build settings, plist readout, build doc
+xcode: Xcode 26.6 Build version 17F113 
+
+== XcodeGen (21:00:29)
+xcodegen: Version: 2.46.0
+
+== Generate the project (21:00:29)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (21:00:29)
+  MapLibre Native: https://github.com/maplibre/maplibre-gl-native-distribution @ 6.31.0
+
+resolved source packages: MapLibre Native
+(resolve: 17 s)
+packages: maplibre-gl-native-distribution@6.31.0
+
+== Pick a simulator (21:00:46)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+
+== Build for the simulator (21:00:49)
+
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 27 s)
+simulator build: ok
+
+== Unit tests (21:01:16)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 517 s)
+tests: ok, Executed 4 tests, with 0 failures
+
+== Launch and screenshot (21:09:53)
+app.vela.ios: 17754
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 771342F2-E4F9-4577-9A01-392FF6F46B10 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== Archive for iOS devices, unsigned (21:12:35)
+
+** ARCHIVE SUCCEEDED **
+
+(archive: 32 s)
+
+== Package the IPA (21:13:07)
+ipa: Vela-unsigned.ipa 3311689 bytes (3.2M)
+app frameworks: MapLibre.framework 
+app binary: arm64
+plist CFBundleIdentifier: app.vela.ios
+plist CFBundleDisplayName: Vela
+plist CFBundleShortVersionString: 0.1.0
+plist MinimumOSVersion: 17.0
+plist UIBackgroundModes: 2
+
+== Summary
+commit: 27be97d src: 8e19bc58 iOS shell: version from build settings, plist readout, build doc
+xcode: Xcode 26.6 Build version 17F113 
+xcodegen: Version: 2.46.0
+packages: maplibre-gl-native-distribution@6.31.0
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+simulator build: ok
+tests: ok, Executed 4 tests, with 0 failures
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ipa: Vela-unsigned.ipa 3311689 bytes (3.2M)
+app frameworks: MapLibre.framework 
+app binary: arm64
+plist CFBundleIdentifier: app.vela.ios
+plist CFBundleDisplayName: Vela
+plist CFBundleShortVersionString: 0.1.0
+plist MinimumOSVersion: 17.0
+plist UIBackgroundModes: 2
