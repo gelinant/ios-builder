@@ -1,0 +1,79 @@
+# XcodeGen spec for the Vela iOS app. Generate with `xcodegen generate` in this directory;
+# Vela.xcodeproj and Vela/Info.plist are generated and not versioned (docs/ios/BUILD-IOS.md).
+name: Vela
+
+options:
+  bundleIdPrefix: app.vela
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+
+settings:
+  base:
+    MARKETING_VERSION: "0.1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    SWIFT_VERSION: "5.0"
+    SWIFT_STRICT_CONCURRENCY: minimal
+
+packages:
+  MapLibre:
+    url: https://github.com/maplibre/maplibre-gl-native-distribution
+    exactVersion: 6.31.0
+
+targets:
+  Vela:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: Vela
+    dependencies:
+      - package: MapLibre
+        product: MapLibre
+      # F-3b hook: the Kotlin framework VelaCore (module :ios-shared) is wired here, with a
+      # preBuildScripts entry that runs `./gradlew :ios-shared:embedAndSignAppleFrameworkForXcode`
+      # and a dependency on the framework it produces. Not present yet.
+    info:
+      path: Vela/Info.plist
+      properties:
+        CFBundleDisplayName: Vela
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        LSRequiresIPhoneOS: true
+        UILaunchScreen: {}
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        UIBackgroundModes:
+          - location
+          - audio
+        NSLocationWhenInUseUsageDescription: Vela shows where you are on the map and guides you along your route.
+        NSLocationAlwaysAndWhenInUseUsageDescription: Vela keeps guiding you during navigation while the screen is off or another app is open.
+        ITSAppUsesNonExemptEncryption: false
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: app.vela.ios
+        PRODUCT_NAME: Vela
+        TARGETED_DEVICE_FAMILY: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        GENERATE_INFOPLIST_FILE: NO
+    scheme:
+      testTargets:
+        - VelaTests
+
+  VelaTests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: VelaTests
+    dependencies:
+      - target: Vela
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: app.vela.ios.tests
+        GENERATE_INFOPLIST_FILE: YES
