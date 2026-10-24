@@ -1,0 +1,128 @@
+2026-10-24 21:38:28.286 Df SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d1540c0 - [PID=5625] WebProcessProxy::canTerminateAuxiliaryProcess: returns false (pageCount=1, remotePageCount=0, provisionalPageCount=0, suspendedPageCount=0, m_isInProcessCache=0, m_shutdownPreventingScopeCounter=0)
+2026-10-24 21:38:32.345 Df SpikeWeb[5590:5aa4] [com.apple.WebKit:PerformanceLogging] WebContent[5625]: Memory usage info dump at MainFrameLoadCompleted:
+2026-10-24 21:38:32.345 Df SpikeWeb[5590:5aa4] [com.apple.WebKit:PerformanceLogging] WebContent[5625]:   javascript_gc_heap_extra_memory_size_mb: 9
+2026-10-24 21:38:33.434 Df com.apple.WebKit.Networking[5603:5a6b] [com.apple.network:] nw_http_redirect_reissue [C49:3] taking redirect, remaining limit 20
+2026-10-24 21:38:40.544 E  SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d1801e0 - GPUProcessProxy::gpuProcessExited: reason=Crash
+2026-10-24 21:38:40.544 Df SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10119c508 - WebProcessPool::gpuProcessDidExit: PID=5628, reason=Crash
+2026-10-24 21:38:40.544 E  SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d1540c0 - [PID=5625] WebProcessProxy::gpuProcessExited: reason=Crash
+2026-10-24 21:38:40.564 Df SpikeWeb[5590:5a34] [com.apple.WebKit:ProcessSuspension] 0x10d1cc300 - ProcessAssertion::acquireSync Trying to take RBS assertion 'XPCConnectionTerminationWatchdog' for process with PID=5628
+2026-10-24 21:38:40.567 E  SpikeWeb[5590:5a34] [com.apple.WebKit:ProcessSuspension] 0x10d1cc300 - ProcessAssertion::acquireSync Failed to acquire RBS assertion 'XPCConnectionTerminationWatchdog' for process with PID=5628, error: (null)
+2026-10-24 21:38:40.585 Df SpikeWeb[5590:5aa4] [com.apple.WebKit:RemoteLayerBuffers] WebContent[5625] [renderingBackend=661] RemoteRenderingBackendProxy::didBecomeUnresponsive
+2026-10-24 21:38:40.589 Df SpikeWeb[5590:5aa4] [com.apple.WebKit:RemoteLayerBuffers] WebContent[5625] [renderingBackend=11] RemoteRenderingBackendProxy::didBecomeUnresponsive
+2026-10-24 21:38:42.348 Df SpikeWeb[5590:5aa4] [com.apple.WebKit:PerformanceLogging] WebContent[5625]: PerformanceMonitor::measurePostLoadMemoryUsage: Process was using 312483840 bytes of memory after the page load.
+2026-10-24 21:38:44.999 E  SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d1801e0 - GPUProcessProxy::gpuProcessExited: reason=Crash
+2026-10-24 21:38:44.999 Df SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10119c508 - WebProcessPool::gpuProcessDidExit: PID=5843, reason=Crash
+2026-10-24 21:38:45.000 E  SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d1540c0 - [PID=5625] WebProcessProxy::gpuProcessExited: reason=Crash
+2026-10-24 21:38:45.014 Df SpikeWeb[5590:5a70] [com.apple.WebKit:ProcessSuspension] 0x10d1cc240 - ProcessAssertion::acquireSync Trying to take RBS assertion 'XPCConnectionTerminationWatchdog' for process with PID=5843
+2026-10-24 21:38:45.016 E  SpikeWeb[5590:5a70] [com.apple.WebKit:ProcessSuspension] 0x10d1cc240 - ProcessAssertion::acquireSync Failed to acquire RBS assertion 'XPCConnectionTerminationWatchdog' for process with PID=5843, error: (null)
+2026-10-24 21:38:53.223 E  SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d1803c0 - GPUProcessProxy::gpuProcessExited: reason=Crash
+2026-10-24 21:38:53.223 Df SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10119c508 - WebProcessPool::gpuProcessDidExit: PID=5964, reason=Crash
+2026-10-24 21:38:53.223 E  SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d1540c0 - [PID=5625] WebProcessProxy::gpuProcessExited: reason=Crash
+2026-10-24 21:38:53.223 E  SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10119c508 - WebProcessPool::gpuProcessDidExit: GPU Process has crashed more than 2 times in the last 30 seconds, terminating all WebProcesses
+2026-10-24 21:38:53.223 E  SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10119c508 - WebProcessPool::terminateAllWebContentProcesses
+2026-10-24 21:38:53.223 E  SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d1540c0 - [PID=5625] WebProcessProxy::requestTermination: reason=11
+2026-10-24 21:38:53.223 Df SpikeWeb[5590:5a15] [com.apple.WebKit:Process] AuxiliaryProcessProxy::terminate: PID=5625
+2026-10-24 21:38:53.224 Df SpikeWeb[5590:5f34] [com.apple.WebKit:ProcessSuspension] 0x10d1cc3c0 - ProcessAssertion::acquireSync Trying to take RBS assertion 'XPCConnectionTerminationWatchdog' for process with PID=5625
+2026-10-24 21:38:53.270 E  SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d1540c0 - [PID=0] WebProcessProxy::processDidTerminateOrFailedToLaunch: reason=GPUProcessCrashedTooManyTimes
+2026-10-24 21:38:53.288 E  SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x1012c5518 - [pageProxyID=6, webPageID=7, PID=0] WebPageProxy::processDidTerminate: (pid 0), reason=GPUProcessCrashedTooManyTimes
+2026-10-24 21:38:53.439 Df SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d1540c0 - [PID=0] WebProcessProxy::processTerminated:
+2026-10-24 21:38:53.440 E  SpikeWeb[5590:5a15] [com.apple.WebKit:Loading] 0x1012c5518 - [pageProxyID=6, webPageID=7, PID=0] WebPageProxy::dispatchProcessDidTerminate: reason=GPUProcessCrashedTooManyTimes
+2026-10-24 21:38:53.469 Df SpikeWeb[5590:5f34] [com.apple.WebKit:ProcessSuspension] 0x10d1cc480 - ProcessAssertion::acquireSync Trying to take RBS assertion 'XPCConnectionTerminationWatchdog' for process with PID=5964
+2026-10-24 21:38:53.470 E  SpikeWeb[5590:5f34] [com.apple.WebKit:ProcessSuspension] 0x10d1cc480 - ProcessAssertion::acquireSync Failed to acquire RBS assertion 'XPCConnectionTerminationWatchdog' for process with PID=5964, error: (null)
+2026-10-24 21:38:55.733 Df SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d154680 - [PID=6059] WebProcessProxy::canTerminateAuxiliaryProcess: returns false (pageCount=1, remotePageCount=0, provisionalPageCount=0, suspendedPageCount=0, m_isInProcessCache=0, m_shutdownPreventingScopeCounter=0)
+2026-10-24 21:38:56.961 Df SpikeWeb[5590:5aa4] [com.apple.WebKit:PerformanceLogging] WebContent[6059]: Memory usage info dump at MainFrameLoadCompleted:
+2026-10-24 21:38:56.962 Df SpikeWeb[5590:5aa4] [com.apple.WebKit:PerformanceLogging] WebContent[6059]:   javascript_gc_heap_extra_memory_size_mb: 8
+2026-10-24 21:38:58.649 Df SpikeWeb[5590:5aa4] [com.apple.WebKit:PerformanceLogging] WebContent[6059]: Memory usage info dump at MainFrameLoadStarted:
+2026-10-24 21:38:58.650 Df SpikeWeb[5590:5aa4] [com.apple.WebKit:PerformanceLogging] WebContent[6059]:   javascript_gc_heap_extra_memory_size_mb: 9
+2026-10-24 21:38:58.787 Df SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d154680 - [PID=6059] WebProcessProxy::canTerminateAuxiliaryProcess: returns false (pageCount=1, remotePageCount=0, provisionalPageCount=0, suspendedPageCount=0, m_isInProcessCache=0, m_shutdownPreventingScopeCounter=0)
+2026-10-24 21:39:04.961 Df SpikeWeb[5590:5aa4] [com.apple.WebKit:PerformanceLogging] WebContent[6059]: Memory usage info dump at MainFrameLoadCompleted:
+2026-10-24 21:39:04.961 Df SpikeWeb[5590:5aa4] [com.apple.WebKit:PerformanceLogging] WebContent[6059]:   javascript_gc_heap_extra_memory_size_mb: 14
+2026-10-24 21:39:05.149 Df SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d154680 - [PID=6059] WebProcessProxy::canTerminateAuxiliaryProcess: returns false (pageCount=0, remotePageCount=0, provisionalPageCount=0, suspendedPageCount=0, m_isInProcessCache=0, m_shutdownPreventingScopeCounter=1)
+2026-10-24 21:39:05.152 Df SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d154680 - [PID=6059] WebProcessProxy::canTerminateAuxiliaryProcess: returns false (pageCount=0, remotePageCount=0, provisionalPageCount=0, suspendedPageCount=0, m_isInProcessCache=0, m_shutdownPreventingScopeCounter=1)
+2026-10-24 21:39:05.152 Df SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d154680 - [PID=6059] WebProcessProxy::canTerminateAuxiliaryProcess: returns true
+2026-10-24 21:39:05.234 Df com.apple.WebKit.GPU[6060:603b] [com.apple.WebKit:Process] GPUProcess::lowMemoryHandler: critical=1, synchronous=1
+2026-10-24 21:39:05.234 Df com.apple.WebKit.GPU[6060:603b] [com.apple.WebKit:Process] GPUProcess::tryExitIfUnused: GPUProcess is exiting because we are under memory pressure and the process is no longer useful.
+2026-10-24 21:39:05.249 Df SpikeWeb[5590:5f33] [com.apple.WebKit:ProcessSuspension] 0x10d1cc6c0 - ProcessAssertion::acquireSync Trying to take RBS assertion 'XPCConnectionTerminationWatchdog' for process with PID=6059
+2026-10-24 21:39:05.251 E  SpikeWeb[5590:5f33] [com.apple.WebKit:ProcessSuspension] 0x10d1cc6c0 - ProcessAssertion::acquireSync Failed to acquire RBS assertion 'XPCConnectionTerminationWatchdog' for process with PID=6059, error: (null)
+2026-10-24 21:39:05.268 Df SpikeWeb[5590:5a15] [com.apple.WebKit:Process] AuxiliaryProcessProxy::terminate: PID=6060
+2026-10-24 21:39:05.268 Df SpikeWeb[5590:5a70] [com.apple.WebKit:ProcessSuspension] 0x10d1cc780 - ProcessAssertion::acquireSync Trying to take RBS assertion 'XPCConnectionTerminationWatchdog' for process with PID=6060
+2026-10-24 21:39:05.272 E  SpikeWeb[5590:5a70] [com.apple.WebKit:ProcessSuspension] 0x10d1cc780 - ProcessAssertion::acquireSync Failed to acquire RBS assertion 'XPCConnectionTerminationWatchdog' for process with PID=6060, error: (null)
+2026-10-24 21:39:10.567 Df SpikeWeb[5590:5a15] [com.apple.WebKit:ProcessSuspension] 0x10d1cc300 - ~ProcessAssertion: Releasing process assertion 'XPCConnectionTerminationWatchdog' for process with PID=5628
+2026-10-24 21:39:15.021 Df SpikeWeb[5590:5a15] [com.apple.WebKit:ProcessSuspension] 0x10d1cc240 - ~ProcessAssertion: Releasing process assertion 'XPCConnectionTerminationWatchdog' for process with PID=5843
+2026-10-24 21:39:23.237 Df SpikeWeb[5590:5a15] [com.apple.WebKit:ProcessSuspension] 0x10d1cc3c0 - ~ProcessAssertion: Releasing process assertion 'XPCConnectionTerminationWatchdog' for process with PID=5625
+2026-10-24 21:39:23.449 Df SpikeWeb[5590:5a15] [com.apple.WebKit:ProcessSuspension] 0x10d1cc480 - ~ProcessAssertion: Releasing process assertion 'XPCConnectionTerminationWatchdog' for process with PID=5964
+2026-10-24 21:39:35.171 Df SpikeWeb[5590:5a15] [com.apple.WebKit:ProcessSuspension] 0x10d1cc6c0 - ~ProcessAssertion: Releasing process assertion 'XPCConnectionTerminationWatchdog' for process with PID=6059
+2026-10-24 21:39:35.271 Df SpikeWeb[5590:5a15] [com.apple.WebKit:ProcessSuspension] 0x10d1cc780 - ~ProcessAssertion: Releasing process assertion 'XPCConnectionTerminationWatchdog' for process with PID=6060
+2026-10-24 21:39:37.148 Df SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d1540c0 - [PID=7274] WebProcessProxy::canTerminateAuxiliaryProcess: returns false (pageCount=1, remotePageCount=0, provisionalPageCount=0, suspendedPageCount=0, m_isInProcessCache=0, m_shutdownPreventingScopeCounter=0)
+2026-10-24 21:39:39.396 Df SpikeWeb[5590:5aa4] [com.apple.WebKit:PerformanceLogging] WebContent[7274]: Memory usage info dump at MainFrameLoadCompleted:
+2026-10-24 21:39:39.396 Df SpikeWeb[5590:5aa4] [com.apple.WebKit:PerformanceLogging] WebContent[7274]:   javascript_gc_heap_extra_memory_size_mb: 10
+2026-10-24 21:39:42.570 Df com.apple.WebKit.Networking[5603:5a63] [com.apple.network:] nw_http_redirect_reissue [C489:3] taking redirect, remaining limit 20
+2026-10-24 21:39:50.053 Df SpikeWeb[5590:5aa4] [com.apple.WebKit:PerformanceLogging] WebContent[7274]: PerformanceMonitor::measurePostLoadMemoryUsage: Process was using 564092544 bytes of memory after the page load.
+2026-10-24 21:40:25.880 Df SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d1540c0 - [PID=7274] WebProcessProxy::canTerminateAuxiliaryProcess: returns false (pageCount=0, remotePageCount=0, provisionalPageCount=0, suspendedPageCount=0, m_isInProcessCache=0, m_shutdownPreventingScopeCounter=1)
+2026-10-24 21:40:25.935 Df SpikeWeb[5590:5aa4] [com.apple.WebKit:ProcessSuspension] WebContent[7274] 0x111060100 - [sessionID=9223372036854775810] WebProcess::releaseMemory: BEGIN
+2026-10-24 21:40:26.301 Df SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d1540c0 - [PID=7274] WebProcessProxy::canTerminateAuxiliaryProcess: returns false (pageCount=0, remotePageCount=0, provisionalPageCount=0, suspendedPageCount=0, m_isInProcessCache=0, m_shutdownPreventingScopeCounter=1)
+2026-10-24 21:40:26.302 Df SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d1540c0 - [PID=7274] WebProcessProxy::canTerminateAuxiliaryProcess: returns true
+2026-10-24 21:40:26.303 Df SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d1540c0 - [PID=7274] WebProcessProxy::canTerminateAuxiliaryProcess: returns true
+2026-10-24 21:40:26.307 Df SpikeWeb[5590:5aa4] [com.apple.WebKit:MemoryPressure] WebContent[7274] Memory pressure relief: Total: res = 134709248/247136256/112427008, res+swap = 707846208/569204800/-138641408
+2026-10-24 21:40:26.307 Df SpikeWeb[5590:5aa4] [com.apple.WebKit:ProcessSuspension] WebContent[7274] 0x111060100 - [sessionID=9223372036854775810] WebProcess::releaseMemory: END
+2026-10-24 21:40:26.573 Df SpikeWeb[5590:64e6] [com.apple.WebKit:ProcessSuspension] 0x10d1cc3c0 - ProcessAssertion::acquireSync Trying to take RBS assertion 'XPCConnectionTerminationWatchdog' for process with PID=7274
+2026-10-24 21:40:26.575 Df com.apple.WebKit.GPU[7284:6eb1] [com.apple.WebKit:Process] GPUProcess::lowMemoryHandler: critical=1, synchronous=1
+2026-10-24 21:40:26.617 Df SpikeWeb[5590:64e6] [com.apple.WebKit:ProcessSuspension] 0x10d1cc600 - ProcessAssertion::acquireSync Trying to take RBS assertion 'XPCConnectionTerminationWatchdog' for process with PID=5603
+2026-10-24 21:40:26.620 E  SpikeWeb[5590:64e6] [com.apple.WebKit:ProcessSuspension] 0x10d1cc600 - ProcessAssertion::acquireSync Failed to acquire RBS assertion 'XPCConnectionTerminationWatchdog' for process with PID=5603, error: (null)
+2026-10-24 21:40:29.445 Df SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d1540c0 - [PID=8749] WebProcessProxy::canTerminateAuxiliaryProcess: returns false (pageCount=1, remotePageCount=0, provisionalPageCount=0, suspendedPageCount=0, m_isInProcessCache=0, m_shutdownPreventingScopeCounter=0)
+2026-10-24 21:40:30.261 Df SpikeWeb[5590:5aa4] [com.apple.WebKit:PerformanceLogging] WebContent[8749]: Memory usage info dump at MainFrameLoadCompleted:
+2026-10-24 21:40:30.261 Df SpikeWeb[5590:5aa4] [com.apple.WebKit:PerformanceLogging] WebContent[8749]:   javascript_gc_heap_extra_memory_size_mb: 9
+2026-10-24 21:40:31.071 Df com.apple.WebKit.Networking[8661:7df4] [com.apple.network:] nw_http_redirect_reissue [C49:3] taking redirect, remaining limit 20
+2026-10-24 21:40:40.263 Df SpikeWeb[5590:5aa4] [com.apple.WebKit:PerformanceLogging] WebContent[8749]: PerformanceMonitor::measurePostLoadMemoryUsage: Process was using 293642240 bytes of memory after the page load.
+2026-10-24 21:40:56.304 Df SpikeWeb[5590:5a15] [com.apple.WebKit:ProcessSuspension] 0x10d1cc3c0 - ~ProcessAssertion: Releasing process assertion 'XPCConnectionTerminationWatchdog' for process with PID=7274
+2026-10-24 21:40:56.621 Df SpikeWeb[5590:5a15] [com.apple.WebKit:ProcessSuspension] 0x10d1cc600 - ~ProcessAssertion: Releasing process assertion 'XPCConnectionTerminationWatchdog' for process with PID=5603
+2026-10-24 21:41:04.974 Df SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d1540c0 - [PID=8749] WebProcessProxy::canTerminateAuxiliaryProcess: returns false (pageCount=0, remotePageCount=0, provisionalPageCount=0, suspendedPageCount=0, m_isInProcessCache=0, m_shutdownPreventingScopeCounter=1)
+2026-10-24 21:41:04.980 Df SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d1540c0 - [PID=8749] WebProcessProxy::canTerminateAuxiliaryProcess: returns false (pageCount=0, remotePageCount=0, provisionalPageCount=0, suspendedPageCount=0, m_isInProcessCache=0, m_shutdownPreventingScopeCounter=1)
+2026-10-24 21:41:04.980 Df SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d1540c0 - [PID=8749] WebProcessProxy::canTerminateAuxiliaryProcess: returns true
+2026-10-24 21:41:04.981 Df SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d1540c0 - [PID=8749] WebProcessProxy::canTerminateAuxiliaryProcess: returns true
+2026-10-24 21:41:05.008 Df SpikeWeb[5590:79f7] [com.apple.WebKit:ProcessSuspension] 0x10d1cc3c0 - ProcessAssertion::acquireSync Trying to take RBS assertion 'XPCConnectionTerminationWatchdog' for process with PID=8749
+2026-10-24 21:41:05.018 E  SpikeWeb[5590:79f7] [com.apple.WebKit:ProcessSuspension] 0x10d1cc3c0 - ProcessAssertion::acquireSync Failed to acquire RBS assertion 'XPCConnectionTerminationWatchdog' for process with PID=8749, error: (null)
+2026-10-24 21:41:05.749 Df SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d154680 - [PID=10208] WebProcessProxy::canTerminateAuxiliaryProcess: returns false (pageCount=1, remotePageCount=0, provisionalPageCount=0, suspendedPageCount=0, m_isInProcessCache=0, m_shutdownPreventingScopeCounter=0)
+2026-10-24 21:41:08.742 E  SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d1801e0 - GPUProcessProxy::didBecomeUnresponsive: GPUProcess with PID 7284 became unresponsive, terminating it
+2026-10-24 21:41:08.742 Df SpikeWeb[5590:5a15] [com.apple.WebKit:Process] AuxiliaryProcessProxy::terminate: PID=7284
+2026-10-24 21:41:08.742 Df SpikeWeb[5590:8b49] [com.apple.WebKit:ProcessSuspension] 0x10d1cc240 - ProcessAssertion::acquireSync Trying to take RBS assertion 'XPCConnectionTerminationWatchdog' for process with PID=7284
+2026-10-24 21:41:08.745 E  SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d1801e0 - GPUProcessProxy::gpuProcessExited: reason=Unresponsive
+2026-10-24 21:41:08.745 Df SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10119c008 - WebProcessPool::gpuProcessDidExit: PID=0, reason=Unresponsive
+2026-10-24 21:41:08.745 E  SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d154680 - [PID=10208] WebProcessProxy::gpuProcessExited: reason=Unresponsive
+2026-10-24 21:41:08.769 Df SpikeWeb[5590:5aa4] [com.apple.WebKit:RemoteLayerBuffers] WebContent[10208] [renderingBackend=11] RemoteRenderingBackendProxy::didBecomeUnresponsive
+2026-10-24 21:41:10.164 Df SpikeWeb[5590:5aa4] [com.apple.WebKit:PerformanceLogging] WebContent[10208]: Memory usage info dump at MainFrameLoadCompleted:
+2026-10-24 21:41:10.164 Df SpikeWeb[5590:5aa4] [com.apple.WebKit:PerformanceLogging] WebContent[10208]:   javascript_gc_heap_extra_memory_size_mb: 9
+2026-10-24 21:41:20.245 Df SpikeWeb[5590:5aa4] [com.apple.WebKit:PerformanceLogging] WebContent[10208]: PerformanceMonitor::measurePostLoadMemoryUsage: Process was using 377708160 bytes of memory after the page load.
+2026-10-24 21:41:20.253 Df com.apple.WebKit.Networking[8661:8b4d] [com.apple.network:] nw_http_redirect_reissue [C378:3] taking redirect, remaining limit 20
+2026-10-24 21:41:31.614 Df SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d154680 - [PID=10208] WebProcessProxy::canTerminateAuxiliaryProcess: returns false (pageCount=0, remotePageCount=0, provisionalPageCount=0, suspendedPageCount=0, m_isInProcessCache=0, m_shutdownPreventingScopeCounter=1)
+2026-10-24 21:41:31.628 Df SpikeWeb[5590:5aa4] [com.apple.WebKit:ProcessSuspension] WebContent[10208] 0x111060100 - [sessionID=9223372036854775811] WebProcess::releaseMemory: BEGIN
+2026-10-24 21:41:31.666 Df SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d154680 - [PID=10208] WebProcessProxy::canTerminateAuxiliaryProcess: returns false (pageCount=0, remotePageCount=0, provisionalPageCount=0, suspendedPageCount=0, m_isInProcessCache=0, m_shutdownPreventingScopeCounter=1)
+2026-10-24 21:41:31.666 Df SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d154680 - [PID=10208] WebProcessProxy::canTerminateAuxiliaryProcess: returns true
+2026-10-24 21:41:31.667 Df SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d154680 - [PID=10208] WebProcessProxy::canTerminateAuxiliaryProcess: returns true
+2026-10-24 21:41:31.675 Df SpikeWeb[5590:79f6] [com.apple.WebKit:ProcessSuspension] 0x10d1cc540 - ProcessAssertion::acquireSync Trying to take RBS assertion 'XPCConnectionTerminationWatchdog' for process with PID=10208
+2026-10-24 21:41:31.685 E  SpikeWeb[5590:79f6] [com.apple.WebKit:ProcessSuspension] 0x10d1cc540 - ProcessAssertion::acquireSync Failed to acquire RBS assertion 'XPCConnectionTerminationWatchdog' for process with PID=10208, error: (null)
+2026-10-24 21:41:31.694 Df com.apple.WebKit.GPU[10226:8bff] [com.apple.WebKit:Process] GPUProcess::lowMemoryHandler: critical=1, synchronous=1
+2026-10-24 21:41:33.593 Df SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d1540c0 - [PID=10821] WebProcessProxy::canTerminateAuxiliaryProcess: returns false (pageCount=1, remotePageCount=0, provisionalPageCount=0, suspendedPageCount=0, m_isInProcessCache=0, m_shutdownPreventingScopeCounter=0)
+2026-10-24 21:41:34.157 Df SpikeWeb[5590:5aa4] [com.apple.WebKit:PerformanceLogging] WebContent[10821]: Memory usage info dump at MainFrameLoadCompleted:
+2026-10-24 21:41:34.157 Df SpikeWeb[5590:5aa4] [com.apple.WebKit:PerformanceLogging] WebContent[10821]:   javascript_gc_heap_extra_memory_size_mb: 10
+2026-10-24 21:41:34.764 Df com.apple.WebKit.Networking[8661:8e81] [com.apple.network:] nw_http_redirect_reissue [C495:3] taking redirect, remaining limit 20
+2026-10-24 21:41:34.985 Df SpikeWeb[5590:5a15] [com.apple.WebKit:ProcessSuspension] 0x10d1cc3c0 - ~ProcessAssertion: Releasing process assertion 'XPCConnectionTerminationWatchdog' for process with PID=8749
+2026-10-24 21:41:38.745 Df SpikeWeb[5590:5a15] [com.apple.WebKit:ProcessSuspension] 0x10d1cc240 - ~ProcessAssertion: Releasing process assertion 'XPCConnectionTerminationWatchdog' for process with PID=7284
+2026-10-24 21:41:42.804 E  SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d1801e0 - GPUProcessProxy::gpuProcessExited: reason=Crash
+2026-10-24 21:41:42.804 Df SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10119f208 - WebProcessPool::gpuProcessDidExit: PID=10226, reason=Crash
+2026-10-24 21:41:42.804 E  SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d1540c0 - [PID=10821] WebProcessProxy::gpuProcessExited: reason=Crash
+2026-10-24 21:41:42.817 Df SpikeWeb[5590:5aa4] [com.apple.WebKit:RemoteLayerBuffers] WebContent[10821] [renderingBackend=11] RemoteRenderingBackendProxy::didBecomeUnresponsive
+2026-10-24 21:41:42.830 Df SpikeWeb[5590:9054] [com.apple.WebKit:ProcessSuspension] 0x10d1cc300 - ProcessAssertion::acquireSync Trying to take RBS assertion 'XPCConnectionTerminationWatchdog' for process with PID=10226
+2026-10-24 21:41:42.833 E  SpikeWeb[5590:9054] [com.apple.WebKit:ProcessSuspension] 0x10d1cc300 - ProcessAssertion::acquireSync Failed to acquire RBS assertion 'XPCConnectionTerminationWatchdog' for process with PID=10226, error: (null)
+2026-10-24 21:41:44.157 Df SpikeWeb[5590:5aa4] [com.apple.WebKit:PerformanceLogging] WebContent[10821]: PerformanceMonitor::measurePostLoadMemoryUsage: Process was using 338157504 bytes of memory after the page load.
+2026-10-24 21:42:01.672 Df SpikeWeb[5590:5a15] [com.apple.WebKit:ProcessSuspension] 0x10d1cc540 - ~ProcessAssertion: Releasing process assertion 'XPCConnectionTerminationWatchdog' for process with PID=10208
+2026-10-24 21:42:12.175 Df SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d1540c0 - [PID=10821] WebProcessProxy::canTerminateAuxiliaryProcess: returns false (pageCount=0, remotePageCount=0, provisionalPageCount=0, suspendedPageCount=0, m_isInProcessCache=0, m_shutdownPreventingScopeCounter=1)
+2026-10-24 21:42:12.190 Df SpikeWeb[5590:5aa4] [com.apple.WebKit:ProcessSuspension] WebContent[10821] 0x10d060100 - [sessionID=9223372036854775811] WebProcess::releaseMemory: BEGIN
+2026-10-24 21:42:12.232 Df SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d1540c0 - [PID=10821] WebProcessProxy::canTerminateAuxiliaryProcess: returns false (pageCount=0, remotePageCount=0, provisionalPageCount=0, suspendedPageCount=0, m_isInProcessCache=0, m_shutdownPreventingScopeCounter=1)
+2026-10-24 21:42:12.232 Df SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d1540c0 - [PID=10821] WebProcessProxy::canTerminateAuxiliaryProcess: returns true
+2026-10-24 21:42:12.233 Df SpikeWeb[5590:98be] [com.apple.WebKit:ProcessSuspension] 0x10d1cc480 - ProcessAssertion::acquireSync Trying to take RBS assertion 'XPCConnectionTerminationWatchdog' for process with PID=10821
+2026-10-24 21:42:12.233 Df SpikeWeb[5590:5a15] [com.apple.WebKit:Process] 0x10d1540c0 - [PID=10821] WebProcessProxy::canTerminateAuxiliaryProcess: returns true
+2026-10-24 21:42:12.244 Df com.apple.WebKit.GPU[10859:932b] [com.apple.WebKit:Process] GPUProcess::lowMemoryHandler: critical=1, synchronous=1
+2026-10-24 21:42:12.290 Df SpikeWeb[5590:98bf] [com.apple.WebKit:ProcessSuspension] 0x10d1cc6c0 - ProcessAssertion::acquireSync Trying to take RBS assertion 'XPCConnectionTerminationWatchdog' for process with PID=8661
+2026-10-24 21:42:12.291 E  SpikeWeb[5590:98bf] [com.apple.WebKit:ProcessSuspension] 0x10d1cc6c0 - ProcessAssertion::acquireSync Failed to acquire RBS assertion 'XPCConnectionTerminationWatchdog' for process with PID=8661, error: (null)
+2026-10-24 21:42:12.811 Df SpikeWeb[5590:5a15] [com.apple.WebKit:ProcessSuspension] 0x10d1cc300 - ~ProcessAssertion: Releasing process assertion 'XPCConnectionTerminationWatchdog' for process with PID=10226
