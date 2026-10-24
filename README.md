@@ -16,3 +16,10 @@ macOS build and probe runner for the Vela iOS port (plan: `PORTAGE_IOS.md` on th
 
 macOS minutes count ten times on a private repository. Run a macOS job only for what Linux
 cannot check.
+
+## Generic job `run`
+
+`scripts/mac-run.sh <vela checkout> <lot> <script> [args]` snapshots the checkout to `src/<lot>`,
+pushes `requests/<tag>.req`, waits, and prints the status and the log tail. The script runs on
+macOS from the source root with `$OUT` set; files it writes there come back on `results/<tag>/`
+(files over 50 MB on `builds/<tag>/`, a branch that only keeps the latest).

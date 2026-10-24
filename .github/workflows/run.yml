@@ -1,0 +1,91 @@
+name: run
+# Generic macOS job. Push a new file requests/<tag>.req on main:
+#   src=src/<branch>          source snapshot branch on this repo (scripts/push-src.sh)
+#   script=<path>             script inside the source to run, from the source root
+#   args=<words>              optional arguments
+# The script runs with OUT=<dir>; whatever it writes there, plus log.txt and STATUS, lands on
+# the `results` branch in <tag>/. Files over 50 MB go to the `builds` branch instead (force-pushed,
+# one commit), as <tag>/<name>.
+on:
+  push:
+    branches: [main]
+    paths: ['requests/*.req']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: run-${{ github.sha }}
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: macos-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: builder
+          fetch-depth: 2
+
+      - name: Find the request
+        id: req
+        run: |
+          cd builder
+          f=$(git diff --name-only --diff-filter=AM HEAD~1 HEAD -- 'requests/*.req' | head -1)
+          [ -n "$f" ] || { echo "no request file in this commit"; exit 1; }
+          tag=$(basename "$f" .req)
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+          echo "src=$(sed -n 's/^src=//p' "$f")" >> "$GITHUB_OUTPUT"
+          echo "script=$(sed -n 's/^script=//p' "$f")" >> "$GITHUB_OUTPUT"
+          echo "args=$(sed -n 's/^args=//p' "$f")" >> "$GITHUB_OUTPUT"
+          cat "$f"
+
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ steps.req.outputs.src }}
+          path: src
+
+      - name: Caches
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+            ~/.konan
+            ~/Library/Caches/org.swift.swiftpm
+            ~/Library/Developer/Xcode/DerivedData/**/SourcePackages
+          key: mac-${{ hashFiles('src/gradle/libs.versions.toml', 'src/iosApp/project.yml') }}
+          restore-keys: mac-
+
+      - name: Run
+        env:
+          OUT: ${{ github.workspace }}/out
+        run: |
+          mkdir -p "$OUT"
+          cd src
+          set -o pipefail
+          {
+            echo "tag=${{ steps.req.outputs.tag }} src=${{ steps.req.outputs.src }} $(git log -1 --format='%h %s')"
+            sw_vers | tr '\n' ' '; echo
+            xcodebuild -version | tr '\n' ' '; echo
+          } | tee "$OUT/log.txt"
+          if bash "${{ steps.req.outputs.script }}" ${{ steps.req.outputs.args }} 2>&1 | tee -a "$OUT/log.txt"; then
+            echo ok > "$OUT/STATUS"
+          else
+            echo "failed" > "$OUT/STATUS"
+            exit 1
+          fi
+
+      - name: Publish
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OUT: ${{ github.workspace }}/out
+        run: |
+          mkdir -p "$OUT"; [ -f "$OUT/STATUS" ] || echo "failed before run" > "$OUT/STATUS"
+          # Keep the tail of the log readable on the branch: the full log can be huge.
+          if [ -f "$OUT/log.txt" ] && [ "$(wc -c < "$OUT/log.txt")" -gt 2000000 ]; then
+            tail -c 2000000 "$OUT/log.txt" > "$OUT/log.tmp" && mv "$OUT/log.tmp" "$OUT/log.txt"
+          fi
+          bash builder/scripts/publish-run.sh "${{ steps.req.outputs.tag }}"
