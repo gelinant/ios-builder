@@ -1,0 +1,62 @@
+name: spike
+# W-1 of PORTAGE_IOS.md: replays Vela's Google requests over Apple's network stack.
+# Trigger: push a change to requests/spike on main. Line 1 = source branch (src/...),
+# line 2 (optional) = identities, space separated.
+on:
+  push:
+    branches: [main]
+    paths: ['requests/spike']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: spike
+  cancel-in-progress: false
+
+jobs:
+  spike:
+    runs-on: macos-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: builder
+
+      - name: Read request
+        id: req
+        run: |
+          echo "ref=$(sed -n 1p builder/requests/spike | tr -d '[:space:]')" >> "$GITHUB_OUTPUT"
+          echo "ids=$(sed -n 2p builder/requests/spike)" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ steps.req.outputs.ref }}
+          path: src
+
+      - name: Run spike
+        run: |
+          mkdir -p out
+          {
+            echo "source: ${{ steps.req.outputs.ref }} $(git -C src log -1 --format='%H %s')"
+            sw_vers
+            swift --version 2>&1 | head -1
+            echo "egress: $(curl -s --max-time 10 https://ipinfo.io/org || echo unknown)"
+          } > out/env.txt
+          cat out/env.txt
+          set -o pipefail
+          if swift src/tools/ios-spike.swift ${{ steps.req.outputs.ids }} 2>&1 | tee out/spike.txt; then
+            echo ok > out/STATUS
+          else
+            echo "failed ($?)" > out/STATUS
+            exit 1
+          fi
+
+      - name: Publish results
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          [ -f out/STATUS ] || { mkdir -p out; echo "failed before spike" > out/STATUS; }
+          bash builder/scripts/publish-results.sh spike
