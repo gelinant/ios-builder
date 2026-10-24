@@ -1,0 +1,3 @@
+src=src/f3a-ios-shell
+script=scripts/ios/ci-ipa.sh
+args=
