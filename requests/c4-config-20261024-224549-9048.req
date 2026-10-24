@@ -1,0 +1,3 @@
+src=src/c4-config
+script=scripts/ios/ci-kotlin.sh
+args=
