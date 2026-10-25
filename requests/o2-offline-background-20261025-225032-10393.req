@@ -1,0 +1,3 @@
+src=src/o2-offline-background
+script=scripts/ios/ci-ipa.sh
+args=
