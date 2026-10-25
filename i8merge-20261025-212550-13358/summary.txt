@@ -1,0 +1,138 @@
+commit: 8ded653 src: 793f504a iOS hive: I-8 merged
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610252126 (1792963603)
+java: openjdk version "17.0.20.1" 2026-08-18
+gradle: ok in 378 s
+kotlin jvmTest: 96 tests, 0 failures
+kotlin iosSimulatorArm64Test: 75 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  73M, static library 72281360 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  42M, static library 39465400 bytes, SKIE Swift module: yes
+string catalog: 1415 keys, 24 resource locales (23 with translations), 24572 localized values, 31 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: maplibre-gl-native-distribution@6.31.0
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+simulator build: ok
+tests: ok, Executed 32 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: ok
+ui CalibrationUITests.testLiveCalibrationIsLoaded: passed (14.663 seconds)
+ui DirectionsUITests.testDirectionsToTheFirstCoffeeResult: passed (98.096 seconds)
+ui LaunchUITests.testLaunchShowsTheMapOverSanFrancisco: passed (17.241 seconds)
+ui LaunchUITests.testStartCameraArgumentMovesTheMapToDavis: passed (15.922 seconds)
+ui LocalizationUITests.testFrenchLabelsWithoutChangingSimulatorLanguage: passed (17.522 seconds)
+ui LocalizationUITests.testGermanSettingsLayout: passed (15.696 seconds)
+ui LocalizationUITests.testSettingsPersistAcrossRelaunch: passed (53.363 seconds)
+ui MapSearchUITests.testMapPoiTapOpensGooglePlace: passed (32.553 seconds)
+ui NavUITests.testGuidedDriveAndEnd: passed (99.943 seconds)
+ui OfflineUITests.testMonacoDownloadOfflineMapAndSearch: passed (44.528 seconds)
+ui PlaceUITests.testFirstCoffeeResultOpensItsSheet: passed (58.866 seconds)
+ui SavedUITests.testSavedPlaceListAndRecentsPersist: passed (70.898 seconds)
+ui SearchUITests.testCoffeeSearchShowsResultsAndPins: passed (41.755 seconds)
+ui SearchUITests.testQuickCategoryRunsSearch: passed (13.242 seconds)
+ui SearchUITests.testSuggestionsAppearAndFreezeAfterSelection: passed (13.528 seconds)
+ui calibration_version=27
+ui category_rows=60
+ui directions_center=0
+ui directions_drive_meters=1337
+ui directions_drive_routes=3
+ui directions_drive_seconds=361
+ui directions_drive_steps=13
+ui directions_drive_traffic_spans=0
+ui directions_far_meters=3561
+ui directions_far_routes=3
+ui directions_far_seconds=1046
+ui directions_far_selected=1
+ui directions_far_steps=5
+ui directions_far_traffic_spans=1
+ui directions_transit_itineraries=6
+ui directions_transit_legs=3
+ui directions_walk_meters=41
+ui directions_walk_routes=2
+ui directions_walk_seconds=64
+ui directions_walk_steps=2
+ui l10n_de_language=Sprache
+ui l10n_de_no_google=Vela_ohne_Google_nutzen
+ui l10n_de_placeholder=Suchen
+ui l10n_de_title=Einstellungen
+ui l10n_fr_language=Langue
+ui l10n_fr_no_google=Utiliser_Vela_sans_Google
+ui l10n_fr_placeholder=Rechercher
+ui l10n_fr_title=Paramètres
+ui l10n_fr_units=Unités
+ui map_element=yes
+ui map_poi_name=Ferry_Building
+ui nav_activity_updates=5
+ui nav_activity=started_updated_ended
+ui nav_camera_updates=10
+ui nav_driving_meters=3546
+ui nav_end=restored
+ui nav_initial_meters=3684
+ui nav_replay=sf-market
+ui nav_voice_count=2
+ui nav_voice_line=spoken=2_text=In_800_feet,_Turn_right_onto_10th_Street
+ui offline_basemap_bytes=419425
+ui offline_glyphs_bytes=104667742
+ui offline_installed=1
+ui offline_pack_bytes=364544
+ui offline_places_bytes=571133
+ui offline_remote_urls=0
+ui offline_search_results=30
+ui offline_total_bytes=106023012
+ui place_hours=7
+ui place_name=Doppio_Coffee_&_Brunch
+ui place_phone=1
+ui place_photos=10
+ui place_popular_hours=0
+ui place_reviews_from=feed
+ui place_reviews=5
+ui saved_lists_after_restart=1
+ui saved_lists=1
+ui saved_places=1
+ui saved_recents_after_restart=2
+ui search_rows=60
+ui settings_google_after=1
+ui settings_google_before=0
+ui settings_google_debug=language=system,units=imperial,clock=24,google=1
+ui settings_persistence=language=fr,units=imperial,clock=24,google=1
+ui suggestion_rows=4
+ui screenshots: calibration.png category.png directions-drive.png directions-far-alt.png directions-far-steps.png directions-far.png directions-steps.png directions-transit-steps.png directions-transit.png directions-walk.png launch-davis.png launch-sf.png map-poi.png nav-driving.png nav-end.png nav-start.png place-photos.png place-reviews-2.png place-reviews.png place-save.png place-top.png search-centered.png search-list.png search-map.png settings-de.png settings-fr.png suggest.png 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+live calibration: version 27
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 29155 bytes
+open reply: transit-plan-sf 63614 bytes
+directions reply: directions-drive-sf 75340 bytes
+directions reply: directions-walk-sf 65576 bytes
+search reply: 244452 bytes, 29 feature ids
+ipa: Vela-unsigned.ipa 9506998 bytes (9.3M)
+app frameworks: MapLibre.framework 
+app binary: arm64, 14925272 bytes
+live activity extension: PlugIns/NavActivityExtension.appex present in IPA, 133168 bytes
+extension plist CFBundleIdentifier: app.vela.ios.navactivity
+extension plist NSExtensionPointIdentifier: com.apple.widgetkit-extension
+extension signing: none
+kotlin code in the device binary: yes
+plist CFBundleIdentifier: app.vela.ios
+plist CFBundleDisplayName: Vela
+plist CFBundleShortVersionString: 0.1.202610252126
+plist MinimumOSVersion: 17.0
+plist UIBackgroundModes: ["location","audio"]
+plist NSSupportsLiveActivities: true
