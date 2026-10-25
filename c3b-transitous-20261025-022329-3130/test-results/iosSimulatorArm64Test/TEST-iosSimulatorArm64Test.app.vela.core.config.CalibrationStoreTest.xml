@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="iosSimulatorArm64Test.app.vela.core.config.CalibrationStoreTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:27:51.907Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.011">
+  <properties/>
+  <testcase name="with no cache the compiled default is active[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.config.CalibrationStoreTest" time="0.01"/>
+  <testcase name="a signed newer bundle is adopted and cached[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.config.CalibrationStoreTest" time="0.001"/>
+  <testcase name="refresh runs once[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.config.CalibrationStoreTest" time="0.0"/>
+  <testcase name="a bad signature on GitHub falls back to the site copy[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.config.CalibrationStoreTest" time="0.0"/>
+  <testcase name="an endpoint off google is refused[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.config.CalibrationStoreTest" time="0.0"/>
+  <testcase name="a cached bundle is checked again at construction[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.config.CalibrationStoreTest" time="0.0"/>
+  <testcase name="transforms run through the engine with the 2 s limit and fall back on blank[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.config.CalibrationStoreTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

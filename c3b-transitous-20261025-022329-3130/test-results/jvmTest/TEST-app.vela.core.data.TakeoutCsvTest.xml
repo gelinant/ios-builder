@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TakeoutCsvTest[jvm]" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:28:38.898Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.005">
+  <properties/>
+  <testcase name="a header in the account's language is read by position around the URL column[jvm]" classname="app.vela.core.data.TakeoutCsvTest" time="0.002"/>
+  <testcase name="a shared place link with its own pin reads the pin[jvm]" classname="app.vela.core.data.TakeoutCsvTest" time="0.001"/>
+  <testcase name="a takeout list is recognized by its header and read with quotes and line breaks[jvm]" classname="app.vela.core.data.TakeoutCsvTest" time="0.0"/>
+  <testcase name="a listing row takes the hit by feature id else the one hit by name[jvm]" classname="app.vela.core.data.TakeoutCsvTest" time="0.0"/>
+  <testcase name="earlier places are keyed by the stable half of their feature id[jvm]" classname="app.vela.core.data.TakeoutCsvTest" time="0.0"/>
+  <testcase name="a dropped pin link is a point and a cid link is a key[jvm]" classname="app.vela.core.data.TakeoutCsvTest" time="0.001"/>
+  <testcase name="a running import keeps the earlier places it has not found again[jvm]" classname="app.vela.core.data.TakeoutCsvTest" time="0.0"/>
+  <testcase name="a listing link carries the feature id and no point[jvm]" classname="app.vela.core.data.TakeoutCsvTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

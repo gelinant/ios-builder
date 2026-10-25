@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RouteSourceTest[jvm]" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:28:38.276Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.017">
+  <properties/>
+  <testcase name="tripLogRoundTripsTheSource[jvm]" classname="app.vela.core.RouteSourceTest" time="0.013"/>
+  <testcase name="tripLogKeepsTheRoadATurnEnters[jvm]" classname="app.vela.core.RouteSourceTest" time="0.003"/>
+  <testcase name="oldTripFilesReadUnknown[jvm]" classname="app.vela.core.RouteSourceTest" time="0.0"/>
+  <testcase name="abbreviatedHasNoRealSteps[jvm]" classname="app.vela.core.RouteSourceTest" time="0.0"/>
+  <testcase name="provisionalIsNeverDrivable[jvm]" classname="app.vela.core.RouteSourceTest" time="0.0"/>
+  <testcase name="tripLogKeepsTrafficAndStepTimes[jvm]" classname="app.vela.core.RouteSourceTest" time="0.001"/>
+  <testcase name="anOlderTripFileStillNamesTheRoadFromItsText[jvm]" classname="app.vela.core.RouteSourceTest" time="0.0"/>
+  <testcase name="onDeviceRoutesAreOffline[jvm]" classname="app.vela.core.RouteSourceTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

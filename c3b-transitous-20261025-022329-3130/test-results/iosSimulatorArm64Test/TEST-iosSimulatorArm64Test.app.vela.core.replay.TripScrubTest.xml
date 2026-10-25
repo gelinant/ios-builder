@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="iosSimulatorArm64Test.app.vela.core.replay.TripScrubTest" tests="19" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:27:53.436Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.651">
+  <properties/>
+  <testcase name="a drive ended early keeps the part of the route it drove[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.replay.TripScrubTest" time="0.0"/>
+  <testcase name="the ends of the drive are gone entirely[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.replay.TripScrubTest" time="0.0"/>
+  <testcase name="the destination coordinate is stripped from the header[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.replay.TripScrubTest" time="0.644"/>
+  <testcase name="the label is stripped because trips are named after where they went[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.replay.TripScrubTest" time="0.001"/>
+  <testcase name="spoken lines naming the destination are dropped[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.replay.TripScrubTest" time="0.0"/>
+  <testcase name="maneuvers at either end are dropped the middle one is kept[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.replay.TripScrubTest" time="0.0"/>
+  <testcase name="the route line no longer starts at the door[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.replay.TripScrubTest" time="0.001"/>
+  <testcase name="timestamps are rebased so the file does not say when its author drives[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.replay.TripScrubTest" time="0.002"/>
+  <testcase name="the scrubbed trip still parses and still replays[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.replay.TripScrubTest" time="0.0"/>
+  <testcase name="the build that recorded the trip is preserved[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.replay.TripScrubTest" time="0.0"/>
+  <testcase name="a drive entirely inside the radius is refused not silently emptied[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.replay.TripScrubTest" time="0.0"/>
+  <testcase name="a trip with no fixes is refused[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.replay.TripScrubTest" time="0.0"/>
+  <testcase name="notes from the trimmed ends are kept with their own times[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.replay.TripScrubTest" time="0.0"/>
+  <testcase name="a spoken line from a trimmed end still goes[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.replay.TripScrubTest" time="0.0"/>
+  <testcase name="the totals line says how many turns are named and how the steps were made[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.replay.TripScrubTest" time="0.0"/>
+  <testcase name="an unknown line kind is dropped rather than published[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.replay.TripScrubTest" time="0.0"/>
+  <testcase name="an extra private place is trimmed too[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.replay.TripScrubTest" time="0.0"/>
+  <testcase name="a spoken line inside a mid-trip private zone goes with its fixes[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.replay.TripScrubTest" time="0.0"/>
+  <testcase name="a route block trimmed to nothing takes its totals and maneuvers with it[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.replay.TripScrubTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="NavEngineChainTest[jvm]" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:28:40.883Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.023">
+  <properties/>
+  <testcase name="a turn a block after another rides on its lines[jvm]" classname="app.vela.core.nav.NavEngineChainTest" time="0.007"/>
+  <testcase name="one short line a turn carries the next turn too[jvm]" classname="app.vela.core.nav.NavEngineChainTest" time="0.003"/>
+  <testcase name="a pair too tight for the whole line drops the first street then the second[jvm]" classname="app.vela.core.nav.NavEngineChainTest" time="0.004"/>
+  <testcase name="turns far enough apart are said one at a time as before[jvm]" classname="app.vela.core.nav.NavEngineChainTest" time="0.004"/>
+  <testcase name="the pair is found by distance along the road past a silent rename never to the arrival[jvm]" classname="app.vela.core.nav.NavEngineChainTest" time="0.0"/>
+  <testcase name="a language with no line for it says the turns apart[jvm]" classname="app.vela.core.nav.NavEngineChainTest" time="0.002"/>
+  <testcase name="the second turn is not announced again on its approach only at the turn[jvm]" classname="app.vela.core.nav.NavEngineChainTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RouteHealTest[jvm]" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:28:40.977Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.002">
+  <properties/>
+  <testcase name="a candidate also short of names does not[jvm]" classname="app.vela.core.nav.RouteHealTest" time="0.001"/>
+  <testcase name="a healthy route is not degraded and takes nothing from a candidate[jvm]" classname="app.vela.core.nav.RouteHealTest" time="0.0"/>
+  <testcase name="a re-check route through a block Google avoided reads as the same course and the names heal still refuses it[jvm]" classname="app.vela.core.nav.RouteHealTest" time="0.0"/>
+  <testcase name="steps and traffic heal as before and say which[jvm]" classname="app.vela.core.nav.RouteHealTest" time="0.0"/>
+  <testcase name="the same course come back named takes its place[jvm]" classname="app.vela.core.nav.RouteHealTest" time="0.0"/>
+  <testcase name="traffic is never bought with names[jvm]" classname="app.vela.core.nav.RouteHealTest" time="0.0"/>
+  <testcase name="abbreviated steps still heal when the full ones are short of a name[jvm]" classname="app.vela.core.nav.RouteHealTest" time="0.001"/>
+  <testcase name="names are never bought with traffic or steps[jvm]" classname="app.vela.core.nav.RouteHealTest" time="0.0"/>
+  <testcase name="a route short of names is re-checked on the fast interval[jvm]" classname="app.vela.core.nav.RouteHealTest" time="0.0"/>
+  <testcase name="names are taken only from a route that is Google's line[jvm]" classname="app.vela.core.nav.RouteHealTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

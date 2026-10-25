@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="DetourEstimateTest[jvm]" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:28:40.879Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.001">
+  <properties/>
+  <testcase name="a real detour rounds to whole minutes[jvm]" classname="app.vela.core.nav.DetourEstimateTest" time="0.001"/>
+  <testcase name="a place already on the way never reads as a saving[jvm]" classname="app.vela.core.nav.DetourEstimateTest" time="0.0"/>
+  <testcase name="an implausible figure is a bad fetch not a detour[jvm]" classname="app.vela.core.nav.DetourEstimateTest" time="0.0"/>
+  <testcase name="a missing figure on either side shows nothing[jvm]" classname="app.vela.core.nav.DetourEstimateTest" time="0.0"/>
+  <testcase name="a detour under a minute still reads as one never zero[jvm]" classname="app.vela.core.nav.DetourEstimateTest" time="0.0"/>
+  <testcase name="too small to mean anything shows nothing[jvm]" classname="app.vela.core.nav.DetourEstimateTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

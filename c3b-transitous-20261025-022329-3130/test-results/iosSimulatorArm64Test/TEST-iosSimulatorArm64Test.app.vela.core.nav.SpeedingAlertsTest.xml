@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="iosSimulatorArm64Test.app.vela.core.nav.SpeedingAlertsTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:27:53.424Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.001">
+  <properties/>
+  <testcase name="a blip over the limit stays silent[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.nav.SpeedingAlertsTest" time="0.0"/>
+  <testcase name="sustained speeding speaks once after the hold and does not nag[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.nav.SpeedingAlertsTest" time="0.0"/>
+  <testcase name="slowing under the limit for a while re-arms the alert[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.nav.SpeedingAlertsTest" time="0.0"/>
+  <testcase name="a short dip under the limit does not re-arm[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.nav.SpeedingAlertsTest" time="0.0"/>
+  <testcase name="the minimum gap holds even when re-armed[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.nav.SpeedingAlertsTest" time="0.0"/>
+  <testcase name="within tolerance is not speeding[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.nav.SpeedingAlertsTest" time="0.001"/>
+  <testcase name="no limit or no speed means nothing to say[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.nav.SpeedingAlertsTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

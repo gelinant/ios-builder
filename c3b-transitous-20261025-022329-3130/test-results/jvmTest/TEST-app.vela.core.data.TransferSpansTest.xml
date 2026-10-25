@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TransferSpansTest[jvm]" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:28:38.904Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.007">
+  <properties/>
+  <testcase name="same road gets the span at the same distances[jvm]" classname="app.vela.core.data.TransferSpansTest" time="0.002"/>
+  <testcase name="only the shared stretch is colored when the open route joins late[jvm]" classname="app.vela.core.data.TransferSpansTest" time="0.004"/>
+  <testcase name="no spans in means no spans out[jvm]" classname="app.vela.core.data.TransferSpansTest" time="0.0"/>
+  <testcase name="a route on a parallel road 200 m away gets nothing[jvm]" classname="app.vela.core.data.TransferSpansTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

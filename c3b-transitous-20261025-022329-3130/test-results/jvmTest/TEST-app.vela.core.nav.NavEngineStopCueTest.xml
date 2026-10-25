@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="NavEngineStopCueTest[jvm]" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:28:40.926Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.015">
+  <properties/>
+  <testcase name="highway exits only still says the stop is coming as it says the destination[jvm]" classname="app.vela.core.nav.NavEngineStopCueTest" time="0.003"/>
+  <testcase name="a stop with no side is ahead[jvm]" classname="app.vela.core.nav.NavEngineStopCueTest" time="0.001"/>
+  <testcase name="with no stop the turn is said as before[jvm]" classname="app.vela.core.nav.NavEngineStopCueTest" time="0.001"/>
+  <testcase name="brief says the turn and the stop once[jvm]" classname="app.vela.core.nav.NavEngineStopCueTest" time="0.001"/>
+  <testcase name="a turn into the stop's parking lot is said as one[jvm]" classname="app.vela.core.nav.NavEngineStopCueTest" time="0.002"/>
+  <testcase name="the turn before a stop says the stop after it on its first line and at the turn[jvm]" classname="app.vela.core.nav.NavEngineStopCueTest" time="0.001"/>
+  <testcase name="a stop already passed is not announced[jvm]" classname="app.vela.core.nav.NavEngineStopCueTest" time="0.0"/>
+  <testcase name="a stop on a long leg gets its own cue at the near distance[jvm]" classname="app.vela.core.nav.NavEngineStopCueTest" time="0.001"/>
+  <testcase name="the stop is said in the app's language[jvm]" classname="app.vela.core.nav.NavEngineStopCueTest" time="0.001"/>
+  <testcase name="the lot wording needs the map to say it is a lot and a road with no name[jvm]" classname="app.vela.core.nav.NavEngineStopCueTest" time="0.003"/>
+  <testcase name="the side comes from where the pin sits against the road[jvm]" classname="app.vela.core.nav.NavEngineStopCueTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

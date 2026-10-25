@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="StopCueStringsTest[jvm]" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:28:40.843Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.019">
+  <properties/>
+  <testcase name="english reads as the feedback asked[jvm]" classname="app.vela.core.i18n.StopCueStringsTest" time="0.0"/>
+  <testcase name="every language names the stop keeps the instruction and tells the sides apart[jvm]" classname="app.vela.core.i18n.StopCueStringsTest" time="0.018"/>
+  <testcase name="every language words a turn into the destination's lot a left apart from a right[jvm]" classname="app.vela.core.i18n.StopCueStringsTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

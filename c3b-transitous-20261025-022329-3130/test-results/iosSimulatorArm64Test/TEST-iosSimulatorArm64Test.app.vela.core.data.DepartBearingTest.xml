@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="iosSimulatorArm64Test.app.vela.core.data.DepartBearingTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:27:51.933Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.003">
+  <properties/>
+  <testcase name="a two point route constrains only the departure[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.DepartBearingTest" time="0.001"/>
+  <testcase name="every extra waypoint gets its own empty entry[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.DepartBearingTest" time="0.0"/>
+  <testcase name="bearings are normalized into 0-359[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.DepartBearingTest" time="0.0"/>
+  <testcase name="no heading sends nothing at all[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.DepartBearingTest" time="0.0"/>
+  <testcase name="a degenerate point count sends nothing[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.DepartBearingTest" time="0.0"/>
+  <testcase name="the tolerance excludes a u-turn but allows real heading noise[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.DepartBearingTest" time="0.0"/>
+  <testcase name="perWaypointBearingsKeepOneEntryPerWaypoint[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.DepartBearingTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="NavAuditRegressionTest[jvm]" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:28:38.134Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.017">
+  <properties/>
+  <testcase name="a short fresh step speaks ONE prompt with the true distance[jvm]" classname="app.vela.core.NavAuditRegressionTest" time="0.013"/>
+  <testcase name="prompt distances scale with speed[jvm]" classname="app.vela.core.NavAuditRegressionTest" time="0.001"/>
+  <testcase name="maneuvers passed during a GPS gap advance silently[jvm]" classname="app.vela.core.NavAuditRegressionTest" time="0.0"/>
+  <testcase name="parking short of the snapped destination arrives by proximity[jvm]" classname="app.vela.core.NavAuditRegressionTest" time="0.001"/>
+  <testcase name="arrival gets a single approach cue[jvm]" classname="app.vela.core.NavAuditRegressionTest" time="0.0"/>
+  <testcase name="stationary off-route drift never reroutes moving does[jvm]" classname="app.vela.core.NavAuditRegressionTest" time="0.001"/>
+  <testcase name="remaining time comes from the remaining steps not the whole-route average[jvm]" classname="app.vela.core.NavAuditRegressionTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

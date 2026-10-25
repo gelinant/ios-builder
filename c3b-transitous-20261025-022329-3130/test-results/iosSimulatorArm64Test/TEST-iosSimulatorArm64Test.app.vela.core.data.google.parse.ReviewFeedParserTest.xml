@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="iosSimulatorArm64Test.app.vela.core.data.google.parse.ReviewFeedParserTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:27:52.148Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.0">
+  <properties/>
+  <testcase name="a full page parses author and stars and time and text and photos[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.google.parse.ReviewFeedParserTest" time="0.0"/>
+  <testcase name="a continuing page carries its next token[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.google.parse.ReviewFeedParserTest" time="0.0"/>
+  <testcase name="the end of the list is flagged[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.google.parse.ReviewFeedParserTest" time="0.0"/>
+  <testcase name="the header-less empty answer is an empty page and not a crash[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.google.parse.ReviewFeedParserTest" time="0.0"/>
+  <testcase name="garbage is null[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.google.parse.ReviewFeedParserTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

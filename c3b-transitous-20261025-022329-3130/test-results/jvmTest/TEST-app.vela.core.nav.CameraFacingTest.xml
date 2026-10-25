@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CameraFacingTest[jvm]" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:28:40.878Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.001">
+  <properties/>
+  <testcase name="degenerate routes give nothing[jvm]" classname="app.vela.core.nav.CameraFacingTest" time="0.0"/>
+  <testcase name="beside a corner the nearest segment decides[jvm]" classname="app.vela.core.nav.CameraFacingTest" time="0.0"/>
+  <testcase name="a camera with no facing counts[jvm]" classname="app.vela.core.nav.CameraFacingTest" time="0.0"/>
+  <testcase name="parse and axis math[jvm]" classname="app.vela.core.nav.CameraFacingTest" time="0.001"/>
+  <testcase name="facing along the road counts[jvm]" classname="app.vela.core.nav.CameraFacingTest" time="0.0"/>
+  <testcase name="nearest segment reports distance and bearing[jvm]" classname="app.vela.core.nav.CameraFacingTest" time="0.0"/>
+  <testcase name="facing across the road is excluded[jvm]" classname="app.vela.core.nav.CameraFacingTest" time="0.0"/>
+  <testcase name="facing against traffic counts too[jvm]" classname="app.vela.core.nav.CameraFacingTest" time="0.0"/>
+  <testcase name="a camera too far from the road never counts[jvm]" classname="app.vela.core.nav.CameraFacingTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

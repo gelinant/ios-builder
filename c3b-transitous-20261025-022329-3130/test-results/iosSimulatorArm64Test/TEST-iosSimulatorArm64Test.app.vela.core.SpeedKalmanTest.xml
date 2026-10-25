@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="iosSimulatorArm64Test.app.vela.core.SpeedKalmanTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:27:51.889Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.004">
+  <properties/>
+  <testcase name="firstFixSeedsTheSpeed[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.SpeedKalmanTest" time="0.0"/>
+  <testcase name="predictIsInertBeforeTheFirstFix[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.SpeedKalmanTest" time="0.0"/>
+  <testcase name="brakingCollapsesThePredictionBetweenFixes[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.SpeedKalmanTest" time="0.0"/>
+  <testcase name="hardStopClampsAtZeroAndStaysStopped[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.SpeedKalmanTest" time="0.0"/>
+  <testcase name="noAccelerometerHoldsTheOldConstantSpeedBehavior[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.SpeedKalmanTest" time="0.0"/>
+  <testcase name="gpsUpdatesConvergeOntoTheMeasurement[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.SpeedKalmanTest" time="0.0"/>
+  <testcase name="uncertaintyGrownByPredictionMakesTheNextFixPullHarder[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.SpeedKalmanTest" time="0.001"/>
+  <testcase name="accelSpikesAreClamped[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.SpeedKalmanTest" time="0.0"/>
+  <testcase name="negativeGpsSpeedIsTreatedAsZero[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.SpeedKalmanTest" time="0.0"/>
+  <testcase name="decaySettlesTheSpeedDuringAMeasurementOutage[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.SpeedKalmanTest" time="0.0"/>
+  <testcase name="resetForgetsEverything[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.SpeedKalmanTest" time="0.0"/>
+  <testcase name="forwardProjectionFollowsTheCompassBearing[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.SpeedKalmanTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

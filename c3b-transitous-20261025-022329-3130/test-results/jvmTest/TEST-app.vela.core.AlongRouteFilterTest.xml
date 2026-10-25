@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AlongRouteFilterTest[jvm]" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:28:37.854Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.044">
+  <properties/>
+  <testcase name="measurement variance handles a missing or absurd accuracy[jvm]" classname="app.vela.core.AlongRouteFilterTest" time="0.023"/>
+  <testcase name="reseed snaps because a discontinuity is not noise[jvm]" classname="app.vela.core.AlongRouteFilterTest" time="0.001"/>
+  <testcase name="a wide accuracy moves the estimate less than a tight one[jvm]" classname="app.vela.core.AlongRouteFilterTest" time="0.008"/>
+  <testcase name="fix noise is averaged down not driven into the puck[jvm]" classname="app.vela.core.AlongRouteFilterTest" time="0.003"/>
+  <testcase name="a steady drive tracks the truth closely[jvm]" classname="app.vela.core.AlongRouteFilterTest" time="0.001"/>
+  <testcase name="a noisier fix stream is filtered harder[jvm]" classname="app.vela.core.AlongRouteFilterTest" time="0.003"/>
+  <testcase name="predict is a no-op before the first seed[jvm]" classname="app.vela.core.AlongRouteFilterTest" time="0.001"/>
+  <testcase name="the estimate never goes deaf to a real correction[jvm]" classname="app.vela.core.AlongRouteFilterTest" time="0.0"/>
+  <testcase name="dead reckoning carries the estimate between fixes[jvm]" classname="app.vela.core.AlongRouteFilterTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

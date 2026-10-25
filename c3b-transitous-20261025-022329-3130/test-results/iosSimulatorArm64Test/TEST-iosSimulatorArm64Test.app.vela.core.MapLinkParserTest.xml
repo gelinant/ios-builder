@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="iosSimulatorArm64Test.app.vela.core.MapLinkParserTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:27:51.698Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.003">
+  <properties/>
+  <testcase name="geoPoint[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.MapLinkParserTest" time="0.0"/>
+  <testcase name="geoZoomIsHonored[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.MapLinkParserTest" time="0.0"/>
+  <testcase name="geoZeroWithQueryIsSearch[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.MapLinkParserTest" time="0.0"/>
+  <testcase name="geoLabeledPoint[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.MapLinkParserTest" time="0.0"/>
+  <testcase name="geoNamedNearPoint[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.MapLinkParserTest" time="0.0"/>
+  <testcase name="geoSelfShareRoundTrips[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.MapLinkParserTest" time="0.0"/>
+  <testcase name="mapsPlaceUrl[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.MapLinkParserTest" time="0.0"/>
+  <testcase name="mapsSearchUrl[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.MapLinkParserTest" time="0.0"/>
+  <testcase name="mapsQueryParam[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.MapLinkParserTest" time="0.0"/>
+  <testcase name="mapsCoordQueryIsPoint[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.MapLinkParserTest" time="0.0"/>
+  <testcase name="nonMapLinkIsNull[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.MapLinkParserTest" time="0.0"/>
+  <testcase name="hasTargetGate[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.MapLinkParserTest" time="0.0"/>
+  <testcase name="bareTypedCoordinates[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.MapLinkParserTest" time="0.0"/>
+  <testcase name="a place link with only a feature id keeps the id and says where its cell is[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.MapLinkParserTest" time="0.0"/>
+  <testcase name="a Street View link from the web map opens the panorama facing its way[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.MapLinkParserTest" time="0.0"/>
+  <testcase name="the documented pano action and the old layer=c link open it too[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.MapLinkParserTest" time="0.0"/>
+  <testcase name="a directions link is never taken for Street View[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.MapLinkParserTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

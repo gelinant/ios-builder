@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="iosSimulatorArm64Test.app.vela.core.NavRoadNameTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:27:51.707Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.032">
+  <properties/>
+  <testcase name="parserKeepsRoadNamesInTheInstruction[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.NavRoadNameTest" time="0.0"/>
+  <testcase name="mockDriveAnnouncesRoadNames[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.NavRoadNameTest" time="0.032"/>
+  <system-out><![CDATA[MOCK DRIVE — spoken announcements:
+  In 200 meters, Turn left onto B St
+  In 150 meters, Turn left onto B St
+  Turn left onto B St
+  In 220 meters, Turn right onto 5th St
+  In 150 meters, Turn right onto 5th St
+  Turn right onto 5th St
+  In 150 meters, Turn left
+  Turn left
+  In 70 meters, Your destination will be ahead
+  You have arrived
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

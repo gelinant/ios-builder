@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="NavEngineOutAndBackTest[jvm]" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:28:40.911Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.001">
+  <properties/>
+  <testcase name="progressGoesRoundTheRing[jvm]" classname="app.vela.core.nav.NavEngineOutAndBackTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="iosSimulatorArm64Test.app.vela.core.location.DemoTraceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:27:52.203Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.001">
+  <properties/>
+  <testcase name="a town drive keeps to the steps' pace slows for each turn and starts and ends at rest[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.location.DemoTraceTest" time="0.0"/>
+  <testcase name="a fast straight road is driven fast[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.location.DemoTraceTest" time="0.0"/>
+  <testcase name="a route with no times runs at the default pace[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.location.DemoTraceTest" time="0.0"/>
+  <testcase name="a drive handed a new route mid-way carries on at its speed[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.location.DemoTraceTest" time="0.001"/>
+  <testcase name="bends are slower the sharper they are[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.location.DemoTraceTest" time="0.0"/>
+  <testcase name="the realistic drive leaves each spoken line time to finish on town blocks[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.location.DemoTraceTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

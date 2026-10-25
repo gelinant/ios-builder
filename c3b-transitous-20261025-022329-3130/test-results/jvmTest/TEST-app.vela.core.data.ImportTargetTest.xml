@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ImportTargetTest[jvm]" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:28:38.634Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.005">
+  <properties/>
+  <testcase name="a list saved before imports carried a source is found by its title[jvm]" classname="app.vela.core.data.ImportTargetTest" time="0.003"/>
+  <testcase name="an old import that was renamed is left alone and the new list gets a free id[jvm]" classname="app.vela.core.data.ImportTargetTest" time="0.001"/>
+  <testcase name="a list of the user's own with the same name is never the target[jvm]" classname="app.vela.core.data.ImportTargetTest" time="0.0"/>
+  <testcase name="the same import saved again finds its list whatever it is called now[jvm]" classname="app.vela.core.data.ImportTargetTest" time="0.0"/>
+  <testcase name="another map with the same title is a new list[jvm]" classname="app.vela.core.data.ImportTargetTest" time="0.001"/>
+  <testcase name="a first import gets the id its source gives[jvm]" classname="app.vela.core.data.ImportTargetTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

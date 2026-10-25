@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="iosSimulatorArm64Test.app.vela.core.data.OsmMaxspeedTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:27:51.953Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.032">
+  <properties/>
+  <testcase name="bareNumberIsKmh[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.OsmMaxspeedTest" time="0.0"/>
+  <testcase name="mphConverts[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.OsmMaxspeedTest" time="0.0"/>
+  <testcase name="explicitKmhUnit[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.OsmMaxspeedTest" time="0.0"/>
+  <testcase name="unknownFormsAreNull[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.OsmMaxspeedTest" time="0.001"/>
+  <testcase name="walkIsSlow[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.OsmMaxspeedTest" time="0.0"/>
+  <testcase name="listTakesFirst[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.OsmMaxspeedTest" time="0.0"/>
+  <testcase name="garbageIsRangeChecked[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.OsmMaxspeedTest" time="0.0"/>
+  <testcase name="fromTagsPrefersPlainThenDirectional[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.OsmMaxspeedTest" time="0.0"/>
+  <testcase name="eveningLimitPastMidnight[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.OsmMaxspeedTest" time="0.001"/>
+  <testcase name="fromTagsAppliesConditional[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.OsmMaxspeedTest" time="0.0"/>
+  <testcase name="weatherAndCommentsAreNeverInForce[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.OsmMaxspeedTest" time="0.0"/>
+  <testcase name="mixedRulesKeepTheTimeOne[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.OsmMaxspeedTest" time="0.0"/>
+  <testcase name="lastMatchingRuleWins[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.OsmMaxspeedTest" time="0.0"/>
+  <testcase name="weekdays[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.OsmMaxspeedTest" time="0.0"/>
+  <testcase name="nightRangeKeepsItsStartDay[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.OsmMaxspeedTest" time="0.001"/>
+  <testcase name="mphInConditional[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.OsmMaxspeedTest" time="0.001"/>
+  <testcase name="blankOrBrokenIsNull[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.OsmMaxspeedTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MapLinkParserTest[jvm]" tests="17" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:28:38.125Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.007">
+  <properties/>
+  <testcase name="geoSelfShareRoundTrips[jvm]" classname="app.vela.core.MapLinkParserTest" time="0.0"/>
+  <testcase name="geoZeroWithQueryIsSearch[jvm]" classname="app.vela.core.MapLinkParserTest" time="0.0"/>
+  <testcase name="mapsPlaceUrl[jvm]" classname="app.vela.core.MapLinkParserTest" time="0.0"/>
+  <testcase name="the documented pano action and the old layer=c link open it too[jvm]" classname="app.vela.core.MapLinkParserTest" time="0.0"/>
+  <testcase name="geoLabeledPoint[jvm]" classname="app.vela.core.MapLinkParserTest" time="0.001"/>
+  <testcase name="a place link with only a feature id keeps the id and says where its cell is[jvm]" classname="app.vela.core.MapLinkParserTest" time="0.002"/>
+  <testcase name="mapsCoordQueryIsPoint[jvm]" classname="app.vela.core.MapLinkParserTest" time="0.001"/>
+  <testcase name="geoNamedNearPoint[jvm]" classname="app.vela.core.MapLinkParserTest" time="0.0"/>
+  <testcase name="bareTypedCoordinates[jvm]" classname="app.vela.core.MapLinkParserTest" time="0.0"/>
+  <testcase name="mapsQueryParam[jvm]" classname="app.vela.core.MapLinkParserTest" time="0.0"/>
+  <testcase name="mapsSearchUrl[jvm]" classname="app.vela.core.MapLinkParserTest" time="0.0"/>
+  <testcase name="hasTargetGate[jvm]" classname="app.vela.core.MapLinkParserTest" time="0.0"/>
+  <testcase name="a directions link is never taken for Street View[jvm]" classname="app.vela.core.MapLinkParserTest" time="0.0"/>
+  <testcase name="nonMapLinkIsNull[jvm]" classname="app.vela.core.MapLinkParserTest" time="0.0"/>
+  <testcase name="geoPoint[jvm]" classname="app.vela.core.MapLinkParserTest" time="0.0"/>
+  <testcase name="a Street View link from the web map opens the panorama facing its way[jvm]" classname="app.vela.core.MapLinkParserTest" time="0.0"/>
+  <testcase name="geoZoomIsHonored[jvm]" classname="app.vela.core.MapLinkParserTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

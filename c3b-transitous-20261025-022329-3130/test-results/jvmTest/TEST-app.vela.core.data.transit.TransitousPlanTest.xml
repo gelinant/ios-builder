@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TransitousPlanTest[jvm]" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:28:40.821Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.008">
+  <properties/>
+  <testcase name="a path that is only the stops again is not a shape[jvm]" classname="app.vela.core.data.transit.TransitousPlanTest" time="0.003"/>
+  <testcase name="departAtIsNotArriveBy[jvm]" classname="app.vela.core.data.transit.TransitousPlanTest" time="0.001"/>
+  <testcase name="requestsAskForTheAppLanguage[jvm]" classname="app.vela.core.data.transit.TransitousPlanTest" time="0.0"/>
+  <testcase name="itineraries carry their legs and line and stops and times[jvm]" classname="app.vela.core.data.transit.TransitousPlanTest" time="0.002"/>
+  <testcase name="a reply with no itineraries is empty and never a crash[jvm]" classname="app.vela.core.data.transit.TransitousPlanTest" time="0.0"/>
+  <testcase name="a ride that starts somewhere else is not this ride[jvm]" classname="app.vela.core.data.transit.TransitousPlanTest" time="0.001"/>
+  <testcase name="a ride between the two stops gives its path[jvm]" classname="app.vela.core.data.transit.TransitousPlanTest" time="0.001"/>
+  <testcase name="duration text folds like the chips expect[jvm]" classname="app.vela.core.data.transit.TransitousPlanTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TripRenameTest[jvm]" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:28:41.149Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.001">
+  <properties/>
+  <testcase name="a newline in the name cannot split the header[jvm]" classname="app.vela.core.replay.TripRenameTest" time="0.0"/>
+  <testcase name="a comma in the name cannot shift the header fields[jvm]" classname="app.vela.core.replay.TripRenameTest" time="0.0"/>
+  <testcase name="a blank name falls back rather than leaving the trip nameless[jvm]" classname="app.vela.core.replay.TripRenameTest" time="0.0"/>
+  <testcase name="renaming changes only the label[jvm]" classname="app.vela.core.replay.TripRenameTest" time="0.0"/>
+  <testcase name="a file with no trip header is refused[jvm]" classname="app.vela.core.replay.TripRenameTest" time="0.0"/>
+  <testcase name="a renamed trip still parses[jvm]" classname="app.vela.core.replay.TripRenameTest" time="0.001"/>
+  <testcase name="an over-long name is trimmed to something a header can hold[jvm]" classname="app.vela.core.replay.TripRenameTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

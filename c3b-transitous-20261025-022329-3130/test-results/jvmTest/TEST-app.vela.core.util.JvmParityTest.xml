@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="JvmParityTest[jvm]" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:28:41.280Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="1.221">
+  <properties/>
+  <testcase name="decodeMatchesUrlDecoder[jvm]" classname="app.vela.core.util.JvmParityTest" time="0.085"/>
+  <testcase name="mathRoundMatchesTheJdk[jvm]" classname="app.vela.core.util.JvmParityTest" time="0.0"/>
+  <testcase name="encodeMatchesUrlEncoder[jvm]" classname="app.vela.core.util.JvmParityTest" time="0.051"/>
+  <testcase name="fixedMatchesStringFormat[jvm]" classname="app.vela.core.util.JvmParityTest" time="1.085"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

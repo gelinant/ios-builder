@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="iosSimulatorArm64Test.app.vela.core.data.ValhallaRouterTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:27:52.065Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.018">
+  <properties/>
+  <testcase name="parses one continuous route from two legs[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.ValhallaRouterTest" time="0.0"/>
+  <testcase name="step lengths tile the whole trip[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.ValhallaRouterTest" time="0.015"/>
+  <testcase name="roundabouts keep their exit number and phrase[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.ValhallaRouterTest" time="0.0"/>
+  <testcase name="turns are phrased with the street name[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.ValhallaRouterTest" time="0.001"/>
+  <testcase name="a bend that keeps the road name is a silent rename[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.ValhallaRouterTest" time="0.0"/>
+  <testcase name="a turn that keeps the road drops the name only when the driver was told it[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.ValhallaRouterTest" time="0.0"/>
+  <testcase name="a merge that says only its sign has not told the road so the turn after it names it[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.ValhallaRouterTest" time="0.0"/>
+  <testcase name="a slight bend that keeps the road stays a silent rename in a piece cut from mid-trip[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.ValhallaRouterTest" time="0.0"/>
+  <testcase name="garbage is an empty list[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.ValhallaRouterTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

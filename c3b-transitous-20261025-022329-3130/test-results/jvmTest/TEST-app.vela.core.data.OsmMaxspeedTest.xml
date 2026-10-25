@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="OsmMaxspeedTest[jvm]" tests="17" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:28:38.797Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.008">
+  <properties/>
+  <testcase name="explicitKmhUnit[jvm]" classname="app.vela.core.data.OsmMaxspeedTest" time="0.001"/>
+  <testcase name="fromTagsAppliesConditional[jvm]" classname="app.vela.core.data.OsmMaxspeedTest" time="0.005"/>
+  <testcase name="bareNumberIsKmh[jvm]" classname="app.vela.core.data.OsmMaxspeedTest" time="0.0"/>
+  <testcase name="weekdays[jvm]" classname="app.vela.core.data.OsmMaxspeedTest" time="0.001"/>
+  <testcase name="lastMatchingRuleWins[jvm]" classname="app.vela.core.data.OsmMaxspeedTest" time="0.0"/>
+  <testcase name="unknownFormsAreNull[jvm]" classname="app.vela.core.data.OsmMaxspeedTest" time="0.0"/>
+  <testcase name="blankOrBrokenIsNull[jvm]" classname="app.vela.core.data.OsmMaxspeedTest" time="0.0"/>
+  <testcase name="garbageIsRangeChecked[jvm]" classname="app.vela.core.data.OsmMaxspeedTest" time="0.0"/>
+  <testcase name="fromTagsPrefersPlainThenDirectional[jvm]" classname="app.vela.core.data.OsmMaxspeedTest" time="0.0"/>
+  <testcase name="mphInConditional[jvm]" classname="app.vela.core.data.OsmMaxspeedTest" time="0.0"/>
+  <testcase name="nightRangeKeepsItsStartDay[jvm]" classname="app.vela.core.data.OsmMaxspeedTest" time="0.0"/>
+  <testcase name="walkIsSlow[jvm]" classname="app.vela.core.data.OsmMaxspeedTest" time="0.0"/>
+  <testcase name="mixedRulesKeepTheTimeOne[jvm]" classname="app.vela.core.data.OsmMaxspeedTest" time="0.0"/>
+  <testcase name="mphConverts[jvm]" classname="app.vela.core.data.OsmMaxspeedTest" time="0.0"/>
+  <testcase name="eveningLimitPastMidnight[jvm]" classname="app.vela.core.data.OsmMaxspeedTest" time="0.0"/>
+  <testcase name="listTakesFirst[jvm]" classname="app.vela.core.data.OsmMaxspeedTest" time="0.0"/>
+  <testcase name="weatherAndCommentsAreNeverInForce[jvm]" classname="app.vela.core.data.OsmMaxspeedTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

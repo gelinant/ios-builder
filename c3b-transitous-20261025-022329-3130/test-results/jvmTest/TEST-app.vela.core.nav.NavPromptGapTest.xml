@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="NavPromptGapTest[jvm]" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:28:40.948Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.002">
+  <properties/>
+  <testcase name="a band reached seconds after the first prompt is not said again[jvm]" classname="app.vela.core.nav.NavPromptGapTest" time="0.001"/>
+  <testcase name="a far first prompt leaves the near band to be said[jvm]" classname="app.vela.core.nav.NavPromptGapTest" time="0.0"/>
+  <testcase name="a first line the turn would cut keeps its lanes and drops the sign tail[jvm]" classname="app.vela.core.nav.NavPromptGapTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

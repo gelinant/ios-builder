@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="DirectionsPbWaypointsTest[jvm]" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:28:38.073Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.01">
+  <properties/>
+  <testcase name="build fills every group and keeps the stop in the middle[jvm]" classname="app.vela.core.DirectionsPbWaypointsTest" time="0.002"/>
+  <testcase name="a template without the placeholder groups is left alone and reports so[jvm]" classname="app.vela.core.DirectionsPbWaypointsTest" time="0.004"/>
+  <testcase name="no stops leaves the template alone[jvm]" classname="app.vela.core.DirectionsPbWaypointsTest" time="0.001"/>
+  <testcase name="a stop is one more group between origin and destination in order[jvm]" classname="app.vela.core.DirectionsPbWaypointsTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

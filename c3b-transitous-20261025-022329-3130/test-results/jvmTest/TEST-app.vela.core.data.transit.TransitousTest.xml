@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TransitousTest[jvm]" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:28:40.832Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.01">
+  <properties/>
+  <testcase name="canceled runs are dropped and an empty board is null[jvm]" classname="app.vela.core.data.transit.TransitousTest" time="0.001"/>
+  <testcase name="a looping trip boards at the lap matching the tapped departure and shows one lap[jvm]" classname="app.vela.core.data.transit.TransitousTest" time="0.005"/>
+  <testcase name="iso parse and clock text[jvm]" classname="app.vela.core.data.transit.TransitousTest" time="0.0"/>
+  <testcase name="directional pairs merge into one stop with siblings[jvm]" classname="app.vela.core.data.transit.TransitousTest" time="0.002"/>
+  <testcase name="trip step trims to the tapped stop and maps realtime plus canceled[jvm]" classname="app.vela.core.data.transit.TransitousTest" time="0.0"/>
+  <testcase name="one corner from several feeds is one stop[jvm]" classname="app.vela.core.data.transit.TransitousTest" time="0.001"/>
+  <testcase name="board collapses the same run fed in twice by merged siblings[jvm]" classname="app.vela.core.data.transit.TransitousTest" time="0.001"/>
+  <testcase name="groups by route and headsign and sorts lines soonest first[jvm]" classname="app.vela.core.data.transit.TransitousTest" time="0.0"/>
+  <testcase name="board departures carry the trip id and drop canceled runs[jvm]" classname="app.vela.core.data.transit.TransitousTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

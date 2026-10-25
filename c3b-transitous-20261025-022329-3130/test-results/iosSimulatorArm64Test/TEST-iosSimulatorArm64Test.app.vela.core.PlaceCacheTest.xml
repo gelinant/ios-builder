@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="iosSimulatorArm64Test.app.vela.core.PlaceCacheTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:27:51.778Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.029">
+  <properties/>
+  <testcase name="an offline result finds the copy saved online by name and position[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.PlaceCacheTest" time="0.001"/>
+  <testcase name="the same name across town is another place[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.PlaceCacheTest" time="0.0"/>
+  <testcase name="a copy past its age is a miss and trim drops it[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.PlaceCacheTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

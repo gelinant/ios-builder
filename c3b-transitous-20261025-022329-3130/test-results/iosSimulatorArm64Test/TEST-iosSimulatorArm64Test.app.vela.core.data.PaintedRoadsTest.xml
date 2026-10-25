@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="iosSimulatorArm64Test.app.vela.core.data.PaintedRoadsTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:27:51.989Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.026">
+  <properties/>
+  <testcase name="two-way two lanes is one center line[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.PaintedRoadsTest" time="0.0"/>
+  <testcase name="two-way four lanes has a center and one divider each side[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.PaintedRoadsTest" time="0.0"/>
+  <testcase name="uneven split moves the center line[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.PaintedRoadsTest" time="0.0"/>
+  <testcase name="one-way three lanes has two dividers and no center[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.PaintedRoadsTest" time="0.0"/>
+  <testcase name="an untagged residential street gets no lines[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.PaintedRoadsTest" time="0.0"/>
+  <testcase name="an untagged two-way street with bike lanes gets a center line[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.PaintedRoadsTest" time="0.0"/>
+  <testcase name="bike lane on a one-way is on the right[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.PaintedRoadsTest" time="0.0"/>
+  <testcase name="unmarked crossings are not painted[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.PaintedRoadsTest" time="0.0"/>
+  <testcase name="markings stop short of an intersection but the surface does not[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.PaintedRoadsTest" time="0.001"/>
+  <testcase name="turn arrows sit in their lanes before the junction[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.PaintedRoadsTest" time="0.0"/>
+  <testcase name="a signal at a junction gets a stop line on the approaching half[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.PaintedRoadsTest" time="0.0"/>
+  <testcase name="a marked crossing node becomes a crosswalk across the road[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.PaintedRoadsTest" time="0.0"/>
+  <testcase name="a divided road gets a median between its halves[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.PaintedRoadsTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

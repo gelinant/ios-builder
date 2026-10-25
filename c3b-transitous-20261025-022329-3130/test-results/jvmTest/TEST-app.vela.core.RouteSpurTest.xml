@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RouteSpurTest[jvm]" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:28:38.296Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.016">
+  <properties/>
+  <testcase name="a ramp-shaped loop that rejoins further along is a spur too[jvm]" classname="app.vela.core.RouteSpurTest" time="0.005"/>
+  <testcase name="a different approach at the ends is tolerated[jvm]" classname="app.vela.core.RouteSpurTest" time="0.002"/>
+  <testcase name="an out-and-back appendix off the middle is a spur[jvm]" classname="app.vela.core.RouteSpurTest" time="0.008"/>
+  <testcase name="a parallel road that keeps advancing is not a spur[jvm]" classname="app.vela.core.RouteSpurTest" time="0.0"/>
+  <testcase name="the same line has no spur[jvm]" classname="app.vela.core.RouteSpurTest" time="0.001"/>
+  <testcase name="the real one - a 120 m turn-right u-turn turn-right stub off the course[jvm]" classname="app.vela.core.RouteSpurTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

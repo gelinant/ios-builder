@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CameraDetourTest[jvm]" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:28:37.903Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.029">
+  <properties/>
+  <testcase name="the camera choice leads with the lightest route inside the cap and never over it[jvm]" classname="app.vela.core.CameraDetourTest" time="0.014"/>
+  <testcase name="a cluster already tried from another route is not tried again[jvm]" classname="app.vela.core.CameraDetourTest" time="0.011"/>
+  <testcase name="an edited visible list gets the silent vias back where they were[jvm]" classname="app.vela.core.CameraDetourTest" time="0.001"/>
+  <testcase name="the plan keeps stops and detour points in travel order[jvm]" classname="app.vela.core.CameraDetourTest" time="0.0"/>
+  <testcase name="heads on one corner are one cluster clusters are capped nearest first[jvm]" classname="app.vela.core.CameraDetourTest" time="0.001"/>
+  <testcase name="a candidate sits 150 m to either side of the road at the cluster[jvm]" classname="app.vela.core.CameraDetourTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
