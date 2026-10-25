@@ -1,0 +1,82 @@
+commit: b047c07 src: e6e2d299 Merge ios/i4-routes: directions on iOS (M4)
+xcode: Xcode 26.6 Build version 17F113 
+java: openjdk version "17.0.20.1" 2026-08-18
+gradle: ok in 468 s
+kotlin jvmTest: 57 tests, 0 failures
+kotlin iosSimulatorArm64Test: 39 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  71M, static library 70384728 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  40M, static library 37685128 bytes, SKIE Swift module: yes
+xcodegen: Version: 2.46.0
+packages: maplibre-gl-native-distribution@6.31.0
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+simulator build: ok
+tests: ok, Executed 17 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: ok
+ui CalibrationUITests.testLiveCalibrationIsLoaded: passed (18.221 seconds)
+ui DirectionsUITests.testDirectionsToTheFirstCoffeeResult: passed (66.606 seconds)
+ui LaunchUITests.testLaunchShowsTheMapOverSanFrancisco: passed (15.960 seconds)
+ui LaunchUITests.testStartCameraArgumentMovesTheMapToDavis: passed (15.749 seconds)
+ui PlaceUITests.testFirstCoffeeResultOpensItsSheet: passed (58.058 seconds)
+ui SearchUITests.testCoffeeSearchShowsResultsAndPins: passed (36.425 seconds)
+ui calibration_version=27
+ui directions_center=0
+ui directions_drive_meters=1344
+ui directions_drive_routes=2
+ui directions_drive_seconds=271
+ui directions_drive_steps=1
+ui directions_drive_traffic_spans=0
+ui directions_far_meters=3561
+ui directions_far_routes=3
+ui directions_far_seconds=821
+ui directions_far_selected=1
+ui directions_far_steps=1
+ui directions_far_traffic_spans=0
+ui directions_walk_meters=41
+ui directions_walk_routes=1
+ui directions_walk_seconds=64
+ui directions_walk_steps=1
+ui map_element=yes
+ui place_hours=7
+ui place_name=Doppio_Coffee_&_Brunch
+ui place_phone=1
+ui place_photos=10
+ui place_popular_hours=0
+ui place_reviews_from=feed
+ui place_reviews=5
+ui search_rows=60
+ui screenshots: calibration.png directions-drive.png directions-far-alt.png directions-far-steps.png directions-far.png directions-steps.png directions-walk.png launch-davis.png launch-sf.png place-photos.png place-reviews-2.png place-reviews.png place-top.png search-centered.png search-list.png search-map.png 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+image: avatar 200 image/png 6621 bytes 120x120 bpc=8 alpha=1 cs=kCGColorSpaceSRGB N4p4Vg8tIj0j8BzI=s120-c-rp-mo-ba12-br100
+image: avatar 200 image/png 21519 bytes 120x120 bpc=8 alpha=1 cs=kCGColorSpaceSRGB HtsbBcEwPOWS4_mg=s120-c-rp-mo-ba12-br100
+image: avatar 200 image/png 28568 bytes 120x120 bpc=8 alpha=1 cs=kCGColorSpaceSRGB hNz9r3Zh2U_Xq-XZ=s120-c-rp-mo-ba12-br100
+live calibration: version 27
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+directions reply: directions-drive-sf 121868 bytes
+directions reply: directions-walk-sf 35548 bytes
+search reply: 258078 bytes, 33 feature ids
+ipa: Vela-unsigned.ipa 7758094 bytes (7.4M)
+app frameworks: MapLibre.framework 
+app binary: arm64, 13540968 bytes
+kotlin code in the device binary: yes
+plist CFBundleIdentifier: app.vela.ios
+plist CFBundleDisplayName: Vela
+plist CFBundleShortVersionString: 0.1.0
+plist MinimumOSVersion: 17.0
+plist UIBackgroundModes: ["location","audio"]
