@@ -1,0 +1,96 @@
+tag=i7-offline-20261025-164250-31787 src=src/i7-offline 87b3975 src: 7b162229 Add offline regions to iOS
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 87b3975 src: 7b162229 Add offline regions to iOS
+xcode: Xcode 26.6 Build version 17F113 
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Kotlin: tests and the VelaCore framework (16:43:37)
+gradle: ok in 355 s
+kotlin jvmTest: 63 tests, 0 failures
+kotlin iosSimulatorArm64Test: 45 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  71M, static library 70889560 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  40M, static library 38125288 bytes, SKIE Swift module: yes
+
+== XcodeGen (16:49:33)
+xcodegen: Version: 2.46.0
+
+== Generate the project (16:49:33)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (16:49:33)
+  MapLibre Native: https://github.com/maplibre/maplibre-gl-native-distribution @ 6.31.0
+
+resolved source packages: MapLibre Native
+(resolve: 16 s)
+packages: maplibre-gl-native-distribution@6.31.0
+
+== Pick a simulator (16:49:49)
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+
+== Build for the simulator (16:49:50)
+xcodebuild build-sim failed after 36 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Offline/RegionDownloader.swift:6:13: error: type 'URLSessionRegionDownloader' does not conform to protocol 'OfflineDownloadClient'
+** TEST BUILD FAILED **
+--- tail of build-sim log ---
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapView.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Platform/OSLogLog.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Offline/OfflineModel.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Offline/OfflineNetworkMonitor.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Offline/OfflineSheet.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Offline/OfflineStyleFactory.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Offline/OfflineTestSupport.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Place/PlaceModel.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Place/PlaceSheet.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Offline/RegionDownloader.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Place/RemoteImage.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Web/ReviewsWebFetcher.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 Compiling\ AppGraph.swift,\ CalibrationModel.swift,\ CookieJar.swift,\ DevicePlatformLocale.swift,\ FileManagerPlatformFiles.swift,\ FoundationTextNormalizer.swift,\ HiddenWebView.swift,\ JavaScriptCoreJsEngine.swift,\ LaunchOptions.swift,\ LocationPermission.swift,\ MapController.swift,\ MapDefaults.swift,\ MapScreen.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Platform/AppGraph.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Core/CalibrationModel.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Platform/CookieJar.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Platform/DevicePlatformLocale.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Platform/FileManagerPlatformFiles.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Platform/FoundationTextNormalizer.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Web/HiddenWebView.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Platform/JavaScriptCoreJsEngine.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/App/LaunchOptions.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Location/LocationPermission.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapController.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapDefaults.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapScreen.swift (in target 'Vela' from project 'Vela')
+
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD FAILED **
+
+
+The following build commands failed:
+	EmitSwiftModule normal arm64 (in target 'Vela' from project 'Vela')
+	SwiftEmitModule normal arm64 Emitting\ module\ for\ Vela (in target 'Vela' from project 'Vela')
+	Building project Vela for testing with scheme Vela
+(3 failures)
