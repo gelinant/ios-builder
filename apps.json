@@ -1,0 +1,50 @@
+{
+  "name": "Vela iOS",
+  "identifier": "app.vela.ios.source",
+  "sourceURL": "https://raw.githubusercontent.com/gelinant/ios-builder/dist/apps.json",
+  "subtitle": "Vela maps, development builds",
+  "description": "Development builds of the Vela iOS port. Install and update through SideStore or AltStore.",
+  "iconURL": "https://raw.githubusercontent.com/gelinant/ios-builder/dist/icon.png",
+  "website": "https://github.com/PimpinPumpkin/Vela",
+  "tintColor": "#0A8F83",
+  "nsfw": false,
+  "featuredApps": [
+    "app.vela.ios"
+  ],
+  "apps": [
+    {
+      "name": "Vela",
+      "bundleIdentifier": "app.vela.ios",
+      "developerName": "Vela contributors",
+      "subtitle": "Maps, navigation and offline regions",
+      "localizedDescription": "Vela is a privacy-minded maps app: search, place details, routes, guided navigation, saved places and offline regions.\n\nDevelopment build distributed unsigned for AltStore, SideStore or Sideloadly. The app and its navigation Live Activity extension must be signed together.",
+      "iconURL": "https://raw.githubusercontent.com/gelinant/ios-builder/dist/icon.png",
+      "tintColor": "#0A8F83",
+      "screenshotURLs": [
+        "https://raw.githubusercontent.com/gelinant/ios-builder/dist/screenshot.png"
+      ],
+      "versions": [
+        {
+          "version": "0.1.0",
+          "date": "2026-10-25T21:05:56Z",
+          "localizedDescription": "Live Activity, navigation, saved places and offline regions\n\nBuild 1.",
+          "downloadURL": "https://raw.githubusercontent.com/gelinant/ios-builder/dist/Vela.ipa",
+          "size": 8522222
+        }
+      ],
+      "version": "0.1.0",
+      "versionDate": "2026-10-25T21:05:56Z",
+      "versionDescription": "Live Activity, navigation, saved places and offline regions\n\nBuild 1.",
+      "downloadURL": "https://raw.githubusercontent.com/gelinant/ios-builder/dist/Vela.ipa",
+      "size": 8522222,
+      "appPermissions": {
+        "location": "Show your position, plan routes and guide you while navigating.",
+        "background": {
+          "location": "Keep turn-by-turn guidance active in the background.",
+          "audio": "Play spoken navigation instructions in the background."
+        }
+      }
+    }
+  ],
+  "news": []
+}
