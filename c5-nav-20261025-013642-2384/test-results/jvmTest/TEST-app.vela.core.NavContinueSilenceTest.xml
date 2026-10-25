@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="NavContinueSilenceTest[jvm]" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-25T01:39:44.998Z" hostname="sat12-bq161-b54d4ecc-ce22-4452-9731-9ad6e0a7025e-5A78E3DE7048.local" time="0.003">
+  <properties/>
+  <testcase name="continue is voice-silent even when the road name changes[jvm]" classname="app.vela.core.NavContinueSilenceTest" time="0.0"/>
+  <testcase name="a lane-carrying continue still speaks lanes first[jvm]" classname="app.vela.core.NavContinueSilenceTest" time="0.002"/>
+  <testcase name="a return-leg turn is measured on the return leg not its outbound twin[jvm]" classname="app.vela.core.NavContinueSilenceTest" time="0.0"/>
+  <testcase name="a continue past a plain turn bay stays silent[jvm]" classname="app.vela.core.NavContinueSilenceTest" time="0.001"/>
+  <testcase name="re-acquire prefers the pass nearest current progress[jvm]" classname="app.vela.core.NavContinueSilenceTest" time="0.0"/>
+  <testcase name="a continue past an UNMARKED off lane stays silent[jvm]" classname="app.vela.core.NavContinueSilenceTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

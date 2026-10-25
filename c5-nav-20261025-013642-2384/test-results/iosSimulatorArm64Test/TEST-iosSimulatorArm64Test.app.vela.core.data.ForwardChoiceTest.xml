@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="iosSimulatorArm64Test.app.vela.core.data.ForwardChoiceTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-25T01:39:24.307Z" hostname="sat12-bq161-b54d4ecc-ce22-4452-9731-9ad6e0a7025e-5A78E3DE7048.local" time="0.002">
+  <properties/>
+  <testcase name="the best route is kept when it goes the car's way[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.ForwardChoiceTest" time="0.0"/>
+  <testcase name="a turn-around is set aside for a forward route a little slower[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.ForwardChoiceTest" time="0.0"/>
+  <testcase name="a forward alternate twenty minutes longer is not taken the open router's way round is[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.ForwardChoiceTest" time="0.001"/>
+  <testcase name="when every way on costs minutes the route that turns around stands[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.ForwardChoiceTest" time="0.0"/>
+  <testcase name="with only turn-around routes and a cheap way on the open router's route is used[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.ForwardChoiceTest" time="0.0"/>
+  <testcase name="the allowance grows with the trip[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.ForwardChoiceTest" time="0.0"/>
+  <testcase name="the open router's time is put on Google's clock before it is compared[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.ForwardChoiceTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="iosSimulatorArm64Test.app.vela.core.replay.TripRenameTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-25T01:39:25.418Z" hostname="sat12-bq161-b54d4ecc-ce22-4452-9731-9ad6e0a7025e-5A78E3DE7048.local" time="0.0">
+  <properties/>
+  <testcase name="renaming changes only the label[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.replay.TripRenameTest" time="0.0"/>
+  <testcase name="a comma in the name cannot shift the header fields[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.replay.TripRenameTest" time="0.0"/>
+  <testcase name="a newline in the name cannot split the header[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.replay.TripRenameTest" time="0.0"/>
+  <testcase name="a blank name falls back rather than leaving the trip nameless[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.replay.TripRenameTest" time="0.0"/>
+  <testcase name="an over-long name is trimmed to something a header can hold[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.replay.TripRenameTest" time="0.0"/>
+  <testcase name="a file with no trip header is refused[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.replay.TripRenameTest" time="0.0"/>
+  <testcase name="a renamed trip still parses[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.replay.TripRenameTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

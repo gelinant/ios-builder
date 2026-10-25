@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="iosSimulatorArm64Test.app.vela.core.data.LowRamModeTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-10-25T01:39:24.309Z" hostname="sat12-bq161-b54d4ecc-ce22-4452-9731-9ad6e0a7025e-5A78E3DE7048.local" time="0.003">
+  <properties/>
+  <testcase name="heap class 128 is low-RAM[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.LowRamModeTest" time="0.001"/>
+  <testcase name="heap class below the ceiling is low-RAM[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.LowRamModeTest" time="0.0"/>
+  <testcase name="heap class above the ceiling is not low-RAM on its own[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.LowRamModeTest" time="0.0"/>
+  <testcase name="both probes unreadable is constrained not roomy[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.LowRamModeTest" time="0.0"/>
+  <testcase name="one unreadable probe does not veto a good reading from the other[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.LowRamModeTest" time="0.0"/>
+  <testcase name="a nominal 2 GB phone is low-RAM even with a generous heap class[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.LowRamModeTest" time="0.0"/>
+  <testcase name="total RAM boundary is inclusive[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.LowRamModeTest" time="0.0"/>
+  <testcase name="isLowRamDevice alone is enough[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.LowRamModeTest" time="0.0"/>
+  <testcase name="a 4a stays on the normal path[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.LowRamModeTest" time="0.001"/>
+  <testcase name="a 32-bit process is constrained however roomy the phone is[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.LowRamModeTest" time="0.0"/>
+  <testcase name="the same phone on a 64-bit process is not constrained[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.LowRamModeTest" time="0.0"/>
+  <testcase name="bitness defaults to 64-bit so an older caller reads as before[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.LowRamModeTest" time="0.0"/>
+  <testcase name="64-bit does not turn an unreadable probe into a roomy reading[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.LowRamModeTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

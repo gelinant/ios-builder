@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="iosSimulatorArm64Test.app.vela.core.nav.NavEngineStopCueTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-10-25T01:39:25.401Z" hostname="sat12-bq161-b54d4ecc-ce22-4452-9731-9ad6e0a7025e-5A78E3DE7048.local" time="0.004">
+  <properties/>
+  <testcase name="the side comes from where the pin sits against the road[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.nav.NavEngineStopCueTest" time="0.001"/>
+  <testcase name="the turn before a stop says the stop after it on its first line and at the turn[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.nav.NavEngineStopCueTest" time="0.0"/>
+  <testcase name="a stop on a long leg gets its own cue at the near distance[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.nav.NavEngineStopCueTest" time="0.0"/>
+  <testcase name="a stop with no side is ahead[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.nav.NavEngineStopCueTest" time="0.0"/>
+  <testcase name="a turn into the stop's parking lot is said as one[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.nav.NavEngineStopCueTest" time="0.0"/>
+  <testcase name="the lot wording needs the map to say it is a lot and a road with no name[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.nav.NavEngineStopCueTest" time="0.0"/>
+  <testcase name="brief says the turn and the stop once[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.nav.NavEngineStopCueTest" time="0.001"/>
+  <testcase name="highway exits only still says the stop is coming as it says the destination[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.nav.NavEngineStopCueTest" time="0.0"/>
+  <testcase name="the stop is said in the app's language[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.nav.NavEngineStopCueTest" time="0.0"/>
+  <testcase name="with no stop the turn is said as before[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.nav.NavEngineStopCueTest" time="0.0"/>
+  <testcase name="a stop already passed is not announced[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.nav.NavEngineStopCueTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

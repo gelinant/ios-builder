@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="DestinationDisplayTest[jvm]" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-25T01:39:44.899Z" hostname="sat12-bq161-b54d4ecc-ce22-4452-9731-9ad6e0a7025e-5A78E3DE7048.local" time="0.005">
+  <properties/>
+  <testcase name="blankEverythingAndNoDestIsEmptyNotCrash[jvm]" classname="app.vela.core.DestinationDisplayTest" time="0.003"/>
+  <testcase name="businessShowsNameAndAddress[jvm]" classname="app.vela.core.DestinationDisplayTest" time="0.0"/>
+  <testcase name="addressOnlyPromotesToPrimary[jvm]" classname="app.vela.core.DestinationDisplayTest" time="0.0"/>
+  <testcase name="streetOnlyStillShows[jvm]" classname="app.vela.core.DestinationDisplayTest" time="0.0"/>
+  <testcase name="whitespaceIsTrimmedBeforeComparing[jvm]" classname="app.vela.core.DestinationDisplayTest" time="0.0"/>
+  <testcase name="coordinatesAreTheLastResort[jvm]" classname="app.vela.core.DestinationDisplayTest" time="0.002"/>
+  <testcase name="addressSearchDoesNotPrintTheAddressTwice[jvm]" classname="app.vela.core.DestinationDisplayTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

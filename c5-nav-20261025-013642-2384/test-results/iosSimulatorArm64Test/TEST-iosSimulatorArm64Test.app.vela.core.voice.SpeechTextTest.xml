@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" tests="36" skipped="0" failures="0" errors="0" timestamp="2026-10-25T01:39:25.423Z" hostname="sat12-bq161-b54d4ecc-ce22-4452-9731-9ad6e0a7025e-5A78E3DE7048.local" time="0.002">
+  <properties/>
+  <testcase name="vela nav prefix splits after navigation[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" time="0.0"/>
+  <testcase name="faster route prefix splits[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" time="0.0"/>
+  <testcase name="test-voice phrase splits at the real period[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" time="0.0"/>
+  <testcase name="digit-started next clause splits[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" time="0.0"/>
+  <testcase name="road-type word before period is left whole to avoid false name splits[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" time="0.0"/>
+  <testcase name="three sentences yield three chunks[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" time="0.0"/>
+  <testcase name="abbreviation Jr in a street name does not split[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" time="0.0"/>
+  <testcase name="abbreviation Mt in a street name does not split[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" time="0.0"/>
+  <testcase name="forSpeech-expanded Street dot before a name does not split[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" time="0.0"/>
+  <testcase name="directional abbreviation N dot does not split[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" time="0.0"/>
+  <testcase name="single-letter initial does not split[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" time="0.0"/>
+  <testcase name="lowercase continuation is not a sentence break[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" time="0.0"/>
+  <testcase name="decimal does not split[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" time="0.0"/>
+  <testcase name="trailing period is a single sentence[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" time="0.0"/>
+  <testcase name="single instruction is returned unchanged[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" time="0.0"/>
+  <testcase name="blank and tiny inputs are safe[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" time="0.0"/>
+  <testcase name="three-digit street ordinal reads the street way[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" time="0.0"/>
+  <testcase name="round hundred and low remainder[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" time="0.0"/>
+  <testcase name="one and two digit ordinals are left for espeak[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" time="0.0"/>
+  <testcase name="four-digit numbers are untouched[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" time="0.0"/>
+  <testcase name="comma with a space is a clause break[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" time="0.0"/>
+  <testcase name="semicolon is a clause break[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" time="0.0"/>
+  <testcase name="a grouped number is not split[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" time="0.0"/>
+  <testcase name="no comma returns one clause[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" time="0.0"/>
+  <testcase name="speechFragments tags a firm pause at periods and a short one at commas[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" time="0.0"/>
+  <testcase name="speechFragments leaves a single clause whole with no gap[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" time="0.0"/>
+  <testcase name="whisper non-speech tags collapse to blank[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" time="0.0"/>
+  <testcase name="a truncated trailing tag from a capped capture also collapses[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" time="0.0"/>
+  <testcase name="real query keeps its words and drops a stray tag[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" time="0.0"/>
+  <testcase name="trailing sentence punctuation and quotes are trimmed[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" time="0.0"/>
+  <testcase name="an inner period is preserved[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" time="0.0"/>
+  <testcase name="english unit abbreviations expand for speech[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" time="0.0"/>
+  <testcase name="unit expansion never rewrites names or clock times[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" time="0.0"/>
+  <testcase name="a clock time is read as a time not a measurement[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" time="0.0"/>
+  <testcase name="it only rewrites what is actually a clock[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" time="0.0"/>
+  <testcase name="the whole sentence survives the rewrite[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.voice.SpeechTextTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

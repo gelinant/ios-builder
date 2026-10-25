@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="iosSimulatorArm64Test.app.vela.core.CameraDetourTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-25T01:39:24.251Z" hostname="sat12-bq161-b54d4ecc-ce22-4452-9731-9ad6e0a7025e-5A78E3DE7048.local" time="0.001">
+  <properties/>
+  <testcase name="a candidate sits 150 m to either side of the road at the cluster[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.CameraDetourTest" time="0.0"/>
+  <testcase name="heads on one corner are one cluster clusters are capped nearest first[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.CameraDetourTest" time="0.0"/>
+  <testcase name="the plan keeps stops and detour points in travel order[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.CameraDetourTest" time="0.0"/>
+  <testcase name="an edited visible list gets the silent vias back where they were[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.CameraDetourTest" time="0.0"/>
+  <testcase name="the camera choice leads with the lightest route inside the cap and never over it[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.CameraDetourTest" time="0.0"/>
+  <testcase name="a cluster already tried from another route is not tried again[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.CameraDetourTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

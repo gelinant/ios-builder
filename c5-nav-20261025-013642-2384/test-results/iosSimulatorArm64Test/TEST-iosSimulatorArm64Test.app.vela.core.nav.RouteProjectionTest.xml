@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="iosSimulatorArm64Test.app.vela.core.nav.RouteProjectionTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-10-25T01:39:25.414Z" hostname="sat12-bq161-b54d4ecc-ce22-4452-9731-9ad6e0a7025e-5A78E3DE7048.local" time="0.0">
+  <properties/>
+  <testcase name="a point on the route is placed at its distance along it[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.nav.RouteProjectionTest" time="0.0"/>
+  <testcase name="a point just off the kerb still counts[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.nav.RouteProjectionTest" time="0.0"/>
+  <testcase name="a point on a parallel street is rejected[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.nav.RouteProjectionTest" time="0.0"/>
+  <testcase name="a stop sign on the route on a road running your way is yours[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.nav.RouteProjectionTest" time="0.0"/>
+  <testcase name="the sign holding the cross street is not yours[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.nav.RouteProjectionTest" time="0.0"/>
+  <testcase name="a sign on the parallel street a block over is not yours[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.nav.RouteProjectionTest" time="0.0"/>
+  <testcase name="a sign with no known road direction has to sit on the route[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.nav.RouteProjectionTest" time="0.0"/>
+  <testcase name="only a light the route drives through is yours[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.nav.RouteProjectionTest" time="0.0"/>
+  <testcase name="midway along a segment projects proportionally[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.nav.RouteProjectionTest" time="0.0"/>
+  <testcase name="a degenerate route places nothing[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.nav.RouteProjectionTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

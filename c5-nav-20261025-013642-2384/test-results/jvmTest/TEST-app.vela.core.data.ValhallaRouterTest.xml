@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ValhallaRouterTest[jvm]" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-25T01:39:45.307Z" hostname="sat12-bq161-b54d4ecc-ce22-4452-9731-9ad6e0a7025e-5A78E3DE7048.local" time="0.018">
+  <properties/>
+  <testcase name="a merge that says only its sign has not told the road so the turn after it names it[jvm]" classname="app.vela.core.data.ValhallaRouterTest" time="0.006"/>
+  <testcase name="garbage is an empty list[jvm]" classname="app.vela.core.data.ValhallaRouterTest" time="0.002"/>
+  <testcase name="turns are phrased with the street name[jvm]" classname="app.vela.core.data.ValhallaRouterTest" time="0.001"/>
+  <testcase name="a bend that keeps the road name is a silent rename[jvm]" classname="app.vela.core.data.ValhallaRouterTest" time="0.001"/>
+  <testcase name="parses one continuous route from two legs[jvm]" classname="app.vela.core.data.ValhallaRouterTest" time="0.001"/>
+  <testcase name="a turn that keeps the road drops the name only when the driver was told it[jvm]" classname="app.vela.core.data.ValhallaRouterTest" time="0.002"/>
+  <testcase name="step lengths tile the whole trip[jvm]" classname="app.vela.core.data.ValhallaRouterTest" time="0.002"/>
+  <testcase name="roundabouts keep their exit number and phrase[jvm]" classname="app.vela.core.data.ValhallaRouterTest" time="0.001"/>
+  <testcase name="a slight bend that keeps the road stays a silent rename in a piece cut from mid-trip[jvm]" classname="app.vela.core.data.ValhallaRouterTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

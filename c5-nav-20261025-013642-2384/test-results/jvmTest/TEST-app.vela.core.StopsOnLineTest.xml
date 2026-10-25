@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="StopsOnLineTest[jvm]" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-25T01:39:45.107Z" hostname="sat12-bq161-b54d4ecc-ce22-4452-9731-9ad6e0a7025e-5A78E3DE7048.local" time="0.002">
+  <properties/>
+  <testcase name="the via list samples each leg and puts the real stop between them[jvm]" classname="app.vela.core.StopsOnLineTest" time="0.0"/>
+  <testcase name="a stop behind the previous one is not on the trip[jvm]" classname="app.vela.core.StopsOnLineTest" time="0.001"/>
+  <testcase name="stops on the line are found in order a far stop is not[jvm]" classname="app.vela.core.StopsOnLineTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

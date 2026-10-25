@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="StreetViewParserTest[jvm]" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-25T01:39:45.113Z" hostname="sat12-bq161-b54d4ecc-ce22-4452-9731-9ad6e0a7025e-5A78E3DE7048.local" time="0.013">
+  <properties/>
+  <testcase name="walkableNeighborsExcludeSameSpot[jvm]" classname="app.vela.core.StreetViewParserTest" time="0.009"/>
+  <testcase name="streetMatchesAcrossAddressForms[jvm]" classname="app.vela.core.StreetViewParserTest" time="0.0"/>
+  <testcase name="noImageryReturnsNull[jvm]" classname="app.vela.core.StreetViewParserTest" time="0.001"/>
+  <testcase name="svThumbExtractsGooglesOwnPanoAndYaw[jvm]" classname="app.vela.core.StreetViewParserTest" time="0.0"/>
+  <testcase name="historyResolvesDatesNewestFirst[jvm]" classname="app.vela.core.StreetViewParserTest" time="0.0"/>
+  <testcase name="parsesPanoAndGeometry[jvm]" classname="app.vela.core.StreetViewParserTest" time="0.0"/>
+  <testcase name="streetOfDropsHouseNumberButKeepsOrdinal[jvm]" classname="app.vela.core.StreetViewParserTest" time="0.0"/>
+  <testcase name="parsesCaptureDate[jvm]" classname="app.vela.core.StreetViewParserTest" time="0.0"/>
+  <testcase name="streetOfRejectsNonStreets[jvm]" classname="app.vela.core.StreetViewParserTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

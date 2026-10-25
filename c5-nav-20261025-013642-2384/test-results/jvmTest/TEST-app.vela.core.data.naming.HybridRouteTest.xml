@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="HybridRouteTest[jvm]" tests="16" skipped="0" failures="0" errors="0" timestamp="2026-10-25T01:39:45.601Z" hostname="sat12-bq161-b54d4ecc-ce22-4452-9731-9ad6e0a7025e-5A78E3DE7048.local" time="0.01">
+  <properties/>
+  <testcase name="anOpenExitThatGoogleDoesNotTakeIsNeverReadOut[jvm]" classname="app.vela.core.data.naming.HybridRouteTest" time="0.004"/>
+  <testcase name="twoShortDeparturesCloseTogetherAreOne[jvm]" classname="app.vela.core.data.naming.HybridRouteTest" time="0.0"/>
+  <testcase name="aRampNamedTwiceIsOneStep[jvm]" classname="app.vela.core.data.naming.HybridRouteTest" time="0.0"/>
+  <testcase name="anOpenTurnInsideTheStretchIsDropped[jvm]" classname="app.vela.core.data.naming.HybridRouteTest" time="0.001"/>
+  <testcase name="theSameWayHasNoStretches[jvm]" classname="app.vela.core.data.naming.HybridRouteTest" time="0.0"/>
+  <testcase name="nothingNamedMeansNoHybrid[jvm]" classname="app.vela.core.data.naming.HybridRouteTest" time="0.0"/>
+  <testcase name="theStepsLengthsAddUpToWhereEachTurnIs[jvm]" classname="app.vela.core.data.naming.HybridRouteTest" time="0.0"/>
+  <testcase name="theTripEndSlackGoesByTheLinesOwnLength[jvm]" classname="app.vela.core.data.naming.HybridRouteTest" time="0.001"/>
+  <testcase name="findsTheBlockWhereGoogleStepsAside[jvm]" classname="app.vela.core.data.naming.HybridRouteTest" time="0.0"/>
+  <testcase name="twoTurnsOfOneSourceAFewMetersApartBothStay[jvm]" classname="app.vela.core.data.naming.HybridRouteTest" time="0.0"/>
+  <testcase name="aTurnBothMakeBeforeGoogleLeavesIsCoveredByTheStretch[jvm]" classname="app.vela.core.data.naming.HybridRouteTest" time="0.002"/>
+  <testcase name="aLaneBesideTheStreetIsADifferentWay[jvm]" classname="app.vela.core.data.naming.HybridRouteTest" time="0.0"/>
+  <testcase name="aTurnOntoTheRoadTheStepBeforeNamedDropsTheNameAcrossTheSeam[jvm]" classname="app.vela.core.data.naming.HybridRouteTest" time="0.001"/>
+  <testcase name="stitchKeepsTheOpenTurnsOutsideAndTheNamedTurnsInside[jvm]" classname="app.vela.core.data.naming.HybridRouteTest" time="0.001"/>
+  <testcase name="theSameRoadDrawnALaneOverIsNot[jvm]" classname="app.vela.core.data.naming.HybridRouteTest" time="0.0"/>
+  <testcase name="sliceCutsTheLineBetweenTwoDistances[jvm]" classname="app.vela.core.data.naming.HybridRouteTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="StopDeparturesParserTest[jvm]" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-25T01:39:45.575Z" hostname="sat12-bq161-b54d4ecc-ce22-4452-9731-9ad6e0a7025e-5A78E3DE7048.local" time="0.009">
+  <properties/>
+  <testcase name="parses a station departure board soonest line first[jvm]" classname="app.vela.core.data.google.parse.StopDeparturesParserTest" time="0.008"/>
+  <testcase name="groups a flat bus board by route with numbers and colors[jvm]" classname="app.vela.core.data.google.parse.StopDeparturesParserTest" time="0.0"/>
+  <testcase name="remote indices re-point the transit node anchor[jvm]" classname="app.vela.core.data.google.parse.StopDeparturesParserTest" time="0.001"/>
+  <testcase name="a non-transit place yields null not an error[jvm]" classname="app.vela.core.data.google.parse.StopDeparturesParserTest" time="0.0"/>
+  <testcase name="finds the transit node even if its field index shifts[jvm]" classname="app.vela.core.data.google.parse.StopDeparturesParserTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
