@@ -1,0 +1,11 @@
+commit: a8e8328 src: b4876ce2 iOS: save places, lists, recents and parking
+xcode: Xcode 26.6 Build version 17F113 
+java: openjdk version "17.0.20.1" 2026-08-18
+gradle: ok in 497 s
+kotlin jvmTest: 63 tests, 0 failures
+kotlin iosSimulatorArm64Test: 45 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  72M, static library 70947752 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  41M, static library 38243904 bytes, SKIE Swift module: yes
+xcodegen: Version: 2.46.0
+packages: maplibre-gl-native-distribution@6.31.0
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
