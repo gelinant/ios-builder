@@ -1,0 +1,11 @@
+commit: 04c033a src: f3f551d9 iOS: add map POI opening and live search suggestions
+xcode: Xcode 26.6 Build version 17F113 
+java: openjdk version "17.0.20.1" 2026-08-18
+gradle: ok in 448 s
+kotlin jvmTest: 91 tests, 0 failures
+kotlin iosSimulatorArm64Test: 70 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  73M, static library 72194256 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  42M, static library 39370016 bytes, SKIE Swift module: yes
+xcodegen: Version: 2.46.0
+packages: maplibre-gl-native-distribution@6.31.0
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
