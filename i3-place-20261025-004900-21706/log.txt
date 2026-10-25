@@ -1,0 +1,101 @@
+tag=i3-place-20261025-004900-21706 src=src/i3-place d05948e src: ae41e97f iOS: place sheet (I-3) on the common Google source
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: d05948e src: ae41e97f iOS: place sheet (I-3) on the common Google source
+xcode: Xcode 26.6 Build version 17F113 
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Kotlin: tests and the VelaCore framework (00:50:03)
+gradle: ok in 274 s
+kotlin jvmTest: 46 tests, 0 failures
+kotlin iosSimulatorArm64Test: 31 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  56M, static library 56715280 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  24M, static library 23259560 bytes, SKIE Swift module: yes
+
+== XcodeGen (00:54:38)
+xcodegen: Version: 2.46.0
+
+== Generate the project (00:54:38)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (00:54:39)
+  MapLibre Native: https://github.com/maplibre/maplibre-gl-native-distribution @ 6.31.0
+
+resolved source packages: MapLibre Native
+(resolve: 23 s)
+packages: maplibre-gl-native-distribution@6.31.0
+
+== Pick a simulator (00:55:02)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+
+== Build for the simulator (00:55:04)
+xcodebuild build-sim failed after 42 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/PlaceUITests.swift:26:31: error: cannot call value of non-function type 'XCUIElement'
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/PlaceUITests.swift:27:31: error: cannot call value of non-function type 'XCUIElement'
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/PlaceUITests.swift:48:26: error: cannot call value of non-function type 'XCUIElement'
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/PlaceUITests.swift:49:27: error: cannot call value of non-function type 'XCUIElement'
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/PlaceUITests.swift:52:38: error: cannot call value of non-function type 'XCUIElement'
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/PlaceUITests.swift:53:39: error: cannot call value of non-function type 'XCUIElement'
+** TEST BUILD FAILED **
+--- tail of build-sim log ---
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name VelaTests -Onone @/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaTests.build/Objects-normal/arm64/VelaTests.SwiftFileList -DDEBUG -plugin-path /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator -F /Users/runner/work/ios-builder/ios-builder/src/ios-shared/build/xcode-frameworks/Debug/iphonesimulator26.5 -F /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j3 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-688ef53f1462e2c8f657fdc38a81448ff45c64a1807a658693f2a61704f17a36.sdkstatcache -output-file-map /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaTests.build/Objects-normal/arm64/VelaTests-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/ModuleCache.noindex -sdk-module-cache-path /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaTests.build/Objects-normal/arm64/VelaTests.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaTests.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaTests.build/Objects-normal/arm64/VelaTests_const_extract_protocols.json -Xcc -iquote -Xcc /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaTests.build/VelaTests-generated-files.hmap -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaTests.build/VelaTests-own-target-headers.hmap -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaTests.build/VelaTests-all-target-headers.hmap -Xcc -iquote -Xcc /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaTests.build/VelaTests-project-headers.hmap -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaTests.build/DerivedSources-normal/arm64 -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaTests.build/DerivedSources/arm64 -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaTests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaTests.build/Objects-normal/arm64/VelaTests-Swift.h -working-directory /Users/runner/work/ios-builder/ios-builder/src/iosApp -experimental-emit-module-separately -disable-cmo
+
+SwiftMergeGeneratedHeaders /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/DerivedSources/VelaUITests-Swift.h /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/VelaUITests-Swift.h (in target 'VelaUITests' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    builtin-swiftHeaderTool -arch arm64 /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/VelaUITests-Swift.h -o /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/DerivedSources/VelaUITests-Swift.h
+
+Copy /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/VelaUITests.swiftmodule/arm64-apple-ios-simulator.swiftmodule /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/VelaUITests.swiftmodule (in target 'VelaUITests' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/VelaUITests.swiftmodule /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/VelaUITests.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/VelaUITests.swiftmodule/arm64-apple-ios-simulator.swiftdoc /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/VelaUITests.swiftdoc (in target 'VelaUITests' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/VelaUITests.swiftdoc /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/VelaUITests.swiftmodule/arm64-apple-ios-simulator.swiftdoc
+
+Copy /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/VelaUITests.swiftmodule/arm64-apple-ios-simulator.abi.json /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/VelaUITests.abi.json (in target 'VelaUITests' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/VelaUITests.abi.json /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/VelaUITests.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/VelaUITests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/VelaUITests.swiftsourceinfo (in target 'VelaUITests' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/VelaUITests.swiftsourceinfo /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/VelaUITests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+SwiftMergeGeneratedHeaders /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaTests.build/DerivedSources/VelaTests-Swift.h /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaTests.build/Objects-normal/arm64/VelaTests-Swift.h (in target 'VelaTests' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    builtin-swiftHeaderTool -arch arm64 /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaTests.build/Objects-normal/arm64/VelaTests-Swift.h -o /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaTests.build/DerivedSources/VelaTests-Swift.h
+
+Copy /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/VelaTests.swiftmodule/arm64-apple-ios-simulator.swiftmodule /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaTests.build/Objects-normal/arm64/VelaTests.swiftmodule (in target 'VelaTests' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaTests.build/Objects-normal/arm64/VelaTests.swiftmodule /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/VelaTests.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/VelaTests.swiftmodule/arm64-apple-ios-simulator.swiftdoc /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaTests.build/Objects-normal/arm64/VelaTests.swiftdoc (in target 'VelaTests' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaTests.build/Objects-normal/arm64/VelaTests.swiftdoc /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/VelaTests.swiftmodule/arm64-apple-ios-simulator.swiftdoc
+
+Copy /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/VelaTests.swiftmodule/arm64-apple-ios-simulator.abi.json /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaTests.build/Objects-normal/arm64/VelaTests.abi.json (in target 'VelaTests' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaTests.build/Objects-normal/arm64/VelaTests.abi.json /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/VelaTests.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/VelaTests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaTests.build/Objects-normal/arm64/VelaTests.swiftsourceinfo (in target 'VelaTests' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaTests.build/Objects-normal/arm64/VelaTests.swiftsourceinfo /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/VelaTests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+SwiftCompile normal arm64 Compiling\ VelaUITestCase.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/VelaUITestCase.swift (in target 'VelaUITests' from project 'Vela')
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/VelaUITestCase.swift (in target 'VelaUITests' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 Compiling\ PlatformTests.swift,\ SeamTests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaTests/PlatformTests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaTests/SeamTests.swift (in target 'VelaTests' from project 'Vela')
+
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD FAILED **
+
+
+The following build commands failed:
+	SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/PlaceUITests.swift (in target 'VelaUITests' from project 'Vela')
+	SwiftCompile normal arm64 Compiling\ PlaceUITests.swift,\ SearchUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/PlaceUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SearchUITests.swift (in target 'VelaUITests' from project 'Vela')
+	Building project Vela for testing with scheme Vela
+(3 failures)
