@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="iosSimulatorArm64Test.app.vela.core.data.StoreCompatTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-25T00:08:43.514Z" hostname="sat12-bq155-6871c2a0-3cdb-40ae-94f1-8e79bb179f9d-1E6018CF832B.local" time="0.0">
+  <properties/>
+  <testcase name="saved places come back from vela_saved places[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.StoreCompatTest" time="0.0"/>
+  <testcase name="lists come back from vela_lists lists[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.StoreCompatTest" time="0.0"/>
+  <testcase name="home and work come back from vela_shortcuts[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.StoreCompatTest" time="0.0"/>
+  <testcase name="parking comes back from vela_settings with its string coordinates and long time[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.StoreCompatTest" time="0.0"/>
+  <testcase name="saved routes come back from vela_saved_routes routes[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.StoreCompatTest" time="0.0"/>
+  <testcase name="recent places read the timestamped key and the legacy one[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.StoreCompatTest" time="0.0"/>
+  <testcase name="recent searches read the timestamped key and the legacy one[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.StoreCompatTest" time="0.0"/>
+  <testcase name="the ambient cache file of an older build decodes[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.StoreCompatTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

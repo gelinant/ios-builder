@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="iosSimulatorArm64Test.app.vela.core.platform.VelaHttpCallTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-25T00:08:43.522Z" hostname="sat12-bq155-6871c2a0-3cdb-40ae-94f1-8e79bb179f9d-1E6018CF832B.local" time="0.0">
+  <properties/>
+  <testcase name="returnsTheResponse[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.platform.VelaHttpCallTest" time="0.0"/>
+  <testcase name="answersInsideExecuteToo[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.platform.VelaHttpCallTest" time="0.0"/>
+  <testcase name="rethrowsTheClientError[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.platform.VelaHttpCallTest" time="0.0"/>
+  <testcase name="anEmptyCallbackIsAnError[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.platform.VelaHttpCallTest" time="0.0"/>
+  <testcase name="cancelingTheCoroutineCancelsTheRequest[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.platform.VelaHttpCallTest" time="0.0"/>
+  <testcase name="aSecondCallbackIsIgnored[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.platform.VelaHttpCallTest" time="0.0"/>
+  <testcase name="headerLookupIsCaseBlindAndTakesTheLast[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.platform.VelaHttpCallTest" time="0.0"/>
+  <testcase name="joinPathUsesOneSlash[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.platform.VelaHttpCallTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

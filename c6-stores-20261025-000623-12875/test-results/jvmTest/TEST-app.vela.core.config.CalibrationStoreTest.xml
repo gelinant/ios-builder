@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CalibrationStoreTest[jvm]" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-25T00:08:54.633Z" hostname="sat12-bq155-6871c2a0-3cdb-40ae-94f1-8e79bb179f9d-1E6018CF832B.local" time="0.099">
+  <properties/>
+  <testcase name="a cached bundle is checked again at construction[jvm]" classname="app.vela.core.config.CalibrationStoreTest" time="0.009"/>
+  <testcase name="a signed newer bundle is adopted and cached[jvm]" classname="app.vela.core.config.CalibrationStoreTest" time="0.08"/>
+  <testcase name="with no cache the compiled default is active[jvm]" classname="app.vela.core.config.CalibrationStoreTest" time="0.0"/>
+  <testcase name="a bad signature on GitHub falls back to the site copy[jvm]" classname="app.vela.core.config.CalibrationStoreTest" time="0.002"/>
+  <testcase name="refresh runs once[jvm]" classname="app.vela.core.config.CalibrationStoreTest" time="0.001"/>
+  <testcase name="transforms run through the engine with the 2 s limit and fall back on blank[jvm]" classname="app.vela.core.config.CalibrationStoreTest" time="0.003"/>
+  <testcase name="an endpoint off google is refused[jvm]" classname="app.vela.core.config.CalibrationStoreTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
