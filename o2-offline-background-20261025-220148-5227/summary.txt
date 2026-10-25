@@ -1,0 +1,13 @@
+commit: f6523d0 src: b80feead iOS: resume offline downloads and read local road names
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610252202 (1792965760)
+java: openjdk version "17.0.20.1" 2026-08-18
+gradle: ok in 431 s
+kotlin jvmTest: 103 tests, 0 failures
+kotlin iosSimulatorArm64Test: 82 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  73M, static library 72623816 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  42M, static library 39795280 bytes, SKIE Swift module: yes
+string catalog: 1415 keys, 24 resource locales (23 with translations), 24572 localized values, 31 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: maplibre-gl-native-distribution@6.31.0
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
