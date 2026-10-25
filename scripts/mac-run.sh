@@ -9,7 +9,8 @@ repo="$1"; lot="$2"; script="$3"; shift 3
 tag="${lot}-$(date +%Y%m%d-%H%M%S)-$RANDOM"
 bash "$here/scripts/push-src.sh" "$repo" "$lot" HEAD >/dev/null
 
-work=$(mktemp -d)
+work=$(mktemp -d "${TMPDIR:-/tmp}/ios-builder.XXXXXX")
+trap 'rm -rf "$work"' EXIT
 git clone -q --depth 1 git@github.com:gelinant/ios-builder.git "$work/b"
 cd "$work/b"
 mkdir -p requests
