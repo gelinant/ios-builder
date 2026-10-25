@@ -1,0 +1,89 @@
+commit: 1bd520f src: 24d7492d iOS: focus the list-name field in the saved UI test
+xcode: Xcode 26.6 Build version 17F113 
+java: openjdk version "17.0.20.1" 2026-08-18
+gradle: ok in 478 s
+kotlin jvmTest: 63 tests, 0 failures
+kotlin iosSimulatorArm64Test: 45 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  71M, static library 70947752 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  41M, static library 38243904 bytes, SKIE Swift module: yes
+xcodegen: Version: 2.46.0
+packages: maplibre-gl-native-distribution@6.31.0
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+simulator build: ok
+tests: ok, Executed 17 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: FAILED
+ui CalibrationUITests.testLiveCalibrationIsLoaded: passed (14.461 seconds)
+ui DirectionsUITests.testDirectionsToTheFirstCoffeeResult: passed (72.400 seconds)
+ui LaunchUITests.testLaunchShowsTheMapOverSanFrancisco: passed (16.087 seconds)
+ui LaunchUITests.testStartCameraArgumentMovesTheMapToDavis: passed (19.624 seconds)
+ui PlaceUITests.testFirstCoffeeResultOpensItsSheet: passed (55.423 seconds)
+ui SavedUITests.testSavedPlaceListAndRecentsPersist: failed (54.468 seconds)
+ui SearchUITests.testCoffeeSearchShowsResultsAndPins: passed (36.866 seconds)
+ui calibration_version=27
+ui directions_center=0
+ui directions_drive_meters=1238
+ui directions_drive_routes=3
+ui directions_drive_seconds=324
+ui directions_drive_steps=1
+ui directions_drive_traffic_spans=0
+ui directions_far_meters=3561
+ui directions_far_routes=3
+ui directions_far_seconds=962
+ui directions_far_selected=1
+ui directions_far_steps=1
+ui directions_far_traffic_spans=0
+ui directions_walk_meters=41
+ui directions_walk_routes=1
+ui directions_walk_seconds=64
+ui directions_walk_steps=1
+ui map_element=yes
+ui place_hours=7
+ui place_name=Doppio_Coffee_&_Brunch
+ui place_phone=1
+ui place_photos=10
+ui place_popular_hours=0
+ui place_reviews_from=feed
+ui place_reviews=5
+ui saved_lists_after_restart=1
+ui saved_lists=1
+ui saved_places=1
+ui saved_recents_after_restart=5
+ui search_rows=60
+ui screenshots: calibration.png directions-drive.png directions-far-alt.png directions-far-steps.png directions-far.png directions-steps.png directions-walk.png launch-davis.png launch-sf.png place-photos.png place-reviews-2.png place-reviews.png place-save.png place-top.png search-centered.png search-list.png search-map.png 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+image: avatar 200 image/png 25653 bytes 120x120 bpc=8 alpha=1 cs=kCGColorSpaceSRGB ERwOTlD_HIF-akQM=s120-c-rp-mo-ba12-br100
+image: avatar 200 image/png 28568 bytes 120x120 bpc=8 alpha=1 cs=kCGColorSpaceSRGB hNz9r3Zh2U_Xq-XZ=s120-c-rp-mo-ba12-br100
+image: avatar 200 image/png 29765 bytes 120x120 bpc=8 alpha=1 cs=kCGColorSpaceSRGB sNjBMg9VfwyaLA-R=s120-c-rp-mo-ba12-br100
+live calibration: version 27
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+directions reply: directions-drive-sf 113110 bytes
+directions reply: directions-walk-sf 50798 bytes
+search reply: 267311 bytes, 34 feature ids
+ipa: Vela-unsigned.ipa 7910576 bytes (8.2M)
+app frameworks: MapLibre.framework 
+app binary: arm64, 14006136 bytes
+kotlin code in the device binary: yes
+plist CFBundleIdentifier: app.vela.ios
+plist CFBundleDisplayName: Vela
+plist CFBundleShortVersionString: 0.1.0
+plist MinimumOSVersion: 17.0
+plist UIBackgroundModes: ["location","audio"]
+failed steps: ui-scenarios
