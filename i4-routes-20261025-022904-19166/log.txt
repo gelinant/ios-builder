@@ -1,0 +1,231 @@
+tag=i4-routes-20261025-022904-19166 src=src/i4-routes 9b9f5ea src: bf422a41 iOS: avatars redrawn into an sRGB bitmap, directions docs
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 9b9f5ea src: bf422a41 iOS: avatars redrawn into an sRGB bitmap, directions docs
+xcode: Xcode 26.6 Build version 17F113 
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Kotlin: tests and the VelaCore framework (02:30:00)
+gradle: ok in 256 s
+kotlin jvmTest: 57 tests, 0 failures
+kotlin iosSimulatorArm64Test: 39 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  61M, static library 61480728 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  29M, static library 27725008 bytes, SKIE Swift module: yes
+
+== XcodeGen (02:34:17)
+xcodegen: Version: 2.46.0
+
+== Generate the project (02:34:17)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (02:34:17)
+  MapLibre Native: https://github.com/maplibre/maplibre-gl-native-distribution @ 6.31.0
+
+resolved source packages: MapLibre Native
+(resolve: 14 s)
+packages: maplibre-gl-native-distribution@6.31.0
+
+== Pick a simulator (02:34:31)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+
+== Build for the simulator (02:34:34)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 36 s)
+simulator build: ok
+
+== Boot the simulator (02:35:11)
+
+== Unit tests (02:36:35)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 99 s)
+tests: ok, Executed 17 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+
+== Launch and screenshot (02:38:14)
+app.vela.ios: 11165
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 1AD5EE90-10C8-46F3-8B7B-98BD779C6D64 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (02:38:48)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(uitest: 271 s)
+ui scenarios: ok
+ui CalibrationUITests.testLiveCalibrationIsLoaded: passed (31.435 seconds)
+ui DirectionsUITests.testDirectionsToTheFirstCoffeeResult: passed (78.018 seconds)
+ui LaunchUITests.testLaunchShowsTheMapOverSanFrancisco: passed (16.378 seconds)
+ui LaunchUITests.testStartCameraArgumentMovesTheMapToDavis: passed (15.717 seconds)
+ui PlaceUITests.testFirstCoffeeResultOpensItsSheet: passed (50.505 seconds)
+ui SearchUITests.testCoffeeSearchShowsResultsAndPins: passed (35.362 seconds)
+ui calibration_version=27
+ui directions_center=0
+ui directions_drive_meters=1238
+ui directions_drive_routes=3
+ui directions_drive_seconds=316
+ui directions_drive_steps=1
+ui directions_drive_traffic_spans=0
+ui directions_far_meters=3561
+ui directions_far_routes=3
+ui directions_far_seconds=933
+ui directions_far_selected=1
+ui directions_far_steps=1
+ui directions_far_traffic_spans=0
+ui directions_walk_meters=41
+ui directions_walk_routes=1
+ui directions_walk_seconds=64
+ui directions_walk_steps=1
+ui map_element=yes
+ui place_hours=7
+ui place_name=Doppio_Coffee_&_Brunch
+ui place_phone=1
+ui place_photos=10
+ui place_popular_hours=0
+ui place_reviews_from=feed
+ui place_reviews=5
+ui search_rows=60
+ui screenshots: calibration.png directions-drive.png directions-far-alt.png directions-far-steps.png directions-far.png directions-steps.png directions-walk.png launch-davis.png launch-sf.png place-photos.png place-reviews-2.png place-reviews.png place-top.png search-centered.png search-list.png search-map.png 
+
+== Route replay (02:43:24)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 1AD5EE90-10C8-46F3-8B7B-98BD779C6D64 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 1AD5EE90-10C8-46F3-8B7B-98BD779C6D64 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+image: avatar 200 image/png 25653 bytes 120x120 bpc=8 alpha=1 cs=kCGColorSpaceSRGB ERwOTlD_HIF-akQM=s120-c-rp-mo-ba12-br100
+image: avatar 200 image/png 6621 bytes 120x120 bpc=8 alpha=1 cs=kCGColorSpaceSRGB N4p4Vg8tIj0j8BzI=s120-c-rp-mo-ba12-br100
+image: avatar 200 image/png 28568 bytes 120x120 bpc=8 alpha=1 cs=kCGColorSpaceSRGB hNz9r3Zh2U_Xq-XZ=s120-c-rp-mo-ba12-br100
+live calibration: version 27
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (02:44:33)
+253932
+directions reply: directions-drive-sf 75260 bytes
+directions reply: directions-walk-sf 34614 bytes
+search reply: 253932 bytes, 33 feature ids
+
+== Archive for iOS devices, unsigned (02:44:35)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** ARCHIVE SUCCEEDED **
+
+(archive: 33 s)
+
+== Package the IPA (02:45:08)
+ipa: Vela-unsigned.ipa 6786730 bytes (6.5M)
+app frameworks: MapLibre.framework 
+app binary: arm64, 10351896 bytes
+kotlin code in the device binary: yes
+plist CFBundleIdentifier: app.vela.ios
+plist CFBundleDisplayName: Vela
+plist CFBundleShortVersionString: 0.1.0
+plist MinimumOSVersion: 17.0
+plist UIBackgroundModes: ["location","audio"]
+
+== Summary
+commit: 9b9f5ea src: bf422a41 iOS: avatars redrawn into an sRGB bitmap, directions docs
+xcode: Xcode 26.6 Build version 17F113 
+java: openjdk version "17.0.20.1" 2026-08-18
+gradle: ok in 256 s
+kotlin jvmTest: 57 tests, 0 failures
+kotlin iosSimulatorArm64Test: 39 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  61M, static library 61480728 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  29M, static library 27725008 bytes, SKIE Swift module: yes
+xcodegen: Version: 2.46.0
+packages: maplibre-gl-native-distribution@6.31.0
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+simulator build: ok
+tests: ok, Executed 17 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: ok
+ui CalibrationUITests.testLiveCalibrationIsLoaded: passed (31.435 seconds)
+ui DirectionsUITests.testDirectionsToTheFirstCoffeeResult: passed (78.018 seconds)
+ui LaunchUITests.testLaunchShowsTheMapOverSanFrancisco: passed (16.378 seconds)
+ui LaunchUITests.testStartCameraArgumentMovesTheMapToDavis: passed (15.717 seconds)
+ui PlaceUITests.testFirstCoffeeResultOpensItsSheet: passed (50.505 seconds)
+ui SearchUITests.testCoffeeSearchShowsResultsAndPins: passed (35.362 seconds)
+ui calibration_version=27
+ui directions_center=0
+ui directions_drive_meters=1238
+ui directions_drive_routes=3
+ui directions_drive_seconds=316
+ui directions_drive_steps=1
+ui directions_drive_traffic_spans=0
+ui directions_far_meters=3561
+ui directions_far_routes=3
+ui directions_far_seconds=933
+ui directions_far_selected=1
+ui directions_far_steps=1
+ui directions_far_traffic_spans=0
+ui directions_walk_meters=41
+ui directions_walk_routes=1
+ui directions_walk_seconds=64
+ui directions_walk_steps=1
+ui map_element=yes
+ui place_hours=7
+ui place_name=Doppio_Coffee_&_Brunch
+ui place_phone=1
+ui place_photos=10
+ui place_popular_hours=0
+ui place_reviews_from=feed
+ui place_reviews=5
+ui search_rows=60
+ui screenshots: calibration.png directions-drive.png directions-far-alt.png directions-far-steps.png directions-far.png directions-steps.png directions-walk.png launch-davis.png launch-sf.png place-photos.png place-reviews-2.png place-reviews.png place-top.png search-centered.png search-list.png search-map.png 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+image: avatar 200 image/png 25653 bytes 120x120 bpc=8 alpha=1 cs=kCGColorSpaceSRGB ERwOTlD_HIF-akQM=s120-c-rp-mo-ba12-br100
+image: avatar 200 image/png 6621 bytes 120x120 bpc=8 alpha=1 cs=kCGColorSpaceSRGB N4p4Vg8tIj0j8BzI=s120-c-rp-mo-ba12-br100
+image: avatar 200 image/png 28568 bytes 120x120 bpc=8 alpha=1 cs=kCGColorSpaceSRGB hNz9r3Zh2U_Xq-XZ=s120-c-rp-mo-ba12-br100
+live calibration: version 27
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+directions reply: directions-drive-sf 75260 bytes
+directions reply: directions-walk-sf 34614 bytes
+search reply: 253932 bytes, 33 feature ids
+ipa: Vela-unsigned.ipa 6786730 bytes (6.5M)
+app frameworks: MapLibre.framework 
+app binary: arm64, 10351896 bytes
+kotlin code in the device binary: yes
+plist CFBundleIdentifier: app.vela.ios
+plist CFBundleDisplayName: Vela
+plist CFBundleShortVersionString: 0.1.0
+plist MinimumOSVersion: 17.0
+plist UIBackgroundModes: ["location","audio"]
