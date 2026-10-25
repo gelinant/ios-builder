@@ -1,0 +1,3 @@
+src=src/n2-nav-alerts
+script=scripts/ios/ci-ipa.sh
+args=
