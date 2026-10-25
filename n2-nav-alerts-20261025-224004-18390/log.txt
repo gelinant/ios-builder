@@ -1,0 +1,400 @@
+tag=n2-nav-alerts-20261025-224004-18390 src=src/n2-nav-alerts aa0446e src: aaae015c iOS: convert navigation state counts from Int32
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: aa0446e src: aaae015c iOS: convert navigation state counts from Int32
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610252241 (1792968082)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Kotlin: tests and the VelaCore framework (22:41:22)
+gradle: ok in 376 s
+kotlin jvmTest: 104 tests, 0 failures
+kotlin iosSimulatorArm64Test: 83 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  73M, static library 72966232 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  42M, static library 40124248 bytes, SKIE Swift module: yes
+
+== String Catalog (22:47:39)
+string catalog: 1415 keys, 24 resource locales (23 with translations), 24572 localized values, 37 Swift references, 24 picker languages
+
+== XcodeGen (22:47:41)
+xcodegen: Version: 2.46.0
+
+== Generate the project (22:47:41)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (22:47:42)
+  MapLibre Native: https://github.com/maplibre/maplibre-gl-native-distribution @ 6.31.0
+
+resolved source packages: MapLibre Native
+(resolve: 12 s)
+packages: maplibre-gl-native-distribution@6.31.0
+
+== Pick a simulator (22:47:54)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+
+== Build for the simulator (22:47:55)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 65 s)
+simulator build: ok
+
+== Boot the simulator (22:49:00)
+
+== Unit tests (22:52:22)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 132 s)
+tests: ok, Executed 34 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+
+== Launch and screenshot (22:54:35)
+app.vela.ios: 40729
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 376DC99D-E28F-4348-BDC5-4B49A2B24409 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (22:55:16)
+Parsed 8 waypoints
+Parsed 8 waypoints
+xcodebuild uitest failed after 903 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/NavAlertsUITests.swift:29: error: -[VelaUITests.NavAlertsUITests testRouteAlertsFromFixtureProvider] : XCTAssertTrue failed - the fixture maxspeed way did not produce a posted limit
+Test Case '-[VelaUITests.NavAlertsUITests testRouteAlertsFromFixtureProvider]' failed (57.046 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/NavUITests.swift:50: error: -[VelaUITests.NavUITests testGuidedDriveAndEnd] : XCTAssertGreaterThan failed: ("0") is not greater than ("0") - ActivityKit request was not made
+Test Case '-[VelaUITests.NavUITests testGuidedDriveAndEnd]' failed (68.093 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/PlaceUITests.swift:46: error: -[VelaUITests.PlaceUITests testCompleteFixturePlace] : Failed to not hittable: Button, {{12.0, 153.3}, {146.0, 34.3}}, identifier: 'place-photo-categories', label: 'Load categories'
+Test Case '-[VelaUITests.PlaceUITests testCompleteFixturePlace]' failed (72.905 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =     0.04s Open app.vela.ios
+    t =     0.04s     Launch app.vela.ios
+    t =     0.04s         Terminate app.vela.ios:63418
+2026-10-25 23:09:10.323 xcodebuild[42404:111145] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-25 23:09:10.323 xcodebuild[42404:111145] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     2.40s         Setting up automation session
+    t =     4.19s         Wait for app.vela.ios to idle
+    t =     7.14s Waiting 60.0s for "search-field" TextField to exist
+    t =     8.20s     Checking `Expect predicate `existsNoRetry == 1` for object "search-field" TextField`
+    t =     8.20s         Checking existence of `"search-field" TextField`
+    t =     8.71s Tap "search-field" TextField
+    t =     8.71s     Wait for app.vela.ios to idle
+    t =     8.71s     Find the "search-field" TextField
+    t =     9.13s     Check for interrupting elements affecting "search-field" TextField
+    t =     9.33s     Synthesize event
+    t =     9.73s     Wait for app.vela.ios to idle
+    t =    10.64s Type 'coff' into "search-field" TextField
+    t =    10.64s     Wait for app.vela.ios to idle
+    t =    10.66s     Find the "search-field" TextField
+    t =    11.07s     Check for interrupting elements affecting "search-field" TextField
+    t =    11.37s     Synthesize event
+    t =    11.67s     Wait for app.vela.ios to idle
+    t =    11.75s Waiting 45.0s for "search-suggestion" Button to exist
+    t =    12.80s     Checking `Expect predicate `existsNoRetry == 1` for object "search-suggestion" Button`
+    t =    12.80s         Checking existence of `"search-suggestion" Button`
+    t =    13.13s Get number of matches for: Elements matching predicate '"search-suggestion" IN identifiers'
+UITEST suggestion_rows=4
+    t =    13.49s Added attachment named 'suggest'
+    t =    13.51s Tap "search-suggestion" Button
+    t =    13.51s     Wait for app.vela.ios to idle
+    t =    13.51s     Find the "search-suggestion" Button
+    t =    13.85s     Check for interrupting elements affecting "search-suggestion" Button
+    t =    14.11s     Synthesize event
+    t =    14.53s     Wait for app.vela.ios to idle
+    t =    14.94s Get number of matches for: Elements matching predicate '"search-suggestion" IN identifiers'
+    t =    17.61s Get number of matches for: Elements matching predicate '"search-suggestion" IN identifiers'
+    t =    18.06s Checking existence of `"place-name" StaticText`
+    t =    18.42s Tear Down
+Test Case '-[VelaUITests.SearchUITests testSuggestionsAppearAndFreezeAfterSelection]' passed (18.792 seconds).
+Test Suite 'SearchUITests' passed at 2026-10-25 23:09:27.971.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 77.731 (77.733) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-25 23:09:27.972.
+	 Executed 16 tests, with 3 failures (0 unexpected) in 808.598 (808.635) seconds
+Test Suite 'All tests' failed at 2026-10-25 23:09:27.974.
+	 Executed 16 tests, with 3 failures (0 unexpected) in 808.598 (808.637) seconds
+2026-10-25 23:10:11.693 xcodebuild[42404:111145] [MT] IDETestOperationsObserverDebug: 874.809 elapsed -- Testing started completed.
+2026-10-25 23:10:11.697 xcodebuild[42404:111145] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-25 23:10:11.698 xcodebuild[42404:111145] [MT] IDETestOperationsObserverDebug: 874.809 sec, +874.809 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.nvWJ8KLobz/uitest.xcresult
+
+Failing tests:
+	NavAlertsUITests.testRouteAlertsFromFixtureProvider()
+	NavUITests.testGuidedDriveAndEnd()
+	PlaceUITests.testCompleteFixturePlace()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+scripts/ios/ci-ipa.sh: line 230: 42403 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true; exit 0
+        ;;
+    esac;
+done )
+ui CalibrationUITests.testLiveCalibrationIsLoaded: passed (28.368 seconds)
+ui DirectionsUITests.testDirectionsToTheFirstCoffeeResult: passed (158.369 seconds)
+ui LaunchUITests.testLaunchShowsTheMapOverSanFrancisco: passed (22.215 seconds)
+ui LaunchUITests.testStartCameraArgumentMovesTheMapToDavis: passed (18.193 seconds)
+ui LocalizationUITests.testFrenchLabelsWithoutChangingSimulatorLanguage: passed (21.411 seconds)
+ui LocalizationUITests.testGermanSettingsLayout: passed (21.991 seconds)
+ui LocalizationUITests.testSettingsPersistAcrossRelaunch: passed (65.140 seconds)
+ui MapSearchUITests.testMapPoiTapOpensGooglePlace: passed (39.588 seconds)
+ui NavAlertsUITests.testRouteAlertsFromFixtureProvider: failed (57.046 seconds)
+ui NavUITests.testGuidedDriveAndEnd: failed (68.093 seconds)
+ui OfflineUITests.testMonacoDownloadOfflineMapAndSearch: passed (58.433 seconds)
+ui PlaceUITests.testCompleteFixturePlace: failed (72.905 seconds)
+ui SavedUITests.testSavedPlaceListAndRecentsPersist: passed (99.116 seconds)
+ui SearchUITests.testCoffeeSearchShowsResultsAndPins: passed (43.530 seconds)
+ui SearchUITests.testQuickCategoryRunsSearch: passed (15.408 seconds)
+ui SearchUITests.testSuggestionsAppearAndFreezeAfterSelection: passed (18.792 seconds)
+ui calibration_version=27
+ui category_rows=60
+ui directions_center=0
+ui directions_drive_meters=1337
+ui directions_drive_routes=2
+ui directions_drive_seconds=431
+ui directions_drive_steps=13
+ui directions_drive_traffic_spans=1
+ui directions_far_meters=3561
+ui directions_far_routes=3
+ui directions_far_seconds=986
+ui directions_far_selected=1
+ui directions_far_steps=5
+ui directions_far_traffic_spans=0
+ui directions_transit_itineraries=6
+ui directions_transit_legs=3
+ui directions_walk_meters=41
+ui directions_walk_routes=2
+ui directions_walk_seconds=64
+ui directions_walk_steps=2
+ui l10n_de_language=Sprache
+ui l10n_de_no_google=Vela_ohne_Google_nutzen
+ui l10n_de_placeholder=Suchen
+ui l10n_de_title=Einstellungen
+ui l10n_fr_language=Langue
+ui l10n_fr_no_google=Utiliser_Vela_sans_Google
+ui l10n_fr_placeholder=Rechercher
+ui l10n_fr_title=Paramètres
+ui l10n_fr_units=Unités
+ui map_element=yes
+ui map_poi_name=Ferry_Building
+ui offline_basemap_bytes=419425
+ui offline_glyphs_bytes=104667742
+ui offline_installed=1
+ui offline_pack_bytes=364544
+ui offline_places_bytes=571133
+ui offline_remote_urls=0
+ui offline_search_results=30
+ui offline_total_bytes=106023012
+ui place_hours=7
+ui place_open=1
+ui place_phone=1
+ui saved_lists_after_restart=1
+ui saved_lists=1
+ui saved_places=1
+ui saved_recents_after_restart=2
+ui search_rows=60
+ui settings_google_after=1
+ui settings_google_before=0
+ui settings_google_debug=language=system,units=imperial,clock=24,google=1
+ui settings_persistence=language=fr,units=imperial,clock=24,google=1
+ui suggestion_rows=4
+ui screenshots: calibration.png category.png directions-drive.png directions-far-alt.png directions-far-steps.png directions-far.png directions-steps.png directions-transit-steps.png directions-transit.png directions-walk.png launch-davis.png launch-sf.png map-poi.png place-photos.png place-save.png place-top.png search-centered.png search-list.png search-map.png settings-de.png settings-fr.png suggest.png 
+
+== Route replay (23:10:24)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 376DC99D-E28F-4348-BDC5-4B49A2B24409 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 376DC99D-E28F-4348-BDC5-4B49A2B24409 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: details: page raw=-1 parsed=false times=false
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: details: page raw=85416 parsed=true times=false
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+live calibration: version 27
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (23:11:57)
+243434
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 29155 bytes
+open reply: transit-plan-sf 63604 bytes
+directions reply: directions-drive-sf 111712 bytes
+directions reply: directions-walk-sf 34604 bytes
+search reply: 243434 bytes, 29 feature ids
+
+== Archive for iOS devices, unsigned (23:12:03)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** ARCHIVE SUCCEEDED **
+
+(archive: 89 s)
+
+== Package the IPA (23:13:32)
+ipa: Vela-unsigned.ipa 9669275 bytes (9.2M)
+app frameworks: MapLibre.framework 
+app binary: arm64, 15369680 bytes
+live activity extension: PlugIns/NavActivityExtension.appex present in IPA, 133168 bytes
+extension plist CFBundleIdentifier: app.vela.ios.navactivity
+extension plist NSExtensionPointIdentifier: com.apple.widgetkit-extension
+extension signing: none
+kotlin code in the device binary: yes
+plist CFBundleIdentifier: app.vela.ios
+plist CFBundleDisplayName: Vela
+plist CFBundleShortVersionString: 0.1.202610252241
+plist MinimumOSVersion: 17.0
+plist UIBackgroundModes: ["location","audio"]
+plist NSSupportsLiveActivities: true
+
+== Summary
+commit: aa0446e src: aaae015c iOS: convert navigation state counts from Int32
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610252241 (1792968082)
+java: openjdk version "17.0.20.1" 2026-08-18
+gradle: ok in 376 s
+kotlin jvmTest: 104 tests, 0 failures
+kotlin iosSimulatorArm64Test: 83 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  73M, static library 72966232 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  42M, static library 40124248 bytes, SKIE Swift module: yes
+string catalog: 1415 keys, 24 resource locales (23 with translations), 24572 localized values, 37 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: maplibre-gl-native-distribution@6.31.0
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+simulator build: ok
+tests: ok, Executed 34 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: FAILED
+ui CalibrationUITests.testLiveCalibrationIsLoaded: passed (28.368 seconds)
+ui DirectionsUITests.testDirectionsToTheFirstCoffeeResult: passed (158.369 seconds)
+ui LaunchUITests.testLaunchShowsTheMapOverSanFrancisco: passed (22.215 seconds)
+ui LaunchUITests.testStartCameraArgumentMovesTheMapToDavis: passed (18.193 seconds)
+ui LocalizationUITests.testFrenchLabelsWithoutChangingSimulatorLanguage: passed (21.411 seconds)
+ui LocalizationUITests.testGermanSettingsLayout: passed (21.991 seconds)
+ui LocalizationUITests.testSettingsPersistAcrossRelaunch: passed (65.140 seconds)
+ui MapSearchUITests.testMapPoiTapOpensGooglePlace: passed (39.588 seconds)
+ui NavAlertsUITests.testRouteAlertsFromFixtureProvider: failed (57.046 seconds)
+ui NavUITests.testGuidedDriveAndEnd: failed (68.093 seconds)
+ui OfflineUITests.testMonacoDownloadOfflineMapAndSearch: passed (58.433 seconds)
+ui PlaceUITests.testCompleteFixturePlace: failed (72.905 seconds)
+ui SavedUITests.testSavedPlaceListAndRecentsPersist: passed (99.116 seconds)
+ui SearchUITests.testCoffeeSearchShowsResultsAndPins: passed (43.530 seconds)
+ui SearchUITests.testQuickCategoryRunsSearch: passed (15.408 seconds)
+ui SearchUITests.testSuggestionsAppearAndFreezeAfterSelection: passed (18.792 seconds)
+ui calibration_version=27
+ui category_rows=60
+ui directions_center=0
+ui directions_drive_meters=1337
+ui directions_drive_routes=2
+ui directions_drive_seconds=431
+ui directions_drive_steps=13
+ui directions_drive_traffic_spans=1
+ui directions_far_meters=3561
+ui directions_far_routes=3
+ui directions_far_seconds=986
+ui directions_far_selected=1
+ui directions_far_steps=5
+ui directions_far_traffic_spans=0
+ui directions_transit_itineraries=6
+ui directions_transit_legs=3
+ui directions_walk_meters=41
+ui directions_walk_routes=2
+ui directions_walk_seconds=64
+ui directions_walk_steps=2
+ui l10n_de_language=Sprache
+ui l10n_de_no_google=Vela_ohne_Google_nutzen
+ui l10n_de_placeholder=Suchen
+ui l10n_de_title=Einstellungen
+ui l10n_fr_language=Langue
+ui l10n_fr_no_google=Utiliser_Vela_sans_Google
+ui l10n_fr_placeholder=Rechercher
+ui l10n_fr_title=Paramètres
+ui l10n_fr_units=Unités
+ui map_element=yes
+ui map_poi_name=Ferry_Building
+ui offline_basemap_bytes=419425
+ui offline_glyphs_bytes=104667742
+ui offline_installed=1
+ui offline_pack_bytes=364544
+ui offline_places_bytes=571133
+ui offline_remote_urls=0
+ui offline_search_results=30
+ui offline_total_bytes=106023012
+ui place_hours=7
+ui place_open=1
+ui place_phone=1
+ui saved_lists_after_restart=1
+ui saved_lists=1
+ui saved_places=1
+ui saved_recents_after_restart=2
+ui search_rows=60
+ui settings_google_after=1
+ui settings_google_before=0
+ui settings_google_debug=language=system,units=imperial,clock=24,google=1
+ui settings_persistence=language=fr,units=imperial,clock=24,google=1
+ui suggestion_rows=4
+ui screenshots: calibration.png category.png directions-drive.png directions-far-alt.png directions-far-steps.png directions-far.png directions-steps.png directions-transit-steps.png directions-transit.png directions-walk.png launch-davis.png launch-sf.png map-poi.png place-photos.png place-save.png place-top.png search-centered.png search-list.png search-map.png settings-de.png settings-fr.png suggest.png 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: details: page raw=-1 parsed=false times=false
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: details: page raw=85416 parsed=true times=false
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+live calibration: version 27
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 29155 bytes
+open reply: transit-plan-sf 63604 bytes
+directions reply: directions-drive-sf 111712 bytes
+directions reply: directions-walk-sf 34604 bytes
+search reply: 243434 bytes, 29 feature ids
+ipa: Vela-unsigned.ipa 9669275 bytes (9.2M)
+app frameworks: MapLibre.framework 
+app binary: arm64, 15369680 bytes
+live activity extension: PlugIns/NavActivityExtension.appex present in IPA, 133168 bytes
+extension plist CFBundleIdentifier: app.vela.ios.navactivity
+extension plist NSExtensionPointIdentifier: com.apple.widgetkit-extension
+extension signing: none
+kotlin code in the device binary: yes
+plist CFBundleIdentifier: app.vela.ios
+plist CFBundleDisplayName: Vela
+plist CFBundleShortVersionString: 0.1.202610252241
+plist MinimumOSVersion: 17.0
+plist UIBackgroundModes: ["location","audio"]
+plist NSSupportsLiveActivities: true
+failed steps: ui-scenarios
