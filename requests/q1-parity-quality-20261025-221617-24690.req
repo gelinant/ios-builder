@@ -1,0 +1,3 @@
+src=src/q1-parity-quality
+script=scripts/ios/ci-ipa.sh
+args=
