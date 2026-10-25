@@ -1,0 +1,54 @@
+commit: 2724b34 src: 8370438c iOS: PlaceUITests reads the debug line through value(_:)
+xcode: Xcode 26.6 Build version 17F113 
+java: openjdk version "17.0.20.1" 2026-08-18
+gradle: ok in 300 s
+kotlin jvmTest: 46 tests, 0 failures
+kotlin iosSimulatorArm64Test: 31 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  56M, static library 56715280 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  24M, static library 23259560 bytes, SKIE Swift module: yes
+xcodegen: Version: 2.46.0
+packages: maplibre-gl-native-distribution@6.31.0
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+simulator build: ok
+tests: ok, Executed 17 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: ok
+ui CalibrationUITests.testLiveCalibrationIsLoaded: passed (15.305 seconds)
+ui LaunchUITests.testLaunchShowsTheMapOverSanFrancisco: passed (25.174 seconds)
+ui LaunchUITests.testStartCameraArgumentMovesTheMapToDavis: passed (20.076 seconds)
+ui PlaceUITests.testFirstCoffeeResultOpensItsSheet: passed (65.711 seconds)
+ui SearchUITests.testCoffeeSearchShowsResultsAndPins: passed (45.776 seconds)
+ui calibration_version=27
+ui map_element=yes
+ui place_hours=7
+ui place_name=Doppio_Coffee_&_Brunch
+ui place_phone=1
+ui place_photos=10
+ui place_popular_hours=0
+ui place_reviews_from=feed
+ui place_reviews=5
+ui search_rows=60
+ui screenshots: calibration.png launch-davis.png launch-sf.png place-photos.png place-reviews-2.png place-reviews.png place-top.png search-centered.png search-list.png search-map.png 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+live calibration: version 27
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+search reply: 251957 bytes, 32 feature ids
+ipa: Vela-unsigned.ipa 5670108 bytes (5.4M)
+app frameworks: MapLibre.framework 
+app binary: arm64, 7885776 bytes
+kotlin code in the device binary: yes
+plist CFBundleIdentifier: app.vela.ios
+plist CFBundleDisplayName: Vela
+plist CFBundleShortVersionString: 0.1.0
+plist MinimumOSVersion: 17.0
+plist UIBackgroundModes: ["location","audio"]
