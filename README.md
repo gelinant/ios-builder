@@ -1,12 +1,13 @@
 # Dernière IPA Vela iOS
 
-**M4 : itinéraires.** Build `m4final-20261025-152820-13098` (7,4 Mo).
+**M4 + régions hors ligne.** Build `i7-offline-20261025-174700-20419` (7,8 Mo).
 
-À tester sur iPhone (Wi-Fi maison et données mobiles) :
-1. Rechercher un lieu, ouvrir sa fiche, toucher Directions.
-2. Alternatives d'itinéraires (durée, distance, via, trafic), changer d'alternative : le tracé change.
-3. Modes voiture / marche / vélo / transports (transports = Google seulement pour l'instant).
-4. Options éviter autoroutes / péages / ferries, bouton inverser départ-arrivée.
-5. Ouvrir Steps : liste des étapes.
-6. Le bouton Start ne fait encore rien (navigation = prochaine étape).
-7. Vérifier aussi que la fiche lieu et les avatars des auteurs d'avis s'affichent bien.
+Nouveau : bouton « … » dans la barre de recherche, puis Offline.
+1. Télécharger Monaco (petit, le test est fait avec Monaco).
+2. Couper le réseau (mode avion), relancer l'app au-dessus de Monaco : carte locale, recherche « Casino de Monte Carlo » hors ligne, géocodage d'adresse.
+3. Vérifier la détection de la région courante avec le bouton de localisation.
+4. Annuler un téléchargement, tuer l'app pendant un téléchargement, réessayer, supprimer/réinstaller une région.
+5. Option « Use Vela without Google » persistante.
+
+Aussi : recherche Google, fiche lieu, itinéraires (M4). Le bouton Start ne fait encore rien (navigation en cours).
+Téléchargements hors ligne : au premier plan seulement pour l'instant.
