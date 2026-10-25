@@ -20,28 +20,34 @@
       "localizedDescription": "Vela is a privacy-minded maps app: search, place details, routes, guided navigation, saved places and offline regions.\n\nDevelopment build distributed unsigned for AltStore, SideStore or Sideloadly. The app and its navigation Live Activity extension must be signed together.",
       "iconURL": "https://raw.githubusercontent.com/gelinant/ios-builder/dist/icon.png",
       "tintColor": "#0A8F83",
+      "screenshots": [
+        "https://raw.githubusercontent.com/gelinant/ios-builder/dist/screenshot.png"
+      ],
       "screenshotURLs": [
         "https://raw.githubusercontent.com/gelinant/ios-builder/dist/screenshot.png"
       ],
+      "category": "utilities",
       "versions": [
         {
           "version": "0.1.0",
-          "date": "2026-10-25T21:05:56Z",
+          "buildVersion": "1",
+          "date": "2026-10-25T21:06:47Z",
           "localizedDescription": "Live Activity, navigation, saved places and offline regions\n\nBuild 1.",
           "downloadURL": "https://raw.githubusercontent.com/gelinant/ios-builder/dist/Vela.ipa",
-          "size": 8522222
+          "size": 8522222,
+          "minOSVersion": "17.0"
         }
       ],
       "version": "0.1.0",
-      "versionDate": "2026-10-25T21:05:56Z",
+      "versionDate": "2026-10-25T21:06:47Z",
       "versionDescription": "Live Activity, navigation, saved places and offline regions\n\nBuild 1.",
       "downloadURL": "https://raw.githubusercontent.com/gelinant/ios-builder/dist/Vela.ipa",
       "size": 8522222,
       "appPermissions": {
-        "location": "Show your position, plan routes and guide you while navigating.",
-        "background": {
-          "location": "Keep turn-by-turn guidance active in the background.",
-          "audio": "Play spoken navigation instructions in the background."
+        "entitlements": [],
+        "privacy": {
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "Vela keeps guiding you during navigation while the screen is off or another app is open.",
+          "NSLocationWhenInUseUsageDescription": "Vela shows where you are on the map and guides you along your route."
         }
       }
     }
