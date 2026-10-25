@@ -1,0 +1,18 @@
+commit: 9207b12 src: a6135597 Drive the navigation UI test with simulator logs
+xcode: Xcode 26.6 Build version 17F113 
+java: openjdk version "17.0.20.1" 2026-08-18
+gradle: ok in 415 s
+kotlin jvmTest: 62 tests, 0 failures
+kotlin iosSimulatorArm64Test: 44 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  71M, static library 70775736 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  40M, static library 38007064 bytes, SKIE Swift module: yes
+xcodegen: Version: 2.46.0
+packages: maplibre-gl-native-distribution@6.31.0
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+simulator build: ok
+tests: ok, Executed 17 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+screenshot: saved 20 s after launch
+app running after 20 s: yes
