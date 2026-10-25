@@ -1,0 +1,3 @@
+src=src/i4-routes
+script=scripts/ios/ci-ipa.sh
+args=
