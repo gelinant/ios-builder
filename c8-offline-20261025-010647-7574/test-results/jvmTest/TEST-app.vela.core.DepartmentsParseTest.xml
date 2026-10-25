@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="DepartmentsParseTest[jvm]" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-25T01:10:05.760Z" hostname="sat12-bq147-4876d38b-ad50-421c-bb24-80d3733ba5ba-82D4034FD8E1.local" time="0.084">
+  <properties/>
+  <testcase name="absent or empty 118 block means no departments[jvm]" classname="app.vela.core.DepartmentsParseTest" time="0.064"/>
+  <testcase name="parses named departments and strips the store prefix and keeps service windows[jvm]" classname="app.vela.core.DepartmentsParseTest" time="0.017"/>
+  <testcase name="status-only department survives and hours-only openNow is null[jvm]" classname="app.vela.core.DepartmentsParseTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="iosSimulatorArm64Test.app.vela.core.data.google.parse.TransitSubwayTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-10-25T01:10:15.992Z" hostname="sat12-bq147-4876d38b-ad50-421c-bb24-80d3733ba5ba-82D4034FD8E1.local" time="0.004">
+  <properties/>
+  <testcase name="a subway line drawn as a bullet is still a line not a walk[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.google.parse.TransitSubwayTest" time="0.0"/>
+  <testcase name="the trip summary keeps every bullet line beside the pills[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.google.parse.TransitSubwayTest" time="0.0"/>
+  <testcase name="a bus keeps its text pill and its colors[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.google.parse.TransitSubwayTest" time="0.0"/>
+  <testcase name="the generic vehicle icon never becomes a line name[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.google.parse.TransitSubwayTest" time="0.0"/>
+  <testcase name="a subway to Flatbush is a subway not a bus[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.google.parse.TransitSubwayTest" time="0.001"/>
+  <testcase name="a bus leg is still a bus[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.google.parse.TransitSubwayTest" time="0.001"/>
+  <testcase name="place names containing mode words are ignored[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.google.parse.TransitSubwayTest" time="0.0"/>
+  <testcase name="the mode falls back to generic rather than guessing from prose[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.google.parse.TransitSubwayTest" time="0.0"/>
+  <testcase name="a shinkansen between two walks is a train[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.google.parse.TransitSubwayTest" time="0.0"/>
+  <testcase name="a lettered JR line is a train and a metro line is a subway[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.google.parse.TransitSubwayTest" time="0.0"/>
+  <testcase name="an operator icon nobody can classify is a ride never a walk[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.google.parse.TransitSubwayTest" time="0.0"/>
+  <testcase name="a line drawn as icon plus name is one line not two[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.data.google.parse.TransitSubwayTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

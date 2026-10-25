@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="OverpassAlprGeoTest[jvm]" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-25T01:10:06.480Z" hostname="sat12-bq147-4876d38b-ad50-421c-bb24-80d3733ba5ba-82D4034FD8E1.local" time="0.005">
+  <properties/>
+  <testcase name="cameraJustOffTheSegment_respectsThreshold[jvm]" classname="app.vela.core.data.OverpassAlprGeoTest" time="0.005"/>
+  <testcase name="cameraOnLineBetweenSparseVertices_isNear[jvm]" classname="app.vela.core.data.OverpassAlprGeoTest" time="0.0"/>
+  <testcase name="cameraFarFromLine_isNotNear[jvm]" classname="app.vela.core.data.OverpassAlprGeoTest" time="0.0"/>
+  <testcase name="shortRoute_isOneTile[jvm]" classname="app.vela.core.data.OverpassAlprGeoTest" time="0.0"/>
+  <testcase name="longRoute_splitsIntoBoundedTiles[jvm]" classname="app.vela.core.data.OverpassAlprGeoTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PmtilesCommonTest[jvm]" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-25T01:10:06.967Z" hostname="sat12-bq147-4876d38b-ad50-421c-bb24-80d3733ba5ba-82D4034FD8E1.local" time="0.083">
+  <properties/>
+  <testcase name="anArchiveIsReadTileByTile[jvm]" classname="app.vela.core.offline.PmtilesCommonTest" time="0.033"/>
+  <testcase name="aRandomFileReadsWritesAndTruncates[jvm]" classname="app.vela.core.offline.PmtilesCommonTest" time="0.002"/>
+  <testcase name="compactingKeepsTheFingerprint[jvm]" classname="app.vela.core.offline.PmtilesCommonTest" time="0.019"/>
+  <testcase name="gzipRoundTripsAndHashesMatchTheStandard[jvm]" classname="app.vela.core.offline.PmtilesCommonTest" time="0.029"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

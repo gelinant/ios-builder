@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="GoogleJvmParityTest[jvm]" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-25T01:10:06.645Z" hostname="sat12-bq147-4876d38b-ad50-421c-bb24-80d3733ba5ba-82D4034FD8E1.local" time="0.212">
+  <properties/>
+  <testcase name="twoComplementHexMatchesStringFormat[jvm]" classname="app.vela.core.data.google.GoogleJvmParityTest" time="0.024"/>
+  <testcase name="featureIdHalvesMatchBigInteger[jvm]" classname="app.vela.core.data.google.GoogleJvmParityTest" time="0.012"/>
+  <testcase name="downlinkAndRttHintsMatchTheJdk[jvm]" classname="app.vela.core.data.google.GoogleJvmParityTest" time="0.071"/>
+  <testcase name="clockTimesMatchDateTimeFormatter[jvm]" classname="app.vela.core.data.google.GoogleJvmParityTest" time="0.104"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

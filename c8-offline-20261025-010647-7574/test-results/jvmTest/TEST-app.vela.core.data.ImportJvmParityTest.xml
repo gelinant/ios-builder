@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ImportJvmParityTest[jvm]" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-25T01:10:06.276Z" hostname="sat12-bq147-4876d38b-ad50-421c-bb24-80d3733ba5ba-82D4034FD8E1.local" time="0.005">
+  <properties/>
+  <testcase name="an imported pin keeps its id and label[jvm]" classname="app.vela.core.data.ImportJvmParityTest" time="0.003"/>
+  <testcase name="a cid converts to hex as BigInteger does[jvm]" classname="app.vela.core.data.ImportJvmParityTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

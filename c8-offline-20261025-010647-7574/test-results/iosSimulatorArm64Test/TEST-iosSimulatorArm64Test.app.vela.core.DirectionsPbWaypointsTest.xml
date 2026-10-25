@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="iosSimulatorArm64Test.app.vela.core.DirectionsPbWaypointsTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-25T01:10:15.833Z" hostname="sat12-bq147-4876d38b-ad50-421c-bb24-80d3733ba5ba-82D4034FD8E1.local" time="0.005">
+  <properties/>
+  <testcase name="no stops leaves the template alone[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.DirectionsPbWaypointsTest" time="0.0"/>
+  <testcase name="a stop is one more group between origin and destination in order[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.DirectionsPbWaypointsTest" time="0.0"/>
+  <testcase name="build fills every group and keeps the stop in the middle[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.DirectionsPbWaypointsTest" time="0.0"/>
+  <testcase name="a template without the placeholder groups is left alone and reports so[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.DirectionsPbWaypointsTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

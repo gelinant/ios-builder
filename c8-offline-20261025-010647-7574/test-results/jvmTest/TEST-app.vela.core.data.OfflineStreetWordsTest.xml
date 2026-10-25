@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="OfflineStreetWordsTest[jvm]" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-25T01:10:06.476Z" hostname="sat12-bq147-4876d38b-ad50-421c-bb24-80d3733ba5ba-82D4034FD8E1.local" time="0.002">
+  <properties/>
+  <testcase name="abbreviations match their full forms[jvm]" classname="app.vela.core.data.OfflineStreetWordsTest" time="0.0"/>
+  <testcase name="trailing words are dropped one at a time when there is no comma[jvm]" classname="app.vela.core.data.OfflineStreetWordsTest" time="0.0"/>
+  <testcase name="it never ends on a direction or a street type alone[jvm]" classname="app.vela.core.data.OfflineStreetWordsTest" time="0.0"/>
+  <testcase name="a half-typed last word falls back to the name[jvm]" classname="app.vela.core.data.OfflineStreetWordsTest" time="0.0"/>
+  <testcase name="a town state or ZIP after a comma is not part of the street[jvm]" classname="app.vela.core.data.OfflineStreetWordsTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

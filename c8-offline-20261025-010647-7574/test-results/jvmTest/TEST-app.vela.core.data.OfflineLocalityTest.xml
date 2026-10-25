@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="OfflineLocalityTest[jvm]" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-25T01:10:06.294Z" hostname="sat12-bq147-4876d38b-ad50-421c-bb24-80d3733ba5ba-82D4034FD8E1.local" time="0.008">
+  <properties/>
+  <testcase name="a street line alone or with a bare town needs a locality[jvm]" classname="app.vela.core.data.OfflineLocalityTest" time="0.003"/>
+  <testcase name="joining never swaps one town for another[jvm]" classname="app.vela.core.data.OfflineLocalityTest" time="0.0"/>
+  <testcase name="the vote prefers a postcode then the most common then the nearest[jvm]" classname="app.vela.core.data.OfflineLocalityTest" time="0.003"/>
+  <testcase name="the locality is everything after the street line[jvm]" classname="app.vela.core.data.OfflineLocalityTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
