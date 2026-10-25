@@ -1,0 +1,64 @@
+Timestamp               Ty Process[PID:TID]
+2026-10-25 17:56:23.596 I  Vela[12104:a0ac] [app.vela.ios:Calibration] calibration at startup: version 1
+2026-10-25 17:56:24.146 Df Vela[12104:a355] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-25 17:56:25.113 I  Vela[12104:a0ac] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-25 17:56:28.814 Df Vela[12104:a357] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-25 17:56:39.122 I  Vela[13041:aab0] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-25 17:56:39.451 Df Vela[13041:aabd] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-25 17:56:40.032 I  Vela[13041:aab0] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-25 17:58:09.655 I  Vela[16996:d2ec] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-25 17:58:10.437 Df Vela[16996:d369] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-25 17:58:12.661 I  Vela[16996:d2ec] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-25 17:58:55.877 I  Vela[17882:de7d] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-25 17:58:57.225 Df Vela[17882:e5b3] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-25 17:58:58.877 I  Vela[17882:de7d] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-25 17:59:25.792 I  Vela[17882:de7d] [app.vela.ios:PlaceLoad] photos: rpc 10
+2026-10-25 17:59:26.230 I  Vela[17882:de7d] [app.vela.ios:PlaceLoad] reviews: feed 5 (limited view)
+2026-10-25 17:59:27.267 I  Vela[17882:ed57] [app.vela.ios:Image] avatar 200 image/png 25653 bytes 120x120 bpc=8 alpha=1 cs=kCGColorSpaceSRGB ERwOTlD_HIF-akQM=s120-c-rp-mo-ba12-br100
+2026-10-25 17:59:27.267 I  Vela[17882:f853] [app.vela.ios:Image] avatar 200 image/png 28568 bytes 120x120 bpc=8 alpha=1 cs=kCGColorSpaceSRGB hNz9r3Zh2U_Xq-XZ=s120-c-rp-mo-ba12-br100
+2026-10-25 17:59:27.267 I  Vela[17882:f85a] [app.vela.ios:Image] avatar 200 image/png 21519 bytes 120x120 bpc=8 alpha=1 cs=kCGColorSpaceSRGB HtsbBcEwPOWS4_mg=s120-c-rp-mo-ba12-br100
+2026-10-25 17:59:27.269 I  Vela[17882:ed57] [app.vela.ios:Image] avatar 200 image/png 6621 bytes 120x120 bpc=8 alpha=1 cs=kCGColorSpaceSRGB N4p4Vg8tIj0j8BzI=s120-c-rp-mo-ba12-br100
+2026-10-25 17:59:27.269 I  Vela[17882:f85a] [app.vela.ios:Image] avatar 200 image/png 29765 bytes 120x120 bpc=8 alpha=1 cs=kCGColorSpaceSRGB sNjBMg9VfwyaLA-R=s120-c-rp-mo-ba12-br100
+2026-10-25 17:59:33.724 I  Vela[17882:de7d] [app.vela.ios:PlaceLoad] details: plain search (no popular times)
+2026-10-25 17:59:59.503 I  Vela[17882:de7d] [app.vela.ios:PlaceLoad] photos: rpc 10
+2026-10-25 17:59:59.753 I  Vela[17882:de7d] [app.vela.ios:PlaceLoad] reviews: feed 5 (limited view)
+2026-10-25 17:59:59.778 I  Vela[17882:10761] [app.vela.ios:Image] avatar 200 image/png 9996 bytes 120x120 bpc=8 alpha=1 cs=kCGColorSpaceSRGB h1b9BJgIKCB2fm2A=s120-c-rp-mo-ba12-br100
+2026-10-25 17:59:59.780 I  Vela[17882:10761] [app.vela.ios:Image] avatar 200 image/png 6818 bytes 120x120 bpc=8 alpha=1 cs=kCGColorSpaceSRGB KFoA_WPalH_6_l6g=s120-c-rp-mo-ba12-br100
+2026-10-25 17:59:59.780 I  Vela[17882:10760] [app.vela.ios:Image] avatar 200 image/png 25819 bytes 120x120 bpc=8 alpha=1 cs=kCGColorSpaceSRGB REjBZxA1aKjIk_wr=s120-c-rp-mo-ba12-br100
+2026-10-25 17:59:59.784 I  Vela[17882:10761] [app.vela.ios:Image] avatar 200 image/png 24307 bytes 120x120 bpc=8 alpha=1 cs=kCGColorSpaceSRGB d93WhTqKy7fkAI7I=s120-c-rp-mo-ba12-br100
+2026-10-25 17:59:59.785 I  Vela[17882:10760] [app.vela.ios:Image] avatar 200 image/png 6430 bytes 120x120 bpc=8 alpha=1 cs=kCGColorSpaceSRGB LvjVhtDEt_YkzF0Q=s120-c-rp-mo-ba12-br100
+2026-10-25 18:00:07.505 I  Vela[17882:de7d] [app.vela.ios:PlaceLoad] details: plain search (no popular times)
+2026-10-25 18:00:18.041 I  Vela[22539:10c47] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-25 18:00:18.529 Df Vela[22539:10d5b] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-25 18:00:19.770 I  Vela[22539:10c47] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-25 18:00:32.996 I  Vela[23097:111f8] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-25 18:00:33.331 Df Vela[23097:112a0] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-25 18:00:34.604 I  Vela[23097:111f8] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-25 18:00:47.748 I  Vela[23543:116d2] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-25 18:00:48.060 Df Vela[23543:117de] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-25 18:00:49.607 I  Vela[23543:116d2] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-25 18:01:02.985 I  Vela[23543:116d2] [app.vela.ios:VelaRegion] monaco: installed
+2026-10-25 18:01:23.555 I  Vela[25901:12ce3] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-25 18:01:23.925 Df Vela[25901:12da3] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-25 18:01:25.135 I  Vela[25901:12ce3] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-25 18:01:38.410 I  Vela[25901:12ce3] [app.vela.ios:PlaceLoad] photos: rpc 10
+2026-10-25 18:01:38.724 I  Vela[25901:12ce3] [app.vela.ios:PlaceLoad] reviews: feed 5 (limited view)
+2026-10-25 18:01:38.887 I  Vela[25901:1350e] [app.vela.ios:Image] avatar 200 image/png 34013 bytes 120x120 bpc=8 alpha=1 cs=kCGColorSpaceSRGB bHnk78U0NXJ_v1-Q=s120-c-rp-mo-ba12-br100
+2026-10-25 18:01:38.890 I  Vela[25901:1350f] [app.vela.ios:Image] avatar 200 image/png 28604 bytes 120x120 bpc=8 alpha=1 cs=kCGColorSpaceSRGB rNq-qG9ShmsgRhwg=s120-c-rp-mo-ba12-br100
+2026-10-25 18:01:38.890 I  Vela[25901:1350e] [app.vela.ios:Image] avatar 200 image/png 29053 bytes 120x120 bpc=8 alpha=1 cs=kCGColorSpaceSRGB S8ctH7sgi4weKO4tg-1o4=s120-c-rp-mo-br100
+2026-10-25 18:01:38.895 I  Vela[25901:1350e] [app.vela.ios:Image] avatar 200 image/png 16399 bytes 120x120 bpc=8 alpha=1 cs=kCGColorSpaceSRGB SAxTMgUa-YTGKHjHunNPg=s120-c-rp-mo-br100
+2026-10-25 18:01:38.895 I  Vela[25901:12da4] [app.vela.ios:Image] avatar 200 image/png 30343 bytes 120x120 bpc=8 alpha=1 cs=kCGColorSpaceSRGB Ytd5g-ST7SXDl0n9=s120-c-rp-mo-ba12-br100
+2026-10-25 18:01:45.687 I  Vela[25901:12ce3] [app.vela.ios:PlaceLoad] details: plain search (no popular times)
+2026-10-25 18:02:14.800 I  Vela[28403:144bc] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-25 18:02:15.241 Df Vela[28403:1456b] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-25 18:02:16.396 I  Vela[28403:144bc] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-25 18:02:40.256 I  Vela[28403:144bc] [app.vela.ios:PlaceLoad] photos: rpc 10
+2026-10-25 18:02:40.442 I  Vela[28403:144bc] [app.vela.ios:PlaceLoad] reviews: feed 5 (limited view)
+2026-10-25 18:02:40.540 I  Vela[28403:15614] [app.vela.ios:Image] avatar 200 image/png 34013 bytes 120x120 bpc=8 alpha=1 cs=kCGColorSpaceSRGB bHnk78U0NXJ_v1-Q=s120-c-rp-mo-ba12-br100
+2026-10-25 18:02:40.541 I  Vela[28403:15615] [app.vela.ios:Image] avatar 200 image/png 28604 bytes 120x120 bpc=8 alpha=1 cs=kCGColorSpaceSRGB rNq-qG9ShmsgRhwg=s120-c-rp-mo-ba12-br100
+2026-10-25 18:02:40.545 I  Vela[28403:15615] [app.vela.ios:Image] avatar 200 image/png 29053 bytes 120x120 bpc=8 alpha=1 cs=kCGColorSpaceSRGB S8ctH7sgi4weKO4tg-1o4=s120-c-rp-mo-br100
+2026-10-25 18:02:40.548 I  Vela[28403:15614] [app.vela.ios:Image] avatar 200 image/png 16399 bytes 120x120 bpc=8 alpha=1 cs=kCGColorSpaceSRGB SAxTMgUa-YTGKHjHunNPg=s120-c-rp-mo-br100
+2026-10-25 18:02:40.549 I  Vela[28403:15615] [app.vela.ios:Image] avatar 200 image/png 30343 bytes 120x120 bpc=8 alpha=1 cs=kCGColorSpaceSRGB Ytd5g-ST7SXDl0n9=s120-c-rp-mo-ba12-br100
+2026-10-25 18:03:20.072 I  Vela[31924:16b9b] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-25 18:03:20.634 Df Vela[31924:16bb1] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-25 18:03:21.546 I  Vela[31924:16b9b] [app.vela.ios:Calibration] calibration after refresh: version 27
