@@ -1,12 +1,14 @@
 # Dernière IPA Vela iOS
 
-**M2 + calibration en direct.** Build `i0-ios-platform-20261025-000020-15244` (4,6 Mo). La recherche utilise maintenant la configuration signée v27 téléchargée au lancement.
+**M3 : fiche lieu.** Build `i3-place-20261025-005924-9696` (5,4 Mo).
 
-À tester sur iPhone :
-1. Taper une recherche (ex. « coffee », « boulangerie ») : liste avec note, avis, adresse, et épingles sur la carte.
-2. Toucher un résultat : la carte se centre dessus et ouvre la bulle.
-3. Replier / déplier la liste, effacer la recherche.
-4. En Wi-Fi maison puis en données mobiles.
-5. Téléphone en français : pas de page de consentement Google.
+À tester sur iPhone (Wi-Fi maison et données mobiles) :
+1. Rechercher (« coffee », « boulangerie »), toucher un résultat : la fiche s'ouvre.
+2. Fiche : note, catégorie, ouvert/fermé + horaires dépliables, adresse, téléphone, site.
+3. Boutons Appeler et Site web.
+4. Photos : la bande défile, combien de photos ?
+5. Avis : combien ? (le runner n'en voyait que 5 depuis un datacenter ; chez toi il peut y en avoir plus)
+6. Affluence (« popular times ») : apparaît-elle ?
+7. Bug connu : avatars des auteurs d'avis en ronds noirs.
 
-Pas encore : fiche lieu, itinéraires, navigation.
+Pas encore : itinéraires (le bouton est un placeholder), navigation.
