@@ -1,0 +1,3 @@
+src=src/i0-ios-platform
+script=scripts/ios/ci-ipa.sh
+args=
