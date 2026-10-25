@@ -1,6 +1,6 @@
 # Dernière IPA Vela iOS
 
-**M2 : recherche Google.** Build `v2-search-ios-20261024-232044-20241` (4,5 Mo).
+**M2 + calibration en direct.** Build `i0-ios-platform-20261025-000020-15244` (4,6 Mo). La recherche utilise maintenant la configuration signée v27 téléchargée au lancement.
 
 À tester sur iPhone :
 1. Taper une recherche (ex. « coffee », « boulangerie ») : liste avec note, avis, adresse, et épingles sur la carte.
