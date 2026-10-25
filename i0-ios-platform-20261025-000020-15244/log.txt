@@ -1,0 +1,149 @@
+tag=i0-ios-platform-20261025-000020-15244 src=src/i0-ios-platform 761a9d2 src: 08898804 iOS: JSStringCopyCFString returns a retained CFString
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 761a9d2 src: 08898804 iOS: JSStringCopyCFString returns a retained CFString
+xcode: Xcode 26.6 Build version 17F113 
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Kotlin: tests and the VelaCore framework (00:01:15)
+gradle: ok in 143 s
+kotlin jvmTest: 36 tests, 0 failures
+kotlin iosSimulatorArm64Test: 28 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  51M, static library 51758296 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  17M, static library 15732680 bytes, SKIE Swift module: yes
+
+== XcodeGen (00:03:38)
+xcodegen: Version: 2.46.0
+
+== Generate the project (00:03:39)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (00:03:39)
+  MapLibre Native: https://github.com/maplibre/maplibre-gl-native-distribution @ 6.31.0
+
+resolved source packages: MapLibre Native
+(resolve: 8 s)
+packages: maplibre-gl-native-distribution@6.31.0
+
+== Pick a simulator (00:03:48)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+
+== Build for the simulator (00:03:48)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 32 s)
+simulator build: ok
+
+== Boot the simulator (00:04:20)
+
+== Unit tests (00:06:25)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 45 s)
+tests: ok, Executed 3 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+
+== Launch and screenshot (00:07:10)
+app.vela.ios: 24310
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: F6557A0F-60FF-4909-AFCD-96DC392DC67E (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (00:07:55)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(uitest: 110 s)
+ui scenarios: ok
+ui CalibrationUITests.testLiveCalibrationIsLoaded: passed (11.343 seconds)
+ui LaunchUITests.testLaunchShowsTheMapOverSanFrancisco: passed (14.652 seconds)
+ui LaunchUITests.testStartCameraArgumentMovesTheMapToDavis: passed (13.983 seconds)
+ui SearchUITests.testCoffeeSearchShowsResultsAndPins: passed (36.526 seconds)
+ui calibration_version=27
+ui map_element=yes
+ui search_rows=60
+ui screenshots: calibration.png launch-davis.png launch-sf.png search-centered.png search-list.png search-map.png 
+
+== Route replay (00:09:48)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: F6557A0F-60FF-4909-AFCD-96DC392DC67E (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: F6557A0F-60FF-4909-AFCD-96DC392DC67E (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: version 27
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (00:11:12)
+257122
+search reply: 257122 bytes, 35 feature ids
+
+== Archive for iOS devices, unsigned (00:11:14)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** ARCHIVE SUCCEEDED **
+
+(archive: 30 s)
+
+== Package the IPA (00:11:44)
+ipa: Vela-unsigned.ipa 4868465 bytes (4.6M)
+app frameworks: MapLibre.framework 
+app binary: arm64, 5256680 bytes
+kotlin code in the device binary: yes
+plist CFBundleIdentifier: app.vela.ios
+plist CFBundleDisplayName: Vela
+plist CFBundleShortVersionString: 0.1.0
+plist MinimumOSVersion: 17.0
+plist UIBackgroundModes: ["location","audio"]
+
+== Summary
+commit: 761a9d2 src: 08898804 iOS: JSStringCopyCFString returns a retained CFString
+xcode: Xcode 26.6 Build version 17F113 
+java: openjdk version "17.0.20.1" 2026-08-18
+gradle: ok in 143 s
+kotlin jvmTest: 36 tests, 0 failures
+kotlin iosSimulatorArm64Test: 28 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  51M, static library 51758296 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  17M, static library 15732680 bytes, SKIE Swift module: yes
+xcodegen: Version: 2.46.0
+packages: maplibre-gl-native-distribution@6.31.0
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+simulator build: ok
+tests: ok, Executed 3 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: ok
+ui CalibrationUITests.testLiveCalibrationIsLoaded: passed (11.343 seconds)
+ui LaunchUITests.testLaunchShowsTheMapOverSanFrancisco: passed (14.652 seconds)
+ui LaunchUITests.testStartCameraArgumentMovesTheMapToDavis: passed (13.983 seconds)
+ui SearchUITests.testCoffeeSearchShowsResultsAndPins: passed (36.526 seconds)
+ui calibration_version=27
+ui map_element=yes
+ui search_rows=60
+ui screenshots: calibration.png launch-davis.png launch-sf.png search-centered.png search-list.png search-map.png 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: version 27
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+search reply: 257122 bytes, 35 feature ids
+ipa: Vela-unsigned.ipa 4868465 bytes (4.6M)
+app frameworks: MapLibre.framework 
+app binary: arm64, 5256680 bytes
+kotlin code in the device binary: yes
+plist CFBundleIdentifier: app.vela.ios
+plist CFBundleDisplayName: Vela
+plist CFBundleShortVersionString: 0.1.0
+plist MinimumOSVersion: 17.0
+plist UIBackgroundModes: ["location","audio"]
