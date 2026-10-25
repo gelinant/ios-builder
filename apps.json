@@ -29,20 +29,20 @@
       "category": "utilities",
       "versions": [
         {
-          "version": "0.1.0",
-          "buildVersion": "1",
-          "date": "2026-10-25T21:06:47Z",
-          "localizedDescription": "Live Activity, navigation, saved places and offline regions\n\nBuild 1.",
+          "version": "0.1.202610252126",
+          "buildVersion": "1792963603",
+          "date": "2026-10-25T22:23:46Z",
+          "localizedDescription": "Suggestions, categories, settings, 24 languages, Live Activity, navigation and offline regions\n\nBuild 1792963603.",
           "downloadURL": "https://raw.githubusercontent.com/gelinant/ios-builder/dist/Vela.ipa",
-          "size": 8522222,
+          "size": 9506998,
           "minOSVersion": "17.0"
         }
       ],
-      "version": "0.1.0",
-      "versionDate": "2026-10-25T21:06:47Z",
-      "versionDescription": "Live Activity, navigation, saved places and offline regions\n\nBuild 1.",
+      "version": "0.1.202610252126",
+      "versionDate": "2026-10-25T22:23:46Z",
+      "versionDescription": "Suggestions, categories, settings, 24 languages, Live Activity, navigation and offline regions\n\nBuild 1792963603.",
       "downloadURL": "https://raw.githubusercontent.com/gelinant/ios-builder/dist/Vela.ipa",
-      "size": 8522222,
+      "size": 9506998,
       "appPermissions": {
         "entitlements": [],
         "privacy": {
