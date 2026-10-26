@@ -1,0 +1,83 @@
+commit: 5e97f3f src: 398155a8 Docs: use writing-safe route option wording
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610261609 (1793030992)
+java: openjdk version "17.0.20.1" 2026-08-18
+gradle: ok in 242 s
+kotlin jvmTest: 116 tests, 0 failures
+kotlin iosSimulatorArm64Test: 95 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  74M, static library 73390952 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  43M, static library 40544896 bytes, SKIE Swift module: yes
+string catalog: 1415 keys, 24 resource locales (23 with translations), 24572 localized values, 40 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: maplibre-gl-native-distribution@6.31.0
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+simulator build: ok
+tests: ok, Executed 50 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: ok
+ui DirectionsUITests.testDirectionsToTheFirstCoffeeResult: passed (108.041 seconds)
+ui DirectionsUITests.testWaypointAndDepartureTime: passed (43.639 seconds)
+ui directions_center=0
+ui directions_drive_meters=1238
+ui directions_drive_routes=2
+ui directions_drive_seconds=399
+ui directions_drive_steps=12
+ui directions_drive_traffic_spans=0
+ui directions_far_meters=3561
+ui directions_far_routes=2
+ui directions_far_seconds=1056
+ui directions_far_selected=1
+ui directions_far_steps=5
+ui directions_far_traffic_spans=0
+ui directions_transit_itineraries=7
+ui directions_transit_legs=3
+ui directions_walk_meters=41
+ui directions_walk_routes=2
+ui directions_walk_seconds=64
+ui directions_walk_steps=2
+ui route_time_epoch=1793032800
+ui route_time_mode=1
+ui route_time_note=Typical_traffic_range,_not_a_live_departure_forecast
+ui route_waypoint_routes=1
+ui route_waypoints=1
+ui screenshots: directions-drive.png directions-far-alt.png directions-far-steps.png directions-far.png directions-steps.png directions-transit-steps.png directions-transit.png directions-walk.png 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: reviews: feed 5 (limited view)
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=27497 parsed=true times=false
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: details: page raw=135654 parsed=true times=false
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: details: page raw=94009 parsed=true times=false
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 29155 bytes
+open reply: transit-plan-sf 101342 bytes
+directions reply: directions-drive-sf 121928 bytes
+directions reply: directions-walk-sf 34616 bytes
+search reply: 274074 bytes, 35 feature ids
+ipa: Vela-unsigned.ipa 9978577 bytes (9.9M)
+app frameworks: MapLibre.framework 
+app binary: arm64, 15952864 bytes
+live activity extension: PlugIns/NavActivityExtension.appex present in IPA, 220888 bytes
+extension plist CFBundleIdentifier: app.vela.ios.navactivity
+extension plist NSExtensionPointIdentifier: com.apple.widgetkit-extension
+extension signing: none
+kotlin code in the device binary: yes
+plist CFBundleIdentifier: app.vela.ios
+plist CFBundleDisplayName: Vela
+plist CFBundleShortVersionString: 0.1.202610261609
+plist MinimumOSVersion: 17.0
+plist UIBackgroundModes: ["location","audio"]
+plist NSSupportsLiveActivities: true
