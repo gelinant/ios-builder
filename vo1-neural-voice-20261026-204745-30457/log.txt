@@ -1,0 +1,248 @@
+tag=vo1-neural-voice-20261026-204745-30457 src=src/vo1-neural-voice e450b83 src: ea7a1dcc ios: use the sherpa-onnx xcframework that embeds ONNX Runtime
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: e450b83 src: ea7a1dcc ios: use the sherpa-onnx xcframework that embeds ONNX Runtime
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610262048 (1793047728)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Kotlin: tests and the VelaCore framework (20:48:48)
+gradle: ok in 558 s
+kotlin jvmTest: 171 tests, 0 failures
+kotlin iosSimulatorArm64Test: 150 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  76M, static library 74870616 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  44M, static library 42066960 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (20:58:08)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 10 30.3M   10 3350k    0     0  3326k      0  0:00:09  0:00:01  0:00:08 3326k100 30.3M  100 30.3M    0     0  23.0M      0  0:00:01  0:00:01 --:--:-- 87.4M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (20:58:10)
+string catalog: 1415 keys, 24 resource locales (23 with translations), 24572 localized values, 55 Swift references, 24 picker languages
+
+== XcodeGen (20:58:12)
+xcodegen: Version: 2.46.0
+
+== Generate the project (20:58:13)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (20:58:13)
+  SWCompression: https://github.com/tsolomko/SWCompression @ 4.9.1
+
+resolved source packages: MapLibre Native, BitByteData, SWCompression
+(resolve: 27 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (20:58:40)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+
+== Build for the simulator (20:58:41)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 87 s)
+simulator build: ok
+
+== Boot the simulator (21:00:08)
+voice fixture:  78M in the Debug app
+
+== Unit tests (21:03:49)
+xcodebuild test failed after 199 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaTests/VoiceTests.swift:161: error: -[VelaTests.NeuralSynthesisTests testPiperModelSynthesizesDecodableAudio] : XCTAssertGreaterThan failed: ("0") is not greater than ("2000")
+Test Case '-[VelaTests.NeuralSynthesisTests testPiperModelSynthesizesDecodableAudio]' failed (2.406 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaTests/VoiceTests.swift:117: error: -[VelaTests.VoiceSelectionTests testExtractionStripsTopFolderAndValidatesModel] : XCTAssertTrue failed
+Test Case '-[VelaTests.VoiceSelectionTests testExtractionStripsTopFolderAndValidatesModel]' failed (0.697 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of test log ---
+Test Case '-[VelaTests.TransitActivityTests testNewSessionStartsInsteadOfUpdatingTheOldOne]' passed (0.002 seconds).
+Test Case '-[VelaTests.TransitActivityTests testProgressOnlyChangeWaitsFiveSeconds]' started.
+Test Case '-[VelaTests.TransitActivityTests testProgressOnlyChangeWaitsFiveSeconds]' passed (0.001 seconds).
+Test Case '-[VelaTests.TransitActivityTests testReducerStartsUpdatesArrivesAndEnds]' started.
+Test Case '-[VelaTests.TransitActivityTests testReducerStartsUpdatesArrivesAndEnds]' passed (0.001 seconds).
+Test Case '-[VelaTests.TransitActivityTests testSemanticChangesBypassFiveSecondThrottle]' started.
+Test Case '-[VelaTests.TransitActivityTests testSemanticChangesBypassFiveSecondThrottle]' passed (0.001 seconds).
+Test Case '-[VelaTests.TransitActivityTests testStaleActivityHasAMaximumAge]' started.
+Test Case '-[VelaTests.TransitActivityTests testStaleActivityHasAMaximumAge]' passed (0.001 seconds).
+Test Case '-[VelaTests.TransitActivityTests testWalkingAndAlightingInstructions]' started.
+Test Case '-[VelaTests.TransitActivityTests testWalkingAndAlightingInstructions]' passed (0.000 seconds).
+Test Suite 'TransitActivityTests' passed at 2026-10-26 21:06:06.834.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.467 (0.725) seconds
+Test Suite 'VoiceSelectionTests' started at 2026-10-26 21:06:06.834.
+Test Case '-[VelaTests.VoiceSelectionTests testAnotherLanguageFallsBackToSystem]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testAnotherLanguageFallsBackToSystem]' passed (0.025 seconds).
+Test Case '-[VelaTests.VoiceSelectionTests testCatalogMatchesAndroidIds]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testCatalogMatchesAndroidIds]' passed (0.005 seconds).
+Test Case '-[VelaTests.VoiceSelectionTests testCorruptModelFallsBackToSystem]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testCorruptModelFallsBackToSystem]' passed (0.005 seconds).
+Test Case '-[VelaTests.VoiceSelectionTests testExtractionStripsTopFolderAndValidatesModel]' started.
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaTests/VoiceTests.swift:117: error: -[VelaTests.VoiceSelectionTests testExtractionStripsTopFolderAndValidatesModel] : XCTAssertTrue failed
+Test Case '-[VelaTests.VoiceSelectionTests testExtractionStripsTopFolderAndValidatesModel]' failed (0.697 seconds).
+Test Case '-[VelaTests.VoiceSelectionTests testInstalledSetComesFromCompleteDirectories]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testInstalledSetComesFromCompleteDirectories]' passed (0.012 seconds).
+Test Case '-[VelaTests.VoiceSelectionTests testMissingModelKeepsSystemVoice]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testMissingModelKeepsSystemVoice]' passed (0.004 seconds).
+Test Case '-[VelaTests.VoiceSelectionTests testSelectedVoiceWinsAndMissingSelectionFallsBack]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testSelectedVoiceWinsAndMissingSelectionFallsBack]' passed (0.014 seconds).
+Test Case '-[VelaTests.VoiceSelectionTests testUnsafeArchiveEntryIsRejected]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testUnsafeArchiveEntryIsRejected]' passed (0.015 seconds).
+Test Suite 'VoiceSelectionTests' failed at 2026-10-26 21:06:07.657.
+	 Executed 8 tests, with 1 failure (0 unexpected) in 0.777 (0.823) seconds
+Test Suite 'WebTests' started at 2026-10-26 21:06:07.657.
+Test Case '-[VelaTests.WebTests testBlockedHostsCompileAsAContentRuleList]' started.
+Test Case '-[VelaTests.WebTests testBlockedHostsCompileAsAContentRuleList]' passed (0.048 seconds).
+Test Case '-[VelaTests.WebTests testBridgeNamesAreSwappedForRandomOnes]' started.
+Test Case '-[VelaTests.WebTests testBridgeNamesAreSwappedForRandomOnes]' passed (0.002 seconds).
+Test Case '-[VelaTests.WebTests testTheSheetShowsTheSiteHost]' started.
+Test Case '-[VelaTests.WebTests testTheSheetShowsTheSiteHost]' passed (0.001 seconds).
+Test Suite 'WebTests' passed at 2026-10-26 21:06:07.710.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.051 (0.053) seconds
+Test Suite 'VelaTests.xctest' failed at 2026-10-26 21:06:07.710.
+	 Executed 86 tests, with 2 failures (0 unexpected) in 6.405 (7.570) seconds
+Test Suite 'All tests' failed at 2026-10-26 21:06:07.712.
+	 Executed 86 tests, with 2 failures (0 unexpected) in 6.405 (7.574) seconds
+2026-10-26 21:07:03.030 xcodebuild[22059:64820] [MT] IDETestOperationsObserverDebug: 172.088 elapsed -- Testing started completed.
+2026-10-26 21:07:03.031 xcodebuild[22059:64820] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-26 21:07:03.031 xcodebuild[22059:64820] [MT] IDETestOperationsObserverDebug: 172.088 sec, +172.088 sec -- end
+
+Test session results, code coverage, and logs:
+	/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Logs/Test/Test-Vela-2026.10.26_21-04-02-+0000.xcresult
+
+Failing tests:
+	NeuralSynthesisTests.testPiperModelSynthesizesDecodableAudio()
+	VoiceSelectionTests.testExtractionStripsTopFolderAndValidatesModel()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+tests: FAILED
+js transform: ok
+js while(true) killed after 0.51 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_SYNTH samples=56296 rate=22050 wav_frames=0
+
+== Launch and screenshot (21:07:09)
+app.vela.ios: 27588
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 45366AF3-705E-42D7-97D5-CF2C636AF83F (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (21:07:43)
+Parsed 8 waypoints
+xcodebuild uitest failed after 301 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/VoiceUITests.swift:73: error: -[VelaUITests.VoiceUITests testSystemVoiceWhenNeuralIsDisabled] : XCTAssertTrue failed - settings did not open
+Test Case '-[VelaUITests.VoiceUITests testSystemVoiceWhenNeuralIsDisabled]' failed (52.352 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/VoiceUITests.swift:73: error: -[VelaUITests.VoiceUITests testVoiceSettingsShowInstalledModel] : XCTAssertTrue failed - settings did not open
+Test Case '-[VelaUITests.VoiceUITests testVoiceSettingsShowInstalledModel]' failed (69.189 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =    36.97s         Checking existence of `"settings-screen" Table`
+    t =    36.97s         Capturing element debug description
+    t =    37.94s     Checking `Expect predicate `existsNoRetry == 1` for object "settings-screen" Table`
+    t =    37.94s         Checking existence of `"settings-screen" Table`
+    t =    37.95s         Capturing element debug description
+    t =    38.90s     Checking `Expect predicate `existsNoRetry == 1` for object "settings-screen" Table`
+    t =    38.91s         Checking existence of `"settings-screen" Table`
+    t =    38.91s         Capturing element debug description
+    t =    39.97s     Checking `Expect predicate `existsNoRetry == 1` for object "settings-screen" Table`
+    t =    39.97s         Checking existence of `"settings-screen" Table`
+    t =    39.97s         Capturing element debug description
+    t =    40.92s     Checking `Expect predicate `existsNoRetry == 1` for object "settings-screen" Table`
+    t =    40.92s         Checking existence of `"settings-screen" Table`
+    t =    40.92s         Capturing element debug description
+    t =    41.97s     Checking `Expect predicate `existsNoRetry == 1` for object "settings-screen" Table`
+    t =    41.97s         Checking existence of `"settings-screen" Table`
+    t =    41.98s         Capturing element debug description
+    t =    42.92s     Checking `Expect predicate `existsNoRetry == 1` for object "settings-screen" Table`
+    t =    42.92s         Checking existence of `"settings-screen" Table`
+    t =    42.92s         Capturing element debug description
+    t =    43.96s     Checking `Expect predicate `existsNoRetry == 1` for object "settings-screen" Table`
+    t =    43.96s         Checking existence of `"settings-screen" Table`
+    t =    43.96s         Capturing element debug description
+    t =    44.90s     Checking `Expect predicate `existsNoRetry == 1` for object "settings-screen" Table`
+    t =    44.90s         Checking existence of `"settings-screen" Table`
+    t =    44.90s         Capturing element debug description
+    t =    45.93s     Checking `Expect predicate `existsNoRetry == 1` for object "settings-screen" Table`
+    t =    45.93s         Checking existence of `"settings-screen" Table`
+    t =    45.93s         Capturing element debug description
+    t =    46.91s     Checking `Expect predicate `existsNoRetry == 1` for object "settings-screen" Table`
+    t =    46.91s         Checking existence of `"settings-screen" Table`
+    t =    46.91s         Capturing element debug description
+    t =    46.91s     Checking existence of `"settings-screen" Table`
+    t =    47.92s     Checking existence of `"settings-screen" Table` (retry 1)
+    t =    48.93s     Checking existence of `"settings-screen" Table` (retry 2)
+    t =    48.94s Collecting debug information to assist test failure triage
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/VoiceUITests.swift:73: error: -[VelaUITests.VoiceUITests testVoiceSettingsShowInstalledModel] : XCTAssertTrue failed - settings did not open
+    t =    48.96s Tear Down
+    t =    49.16s Checking for crash reports corresponding to unexpected termination of app.vela.ios
+Test Case '-[VelaUITests.VoiceUITests testVoiceSettingsShowInstalledModel]' failed (69.189 seconds).
+Test Suite 'VoiceUITests' failed at 2026-10-26 21:12:07.688.
+	 Executed 3 tests, with 2 failures (0 unexpected) in 220.109 (220.115) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-26 21:12:07.691.
+	 Executed 3 tests, with 2 failures (0 unexpected) in 220.109 (220.119) seconds
+Test Suite 'Selected tests' failed at 2026-10-26 21:12:07.692.
+	 Executed 3 tests, with 2 failures (0 unexpected) in 220.109 (220.120) seconds
+2026-10-26 21:12:42.263 xcodebuild[28488:83922] [MT] IDETestOperationsObserverDebug: 269.792 elapsed -- Testing started completed.
+2026-10-26 21:12:42.268 xcodebuild[28488:83922] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-26 21:12:42.268 xcodebuild[28488:83922] [MT] IDETestOperationsObserverDebug: 269.792 sec, +269.792 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.cVjK5YVY5U/uitest.xcresult
+
+Failing tests:
+	VoiceUITests.testSystemVoiceWhenNeuralIsDisabled()
+	VoiceUITests.testVoiceSettingsShowInstalledModel()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui VoiceUITests.testNeuralVoiceGuidanceAndFallbackMarker: passed (98.568 seconds)
+ui VoiceUITests.testSystemVoiceWhenNeuralIsDisabled: failed (52.352 seconds)
+ui VoiceUITests.testVoiceSettingsShowInstalledModel: failed (69.189 seconds)
+scripts/ios/ci-ipa.sh: line 257: 28487 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui voice_guidance=spoken=1_text=Starting_navigation._Head_northeast_on_Market_Street_engine=neural_engine=neural_voice=en_US-hfc_female-medium
+ui screenshots: voice-guidance.png 
+
+== Route replay (21:12:47)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 45366AF3-705E-42D7-97D5-CF2C636AF83F (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 45366AF3-705E-42D7-97D5-CF2C636AF83F (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (21:13:59)
+268139
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 29155 bytes
+open reply: transit-plan-sf 88725 bytes
+directions reply: directions-drive-sf 105700 bytes
+directions reply: directions-walk-sf 35562 bytes
+search reply: 268139 bytes, 32 feature ids
+failed steps: tests ui-scenarios
