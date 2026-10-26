@@ -1,0 +1,107 @@
+tag=x2merge4-20261026-092459-3926 src=src/x2merge4 e03a6f5 src: cbf2f96b iOS: close the debug visibility conditional
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: e03a6f5 src: cbf2f96b iOS: close the debug visibility conditional
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610260926 (1793006766)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Kotlin: tests and the VelaCore framework (09:26:07)
+gradle: ok in 381 s
+kotlin jvmTest: 113 tests, 0 failures
+kotlin iosSimulatorArm64Test: 92 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  74M, static library 73277584 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  43M, static library 40434664 bytes, SKIE Swift module: yes
+
+== String Catalog (09:32:28)
+string catalog: 1415 keys, 24 resource locales (23 with translations), 24572 localized values, 37 Swift references, 24 picker languages
+
+== XcodeGen (09:32:30)
+xcodegen: Version: 2.46.0
+
+== Generate the project (09:32:30)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (09:32:31)
+  MapLibre Native: https://github.com/maplibre/maplibre-gl-native-distribution @ 6.31.0
+
+resolved source packages: MapLibre Native
+(resolve: 13 s)
+packages: maplibre-gl-native-distribution@6.31.0
+
+== Pick a simulator (09:32:44)
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+
+== Build for the simulator (09:32:47)
+xcodebuild build-sim failed after 45 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapScreen.swift:362:9: error: expected '}' in struct
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapScreen.swift:362:9: error: unexpected conditional compilation block terminator
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapScreen.swift:363:5: error: extraneous '}' at top level
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapScreen.swift:627:1: error: extraneous '}' at top level
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapScreen.swift:362:9: error: Expected '}' in struct
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapScreen.swift:362:9: error: Unexpected conditional compilation block terminator
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapScreen.swift:363:5: error: Extraneous '}' at top level
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapScreen.swift:627:1: error: Extraneous '}' at top level
+** TEST BUILD FAILED **
+--- tail of build-sim log ---
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapScreen.swift:362:9: error: Expected '}' in struct
+        #endif
+        ^ (in target 'Vela' from project 'Vela')
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapScreen.swift:4:24: note: To match this opening '{'
+struct MapScreen: View {
+                       ^ (in target 'Vela' from project 'Vela')
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapScreen.swift:362:9: error: Unexpected conditional compilation block terminator
+        #endif
+        ^ (in target 'Vela' from project 'Vela')
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapScreen.swift:363:5: error: Extraneous '}' at top level
+    }
+    ^
+     (in target 'Vela' from project 'Vela')
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapScreen.swift:627:1: error: Extraneous '}' at top level
+}
+^ (in target 'Vela' from project 'Vela')
+
+CopyStringsFile /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/Vela.app/zh-Hant.lproj/Localizable.stringsdict /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/zh-Hant.lproj/Localizable.stringsdict (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    builtin-copyStrings --validate --outputencoding binary --outfilename Localizable.stringsdict --outdir /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/Vela.app/zh-Hant.lproj -- /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/zh-Hant.lproj/Localizable.stringsdict
+/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/zh-Hant.lproj/Localizable.stringsdict:1:1: note: detected encoding of input file as Unicode (UTF-8) (in target 'Vela' from project 'Vela')
+
+CopyStringsFile /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/Vela.app/zh-Hant.lproj/Localizable.strings /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/zh-Hant.lproj/Localizable.strings (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    builtin-copyStrings --validate --outputencoding binary --outfilename Localizable.strings --outdir /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/Vela.app/zh-Hant.lproj -- /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/zh-Hant.lproj/Localizable.strings
+/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/zh-Hant.lproj/Localizable.strings:1:1: note: detected encoding of input file as Unicode (UTF-8) (in target 'Vela' from project 'Vela')
+
+CopyStringsFile /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/Vela.app/zh-Hans.lproj/Localizable.stringsdict /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/zh-Hans.lproj/Localizable.stringsdict (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    builtin-copyStrings --validate --outputencoding binary --outfilename Localizable.stringsdict --outdir /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/Vela.app/zh-Hans.lproj -- /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/zh-Hans.lproj/Localizable.stringsdict
+/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/zh-Hans.lproj/Localizable.stringsdict:1:1: note: detected encoding of input file as Unicode (UTF-8) (in target 'Vela' from project 'Vela')
+
+CopyStringsFile /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/Vela.app/zh-Hans.lproj/Localizable.strings /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/zh-Hans.lproj/Localizable.strings (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    builtin-copyStrings --validate --outputencoding binary --outfilename Localizable.strings --outdir /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/Vela.app/zh-Hans.lproj -- /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/zh-Hans.lproj/Localizable.strings
+/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/zh-Hans.lproj/Localizable.strings:1:1: note: detected encoding of input file as Unicode (UTF-8) (in target 'Vela' from project 'Vela')
+
+CopyStringsFile /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/Vela.app/uk.lproj/Localizable.stringsdict /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/uk.lproj/Localizable.stringsdict (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    builtin-copyStrings --validate --outputencoding binary --outfilename Localizable.stringsdict --outdir /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/Vela.app/uk.lproj -- /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/uk.lproj/Localizable.stringsdict
+/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/uk.lproj/Localizable.stringsdict:1:1: note: detected encoding of input file as Unicode (UTF-8) (in target 'Vela' from project 'Vela')
+
+CopyStringsFile /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/Vela.app/uk.lproj/Localizable.strings /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/uk.lproj/Localizable.strings (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    builtin-copyStrings --validate --outputencoding binary --outfilename Localizable.strings --outdir /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/Vela.app/uk.lproj -- /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/uk.lproj/Localizable.strings
+/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/uk.lproj/Localizable.strings:1:1: note: detected encoding of input file as Unicode (UTF-8) (in target 'Vela' from project 'Vela')
+
+CopyStringsFile /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/Vela.app/tr.lproj/Localizable.stringsdict /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/tr.lproj/Localizable.stringsdict (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    builtin-copyStrings --validate --outputencoding binary --outfilename Localizable.stringsdict --outdir /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/Vela.app/tr.lproj -- /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/tr.lproj/Localizable.stringsdict
+/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/tr.lproj/Localizable.stringsdict:1:1: note: detected encoding of input file as Unicode (UTF-8) (in target 'Vela' from project 'Vela')
+
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD FAILED **
+
+
+The following build commands failed:
+	SwiftDriver Vela normal arm64 com.apple.xcode.tools.swift.compiler (in target 'Vela' from project 'Vela')
+	Building project Vela for testing with scheme Vela
+(2 failures)
