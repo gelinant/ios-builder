@@ -1,0 +1,3 @@
+src=src/x3-transit-activity
+script=scripts/ios/ci-ipa.sh
+args=
