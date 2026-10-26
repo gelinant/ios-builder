@@ -1,0 +1,3 @@
+src=src/sv1-fix
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=StreetViewUITests VELA_SKIP_ARCHIVE=1
