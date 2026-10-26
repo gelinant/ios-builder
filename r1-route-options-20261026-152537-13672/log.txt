@@ -1,0 +1,303 @@
+tag=r1-route-options-20261026-152537-13672 src=src/r1-route-options a8fb6ec src: 398155a8 Docs: use writing-safe route option wording
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: a8fb6ec src: 398155a8 Docs: use writing-safe route option wording
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610261527 (1793028438)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Kotlin: tests and the VelaCore framework (15:27:19)
+gradle: FAILED after 513 s
+app.vela.ios.nav.NavStoreTest.trafficOfferIsMirroredAndAcceptanceAdoptsTheCandidate[iosSimulatorArm64] FAILED
+    kotlin.AssertionError at null:-1
+
+> Task :ios-shared:iosSimulatorArm64Test
+--
+> Task :ios-shared:iosSimulatorArm64Test FAILED
+> Task :ios-shared:compileJvmTestJava NO-SOURCE
+> Task :ios-shared:jvmTestClasses
+> Task :ios-shared:jvmTest
+--
+* What went wrong:
+Execution failed for task ':ios-shared:iosSimulatorArm64Test'.
+> There were failing tests. See the report at: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/build/reports/tests/iosSimulatorArm64Test/index.html
+
+--
+BUILD FAILED in 8m 31s
+40 actionable tasks: 40 executed
+w: The number of threads 4 is more than the number of processors 3
+
+> Task :ios-shared:compileJvmMainJava NO-SOURCE
+> Task :ios-shared:jvmMainClasses
+> Task :ios-shared:jvmJar
+
+> Task :ios-shared:compileTestKotlinJvm
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/search/SearchStoreTest.kt:93:40 Unnecessary non-null assertion (!!) on a non-null receiver of type 'LatLng'.
+
+app.vela.ios.nav.NavStoreTest.trafficOfferIsMirroredAndAcceptanceAdoptsTheCandidate[iosSimulatorArm64] FAILED
+    kotlin.AssertionError at null:-1
+
+> Task :ios-shared:iosSimulatorArm64Test
+
+95 tests completed, 1 failed
+
+> Task :ios-shared:iosSimulatorArm64Test FAILED
+> Task :ios-shared:compileJvmTestJava NO-SOURCE
+> Task :ios-shared:jvmTestClasses
+> Task :ios-shared:jvmTest
+
+[Incubating] Problems report is available at: file:///Users/runner/work/ios-builder/ios-builder/src/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':ios-shared:iosSimulatorArm64Test'.
+> There were failing tests. See the report at: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/build/reports/tests/iosSimulatorArm64Test/index.html
+
+* Try:
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.8.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 8m 31s
+40 actionable tasks: 40 executed
+kotlin jvmTest: 116 tests, 0 failures
+kotlin iosSimulatorArm64Test: 95 tests, 1 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  74M, static library 73390952 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  43M, static library 40544896 bytes, SKIE Swift module: yes
+
+== String Catalog (15:35:52)
+string catalog: 1415 keys, 24 resource locales (23 with translations), 24572 localized values, 40 Swift references, 24 picker languages
+
+== XcodeGen (15:35:54)
+xcodegen: Version: 2.46.0
+
+== Generate the project (15:35:54)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (15:35:54)
+  MapLibre Native: https://github.com/maplibre/maplibre-gl-native-distribution @ 6.31.0
+
+resolved source packages: MapLibre Native
+(resolve: 19 s)
+packages: maplibre-gl-native-distribution@6.31.0
+
+== Pick a simulator (15:36:13)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+
+== Build for the simulator (15:36:15)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 62 s)
+simulator build: ok
+
+== Boot the simulator (15:37:17)
+
+== Unit tests (15:39:54)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 77 s)
+tests: ok, Executed 50 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+
+== Launch and screenshot (15:41:11)
+app.vela.ios: 21958
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 403F1FAC-0E94-4DB9-9875-88513CFFDB99 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (15:42:33)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(uitest: 296 s)
+ui scenarios: ok
+scripts/ios/ci-ipa.sh: line 244: 24073 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui DirectionsUITests.testDirectionsToTheFirstCoffeeResult: passed (132.485 seconds)
+ui DirectionsUITests.testWaypointAndDepartureTime: passed (52.895 seconds)
+ui directions_center=0
+ui directions_drive_meters=1238
+ui directions_drive_routes=2
+ui directions_drive_seconds=411
+ui directions_drive_steps=12
+ui directions_drive_traffic_spans=1
+ui directions_far_meters=3561
+ui directions_far_routes=3
+ui directions_far_seconds=1086
+ui directions_far_selected=1
+ui directions_far_steps=5
+ui directions_far_traffic_spans=0
+ui directions_transit_itineraries=8
+ui directions_transit_legs=3
+ui directions_walk_meters=41
+ui directions_walk_routes=2
+ui directions_walk_seconds=64
+ui directions_walk_steps=2
+ui route_time_epoch=1793030700
+ui route_time_mode=1
+ui route_time_note=Typical_traffic_range,_not_a_live_departure_forecast
+ui route_waypoint_routes=1
+ui route_waypoints=1
+ui screenshots: directions-drive.png directions-far-alt.png directions-far-steps.png directions-far.png directions-steps.png directions-transit-steps.png directions-transit.png directions-walk.png 
+
+== Route replay (15:47:40)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 403F1FAC-0E94-4DB9-9875-88513CFFDB99 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 403F1FAC-0E94-4DB9-9875-88513CFFDB99 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: details: page raw=27497 parsed=true times=false
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: details: page raw=85413 parsed=true times=false
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: details: page raw=85413 parsed=true times=false
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (15:49:20)
+259465
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 29155 bytes
+open reply: transit-plan-sf 95682 bytes
+directions reply: directions-drive-sf 106898 bytes
+directions reply: directions-walk-sf 34607 bytes
+search reply: 259465 bytes, 34 feature ids
+
+== Archive for iOS devices, unsigned (15:49:24)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** ARCHIVE SUCCEEDED **
+
+(archive: 65 s)
+
+== Package the IPA (15:50:29)
+ipa: Vela-unsigned.ipa 9978564 bytes (9.5M)
+app frameworks: MapLibre.framework 
+app binary: arm64, 15952864 bytes
+live activity extension: PlugIns/NavActivityExtension.appex present in IPA, 220888 bytes
+extension plist CFBundleIdentifier: app.vela.ios.navactivity
+extension plist NSExtensionPointIdentifier: com.apple.widgetkit-extension
+extension signing: none
+kotlin code in the device binary: yes
+plist CFBundleIdentifier: app.vela.ios
+plist CFBundleDisplayName: Vela
+plist CFBundleShortVersionString: 0.1.202610261527
+plist MinimumOSVersion: 17.0
+plist UIBackgroundModes: ["location","audio"]
+plist NSSupportsLiveActivities: true
+
+== Summary
+commit: a8fb6ec src: 398155a8 Docs: use writing-safe route option wording
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610261527 (1793028438)
+java: openjdk version "17.0.20.1" 2026-08-18
+gradle: FAILED after 513 s
+kotlin jvmTest: 116 tests, 0 failures
+kotlin iosSimulatorArm64Test: 95 tests, 1 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  74M, static library 73390952 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  43M, static library 40544896 bytes, SKIE Swift module: yes
+string catalog: 1415 keys, 24 resource locales (23 with translations), 24572 localized values, 40 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: maplibre-gl-native-distribution@6.31.0
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+simulator build: ok
+tests: ok, Executed 50 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: ok
+ui DirectionsUITests.testDirectionsToTheFirstCoffeeResult: passed (132.485 seconds)
+ui DirectionsUITests.testWaypointAndDepartureTime: passed (52.895 seconds)
+ui directions_center=0
+ui directions_drive_meters=1238
+ui directions_drive_routes=2
+ui directions_drive_seconds=411
+ui directions_drive_steps=12
+ui directions_drive_traffic_spans=1
+ui directions_far_meters=3561
+ui directions_far_routes=3
+ui directions_far_seconds=1086
+ui directions_far_selected=1
+ui directions_far_steps=5
+ui directions_far_traffic_spans=0
+ui directions_transit_itineraries=8
+ui directions_transit_legs=3
+ui directions_walk_meters=41
+ui directions_walk_routes=2
+ui directions_walk_seconds=64
+ui directions_walk_steps=2
+ui route_time_epoch=1793030700
+ui route_time_mode=1
+ui route_time_note=Typical_traffic_range,_not_a_live_departure_forecast
+ui route_waypoint_routes=1
+ui route_waypoints=1
+ui screenshots: directions-drive.png directions-far-alt.png directions-far-steps.png directions-far.png directions-steps.png directions-transit-steps.png directions-transit.png directions-walk.png 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: details: page raw=27497 parsed=true times=false
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: details: page raw=85413 parsed=true times=false
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: details: page raw=85413 parsed=true times=false
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 29155 bytes
+open reply: transit-plan-sf 95682 bytes
+directions reply: directions-drive-sf 106898 bytes
+directions reply: directions-walk-sf 34607 bytes
+search reply: 259465 bytes, 34 feature ids
+ipa: Vela-unsigned.ipa 9978564 bytes (9.5M)
+app frameworks: MapLibre.framework 
+app binary: arm64, 15952864 bytes
+live activity extension: PlugIns/NavActivityExtension.appex present in IPA, 220888 bytes
+extension plist CFBundleIdentifier: app.vela.ios.navactivity
+extension plist NSExtensionPointIdentifier: com.apple.widgetkit-extension
+extension signing: none
+kotlin code in the device binary: yes
+plist CFBundleIdentifier: app.vela.ios
+plist CFBundleDisplayName: Vela
+plist CFBundleShortVersionString: 0.1.202610261527
+plist MinimumOSVersion: 17.0
+plist UIBackgroundModes: ["location","audio"]
+plist NSSupportsLiveActivities: true
+failed steps: gradle
