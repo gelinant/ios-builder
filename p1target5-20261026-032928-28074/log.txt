@@ -1,0 +1,178 @@
+tag=p1target5-20261026-032928-28074 src=src/p1target5 1e0f13f src: 4c573312 iOS: keep the hidden photo-page walk out of the CI gallery scenario
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 1e0f13f src: 4c573312 iOS: keep the hidden photo-page walk out of the CI gallery scenario
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610260330 (1792985452)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Kotlin: tests and the VelaCore framework (03:30:53)
+gradle: ok in 483 s
+kotlin jvmTest: 113 tests, 0 failures
+kotlin iosSimulatorArm64Test: 92 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  74M, static library 73274648 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  43M, static library 40431616 bytes, SKIE Swift module: yes
+
+== String Catalog (03:38:56)
+string catalog: 1415 keys, 24 resource locales (23 with translations), 24572 localized values, 37 Swift references, 24 picker languages
+
+== XcodeGen (03:38:58)
+xcodegen: Version: 2.46.0
+
+== Generate the project (03:38:59)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (03:38:59)
+  MapLibre Native: https://github.com/maplibre/maplibre-gl-native-distribution @ 6.31.0
+
+resolved source packages: MapLibre Native
+(resolve: 14 s)
+packages: maplibre-gl-native-distribution@6.31.0
+
+== Pick a simulator (03:39:13)
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+
+== Build for the simulator (03:39:14)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 97 s)
+simulator build: ok
+
+== Boot the simulator (03:40:51)
+
+== Unit tests (03:43:30)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 73 s)
+tests: ok, Executed 45 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+
+== Launch and screenshot (03:44:43)
+app.vela.ios: 22032
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 1FAFBEA3-8AB1-4CAA-8A60-B6D2B136FB41 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (03:46:10)
+xcodebuild uitest failed after 168 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/PlaceUITests.swift:71: error: -[VelaUITests.PlaceUITests testCompleteFixturePlace] : XCTAssertNotEqual failed: ("1 / 20") is equal to ("1 / 20") - viewer did not page
+Test Case '-[VelaUITests.PlaceUITests testCompleteFixturePlace]' failed (80.859 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =    61.74s     Check for interrupting elements affecting "place-grid-photo-0" Button
+    t =    61.81s     Synthesize event
+    t =    62.14s     Wait for app.vela.ios to idle
+    t =    62.42s Added attachment named 'place-after-photo-tap'
+    t =    62.42s Checking existence of `"place-gallery-debug" StaticText`
+    t =    62.59s Find the "place-gallery-debug" StaticText
+UITEST place_viewer_state=1
+    t =    62.71s Waiting 10.0s for "place-viewer-close" Button to exist
+    t =    63.72s     Checking `Expect predicate `existsNoRetry == 1` for object "place-viewer-close" Button`
+    t =    63.72s         Checking existence of `"place-viewer-close" Button`
+    t =    68.14s Added attachment named 'place-gallery'
+    t =    68.14s Find the "place-gallery-counter" StaticText
+    t =    68.37s Swipe left "place-photo-viewer" Any
+    t =    68.37s     Wait for app.vela.ios to idle
+    t =    68.38s     Find the "place-photo-viewer" Any
+    t =    68.53s     Check for interrupting elements affecting "place-photo-viewer" CollectionView
+    t =    68.63s     Synthesize event
+    t =    69.08s     Wait for app.vela.ios to idle
+    t =    69.09s Find the "place-gallery-counter" StaticText
+    t =    69.71s Find the "place-gallery-counter" StaticText
+    t =    70.31s Find the "place-gallery-counter" StaticText
+    t =    70.94s Find the "place-gallery-counter" StaticText
+    t =    71.56s Find the "place-gallery-counter" StaticText
+    t =    72.18s Find the "place-gallery-counter" StaticText
+    t =    72.79s Find the "place-gallery-counter" StaticText
+    t =    73.41s Find the "place-gallery-counter" StaticText
+    t =    74.02s Find the "place-gallery-counter" StaticText
+    t =    74.64s Find the "place-gallery-counter" StaticText
+    t =    75.33s Find the "place-gallery-counter" StaticText
+    t =    76.01s Find the "place-gallery-counter" StaticText
+    t =    76.68s Find the "place-gallery-counter" StaticText
+    t =    77.39s Find the "place-gallery-counter" StaticText
+    t =    78.05s Find the "place-gallery-counter" StaticText
+    t =    78.75s Find the "place-gallery-counter" StaticText
+    t =    79.35s Find the "place-gallery-counter" StaticText
+    t =    79.46s Find the "place-gallery-counter" StaticText
+UITEST place_gallery_page=1/20
+    t =    79.56s Find the "place-gallery-counter" StaticText
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/PlaceUITests.swift:71: error: -[VelaUITests.PlaceUITests testCompleteFixturePlace] : XCTAssertNotEqual failed: ("1 / 20") is equal to ("1 / 20") - viewer did not page
+    t =    80.11s Tear Down
+Test Case '-[VelaUITests.PlaceUITests testCompleteFixturePlace]' failed (80.859 seconds).
+Test Suite 'PlaceUITests' failed at 2026-10-26 03:48:16.229.
+	 Executed 1 test, with 1 failure (0 unexpected) in 80.859 (80.862) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-26 03:48:16.230.
+	 Executed 1 test, with 1 failure (0 unexpected) in 80.859 (80.863) seconds
+Test Suite 'Selected tests' failed at 2026-10-26 03:48:16.231.
+	 Executed 1 test, with 1 failure (0 unexpected) in 80.859 (80.865) seconds
+2026-10-26 03:48:57.851 xcodebuild[24336:71055] [MT] IDETestOperationsObserverDebug: 141.614 elapsed -- Testing started completed.
+2026-10-26 03:48:57.852 xcodebuild[24336:71055] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-26 03:48:57.852 xcodebuild[24336:71055] [MT] IDETestOperationsObserverDebug: 141.614 sec, +141.614 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.7gzPZ2auIq/uitest.xcresult
+
+Failing tests:
+	PlaceUITests.testCompleteFixturePlace()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui PlaceUITests.testCompleteFixturePlace: failed (80.859 seconds)
+scripts/ios/ci-ipa.sh: line 244: 24334 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true; exit 0
+        ;;
+    esac;
+done )
+ui place_gallery_categories=0
+ui place_gallery_count=20
+ui place_gallery_page=1/20
+ui place_gallery_paging=rpc
+ui place_gallery_walk=not-run-on-ci
+ui place_hours=7
+ui place_open=1
+ui place_phone=1
+ui place_viewer_state=1
+ui screenshots: place-after-photo-tap.png place-gallery-grid.png place-gallery.png place-photos.png place-top.png 
+
+== Route replay (03:49:08)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 1FAFBEA3-8AB1-4CAA-8A60-B6D2B136FB41 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 1FAFBEA3-8AB1-4CAA-8A60-B6D2B136FB41 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: details: page raw=48237 parsed=true times=false
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (03:50:23)
+256106
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 29155 bytes
+open reply: transit-plan-sf 78694 bytes
+directions reply: directions-drive-sf 120190 bytes
+directions reply: directions-walk-sf 41685 bytes
+search reply: 256106 bytes, 32 feature ids
+failed steps: ui-scenarios
