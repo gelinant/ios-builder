@@ -1,0 +1,50 @@
+Timestamp               Ty Process[PID:TID]
+2026-10-26 17:46:30.610 I  Vela[21869:fa7d] [app.vela.ios:Calibration] calibration at startup: version 1
+2026-10-26 17:46:31.328 Df Vela[21869:10264] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 17:46:36.809 I  Vela[21869:fa7d] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 17:46:47.100 Df Vela[21869:10266] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 17:47:10.565 I  Vela[22684:10816] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-26 17:47:11.495 Df Vela[22684:1082f] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 17:47:12.266 I  Vela[22684:10816] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 17:49:10.800 I  Vela[23932:11b4f] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-26 17:49:11.892 Df Vela[23932:121a9] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 17:49:15.507 I  Vela[23932:11b4f] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 17:49:53.960 I  Vela[23932:11b4f] [app.vela.ios:PlaceLoad] photos: rpc 10
+2026-10-26 17:49:54.391 I  Vela[23932:11b4f] [app.vela.ios:PlaceLoad] reviews: feed 5 (limited view)
+2026-10-26 17:50:05.080 I  Vela[23932:11b4f] [app.vela.ios:PlaceLoad] details: plain search (no popular times)
+2026-10-26 17:50:07.118 Db Vela[23932:11b4f] [app.vela.ios:Web] popular: view created
+2026-10-26 17:50:14.549 Db Vela[23932:11b4f] [app.vela.ios:Web] popular: same-origin details fetch
+2026-10-26 17:50:27.283 Db Vela[23932:11b4f] [app.vela.ios:Web] popular: replied with -1 characters
+2026-10-26 17:50:27.285 I  Vela[23932:11b4f] [app.vela.ios:PlaceLoad] details: page raw=-1 parsed=false times=false
+2026-10-26 17:50:46.477 Db Vela[23932:121f5] [app.vela.ios:VelaCapture] BEGIN mvpjynkz 1344 385 246
+2026-10-26 17:50:46.477 Db Vela[23932:121f5] [app.vela.ios:VelaCapture] P mvpjynkz 0 k|peFp`ejVQYJALC@?@?HA\134Gh@KDADA|A]l@M^ITGHCXGh@KZd@@?h@v@\134d@n@|@n@~@Zd@RXQVEFg@l@ST?@EFOREFA@CDEFe@p@ILILYb@EH]b@MSW]]e@MEAAQW_AoAKOCC??EEGCGAIAQB??UDQBE?C@A?{@JA@S@c@FE?E@WDUBE@E?a@FYDc@DA@]DYBC[AI?ME_@MqB?EIgAC_@REFAPAb@GJAd@Id@EPCBZ@L@R@V^EEk@
+2026-10-26 17:50:46.477 Db Vela[23932:121f5] [app.vela.ios:VelaCapture] END mvpjynkz
+2026-10-26 17:50:47.055 I  Vela[23932:12d2d] [app.vela.ios:VelaDirections] open names: kept 7 renamed 0 bare 0 unplaced 1, waited 560 ms more
+2026-10-26 17:50:59.146 Db Vela[23932:12d2d] [app.vela.ios:VelaWalk] walk: open 54 m, google 41 m, google named (2 steps) tiles 353 ms (332 lines), named share 1.00, total 379 ms
+2026-10-26 17:51:04.557 I  Vela[23932:11b4f] [app.vela.ios:PlaceLoad] details: nothing
+2026-10-26 17:51:04.558 Db Vela[23932:11b4f] [app.vela.ios:Web] popular: same-origin details fetch
+2026-10-26 17:51:13.040 I  Vela[26411:13826] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-26 17:51:14.014 Df Vela[26411:1398d] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 17:51:15.978 I  Vela[26411:13826] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 17:51:35.136 I  Vela[26411:13826] [app.vela.ios:PlaceLoad] photos: rpc 10
+2026-10-26 17:51:35.645 I  Vela[26411:13826] [app.vela.ios:PlaceLoad] reviews: feed 5 (limited view)
+2026-10-26 17:51:40.343 Db Vela[26411:13b41] [app.vela.ios:VelaCapture] BEGIN mvpjzt59 1344 385 246
+2026-10-26 17:51:40.343 Db Vela[26411:13b41] [app.vela.ios:VelaCapture] P mvpjzt59 0 k|peFp`ejVQYJALC@?@?HA\134Gh@KDADA|A]l@M^ITGHCXGh@KZd@@?h@v@\134d@n@|@n@~@Zd@RXQVEFg@l@ST?@EFOREFA@CDEFe@p@ILILYb@EH]b@MSW]]e@MEAAQW_AoAKOCC??EEGCGAIAQB??UDQBE?C@A?{@JA@S@c@FE?E@WDUBE@E?a@FYDc@DA@]DYBC[AI?ME_@MqB?EIgAC_@REFAPAb@GJAd@Id@EPCBZ@L@R@V^EEk@
+2026-10-26 17:51:40.367 Db Vela[26411:13b41] [app.vela.ios:VelaCapture] END mvpjzt59
+2026-10-26 17:51:40.830 I  Vela[26411:13d9f] [app.vela.ios:VelaDirections] open names: kept 7 renamed 0 bare 0 unplaced 1, waited 439 ms more
+2026-10-26 17:51:41.290 Db Vela[26411:13b41] [app.vela.ios:VelaWalk] walk: open 54 m, google 41 m, google named (2 steps) tiles 160 ms (332 lines), named share 1.00, total 176 ms
+2026-10-26 17:51:42.185 I  Vela[26411:13826] [app.vela.ios:PlaceLoad] details: plain search (no popular times)
+2026-10-26 17:51:43.914 Db Vela[26411:13826] [app.vela.ios:Web] popular: view created
+2026-10-26 17:51:51.685 Db Vela[26411:13826] [app.vela.ios:Web] popular: same-origin details fetch
+2026-10-26 17:51:53.584 Db Vela[26411:13826] [app.vela.ios:Web] popular: injecting again after the page finished
+2026-10-26 17:51:55.415 Db Vela[26411:13826] [app.vela.ios:Web] popular: replied with 27497 characters
+2026-10-26 17:51:55.991 I  Vela[26411:13826] [app.vela.ios:PlaceLoad] details: page raw=27497 parsed=true times=false
+2026-10-26 17:54:02.652 Db Vela[26411:13826] [app.vela.ios:Web] popular: view destroyed
+2026-10-26 17:54:29.211 I  Vela[30757:16565] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-26 17:54:30.191 Df Vela[30757:166a4] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 17:54:31.618 I  Vela[30757:16565] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 17:55:21.232 I  Vela[33184:18256] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-26 17:55:22.403 Df Vela[33184:18272] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 17:55:22.516 I  Vela[33184:18256] [app.vela.ios:Location] location update failed: The operation couldn’t be completed. (kCLErrorDomain error 0.)
+2026-10-26 17:55:22.849 I  Vela[33184:18256] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 17:56:33.279 I  Vela[33184:18256] [app.vela.ios:Location] location update failed: The operation couldn’t be completed. (kCLErrorDomain error 0.)
