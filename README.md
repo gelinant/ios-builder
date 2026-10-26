@@ -1,15 +1,18 @@
 # Dernière IPA Vela iOS
 
-**V1 de travail : recherche, fiche lieu, itinéraires, navigation, lieux enregistrés, hors ligne.**
-Build `m5final-20261025-183757-4411` (8,1 Mo). Tous les scénarios automatiques passent sur simulateur.
+**Suite complète verte : 27 scénarios UI + 6 tests de performance.**
+Build `fullmerge5-20261026-064718-24926`.
+
+Nouveau : fiche lieu avec galerie et visionneuse, avatars colorés, alertes vitesse et caméras,
+reprise des téléchargements hors ligne, Live Activity conduite/marche et transports, réglages et 24 langues,
+accessibilité grand texte et paysage, Siri/Spotlight à venir séparément.
 
 À tester sur iPhone :
-1. Recherche et fiche lieu (photos, avis, appel, site).
-2. Directions : alternatives, étapes nommées, voies, transports Transitous.
-3. **Start** : guidage avec manœuvre, ETA, voix, recalcul, bouton End. Faire un petit trajet réel si possible.
-4. Écran verrouillé / autre app : le guidage continue-t-il ? Audio Bluetooth : voix et baisse du volume des autres apps.
-5. Bouton bookmark : enregistrer un lieu, créer une liste, récents, parking, partage.
-6. « … » puis Offline : télécharger Monaco, mode avion, carte et recherche hors ligne.
+1. Recherche, fiche lieu, galerie, balayage et zoom, avis et avatars.
+2. Itinéraire et Start : voix, alertes, recalcul, Live Activity sur écran verrouillé et Dynamic Island.
+3. Transport Transitous : Start transit et sa Live Activity.
+4. Offline : Monaco, interruption/reprise d'un téléchargement, mode avion.
+5. Français, très grand texte et paysage.
+6. Sauvegarde de lieux et récents après force-quit.
 
-Limites connues : avatars parfois noirs, téléchargements hors ligne au premier plan, pas encore de Live Activity,
-pas de suggestions pendant la frappe (lots en cours).
+Source SideStore : https://raw.githubusercontent.com/gelinant/ios-builder/dist/apps.json
