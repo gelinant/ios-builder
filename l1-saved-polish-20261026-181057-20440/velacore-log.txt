@@ -1,0 +1,297 @@
+Timestamp               Ty Process[PID:TID]
+2026-10-26 18:41:12.442 I  Vela[50731:224af] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-26 18:41:13.481 Df Vela[50731:225c3] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 18:41:15.419 I  Vela[50731:224af] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 18:41:21.784 I  Vela[51377:22a97] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-26 18:41:22.614 Df Vela[51377:22ac2] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 18:41:23.835 I  Vela[51377:22a97] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 18:41:28.817 I  Vela[51392:22b55] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-26 18:41:29.403 Df Vela[51392:22b72] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 18:41:30.477 I  Vela[51392:22b55] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 18:41:35.613 I  Vela[51686:22e2e] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-26 18:41:36.165 Df Vela[51686:22ee2] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 18:41:37.546 I  Vela[51686:22e2e] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 18:41:42.278 I  Vela[52068:2319d] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-26 18:41:42.865 Df Vela[52068:231e6] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 18:41:44.117 I  Vela[52068:2319d] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 18:41:48.824 I  Vela[52181:23327] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-26 18:41:49.351 Df Vela[52181:23369] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 18:41:50.686 I  Vela[52181:23327] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 18:41:56.253 I  Vela[52454:235e1] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-26 18:41:56.806 Df Vela[52454:236f0] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 18:41:58.396 I  Vela[52454:235e1] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 18:42:11.784 I  Vela[53203:23cfc] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-26 18:42:12.350 Df Vela[53203:23d48] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 18:42:13.542 I  Vela[53203:23cfc] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 18:42:27.209 I  Vela[53901:243e0] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-26 18:42:27.804 Df Vela[53901:24418] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 18:42:29.202 I  Vela[53901:243e0] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 18:42:42.543 I  Vela[53901:243e0] [app.vela.ios:PlaceLoad] photos: rpc 10
+2026-10-26 18:42:42.923 I  Vela[53901:243e0] [app.vela.ios:PlaceLoad] reviews: feed 5 (limited view)
+2026-10-26 18:42:49.254 Db Vela[53901:24469] [app.vela.ios:VelaCapture] BEGIN mvpltl4b 1238 366 220
+2026-10-26 18:42:49.255 Db Vela[53901:24469] [app.vela.ios:VelaCapture] P mvpltl4b 0 k|peFp`ejVQYJALC@?@?HA\134Gh@KDADA|A]l@M^ITGHCXGh@KZd@@?h@v@\134d@n@|@n@~@Zd@RXQVEFg@l@ST?@EFOREFA@CDEFe@p@ILILYb@EH]b@MSW]]e@MEAAQW_AoAKOCC??EEGCGAIAQB??UDQBE?C@A?{@JA@S@c@FE?E@WDUBE@E?a@FYDGq@IsAEm@KcBC]d@Id@EPCBZ@L@R@V^EEk@
+2026-10-26 18:42:49.255 Db Vela[53901:24469] [app.vela.ios:VelaCapture] END mvpltl4b
+2026-10-26 18:42:49.928 I  Vela[53901:24468] [app.vela.ios:VelaDirections] open names (hybrid): kept 7 renamed 0 bare 0 unplaced 1
+2026-10-26 18:42:49.938 I  Vela[53901:24468] [app.vela.ios:VelaDirections] google line: 1 stretch(es) off the open route, 533 m of 1237 m (Google states 1238 m), hybrid 12 steps (open 13); stretches matched 1 (1 with lane detail), from tiles 0, bare 0; their turn names kept 3 renamed 0 dropped 0, no edges for 0, off the line in 0 place(s), 0 m drawn on the roads' middle in 672 ms
+2026-10-26 18:42:49.941 I  Vela[53901:24468] [app.vela.ios:VelaDirections] steps vs line: 6 turns, 6 agree, 0 the other way, 0 with no bend, 0 bends unsaid
+2026-10-26 18:42:49.945 Db Vela[53901:24468] [app.vela.ios:VelaSteps] 0 m [open] DEPART len=15 lanes=0 | Head out on Market Street
+2026-10-26 18:42:49.946 Db Vela[53901:24468] [app.vela.ios:VelaSteps] 15 m [open] SHARP_RIGHT len=226 lanes=0 | Turn sharp right onto South Van Ness Avenue
+2026-10-26 18:42:49.949 Db Vela[53901:24468] [app.vela.ios:VelaSteps] 241 m [open] TURN_RIGHT len=196 lanes=0 | Turn right onto Otis Street
+2026-10-26 18:42:49.954 Db Vela[53901:24468] [app.vela.ios:VelaSteps] 438 m [open] TURN_RIGHT len=191 lanes=5 | Turn right onto Gough Street
+2026-10-26 18:42:49.968 Db Vela[53901:24468] [app.vela.ios:VelaSteps] 629 m [open] TURN_RIGHT len=13 lanes=1 | Turn right onto Market Street
+2026-10-26 18:42:49.969 Db Vela[53901:24468] [app.vela.ios:VelaSteps] 643 m [open] FORK_LEFT len=327 lanes=0 | Keep slight left onto Market Street
+2026-10-26 18:42:49.969 Db Vela[53901:24468] [app.vela.ios:VelaSteps] 970 m [stretch] TURN_RIGHT len=139 lanes=4 | Turn right onto Hickory Street
+2026-10-26 18:42:49.969 Db Vela[53901:24468] [app.vela.ios:VelaSteps] 1110 m [stretch] TURN_RIGHT len=52 lanes=0 | Turn right onto Van Ness Avenue
+2026-10-26 18:42:49.970 Db Vela[53901:24468] [app.vela.ios:VelaSteps] 1162 m [stretch] TURN_RIGHT len=36 lanes=0 | Turn right onto Oak Street
+2026-10-26 18:42:49.970 Db Vela[53901:24468] [app.vela.ios:VelaSteps] 1199 m [stretch] TURN_LEFT len=21 lanes=0 | Turn left
+2026-10-26 18:42:49.972 Db Vela[53901:24468] [app.vela.ios:VelaSteps] 1220 m [stretch] TURN_LEFT len=16 lanes=0 | Turn left
+2026-10-26 18:42:50.047 Db Vela[53901:24468] [app.vela.ios:VelaSteps] 1237 m [stretch] ARRIVE len=0 lanes=0 | Arrive at your destination
+2026-10-26 18:42:50.047 Db Vela[53901:24468] [app.vela.ios:VelaSteps] stretch 703..1237 m
+2026-10-26 18:42:50.051 I  Vela[53901:24468] [app.vela.ios:VelaDirections] open names: kept 0 renamed 0 bare 0 unplaced 0, waited 0 ms more
+2026-10-26 18:42:50.316 I  Vela[53901:243e0] [app.vela.ios:PlaceLoad] details: plain search (no popular times)
+2026-10-26 18:42:50.398 Db Vela[53901:24468] [app.vela.ios:VelaWalk] walk: open 54 m, google 41 m, google named (2 steps) tiles 98 ms (332 lines), named share 1.00, total 128 ms
+2026-10-26 18:42:51.855 Db Vela[53901:243e0] [app.vela.ios:Web] popular: view created
+2026-10-26 18:42:54.861 I  Vela[53901:243e0] [app.vela.ios:VelaDirections] route start: GOOGLE_HYBRID, trip 366s typical, 338s live, 12 steps summing 366s
+2026-10-26 18:42:57.590 Db Vela[53901:243e0] [app.vela.ios:Navigation] nav replay: start
+2026-10-26 18:42:58.409 Db Vela[53901:243e0] [app.vela.ios:Web] popular: replied with -1 characters
+2026-10-26 18:42:58.445 Db Vela[53901:243e0] [app.vela.ios:NavVoice] spoken: Starting navigation. Head east on Market Street
+2026-10-26 18:43:06.868 I  Vela[53901:243e0] [app.vela.ios:Location] location update failed: The operation couldn’t be completed. (kCLErrorDomain error 0.)
+2026-10-26 18:43:14.640 I  Vela[55167:251d4] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-26 18:43:15.305 Df Vela[55167:2525d] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 18:43:16.820 I  Vela[55167:251d4] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 18:43:33.690 I  Vela[55167:251d4] [app.vela.ios:PlaceLoad] photos: rpc 10
+2026-10-26 18:43:34.055 I  Vela[55167:251d4] [app.vela.ios:PlaceLoad] reviews: feed 5 (limited view)
+2026-10-26 18:43:39.961 Db Vela[55167:25902] [app.vela.ios:VelaCapture] BEGIN mvpluo8t 474 149 123
+2026-10-26 18:43:39.961 Db Vela[55167:25902] [app.vela.ios:VelaCapture] P mvpluo8t 0 irqeF`adjV??HKHM@ADE??@AFKRW@AJO@ALQPU@C@ANS?ABE@A@ADG\134c@DIDENOPZ@@@?DH@@\134d@t@bA`@j@X^\134d@f@p@j@t@V\134DFHJ@@@@@@HLPTDHFFHJLPDF
+2026-10-26 18:43:39.962 Db Vela[55167:25902] [app.vela.ios:VelaCapture] END mvpluo8t
+2026-10-26 18:43:40.368 I  Vela[55167:255a4] [app.vela.ios:VelaDirections] open names: kept 1 renamed 0 bare 0 unplaced 0, waited 400 ms more
+2026-10-26 18:43:40.637 Db Vela[55167:25377] [app.vela.ios:VelaWalk] walk: open 516 m, google 474 m
+2026-10-26 18:43:40.665 I  Vela[55167:251d4] [app.vela.ios:PlaceLoad] details: plain search (no popular times)
+2026-10-26 18:43:42.037 Db Vela[55167:251d4] [app.vela.ios:Web] popular: view created
+2026-10-26 18:43:49.163 Db Vela[55167:251d4] [app.vela.ios:Web] popular: same-origin details fetch
+2026-10-26 18:43:49.782 Db Vela[55167:251d4] [app.vela.ios:Web] popular: replied with 27124 characters
+2026-10-26 18:43:49.846 I  Vela[55167:251d4] [app.vela.ios:PlaceLoad] details: page raw=27067 parsed=true times=false
+2026-10-26 18:43:56.473 I  Vela[55167:251d4] [app.vela.ios:VelaDirections] route start: OSRM, trip 150s typical, 152s live, 3 steps summing 150s
+2026-10-26 18:43:58.321 Db Vela[55167:251d4] [app.vela.ios:Navigation] nav replay: start
+2026-10-26 18:43:58.611 Db Vela[55167:251d4] [app.vela.ios:NavVoice] spoken: Starting navigation. Head southeast on 8th Street
+2026-10-26 18:43:58.658 Db Vela[55167:25378] [app.vela.ios:VelaCapture] BEGIN mvplv2o6 1151 330 214
+2026-10-26 18:43:58.660 Db Vela[55167:25378] [app.vela.ios:VelaCapture] P mvplv2o6 0 careFlkcjVg@q@s@kASW}@cAACMQx@mA@?LOFGBC?A@A@ABEd@o@BCBC@CLOBGRVFHJL^f@|@nAp@~@LRfAzAPTBDZb@FJTXNTDDBD@@T\134b@j@FHPRRXTZ^f@DD@BVZDFHJJLHLX`@BBj@t@??FJLPPZ@@@?DH@@\134d@t@bA`@j@X^\134d@f@p@j@t@V\134DFHJ@@@@@@HLPTDHFFHJLPDFDD??
+2026-10-26 18:43:58.661 Db Vela[55167:25378] [app.vela.ios:VelaCapture] END mvplv2o6
+2026-10-26 18:43:58.935 I  Vela[55167:25378] [app.vela.ios:VelaDirections] open names: kept 2 renamed 0 bare 0 unplaced 0, waited 1 ms more
+2026-10-26 18:43:59.115 Db Vela[55167:251d4] [app.vela.ios:NavVoice] spoken: Rerouting
+2026-10-26 18:43:59.211 I  Vela[55167:25b11] [app.vela.ios:VelaDirections] route swap: OSRM, trip 330s typical, 328s live, 4 steps summing 330s
+2026-10-26 18:44:04.817 Db Vela[55167:251d4] [app.vela.ios:NavVoice] spoken: Turn right, then turn right onto Mission Street
+2026-10-26 18:44:10.338 Db Vela[55167:25378] [app.vela.ios:VelaCapture] BEGIN mvplvbon 1481 360 270
+2026-10-26 18:44:10.339 Db Vela[55167:25378] [app.vela.ios:VelaCapture] P mvplvbon 0 mlreF~_cjVf@m@??m@y@a@i@Y_@Y_@aAsACC??CC??ACCCGK^g@NUX]JOHK`@k@@??AFIDGLOPVx@hADFDDLTPTLPHLNPHLLPTX\134d@x@fA@BVZ@@HJBDNRRVFHJL^f@|@nAp@~@LRfAzAPTBDZb@FJTXNTDDBD@@T\134b@j@FHPRRXTZ^f@DD@BVZDFHJJLHLX`@BBj@t@??FJLPPZ@@@?DH@@\134d@t@bA`@j@X^\134d@f@p@j@t@V\134DFHJ@@@@@@HLPTDHFFHJLPDFDD??
+2026-10-26 18:44:10.339 Db Vela[55167:25378] [app.vela.ios:VelaCapture] END mvplvbon
+2026-10-26 18:44:10.346 I  Vela[55167:25378] [app.vela.ios:VelaDirections] open names: kept 2 renamed 0 bare 0 unplaced 0, waited 0 ms more
+2026-10-26 18:44:10.348 I  Vela[55167:25b12] [app.vela.ios:VelaDirections] route swap: OSRM, trip 357s typical, 351s live, 4 steps summing 357s
+2026-10-26 18:44:11.998 Db Vela[55167:251d4] [app.vela.ios:NavVoice] spoken: In 500 feet, Turn right onto 5th Street, then turn right onto Mission Street
+2026-10-26 18:44:16.124 Db Vela[55167:251d4] [app.vela.ios:Navigation] nav replay: end
+2026-10-26 18:44:26.259 I  Vela[56413:2618f] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-26 18:44:26.943 Df Vela[56413:26253] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 18:44:28.231 I  Vela[56413:2618f] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 18:45:04.193 I  Vela[58351:2748a] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-26 18:45:04.785 Df Vela[58351:274e5] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 18:45:06.129 I  Vela[58351:2748a] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 18:45:39.539 I  Vela[59810:281ee] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-26 18:45:40.019 Df Vela[59810:28210] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 18:45:41.264 I  Vela[59810:281ee] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 18:45:52.967 I  Vela[59810:281ee] [app.vela.ios:PlaceLoad] reviews: feed 5 (limited view)
+2026-10-26 18:45:53.227 I  Vela[59810:281ee] [app.vela.ios:PlaceLoad] photos: rpc 10
+2026-10-26 18:45:59.885 I  Vela[59810:281ee] [app.vela.ios:PlaceLoad] details: plain search (no popular times)
+2026-10-26 18:46:01.053 Db Vela[59810:281ee] [app.vela.ios:Web] popular: view created
+2026-10-26 18:46:09.298 Db Vela[59810:281ee] [app.vela.ios:Web] popular: same-origin details fetch
+2026-10-26 18:46:09.815 Db Vela[59810:281ee] [app.vela.ios:Web] popular: replied with 48315 characters
+2026-10-26 18:46:09.840 I  Vela[59810:281ee] [app.vela.ios:PlaceLoad] details: page raw=48238 parsed=true times=false
+2026-10-26 18:46:16.425 I  Vela[61053:28ebb] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-26 18:46:17.045 Df Vela[61053:28f7b] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 18:46:18.368 I  Vela[61053:28ebb] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 18:46:30.380 I  Vela[61053:28ebb] [app.vela.ios:PlaceLoad] photos: rpc 10
+2026-10-26 18:46:30.741 I  Vela[61053:28ebb] [app.vela.ios:PlaceLoad] reviews: feed 5 (limited view)
+2026-10-26 18:46:36.991 I  Vela[61053:28ebb] [app.vela.ios:PlaceLoad] details: plain search (no popular times)
+2026-10-26 18:46:37.897 Db Vela[61053:28ebb] [app.vela.ios:Web] popular: view created
+2026-10-26 18:46:43.867 Db Vela[61053:28ebb] [app.vela.ios:Web] popular: same-origin details fetch
+2026-10-26 18:46:44.315 Db Vela[61053:28ebb] [app.vela.ios:Web] popular: replied with 48315 characters
+2026-10-26 18:46:44.328 I  Vela[61053:28ebb] [app.vela.ios:PlaceLoad] details: page raw=48238 parsed=true times=false
+2026-10-26 18:46:53.310 I  Vela[61993:298ec] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-26 18:46:53.790 Df Vela[61993:299b8] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 18:46:55.199 I  Vela[61993:298ec] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 18:47:09.435 I  Vela[62550:29ef9] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-26 18:47:09.958 Df Vela[62550:29f58] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 18:47:11.060 I  Vela[62550:29ef9] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 18:47:25.918 I  Vela[63486:2a7ee] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-26 18:47:26.526 Df Vela[63486:2a829] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 18:47:27.517 I  Vela[63486:2a7ee] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 18:47:53.129 I  Vela[64196:2af46] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-26 18:47:53.710 Df Vela[64196:2aff2] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 18:47:55.224 I  Vela[64196:2af46] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 18:48:05.918 I  Vela[64196:2af46] [app.vela.ios:PlaceLoad] photos: rpc 10
+2026-10-26 18:48:13.385 I  Vela[64196:2af46] [app.vela.ios:PlaceLoad] details: plain search (no popular times)
+2026-10-26 18:48:14.283 Db Vela[64196:2af46] [app.vela.ios:Web] popular: view created
+2026-10-26 18:48:20.081 Db Vela[64196:2af46] [app.vela.ios:Web] popular: same-origin details fetch
+2026-10-26 18:48:20.676 Db Vela[64196:2af46] [app.vela.ios:Web] popular: replied with 48315 characters
+2026-10-26 18:48:20.694 I  Vela[64196:2af46] [app.vela.ios:PlaceLoad] details: page raw=48238 parsed=true times=false
+2026-10-26 18:48:38.198 I  Vela[65681:2be29] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-26 18:48:38.807 Df Vela[65681:2bef3] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 18:48:39.923 I  Vela[65681:2be29] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 18:48:52.275 I  Vela[65681:2be29] [app.vela.ios:PlaceLoad] photos: rpc 10
+2026-10-26 18:48:56.887 Db Vela[65681:2bfce] [app.vela.ios:VelaCapture] BEGIN mvpm1gsc 1238 366 220
+2026-10-26 18:48:56.887 Db Vela[65681:2bfce] [app.vela.ios:VelaCapture] P mvpm1gsc 0 k|peFp`ejVQYJALC@?@?HA\134Gh@KDADA|A]l@M^ITGHCXGh@KZd@@?h@v@\134d@n@|@n@~@Zd@RXQVEFg@l@ST?@EFOREFA@CDEFe@p@ILILYb@EH]b@MSW]]e@MEAAQW_AoAKOCC??EEGCGAIAQB??UDQBE?C@A?{@JA@S@c@FE?E@WDUBE@E?a@FYDGq@IsAEm@KcBC]d@Id@EPCBZ@L@R@V^EEk@
+2026-10-26 18:48:56.888 Db Vela[65681:2bfce] [app.vela.ios:VelaCapture] END mvpm1gsc
+2026-10-26 18:48:57.541 I  Vela[65681:2c1c5] [app.vela.ios:VelaDirections] open names (hybrid): kept 7 renamed 0 bare 0 unplaced 1
+2026-10-26 18:48:57.547 I  Vela[65681:2c1c5] [app.vela.ios:VelaDirections] google line: 1 stretch(es) off the open route, 533 m of 1237 m (Google states 1238 m), hybrid 12 steps (open 13); stretches matched 1 (1 with lane detail), from tiles 0, bare 0; their turn names kept 3 renamed 0 dropped 0, no edges for 0, off the line in 0 place(s), 0 m drawn on the roads' middle in 655 ms
+2026-10-26 18:48:57.547 I  Vela[65681:2c1c5] [app.vela.ios:VelaDirections] steps vs line: 6 turns, 6 agree, 0 the other way, 0 with no bend, 0 bends unsaid
+2026-10-26 18:48:57.547 Db Vela[65681:2c1c5] [app.vela.ios:VelaSteps] 0 m [open] DEPART len=15 lanes=0 | Head out on Market Street
+2026-10-26 18:48:57.547 Db Vela[65681:2c1c5] [app.vela.ios:VelaSteps] 15 m [open] SHARP_RIGHT len=226 lanes=0 | Turn sharp right onto South Van Ness Avenue
+2026-10-26 18:48:57.548 Db Vela[65681:2c1c5] [app.vela.ios:VelaSteps] 241 m [open] TURN_RIGHT len=196 lanes=0 | Turn right onto Otis Street
+2026-10-26 18:48:57.548 Db Vela[65681:2c1c5] [app.vela.ios:VelaSteps] 438 m [open] TURN_RIGHT len=191 lanes=5 | Turn right onto Gough Street
+2026-10-26 18:48:57.548 Db Vela[65681:2c1c5] [app.vela.ios:VelaSteps] 629 m [open] TURN_RIGHT len=13 lanes=1 | Turn right onto Market Street
+2026-10-26 18:48:57.548 Db Vela[65681:2c1c5] [app.vela.ios:VelaSteps] 643 m [open] FORK_LEFT len=327 lanes=0 | Keep slight left onto Market Street
+2026-10-26 18:48:57.548 Db Vela[65681:2c1c5] [app.vela.ios:VelaSteps] 970 m [stretch] TURN_RIGHT len=139 lanes=4 | Turn right onto Hickory Street
+2026-10-26 18:48:57.548 Db Vela[65681:2c1c5] [app.vela.ios:VelaSteps] 1110 m [stretch] TURN_RIGHT len=52 lanes=0 | Turn right onto Van Ness Avenue
+2026-10-26 18:48:57.548 Db Vela[65681:2c1c5] [app.vela.ios:VelaSteps] 1162 m [stretch] TURN_RIGHT len=36 lanes=0 | Turn right onto Oak Street
+2026-10-26 18:48:57.548 Db Vela[65681:2c1c5] [app.vela.ios:VelaSteps] 1199 m [stretch] TURN_LEFT len=21 lanes=0 | Turn left
+2026-10-26 18:48:57.548 Db Vela[65681:2c1c5] [app.vela.ios:VelaSteps] 1220 m [stretch] TURN_LEFT len=16 lanes=0 | Turn left
+2026-10-26 18:48:57.549 Db Vela[65681:2c1c5] [app.vela.ios:VelaSteps] 1237 m [stretch] ARRIVE len=0 lanes=0 | Arrive at your destination
+2026-10-26 18:48:57.549 Db Vela[65681:2c1c5] [app.vela.ios:VelaSteps] stretch 703..1237 m
+2026-10-26 18:48:57.554 I  Vela[65681:2c1c5] [app.vela.ios:VelaDirections] open names: kept 0 renamed 0 bare 0 unplaced 0, waited 0 ms more
+2026-10-26 18:48:57.892 Db Vela[65681:2bfce] [app.vela.ios:VelaWalk] walk: open 54 m, google 41 m, google named (2 steps) tiles 86 ms (332 lines), named share 1.00, total 119 ms
+2026-10-26 18:49:00.201 I  Vela[65681:2be29] [app.vela.ios:PlaceLoad] details: plain search (no popular times)
+2026-10-26 18:49:01.218 Db Vela[65681:2be29] [app.vela.ios:Web] popular: view created
+2026-10-26 18:49:08.850 Db Vela[65681:2be29] [app.vela.ios:Web] popular: same-origin details fetch
+2026-10-26 18:49:09.622 Db Vela[65681:2be29] [app.vela.ios:Web] popular: replied with 27497 characters
+2026-10-26 18:49:09.650 I  Vela[65681:2be29] [app.vela.ios:PlaceLoad] details: page raw=27497 parsed=true times=false
+2026-10-26 18:49:31.502 I  Vela[67128:2cd21] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-26 18:49:32.113 Df Vela[67128:2cd70] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 18:49:33.511 I  Vela[67128:2cd21] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 18:52:05.674 I  Vela[74236:30bb5] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-26 18:52:06.284 Df Vela[74236:30be9] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 18:52:07.738 I  Vela[74236:30bb5] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 18:52:35.138 I  Vela[75721:3196e] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-26 18:52:35.939 Df Vela[75721:31a40] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 18:52:37.138 I  Vela[75721:3196e] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 18:52:51.515 I  Vela[75721:3196e] [app.vela.ios:PlaceLoad] photos: rpc 10
+2026-10-26 18:52:51.729 I  Vela[75721:3196e] [app.vela.ios:PlaceLoad] reviews: feed 5 (limited view)
+2026-10-26 18:53:00.107 I  Vela[75721:3196e] [app.vela.ios:PlaceLoad] details: plain search (no popular times)
+2026-10-26 18:53:01.814 Db Vela[75721:3196e] [app.vela.ios:Web] popular: view created
+2026-10-26 18:53:08.673 Db Vela[75721:3196e] [app.vela.ios:Web] popular: same-origin details fetch
+2026-10-26 18:53:09.201 Db Vela[75721:3196e] [app.vela.ios:Web] popular: replied with 27486 characters
+2026-10-26 18:53:09.341 I  Vela[75721:3196e] [app.vela.ios:PlaceLoad] details: page raw=27486 parsed=true times=false
+2026-10-26 18:53:26.138 Db Vela[75721:32132] [app.vela.ios:VelaCapture] BEGIN mvpm78jj 1238 366 220
+2026-10-26 18:53:26.139 Db Vela[75721:32132] [app.vela.ios:VelaCapture] P mvpm78jj 0 k|peFp`ejVQYJALC@?@?HA\134Gh@KDADA|A]l@M^ITGHCXGh@KZd@@?h@v@\134d@n@|@n@~@Zd@RXQVEFg@l@ST?@EFOREFA@CDEFe@p@ILILYb@EH]b@MSW]]e@MEAAQW_AoAKOCC??EEGCGAIAQB??UDQBE?C@A?{@JA@S@c@FE?E@WDUBE@E?a@FYDGq@IsAEm@KcBC]d@Id@EPCBZ@L@R@V^EEk@
+2026-10-26 18:53:26.139 Db Vela[75721:32132] [app.vela.ios:VelaCapture] END mvpm78jj
+2026-10-26 18:53:26.807 I  Vela[75721:32131] [app.vela.ios:VelaDirections] open names (hybrid): kept 7 renamed 0 bare 0 unplaced 1
+2026-10-26 18:53:26.812 I  Vela[75721:32131] [app.vela.ios:VelaDirections] google line: 1 stretch(es) off the open route, 533 m of 1237 m (Google states 1238 m), hybrid 12 steps (open 13); stretches matched 1 (1 with lane detail), from tiles 0, bare 0; their turn names kept 3 renamed 0 dropped 0, no edges for 0, off the line in 0 place(s), 0 m drawn on the roads' middle in 666 ms
+2026-10-26 18:53:26.814 I  Vela[75721:32131] [app.vela.ios:VelaDirections] steps vs line: 6 turns, 6 agree, 0 the other way, 0 with no bend, 0 bends unsaid
+2026-10-26 18:53:26.815 Db Vela[75721:32131] [app.vela.ios:VelaSteps] 0 m [open] DEPART len=15 lanes=0 | Head out on Market Street
+2026-10-26 18:53:26.816 Db Vela[75721:32131] [app.vela.ios:VelaSteps] 15 m [open] SHARP_RIGHT len=226 lanes=0 | Turn sharp right onto South Van Ness Avenue
+2026-10-26 18:53:26.820 Db Vela[75721:32131] [app.vela.ios:VelaSteps] 241 m [open] TURN_RIGHT len=196 lanes=0 | Turn right onto Otis Street
+2026-10-26 18:53:26.824 Db Vela[75721:32131] [app.vela.ios:VelaSteps] 438 m [open] TURN_RIGHT len=191 lanes=5 | Turn right onto Gough Street
+2026-10-26 18:53:26.825 Db Vela[75721:32131] [app.vela.ios:VelaSteps] 629 m [open] TURN_RIGHT len=13 lanes=1 | Turn right onto Market Street
+2026-10-26 18:53:26.825 Db Vela[75721:32131] [app.vela.ios:VelaSteps] 643 m [open] FORK_LEFT len=327 lanes=0 | Keep slight left onto Market Street
+2026-10-26 18:53:26.826 Db Vela[75721:32131] [app.vela.ios:VelaSteps] 970 m [stretch] TURN_RIGHT len=139 lanes=4 | Turn right onto Hickory Street
+2026-10-26 18:53:26.826 Db Vela[75721:32131] [app.vela.ios:VelaSteps] 1110 m [stretch] TURN_RIGHT len=52 lanes=0 | Turn right onto Van Ness Avenue
+2026-10-26 18:53:26.826 Db Vela[75721:32131] [app.vela.ios:VelaSteps] 1162 m [stretch] TURN_RIGHT len=36 lanes=0 | Turn right onto Oak Street
+2026-10-26 18:53:26.827 Db Vela[75721:32131] [app.vela.ios:VelaSteps] 1199 m [stretch] TURN_LEFT len=21 lanes=0 | Turn left
+2026-10-26 18:53:26.827 Db Vela[75721:32131] [app.vela.ios:VelaSteps] 1220 m [stretch] TURN_LEFT len=16 lanes=0 | Turn left
+2026-10-26 18:53:26.861 Db Vela[75721:32131] [app.vela.ios:VelaSteps] 1237 m [stretch] ARRIVE len=0 lanes=0 | Arrive at your destination
+2026-10-26 18:53:26.861 Db Vela[75721:32131] [app.vela.ios:VelaSteps] stretch 703..1237 m
+2026-10-26 18:53:26.865 I  Vela[75721:32131] [app.vela.ios:VelaDirections] open names: kept 0 renamed 0 bare 0 unplaced 0, waited 0 ms more
+2026-10-26 18:53:27.288 Db Vela[75721:32131] [app.vela.ios:VelaWalk] walk: open 54 m, google 41 m, google named (2 steps) tiles 165 ms (332 lines), named share 1.00, total 182 ms
+2026-10-26 18:53:33.557 I  Vela[75721:3196e] [app.vela.ios:PlaceLoad] details: nothing
+2026-10-26 18:53:33.558 Db Vela[75721:3196e] [app.vela.ios:Web] popular: same-origin details fetch
+2026-10-26 18:53:39.310 I  Vela[76843:3276e] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-26 18:53:40.019 Df Vela[76843:32899] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 18:53:41.491 I  Vela[76843:3276e] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 18:53:53.966 I  Vela[76843:3276e] [app.vela.ios:PlaceLoad] photos: rpc 10
+2026-10-26 18:53:54.335 I  Vela[76843:3276e] [app.vela.ios:PlaceLoad] reviews: feed 5 (limited view)
+2026-10-26 18:53:56.594 Db Vela[76843:32ebb] [app.vela.ios:VelaCapture] BEGIN mvpm7w1j 1238 366 220
+2026-10-26 18:53:56.595 Db Vela[76843:32ebb] [app.vela.ios:VelaCapture] P mvpm7w1j 0 k|peFp`ejVQYJALC@?@?HA\134Gh@KDADA|A]l@M^ITGHCXGh@KZd@@?h@v@\134d@n@|@n@~@Zd@RXQVEFg@l@ST?@EFOREFA@CDEFe@p@ILILYb@EH]b@MSW]]e@MEAAQW_AoAKOCC??EEGCGAIAQB??UDQBE?C@A?{@JA@S@c@FE?E@WDUBE@E?a@FYDGq@IsAEm@KcBC]d@Id@EPCBZ@L@R@V^EEk@
+2026-10-26 18:53:56.595 Db Vela[76843:32ebb] [app.vela.ios:VelaCapture] END mvpm7w1j
+2026-10-26 18:53:57.286 I  Vela[76843:32a5c] [app.vela.ios:VelaDirections] open names (hybrid): kept 7 renamed 0 bare 0 unplaced 1
+2026-10-26 18:53:57.288 I  Vela[76843:32a5c] [app.vela.ios:VelaDirections] google line: 1 stretch(es) off the open route, 533 m of 1237 m (Google states 1238 m), hybrid 12 steps (open 13); stretches matched 1 (1 with lane detail), from tiles 0, bare 0; their turn names kept 3 renamed 0 dropped 0, no edges for 0, off the line in 0 place(s), 0 m drawn on the roads' middle in 685 ms
+2026-10-26 18:53:57.289 I  Vela[76843:32a5c] [app.vela.ios:VelaDirections] steps vs line: 6 turns, 6 agree, 0 the other way, 0 with no bend, 0 bends unsaid
+2026-10-26 18:53:57.289 Db Vela[76843:32a5c] [app.vela.ios:VelaSteps] 0 m [open] DEPART len=15 lanes=0 | Head out on Market Street
+2026-10-26 18:53:57.289 Db Vela[76843:32a5c] [app.vela.ios:VelaSteps] 15 m [open] SHARP_RIGHT len=226 lanes=0 | Turn sharp right onto South Van Ness Avenue
+2026-10-26 18:53:57.290 Db Vela[76843:32a5c] [app.vela.ios:VelaSteps] 241 m [open] TURN_RIGHT len=196 lanes=0 | Turn right onto Otis Street
+2026-10-26 18:53:57.291 Db Vela[76843:32a5c] [app.vela.ios:VelaSteps] 438 m [open] TURN_RIGHT len=191 lanes=5 | Turn right onto Gough Street
+2026-10-26 18:53:57.291 Db Vela[76843:32a5c] [app.vela.ios:VelaSteps] 629 m [open] TURN_RIGHT len=13 lanes=1 | Turn right onto Market Street
+2026-10-26 18:53:57.291 Db Vela[76843:32a5c] [app.vela.ios:VelaSteps] 643 m [open] FORK_LEFT len=327 lanes=0 | Keep slight left onto Market Street
+2026-10-26 18:53:57.291 Db Vela[76843:32a5c] [app.vela.ios:VelaSteps] 970 m [stretch] TURN_RIGHT len=139 lanes=4 | Turn right onto Hickory Street
+2026-10-26 18:53:57.291 Db Vela[76843:32a5c] [app.vela.ios:VelaSteps] 1110 m [stretch] TURN_RIGHT len=52 lanes=0 | Turn right onto Van Ness Avenue
+2026-10-26 18:53:57.291 Db Vela[76843:32a5c] [app.vela.ios:VelaSteps] 1162 m [stretch] TURN_RIGHT len=36 lanes=0 | Turn right onto Oak Street
+2026-10-26 18:53:57.291 Db Vela[76843:32a5c] [app.vela.ios:VelaSteps] 1199 m [stretch] TURN_LEFT len=21 lanes=0 | Turn left
+2026-10-26 18:53:57.291 Db Vela[76843:32a5c] [app.vela.ios:VelaSteps] 1220 m [stretch] TURN_LEFT len=16 lanes=0 | Turn left
+2026-10-26 18:53:57.294 Db Vela[76843:32a5c] [app.vela.ios:VelaSteps] 1237 m [stretch] ARRIVE len=0 lanes=0 | Arrive at your destination
+2026-10-26 18:53:57.294 Db Vela[76843:32a5c] [app.vela.ios:VelaSteps] stretch 703..1237 m
+2026-10-26 18:53:57.299 I  Vela[76843:32a5c] [app.vela.ios:VelaDirections] open names: kept 0 renamed 0 bare 0 unplaced 0, waited 0 ms more
+2026-10-26 18:53:57.787 Db Vela[76843:32a5c] [app.vela.ios:VelaWalk] walk: open 54 m, google 41 m, google named (2 steps) tiles 224 ms (332 lines), named share 1.00, total 258 ms
+2026-10-26 18:54:01.789 I  Vela[76843:3276e] [app.vela.ios:PlaceLoad] details: plain search (no popular times)
+2026-10-26 18:54:03.142 Db Vela[76843:3276e] [app.vela.ios:Web] popular: view created
+2026-10-26 18:54:09.065 Db Vela[76843:3276e] [app.vela.ios:Web] popular: same-origin details fetch
+2026-10-26 18:54:10.228 Db Vela[76843:3276e] [app.vela.ios:Web] popular: replied with 27497 characters
+2026-10-26 18:54:10.244 I  Vela[76843:3276e] [app.vela.ios:PlaceLoad] details: page raw=27497 parsed=true times=false
+2026-10-26 18:54:38.772 Db Vela[76843:32a5d] [app.vela.ios:VelaCapture] BEGIN mvpm8sl5 1238 366 220
+2026-10-26 18:54:38.772 Db Vela[76843:32a5d] [app.vela.ios:VelaCapture] P mvpm8sl5 0 k|peFp`ejVQYJALC@?@?HA\134Gh@KDADA|A]l@M^ITGHCXGh@KZd@@?h@v@\134d@n@|@n@~@Zd@RXQVEFg@l@ST?@EFOREFA@CDEFe@p@ILILYb@EH]b@MSW]]e@MEAAQW_AoAKOCC??EEGCGAIAQB??UDQBE?C@A?{@JA@S@c@FE?E@WDUBE@E?a@FYDGq@IsAEm@KcBC]d@Id@EPCBZ@L@R@V^EEk@
+2026-10-26 18:54:38.773 Db Vela[76843:32a5d] [app.vela.ios:VelaCapture] END mvpm8sl5
+2026-10-26 18:54:39.089 I  Vela[76843:32a5d] [app.vela.ios:VelaDirections] open names (hybrid): kept 7 renamed 0 bare 0 unplaced 1
+2026-10-26 18:54:39.095 I  Vela[76843:32a5d] [app.vela.ios:VelaDirections] google line: 1 stretch(es) off the open route, 533 m of 1237 m (Google states 1238 m), hybrid 12 steps (open 13); stretches matched 1 (1 with lane detail), from tiles 0, bare 0; their turn names kept 3 renamed 0 dropped 0, no edges for 0, off the line in 0 place(s), 0 m drawn on the roads' middle in 314 ms
+2026-10-26 18:54:39.095 I  Vela[76843:32a5d] [app.vela.ios:VelaDirections] steps vs line: 6 turns, 6 agree, 0 the other way, 0 with no bend, 0 bends unsaid
+2026-10-26 18:54:39.096 Db Vela[76843:32a5d] [app.vela.ios:VelaSteps] 0 m [open] DEPART len=15 lanes=0 | Head out on Market Street
+2026-10-26 18:54:39.096 Db Vela[76843:32a5d] [app.vela.ios:VelaSteps] 15 m [open] SHARP_RIGHT len=226 lanes=0 | Turn sharp right onto South Van Ness Avenue
+2026-10-26 18:54:39.096 Db Vela[76843:32a5d] [app.vela.ios:VelaSteps] 241 m [open] TURN_RIGHT len=196 lanes=0 | Turn right onto Otis Street
+2026-10-26 18:54:39.097 Db Vela[76843:32a5d] [app.vela.ios:VelaSteps] 438 m [open] TURN_RIGHT len=191 lanes=5 | Turn right onto Gough Street
+2026-10-26 18:54:39.117 Db Vela[76843:32a5d] [app.vela.ios:VelaSteps] 629 m [open] TURN_RIGHT len=13 lanes=1 | Turn right onto Market Street
+2026-10-26 18:54:39.117 Db Vela[76843:32a5d] [app.vela.ios:VelaSteps] 643 m [open] FORK_LEFT len=327 lanes=0 | Keep slight left onto Market Street
+2026-10-26 18:54:39.117 Db Vela[76843:32a5d] [app.vela.ios:VelaSteps] 970 m [stretch] TURN_RIGHT len=139 lanes=4 | Turn right onto Hickory Street
+2026-10-26 18:54:39.117 Db Vela[76843:32a5d] [app.vela.ios:VelaSteps] 1110 m [stretch] TURN_RIGHT len=52 lanes=0 | Turn right onto Van Ness Avenue
+2026-10-26 18:54:39.117 Db Vela[76843:32a5d] [app.vela.ios:VelaSteps] 1162 m [stretch] TURN_RIGHT len=36 lanes=0 | Turn right onto Oak Street
+2026-10-26 18:54:39.117 Db Vela[76843:32a5d] [app.vela.ios:VelaSteps] 1199 m [stretch] TURN_LEFT len=21 lanes=0 | Turn left
+2026-10-26 18:54:39.117 Db Vela[76843:32a5d] [app.vela.ios:VelaSteps] 1220 m [stretch] TURN_LEFT len=16 lanes=0 | Turn left
+2026-10-26 18:54:39.117 Db Vela[76843:32a5d] [app.vela.ios:VelaSteps] 1237 m [stretch] ARRIVE len=0 lanes=0 | Arrive at your destination
+2026-10-26 18:54:39.142 Db Vela[76843:32a5d] [app.vela.ios:VelaSteps] stretch 703..1237 m
+2026-10-26 18:54:39.147 I  Vela[76843:32a5d] [app.vela.ios:VelaDirections] open names: kept 0 renamed 0 bare 0 unplaced 0, waited 1 ms more
+2026-10-26 18:54:39.338 Db Vela[76843:32ebb] [app.vela.ios:VelaWalk] walk: open 73 m, google 132 m
+2026-10-26 18:54:45.888 I  Vela[76843:3276e] [app.vela.ios:PlaceLoad] details: nothing
+2026-10-26 18:54:45.890 Db Vela[76843:3276e] [app.vela.ios:Web] popular: same-origin details fetch
+2026-10-26 18:54:46.254 Db Vela[76843:3276e] [app.vela.ios:Web] popular: replied with 54998 characters
+2026-10-26 18:54:46.314 I  Vela[76843:3276e] [app.vela.ios:PlaceLoad] details: page raw=54836 parsed=false times=false
+2026-10-26 18:55:15.481 I  Vela[79145:34045] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-26 18:55:16.278 Df Vela[79145:340e1] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 18:55:18.069 I  Vela[79145:34045] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 18:55:31.626 I  Vela[79849:347d0] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-26 18:55:32.237 Df Vela[79849:348ab] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 18:55:33.124 I  Vela[79849:347d0] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 18:55:40.714 I  Vela[79849:347d0] [app.vela.ios:PlaceLoad] photos: rpc 10
+2026-10-26 18:55:41.047 I  Vela[79849:347d0] [app.vela.ios:PlaceLoad] reviews: feed 5 (limited view)
+2026-10-26 18:55:47.607 I  Vela[79849:347d0] [app.vela.ios:PlaceLoad] details: plain search (no popular times)
+2026-10-26 18:55:48.307 Db Vela[79849:347d0] [app.vela.ios:Web] popular: view created
+2026-10-26 18:55:54.997 Db Vela[79849:347d0] [app.vela.ios:Web] popular: same-origin details fetch
+2026-10-26 18:55:55.697 Db Vela[79849:347d0] [app.vela.ios:Web] popular: replied with 63282 characters
+2026-10-26 18:55:56.594 I  Vela[79849:347d0] [app.vela.ios:PlaceLoad] details: page raw=63063 parsed=true times=false
+2026-10-26 18:56:22.093 I  Vela[81362:35714] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-26 18:56:22.879 Df Vela[81362:35762] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 18:56:24.485 I  Vela[81362:35714] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 18:56:46.783 I  Vela[82530:362f8] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-26 18:56:47.236 Df Vela[82530:3639e] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 18:56:48.151 I  Vela[82530:362f8] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 18:57:19.172 I  Vela[82530:362f8] [app.vela.ios:PlaceLoad] photos: rpc 10
+2026-10-26 18:57:19.437 I  Vela[82530:362f8] [app.vela.ios:PlaceLoad] reviews: feed 5 (limited view)
+2026-10-26 18:57:32.437 I  Vela[84227:373b8] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-26 18:57:33.405 Df Vela[84227:3748e] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 18:57:35.303 I  Vela[84227:373b8] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 18:57:48.300 I  Vela[84493:37734] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-26 18:57:48.986 Df Vela[84493:37799] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 18:57:50.297 I  Vela[84493:37734] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 18:57:53.968 I  Vela[84493:37839] [app.vela.ios:VelaSuggest] 4 chars, span 13197.06784348514 → 1 places, 4 queries
+2026-10-26 18:57:56.422 I  Vela[84493:37734] [app.vela.ios:PlaceLoad] photos: rpc 10
+2026-10-26 18:57:56.615 I  Vela[84493:37838] [app.vela.ios:VelaSuggest] 4 chars, span 1998.3532072139596 → 1 places, 4 queries
+2026-10-26 18:58:06.729 I  Vela[85583:3818c] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-26 18:58:07.230 Df Vela[85583:381bf] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 18:58:08.726 I  Vela[85583:3818c] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 18:58:59.316 I  Vela[88086:39f08] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-26 18:58:59.840 Df Vela[88086:39f26] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-26 18:58:59.980 I  Vela[88086:39f08] [app.vela.ios:Location] location update failed: The operation couldn’t be completed. (kCLErrorDomain error 0.)
+2026-10-26 18:59:00.513 I  Vela[88086:39f08] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-26 18:59:54.503 I  Vela[88086:39f08] [app.vela.ios:Location] location update failed: The operation couldn’t be completed. (kCLErrorDomain error 0.)
