@@ -1,0 +1,3 @@
+src=src/p1target3
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=PlaceUITests VELA_SKIP_ARCHIVE=1
