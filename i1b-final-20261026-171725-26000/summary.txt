@@ -1,0 +1,48 @@
+commit: 87af484 src: eb200901 Merge branch 'ios/main' into ios/i1b-map-layers
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610261729 (1793035749)
+java: openjdk version "17.0.20.1" 2026-08-18
+gradle: ok in 586 s
+kotlin jvmTest: 123 tests, 0 failures
+kotlin iosSimulatorArm64Test: 102 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  74M, static library 73804560 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  43M, static library 40964440 bytes, SKIE Swift module: yes
+string catalog: 1415 keys, 24 resource locales (23 with translations), 24572 localized values, 37 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: maplibre-gl-native-distribution@6.31.0
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+simulator build: ok
+tests: ok, Executed 52 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: FAILED
+ui MapLayersUITests.testLayerSheetLoadsOverlaysAtCloseZoom: failed (76.497 seconds)
+ui screenshots: 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 29155 bytes
+open reply: transit-plan-sf 76189 bytes
+directions reply: directions-drive-sf 114231 bytes
+directions reply: directions-walk-sf 38087 bytes
+search reply: 281933 bytes, 39 feature ids
+ipa: Vela-unsigned.ipa 10021917 bytes (9.6M)
+app frameworks: MapLibre.framework 
+app binary: arm64, 16101528 bytes
+live activity extension: PlugIns/NavActivityExtension.appex present in IPA, 220888 bytes
+extension plist CFBundleIdentifier: app.vela.ios.navactivity
+extension plist NSExtensionPointIdentifier: com.apple.widgetkit-extension
+extension signing: none
+kotlin code in the device binary: yes
+plist CFBundleIdentifier: app.vela.ios
+plist CFBundleDisplayName: Vela
+plist CFBundleShortVersionString: 0.1.202610261729
+plist MinimumOSVersion: 17.0
+plist UIBackgroundModes: ["location","audio"]
+plist NSSupportsLiveActivities: true
+failed steps: ui-scenarios
