@@ -1,0 +1,3 @@
+src=src/t1-transit
+script=scripts/ios/ci-ipa.sh
+args=
