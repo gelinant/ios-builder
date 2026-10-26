@@ -1,0 +1,157 @@
+tag=i1b-layers-compile-20261026-151837-22442 src=src/i1b-layers-compile 9dafe2b src: c05a6f0b iOS: add map layer switches, overlays and PoI controls
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 9dafe2b src: c05a6f0b iOS: add map layer switches, overlays and PoI controls
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610261523 (1793028212)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Kotlin: tests and the VelaCore framework (15:23:32)
+gradle: FAILED after 245 s
+> Task :ios-shared:compileTestKotlinIosSimulatorArm64 FAILED
+e: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/map/LayersStoreTest.kt:287:43 'fun String(chars: CharArray): String' is deprecated. Use CharArray.concatToString() instead.
+e: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/map/LayersStoreTest.kt:287:50 Argument type mismatch: actual type is 'ByteArray', but 'CharArray' was expected.
+
+> Task :ios-shared:syncPersistedPackageResolvedToSynthetic SKIPPED
+> Task :ios-shared:fetchSyntheticImportProjectPackages SKIPPED
+--
+* What went wrong:
+Execution failed for task ':ios-shared:compileTestKotlinIosSimulatorArm64' (registered in build file 'ios-shared/build.gradle.kts').
+> Compilation finished with errors
+
+--
+BUILD FAILED in 4m 2s
+38 actionable tasks: 38 executed
+e: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/map/LayersStoreTest.kt:287:50 Argument type mismatch: actual type is 'ByteArray', but 'CharArray' was expected.
+
+> Task :ios-shared:syncPersistedPackageResolvedToSynthetic SKIPPED
+> Task :ios-shared:fetchSyntheticImportProjectPackages SKIPPED
+> Task :ios-shared:dumpXcodebuildArgsIphonesimulator SKIPPED
+> Task :ios-shared:convertSyntheticImportProjectIntoDefFileIphonesimulator
+> Task :ios-shared:compileKotlinJvm
+> Task :ios-shared:compileJvmMainJava NO-SOURCE
+> Task :ios-shared:jvmMainClasses
+> Task :ios-shared:jvmJar
+
+> Task :ios-shared:compileTestKotlinJvm
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/search/SearchStoreTest.kt:93:40 Unnecessary non-null assertion (!!) on a non-null receiver of type 'LatLng'.
+
+> Task :ios-shared:compileJvmTestJava NO-SOURCE
+> Task :ios-shared:jvmTestClasses
+> Task :ios-shared:jvmTest
+
+[Incubating] Problems report is available at: file:///Users/runner/work/ios-builder/ios-builder/src/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':ios-shared:compileTestKotlinIosSimulatorArm64' (registered in build file 'ios-shared/build.gradle.kts').
+> Compilation finished with errors
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.8.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 4m 2s
+38 actionable tasks: 38 executed
+kotlin jvmTest: 123 tests, 0 failures
+kotlin iosSimulatorArm64Test: no results
+VelaCore.framework iosSimulatorArm64/debugFramework:  74M, static library 73804560 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  43M, static library 40964440 bytes, SKIE Swift module: yes
+
+== String Catalog (15:27:37)
+string catalog: 1415 keys, 24 resource locales (23 with translations), 24572 localized values, 37 Swift references, 24 picker languages
+
+== XcodeGen (15:27:38)
+xcodegen: Version: 2.46.0
+
+== Generate the project (15:27:38)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (15:27:38)
+  MapLibre Native: https://github.com/maplibre/maplibre-gl-native-distribution @ 6.31.0
+
+resolved source packages: MapLibre Native
+(resolve: 11 s)
+packages: maplibre-gl-native-distribution@6.31.0
+
+== Pick a simulator (15:27:49)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+
+== Build for the simulator (15:27:50)
+xcodebuild build-sim failed after 33 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/MapLayers.swift:132:18: error: 'lineDasharray' is unavailable: Use lineDashPattern instead.
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/MapLayers.swift:137:22: error: 'lineDasharray' is unavailable: Use lineDashPattern instead.
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/MapLayers.swift:161:19: error: 'textFont' is unavailable: Use textFontNames instead.
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/MapLayers.swift:162:19: error: 'textSize' is unavailable: Use textFontSize instead.
+** TEST BUILD FAILED **
+--- tail of build-sim log ---
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Shared/TransitActivityPalette.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/LiveActivity/TransitActivityState.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitGuidanceCard.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitModel.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Platform/URLSessionVelaHttp.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/App/VelaApp.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Core/VelaCoreCheck.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Intents/VelaIntents.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Resources/VelaL10n.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Offline/ZipArchive.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftMergeGeneratedHeaders /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/DerivedSources/Vela-Swift.h /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/Objects-normal/arm64/Vela-Swift.h (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    builtin-swiftHeaderTool -arch arm64 /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/Objects-normal/arm64/Vela-Swift.h -o /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/DerivedSources/Vela-Swift.h
+
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD FAILED **
+
+
+The following build commands failed:
+	SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/MapLayers.swift (in target 'Vela' from project 'Vela')
+	SwiftCompile normal arm64 Compiling\ MapDefaults.swift,\ MapLayers.swift,\ MapLayersTestSupport.swift,\ MapPoiModel.swift,\ MapScreen.swift,\ MapView.swift,\ NavActivityAttributes.swift,\ NavActivityController.swift,\ NavActivityState.swift,\ NavAlertTestSupport.swift,\ NavChrome.swift,\ NavHaptics.swift,\ NavModel.swift,\ NavVoice.swift,\ OSLogLog.swift,\ OfflineModel.swift,\ OfflineNetworkMonitor.swift,\ OfflineSheet.swift,\ OfflineStyleFactory.swift,\ OfflineTestSupport.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapDefaults.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/MapLayers.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/MapLayersTestSupport.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Search/MapPoiModel.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapScreen.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapView.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Shared/NavActivityAttributes.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/LiveActivity/NavActivityController.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/LiveActivity/NavActivityState.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Nav/NavAlertTestSupport.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Nav/NavChrome.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Nav/NavHaptics.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Nav/NavModel.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Nav/NavVoice.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Platform/OSLogLog.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Offline/OfflineModel.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Offline/OfflineNetworkMonitor.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Offline/OfflineSheet.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Offline/OfflineStyleFactory.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Offline/OfflineTestSupport.swift (in target 'Vela' from project 'Vela')
+	Building project Vela for testing with scheme Vela
+(3 failures)
