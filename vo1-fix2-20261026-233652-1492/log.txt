@@ -1,0 +1,184 @@
+tag=vo1-fix2-20261026-233652-1492 src=src/vo1-fix2 8eec6b2 src: c96a408a iOS: push the voice catalog inside Settings instead of a nested sheet
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 8eec6b2 src: c96a408a iOS: push the voice catalog inside Settings instead of a nested sheet
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610262337 (1793057868)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Kotlin: tests and the VelaCore framework (23:37:48)
+gradle: ok in 254 s
+kotlin jvmTest: 187 tests, 0 failures
+kotlin iosSimulatorArm64Test: 166 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  76M, static library 75173384 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  45M, static library 42337464 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (23:42:02)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 30.3M  100 30.3M    0     0  55.6M      0 --:--:-- --:--:-- --:--:-- 55.6M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (23:42:03)
+string catalog: 1415 keys, 24 resource locales (23 with translations), 24572 localized values, 55 Swift references, 24 picker languages
+
+== XcodeGen (23:42:04)
+xcodegen: Version: 2.46.0
+
+== Generate the project (23:42:04)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (23:42:04)
+  MapLibre Native: https://github.com/maplibre/maplibre-gl-native-distribution @ 6.31.0
+
+resolved source packages: SWCompression, BitByteData, MapLibre Native
+(resolve: 14 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (23:42:18)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+
+== Build for the simulator (23:42:19)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 49 s)
+simulator build: ok
+
+== Boot the simulator (23:43:08)
+voice fixture:  78M in the Debug app
+
+== Unit tests (23:45:09)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 61 s)
+tests: ok, Executed 86 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.51 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_SYNTH samples=58127 rate=22050 wav_frames=58127
+
+== Launch and screenshot (23:46:10)
+app.vela.ios: 18873
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 8CAFEAE0-0F8B-4812-8173-C7B236E2FF5E (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (23:46:44)
+Parsed 8 waypoints
+xcodebuild uitest failed after 136 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/VoiceUITests.swift:27: error: -[VelaUITests.VoiceUITests testVoiceSettingsShowInstalledModel] : XCTAssertTrue failed - voice library sheet did not open
+Test Case '-[VelaUITests.VoiceUITests testVoiceSettingsShowInstalledModel]' failed (34.642 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =    23.51s         Capturing element debug description
+    t =    23.51s     Checking existence of `"voice-library-list" Other`
+    t =    23.60s Collecting debug information to assist test failure triage
+    t =    23.60s     Requesting snapshot of accessibility hierarchy for app with pid 24005
+    t =    23.73s Waiting 10.0s for "voice-library-list" Table to exist
+    t =    24.76s     Checking `Expect predicate `existsNoRetry == 1` for object "voice-library-list" Table`
+    t =    24.76s         Checking existence of `"voice-library-list" Table`
+    t =    24.84s         Capturing element debug description
+    t =    25.74s     Checking `Expect predicate `existsNoRetry == 1` for object "voice-library-list" Table`
+    t =    25.74s         Checking existence of `"voice-library-list" Table`
+    t =    25.82s         Capturing element debug description
+    t =    26.73s     Checking `Expect predicate `existsNoRetry == 1` for object "voice-library-list" Table`
+    t =    26.73s         Checking existence of `"voice-library-list" Table`
+    t =    26.81s         Capturing element debug description
+    t =    27.76s     Checking `Expect predicate `existsNoRetry == 1` for object "voice-library-list" Table`
+    t =    27.76s         Checking existence of `"voice-library-list" Table`
+    t =    27.83s         Capturing element debug description
+    t =    28.74s     Checking `Expect predicate `existsNoRetry == 1` for object "voice-library-list" Table`
+    t =    28.74s         Checking existence of `"voice-library-list" Table`
+    t =    28.83s         Capturing element debug description
+    t =    29.76s     Checking `Expect predicate `existsNoRetry == 1` for object "voice-library-list" Table`
+    t =    29.76s         Checking existence of `"voice-library-list" Table`
+    t =    29.84s         Capturing element debug description
+    t =    30.78s     Checking `Expect predicate `existsNoRetry == 1` for object "voice-library-list" Table`
+    t =    30.78s         Checking existence of `"voice-library-list" Table`
+    t =    30.84s         Capturing element debug description
+    t =    31.78s     Checking `Expect predicate `existsNoRetry == 1` for object "voice-library-list" Table`
+    t =    31.78s         Checking existence of `"voice-library-list" Table`
+    t =    31.87s         Capturing element debug description
+    t =    32.83s     Checking `Expect predicate `existsNoRetry == 1` for object "voice-library-list" Table`
+    t =    32.83s         Checking existence of `"voice-library-list" Table`
+    t =    32.90s         Capturing element debug description
+    t =    33.74s     Checking `Expect predicate `existsNoRetry == 1` for object "voice-library-list" Table`
+    t =    33.74s         Checking existence of `"voice-library-list" Table`
+    t =    33.81s         Capturing element debug description
+    t =    33.81s     Checking existence of `"voice-library-list" Table`
+    t =    33.89s Collecting debug information to assist test failure triage
+    t =    33.89s     Requesting snapshot of accessibility hierarchy for app with pid 24005
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/VoiceUITests.swift:27: error: -[VelaUITests.VoiceUITests testVoiceSettingsShowInstalledModel] : XCTAssertTrue failed - voice library sheet did not open
+    t =    34.41s Tear Down
+Test Case '-[VelaUITests.VoiceUITests testVoiceSettingsShowInstalledModel]' failed (34.642 seconds).
+Test Suite 'VoiceUITests' failed at 2026-10-26 23:48:37.440.
+	 Executed 3 tests, with 1 failure (0 unexpected) in 91.834 (91.837) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-26 23:48:37.440.
+	 Executed 3 tests, with 1 failure (0 unexpected) in 91.834 (91.837) seconds
+Test Suite 'Selected tests' failed at 2026-10-26 23:48:37.441.
+	 Executed 3 tests, with 1 failure (0 unexpected) in 91.834 (91.838) seconds
+2026-10-26 23:48:54.523 xcodebuild[20259:60704] [MT] IDETestOperationsObserverDebug: 119.946 elapsed -- Testing started completed.
+2026-10-26 23:48:54.524 xcodebuild[20259:60704] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-26 23:48:54.524 xcodebuild[20259:60704] [MT] IDETestOperationsObserverDebug: 119.946 sec, +119.946 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.GbEcxw9Q0Q/uitest.xcresult
+
+Failing tests:
+	VoiceUITests.testVoiceSettingsShowInstalledModel()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui VoiceUITests.testNeuralVoiceGuidanceAndFallbackMarker: passed (42.458 seconds)
+ui VoiceUITests.testSystemVoiceWhenNeuralIsDisabled: passed (14.734 seconds)
+ui VoiceUITests.testVoiceSettingsShowInstalledModel: failed (34.642 seconds)
+scripts/ios/ci-ipa.sh: line 257: 20257 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui voice_engine=engine=neural_voice=en_US-hfc_female-medium
+ui voice_fallback=engine=system_reason=disabled-for-test
+ui voice_guidance=spoken=1_text=Starting_navigation._Head_south_on_Market_Street_last=neural_next=engine=neural_voice=en_US-hfc_female-medium
+ui voice_installed=1
+ui screenshots: voice-fallback.png voice-guidance.png voice-settings.png 
+
+== Route replay (23:49:01)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 8CAFEAE0-0F8B-4812-8173-C7B236E2FF5E (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 8CAFEAE0-0F8B-4812-8173-C7B236E2FF5E (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (23:50:09)
+262532
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 29155 bytes
+open reply: transit-plan-sf 63673 bytes
+directions reply: directions-drive-sf 107610 bytes
+directions reply: directions-walk-sf 34614 bytes
+search reply: 262532 bytes, 31 feature ids
+failed steps: ui-scenarios
