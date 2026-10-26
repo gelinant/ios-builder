@@ -1,0 +1,56 @@
+commit: aa6aaa3 src: b82cfcf4 iOS: run the transit board and option scenarios with the Live Activity class
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610261815 (1793038550)
+java: openjdk version "17.0.20.1" 2026-08-18
+gradle: ok in 505 s
+kotlin jvmTest: 124 tests, 0 failures
+kotlin iosSimulatorArm64Test: 103 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  74M, static library 73711856 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  43M, static library 40871912 bytes, SKIE Swift module: yes
+string catalog: 1415 keys, 24 resource locales (23 with translations), 24572 localized values, 37 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: maplibre-gl-native-distribution@6.31.0
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+simulator build: ok
+tests: ok, Executed 50 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: FAILED
+ui TransitActivityTests.testFixtureStartsAdvancesAndEnds: passed (32.548 seconds)
+ui TransitActivityTests.testStopBoardShowsDeparturesAndRefreshes: passed (47.896 seconds)
+ui TransitActivityTests.testTransitOptionsChangeTheDepartureAndVehicles: failed (125.037 seconds)
+ui transit_activity_updates=1
+ui transit_activity=started_updated_ended
+ui transit_board_after_refresh=50
+ui transit_board_departures=50
+ui transit_board_error=none
+ui transit_board_lines=3
+ui transit_board_live=21
+ui transit_board_soon=4
+ui transit_end=restored
+ui transit_next_leg=1
+ui transit_options_epoch=1793041471
+ui transit_options_time_mode=1
+ui transit_options_trips_after_time=5
+ui transit_options_trips_before=5
+ui transit_start_leg=0
+ui transit_stops_remaining=4
+ui screenshots: transit-activity-next.png transit-activity-start.png transit-board-refresh.png transit-board.png 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: details: page raw=96751 parsed=true times=false
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 29155 bytes
+open reply: transit-plan-sf 88730 bytes
+directions reply: directions-drive-sf 114764 bytes
+directions reply: directions-walk-sf 34604 bytes
+search reply: 242447 bytes, 28 feature ids
+failed steps: ui-scenarios
