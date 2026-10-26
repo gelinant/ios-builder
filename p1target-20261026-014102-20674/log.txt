@@ -1,0 +1,181 @@
+tag=p1target-20261026-014102-20674 src=src/p1target 7be1945 src: dd958c94 iOS: reveal lazy place sections before tapping them
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 7be1945 src: dd958c94 iOS: reveal lazy place sections before tapping them
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610260142 (1792978930)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Kotlin: tests and the VelaCore framework (01:42:10)
+gradle: ok in 442 s
+kotlin jvmTest: 107 tests, 0 failures
+kotlin iosSimulatorArm64Test: 86 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  73M, static library 73112648 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  43M, static library 40259792 bytes, SKIE Swift module: yes
+
+== String Catalog (01:49:33)
+string catalog: 1415 keys, 24 resource locales (23 with translations), 24572 localized values, 37 Swift references, 24 picker languages
+
+== XcodeGen (01:49:35)
+xcodegen: Version: 2.46.0
+
+== Generate the project (01:49:35)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (01:49:36)
+  MapLibre Native: https://github.com/maplibre/maplibre-gl-native-distribution @ 6.31.0
+
+resolved source packages: MapLibre Native
+(resolve: 12 s)
+packages: maplibre-gl-native-distribution@6.31.0
+
+== Pick a simulator (01:49:48)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+
+== Build for the simulator (01:49:50)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 56 s)
+simulator build: ok
+
+== Boot the simulator (01:50:46)
+
+== Unit tests (01:52:36)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 66 s)
+tests: ok, Executed 37 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+
+== Launch and screenshot (01:53:42)
+app.vela.ios: 22198
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 886A68E1-0B2C-40A7-92C0-FA770C84938F (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (01:54:31)
+xcodebuild uitest failed after 304 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/PlaceUITests.swift:66: error: -[VelaUITests.PlaceUITests testCompleteFixturePlace] : XCTAssertTrue failed - viewer did not open
+Test Case '-[VelaUITests.PlaceUITests testCompleteFixturePlace]' failed (179.878 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =   166.27s Added attachment named 'place-after-photo-tap'
+    t =   166.55s Checking existence of `"place-gallery-debug" StaticText`
+    t =   166.95s Find the "place-gallery-debug" StaticText
+UITEST place_viewer_state=0
+    t =   167.73s Waiting 10.0s for "place-viewer-close" Button to exist
+    t =   168.77s     Checking `Expect predicate `existsNoRetry == 1` for object "place-viewer-close" Button`
+    t =   168.80s         Checking existence of `"place-viewer-close" Button`
+    t =   168.94s         Capturing element debug description
+    t =   169.77s     Checking `Expect predicate `existsNoRetry == 1` for object "place-viewer-close" Button`
+    t =   169.77s         Checking existence of `"place-viewer-close" Button`
+    t =   169.93s         Capturing element debug description
+    t =   170.76s     Checking `Expect predicate `existsNoRetry == 1` for object "place-viewer-close" Button`
+    t =   170.76s         Checking existence of `"place-viewer-close" Button`
+    t =   170.90s         Capturing element debug description
+    t =   171.74s     Checking `Expect predicate `existsNoRetry == 1` for object "place-viewer-close" Button`
+    t =   171.74s         Checking existence of `"place-viewer-close" Button`
+    t =   171.88s         Capturing element debug description
+    t =   172.82s     Checking `Expect predicate `existsNoRetry == 1` for object "place-viewer-close" Button`
+    t =   172.82s         Checking existence of `"place-viewer-close" Button`
+    t =   173.00s         Capturing element debug description
+    t =   173.82s     Checking `Expect predicate `existsNoRetry == 1` for object "place-viewer-close" Button`
+    t =   173.83s         Checking existence of `"place-viewer-close" Button`
+    t =   173.98s         Capturing element debug description
+    t =   174.82s     Checking `Expect predicate `existsNoRetry == 1` for object "place-viewer-close" Button`
+    t =   174.82s         Checking existence of `"place-viewer-close" Button`
+    t =   174.97s         Capturing element debug description
+    t =   175.81s     Checking `Expect predicate `existsNoRetry == 1` for object "place-viewer-close" Button`
+    t =   175.81s         Checking existence of `"place-viewer-close" Button`
+    t =   175.94s         Capturing element debug description
+    t =   176.79s     Checking `Expect predicate `existsNoRetry == 1` for object "place-viewer-close" Button`
+    t =   176.79s         Checking existence of `"place-viewer-close" Button`
+    t =   176.91s         Capturing element debug description
+    t =   177.74s     Checking `Expect predicate `existsNoRetry == 1` for object "place-viewer-close" Button`
+    t =   177.74s         Checking existence of `"place-viewer-close" Button`
+    t =   177.95s         Capturing element debug description
+    t =   177.95s     Checking existence of `"place-viewer-close" Button`
+    t =   178.11s Collecting debug information to assist test failure triage
+    t =   178.11s     Requesting snapshot of accessibility hierarchy for app with pid 26670
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/PlaceUITests.swift:66: error: -[VelaUITests.PlaceUITests testCompleteFixturePlace] : XCTAssertTrue failed - viewer did not open
+    t =   178.97s Tear Down
+Test Case '-[VelaUITests.PlaceUITests testCompleteFixturePlace]' failed (179.878 seconds).
+Test Suite 'PlaceUITests' failed at 2026-10-26 01:58:48.741.
+	 Executed 1 test, with 1 failure (0 unexpected) in 179.878 (179.881) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-26 01:58:48.748.
+	 Executed 1 test, with 1 failure (0 unexpected) in 179.878 (179.888) seconds
+Test Suite 'Selected tests' failed at 2026-10-26 01:58:48.750.
+	 Executed 1 test, with 1 failure (0 unexpected) in 179.878 (179.890) seconds
+2026-10-26 01:59:35.598 xcodebuild[24737:71375] [MT] IDETestOperationsObserverDebug: 281.014 elapsed -- Testing started completed.
+2026-10-26 01:59:35.599 xcodebuild[24737:71375] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-26 01:59:35.599 xcodebuild[24737:71375] [MT] IDETestOperationsObserverDebug: 281.014 sec, +281.014 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.KOb7QZQ6Hj/uitest.xcresult
+
+Failing tests:
+	PlaceUITests.testCompleteFixturePlace()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui PlaceUITests.testCompleteFixturePlace: failed (179.878 seconds)
+scripts/ios/ci-ipa.sh: line 244: 24734 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true; exit 0
+        ;;
+    esac;
+done )
+ui place_gallery_categories=0
+ui place_gallery_count=13
+ui place_gallery_paging=rpc
+ui place_hours=7
+ui place_open=1
+ui place_phone=1
+ui place_viewer_state=0
+ui screenshots: place-after-photo-tap.png place-gallery-grid.png place-photos.png place-top.png 
+
+== Route replay (01:59:44)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 886A68E1-0B2C-40A7-92C0-FA770C84938F (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 886A68E1-0B2C-40A7-92C0-FA770C84938F (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: details: page raw=-1 parsed=false times=false
+place load: photos: view created
+place load: photos: injecting again after the page finished
+place load: photos: gallery probe received
+place load: photos: gallery answered
+place load: photos: page 13, categories=0
+live calibration: NOT LOADED (no value)
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (02:01:00)
+266127
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 29155 bytes
+open reply: transit-plan-sf 113891 bytes
+directions reply: directions-drive-sf 75264 bytes
+directions reply: directions-walk-sf 34604 bytes
+search reply: 266127 bytes, 32 feature ids
+failed steps: ui-scenarios calibration
