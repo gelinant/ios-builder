@@ -1,0 +1,3 @@
+src=src/dl1-full
+script=scripts/ios/ci-ipa.sh
+args=
