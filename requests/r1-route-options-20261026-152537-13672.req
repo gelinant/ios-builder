@@ -1,0 +1,3 @@
+src=src/r1-route-options
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=DirectionsUITests
