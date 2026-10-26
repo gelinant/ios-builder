@@ -1,0 +1,118 @@
+tag=sv1-fix-20261026-220653-7405 src=src/sv1-fix b0fc3a6 src: d67e08ec iOS: interactive Street View viewer
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: b0fc3a6 src: d67e08ec iOS: interactive Street View viewer
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610262207 (1793052472)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Kotlin: tests and the VelaCore framework (22:07:52)
+gradle: ok in 543 s
+kotlin jvmTest: 180 tests, 0 failures
+kotlin iosSimulatorArm64Test: 159 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  75M, static library 74930480 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  44M, static library 42083400 bytes, SKIE Swift module: yes
+
+== String Catalog (22:16:55)
+string catalog: 1415 keys, 24 resource locales (23 with translations), 24572 localized values, 44 Swift references, 24 picker languages
+
+== XcodeGen (22:16:56)
+xcodegen: Version: 2.46.0
+
+== Generate the project (22:16:56)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (22:16:57)
+  MapLibre Native: https://github.com/maplibre/maplibre-gl-native-distribution @ 6.31.0
+
+resolved source packages: MapLibre Native
+(resolve: 16 s)
+packages: maplibre-gl-native-distribution@6.31.0
+
+== Pick a simulator (22:17:13)
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+
+== Build for the simulator (22:17:17)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 95 s)
+simulator build: ok
+
+== Boot the simulator (22:18:52)
+
+== Unit tests (22:22:18)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 77 s)
+tests: ok, Executed 77 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+
+== Launch and screenshot (22:23:35)
+app.vela.ios: 24094
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: F06E73E6-6392-46FE-A63F-7E8AA782C0A8 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (22:25:33)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(uitest: 263 s)
+ui scenarios: ok
+ui StreetViewUITests.testStreetViewFromPlace: passed (149.525 seconds)
+scripts/ios/ci-ipa.sh: line 244: 25566 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui street_view_base=1
+ui street_view_bearing=23
+ui street_view_closed=1
+ui street_view_fov=48
+ui street_view_mode=live
+ui street_view_neighbors=6
+ui street_view_north=0
+ui street_view_pano=Optional("X00s8RXdyljsNKaHM_1Acg")
+ui street_view_pinch_fov=30
+ui street_view_pitch=51
+ui street_view_thumbnail=1
+ui street_view_tiles=12
+ui screenshots: street-view-zoom.png street-view.png 
+
+== Route replay (22:30:03)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: F06E73E6-6392-46FE-A63F-7E8AA782C0A8 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: F06E73E6-6392-46FE-A63F-7E8AA782C0A8 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: details: page raw=48238 parsed=true times=false
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (22:31:28)
+243895
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 29155 bytes
+open reply: transit-plan-sf 63696 bytes
+directions reply: directions-drive-sf 114925 bytes
+directions reply: directions-walk-sf 35558 bytes
+search reply: 243895 bytes, 29 feature ids
