@@ -1,0 +1,100 @@
+tag=i1b-layers-test-20261026-154537-8625 src=src/i1b-layers-test 53924b6 src: a0769128 iOS: add map layer switches, overlays and PoI controls
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 53924b6 src: a0769128 iOS: add map layer switches, overlays and PoI controls
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610261619 (1793031575)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Kotlin: tests and the VelaCore framework (16:19:35)
+gradle: ok in 375 s
+kotlin jvmTest: 123 tests, 0 failures
+kotlin iosSimulatorArm64Test: 102 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  74M, static library 73804560 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  43M, static library 40964440 bytes, SKIE Swift module: yes
+
+== String Catalog (16:25:50)
+string catalog: 1415 keys, 24 resource locales (23 with translations), 24572 localized values, 37 Swift references, 24 picker languages
+
+== XcodeGen (16:25:51)
+xcodegen: Version: 2.46.0
+
+== Generate the project (16:25:51)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (16:25:51)
+  MapLibre Native: https://github.com/maplibre/maplibre-gl-native-distribution @ 6.31.0
+
+resolved source packages: MapLibre Native
+(resolve: 10 s)
+packages: maplibre-gl-native-distribution@6.31.0
+
+== Pick a simulator (16:26:01)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+
+== Build for the simulator (16:26:02)
+xcodebuild build-sim failed after 40 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/LayersModel.swift:160:21: error: argument 'coordinates' must precede argument 'width'
+** TEST BUILD FAILED **
+--- tail of build-sim log ---
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Platform/DevicePlatformLocale.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Platform/FileManagerPlatformFiles.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Platform/FoundationTextNormalizer.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Place/GalleryViews.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Web/HiddenWebView.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Intents/IntentPlanning.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Platform/JavaScriptCoreJsEngine.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/App/LaunchOptions.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/LayersModel.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/LayersModel.swift:160:21: error: argument 'coordinates' must precede argument 'width'
+                    coordinates: mark.points.map { LayerCoordinate(lat: $0.lat, lng: $0.lng) })
+~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/LayersView.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Location/LocationPermission.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapController.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD FAILED **
+
+
+The following build commands failed:
+	SwiftCompile normal arm64 Compiling\ ActivityView.swift,\ AppDelegate.swift,\ AppGraph.swift,\ AppShortcuts.swift,\ CalibrationModel.swift,\ CookieJar.swift,\ CoreLocationPipeline.swift,\ DeepLink.swift,\ DevicePlatformLocale.swift,\ FileManagerPlatformFiles.swift,\ FoundationTextNormalizer.swift,\ GalleryViews.swift,\ HiddenWebView.swift,\ IntentPlanning.swift,\ JavaScriptCoreJsEngine.swift,\ LaunchOptions.swift,\ LayersModel.swift,\ LayersView.swift,\ LocationPermission.swift,\ MapController.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Saved/ActivityView.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/App/AppDelegate.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Platform/AppGraph.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Intents/AppShortcuts.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Core/CalibrationModel.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Platform/CookieJar.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Location/CoreLocationPipeline.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Intents/DeepLink.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Platform/DevicePlatformLocale.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Platform/FileManagerPlatformFiles.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Platform/FoundationTextNormalizer.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Place/GalleryViews.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Web/HiddenWebView.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Intents/IntentPlanning.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Platform/JavaScriptCoreJsEngine.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/App/LaunchOptions.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/LayersModel.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/LayersView.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Location/LocationPermission.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapController.swift (in target 'Vela' from project 'Vela')
+	SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/LayersModel.swift (in target 'Vela' from project 'Vela')
+	Building project Vela for testing with scheme Vela
+(3 failures)
