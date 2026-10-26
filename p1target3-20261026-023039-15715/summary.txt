@@ -1,0 +1,51 @@
+commit: 3a0de4b src: 42c310a4 iOS: wait for the place sheet after closing the gallery
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610260231 (1792981898)
+java: openjdk version "17.0.20.1" 2026-08-18
+gradle: ok in 316 s
+kotlin jvmTest: 113 tests, 0 failures
+kotlin iosSimulatorArm64Test: 92 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  74M, static library 73274648 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  43M, static library 40431616 bytes, SKIE Swift module: yes
+string catalog: 1415 keys, 24 resource locales (23 with translations), 24572 localized values, 37 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: maplibre-gl-native-distribution@6.31.0
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+simulator build: ok
+tests: ok, Executed 45 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: FAILED
+ui PlaceUITests.testCompleteFixturePlace: failed (151.525 seconds)
+ui place_gallery_categories=0
+ui place_gallery_count=27
+ui place_gallery_page=2/27
+ui place_gallery_paging=rpc
+ui place_gallery_zoom=scale=3.6
+ui place_hours=7
+ui place_open=1
+ui place_phone=1
+ui place_viewer_state=1
+ui screenshots: place-after-gallery.png place-after-photo-tap.png place-gallery-grid.png place-gallery.png place-photos.png place-top.png 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: details: page raw=-1 parsed=false times=false
+place load: photos: view created
+place load: photos: gallery probe received
+place load: photos: gallery answered
+place load: photos: page 27, categories=0
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 29155 bytes
+open reply: transit-plan-sf 63561 bytes
+directions reply: directions-drive-sf 115910 bytes
+directions reply: directions-walk-sf 34612 bytes
+search reply: 263820 bytes, 30 feature ids
+failed steps: ui-scenarios
