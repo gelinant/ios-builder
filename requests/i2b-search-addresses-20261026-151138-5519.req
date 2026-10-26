@@ -1,0 +1,3 @@
+src=src/i2b-search-addresses
+script=scripts/ios/ci-ipa.sh
+args=
