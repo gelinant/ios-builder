@@ -1,0 +1,288 @@
+tag=t1-transit-20261026-184331-24518 src=src/t1-transit d0c0c49 src: c4f9ca5a iOS: use explicit transit vehicle buttons and report the rail filter
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: d0c0c49 src: c4f9ca5a iOS: use explicit transit vehicle buttons and report the rail filter
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610261845 (1793040308)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Kotlin: tests and the VelaCore framework (18:45:08)
+gradle: ok in 577 s
+kotlin jvmTest: 124 tests, 0 failures
+kotlin iosSimulatorArm64Test: 103 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  74M, static library 73711856 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  43M, static library 40871912 bytes, SKIE Swift module: yes
+
+== String Catalog (18:54:45)
+string catalog: 1415 keys, 24 resource locales (23 with translations), 24572 localized values, 37 Swift references, 24 picker languages
+
+== XcodeGen (18:54:47)
+xcodegen: Version: 2.46.0
+
+== Generate the project (18:54:48)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (18:54:48)
+  MapLibre Native: https://github.com/maplibre/maplibre-gl-native-distribution @ 6.31.0
+
+resolved source packages: MapLibre Native
+(resolve: 22 s)
+packages: maplibre-gl-native-distribution@6.31.0
+
+== Pick a simulator (18:55:10)
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+
+== Build for the simulator (18:55:11)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 91 s)
+simulator build: ok
+
+== Boot the simulator (18:56:42)
+
+== Unit tests (19:00:03)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 72 s)
+tests: ok, Executed 50 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.54 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+
+== Launch and screenshot (19:01:15)
+app.vela.ios: 25211
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 01540180-378D-4823-9A25-7DD0D11B48A4 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (19:02:33)
+xcodebuild uitest failed after 274 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TransitActivityTests.swift:141: error: -[VelaUITests.TransitActivityTests testTransitOptionsChangeTheDepartureAndVehicles] : XCTAssertGreaterThanOrEqual failed: ("0") is less than ("1") - the rail filter removed every trip
+Test Case '-[VelaUITests.TransitActivityTests testTransitOptionsChangeTheDepartureAndVehicles]' failed (87.075 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =    76.53s Checking existence of `"transit-options-debug" StaticText`
+    t =    76.80s Find the "transit-options-debug" StaticText
+    t =    77.13s Checking existence of `"transit-options-debug" StaticText`
+    t =    77.41s Find the "transit-options-debug" StaticText
+UITEST transit_options_time_mode=1
+    t =    77.75s Checking existence of `"transit-options-debug" StaticText`
+    t =    77.94s Find the "transit-options-debug" StaticText
+UITEST transit_options_epoch=1793043347
+    t =    78.17s Checking existence of `"route-debug" StaticText`
+    t =    78.46s Find the "route-debug" StaticText
+UITEST transit_options_trips_after_time=8
+    t =    78.73s Tap "transit-option-rail" Button
+    t =    78.73s     Wait for app.vela.ios to idle
+    t =    78.73s     Find the "transit-option-rail" Button
+    t =    79.03s     Check for interrupting elements affecting "transit-option-rail" Button
+    t =    79.34s     Synthesize event
+    t =    79.82s     Wait for app.vela.ios to idle
+    t =    79.95s Checking existence of `"transit-options-debug" StaticText`
+    t =    80.43s Find the "transit-options-debug" StaticText
+    t =    80.63s Checking existence of `"transit-options-debug" StaticText`
+    t =    80.81s Find the "transit-options-debug" StaticText
+    t =    80.99s Checking existence of `"transit-options-debug" StaticText`
+    t =    81.12s Find the "transit-options-debug" StaticText
+UITEST transit_options_train=1
+UITEST transit_options_vehicle_filter=applied
+    t =    81.23s Checking existence of `"transit-options-debug" StaticText`
+    t =    81.37s Find the "transit-options-debug" StaticText
+UITEST transit_options_pref=0
+    t =    81.83s Added attachment named 'transit-options'
+    t =    81.84s Tap "transit-options-close" Button
+    t =    81.84s     Wait for app.vela.ios to idle
+    t =    81.89s     Find the "transit-options-close" Button
+    t =    82.62s     Check for interrupting elements affecting "transit-options-close" Button
+    t =    82.77s     Synthesize event
+    t =    83.10s     Wait for app.vela.ios to idle
+    t =    85.16s Checking existence of `"route-debug" StaticText`
+    t =    85.32s Find the "route-debug" StaticText
+UITEST transit_options_trips_after_filters=0
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TransitActivityTests.swift:141: error: -[VelaUITests.TransitActivityTests testTransitOptionsChangeTheDepartureAndVehicles] : XCTAssertGreaterThanOrEqual failed: ("0") is less than ("1") - the rail filter removed every trip
+    t =    86.43s Tear Down
+Test Case '-[VelaUITests.TransitActivityTests testTransitOptionsChangeTheDepartureAndVehicles]' failed (87.075 seconds).
+Test Suite 'TransitActivityTests' failed at 2026-10-26 19:06:17.467.
+	 Executed 3 tests, with 1 failure (0 unexpected) in 158.640 (158.645) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-26 19:06:17.468.
+	 Executed 3 tests, with 1 failure (0 unexpected) in 158.640 (158.646) seconds
+Test Suite 'Selected tests' failed at 2026-10-26 19:06:17.468.
+	 Executed 3 tests, with 1 failure (0 unexpected) in 158.640 (158.647) seconds
+2026-10-26 19:07:00.980 xcodebuild[26967:77413] [MT] IDETestOperationsObserverDebug: 230.067 elapsed -- Testing started completed.
+2026-10-26 19:07:00.981 xcodebuild[26967:77413] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-26 19:07:00.981 xcodebuild[26967:77413] [MT] IDETestOperationsObserverDebug: 230.067 sec, +230.067 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.9giuES2N1F/uitest.xcresult
+
+Failing tests:
+	TransitActivityTests.testTransitOptionsChangeTheDepartureAndVehicles()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui TransitActivityTests.testFixtureStartsAdvancesAndEnds: passed (28.010 seconds)
+ui TransitActivityTests.testStopBoardShowsDeparturesAndRefreshes: passed (43.556 seconds)
+ui TransitActivityTests.testTransitOptionsChangeTheDepartureAndVehicles: failed (87.075 seconds)
+scripts/ios/ci-ipa.sh: line 244: 26966 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui transit_activity_updates=1
+ui transit_activity=started_updated_ended
+ui transit_board_after_refresh=50
+ui transit_board_departures=50
+ui transit_board_error=none
+ui transit_board_lines=3
+ui transit_board_live=0
+ui transit_board_soon=9
+ui transit_end=restored
+ui transit_next_leg=1
+ui transit_options_epoch=1793043347
+ui transit_options_pref=0
+ui transit_options_time_mode=1
+ui transit_options_train=1
+ui transit_options_trips_after_filters=0
+ui transit_options_trips_after_time=8
+ui transit_options_trips_before=7
+ui transit_options_vehicle_filter=applied
+ui transit_start_leg=0
+ui transit_stops_remaining=4
+ui screenshots: transit-activity-next.png transit-activity-start.png transit-board-refresh.png transit-board.png transit-options.png 
+
+== Route replay (19:07:13)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 01540180-378D-4823-9A25-7DD0D11B48A4 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 01540180-378D-4823-9A25-7DD0D11B48A4 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: details: page raw=85488 parsed=true times=false
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (19:08:37)
+253689
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 29155 bytes
+open reply: transit-plan-sf 88771 bytes
+directions reply: directions-drive-sf 119877 bytes
+directions reply: directions-walk-sf 35559 bytes
+search reply: 253689 bytes, 32 feature ids
+
+== Archive for iOS devices, unsigned (19:08:42)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** ARCHIVE SUCCEEDED **
+
+(archive: 92 s)
+
+== Package the IPA (19:10:14)
+ipa: Vela-unsigned.ipa 10057107 bytes (9.9M)
+app frameworks: MapLibre.framework 
+app binary: arm64, 16168608 bytes
+live activity extension: PlugIns/NavActivityExtension.appex present in IPA, 220888 bytes
+extension plist CFBundleIdentifier: app.vela.ios.navactivity
+extension plist NSExtensionPointIdentifier: com.apple.widgetkit-extension
+extension signing: none
+kotlin code in the device binary: yes
+plist CFBundleIdentifier: app.vela.ios
+plist CFBundleDisplayName: Vela
+plist CFBundleShortVersionString: 0.1.202610261845
+plist MinimumOSVersion: 17.0
+plist UIBackgroundModes: ["location","audio"]
+plist NSSupportsLiveActivities: true
+
+== Summary
+commit: d0c0c49 src: c4f9ca5a iOS: use explicit transit vehicle buttons and report the rail filter
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610261845 (1793040308)
+java: openjdk version "17.0.20.1" 2026-08-18
+gradle: ok in 577 s
+kotlin jvmTest: 124 tests, 0 failures
+kotlin iosSimulatorArm64Test: 103 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  74M, static library 73711856 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  43M, static library 40871912 bytes, SKIE Swift module: yes
+string catalog: 1415 keys, 24 resource locales (23 with translations), 24572 localized values, 37 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: maplibre-gl-native-distribution@6.31.0
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+simulator build: ok
+tests: ok, Executed 50 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.54 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: FAILED
+ui TransitActivityTests.testFixtureStartsAdvancesAndEnds: passed (28.010 seconds)
+ui TransitActivityTests.testStopBoardShowsDeparturesAndRefreshes: passed (43.556 seconds)
+ui TransitActivityTests.testTransitOptionsChangeTheDepartureAndVehicles: failed (87.075 seconds)
+ui transit_activity_updates=1
+ui transit_activity=started_updated_ended
+ui transit_board_after_refresh=50
+ui transit_board_departures=50
+ui transit_board_error=none
+ui transit_board_lines=3
+ui transit_board_live=0
+ui transit_board_soon=9
+ui transit_end=restored
+ui transit_next_leg=1
+ui transit_options_epoch=1793043347
+ui transit_options_pref=0
+ui transit_options_time_mode=1
+ui transit_options_train=1
+ui transit_options_trips_after_filters=0
+ui transit_options_trips_after_time=8
+ui transit_options_trips_before=7
+ui transit_options_vehicle_filter=applied
+ui transit_start_leg=0
+ui transit_stops_remaining=4
+ui screenshots: transit-activity-next.png transit-activity-start.png transit-board-refresh.png transit-board.png transit-options.png 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: details: page raw=85488 parsed=true times=false
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 29155 bytes
+open reply: transit-plan-sf 88771 bytes
+directions reply: directions-drive-sf 119877 bytes
+directions reply: directions-walk-sf 35559 bytes
+search reply: 253689 bytes, 32 feature ids
+ipa: Vela-unsigned.ipa 10057107 bytes (9.9M)
+app frameworks: MapLibre.framework 
+app binary: arm64, 16168608 bytes
+live activity extension: PlugIns/NavActivityExtension.appex present in IPA, 220888 bytes
+extension plist CFBundleIdentifier: app.vela.ios.navactivity
+extension plist NSExtensionPointIdentifier: com.apple.widgetkit-extension
+extension signing: none
+kotlin code in the device binary: yes
+plist CFBundleIdentifier: app.vela.ios
+plist CFBundleDisplayName: Vela
+plist CFBundleShortVersionString: 0.1.202610261845
+plist MinimumOSVersion: 17.0
+plist UIBackgroundModes: ["location","audio"]
+plist NSSupportsLiveActivities: true
+failed steps: ui-scenarios
