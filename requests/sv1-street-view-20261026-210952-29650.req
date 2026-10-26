@@ -1,0 +1,3 @@
+src=src/sv1-street-view
+script=scripts/ios/ci-ipa.sh
+args=
