@@ -1,0 +1,3 @@
+src=src/n3-nav-robustness
+script=scripts/ios/ci-ipa.sh
+args=
