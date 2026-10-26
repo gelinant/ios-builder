@@ -1,0 +1,156 @@
+commit: 4f4ae0c src: 03b09ecb iOS: open gallery photos through NavigationLink
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610252336 (1792971396)
+java: openjdk version "17.0.20.1" 2026-08-18
+gradle: ok in 367 s
+kotlin jvmTest: 103 tests, 0 failures
+kotlin iosSimulatorArm64Test: 82 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  73M, static library 72632344 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  42M, static library 39802184 bytes, SKIE Swift module: yes
+string catalog: 1415 keys, 24 resource locales (23 with translations), 24572 localized values, 31 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: maplibre-gl-native-distribution@6.31.0
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+simulator build: ok
+tests: ok, Executed 37 tests, with 0 failures
+js transform: ok
+js while(true) killed after 1.39 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: FAILED
+ui CalibrationUITests.testLiveCalibrationIsLoaded: passed (22.024 seconds)
+ui DirectionsUITests.testDirectionsToTheFirstCoffeeResult: failed (155.200 seconds)
+ui LaunchUITests.testLaunchShowsTheMapOverSanFrancisco: passed (24.501 seconds)
+ui LaunchUITests.testStartCameraArgumentMovesTheMapToDavis: passed (15.819 seconds)
+ui LocalizationUITests.testFrenchLabelsWithoutChangingSimulatorLanguage: passed (19.359 seconds)
+ui LocalizationUITests.testGermanSettingsLayout: passed (14.754 seconds)
+ui LocalizationUITests.testSettingsPersistAcrossRelaunch: passed (47.940 seconds)
+ui MapSearchUITests.testMapPoiTapOpensGooglePlace: failed (76.639 seconds)
+ui NavUITests.testGuidedDriveAndEnd: passed (67.318 seconds)
+ui OfflineUITests.testMonacoDownloadOfflineMapAndSearch: failed (49.642 seconds)
+ui PlaceUITests.testCompleteFixturePlace: failed (77.305 seconds)
+ui QualityPerformanceUITests.testApplicationLaunchMetric: passed (48.700 seconds)
+ui QualityPerformanceUITests.testMapMemoryMetric: passed (30.007 seconds)
+ui QualityPerformanceUITests.testNavigationMemoryMetric: failed (93.764 seconds)
+ui QualityPerformanceUITests.testOfflineMemoryMetric: passed (72.479 seconds)
+ui QualityPerformanceUITests.testPlaceMemoryMetric: passed (67.236 seconds)
+ui QualityPerformanceUITests.testSearchMemoryMetric: passed (30.750 seconds)
+ui QualityUITests.testHebrewRightToLeft: passed (20.652 seconds)
+ui QualityUITests.testPlaceLargeTextLandscape: passed (38.036 seconds)
+ui QualityUITests.testRoutePickerLargeTextLandscape: failed (36.757 seconds)
+ui QualityUITests.testSearchLargeTextLandscape: failed (14.242 seconds)
+ui QualityUITests.testSettingsLargeTextLandscape: passed (22.828 seconds)
+ui SavedUITests.testSavedPlaceListAndRecentsPersist: passed (57.546 seconds)
+ui SearchUITests.testCoffeeSearchShowsResultsAndPins: passed (36.797 seconds)
+ui SearchUITests.testQuickCategoryRunsSearch: passed (12.612 seconds)
+ui SearchUITests.testSuggestionsAppearAndFreezeAfterSelection: passed (13.733 seconds)
+ui calibration_version=27
+ui category_rows=60
+ui directions_center=0
+ui directions_drive_meters=1238
+ui directions_drive_routes=1
+ui directions_drive_seconds=335
+ui directions_drive_steps=12
+ui directions_drive_traffic_spans=0
+ui directions_walk_meters=41
+ui directions_walk_routes=2
+ui directions_walk_seconds=64
+ui directions_walk_steps=2
+ui l10n_de_language=Sprache
+ui l10n_de_no_google=Vela_ohne_Google_nutzen
+ui l10n_de_placeholder=Suchen
+ui l10n_de_title=Einstellungen
+ui l10n_fr_language=Langue
+ui l10n_fr_no_google=Utiliser_Vela_sans_Google
+ui l10n_fr_placeholder=Rechercher
+ui l10n_fr_title=Paramètres
+ui l10n_fr_units=Unités
+ui map_element=yes
+ui nav_activity_updates=5
+ui nav_activity=started_updated_ended
+ui nav_camera_updates=6
+ui nav_driving_meters=3604
+ui nav_end=restored
+ui nav_initial_meters=4551
+ui nav_replay=sf-market
+ui nav_voice_count=4
+ui nav_voice_line=spoken=4_text=In_650_feet,_Turn_right_onto_10th_Street
+ui place_gallery_categories=0
+ui place_gallery_count=27
+ui place_gallery_paging=rpc
+ui place_hours=7
+ui place_open=1
+ui place_phone=1
+ui quality_hebrew_layout=screenshots
+ui quality_hebrew_missing_targets=0
+ui quality_hebrew_small_targets=3
+ui quality_hebrew_target_settings_done=54x36
+ui quality_hebrew_target_settings_language=338x34
+ui quality_hebrew_target_settings_no_google=370x52
+ui quality_hebrew_target_settings_units=338x34
+ui quality_hebrew_unlabeled_buttons=0
+ui quality_launch_metric=five_iterations_xcodebuild_log
+ui quality_memory_map=one_iteration_xcodebuild_log
+ui quality_memory_offline=one_iteration_xcodebuild_log
+ui quality_memory_place=one_iteration_xcodebuild_log
+ui quality_memory_search=one_iteration_xcodebuild_log
+ui quality_place_missing_targets=7
+ui quality_place_small_targets=0
+ui quality_place_target_place_close=66x63
+ui quality_place_unlabeled_buttons=0
+ui quality_settings_missing_targets=2
+ui quality_settings_small_targets=1
+ui quality_settings_target_settings_clock=483x144
+ui quality_settings_target_settings_done=73x36
+ui quality_settings_target_settings_language=590x144
+ui quality_settings_target_settings_units=371x144
+ui quality_settings_unlabeled_buttons=0
+ui saved_lists_after_restart=1
+ui saved_lists=1
+ui saved_places=1
+ui saved_recents_after_restart=2
+ui search_rows=60
+ui settings_google_after=1
+ui settings_google_before=0
+ui settings_google_debug=language=system,units=imperial,clock=24,google=1
+ui settings_persistence=language=fr,units=imperial,clock=24,google=1
+ui suggestion_rows=4
+ui screenshots: calibration.png category.png directions-drive.png directions-steps.png directions-walk.png launch-davis.png launch-sf.png nav-driving.png nav-end.png nav-start.png place-gallery-grid.png place-photos.png place-save.png place-top.png search-centered.png search-list.png search-map.png settings-de.png settings-fr.png suggest.png 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 27; highest after refresh: 27
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: details: page raw=48237 parsed=true times=false
+place load: photos: view created
+place load: photos: gallery probe received
+place load: photos: gallery answered
+place load: photos: page 27, categories=0
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+live calibration: version 27
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 29155 bytes
+open reply: transit-plan-sf 63604 bytes
+directions reply: directions-drive-sf 81554 bytes
+directions reply: directions-walk-sf 34600 bytes
+search reply: 273536 bytes, 35 feature ids
+ipa: Vela-unsigned.ipa 9645038 bytes (9.4M)
+app frameworks: MapLibre.framework 
+app binary: arm64, 15272784 bytes
+live activity extension: PlugIns/NavActivityExtension.appex present in IPA, 133168 bytes
+extension plist CFBundleIdentifier: app.vela.ios.navactivity
+extension plist NSExtensionPointIdentifier: com.apple.widgetkit-extension
+extension signing: none
+kotlin code in the device binary: yes
+plist CFBundleIdentifier: app.vela.ios
+plist CFBundleDisplayName: Vela
+plist CFBundleShortVersionString: 0.1.202610252336
+plist MinimumOSVersion: 17.0
+plist UIBackgroundModes: ["location","audio"]
+plist NSSupportsLiveActivities: true
+failed steps: ui-scenarios
