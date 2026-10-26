@@ -1,0 +1,103 @@
+tag=i2b-search-addresses-20261026-142303-27954 src=src/i2b-search-addresses 3e1506f src: 9203b9c6 iOS: merge address search across online and offline sources
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 3e1506f src: 9203b9c6 iOS: merge address search across online and offline sources
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610261424 (1793024664)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Kotlin: tests and the VelaCore framework (14:24:26)
+gradle: ok in 606 s
+kotlin jvmTest: 129 tests, 0 failures
+kotlin iosSimulatorArm64Test: 108 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  74M, static library 73432728 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  43M, static library 40601160 bytes, SKIE Swift module: yes
+
+== String Catalog (14:34:33)
+string catalog: 1415 keys, 24 resource locales (23 with translations), 24572 localized values, 37 Swift references, 24 picker languages
+
+== XcodeGen (14:34:37)
+xcodegen: Version: 2.46.0
+
+== Generate the project (14:34:38)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (14:34:38)
+  MapLibre Native: https://github.com/maplibre/maplibre-gl-native-distribution @ 6.31.0
+
+resolved source packages: MapLibre Native
+(resolve: 24 s)
+packages: maplibre-gl-native-distribution@6.31.0
+
+== Pick a simulator (14:35:02)
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+
+== Build for the simulator (14:35:03)
+xcodebuild build-sim failed after 71 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SearchUITests.swift:109:26: error: anonymous closure argument not contained in a closure
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SearchUITests.swift:117:62: error: anonymous closure argument not contained in a closure
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SearchUITests.swift:109:26: error: Anonymous closure argument not contained in a closure
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SearchUITests.swift:117:62: error: Anonymous closure argument not contained in a closure
+** TEST BUILD FAILED **
+--- tail of build-sim log ---
+
+PrecompileModule /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/ExplicitPrecompiledModules/_DarwinFoundation1-2S0E4AWGZHS5TPE8S82A59BZ5.scan
+    cd /
+    builtin-precompileModule /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/ExplicitPrecompiledModules/_DarwinFoundation1-2S0E4AWGZHS5TPE8S82A59BZ5.scan
+
+PrecompileModule /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/ExplicitPrecompiledModules/_Builtin_stdarg-71A9ONC9Z5GEW4B3FVGN8LFKM.scan
+    cd /
+    builtin-precompileModule /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/ExplicitPrecompiledModules/_Builtin_stdarg-71A9ONC9Z5GEW4B3FVGN8LFKM.scan
+
+PrecompileModule /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/ExplicitPrecompiledModules/_DarwinFoundation2-DJPAJG5S35WE2VWV19RIX8DMF.scan
+    cd /
+    builtin-precompileModule /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/ExplicitPrecompiledModules/_DarwinFoundation2-DJPAJG5S35WE2VWV19RIX8DMF.scan
+
+PrecompileModule /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/ExplicitPrecompiledModules/_Builtin_stdint-D9FK01DLI66WSAQKFRT99V5HX.scan
+    cd /
+    builtin-precompileModule /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/ExplicitPrecompiledModules/_Builtin_stdint-D9FK01DLI66WSAQKFRT99V5HX.scan
+
+PrecompileModule /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/ExplicitPrecompiledModules/_DarwinFoundation3-33D7K63H7GK0IMS97THG3655K.scan
+    cd /
+    builtin-precompileModule /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/ExplicitPrecompiledModules/_DarwinFoundation3-33D7K63H7GK0IMS97THG3655K.scan
+
+PrecompileModule /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/ExplicitPrecompiledModules/zlib-DFYXBLEE7A1DVWOZ91018QMMN.scan
+    cd /
+    builtin-precompileModule /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/ExplicitPrecompiledModules/zlib-DFYXBLEE7A1DVWOZ91018QMMN.scan
+
+CompileC /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/Objects-normal/arm64/ZipInflate.o /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Offline/ZipInflate.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+    Using response file: /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp
+    
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -ivfsstatcache /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-688ef53f1462e2c8f657fdc38a81448ff45c64a1807a658693f2a61704f17a36.sdkstatcache -target arm64-apple-ios17.0-simulator -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -fmodules-prune-interval\=86400 -fmodules-prune-after\=345600 -fbuild-session-file\=/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/ModuleCache.noindex/Session.modulevalidation -fmodules-validate-once-per-build-session -Wnon-modular-include-in-framework-module -Werror\=non-modular-include-in-framework-module -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Werror\=return-type -Wdocumentation -Wunreachable-code -Wquoted-include-in-framework-header -Werror\=deprecated-objc-isa-usage -Werror\=objc-root-class -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-float-conversion -Wnon-literal-null-conversion -Wobjc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-implicit-fallthrough -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -Winfinite-recursion -Wcomma -Wblock-capture-autoreleasing -Wstrict-prototypes -Wno-semicolon-before-method-body -Wunguarded-availability -index-store-path /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Index.noindex/DataStore @/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp -MMD -MT dependencies -MF /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/Objects-normal/arm64/ZipInflate.d --serialize-diagnostics /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/Objects-normal/arm64/ZipInflate.dia -c /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Offline/ZipInflate.c -o /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/Objects-normal/arm64/ZipInflate.o -index-unit-output-path /Vela.build/Debug-iphonesimulator/Vela.build/Objects-normal/arm64/ZipInflate.o
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Offline/ZipInflate.c:17:16: warning: implicit conversion loses integer precision: 'uLong' (aka 'unsigned long') to 'uint32_t' (aka 'unsigned int') [-Wshorten-64-to-32]
+   17 |         *crc = crc32(*crc, buffer, (uInt)got);
+      |              ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Offline/ZipInflate.c:52:20: warning: implicit conversion loses integer precision: 'uLong' (aka 'unsigned long') to 'uint32_t' (aka 'unsigned int') [-Wshorten-64-to-32]
+   52 |             *crc = crc32(*crc, out, (uInt)produced);
+      |                  ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Offline/ZipInflate.c:72:20: warning: implicit conversion loses integer precision: 'uLong' (aka 'unsigned long') to 'uint32_t' (aka 'unsigned int') [-Wshorten-64-to-32]
+   72 |     uint32_t crc = crc32(0L, Z_NULL, 0);
+      |              ~~~   ^~~~~~~~~~~~~~~~~~~~
+3 warnings generated.
+
+SwiftDriver VelaUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'VelaUITests' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    builtin-SwiftDriver -- /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name VelaUITests -Onone @/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/VelaUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator -F /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j3 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-688ef53f1462e2c8f657fdc38a81448ff45c64a1807a658693f2a61704f17a36.sdkstatcache -output-file-map /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/VelaUITests-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/ModuleCache.noindex -sdk-module-cache-path /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/VelaUITests.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/VelaUITests_const_extract_protocols.json -Xcc -iquote -Xcc /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/VelaUITests-generated-files.hmap -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/VelaUITests-own-target-headers.hmap -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/VelaUITests-all-target-headers.hmap -Xcc -iquote -Xcc /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/VelaUITests-project-headers.hmap -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/DerivedSources-normal/arm64 -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/DerivedSources/arm64 -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/VelaUITests-Swift.h -working-directory /Users/runner/work/ios-builder/ios-builder/src/iosApp -experimental-emit-module-separately -disable-cmo
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SearchUITests.swift:109:26: error: Anonymous closure argument not contained in a closure
+            let parts = ($0.value as? String ?? "").components(separatedBy: "|")
+                         ^ (in target 'VelaUITests' from project 'Vela')
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SearchUITests.swift:117:62: error: Anonymous closure argument not contained in a closure
+                    locatedNames.append((Self.normalizedName($0.label), CLLocation(latitude: latitude, longitude: longitude)))
+                                                             ^ (in target 'VelaUITests' from project 'Vela')
+
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD FAILED **
+
+
+The following build commands failed:
+	SwiftDriver VelaUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'VelaUITests' from project 'Vela')
+	Building project Vela for testing with scheme Vela
+(2 failures)
