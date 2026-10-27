@@ -1,0 +1,3 @@
+src=src/o3-offline-advanced
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=OfflineUITests/testMonacoDeltaUpdateStorageAndWorldFallback
