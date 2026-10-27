@@ -1,0 +1,206 @@
+tag=t1b-transit-walk-20261027-011637-21589 src=src/t1b-transit-walk 3a858ad src: c8b97643 iOS transit: walking turn-by-turn and offline stop boards
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 3a858ad src: c8b97643 iOS transit: walking turn-by-turn and offline stop boards
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610270138 (1793065116)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Kotlin: tests and the VelaCore framework (01:38:36)
+gradle: ok in 429 s
+kotlin jvmTest: 205 tests, 0 failures
+kotlin iosSimulatorArm64Test: 184 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  76M, static library 75677368 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  45M, static library 42835248 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (01:45:45)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 82 30.3M   82 25.1M    0     0  48.5M      0 --:--:-- --:--:-- --:--:-- 48.5M100 30.3M  100 30.3M    0     0  54.8M      0 --:--:-- --:--:-- --:--:--  146M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (01:45:47)
+string catalog: 1415 keys, 24 resource locales (23 with translations), 24572 localized values, 55 Swift references, 24 picker languages
+
+== XcodeGen (01:45:47)
+xcodegen: Version: 2.46.0
+
+== Generate the project (01:45:48)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (01:45:48)
+  BitByteData: https://github.com/tsolomko/BitByteData @ 2.1.0
+
+resolved source packages: MapLibre Native, SWCompression, BitByteData
+(resolve: 16 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (01:46:05)
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+
+== Build for the simulator (01:46:07)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 66 s)
+simulator build: ok
+
+== Boot the simulator (01:47:13)
+voice fixture:  78M in the Debug app
+
+== Unit tests (01:49:51)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 68 s)
+tests: ok, Executed 86 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_SYNTH samples=55664 rate=22050 wav_frames=55664
+
+== Launch and screenshot (01:50:59)
+app.vela.ios: 21773
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: B619150A-F2E4-480F-8D12-4024C216339F (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (01:51:35)
+xcodebuild uitest failed after 324 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/VelaUITestCase.swift:24: error: -[VelaUITests.TransitActivityTests testWalkingLegShowsTurnByTurn] : XCTAssertTrue failed - no map screen
+Test Case '-[VelaUITests.TransitActivityTests testWalkingLegShowsTurnByTurn]' failed (72.970 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =    60.31s         Checking existence of `"search-field" TextField`
+    t =    60.38s         Capturing element debug description
+    t =    61.22s     Checking `Expect predicate `existsNoRetry == 1` for object "search-field" TextField`
+    t =    61.22s         Checking existence of `"search-field" TextField`
+    t =    61.28s         Capturing element debug description
+    t =    62.21s     Checking `Expect predicate `existsNoRetry == 1` for object "search-field" TextField`
+    t =    62.22s         Checking existence of `"search-field" TextField`
+    t =    62.29s         Capturing element debug description
+    t =    63.22s     Checking `Expect predicate `existsNoRetry == 1` for object "search-field" TextField`
+    t =    63.22s         Checking existence of `"search-field" TextField`
+    t =    63.35s         Capturing element debug description
+    t =    64.22s     Checking `Expect predicate `existsNoRetry == 1` for object "search-field" TextField`
+    t =    64.22s         Checking existence of `"search-field" TextField`
+    t =    64.61s         Capturing element debug description
+    t =    65.24s     Checking `Expect predicate `existsNoRetry == 1` for object "search-field" TextField`
+    t =    65.24s         Checking existence of `"search-field" TextField`
+    t =    65.37s         Capturing element debug description
+    t =    66.22s     Checking `Expect predicate `existsNoRetry == 1` for object "search-field" TextField`
+    t =    66.22s         Checking existence of `"search-field" TextField`
+    t =    66.42s         Capturing element debug description
+    t =    67.27s     Checking `Expect predicate `existsNoRetry == 1` for object "search-field" TextField`
+    t =    67.27s         Checking existence of `"search-field" TextField`
+    t =    67.33s         Capturing element debug description
+    t =    68.27s     Checking `Expect predicate `existsNoRetry == 1` for object "search-field" TextField`
+    t =    68.27s         Checking existence of `"search-field" TextField`
+    t =    68.31s         Capturing element debug description
+    t =    69.26s     Checking `Expect predicate `existsNoRetry == 1` for object "search-field" TextField`
+    t =    69.26s         Checking existence of `"search-field" TextField`
+    t =    69.32s         Capturing element debug description
+    t =    70.27s     Checking `Expect predicate `existsNoRetry == 1` for object "search-field" TextField`
+    t =    70.27s         Checking existence of `"search-field" TextField`
+    t =    70.31s         Capturing element debug description
+    t =    71.22s     Checking `Expect predicate `existsNoRetry == 1` for object "search-field" TextField`
+    t =    71.22s         Checking existence of `"search-field" TextField`
+    t =    71.25s         Capturing element debug description
+    t =    71.26s     Checking existence of `"search-field" TextField`
+    t =    71.29s Collecting debug information to assist test failure triage
+    t =    71.29s     Requesting snapshot of accessibility hierarchy for app with pid 33077
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/VelaUITestCase.swift:24: error: -[VelaUITests.TransitActivityTests testWalkingLegShowsTurnByTurn] : XCTAssertTrue failed - no map screen
+    t =    72.37s Tear Down
+Test Case '-[VelaUITests.TransitActivityTests testWalkingLegShowsTurnByTurn]' failed (72.970 seconds).
+Test Suite 'TransitActivityTests' failed at 2026-10-27 01:56:07.673.
+	 Executed 5 tests, with 1 failure (0 unexpected) in 236.330 (236.334) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-27 01:56:07.674.
+	 Executed 5 tests, with 1 failure (0 unexpected) in 236.330 (236.335) seconds
+Test Suite 'Selected tests' failed at 2026-10-27 01:56:07.674.
+	 Executed 5 tests, with 1 failure (0 unexpected) in 236.330 (236.337) seconds
+2026-10-27 01:56:53.403 xcodebuild[23518:69004] [MT] IDETestOperationsObserverDebug: 304.615 elapsed -- Testing started completed.
+2026-10-27 01:56:53.404 xcodebuild[23518:69004] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-27 01:56:53.404 xcodebuild[23518:69004] [MT] IDETestOperationsObserverDebug: 304.615 sec, +304.615 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.TRIUzDs0f5/uitest.xcresult
+
+Failing tests:
+	TransitActivityTests.testWalkingLegShowsTurnByTurn()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui TransitActivityTests.testFixtureStartsAdvancesAndEnds: passed (23.455 seconds)
+ui TransitActivityTests.testOfflineBoardShowsCachedDepartures: passed (37.309 seconds)
+ui TransitActivityTests.testStopBoardShowsDeparturesAndRefreshes: passed (37.052 seconds)
+ui TransitActivityTests.testTransitOptionsChangeTheDepartureAndVehicles: passed (65.543 seconds)
+ui TransitActivityTests.testWalkingLegShowsTurnByTurn: failed (72.970 seconds)
+scripts/ios/ci-ipa.sh: line 257: 23517 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui transit_activity_updates=1
+ui transit_activity=started_updated_ended
+ui transit_board_after_refresh=50
+ui transit_board_departures=50
+ui transit_board_error=none
+ui transit_board_lines=7
+ui transit_board_live=19
+ui transit_board_offline_departures=4
+ui transit_board_offline=1
+ui transit_board_soon=10
+ui transit_end=restored
+ui transit_next_leg=1
+ui transit_options_epoch=1793067862
+ui transit_options_pref=0
+ui transit_options_rail_result=empty
+ui transit_options_time_mode=1
+ui transit_options_train=1
+ui transit_options_trips_after_filters=0
+ui transit_options_trips_after_time=5
+ui transit_options_trips_before=8
+ui transit_options_vehicle_filter=applied
+ui transit_start_leg=0
+ui transit_stops_remaining=4
+ui screenshots: transit-board.png transit-options.png 
+
+== Route replay (01:57:01)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: B619150A-F2E4-480F-8D12-4024C216339F (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: B619150A-F2E4-480F-8D12-4024C216339F (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: details: page raw=85413 parsed=true times=false
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (01:58:34)
+245965
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 29155 bytes
+open reply: transit-plan-sf 101427 bytes
+directions reply: directions-drive-sf 120635 bytes
+directions reply: directions-walk-sf 34612 bytes
+search reply: 245965 bytes, 30 feature ids
+failed steps: ui-scenarios
