@@ -1,5 +1,5 @@
 Locales:
-  en      strings=1401 plurals=22 array_items=0
+  en      strings=1412 plurals=22 array_items=0
   ar      strings=0 plurals=0 array_items=0
   de      strings=1346 plurals=22 array_items=0
   en-GB   strings=1 plurals=0 array_items=0
@@ -31,4 +31,4 @@ Skipped: 3
 Warnings: 1
   plural count is argument 2 (substitution): 1
     - area_pick_cells
-Keys: 1423
+Keys: 1434
