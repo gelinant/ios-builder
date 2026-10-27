@@ -1,0 +1,321 @@
+tag=plc-review-20261027-191132-23403 src=src/plc-review 321a213 src: fdf823e9 iOS place reviews, gallery and popular times details
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 321a213 src: fdf823e9 iOS place reviews, gallery and popular times details
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610271912 (1793128353)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Kotlin: tests and the VelaCore framework (19:12:33)
+gradle: FAILED after 519 s
+> Task :ios-shared:compileTestKotlinIosSimulatorArm64 FAILED
+e: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/streetview/StreetViewHistoryTest.kt:22:9 Name contains illegal characters: ",".
+
+> Task :ios-shared:syncPersistedPackageResolvedToSynthetic SKIPPED
+> Task :ios-shared:fetchSyntheticImportProjectPackages SKIPPED
+--
+* What went wrong:
+Execution failed for task ':ios-shared:compileTestKotlinIosSimulatorArm64' (registered in build file 'ios-shared/build.gradle.kts').
+> Compilation finished with errors
+
+--
+BUILD FAILED in 8m 36s
+38 actionable tasks: 38 executed
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonMain/kotlin/app/vela/ios/replay/TripDiagnostics.kt:54:29 Return in function with expression body and without explicit return type. Use block body '{...}' or add an explicit return type. This will become an error in language version 2.5. See https://youtrack.jetbrains.com/issue/KTLC-288.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonMain/kotlin/app/vela/ios/replay/TripsStore.kt:136:31 Return in function with expression body and without explicit return type. Use block body '{...}' or add an explicit return type. This will become an error in language version 2.5. See https://youtrack.jetbrains.com/issue/KTLC-288.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonMain/kotlin/app/vela/ios/replay/TripsStore.kt:148:58 Return in function with expression body and without explicit return type. Use block body '{...}' or add an explicit return type. This will become an error in language version 2.5. See https://youtrack.jetbrains.com/issue/KTLC-288.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonMain/kotlin/app/vela/ios/replay/TripsStore.kt:156:31 Return in function with expression body and without explicit return type. Use block body '{...}' or add an explicit return type. This will become an error in language version 2.5. See https://youtrack.jetbrains.com/issue/KTLC-288.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonMain/kotlin/app/vela/ios/replay/TripsStore.kt:190:34 Return in function with expression body and without explicit return type. Use block body '{...}' or add an explicit return type. This will become an error in language version 2.5. See https://youtrack.jetbrains.com/issue/KTLC-288.
+
+> Task :ios-shared:compileJvmMainJava NO-SOURCE
+> Task :ios-shared:jvmMainClasses
+> Task :ios-shared:jvmJar
+
+> Task :ios-shared:compileTestKotlinJvm
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/replay/TripsStoreTest.kt:326:110 Unnecessary non-null assertion (!!) on a non-null receiver of type 'Any'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/search/SearchStoreTest.kt:93:40 Unnecessary non-null assertion (!!) on a non-null receiver of type 'LatLng'.
+
+> Task :ios-shared:compileJvmTestJava NO-SOURCE
+> Task :ios-shared:jvmTestClasses
+> Task :ios-shared:jvmTest
+
+[Incubating] Problems report is available at: file:///Users/runner/work/ios-builder/ios-builder/src/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':ios-shared:compileTestKotlinIosSimulatorArm64' (registered in build file 'ios-shared/build.gradle.kts').
+> Compilation finished with errors
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.8.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 8m 36s
+38 actionable tasks: 38 executed
+kotlin jvmTest: 285 tests, 0 failures
+kotlin iosSimulatorArm64Test: no results
+VelaCore.framework iosSimulatorArm64/debugFramework:  78M, static library 77579704 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  47M, static library 44769400 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (19:21:13)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 58 30.3M   58 17.6M    0     0  26.4M      0  0:00:01 --:--:--  0:00:01 26.4M100 30.3M  100 30.3M    0     0  35.5M      0 --:--:-- --:--:-- --:--:-- 68.1M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (19:21:14)
+string catalog: 1423 keys, 24 resource locales (23 with translations), 24580 localized values, 100 Swift references, 24 picker languages
+
+== XcodeGen (19:21:15)
+xcodegen: Version: 2.46.0
+
+== Generate the project (19:21:16)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (19:21:16)
+  MapLibre Native: https://github.com/maplibre/maplibre-gl-native-distribution @ 6.31.0
+
+resolved source packages: SWCompression, BitByteData, MapLibre Native
+(resolve: 24 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (19:21:40)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (600A45A3-B3A0-4A39-8A9C-5D051F9FDA9C) (Shutdown) 
+
+== Build for the simulator (19:21:43)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 87 s)
+simulator build: ok
+
+== Boot the simulator (19:23:10)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (19:27:25)
+xcodebuild test failed after 140 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaTests/IncomingLinksTests.swift:110: error: -[VelaTests.IncomingLinksTests testMoreStopsThanTheCapKeepTheFirstOnes] : XCTAssertEqual failed: ("1") is not equal to ("10")
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaTests/IncomingLinksTests.swift:111: error: -[VelaTests.IncomingLinksTests testMoreStopsThanTheCapKeepTheFirstOnes] : XCTAssertEqual failed: ("0") is not equal to ("2")
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaTests/IncomingLinksTests.swift:112: error: -[VelaTests.IncomingLinksTests testMoreStopsThanTheCapKeepTheFirstOnes] : XCTAssertEqual failed: ("1") is not equal to ("12")
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaTests/IncomingLinksTests.swift:113: error: -[VelaTests.IncomingLinksTests testMoreStopsThanTheCapKeepTheFirstOnes] : XCTAssertEqual failed: ("Optional("Stop 1%7CStop 2%7CStop 3%7CStop 4%7CStop 5%7CStop 6%7CStop 7%7CStop 8%7CStop 9%7CStop 10%7CStop 11%7CStop 12")") is not equal to ("Optional("Stop 1")")
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaTests/IncomingLinksTests.swift:114: error: -[VelaTests.IncomingLinksTests testMoreStopsThanTheCapKeepTheFirstOnes] : XCTAssertEqual failed: ("Optional("Stop 1%7CStop 2%7CStop 3%7CStop 4%7CStop 5%7CStop 6%7CStop 7%7CStop 8%7CStop 9%7CStop 10%7CStop 11%7CStop 12")") is not equal to ("Optional("Stop 10")")
+Test Case '-[VelaTests.IncomingLinksTests testMoreStopsThanTheCapKeepTheFirstOnes]' failed (0.653 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of test log ---
+Test Case '-[VelaTests.VoiceSearchTests testInstalledEnginesComeFromTheFilesystem]' passed (0.016 seconds).
+Test Case '-[VelaTests.VoiceSearchTests testRecognizedPhrasesBecomeTheSameActionsAsAndroid]' started.
+Test Case '-[VelaTests.VoiceSearchTests testRecognizedPhrasesBecomeTheSameActionsAsAndroid]' passed (0.015 seconds).
+Test Case '-[VelaTests.VoiceSearchTests testWhisperTinyTranscribesSynthesizedSpeech]' started.
+2026-10-27 19:28:53.336252+0000 Vela[23437:70445] [NeuralVoice] loaded en_US-hfc_female-medium: 22050 Hz, 1 speakers
+2026-10-27 19:28:54.196312+0000 Vela[23437:70445] [VoiceSearch] loaded whisper-tiny for en
+SEAM_TEST VOICE_ASR text=navigate_to_coffee samples=18019
+SEAM_TEST VOICE_ASR_PLAN action=navigate query=coffee
+Test Case '-[VelaTests.VoiceSearchTests testWhisperTinyTranscribesSynthesizedSpeech]' passed (2.140 seconds).
+Test Suite 'VoiceSearchTests' passed at 2026-10-27 19:28:54.758.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 2.173 (2.240) seconds
+Test Suite 'VoiceSelectionTests' started at 2026-10-27 19:28:54.758.
+Test Case '-[VelaTests.VoiceSelectionTests testAnotherLanguageFallsBackToSystem]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testAnotherLanguageFallsBackToSystem]' passed (0.024 seconds).
+Test Case '-[VelaTests.VoiceSelectionTests testCatalogMatchesAndroidIds]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testCatalogMatchesAndroidIds]' passed (0.007 seconds).
+Test Case '-[VelaTests.VoiceSelectionTests testCorruptModelFallsBackToSystem]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testCorruptModelFallsBackToSystem]' passed (0.010 seconds).
+Test Case '-[VelaTests.VoiceSelectionTests testExtractionStripsTopFolderAndValidatesModel]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testExtractionStripsTopFolderAndValidatesModel]' passed (0.758 seconds).
+Test Case '-[VelaTests.VoiceSelectionTests testInstalledSetComesFromCompleteDirectories]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testInstalledSetComesFromCompleteDirectories]' passed (0.021 seconds).
+Test Case '-[VelaTests.VoiceSelectionTests testMissingModelKeepsSystemVoice]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testMissingModelKeepsSystemVoice]' passed (0.008 seconds).
+Test Case '-[VelaTests.VoiceSelectionTests testSelectedVoiceWinsAndMissingSelectionFallsBack]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testSelectedVoiceWinsAndMissingSelectionFallsBack]' passed (0.017 seconds).
+Test Case '-[VelaTests.VoiceSelectionTests testUnsafeArchiveEntryIsRejected]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testUnsafeArchiveEntryIsRejected]' passed (0.011 seconds).
+Test Suite 'VoiceSelectionTests' passed at 2026-10-27 19:28:58.601.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.856 (3.843) seconds
+Test Suite 'WebTests' started at 2026-10-27 19:28:58.601.
+Test Case '-[VelaTests.WebTests testBlockedHostsCompileAsAContentRuleList]' started.
+Test Case '-[VelaTests.WebTests testBlockedHostsCompileAsAContentRuleList]' passed (0.189 seconds).
+Test Case '-[VelaTests.WebTests testBridgeNamesAreSwappedForRandomOnes]' started.
+Test Case '-[VelaTests.WebTests testBridgeNamesAreSwappedForRandomOnes]' passed (0.004 seconds).
+Test Case '-[VelaTests.WebTests testTheSheetShowsTheSiteHost]' started.
+Test Case '-[VelaTests.WebTests testTheSheetShowsTheSiteHost]' passed (0.004 seconds).
+Test Suite 'WebTests' passed at 2026-10-27 19:28:58.802.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.197 (0.200) seconds
+Test Suite 'VelaTests.xctest' failed at 2026-10-27 19:28:58.802.
+	 Executed 108 tests, with 5 failures (0 unexpected) in 10.065 (14.143) seconds
+Test Suite 'All tests' failed at 2026-10-27 19:28:58.803.
+	 Executed 108 tests, with 5 failures (0 unexpected) in 10.065 (14.149) seconds
+2026-10-27 19:29:42.292 xcodebuild[21551:65679] [MT] IDETestOperationsObserverDebug: 98.101 elapsed -- Testing started completed.
+2026-10-27 19:29:42.293 xcodebuild[21551:65679] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-27 19:29:42.293 xcodebuild[21551:65679] [MT] IDETestOperationsObserverDebug: 98.101 sec, +98.101 sec -- end
+
+Test session results, code coverage, and logs:
+	/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Logs/Test/Test-Vela-2026.10.27_19-27-53-+0000.xcresult
+
+Failing tests:
+	IncomingLinksTests.testMoreStopsThanTheCapKeepTheFirstOnes()
+	IncomingLinksTests.testMoreStopsThanTheCapKeepTheFirstOnes()
+	IncomingLinksTests.testMoreStopsThanTheCapKeepTheFirstOnes()
+	IncomingLinksTests.testMoreStopsThanTheCapKeepTheFirstOnes()
+	IncomingLinksTests.testMoreStopsThanTheCapKeepTheFirstOnes()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+tests: FAILED
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=navigate_to_coffee samples=18019
+VOICE_ASR_PLAN action=navigate query=coffee
+VOICE_SYNTH samples=56736 rate=22050 wav_frames=56736
+
+== Launch and screenshot (19:29:45)
+app.vela.ios: 26570
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 7B7D62DC-AB95-45AA-968B-F53DD98DFC14 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (19:30:16)
+xcodebuild uitest failed after 376 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/PlaceReviewsUITests.swift:65: error: -[VelaUITests.PlaceReviewsUITests testMoreReviewsAppendsAPage] : XCTAssertTrue failed - More reviews did not finish
+Test Case '-[VelaUITests.PlaceReviewsUITests testMoreReviewsAppendsAPage]' failed (178.298 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =    46.29s Checking existence of `"place-histogram-row-5" Any`
+    t =    47.04s Checking existence of `"place-histogram-row-5" Any`
+    t =    47.89s Checking existence of `"place-histogram-row-5" Any`
+    t =    48.76s Checking existence of `"place-histogram-row-5" Any`
+    t =    49.47s Checking existence of `"place-histogram-row-5" Any`
+    t =    50.15s Checking existence of `"place-histogram-row-5" Any`
+    t =    50.80s Checking existence of `"place-histogram-row-5" Any`
+    t =    51.46s Checking existence of `"place-histogram-row-5" Any`
+    t =    52.15s Checking existence of `"place-histogram-row-5" Any`
+    t =    52.79s Checking existence of `"place-histogram-row-5" Any`
+    t =    53.46s Checking existence of `"place-histogram-row-5" Any`
+    t =    54.11s Checking existence of `"place-histogram-row-5" Any`
+    t =    54.52s Added attachment named 'reviews-histogram'
+UITEST reviews_histogram=google-omitted
+    t =    54.53s Checking existence of `"place-reviews-debug" StaticText`
+    t =    54.67s Find the "place-reviews-debug" StaticText
+    t =    54.84s Checking existence of `"place-review-sort-0" Button`
+    t =    55.00s Checking existence of `"place-review-sort-1" Button`
+    t =    55.16s Checking existence of `"place-review-sort-2" Button`
+    t =    55.32s Checking existence of `"place-review-search-toggle" Button`
+    t =    55.48s Tap "place-review-sort-1" Button
+    t =    55.48s     Wait for app.vela.ios to idle
+    t =    55.49s     Find the "place-review-sort-1" Button
+    t =    55.66s     Check for interrupting elements affecting "place-review-sort-1" Button
+    t =    55.82s     Synthesize event
+    t =    56.15s     Wait for app.vela.ios to idle
+    t =    56.19s Checking existence of `"place-reviews-debug" StaticText`
+    t =    56.38s Find the "place-reviews-debug" StaticText
+UITEST reviews_sort=1
+    t =    56.75s Added attachment named 'reviews-sorted'
+    t =    56.76s Checking existence of `"place-reviews-debug" StaticText`
+    t =    56.97s Find the "place-reviews-debug" StaticText
+UITEST reviews_translated=0
+    t =    57.13s Tap "place-reviews-close" Button
+    t =    57.13s     Wait for app.vela.ios to idle
+    t =    57.13s     Find the "place-reviews-close" Button
+    t =    57.32s     Check for interrupting elements affecting "place-reviews-close" Button
+    t =    57.48s     Synthesize event
+    t =    57.79s     Wait for app.vela.ios to idle
+    t =    57.79s Tear Down
+Test Case '-[VelaUITests.PlaceReviewsUITests testReviewsHistogramAndControls]' passed (58.352 seconds).
+Test Suite 'PlaceReviewsUITests' failed at 2026-10-27 19:35:59.362.
+	 Executed 3 tests, with 1 failure (0 unexpected) in 301.325 (301.331) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-27 19:35:59.364.
+	 Executed 3 tests, with 1 failure (0 unexpected) in 301.325 (301.333) seconds
+Test Suite 'Selected tests' failed at 2026-10-27 19:35:59.364.
+	 Executed 3 tests, with 1 failure (0 unexpected) in 301.325 (301.335) seconds
+2026-10-27 19:36:26.670 xcodebuild[28031:83633] [MT] IDETestOperationsObserverDebug: 355.761 elapsed -- Testing started completed.
+2026-10-27 19:36:26.671 xcodebuild[28031:83633] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-27 19:36:26.671 xcodebuild[28031:83633] [MT] IDETestOperationsObserverDebug: 355.761 sec, +355.761 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.HYXvQfbGdB/uitest.xcresult
+
+Failing tests:
+	PlaceReviewsUITests.testMoreReviewsAppendsAPage()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui PlaceReviewsUITests.testGalleryViewerSwipesWithCaptionAndSource: passed (64.676 seconds)
+ui PlaceReviewsUITests.testMoreReviewsAppendsAPage: failed (178.298 seconds)
+ui PlaceReviewsUITests.testReviewsHistogramAndControls: passed (58.352 seconds)
+scripts/ios/ci-ipa.sh: line 275: 28029 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui gallery_categories=0
+ui gallery_menu_fallback=0
+ui gallery_photos=10
+ui gallery_viewer_page=2/10
+ui reviews_histogram=google-omitted
+ui reviews_sort=1
+ui reviews_translated=0
+ui screenshots: 
+
+== Route replay (19:36:34)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 7B7D62DC-AB95-45AA-968B-F53DD98DFC14 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 7B7D62DC-AB95-45AA-968B-F53DD98DFC14 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=48226 parsed=true times=false
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: details: page raw=48238 parsed=true times=false
+place load: reviews: page asked for 0x8085299fd6f41a23:0x10d37b4cae550f0
+place load: reviews: view created
+place load: reviews: answered
+place load: reviews: more from page 5
+place load: photos: rpc 10
+web: reviews: page asked for 0x8085299fd6f41a23:0x10d37b4cae550f0
+web: reviews: answered
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (19:37:53)
+292589
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 88770 bytes
+directions reply: directions-drive-sf 75534 bytes
+directions reply: directions-walk-sf 34608 bytes
+search reply: 292589 bytes, 37 feature ids
+failed steps: gradle tests ui-scenarios

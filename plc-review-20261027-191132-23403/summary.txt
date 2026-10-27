@@ -1,0 +1,65 @@
+commit: 321a213 src: fdf823e9 iOS place reviews, gallery and popular times details
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610271912 (1793128353)
+java: openjdk version "17.0.20.1" 2026-08-18
+gradle: FAILED after 519 s
+kotlin jvmTest: 285 tests, 0 failures
+kotlin iosSimulatorArm64Test: no results
+VelaCore.framework iosSimulatorArm64/debugFramework:  78M, static library 77579704 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  47M, static library 44769400 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 1423 keys, 24 resource locales (23 with translations), 24580 localized values, 100 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (600A45A3-B3A0-4A39-8A9C-5D051F9FDA9C) (Shutdown) 
+simulator build: ok
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+tests: FAILED
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=navigate_to_coffee samples=18019
+VOICE_ASR_PLAN action=navigate query=coffee
+VOICE_SYNTH samples=56736 rate=22050 wav_frames=56736
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: FAILED
+ui PlaceReviewsUITests.testGalleryViewerSwipesWithCaptionAndSource: passed (64.676 seconds)
+ui PlaceReviewsUITests.testMoreReviewsAppendsAPage: failed (178.298 seconds)
+ui PlaceReviewsUITests.testReviewsHistogramAndControls: passed (58.352 seconds)
+ui gallery_categories=0
+ui gallery_menu_fallback=0
+ui gallery_photos=10
+ui gallery_viewer_page=2/10
+ui reviews_histogram=google-omitted
+ui reviews_sort=1
+ui reviews_translated=0
+ui screenshots: 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=48226 parsed=true times=false
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: details: page raw=48238 parsed=true times=false
+place load: reviews: page asked for 0x8085299fd6f41a23:0x10d37b4cae550f0
+place load: reviews: view created
+place load: reviews: answered
+place load: reviews: more from page 5
+place load: photos: rpc 10
+web: reviews: page asked for 0x8085299fd6f41a23:0x10d37b4cae550f0
+web: reviews: answered
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 88770 bytes
+directions reply: directions-drive-sf 75534 bytes
+directions reply: directions-walk-sf 34608 bytes
+search reply: 292589 bytes, 37 feature ids
+failed steps: gradle tests ui-scenarios
