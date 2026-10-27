@@ -1,0 +1,3 @@
+src=src/srch-cards
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=SearchUITests VELA_SKIP_ARCHIVE=1
