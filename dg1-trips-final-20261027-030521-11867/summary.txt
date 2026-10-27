@@ -1,0 +1,290 @@
+commit: 0638d8c src: cfa04f79 iOS trips UI test: toggle through the switch and read the recording state
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610270332 (1793071949)
+java: openjdk version "17.0.20.1" 2026-08-18
+gradle: ok in 289 s
+kotlin jvmTest: 195 tests, 0 failures
+kotlin iosSimulatorArm64Test: 174 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  76M, static library 75541048 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  45M, static library 42732112 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 1415 keys, 24 resource locales (23 with translations), 24572 localized values, 55 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+simulator build: ok
+voice fixture:  78M in the Debug app
+tests: ok, Executed 86 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_SYNTH samples=56637 rate=22050 wav_frames=56637
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: FAILED
+ui CalibrationUITests.testLiveCalibrationIsLoaded: passed (25.072 seconds)
+ui DirectionsUITests.testDirectionsToTheFirstCoffeeResult: failed (102.085 seconds)
+ui DirectionsUITests.testWaypointAndDepartureTime: passed (76.088 seconds)
+ui IncomingLinksUITests.testBareCidLinkShowsTheVelaError: passed (14.562 seconds)
+ui IncomingLinksUITests.testIncomingDirectionsLinkOpensTheChooser: passed (11.901 seconds)
+ui IncomingLinksUITests.testIncomingPlaceLinkOpensThePlaceSheet: passed (10.984 seconds)
+ui IntentsUITests.testDeepLinkOpensSavedPlace: passed (33.762 seconds)
+ui IntentsUITests.testDeepLinkOpensSearch: passed (12.705 seconds)
+ui IntentsUITests.testHomeUnsetErrorOpensSavedSetup: passed (12.545 seconds)
+ui IntentsUITests.testParkingDeepLinkOpensPlaceAndCleansUp: passed (18.217 seconds)
+ui IntentsUITests.testSpotlightFixtureAddsAndDeletesThroughRealIndex: passed (8.228 seconds)
+ui LaunchUITests.testLaunchShowsTheMapOverSanFrancisco: passed (16.867 seconds)
+ui LaunchUITests.testStartCameraArgumentMovesTheMapToDavis: passed (18.636 seconds)
+ui LocalizationUITests.testFrenchLabelsWithoutChangingSimulatorLanguage: failed (28.947 seconds)
+ui LocalizationUITests.testGermanSettingsLayout: failed (26.075 seconds)
+ui LocalizationUITests.testSettingsPersistAcrossRelaunch: failed (21.587 seconds)
+ui MapLayersUITests.testLayerSheetLoadsOverlaysAtCloseZoom: passed (24.082 seconds)
+ui MapSearchUITests.testMapPoiTapOpensGooglePlace: failed (79.022 seconds)
+ui NavAlertsUITests.testRouteAlertsFromFixtureProvider: passed (85.844 seconds)
+ui NavRobustnessUITests.testPauseGpsLossResumeAndEnd: passed (100.056 seconds)
+ui NavUITests.testGuidedDriveAndEnd: passed (56.146 seconds)
+ui OfflineUITests.testMonacoDownloadOfflineMapAndSearch: passed (43.742 seconds)
+ui PlaceUITests.testCompleteFixturePlace: passed (62.702 seconds)
+ui QualityPerformanceUITests.testApplicationLaunchMetric: passed (44.347 seconds)
+ui QualityPerformanceUITests.testMapMemoryMetric: passed (29.983 seconds)
+ui QualityPerformanceUITests.testNavigationMemoryMetric: passed (83.680 seconds)
+ui QualityPerformanceUITests.testOfflineMemoryMetric: passed (76.688 seconds)
+ui QualityPerformanceUITests.testPlaceMemoryMetric: passed (67.859 seconds)
+ui QualityPerformanceUITests.testSearchMemoryMetric: passed (30.832 seconds)
+ui QualityUITests.testCompactHeightSettingsLandscape: passed (31.682 seconds)
+ui QualityUITests.testHebrewRightToLeft: passed (41.247 seconds)
+ui QualityUITests.testPlaceLargeTextLandscape: failed (262.376 seconds)
+ui QualityUITests.testRoutePickerLargeTextLandscape: failed (55.272 seconds)
+ui QualityUITests.testSearchLargeTextLandscape: failed (24.536 seconds)
+ui QualityUITests.testSettingsLargeTextLandscape: passed (45.321 seconds)
+ui SavedFinishingUITests.testHomeAndWorkOpenFromSavedAndMap: failed (39.923 seconds)
+ui SavedFinishingUITests.testSavedLineReopensBesideComputedRoutes: failed (36.351 seconds)
+ui SavedFinishingUITests.testTakeoutFixtureImportsIntoNamedList: passed (18.080 seconds)
+ui SavedUITests.testSavedPlaceListAndRecentsPersist: failed (28.365 seconds)
+ui SearchUITests.testAddressSearchMergesWithoutDuplicateRows: passed (39.293 seconds)
+ui SearchUITests.testCoffeeSearchShowsResultsAndPins: passed (34.640 seconds)
+ui SearchUITests.testQuickCategoryRunsSearch: passed (12.635 seconds)
+ui SearchUITests.testSuggestionsAppearAndFreezeAfterSelection: passed (13.723 seconds)
+ui StreetViewUITests.testStreetViewFromPlace: passed (88.983 seconds)
+ui TransitActivityTests.testFixtureStartsAdvancesAndEnds: passed (12.864 seconds)
+ui TransitActivityTests.testStopBoardShowsDeparturesAndRefreshes: passed (37.401 seconds)
+ui TransitActivityTests.testTransitOptionsChangeTheDepartureAndVehicles: passed (50.998 seconds)
+ui TripsUITests.testRecordDriveAndOpenTrip: passed (72.917 seconds)
+ui VoiceUITests.testNeuralVoiceGuidanceAndFallbackMarker: passed (44.498 seconds)
+ui VoiceUITests.testSystemVoiceWhenNeuralIsDisabled: passed (15.990 seconds)
+ui VoiceUITests.testVoiceSettingsShowInstalledModel: passed (19.544 seconds)
+ui address_hits=14
+ui address_rows=30
+ui calibration_version=27
+ui category_rows=60
+ui dedup_duplicate_rows=0
+ui dedup_rows=30
+ui diagnostics_lines=16
+ui directions_center=0
+ui directions_drive_meters=1337
+ui directions_drive_routes=2
+ui directions_drive_seconds=294
+ui directions_drive_steps=13
+ui directions_drive_traffic_spans=0
+ui directions_walk_meters=41
+ui directions_walk_routes=2
+ui directions_walk_seconds=64
+ui directions_walk_steps=2
+ui incoming_cid_error=shown
+ui incoming_directions=Dropped_pin
+ui incoming_place=Davis_Food_Co-op
+ui intents_home_unset=saved_setup
+ui intents_parking=opened
+ui intents_saved_place=opened
+ui intents_search_rows=60
+ui intents_spotlight_add=1
+ui intents_spotlight_delete=1
+ui l10n_de_language=Sprache
+ui l10n_de_placeholder=Suchen
+ui l10n_de_title=Einstellungen
+ui l10n_fr_language=Langue
+ui l10n_fr_placeholder=Rechercher
+ui l10n_fr_title=Paramètres
+ui l10n_fr_units=Unités
+ui layers_alpr=2
+ui layers_controls=2
+ui layers_painted=5
+ui layers_speed=3
+ui map_element=yes
+ui nav_activity_updates=5
+ui nav_activity=started_updated_ended
+ui nav_alerts_end=restored
+ui nav_camera_groups=1
+ui nav_camera_updates=6
+ui nav_driving_meters=2767
+ui nav_end=restored
+ui nav_gps_back=1
+ui nav_initial_meters=4554
+ui nav_lifecycle=background_foreground_kept_session
+ui nav_pause=frozen
+ui nav_reckoning=1
+ui nav_replay=sf-market
+ui nav_resume=continued
+ui nav_robustness_end=restored
+ui nav_robustness_replay=sf-market
+ui nav_speed_limit=80
+ui nav_starved=1
+ui nav_voice_count=4
+ui nav_voice_line=spoken=3_text=Rerouting_last=system_next=engine=system_reason=no-voice
+ui offline_basemap_bytes=419425
+ui offline_glyphs_bytes=104667742
+ui offline_installed=1
+ui offline_pack_bytes=364544
+ui offline_places_bytes=571133
+ui offline_remote_urls=0
+ui offline_search_results=29
+ui offline_total_bytes=106023014
+ui place_avatars_loaded=5
+ui place_avatars_nonblack=5
+ui place_gallery_categories=0
+ui place_gallery_count=20
+ui place_gallery_page=2/20
+ui place_gallery_paging=rpc
+ui place_gallery_walk=not-run-on-ci
+ui place_hours=7
+ui place_open=1
+ui place_phone=1
+ui place_popular_fallback=details
+ui place_popular_hours=0
+ui place_reviews_from=feed
+ui place_reviews_initial=5
+ui place_reviews_paging=no-cursor
+ui place_reviews=5
+ui place_viewer_state=1
+ui quality_compact_device=iphone-17-landscape-compact-height-only
+ui quality_hebrew_layout=done-left-toggle-screenshot
+ui quality_hebrew_missing_targets=0
+ui quality_hebrew_small_targets=0
+ui quality_hebrew_target_settings_done=44x44
+ui quality_hebrew_target_settings_language=370x74
+ui quality_hebrew_target_settings_no_google=370x74
+ui quality_hebrew_target_settings_units=370x74
+ui quality_hebrew_unlabeled_buttons=0
+ui quality_launch_metric=five_iterations_xcodebuild_log
+ui quality_memory_map=one_iteration_xcodebuild_log
+ui quality_memory_navigation=one_iteration_xcodebuild_log
+ui quality_memory_offline=one_iteration_xcodebuild_log
+ui quality_memory_place=one_iteration_xcodebuild_log
+ui quality_memory_search=one_iteration_xcodebuild_log
+ui quality_required_target_category_coffee=114x44
+ui quality_required_target_category_coffee=253x58
+ui quality_required_target_category_gas=180x62
+ui quality_required_target_category_gas=80x44
+ui quality_required_target_category_groceries=308x59
+ui quality_required_target_category_groceries=95x44
+ui quality_required_target_category_parking=253x58
+ui quality_required_target_category_parking=86x44
+ui quality_required_target_category_restaurants=102x44
+ui quality_required_target_category_restaurants=338x65
+ui quality_required_target_category_transit=199x44
+ui quality_required_target_category_transit=361x70
+ui quality_required_target_route_swap=44x43
+ui quality_required_target_settings_done=120x63
+ui quality_required_target_settings_done=44x44
+ui quality_required_target_settings_language=370x74
+ui quality_required_target_settings_language=718x155
+ui quality_required_target_settings_language=718x74
+ui quality_required_target_settings_no_google=370x74
+ui quality_required_target_settings_no_google=718x74
+ui quality_required_target_settings_no_google=718x93
+ui quality_required_target_settings_privacy_link=718x103
+ui quality_required_target_settings_privacy_link=718x74
+ui quality_required_target_settings_units=370x74
+ui quality_required_target_settings_units=718x74
+ui quality_required_target_settings_units=718x93
+ui quality_settings_missing_targets=4
+ui quality_settings_small_targets=0
+ui quality_settings_target_settings_done=120x63
+ui quality_settings_target_settings_privacy_link=718x103
+ui quality_settings_unlabeled_buttons=0
+ui route_time_epoch=1793073900
+ui route_time_mode=1
+ui route_time_note=Typical_traffic_range,_not_a_live_departure_forecast
+ui route_waypoint_routes=1
+ui route_waypoints=1
+ui saved_takeout_places=2
+ui search_rows=60
+ui street_view_base=1
+ui street_view_bearing=23
+ui street_view_closed=1
+ui street_view_fov=48
+ui street_view_mode=live
+ui street_view_neighbors=6
+ui street_view_north=0
+ui street_view_pano=Optional("X00s8RXdyljsNKaHM_1Acg")
+ui street_view_pinch_fov=30
+ui street_view_pitch=51
+ui street_view_thumbnail=1
+ui street_view_tiles=12
+ui suggestion_rows=4
+ui transit_activity_updates=1
+ui transit_activity=started_updated_ended
+ui transit_board_after_refresh=50
+ui transit_board_departures=50
+ui transit_board_error=none
+ui transit_board_lines=7
+ui transit_board_live=0
+ui transit_board_soon=6
+ui transit_end=restored
+ui transit_next_leg=1
+ui transit_options_epoch=1793076636
+ui transit_options_pref=0
+ui transit_options_rail_result=empty
+ui transit_options_time_mode=1
+ui transit_options_train=1
+ui transit_options_trips_after_filters=0
+ui transit_options_trips_after_time=5
+ui transit_options_trips_before=6
+ui transit_options_vehicle_filter=applied
+ui transit_start_leg=0
+ui transit_stops_remaining=4
+ui trip_fixes=Fixes,
+ui trips_flow=recorded_opened_exportable
+ui voice_engine=engine=neural_voice=en_US-hfc_female-medium
+ui voice_fallback=engine=system_reason=disabled-for-test
+ui voice_guidance=spoken=1_text=Starting_navigation._Head_east_on_Market_Street_last=neural_next=engine=neural_voice=en_US-hfc_female-medium
+ui voice_installed=1
+ui screenshots: calibration.png category.png directions-drive.png directions-steps.png directions-walk.png incoming-directions.png incoming-place.png launch-davis.png launch-sf.png nav-camera.png nav-driving.png nav-end.png nav-paused.png nav-speed.png nav-start.png nav-starved.png place-after-gallery.png place-after-photo-tap.png place-avatars.png place-gallery-grid.png place-gallery.png place-photos.png place-reviews-full.png place-reviews.png place-save.png place-top.png search-centered.png search-list.png search-map.png street-view-zoom.png street-view.png suggest.png transit-board.png transit-options.png voice-fallback.png voice-guidance.png voice-library.png voice-settings.png 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 27; highest after refresh: 27
+place load: details: page raw=48265 parsed=true times=false
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=27497 parsed=true times=false
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: details: page raw=27497 parsed=true times=false
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: details: page raw=31509 parsed=true times=false
+live calibration: version 27
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 29155 bytes
+open reply: transit-plan-sf 88926 bytes
+directions reply: directions-drive-sf 119513 bytes
+directions reply: directions-walk-sf 34613 bytes
+search reply: 267866 bytes, 32 feature ids
+ipa: Vela-unsigned.ipa 20657812 bytes ( 20M)
+app frameworks: MapLibre.framework SherpaOnnxC.framework 
+app binary: arm64, 18079792 bytes
+live activity extension: PlugIns/NavActivityExtension.appex present in IPA, 220888 bytes
+extension plist CFBundleIdentifier: app.vela.ios.navactivity
+extension plist NSExtensionPointIdentifier: com.apple.widgetkit-extension
+extension signing: none
+kotlin code in the device binary: yes
+plist CFBundleIdentifier: app.vela.ios
+plist CFBundleDisplayName: Vela
+plist CFBundleShortVersionString: 0.1.202610270332
+plist MinimumOSVersion: 17.0
+plist UIBackgroundModes: ["location","audio"]
+plist NSSupportsLiveActivities: true
+failed steps: ui-scenarios
