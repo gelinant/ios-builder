@@ -1,0 +1,3 @@
+src=src/t1b-transit-walk
+script=scripts/ios/ci-ipa.sh
+args=
