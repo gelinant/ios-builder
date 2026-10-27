@@ -1,0 +1,109 @@
+tag=nav-life-20261027-231805-14217 src=src/nav-life 8d74bd9 src: d9c4c8fb NAV-LIFE: resume a drive, alerts only and background notification
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 8d74bd9 src: d9c4c8fb NAV-LIFE: resume a drive, alerts only and background notification
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610272326 (1793143561)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Kotlin: tests and the VelaCore framework (23:26:01)
+gradle: ok in 218 s
+kotlin jvmTest: 342 tests, 0 failures
+kotlin iosSimulatorArm64Test: 284 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  80M, static library 78963736 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  49M, static library 46184776 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (23:29:40)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 30.3M  100 30.3M    0     0  53.5M      0 --:--:-- --:--:-- --:--:-- 53.5M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (23:29:41)
+string catalog: 1434 keys, 24 resource locales (23 with translations), 24591 localized values, 161 Swift references, 24 picker languages
+
+== XcodeGen (23:29:41)
+xcodegen: Version: 2.46.0
+
+== Generate the project (23:29:42)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (23:29:42)
+  MapLibre Native: https://github.com/maplibre/maplibre-gl-native-distribution @ 6.31.0
+
+resolved source packages: BitByteData, SWCompression, MapLibre Native
+(resolve: 8 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (23:29:50)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (600A45A3-B3A0-4A39-8A9C-5D051F9FDA9C) (Shutdown) 
+
+== Build for the simulator (23:29:51)
+xcodebuild build-sim failed after 30 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/NavLifecycleUITests.swift:83:14: error: cannot assign to property: 'app' setter is inaccessible
+** TEST BUILD FAILED **
+--- tail of build-sim log ---
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/IntentsUITests.swift (in target 'VelaUITests' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/LaunchUITests.swift (in target 'VelaUITests' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/LocalizationUITests.swift (in target 'VelaUITests' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/MapLayersUITests.swift (in target 'VelaUITests' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 Compiling\ MapSearchUITests.swift,\ NavAlertsUITests.swift,\ NavArrivalUITests.swift,\ NavBannerUITests.swift,\ NavLifecycleUITests.swift,\ NavRobustnessUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/MapSearchUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/NavAlertsUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/NavArrivalUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/NavBannerUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/NavLifecycleUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/NavRobustnessUITests.swift (in target 'VelaUITests' from project 'Vela')
+Failed frontend command:
+/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-frontend -frontend -c /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/CalibrationUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/DirectionsUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/IncomingLinksUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/IntentsUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/LaunchUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/LocalizationUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/MapLayersUITests.swift -primary-file /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/MapSearchUITests.swift -primary-file /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/NavAlertsUITests.swift -primary-file /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/NavArrivalUITests.swift -primary-file /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/NavBannerUITests.swift -primary-file /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/NavLifecycleUITests.swift -primary-file /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/NavRobustnessUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/NavUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/OfflineUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/PlaceReviewsUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/PlaceUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/PrivacyUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/QualityUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SavedExportUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SavedFinishingUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SavedUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SearchFiltersUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SearchUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SettingsUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/StreetViewUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TransitActivityTests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TransitCitymapperUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TripsUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/VelaUITestCase.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/VoiceUITests.swift -supplementary-output-file-map /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/supplementaryOutputs-15 -target arm64-apple-ios17.0-simulator -load-resolved-plugin /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libFoundationMacros.dylib\#/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#FoundationMacros -load-resolved-plugin /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libObservationMacros.dylib\#/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#ObservationMacros -load-resolved-plugin /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libPreviewsMacros.dylib\#/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#PreviewsMacros -load-resolved-plugin /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libSwiftMacros.dylib\#/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#SwiftMacros -load-resolved-plugin /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libSwiftUIMacros.dylib\#/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#SwiftUIMacros -disable-implicit-swift-modules -Xcc -fno-implicit-modules -Xcc -fno-implicit-module-maps -explicit-swift-module-map-file /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/VelaUITests-dependencies-1.json -debug-module-path /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/VelaUITests.swiftmodule -Xllvm -aarch64-use-tbi -enable-objc-interop -sdk /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -I /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator -F /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -no-color-diagnostics -Xcc -fno-color-diagnostics -enable-testing -g -debug-info-format\=dwarf -dwarf-version\=4 -module-cache-path /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -swift-version 5 -Onone -D DEBUG -serialize-debugging-options -const-gather-protocols-file /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/VelaUITests_const_extract_protocols.json -enable-experimental-feature DebugDescriptionMacro -module-alias Testing\=_Testing_Unavailable -enable-bare-slash-regex -empty-abi-descriptor -validate-clang-modules-once -clang-build-session-file /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/ModuleCache.noindex/Session.modulevalidation -Xcc -working-directory -Xcc /Users/runner/work/ios-builder/ios-builder/src/iosApp -enable-anonymous-context-mangled-names -file-compilation-dir /Users/runner/work/ios-builder/ios-builder/src/iosApp -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -Xcc -ivfsstatcache -Xcc /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-688ef53f1462e2c8f657fdc38a81448ff45c64a1807a658693f2a61704f17a36.sdkstatcache -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/swift-overrides.hmap -Xcc -iquote -Xcc /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/VelaUITests-generated-files.hmap -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/VelaUITests-own-target-headers.hmap -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/VelaUITests-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela-438f92ddfb70ad582e8f4ae190871170-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/VelaUITests-project-headers.hmap -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/DerivedSources-normal/arm64 -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/DerivedSources/arm64 -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/DerivedSources -Xcc -DDEBUG\=1 -no-auto-bridging-header-chaining -module-name VelaUITests -frontend-parseable-output -disable-clang-spi -clang-target arm64-apple-ios26.5-simulator -target-sdk-version 26.5 -target-sdk-name iphonesimulator26.5 -in-process-plugin-server-path /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/libSwiftInProcPluginServer.dylib -o /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/MapSearchUITests.o -o /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/NavAlertsUITests.o -o /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/NavArrivalUITests.o -o /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/NavBannerUITests.o -o /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/NavLifecycleUITests.o -o /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/NavRobustnessUITests.o -index-unit-output-path /Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/MapSearchUITests.o -index-unit-output-path /Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/NavAlertsUITests.o -index-unit-output-path /Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/NavArrivalUITests.o -index-unit-output-path /Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/NavBannerUITests.o -index-unit-output-path /Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/NavLifecycleUITests.o -index-unit-output-path /Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/NavRobustnessUITests.o -index-store-path /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Index.noindex/DataStore -index-system-modules
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/MapSearchUITests.swift (in target 'VelaUITests' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/NavAlertsUITests.swift (in target 'VelaUITests' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/NavArrivalUITests.swift (in target 'VelaUITests' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/NavBannerUITests.swift (in target 'VelaUITests' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/NavLifecycleUITests.swift (in target 'VelaUITests' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/NavLifecycleUITests.swift:83:14: error: cannot assign to property: 'app' setter is inaccessible
+        self.app = relaunched
+        ~~~~~^~~
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/NavRobustnessUITests.swift (in target 'VelaUITests' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftDriverJobDiscovery normal arm64 Compiling SavedExportUITests.swift, SavedFinishingUITests.swift, SavedUITests.swift, SearchFiltersUITests.swift, SearchUITests.swift, SettingsUITests.swift (in target 'VelaUITests' from project 'Vela')
+
+SwiftCompile normal arm64 Compiling\ OfflineTests.swift,\ PlaceImageTests.swift,\ PlatformTests.swift,\ PrivacyTests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaTests/OfflineTests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaTests/PlaceImageTests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaTests/PlatformTests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaTests/PrivacyTests.swift (in target 'VelaTests' from project 'Vela')
+
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD FAILED **
+
+
+The following build commands failed:
+	SwiftCompile normal arm64 Compiling\ MapSearchUITests.swift,\ NavAlertsUITests.swift,\ NavArrivalUITests.swift,\ NavBannerUITests.swift,\ NavLifecycleUITests.swift,\ NavRobustnessUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/MapSearchUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/NavAlertsUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/NavArrivalUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/NavBannerUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/NavLifecycleUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/NavRobustnessUITests.swift (in target 'VelaUITests' from project 'Vela')
+	SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/NavLifecycleUITests.swift (in target 'VelaUITests' from project 'Vela')
+	Building project Vela for testing with scheme Vela
+(3 failures)
