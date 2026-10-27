@@ -1,0 +1,244 @@
+tag=set-about-20261027-231040-17502 src=src/set-about 82b10f7 src: ba20f31a iOS: scroll the settings form in the About scenario
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 82b10f7 src: ba20f31a iOS: scroll the settings form in the About scenario
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610272311 (1793142706)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (23:11:46)
+notices: ok, 26 entries (7 libraries, 18 data sources)
+
+== Kotlin: tests and the VelaCore framework (23:11:47)
+gradle: FAILED after 645 s
+NavStoreTest[jvm] > trafficOfferIsMirroredAndAcceptanceAdoptsTheCandidate[jvm] FAILED
+    java.lang.AssertionError at NavStoreTest.kt:126
+
+NoGooglePhotonSourceTest[jvm] > noGoogleSearchAsksPhotonOnlyAndMergesInstalledRows[jvm] FAILED
+    java.lang.AssertionError at NoGooglePhotonSourceTest.kt:37
+
+323 tests completed, 2 failed
+--
+> Task :ios-shared:jvmTest FAILED
+
+[Incubating] Problems report is available at: file:///Users/runner/work/ios-builder/ios-builder/src/build/reports/problems/problems-report.html
+
+--
+* What went wrong:
+Execution failed for task ':ios-shared:jvmTest'.
+> There were failing tests. See the report at: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/build/reports/tests/jvmTest/index.html
+
+--
+BUILD FAILED in 10m 43s
+40 actionable tasks: 40 executed
+
+> Task :ios-shared:compileTestKotlinJvm
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/nav/NavStoreTest.kt:234:35 Unnecessary safe call on a non-null receiver of type 'NavManeuver'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/replay/TripsStoreTest.kt:326:110 Unnecessary non-null assertion (!!) on a non-null receiver of type 'Any'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/search/SearchStoreTest.kt:93:40 Unnecessary non-null assertion (!!) on a non-null receiver of type 'LatLng'.
+
+> Task :ios-shared:compileJvmTestJava NO-SOURCE
+> Task :ios-shared:jvmTestClasses
+
+> Task :ios-shared:jvmTest
+
+NavStoreTest[jvm] > trafficOfferIsMirroredAndAcceptanceAdoptsTheCandidate[jvm] FAILED
+    java.lang.AssertionError at NavStoreTest.kt:126
+
+NoGooglePhotonSourceTest[jvm] > noGoogleSearchAsksPhotonOnlyAndMergesInstalledRows[jvm] FAILED
+    java.lang.AssertionError at NoGooglePhotonSourceTest.kt:37
+
+323 tests completed, 2 failed
+
+> Task :ios-shared:jvmTest FAILED
+
+[Incubating] Problems report is available at: file:///Users/runner/work/ios-builder/ios-builder/src/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':ios-shared:jvmTest'.
+> There were failing tests. See the report at: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/build/reports/tests/jvmTest/index.html
+
+* Try:
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.8.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 10m 43s
+40 actionable tasks: 40 executed
+kotlin jvmTest: 323 tests, 2 failures
+kotlin iosSimulatorArm64Test: 265 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  79M, static library 78334488 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  48M, static library 45573720 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (23:22:32)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 73 30.3M   73 22.3M    0     0  33.1M      0 --:--:-- --:--:-- --:--:-- 33.1M100 30.3M  100 30.3M    0     0  40.3M      0 --:--:-- --:--:-- --:--:--  104M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (23:22:34)
+string catalog: 1434 keys, 24 resource locales (23 with translations), 24591 localized values, 159 Swift references, 24 picker languages
+
+== XcodeGen (23:22:35)
+xcodegen: Version: 2.46.0
+
+== Generate the project (23:22:36)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (23:22:36)
+  MapLibre Native: https://github.com/maplibre/maplibre-gl-native-distribution @ 6.31.0
+
+resolved source packages: BitByteData, SWCompression, MapLibre Native
+(resolve: 21 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (23:22:57)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (600A45A3-B3A0-4A39-8A9C-5D051F9FDA9C) (Shutdown) 
+
+== Build for the simulator (23:22:58)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 109 s)
+simulator build: ok
+
+== Boot the simulator (23:24:47)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (23:28:21)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 165 s)
+tests: ok, Executed 131 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.55 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=19319
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=56016 rate=22050 wav_frames=56016
+
+== Launch and screenshot (23:31:07)
+app.vela.ios: 28039
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 47E7321B-4AC8-480A-B455-E75596EA416A (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (23:31:47)
+xcodebuild uitest failed after 248 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SettingsAboutUITests.swift:124: error: -[VelaUITests.SettingsAboutUITests testHubSearchAboutNoticesSupport] : XCTAssertTrue failed - the About search field is missing
+Test Case '-[VelaUITests.SettingsAboutUITests testHubSearchAboutNoticesSupport]' failed (152.080 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =   138.49s     Find the "about-result-support-diagnostics" Button
+    t =   138.73s     Check for interrupting elements affecting "about-result-support-diagnostics" Button
+    t =   138.87s     Synthesize event
+    t =   139.27s     Wait for app.vela.ios to idle
+    t =   139.39s Waiting 5.0s for "about-version-line" StaticText to exist
+    t =   140.43s     Checking `Expect predicate `existsNoRetry == 1` for object "about-version-line" StaticText`
+    t =   140.43s         Checking existence of `"about-version-line" StaticText`
+    t =   140.67s Find the "about-version-line" StaticText
+    t =   140.90s Find the "about-version-line" StaticText
+UITEST about_version=Vela,0.1.202610272311,(build,1793142706)
+    t =   141.12s Waiting 5.0s for "about-installer-name" StaticText to exist
+    t =   142.16s     Checking `Expect predicate `existsNoRetry == 1` for object "about-installer-name" StaticText`
+    t =   142.16s         Checking existence of `"about-installer-name" StaticText`
+    t =   142.51s Find the "about-installer-name" StaticText
+UITEST about_installer=Not,available,on,iOS
+    t =   142.82s Find the "about-installer-name" StaticText
+    t =   143.09s Find the "about-installer" StaticText
+    t =   143.29s Checking existence of `"about-export-diagnostics" Button`
+    t =   143.77s Added attachment named 'settings-about-support'
+    t =   143.77s Waiting 5.0s for "about-search" TextField to exist
+    t =   144.86s     Checking `Expect predicate `existsNoRetry == 1` for object "about-search" TextField`
+    t =   144.86s         Checking existence of `"about-search" TextField`
+    t =   145.18s         Capturing element debug description
+    t =   145.79s     Checking `Expect predicate `existsNoRetry == 1` for object "about-search" TextField`
+    t =   145.79s         Checking existence of `"about-search" TextField`
+    t =   146.00s         Capturing element debug description
+    t =   146.82s     Checking `Expect predicate `existsNoRetry == 1` for object "about-search" TextField`
+    t =   146.82s         Checking existence of `"about-search" TextField`
+    t =   147.06s         Capturing element debug description
+    t =   147.79s     Checking `Expect predicate `existsNoRetry == 1` for object "about-search" TextField`
+    t =   147.79s         Checking existence of `"about-search" TextField`
+    t =   148.06s         Capturing element debug description
+    t =   148.77s     Checking `Expect predicate `existsNoRetry == 1` for object "about-search" TextField`
+    t =   148.77s         Checking existence of `"about-search" TextField`
+    t =   149.03s         Capturing element debug description
+    t =   149.03s     Checking existence of `"about-search" TextField`
+    t =   149.22s Collecting debug information to assist test failure triage
+    t =   149.22s     Requesting snapshot of accessibility hierarchy for app with pid 30796
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SettingsAboutUITests.swift:124: error: -[VelaUITests.SettingsAboutUITests testHubSearchAboutNoticesSupport] : XCTAssertTrue failed - the About search field is missing
+    t =   151.48s Tear Down
+Test Case '-[VelaUITests.SettingsAboutUITests testHubSearchAboutNoticesSupport]' failed (152.080 seconds).
+Test Suite 'SettingsAboutUITests' failed at 2026-10-27 23:35:13.063.
+	 Executed 1 test, with 1 failure (0 unexpected) in 152.080 (152.084) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-27 23:35:13.065.
+	 Executed 1 test, with 1 failure (0 unexpected) in 152.080 (152.085) seconds
+Test Suite 'Selected tests' failed at 2026-10-27 23:35:13.065.
+	 Executed 1 test, with 1 failure (0 unexpected) in 152.080 (152.086) seconds
+2026-10-27 23:35:50.825 xcodebuild[29032:84537] [MT] IDETestOperationsObserverDebug: 214.009 elapsed -- Testing started completed.
+2026-10-27 23:35:50.826 xcodebuild[29032:84537] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-27 23:35:50.826 xcodebuild[29032:84537] [MT] IDETestOperationsObserverDebug: 214.009 sec, +214.009 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.DQmXHriHZD/uitest.xcresult
+
+Failing tests:
+	SettingsAboutUITests.testHubSearchAboutNoticesSupport()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+scripts/ios/ci-ipa.sh: line 277: 29031 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui SettingsAboutUITests.testHubSearchAboutNoticesSupport: failed (152.080 seconds)
+ui about_installer=Not,available,on,iOS
+ui about_version=Vela,0.1.202610272311,(build,1793142706)
+ui screenshots: settings-about-search.png settings-about-support.png 
+
+== Route replay (23:35:59)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 47E7321B-4AC8-480A-B455-E75596EA416A (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 47E7321B-4AC8-480A-B455-E75596EA416A (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (23:37:20)
+273314
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 76194 bytes
+directions reply: directions-drive-sf 108061 bytes
+directions reply: directions-walk-sf 34606 bytes
+search reply: 273314 bytes, 34 feature ids
+failed steps: gradle ui-scenarios
