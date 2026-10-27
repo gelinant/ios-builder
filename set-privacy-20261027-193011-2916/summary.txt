@@ -1,0 +1,16 @@
+commit: c7693d2 src: 9ff174ad SET-PRIVACY: consent flow, full privacy page, persisted per-host Google counter
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610271931 (1793129476)
+java: openjdk version "17.0.20.1" 2026-08-18
+gradle: FAILED after 529 s
+kotlin jvmTest: 282 tests, 1 failures
+kotlin iosSimulatorArm64Test: no results
+VelaCore.framework iosSimulatorArm64/debugFramework:  78M, static library 77779160 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  47M, static library 44998560 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 1434 keys, 24 resource locales (23 with translations), 24591 localized values, 137 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (582B068E-2ACA-440E-8D01-417AEDF26981) (Shutdown) 
