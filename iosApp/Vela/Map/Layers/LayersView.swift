@@ -1,0 +1,202 @@
+import SwiftUI
+
+/// The map's layers sheet: the overlays this build can draw from common data, the PoI categories
+/// and icon size, the two Google rasters, and the local style choices.
+struct LayersView: View {
+    @ObservedObject var model: LayersModel
+    @Environment(\.dismiss) private var dismiss
+
+    var body: some View {
+        NavigationStack {
+            Form {
+                Section {
+                    layerToggle("Painted road markings", key: "painted",
+                                detail: "Lane, center, bike and crossing markings at close zoom.")
+                    layerToggle("Speed cameras", key: "speed",
+                                detail: "Fixed OSM speed cameras from Overpass.")
+                    layerToggle("ALPR cameras", key: "alpr",
+                                detail: "Plate readers mapped by DeFlock in OpenStreetMap.")
+                    layerToggle("Traffic lights and crossings", key: "controls",
+                                detail: "Signals, stop signs, level crossings and speed humps at close zoom.")
+                    layerToggle("UK fuel prices", key: "fuel",
+                                detail: "Fuel Finder forecourts, only where the UK data covers the view.")
+                    layerToggle("Bridge openings", key: "bridges",
+                                detail: "Planned and current openings from the Dutch NDW feed.")
+                } header: {
+                    Text("Layers")
+                } footer: {
+                    Text("Each layer loads only while it is on and the map is close enough to read it.")
+                }
+
+                Section {
+                    layerToggle("Live traffic", key: "traffic",
+                                detail: "Google's congestion colours and incidents, up to zoom 16.")
+                    layerToggle("Satellite", key: "satellite",
+                                detail: "Esri World Imagery, with Google's imagery past zoom 19.")
+                } header: {
+                    Text("Google layers")
+                } footer: {
+                    Text("Both rasters need a network connection. They are never enabled over a downloaded region, where the vector map is the offline map.")
+                }
+
+                Section {
+                    buttonRow("Show places", isOn: model.showPlaces, id: "poi-places") {
+                        model.setShowPlaces(!model.showPlaces)
+                    }
+                    categoryToggle("Food and drink", key: "food", id: "poi-food")
+                    categoryToggle("Fuel and charging", key: "fuel", id: "poi-fuel")
+                    categoryToggle("Transit stops", key: "transit", id: "poi-transit")
+                    categoryToggle("Parking", key: "parking", id: "poi-parking")
+                    categoryToggle("Parks, shops and civic places", key: "other", id: "poi-other")
+                    Picker("Density", selection: Binding(
+                        get: { model.poiDensity },
+                        set: { model.setDensity($0) })) {
+                        Text("Normal").tag("normal")
+                        Text("Compact").tag("compact")
+                    }
+                    .pickerStyle(.segmented)
+                    .accessibilityIdentifier("poi-density")
+                    Picker("Icon size", selection: Binding(
+                        get: { model.poiIconScale },
+                        set: { model.setIconScale($0) })) {
+                        Text("Small").tag(0.7)
+                        Text("Default").tag(1.0)
+                        Text("Large").tag(1.25)
+                    }
+                    .pickerStyle(.segmented)
+                    .accessibilityIdentifier("poi-icon-size")
+                } header: {
+                    Text("Places on the map")
+                } footer: {
+                    Text("Compact raises the zoom at which lower-priority place groups appear. Icon size scales the four Liberty place layers and their labels, as the Android setting does. Basemap labels keep MapLibre's own collision rules.")
+                }
+
+                Section {
+                    ForEach(MapLook.allCases, id: \.self) { look in
+                        buttonRow(look.title, isOn: model.style.look == look,
+                                  id: "map-look-\(look.rawValue)") {
+                            model.setLook(look)
+                        }
+                    }
+                } header: {
+                    Text("Map look")
+                } footer: {
+                    Text("Every look is a local style built from the bundled Liberty base. The Vela look can be light or dark; the others keep their own palettes.")
+                }
+
+                Section {
+                    ForEach(MapAppearance.allCases, id: \.self) { appearance in
+                        buttonRow(appearance.title, isOn: model.style.appearance == appearance,
+                                  id: "map-appearance-\(appearance.rawValue)") {
+                            model.setAppearance(appearance)
+                        }
+                    }
+                } header: {
+                    Text("Map appearance")
+                }
+
+                Section {
+                    ForEach(MapNamesMode.preferenceValues, id: \.self) { mode in
+                        buttonRow(mode.title, isOn: model.style.names == mode,
+                                  id: "map-names-\(mode.rawValue)") {
+                            model.setNames(mode)
+                        }
+                    }
+                } header: {
+                    Text("Names on the map")
+                }
+
+                Section {
+                    ForEach(HouseNumberLevel.allCases, id: \.self) { level in
+                        buttonRow(level.title, isOn: model.style.houseNumbers == level,
+                                  id: "map-house-\(level.rawValue)") {
+                            model.setHouseNumbers(level)
+                        }
+                    }
+                } header: {
+                    Text("House numbers")
+                } footer: {
+                    Text("Numbers fade in from \(String(format: "%.1f", model.style.houseNumbers.minZoom)) on the bundled vector data.")
+                }
+
+                Section {
+                    Text(model.debugLine)
+                        .font(.caption2.monospaced())
+                        .foregroundStyle(.secondary)
+                        .accessibilityIdentifier("layers-sheet-debug")
+                }
+            }
+            .navigationTitle("Map layers")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .confirmationAction) {
+                    Button("Done") { dismiss() }
+                        .accessibilityIdentifier("layers-close")
+                }
+            }
+        }
+    }
+
+    private func layerToggle(_ title: String, key: String, detail: String) -> some View {
+        let on = model.enabled.contains(key)
+        return Button {
+            model.setLayer(key, !on)
+        } label: {
+            HStack {
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(title)
+                    Text(statusText(key, detail: detail))
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
+                Spacer()
+                Image(systemName: on ? "checkmark.circle.fill" : "circle")
+                    .foregroundStyle(on ? Color.accentColor : Color.secondary)
+            }
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+        .accessibilityIdentifier("layer-\(key)")
+        .accessibilityValue(Text(on ? "on" : "off"))
+    }
+
+    private func categoryToggle(_ title: String, key: String, id: String) -> some View {
+        buttonRow(title, isOn: model.categories.contains(key), id: id) {
+            model.setCategory(key, !model.categories.contains(key))
+        }
+    }
+
+    /// A checkmark row rather than a Toggle: the whole row is the control, so a tap anywhere
+    /// flips it, including from XCUITest (a Toggle's accessibility frame covers its label, which
+    /// does not toggle in a Form).
+    private func buttonRow(
+        _ title: String, isOn: Bool, id: String, action: @escaping () -> Void
+    ) -> some View {
+        Button(action: action) {
+            HStack {
+                Text(title)
+                Spacer()
+                Image(systemName: isOn ? "checkmark.circle.fill" : "circle")
+                    .foregroundStyle(isOn ? Color.accentColor : Color.secondary)
+            }
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+        .accessibilityIdentifier(id)
+        .accessibilityValue(Text(isOn ? "on" : "off"))
+    }
+
+    private func statusText(_ key: String, detail: String) -> String {
+        let status = model.snapshot(key)
+        switch status.phase {
+        case "loading": return "Loading"
+        case "ready": return status.count == 1 ? "1 shown" : "\(status.count) shown"
+        case "error": return "Failed. Pan the map to retry."
+        case "zoom": return "Zoom in to load"
+        case "unavailable":
+            return key == "fuel" ? "Only available in the UK" : "Only available in the Netherlands"
+        case "idle": return "Waiting for the map"
+        default: return detail
+        }
+    }
+}
