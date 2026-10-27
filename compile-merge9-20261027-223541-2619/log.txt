@@ -1,0 +1,15 @@
+tag=compile-merge9-20261027-223541-2619 src=src/compile-merge9 3555285 src: d312348e Merge SET-PRIVACY: consent, privacy page and request counter
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+
+== Voice framework
+
+== String catalog
+
+== XcodeGen
+xcodegen: Version: 2.46.0
+
+== Generate and build
+simulator: B34C2F57-B98B-4C84-96E2-3170887BA2DB
+simulator build: ok
+compile check green
