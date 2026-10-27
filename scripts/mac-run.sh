@@ -21,8 +21,8 @@ git -c user.name=hive -c user.email=hive@localhost commit -q -m "run $tag"
 for i in 1 2 3 4 5 6; do git push -q origin HEAD:main && break; git pull -q --rebase origin main; sleep $((RANDOM % 5 + 1)); done
 echo "requested $tag (src/$lot, $script)" >&2
 
-# Wait up to 70 min for results/<tag>/STATUS.
-for i in $(seq 1 280); do
+# Wait up to 140 min for results/<tag>/STATUS: a full iOS suite now takes 60 to 90 min on a busy runner.
+for i in $(seq 1 560); do
   sleep 15
   if git fetch -q origin results 2>/dev/null && git cat-file -e "FETCH_HEAD:$tag/STATUS" 2>/dev/null; then
     status=$(git show "FETCH_HEAD:$tag/STATUS")
