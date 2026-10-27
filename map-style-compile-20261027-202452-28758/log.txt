@@ -1,0 +1,15 @@
+tag=map-style-compile-20261027-202452-28758 src=src/map-style-compile 86cda15 src: 67365226 iOS: load map tiles from the OpenFreeMap TileJSON
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+
+== Voice framework
+
+== String catalog
+
+== XcodeGen
+xcodegen: Version: 2.46.0
+
+== Generate and build
+simulator: 2263B19F-42E8-4C8B-8AF1-D79508216C90
+simulator build: ok
+compile check green
