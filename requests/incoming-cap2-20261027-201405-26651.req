@@ -1,0 +1,3 @@
+src=src/incoming-cap2
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=IncomingLinksUITests VELA_SKIP_ARCHIVE=1
