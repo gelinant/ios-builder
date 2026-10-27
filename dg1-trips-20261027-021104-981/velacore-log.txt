@@ -1,0 +1,17 @@
+Timestamp               Ty Process[PID:TID]
+2026-10-27 02:26:22.360 I  Vela[23738:1112a] [app.vela.ios:Calibration] calibration at startup: version 1
+2026-10-27 02:26:23.147 Df Vela[23738:11453] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-27 02:26:26.424 I  Vela[23738:1112a] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-27 02:26:29.115 I  Vela[23738:1112a] [app.vela.ios:NeuralVoice] loaded en_US-hfc_female-medium: 22050 Hz, 1 speakers
+2026-10-27 02:26:31.289 Df Vela[23738:11455] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-27 02:26:50.981 I  Vela[25065:11eae] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-27 02:26:51.536 Df Vela[25065:11ebd] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-27 02:26:52.326 I  Vela[25065:11eae] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-27 02:27:57.143 I  Vela[28656:141ce] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-27 02:27:57.973 Df Vela[28656:14231] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-27 02:27:59.980 I  Vela[28656:141ce] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-27 02:28:47.904 I  Vela[30596:15b67] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-27 02:28:48.611 Df Vela[30596:15b9d] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-27 02:28:48.680 I  Vela[30596:15b67] [app.vela.ios:Location] location update failed: The operation couldn’t be completed. (kCLErrorDomain error 0.)
+2026-10-27 02:28:49.872 I  Vela[30596:15b67] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-27 02:29:49.584 I  Vela[30596:15b67] [app.vela.ios:Location] location update failed: The operation couldn’t be completed. (kCLErrorDomain error 0.)
