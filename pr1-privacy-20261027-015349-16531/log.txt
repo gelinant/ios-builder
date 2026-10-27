@@ -1,0 +1,181 @@
+tag=pr1-privacy-20261027-015349-16531 src=src/pr1-privacy c4a1232 src: 5c476309 iOS privacy: drive UI scenarios from control values, not the scrolled debug line
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: c4a1232 src: 5c476309 iOS privacy: drive UI scenarios from control values, not the scrolled debug line
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610270155 (1793066110)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Kotlin: tests and the VelaCore framework (01:55:10)
+gradle: ok in 376 s
+kotlin jvmTest: 193 tests, 0 failures
+kotlin iosSimulatorArm64Test: 172 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  76M, static library 75222368 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  45M, static library 42397864 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (02:01:26)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 30.3M  100 30.3M    0     0  42.7M      0 --:--:-- --:--:-- --:--:-- 42.7M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (02:01:28)
+string catalog: 1423 keys, 24 resource locales (23 with translations), 24580 localized values, 74 Swift references, 24 picker languages
+
+== XcodeGen (02:01:29)
+xcodegen: Version: 2.46.0
+
+== Generate the project (02:01:29)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (02:01:29)
+  BitByteData: https://github.com/tsolomko/BitByteData @ 2.1.0
+
+resolved source packages: SWCompression, MapLibre Native, BitByteData
+(resolve: 18 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (02:01:47)
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+
+== Build for the simulator (02:01:50)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 92 s)
+simulator build: ok
+
+== Boot the simulator (02:03:22)
+voice fixture:  78M in the Debug app
+
+== Unit tests (02:07:49)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 119 s)
+tests: ok, Executed 90 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_SYNTH samples=56254 rate=22050 wav_frames=56254
+
+== Launch and screenshot (02:09:48)
+app.vela.ios: 32316
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 460D9BFE-207A-4AF9-84E5-E46C00186FB2 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (02:10:31)
+xcodebuild uitest failed after 232 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/PrivacyUITests.swift:38: error: -[VelaUITests.PrivacyUITests testPrivacyControlsAndSessionRotation] : XCTAssertTrue failed - telemetry switch did not change: 0
+Test Case '-[VelaUITests.PrivacyUITests testPrivacyControlsAndSessionRotation]' failed (54.478 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =    40.24s     Synthesize event
+    t =    40.56s     Wait for app.vela.ios to idle
+    t =    40.56s Find the "settings-session-mode" Button
+    t =    40.64s Checking existence of `"settings-session-new" Button`
+    t =    40.76s Tap "settings-session-new" Button
+    t =    40.76s     Wait for app.vela.ios to idle
+    t =    40.77s     Find the "settings-session-new" Button
+    t =    40.87s     Check for interrupting elements affecting "settings-session-new" Button
+    t =    40.94s     Synthesize event
+    t =    41.27s     Wait for app.vela.ios to idle
+    t =    41.47s Waiting 5.0s for "settings-session-started" StaticText to exist
+    t =    42.51s     Checking `Expect predicate `existsNoRetry == 1` for object "settings-session-started" StaticText`
+    t =    42.51s         Checking existence of `"settings-session-started" StaticText`
+    t =    42.59s Find the "settings-telemetry" Switch
+    t =    42.69s Tap "settings-telemetry" Switch
+    t =    42.69s     Wait for app.vela.ios to idle
+    t =    42.69s     Find the "settings-telemetry" Switch
+    t =    42.77s     Check for interrupting elements affecting "settings-telemetry" Switch
+    t =    42.84s     Synthesize event
+    t =    43.18s     Wait for app.vela.ios to idle
+    t =    43.19s Find the "settings-telemetry" Switch
+    t =    43.76s Find the "settings-telemetry" Switch
+    t =    44.39s Find the "settings-telemetry" Switch
+    t =    44.98s Find the "settings-telemetry" Switch
+    t =    45.60s Find the "settings-telemetry" Switch
+    t =    46.23s Find the "settings-telemetry" Switch
+    t =    46.88s Find the "settings-telemetry" Switch
+    t =    47.55s Find the "settings-telemetry" Switch
+    t =    48.21s Find the "settings-telemetry" Switch
+    t =    48.94s Find the "settings-telemetry" Switch
+    t =    49.60s Find the "settings-telemetry" Switch
+    t =    50.24s Find the "settings-telemetry" Switch
+    t =    50.90s Find the "settings-telemetry" Switch
+    t =    51.53s Find the "settings-telemetry" Switch
+    t =    52.13s Find the "settings-telemetry" Switch
+    t =    52.76s Find the "settings-telemetry" Switch
+    t =    53.39s Find the "settings-telemetry" Switch
+    t =    53.57s Find the "settings-telemetry" Switch
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/PrivacyUITests.swift:38: error: -[VelaUITests.PrivacyUITests testPrivacyControlsAndSessionRotation] : XCTAssertTrue failed - telemetry switch did not change: 0
+    t =    54.16s Tear Down
+Test Case '-[VelaUITests.PrivacyUITests testPrivacyControlsAndSessionRotation]' failed (54.478 seconds).
+Test Suite 'PrivacyUITests' failed at 2026-10-27 02:13:45.403.
+	 Executed 3 tests, with 1 failure (0 unexpected) in 155.321 (155.325) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-27 02:13:45.405.
+	 Executed 3 tests, with 1 failure (0 unexpected) in 155.321 (155.327) seconds
+Test Suite 'Selected tests' failed at 2026-10-27 02:13:45.406.
+	 Executed 3 tests, with 1 failure (0 unexpected) in 155.321 (155.329) seconds
+2026-10-27 02:14:18.236 xcodebuild[33853:92775] [MT] IDETestOperationsObserverDebug: 207.719 elapsed -- Testing started completed.
+2026-10-27 02:14:18.242 xcodebuild[33853:92775] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-27 02:14:18.242 xcodebuild[33853:92775] [MT] IDETestOperationsObserverDebug: 207.719 sec, +207.719 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.Fw5uGcZTev/uitest.xcresult
+
+Failing tests:
+	PrivacyUITests.testPrivacyControlsAndSessionRotation()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui PrivacyUITests.testNoGoogleDirectionsAndTransitSendNothingToGoogle: passed (58.397 seconds)
+ui PrivacyUITests.testNoGoogleSearchSendsNothingToGoogle: passed (42.446 seconds)
+ui PrivacyUITests.testPrivacyControlsAndSessionRotation: failed (54.478 seconds)
+scripts/ios/ci-ipa.sh: line 257: 33851 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui privacy_no_google_blocked=0
+ui privacy_no_google_routes_blocked=0
+ui privacy_no_google_routes_sent=0
+ui privacy_no_google_sent=0
+ui screenshots: 
+
+== Route replay (02:14:27)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 460D9BFE-207A-4AF9-84E5-E46C00186FB2 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 460D9BFE-207A-4AF9-84E5-E46C00186FB2 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (02:15:49)
+241662
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 29155 bytes
+open reply: transit-plan-sf 76242 bytes
+directions reply: directions-drive-sf 99105 bytes
+directions reply: directions-walk-sf 34613 bytes
+search reply: 241662 bytes, 28 feature ids
+failed steps: ui-scenarios
