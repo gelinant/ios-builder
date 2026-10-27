@@ -1,0 +1,211 @@
+tag=srch-cards-20261027-151039-18969 src=src/srch-cards fc103a0 src: c7197ffd iOS: route card actions straight to the route store
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: fc103a0 src: c7197ffd iOS: route card actions straight to the route store
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610271511 (1793113914)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Kotlin: tests and the VelaCore framework (15:11:55)
+gradle: ok in 643 s
+kotlin jvmTest: 252 tests, 0 failures
+kotlin iosSimulatorArm64Test: 210 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  78M, static library 77111496 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  47M, static library 44287264 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (15:22:39)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 76 30.3M   76 23.1M    0     0  36.1M      0 --:--:-- --:--:-- --:--:-- 36.1M100 30.3M  100 30.3M    0     0  42.6M      0 --:--:-- --:--:-- --:--:-- 99.2M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (15:22:40)
+string catalog: 1423 keys, 24 resource locales (23 with translations), 24580 localized values, 87 Swift references, 24 picker languages
+
+== XcodeGen (15:22:41)
+xcodegen: Version: 2.46.0
+
+== Generate the project (15:22:42)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (15:22:42)
+  MapLibre Native: https://github.com/maplibre/maplibre-gl-native-distribution @ 6.31.0
+
+resolved source packages: SWCompression, BitByteData, MapLibre Native
+(resolve: 16 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (15:22:59)
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (582B068E-2ACA-440E-8D01-417AEDF26981) (Shutdown) 
+
+== Build for the simulator (15:23:00)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 114 s)
+simulator build: ok
+
+== Boot the simulator (15:24:54)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (15:29:25)
+xcodebuild test failed after 226 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaTests/IncomingLinksTests.swift:110: error: -[VelaTests.IncomingLinksTests testMoreStopsThanTheCapKeepTheFirstOnes] : XCTAssertEqual failed: ("1") is not equal to ("10")
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaTests/IncomingLinksTests.swift:111: error: -[VelaTests.IncomingLinksTests testMoreStopsThanTheCapKeepTheFirstOnes] : XCTAssertEqual failed: ("0") is not equal to ("2")
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaTests/IncomingLinksTests.swift:112: error: -[VelaTests.IncomingLinksTests testMoreStopsThanTheCapKeepTheFirstOnes] : XCTAssertEqual failed: ("1") is not equal to ("12")
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaTests/IncomingLinksTests.swift:113: error: -[VelaTests.IncomingLinksTests testMoreStopsThanTheCapKeepTheFirstOnes] : XCTAssertEqual failed: ("Optional("Stop 1%7CStop 2%7CStop 3%7CStop 4%7CStop 5%7CStop 6%7CStop 7%7CStop 8%7CStop 9%7CStop 10%7CStop 11%7CStop 12")") is not equal to ("Optional("Stop 1")")
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaTests/IncomingLinksTests.swift:114: error: -[VelaTests.IncomingLinksTests testMoreStopsThanTheCapKeepTheFirstOnes] : XCTAssertEqual failed: ("Optional("Stop 1%7CStop 2%7CStop 3%7CStop 4%7CStop 5%7CStop 6%7CStop 7%7CStop 8%7CStop 9%7CStop 10%7CStop 11%7CStop 12")") is not equal to ("Optional("Stop 10")")
+Test Case '-[VelaTests.IncomingLinksTests testMoreStopsThanTheCapKeepTheFirstOnes]' failed (0.685 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of test log ---
+Test Case '-[VelaTests.VoiceSearchTests testInstalledEnginesComeFromTheFilesystem]' passed (0.022 seconds).
+Test Case '-[VelaTests.VoiceSearchTests testRecognizedPhrasesBecomeTheSameActionsAsAndroid]' started.
+Test Case '-[VelaTests.VoiceSearchTests testRecognizedPhrasesBecomeTheSameActionsAsAndroid]' passed (0.024 seconds).
+Test Case '-[VelaTests.VoiceSearchTests testWhisperTinyTranscribesSynthesizedSpeech]' started.
+2026-10-27 15:32:04.725723+0000 Vela[30627:85726] [NeuralVoice] loaded en_US-hfc_female-medium: 22050 Hz, 1 speakers
+2026-10-27 15:32:05.834198+0000 Vela[30627:85726] [VoiceSearch] loaded whisper-tiny for en
+SEAM_TEST VOICE_ASR text=Never_get_to_coffee. samples=18762
+SEAM_TEST VOICE_ASR_PLAN action=route query=
+Test Case '-[VelaTests.VoiceSearchTests testWhisperTinyTranscribesSynthesizedSpeech]' passed (2.414 seconds).
+Test Suite 'VoiceSearchTests' passed at 2026-10-27 15:32:06.159.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 2.461 (2.665) seconds
+Test Suite 'VoiceSelectionTests' started at 2026-10-27 15:32:06.161.
+Test Case '-[VelaTests.VoiceSelectionTests testAnotherLanguageFallsBackToSystem]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testAnotherLanguageFallsBackToSystem]' passed (0.052 seconds).
+Test Case '-[VelaTests.VoiceSelectionTests testCatalogMatchesAndroidIds]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testCatalogMatchesAndroidIds]' passed (0.007 seconds).
+Test Case '-[VelaTests.VoiceSelectionTests testCorruptModelFallsBackToSystem]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testCorruptModelFallsBackToSystem]' passed (0.009 seconds).
+Test Case '-[VelaTests.VoiceSelectionTests testExtractionStripsTopFolderAndValidatesModel]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testExtractionStripsTopFolderAndValidatesModel]' passed (0.828 seconds).
+Test Case '-[VelaTests.VoiceSelectionTests testInstalledSetComesFromCompleteDirectories]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testInstalledSetComesFromCompleteDirectories]' passed (0.029 seconds).
+Test Case '-[VelaTests.VoiceSelectionTests testMissingModelKeepsSystemVoice]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testMissingModelKeepsSystemVoice]' passed (0.012 seconds).
+Test Case '-[VelaTests.VoiceSelectionTests testSelectedVoiceWinsAndMissingSelectionFallsBack]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testSelectedVoiceWinsAndMissingSelectionFallsBack]' passed (0.039 seconds).
+Test Case '-[VelaTests.VoiceSelectionTests testUnsafeArchiveEntryIsRejected]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testUnsafeArchiveEntryIsRejected]' passed (0.015 seconds).
+Test Suite 'VoiceSelectionTests' passed at 2026-10-27 15:32:07.160.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.990 (0.999) seconds
+Test Suite 'WebTests' started at 2026-10-27 15:32:07.160.
+Test Case '-[VelaTests.WebTests testBlockedHostsCompileAsAContentRuleList]' started.
+Test Case '-[VelaTests.WebTests testBlockedHostsCompileAsAContentRuleList]' passed (0.012 seconds).
+Test Case '-[VelaTests.WebTests testBridgeNamesAreSwappedForRandomOnes]' started.
+Test Case '-[VelaTests.WebTests testBridgeNamesAreSwappedForRandomOnes]' passed (0.006 seconds).
+Test Case '-[VelaTests.WebTests testTheSheetShowsTheSiteHost]' started.
+Test Case '-[VelaTests.WebTests testTheSheetShowsTheSiteHost]' passed (0.001 seconds).
+Test Suite 'WebTests' passed at 2026-10-27 15:32:07.220.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.020 (0.060) seconds
+Test Suite 'VelaTests.xctest' failed at 2026-10-27 15:32:07.220.
+	 Executed 103 tests, with 5 failures (0 unexpected) in 9.937 (10.925) seconds
+Test Suite 'All tests' failed at 2026-10-27 15:32:07.221.
+	 Executed 103 tests, with 5 failures (0 unexpected) in 9.937 (10.928) seconds
+2026-10-27 15:33:02.496 xcodebuild[27919:77733] [MT] IDETestOperationsObserverDebug: 182.769 elapsed -- Testing started completed.
+2026-10-27 15:33:02.503 xcodebuild[27919:77733] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-27 15:33:02.504 xcodebuild[27919:77733] [MT] IDETestOperationsObserverDebug: 182.769 sec, +182.769 sec -- end
+
+Test session results, code coverage, and logs:
+	/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Logs/Test/Test-Vela-2026.10.27_15-29-50-+0000.xcresult
+
+Failing tests:
+	IncomingLinksTests.testMoreStopsThanTheCapKeepTheFirstOnes()
+	IncomingLinksTests.testMoreStopsThanTheCapKeepTheFirstOnes()
+	IncomingLinksTests.testMoreStopsThanTheCapKeepTheFirstOnes()
+	IncomingLinksTests.testMoreStopsThanTheCapKeepTheFirstOnes()
+	IncomingLinksTests.testMoreStopsThanTheCapKeepTheFirstOnes()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+tests: FAILED
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=18762
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=57155 rate=22050 wav_frames=57155
+
+== Launch and screenshot (15:33:11)
+app.vela.ios: 33533
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: C75DA469-ED57-425B-A434-6D42A91DA16B (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (15:33:57)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(uitest: 456 s)
+ui scenarios: ok
+ui SearchUITests.testAddressSearchMergesWithoutDuplicateRows: passed (91.643 seconds)
+ui SearchUITests.testCoffeeSearchShowsResultsAndPins: passed (59.133 seconds)
+ui SearchUITests.testNoGoogleSearchReturnsPhotonRows: passed (52.834 seconds)
+ui SearchUITests.testPhotonAddressSearchShowsTheTypedHouseNumber: passed (29.310 seconds)
+ui SearchUITests.testQuickCategoryRunsSearch: passed (19.328 seconds)
+ui SearchUITests.testResultCardFields: passed (38.734 seconds)
+ui SearchUITests.testSuggestionPriorityAndArrow: passed (44.799 seconds)
+ui SearchUITests.testSuggestionsAppearAndFreezeAfterSelection: passed (18.418 seconds)
+scripts/ios/ci-ipa.sh: line 275: 34951 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui address_hits=14
+ui address_rows=27
+ui card_call_rows=42
+ui card_photo_rows=60
+ui card_status_label=Doppio
+ui category_rows=60
+ui dedup_duplicate_rows=0
+ui dedup_rows=27
+ui nogoogle_photon_hits=16
+ui nogoogle_photon_rows=16
+ui nogoogle_search_debug=offline=0
+ui photon_address_hits=10
+ui photon_address_rows=27
+ui search_rows=60
+ui suggestion_leading_row=Doppio
+ui suggestion_priority=local
+ui suggestion_rows=5
+ui screenshots: category.png search-card-fields.png search-centered.png search-list.png search-map.png search-photon-nogoogle.png search-photon.png search-suggestion-priority.png suggest.png 
+
+== Route replay (15:41:37)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: C75DA469-ED57-425B-A434-6D42A91DA16B (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: C75DA469-ED57-425B-A434-6D42A91DA16B (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (15:43:00)
+292663
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 76191 bytes
+directions reply: directions-drive-sf 115432 bytes
+directions reply: directions-walk-sf 34605 bytes
+search reply: 292663 bytes, 37 feature ids
+failed steps: tests
