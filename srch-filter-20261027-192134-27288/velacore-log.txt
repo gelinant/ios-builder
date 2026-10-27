@@ -1,0 +1,18 @@
+Timestamp               Ty Process[PID:TID]
+2026-10-27 19:45:44.583 I  Vela[27963:13a13] [app.vela.ios:Calibration] calibration at startup: version 1
+2026-10-27 19:45:45.794 Df Vela[27963:13bf4] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-27 19:45:49.828 I  Vela[27963:13a13] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-27 19:45:52.734 I  Vela[27963:13a13] [app.vela.ios:NeuralVoice] loaded en_US-hfc_female-medium: 22050 Hz, 1 speakers
+2026-10-27 19:45:54.778 Df Vela[27963:13c94] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-27 19:45:56.752 I  Vela[27963:13a13] [app.vela.ios:NeuralVoice] loaded en_US-hfc_female-medium: 22050 Hz, 1 speakers
+2026-10-27 19:45:57.718 I  Vela[27963:13a13] [app.vela.ios:VoiceSearch] loaded whisper-tiny for en
+2026-10-27 19:46:48.274 I  Vela[30623:15ad2] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-27 19:46:49.665 Df Vela[30623:15ae1] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-27 19:46:50.948 I  Vela[30623:15ad2] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-27 19:48:03.520 I  Vela[34575:181bf] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-27 19:48:05.797 Df Vela[34575:182ec] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-27 19:48:07.272 I  Vela[34575:181bf] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-27 19:52:46.315 I  Vela[45805:1f3b7] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-27 19:52:54.328 Df Vela[45805:1f441] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-27 19:52:55.554 I  Vela[45805:1f3b7] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-27 19:54:15.072 I  Vela[45805:1f3b7] [app.vela.ios:Location] location update failed: The operation couldn’t be completed. (kCLErrorDomain error 0.)
