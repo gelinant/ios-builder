@@ -14,6 +14,12 @@ push_dir() { # <branch> <srcdir> <single-commit?>
     git init -q res; git -C res checkout -q --orphan "$branch"; git -C res remote add origin "$url"
   fi
   rm -rf "res/$tag"; mkdir -p "res/$tag"; cp -R "$from/." "res/$tag/"
+  # Keep the branch small: clones on the runner download this tree, and every run used to stay
+  # forever. Keep the six most recent directories of this tag (names start with the tag and sort
+  # chronologically), which covers the current and previous builds.
+  if [ "$branch" = results ]; then
+    ls -1d res/"$tag"-* 2>/dev/null | head -n -6 | xargs -r rm -rf
+  fi
   git -C res config user.name ios-builder; git -C res config user.email ios-builder@users.noreply.github.com
   git -C res add -A
   git -C res commit -q -m "$tag: $(cat "$OUT/STATUS" 2>/dev/null || echo done)" || return 0
