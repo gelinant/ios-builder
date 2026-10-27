@@ -1,0 +1,59 @@
+commit: 26dddc4 src: eefdd946 VO-CONTROL: keep the voice debug row in place in Settings
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610271900 (1793127650)
+java: openjdk version "17.0.20.1" 2026-08-18
+gradle: ok in 473 s
+kotlin jvmTest: 249 tests, 0 failures
+kotlin iosSimulatorArm64Test: 212 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  78M, static library 77123272 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  47M, static library 44294696 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 1423 keys, 24 resource locales (23 with translations), 24580 localized values, 91 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (600A45A3-B3A0-4A39-8A9C-5D051F9FDA9C) (Shutdown) 
+simulator build: ok
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+tests: FAILED
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=19319
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=55105 rate=22050 wav_frames=55105
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: FAILED
+ui VoiceUITests.testNeuralVoiceGuidanceAndFallbackMarker: failed (152.324 seconds)
+ui VoiceUITests.testSystemVoiceWhenNeuralIsDisabled: passed (27.464 seconds)
+ui VoiceUITests.testVoiceSearchInjectedQueryRunsTheSearch: passed (20.634 seconds)
+ui VoiceUITests.testVoiceSearchNavigateIntentOpensTheChooser: passed (19.989 seconds)
+ui VoiceUITests.testVoiceSettingsShowInstalledModel: passed (29.037 seconds)
+ui voice_engine=engine=neural_voice=en_US-hfc_female-medium
+ui voice_fallback=engine=system_reason=disabled-for-test
+ui voice_installed=1
+ui voice_intent_chooser=1
+ui voice_intent_destination=All_Star_Cafe
+ui voice_search_query=coffee
+ui voice_search_results=70
+ui screenshots: voice-fallback.png voice-library.png voice-search-intent.png voice-search.png voice-settings.png 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: details: page raw=27497 parsed=true times=false
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 76245 bytes
+directions reply: directions-drive-sf 108677 bytes
+directions reply: directions-walk-sf 35551 bytes
+search reply: 277241 bytes, 36 feature ids
+failed steps: tests ui-scenarios
