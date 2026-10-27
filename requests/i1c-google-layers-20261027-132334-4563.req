@@ -1,0 +1,3 @@
+src=src/i1c-google-layers
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=MapLayersUITests
