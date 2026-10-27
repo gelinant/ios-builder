@@ -1,0 +1,74 @@
+commit: 4f8e533 src: 85af034f iOS: two route picker presentations and traffic on demand
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610271847 (1793126835)
+java: openjdk version "17.0.20.1" 2026-08-18
+gradle: ok in 593 s
+kotlin jvmTest: 253 tests, 0 failures
+kotlin iosSimulatorArm64Test: 210 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  78M, static library 77082808 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  47M, static library 44249240 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 1423 keys, 24 resource locales (23 with translations), 24580 localized values, 87 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (582B068E-2ACA-440E-8D01-417AEDF26981) (Shutdown) 
+simulator build: ok
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+tests: FAILED
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=navigate_to_coffee samples=19505
+VOICE_ASR_PLAN action=navigate query=coffee
+VOICE_SYNTH samples=56120 rate=22050 wav_frames=56120
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: FAILED
+ui DirectionsUITests.testBikeRouteUsesTheSafetyProfile: failed (176.983 seconds)
+ui DirectionsUITests.testDirectionsToTheFirstCoffeeResult: failed (140.656 seconds)
+ui DirectionsUITests.testNoGoogleDriveNeverAsksGoogle: failed (193.965 seconds)
+ui DirectionsUITests.testRoutePickerStyleAndTrafficOnDemand: failed (166.528 seconds)
+ui DirectionsUITests.testWaypointAndDepartureTime: failed (127.244 seconds)
+ui bike_meters=?
+ui bike_routes=0
+ui bike_safe=?
+ui bike_seconds=?
+ui bike_steps=?
+ui directions_center=?
+ui directions_drive_meters=?
+ui directions_drive_routes=0
+ui directions_drive_seconds=?
+ui directions_drive_steps=?
+ui directions_drive_traffic_spans=?
+ui nogoogle_flag=?
+ui nogoogle_google_requests=-1
+ui nogoogle_open_requests=0
+ui nogoogle_routes=0
+ui nogoogle_seconds=?
+ui screenshots: directions-drive.png 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: details: page raw=100855 parsed=true times=false
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: details: page raw=62955 parsed=true times=false
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: details: page raw=100855 parsed=true times=false
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 76207 bytes
+directions reply: directions-drive-sf 123168 bytes
+directions reply: directions-walk-sf 46803 bytes
+search reply: 250595 bytes, 31 feature ids
+failed steps: tests ui-scenarios
