@@ -1,0 +1,3 @@
+src=src/n4-parking-nav
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=NavArrivalUITests
