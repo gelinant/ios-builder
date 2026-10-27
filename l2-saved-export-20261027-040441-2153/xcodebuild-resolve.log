@@ -1,0 +1,16 @@
+Command line invocation:
+    /Applications/Xcode_26.6.app/Contents/Developer/usr/bin/xcodebuild -resolvePackageDependencies -project Vela.xcodeproj -scheme Vela -derivedDataPath /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci -clonedSourcePackagesDirPath /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/SourcePackages MARKETING_VERSION=0.1.202610270431 CURRENT_PROJECT_VERSION=1793075469
+
+Build settings from command line:
+    CURRENT_PROJECT_VERSION = 1793075469
+    MARKETING_VERSION = 0.1.202610270431
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  SWCompression: https://github.com/tsolomko/SWCompression @ 4.9.1
+  MapLibre Native: https://github.com/maplibre/maplibre-gl-native-distribution @ 6.31.0
+  BitByteData: https://github.com/tsolomko/BitByteData @ 2.1.0
+
+resolved source packages: SWCompression, MapLibre Native, BitByteData
