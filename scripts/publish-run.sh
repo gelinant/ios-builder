@@ -18,15 +18,18 @@ push_dir() { # <branch> <srcdir> <single-commit?>
   # forever. Keep the six most recent directories of this tag (names start with the tag and sort
   # chronologically), which covers the current and previous builds.
   if [ "$branch" = results ]; then
-    ls -1d res/"$tag"-* 2>/dev/null | head -n -6 | xargs -r rm -rf
+    # A new tag has no directory yet: `ls` failing here must not abort the publish.
+    old="$(ls -1d res/"$tag"-* 2>/dev/null | head -n -6 || true)"
+    [ -z "$old" ] || rm -rf $old
   fi
   git -C res config user.name ios-builder; git -C res config user.email ios-builder@users.noreply.github.com
   git -C res add -A
-  git -C res commit -q -m "$tag: $(cat "$OUT/STATUS" 2>/dev/null || echo done)" || return 0
+  git -C res commit -q -m "$tag: $(cat "$OUT/STATUS" 2>/dev/null || echo done)"     || { echo "nothing to publish for $tag" >&2; return 0; }
   for i in 1 2 3 4 5; do
-    if [ "$single" = yes ]; then git -C res push -q -f origin "HEAD:$branch" && return 0
+    if [ "$single" = yes ]; then
+      if git -C res push -q -f origin "HEAD:$branch"; then return 0; fi
     else
-      git -C res push -q origin "HEAD:$branch" && return 0
+      if git -C res push -q origin "HEAD:$branch"; then return 0; fi
       # Another run published first, or the branch was pruned and rewritten. Rebase the new tree
       # onto whatever is on the server now instead of failing on a shallow pull --rebase.
       if git -C res fetch -q --depth 1 origin "$branch" 2>/dev/null; then
@@ -37,6 +40,7 @@ push_dir() { # <branch> <srcdir> <single-commit?>
     fi
     sleep $((i * 3))
   done
+  echo "publish failed for $tag after 5 attempts" >&2
   return 1
 }
 
