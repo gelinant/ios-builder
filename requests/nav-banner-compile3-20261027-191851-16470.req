@@ -1,0 +1,3 @@
+src=src/nav-banner-compile3
+script=scripts/ios/ci-compile.sh
+args=
