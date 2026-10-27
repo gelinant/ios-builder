@@ -1,0 +1,3 @@
+src=src/full-17lots
+script=scripts/ios/ci-ipa.sh
+args=
