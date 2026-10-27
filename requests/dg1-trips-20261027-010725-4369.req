@@ -1,0 +1,3 @@
+src=src/dg1-trips
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=TripsUITests VELA_SKIP_ARCHIVE=1
