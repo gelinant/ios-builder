@@ -1,0 +1,164 @@
+tag=plc-fuel-20261027-193019-23446 src=src/plc-fuel 219186c src: bbf37900 PLC-FUEL: UK fuel prices and closing state on the place card
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 219186c src: bbf37900 PLC-FUEL: UK fuel prices and closing state on the place card
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610271932 (1793129578)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Kotlin: tests and the VelaCore framework (19:32:58)
+gradle: FAILED after 479 s
+> Task :ios-shared:compileTestKotlinIosSimulatorArm64 FAILED
+e: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/streetview/StreetViewHistoryTest.kt:22:9 Name contains illegal characters: ",".
+
+> Task :ios-shared:syncPersistedPackageResolvedToSynthetic SKIPPED
+> Task :ios-shared:fetchSyntheticImportProjectPackages SKIPPED
+--
+* What went wrong:
+Execution failed for task ':ios-shared:compileTestKotlinIosSimulatorArm64' (registered in build file 'ios-shared/build.gradle.kts').
+> Compilation finished with errors
+
+--
+BUILD FAILED in 7m 56s
+38 actionable tasks: 38 executed
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonMain/kotlin/app/vela/ios/replay/TripsStore.kt:148:58 Return in function with expression body and without explicit return type. Use block body '{...}' or add an explicit return type. This will become an error in language version 2.5. See https://youtrack.jetbrains.com/issue/KTLC-288.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonMain/kotlin/app/vela/ios/replay/TripsStore.kt:156:31 Return in function with expression body and without explicit return type. Use block body '{...}' or add an explicit return type. This will become an error in language version 2.5. See https://youtrack.jetbrains.com/issue/KTLC-288.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonMain/kotlin/app/vela/ios/replay/TripsStore.kt:190:34 Return in function with expression body and without explicit return type. Use block body '{...}' or add an explicit return type. This will become an error in language version 2.5. See https://youtrack.jetbrains.com/issue/KTLC-288.
+
+> Task :ios-shared:compileJvmMainJava NO-SOURCE
+> Task :ios-shared:jvmMainClasses
+> Task :ios-shared:jvmJar
+
+> Task :ios-shared:compileTestKotlinJvm
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/place/PlaceTravelHintsTest.kt:39:17 'typealias Instant = Instant' is deprecated. This type is deprecated in favor of `kotlin.time.Instant`.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/place/PlaceTravelHintsTest.kt:47:17 'typealias Instant = Instant' is deprecated. This type is deprecated in favor of `kotlin.time.Instant`.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/replay/TripsStoreTest.kt:326:110 Unnecessary non-null assertion (!!) on a non-null receiver of type 'Any'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/search/SearchStoreTest.kt:93:40 Unnecessary non-null assertion (!!) on a non-null receiver of type 'LatLng'.
+
+> Task :ios-shared:compileJvmTestJava NO-SOURCE
+> Task :ios-shared:jvmTestClasses
+> Task :ios-shared:jvmTest
+
+[Incubating] Problems report is available at: file:///Users/runner/work/ios-builder/ios-builder/src/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':ios-shared:compileTestKotlinIosSimulatorArm64' (registered in build file 'ios-shared/build.gradle.kts').
+> Compilation finished with errors
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.8.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 7m 56s
+38 actionable tasks: 38 executed
+kotlin jvmTest: 281 tests, 0 failures
+kotlin iosSimulatorArm64Test: no results
+VelaCore.framework iosSimulatorArm64/debugFramework:  79M, static library 77921464 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  48M, static library 45114704 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (19:40:58)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 30.3M  100 30.3M    0     0  45.3M      0 --:--:-- --:--:-- --:--:-- 45.3M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (19:41:00)
+string catalog: 1423 keys, 24 resource locales (23 with translations), 24580 localized values, 100 Swift references, 24 picker languages
+
+== XcodeGen (19:41:02)
+xcodegen: Version: 2.46.0
+
+== Generate the project (19:41:03)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (19:41:03)
+  MapLibre Native: https://github.com/maplibre/maplibre-gl-native-distribution @ 6.31.0
+
+resolved source packages: SWCompression, BitByteData, MapLibre Native
+(resolve: 27 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (19:41:30)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (600A45A3-B3A0-4A39-8A9C-5D051F9FDA9C) (Shutdown) 
+
+== Build for the simulator (19:41:33)
+xcodebuild build-sim failed after 76 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Place/PlaceFuel.swift:40:28: error: cannot find 'FuelGb' in scope
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Place/PlaceFuel.swift:58:21: error: cannot find 'FuelGb' in scope
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Place/PlaceFuel.swift:77:26: error: cannot find 'ClosingTime' in scope
+** TEST BUILD FAILED **
+--- tail of build-sim log ---
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Intents/TestSupport.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Shared/TransitActivityAttributes.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Shared/TransitActivityComponents.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/LiveActivity/TransitActivityController.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Shared/TransitActivityPalette.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/LiveActivity/TransitActivityState.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitBoardSheet.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitDetail.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitDetailSheet.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitGuidanceCard.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitModel.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitOptionsSheet.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD FAILED **
+
+
+The following build commands failed:
+	SwiftCompile normal arm64 Compiling\ NavChrome.swift,\ NavHaptics.swift,\ NavLifecycle.swift,\ NavModel.swift,\ NavVoice.swift,\ OSLogLog.swift,\ OfflineModel.swift,\ OfflineNetworkMonitor.swift,\ OfflineSheet.swift,\ OfflineStyleFactory.swift,\ OfflineTestSupport.swift,\ PhotosWebFetcher.swift,\ PlaceFuel.swift,\ PlaceModel.swift,\ PlaceSheet.swift,\ PopularTimesView.swift,\ PopularTimesWebFetcher.swift,\ PrivacyScreen.swift,\ PrivacySettings.swift,\ RegionDownloadInstaller.swift,\ RegionDownloader.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Nav/NavChrome.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Nav/NavHaptics.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Nav/NavLifecycle.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Nav/NavModel.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Nav/NavVoice.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Platform/OSLogLog.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Offline/OfflineModel.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Offline/OfflineNetworkMonitor.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Offline/OfflineSheet.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Offline/OfflineStyleFactory.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Offline/OfflineTestSupport.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Web/PhotosWebFetcher.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Place/PlaceFuel.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Place/PlaceModel.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Place/PlaceSheet.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Place/PopularTimesView.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Web/PopularTimesWebFetcher.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Settings/PrivacyScreen.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Settings/PrivacySettings.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Offline/RegionDownloadInstaller.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Offline/RegionDownloader.swift (in target 'Vela' from project 'Vela')
+	SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Place/PlaceFuel.swift (in target 'Vela' from project 'Vela')
+	Building project Vela for testing with scheme Vela
+(3 failures)
