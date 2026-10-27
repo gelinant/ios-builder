@@ -9,8 +9,15 @@ repo="$1"; lot="$2"; script="$3"; shift 3
 tag="${lot}-$(date +%Y%m%d-%H%M%S)-$RANDOM"
 bash "$here/scripts/push-src.sh" "$repo" "$lot" HEAD >/dev/null
 
-mkdir -p "${TMPDIR:-$HOME/.tmp}"
-work=$(mktemp -d "${TMPDIR:-$HOME/.tmp}/ios-builder.XXXXXX")
+tmp="${TMPDIR:-$HOME/.tmp}"
+mkdir -p "$tmp"
+# Clones of the results branch used to reach 13 GB each and fill the disk when a run was killed.
+# Sweep the ones a killed job left behind; live jobs keep their directory open.
+for stale in "$tmp"/ios-builder.*; do
+  [ -d "$stale" ] || continue
+  [ $(( $(date +%s) - $(stat -c %Y "$stale") )) -gt 7200 ] && rm -rf "$stale"
+done
+work=$(mktemp -d "$tmp/ios-builder.XXXXXX")
 trap 'rm -rf "$work"' EXIT
 git clone -q --depth 1 git@github.com:gelinant/ios-builder.git "$work/b"
 cd "$work/b"
@@ -24,7 +31,8 @@ echo "requested $tag (src/$lot, $script)" >&2
 # Wait up to 140 min for results/<tag>/STATUS: a full iOS suite now takes 60 to 90 min on a busy runner.
 for i in $(seq 1 560); do
   sleep 15
-  if git fetch -q origin results 2>/dev/null && git cat-file -e "FETCH_HEAD:$tag/STATUS" 2>/dev/null; then
+  # Shallow: the tip tree holds every published tag, the deep history is what made clones huge.
+  if git fetch -q --depth 1 origin results 2>/dev/null && git cat-file -e "FETCH_HEAD:$tag/STATUS" 2>/dev/null; then
     status=$(git show "FETCH_HEAD:$tag/STATUS")
     echo "STATUS: $status"
     echo "--- log tail ($tag/log.txt on branch results) ---"
