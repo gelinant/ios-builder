@@ -1,0 +1,3 @@
+src=src/q3-a11y-residual
+script=scripts/ios/ci-ipa.sh
+args=
