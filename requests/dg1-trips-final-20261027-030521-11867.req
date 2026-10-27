@@ -1,0 +1,3 @@
+src=src/dg1-trips-final
+script=scripts/ios/ci-ipa.sh
+args=
