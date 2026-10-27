@@ -1,0 +1,3 @@
+src=src/compile-dl2b
+script=scripts/ios/ci-compile.sh
+args=
