@@ -1,0 +1,3 @@
+src=src/l2-saved-export
+script=scripts/ios/ci-ipa.sh
+args=
