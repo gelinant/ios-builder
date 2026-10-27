@@ -1,0 +1,110 @@
+
+Welcome to Gradle 9.8.0!
+
+Here are the highlights of this release:
+ - Java 27 support
+ - Maven mirror settings reuse
+ - Linked problem locations in build output
+
+For more details see https://docs.gradle.org/9.8.0/release-notes.html
+
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.8.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :core-common:kmpPartiallyResolvedDependenciesChecker
+> Task :ios-shared:kmpPartiallyResolvedDependenciesChecker
+> Task :ios-shared:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :core-common:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :ios-shared:downloadKotlinNativeDistribution
+> Task :core-common:downloadKotlinNativeDistribution
+> Task :ios-shared:skieProcessSwiftSourcesIosSimulatorArm64
+> Task :ios-shared:skieCreateSkieDirectoriesDebugFrameworkIosSimulatorArm64
+> Task :ios-shared:skieCreateConfigurationDebugFrameworkIosSimulatorArm64
+> Task :ios-shared:skieProcessSwiftSourcesIosArm64
+> Task :ios-shared:skieCreateSkieDirectoriesReleaseFrameworkIosArm64
+> Task :ios-shared:skieCreateConfigurationReleaseFrameworkIosArm64
+> Task :ios-shared:jvmProcessResources NO-SOURCE
+> Task :ios-shared:processJvmMainResources SKIPPED
+> Task :ios-shared:jvmTestProcessResources
+> Task :ios-shared:processJvmTestResources SKIPPED
+> Task :ios-shared:iosSimulatorArm64ProcessResources NO-SOURCE
+> Task :ios-shared:skieProcessSwiftSourcesTestIosSimulatorArm64
+> Task :ios-shared:validateLocalSwiftPMDependencies
+> Task :ios-shared:computeLocalPackageDependencyInputFiles
+> Task :ios-shared:fingerprintSyntheticPackage
+> Task :ios-shared:generateSyntheticLinkageSwiftPMImportProjectForCinteropsAndLdDump SKIPPED
+> Task :ios-shared:serializeSwiftPMDependenciesMetadataForLockFiles
+> Task :ios-shared:fingerprintXcodebuildIphonesimulator
+> Task :core-common:compileKotlinIosSimulatorArm64 FROM-CACHE
+> Task :core-common:exportCrossCompilationMetadataForIosSimulatorArm64ApiElements
+> Task :core-common:compileKotlinIosArm64 FROM-CACHE
+> Task :core-common:exportCrossCompilationMetadataForIosArm64ApiElements
+> Task :core-common:compileKotlinJvm FROM-CACHE
+> Task :core-common:compileJvmMainJava NO-SOURCE
+> Task :core-common:jvmProcessResources NO-SOURCE
+> Task :core-common:processJvmMainResources SKIPPED
+> Task :core-common:jvmMainClasses UP-TO-DATE
+> Task :core-common:jvmJar
+> Task :core-common:serializeSwiftPMDependenciesMetadataForLockFiles
+> Task :core-common:generateUmbrellaPackageIdentifierBasedResolutionForDefault SKIPPED
+> Task :core-common:fetchUmbrellaPackageIdentifierForDefault SKIPPED
+> Task :ios-shared:compileKotlinIosSimulatorArm64
+> Task :ios-shared:skieUnpackSwiftSourcesDebugFrameworkIosSimulatorArm64
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+> Task :ios-shared:linkDebugFrameworkIosSimulatorArm64
+w: 'var VelaCore.ImportedList.description' was renamed to 'var VelaCore.ImportedList.description_' because of a name collision with an another declaration 'func VelaCore.KotlinBase.description() -> Swift.String'. Consider resolving the conflict either by changing the name in Kotlin, or via the @ObjCName annotation. You can also suppress this warning using the 'SuppressSkieWarning.NameCollision' configuration. However using renamed declarations from Swift is not recommended because their name will change if the conflict is resolved.
+    (at public final val description: kotlin.String? defined in app.vela.core.model.ImportedList from module <Vela:core-common>)
+w: 'var VelaCore.MapShape.description' was renamed to 'var VelaCore.MapShape.description_' because of a name collision with an another declaration 'func VelaCore.KotlinBase.description() -> Swift.String'. Consider resolving the conflict either by changing the name in Kotlin, or via the @ObjCName annotation. You can also suppress this warning using the 'SuppressSkieWarning.NameCollision' configuration. However using renamed declarations from Swift is not recommended because their name will change if the conflict is resolved.
+    (at public final val description: kotlin.String? defined in app.vela.core.model.MapShape from module <Vela:core-common>)
+w: 'var VelaCore.PlaceList.description' was renamed to 'var VelaCore.PlaceList.description_' because of a name collision with an another declaration 'func VelaCore.KotlinBase.description() -> Swift.String'. Consider resolving the conflict either by changing the name in Kotlin, or via the @ObjCName annotation. You can also suppress this warning using the 'SuppressSkieWarning.NameCollision' configuration. However using renamed declarations from Swift is not recommended because their name will change if the conflict is resolved.
+    (at public final val description: kotlin.String? defined in app.vela.core.model.PlaceList from module <Vela:core-common>)
+w: The number of threads 4 is more than the number of processors 3
+
+> Task :ios-shared:skieUploadAnalyticsDebugFrameworkIosSimulatorArm64
+> Task :ios-shared:compileKotlinIosArm64
+> Task :ios-shared:skieUnpackSwiftSourcesReleaseFrameworkIosArm64
+> Task :ios-shared:linkReleaseFrameworkIosArm64
+w: 'var VelaCore.ImportedList.description' was renamed to 'var VelaCore.ImportedList.description_' because of a name collision with an another declaration 'func VelaCore.KotlinBase.description() -> Swift.String'. Consider resolving the conflict either by changing the name in Kotlin, or via the @ObjCName annotation. You can also suppress this warning using the 'SuppressSkieWarning.NameCollision' configuration. However using renamed declarations from Swift is not recommended because their name will change if the conflict is resolved.
+    (at public final val description: kotlin.String? defined in app.vela.core.model.ImportedList from module <Vela:core-common>)
+w: 'var VelaCore.MapShape.description' was renamed to 'var VelaCore.MapShape.description_' because of a name collision with an another declaration 'func VelaCore.KotlinBase.description() -> Swift.String'. Consider resolving the conflict either by changing the name in Kotlin, or via the @ObjCName annotation. You can also suppress this warning using the 'SuppressSkieWarning.NameCollision' configuration. However using renamed declarations from Swift is not recommended because their name will change if the conflict is resolved.
+    (at public final val description: kotlin.String? defined in app.vela.core.model.MapShape from module <Vela:core-common>)
+w: 'var VelaCore.PlaceList.description' was renamed to 'var VelaCore.PlaceList.description_' because of a name collision with an another declaration 'func VelaCore.KotlinBase.description() -> Swift.String'. Consider resolving the conflict either by changing the name in Kotlin, or via the @ObjCName annotation. You can also suppress this warning using the 'SuppressSkieWarning.NameCollision' configuration. However using renamed declarations from Swift is not recommended because their name will change if the conflict is resolved.
+    (at public final val description: kotlin.String? defined in app.vela.core.model.PlaceList from module <Vela:core-common>)
+
+> Task :ios-shared:skieUploadAnalyticsReleaseFrameworkIosArm64
+> Task :ios-shared:iosSimulatorArm64MainKlibrary
+
+> Task :ios-shared:compileTestKotlinIosSimulatorArm64
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/search/SearchStoreTest.kt:93:40 Unnecessary non-null assertion (!!) on a non-null receiver of type 'LatLng'.
+
+> Task :ios-shared:syncPersistedPackageResolvedToSynthetic SKIPPED
+> Task :ios-shared:fetchSyntheticImportProjectPackages SKIPPED
+> Task :ios-shared:dumpXcodebuildArgsIphonesimulator SKIPPED
+> Task :ios-shared:convertSyntheticImportProjectIntoDefFileIphonesimulator
+> Task :ios-shared:compileKotlinJvm
+> Task :ios-shared:linkDebugTestIosSimulatorArm64
+w: The number of threads 4 is more than the number of processors 3
+
+> Task :ios-shared:compileJvmMainJava NO-SOURCE
+> Task :ios-shared:jvmMainClasses
+> Task :ios-shared:jvmJar
+> Task :ios-shared:iosSimulatorArm64Test
+
+> Task :ios-shared:compileTestKotlinJvm
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/search/SearchStoreTest.kt:93:40 Unnecessary non-null assertion (!!) on a non-null receiver of type 'LatLng'.
+
+> Task :ios-shared:compileJvmTestJava NO-SOURCE
+> Task :ios-shared:jvmTestClasses
+> Task :ios-shared:jvmTest
+
+[Incubating] Problems report is available at: file:///Users/runner/work/ios-builder/ios-builder/src/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.8.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 5m 2s
+40 actionable tasks: 37 executed, 3 from cache
