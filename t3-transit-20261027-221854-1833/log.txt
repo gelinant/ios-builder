@@ -1,0 +1,197 @@
+tag=t3-transit-20261027-221854-1833 src=src/t3-transit cc4d60a src: 8ba18b26 Use the Swift trip segment coordinates in the nearby tab and harden the UI scenarios
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: cc4d60a src: 8ba18b26 Use the Swift trip segment coordinates in the nearby tab and harden the UI scenarios
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610272219 (1793139586)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Kotlin: tests and the VelaCore framework (22:19:47)
+gradle: ok in 574 s
+kotlin jvmTest: 310 tests, 0 failures
+kotlin iosSimulatorArm64Test: 262 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  79M, static library 78066664 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  48M, static library 45318416 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (22:29:22)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 30.3M  100 30.3M    0     0  48.1M      0 --:--:-- --:--:-- --:--:-- 48.1M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (22:29:23)
+string catalog: 1423 keys, 24 resource locales (23 with translations), 24580 localized values, 104 Swift references, 24 picker languages
+
+== XcodeGen (22:29:25)
+xcodegen: Version: 2.46.0
+
+== Generate the project (22:29:26)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (22:29:26)
+  MapLibre Native: https://github.com/maplibre/maplibre-gl-native-distribution @ 6.31.0
+
+resolved source packages: BitByteData, SWCompression, MapLibre Native
+(resolve: 22 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (22:29:48)
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (582B068E-2ACA-440E-8D01-417AEDF26981) (Shutdown) 
+
+== Build for the simulator (22:29:49)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 78 s)
+simulator build: ok
+
+== Boot the simulator (22:31:07)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (22:34:59)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 82 s)
+tests: ok, Executed 124 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.54 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=18576
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=55998 rate=22050 wav_frames=55998
+
+== Launch and screenshot (22:36:21)
+app.vela.ios: 25620
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: B0FB151E-F8E1-478B-A07D-F813C64D333D (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (22:37:21)
+xcodebuild uitest failed after 302 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TransitCitymapperUITests.swift:84: error: -[VelaUITests.TransitCitymapperUITests testSegmentTimeChangeShowsANewOptionSet] : XCTAssertTrue failed - no shifted query label
+Test Case '-[VelaUITests.TransitCitymapperUITests testSegmentTimeChangeShowsANewOptionSet]' failed (27.795 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TransitCitymapperUITests.swift:54: error: -[VelaUITests.TransitCitymapperUITests testTripScreenShowsSegmentCardsAndNextDepartures] : XCTAssertGreaterThan failed: ("0") is not greater than ("0") - no scheduled mark
+Test Case '-[VelaUITests.TransitCitymapperUITests testTripScreenShowsSegmentCardsAndNextDepartures]' failed (25.272 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =    15.58s Waiting 30.0s for "transit-card" Other to exist
+    t =    16.63s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-card" Other`
+    t =    16.64s         Checking existence of `"transit-card" Other`
+    t =    17.39s Waiting 20.0s for "transit-trip-open" Button to exist
+    t =    18.42s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-trip-open" Button`
+    t =    18.42s         Checking existence of `"transit-trip-open" Button`
+    t =    18.70s Tap "transit-trip-open" Button
+    t =    18.70s     Wait for app.vela.ios to idle
+    t =    18.71s     Find the "transit-trip-open" Button
+    t =    18.83s     Check for interrupting elements affecting "transit-trip-open" Button
+    t =    18.94s     Synthesize event
+    t =    19.44s     Wait for app.vela.ios to idle
+    t =    19.70s Waiting 20.0s for "transit-trip-close" Button to exist
+    t =    20.75s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-trip-close" Button`
+    t =    20.75s         Checking existence of `"transit-trip-close" Button`
+    t =    20.98s Checking existence of `"transit-trip-debug" StaticText`
+    t =    21.15s Find the "transit-trip-debug" StaticText
+    t =    21.38s Checking existence of `"transit-trip-debug" StaticText`
+    t =    21.53s Find the "transit-trip-debug" StaticText
+    t =    21.76s Checking existence of `"transit-trip-debug" StaticText`
+    t =    22.00s Find the "transit-trip-debug" StaticText
+    t =    22.24s Checking existence of `"transit-trip-debug" StaticText`
+    t =    22.45s Find the "transit-trip-debug" StaticText
+UITEST transit_trip_segments=4
+UITEST transit_trip_rides=1
+UITEST transit_trip_header=4
+    t =    22.63s Checking existence of `"transit-trip-debug" StaticText`
+    t =    22.82s Find the "transit-trip-debug" StaticText
+UITEST transit_trip_fixture=1
+    t =    23.00s Checking existence of `"transit-trip-debug" StaticText`
+    t =    23.19s Find the "transit-trip-debug" StaticText
+    t =    23.38s Checking existence of `"transit-trip-debug" StaticText`
+    t =    23.61s Find the "transit-trip-debug" StaticText
+    t =    23.78s Get number of matches for: Elements matching predicate '"transit-trip-segment" IN identifiers'
+    t =    23.95s Checking existence of `"Next departures" StaticText`
+    t =    24.14s Get number of matches for: Elements matching predicate 'label CONTAINS "Live"'
+    t =    24.33s Get number of matches for: Elements matching predicate 'label CONTAINS "Scheduled"'
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TransitCitymapperUITests.swift:54: error: -[VelaUITests.TransitCitymapperUITests testTripScreenShowsSegmentCardsAndNextDepartures] : XCTAssertGreaterThan failed: ("0") is not greater than ("0") - no scheduled mark
+    t =    25.01s Tear Down
+Test Case '-[VelaUITests.TransitCitymapperUITests testTripScreenShowsSegmentCardsAndNextDepartures]' failed (25.272 seconds).
+Test Suite 'TransitCitymapperUITests' failed at 2026-10-27 22:41:36.519.
+	 Executed 5 tests, with 1 test skipped and 2 failures (0 unexpected) in 200.994 (201.000) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-27 22:41:36.520.
+	 Executed 5 tests, with 1 test skipped and 2 failures (0 unexpected) in 200.994 (201.001) seconds
+Test Suite 'Selected tests' failed at 2026-10-27 22:41:36.520.
+	 Executed 5 tests, with 1 test skipped and 2 failures (0 unexpected) in 200.994 (201.002) seconds
+2026-10-27 22:42:17.212 xcodebuild[27154:79852] [MT] IDETestOperationsObserverDebug: 268.902 elapsed -- Testing started completed.
+2026-10-27 22:42:17.216 xcodebuild[27154:79852] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-27 22:42:17.216 xcodebuild[27154:79852] [MT] IDETestOperationsObserverDebug: 268.902 sec, +268.902 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.khMOwXe63U/uitest.xcresult
+
+Failing tests:
+	TransitCitymapperUITests.testSegmentTimeChangeShowsANewOptionSet()
+	TransitCitymapperUITests.testTripScreenShowsSegmentCardsAndNextDepartures()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+scripts/ios/ci-ipa.sh: line 273: 27152 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui TransitCitymapperUITests.testNearbyLinesTabListsTheStopsLines: passed (32.649 seconds)
+ui TransitCitymapperUITests.testSegmentTimeChangeShowsANewOptionSet: failed (27.795 seconds)
+ui TransitCitymapperUITests.testSkipLetsTheRunPassAndAdvancesTheHeader: passed (29.639 seconds)
+ui TransitCitymapperUITests.testTripScreenShowsSegmentCardsAndNextDepartures: failed (25.272 seconds)
+ui transit_trip_fixture=1
+ui transit_trip_header_after_skip=3
+ui transit_trip_header_before_skip=4
+ui transit_trip_header=4
+ui transit_trip_nearby_lines=3
+ui transit_trip_nearby_rows=3
+ui transit_trip_rides=1
+ui transit_trip_segments=4
+ui transit_trip_shift_options=2
+ui transit_trip_skip_options=2
+ui screenshots: 
+
+== Route replay (22:42:25)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: B0FB151E-F8E1-478B-A07D-F813C64D333D (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: B0FB151E-F8E1-478B-A07D-F813C64D333D (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=48607 parsed=true times=false
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (22:43:49)
+285385
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 101271 bytes
+directions reply: directions-drive-sf 108677 bytes
+directions reply: directions-walk-sf 34605 bytes
+search reply: 285385 bytes, 36 feature ids
+failed steps: ui-scenarios
