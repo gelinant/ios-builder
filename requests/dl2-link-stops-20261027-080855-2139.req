@@ -1,0 +1,3 @@
+src=src/dl2-link-stops
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=IncomingLinksUITests
