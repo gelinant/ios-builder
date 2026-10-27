@@ -1,0 +1,59 @@
+commit: ec72c05 src: cbd79e32 iOS saved: finish the export and parking UI scenarios
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610271651 (1793119907)
+java: openjdk version "17.0.20.1" 2026-08-18
+gradle: ok in 514 s
+kotlin jvmTest: 192 tests, 0 failures
+kotlin iosSimulatorArm64Test: 171 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  76M, static library 75295016 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  44M, static library 42456840 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 1415 keys, 24 resource locales (23 with translations), 24572 localized values, 55 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+simulator build: ok
+voice fixture:  78M in the Debug app
+tests: ok, Executed 87 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.54 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_SYNTH samples=54904 rate=22050 wav_frames=54904
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: ok
+ui SavedExportUITests.testFindMyCarOpensTheSpotWithDirections: passed (40.240 seconds)
+ui SavedExportUITests.testListExportImportsBackFromTheShareSheet: passed (104.099 seconds)
+ui saved_export_roundtrip=1
+ui saved_export_sheet=opened
+ui saved_find_my_car=opened
+ui screenshots: 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: details: page raw=62955 parsed=true times=false
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 76198 bytes
+directions reply: directions-drive-sf 114454 bytes
+directions reply: directions-walk-sf 34601 bytes
+search reply: 271650 bytes, 34 feature ids
+ipa: Vela-unsigned.ipa 20593961 bytes ( 20M)
+app frameworks: MapLibre.framework SherpaOnnxC.framework 
+app binary: arm64, 17912288 bytes
+live activity extension: PlugIns/NavActivityExtension.appex present in IPA, 220888 bytes
+extension plist CFBundleIdentifier: app.vela.ios.navactivity
+extension plist NSExtensionPointIdentifier: com.apple.widgetkit-extension
+extension signing: none
+kotlin code in the device binary: yes
+plist CFBundleIdentifier: app.vela.ios
+plist CFBundleDisplayName: Vela
+plist CFBundleShortVersionString: 0.1.202610271651
+plist MinimumOSVersion: 17.0
+plist UIBackgroundModes: ["location","audio"]
+plist NSSupportsLiveActivities: true
