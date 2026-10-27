@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="FullAddressTest[jvm]" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-25T00:08:54.833Z" hostname="sat12-bq155-6871c2a0-3cdb-40ae-94f1-8e79bb179f9d-1E6018CF832B.local" time="0.001">
-  <properties/>
-  <testcase name="a place named by its street line gets the whole address[jvm]" classname="app.vela.core.model.FullAddressTest" time="0.001"/>
-  <testcase name="an address that is already whole and a business are left alone[jvm]" classname="app.vela.core.model.FullAddressTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

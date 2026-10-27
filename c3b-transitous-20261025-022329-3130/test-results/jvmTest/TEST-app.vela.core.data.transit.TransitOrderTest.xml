@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TransitOrderTest[jvm]" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:28:39.243Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.002">
-  <properties/>
-  <testcase name="fewer transfers puts the fewest rides first and keeps the order on ties[jvm]" classname="app.vela.core.data.transit.TransitOrderTest" time="0.001"/>
-  <testcase name="less walking puts the least walking first[jvm]" classname="app.vela.core.data.transit.TransitOrderTest" time="0.001"/>
-  <testcase name="best keeps the planner's order and minutes read hours[jvm]" classname="app.vela.core.data.transit.TransitOrderTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

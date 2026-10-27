@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="iosSimulatorArm64Test.app.vela.core.util.JitterTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-24T21:50:53.431Z" hostname="sjc20-bb710-479ea67b-7607-4c7f-9c19-d2fa23e49c0b-8A252CE6F928.local" time="0.001">
-  <properties/>
-  <testcase name="staysInsideTheSpread[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.util.JitterTest" time="0.0"/>
-  <testcase name="actuallySpreads[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.util.JitterTest" time="0.0"/>
-  <testcase name="zeroSpreadIsExact[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.util.JitterTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

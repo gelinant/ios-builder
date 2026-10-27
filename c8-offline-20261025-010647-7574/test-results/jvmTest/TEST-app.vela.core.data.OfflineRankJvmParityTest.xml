@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="OfflineRankJvmParityTest[jvm]" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-25T01:10:06.305Z" hostname="sat12-bq147-4876d38b-ad50-421c-bb24-80d3733ba5ba-82D4034FD8E1.local" time="0.038">
-  <properties/>
-  <testcase name="streetIdsKeepTheDefaultLocaleFormat[jvm]" classname="app.vela.core.data.OfflineRankJvmParityTest" time="0.009"/>
-  <testcase name="theDecompositionTableIsTheJdks[jvm]" classname="app.vela.core.data.OfflineRankJvmParityTest" time="0.029"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

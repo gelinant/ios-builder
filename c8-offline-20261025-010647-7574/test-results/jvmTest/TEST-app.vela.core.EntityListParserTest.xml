@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="EntityListParserTest[jvm]" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-25T01:10:05.963Z" hostname="sat12-bq147-4876d38b-ad50-421c-bb24-80d3733ba5ba-82D4034FD8E1.local" time="0.021">
-  <properties/>
-  <testcase name="garbage and non-list payloads return null never throw[jvm]" classname="app.vela.core.EntityListParserTest" time="0.009"/>
-  <testcase name="parses title description author and every place with its note[jvm]" classname="app.vela.core.EntityListParserTest" time="0.011"/>
-  <testcase name="small feature ids are zero-padded to the canonical 16-hex form[jvm]" classname="app.vela.core.EntityListParserTest" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

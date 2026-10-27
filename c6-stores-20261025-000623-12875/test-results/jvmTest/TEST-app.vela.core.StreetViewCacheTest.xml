@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="StreetViewCacheTest[jvm]" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-25T00:08:54.615Z" hostname="sat12-bq155-6871c2a0-3cdb-40ae-94f1-8e79bb179f9d-1E6018CF832B.local" time="0.006">
-  <properties/>
-  <testcase name="a stored pano comes back by id and by position and clear removes it[jvm]" classname="app.vela.core.StreetViewCacheTest" time="0.005"/>
-  <testcase name="metadata with no image is not offered[jvm]" classname="app.vela.core.StreetViewCacheTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

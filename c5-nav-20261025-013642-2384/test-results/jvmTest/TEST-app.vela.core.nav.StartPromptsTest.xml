@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="StartPromptsTest[jvm]" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-25T01:39:45.774Z" hostname="sat12-bq161-b54d4ecc-ce22-4452-9731-9ad6e0a7025e-5A78E3DE7048.local" time="0.008">
-  <properties/>
-  <testcase name="theLinesSpokenAlongTheDriveWerePredictedTheFixBefore[jvm]" classname="app.vela.core.nav.StartPromptsTest" time="0.005"/>
-  <testcase name="theFirstTurnsSpokenAtStartingSpeedAreAllPrepared[jvm]" classname="app.vela.core.nav.StartPromptsTest" time="0.003"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

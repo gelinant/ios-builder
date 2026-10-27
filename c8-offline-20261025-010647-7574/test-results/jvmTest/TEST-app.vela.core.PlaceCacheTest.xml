@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="PlaceCacheTest[jvm]" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-25T01:10:06.054Z" hostname="sat12-bq147-4876d38b-ad50-421c-bb24-80d3733ba5ba-82D4034FD8E1.local" time="0.026">
-  <properties/>
-  <testcase name="an offline result finds the copy saved online by name and position[jvm]" classname="app.vela.core.PlaceCacheTest" time="0.024"/>
-  <testcase name="a copy past its age is a miss and trim drops it[jvm]" classname="app.vela.core.PlaceCacheTest" time="0.001"/>
-  <testcase name="the same name across town is another place[jvm]" classname="app.vela.core.PlaceCacheTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

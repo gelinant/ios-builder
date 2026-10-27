@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="KmpTest[jvm]" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-24T22:42:44.972Z" hostname="sjc22-be113-8a739075-7bd3-4e4b-9e2a-0b8acce75293-36ACC1F7D0A2.local" time="0.002">
-  <properties/>
-  <testcase name="toRadiansMatchesTheJdk[jvm]" classname="app.vela.core.util.KmpTest" time="0.0"/>
-  <testcase name="toDegreesMatchesTheJdk[jvm]" classname="app.vela.core.util.KmpTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

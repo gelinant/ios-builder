@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SuggestCalibrationTest[jvm]" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:28:38.608Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.0">
-  <properties/>
-  <testcase name="a remote suggest path merges over the compiled ones[jvm]" classname="app.vela.core.config.SuggestCalibrationTest" time="0.0"/>
-  <testcase name="a remote suggest endpoint and template are adopted[jvm]" classname="app.vela.core.config.SuggestCalibrationTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

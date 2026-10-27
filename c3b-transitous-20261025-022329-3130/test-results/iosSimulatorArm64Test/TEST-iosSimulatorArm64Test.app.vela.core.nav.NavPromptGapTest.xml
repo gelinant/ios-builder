@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="iosSimulatorArm64Test.app.vela.core.nav.NavPromptGapTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-25T02:27:53.377Z" hostname="sjc20-cw712-06a10ddc-5ae1-4104-8464-908fe625e7b7-CA11DFD3250D.local" time="0.006">
-  <properties/>
-  <testcase name="a band reached seconds after the first prompt is not said again[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.nav.NavPromptGapTest" time="0.005"/>
-  <testcase name="a far first prompt leaves the near band to be said[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.nav.NavPromptGapTest" time="0.0"/>
-  <testcase name="a first line the turn would cut keeps its lanes and drops the sign tail[iosSimulatorArm64]" classname="iosSimulatorArm64Test.app.vela.core.nav.NavPromptGapTest" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

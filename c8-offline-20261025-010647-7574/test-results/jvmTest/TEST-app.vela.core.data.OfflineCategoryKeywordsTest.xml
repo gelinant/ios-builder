@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="OfflineCategoryKeywordsTest[jvm]" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-25T01:10:06.291Z" hostname="sat12-bq147-4876d38b-ad50-421c-bb24-80d3733ba5ba-82D4034FD8E1.local" time="0.003">
-  <properties/>
-  <testcase name="pluralFallback[jvm]" classname="app.vela.core.data.OfflineCategoryKeywordsTest" time="0.002"/>
-  <testcase name="chipQueriesExpand[jvm]" classname="app.vela.core.data.OfflineCategoryKeywordsTest" time="0.001"/>
-  <testcase name="newExpansions[jvm]" classname="app.vela.core.data.OfflineCategoryKeywordsTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

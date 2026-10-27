@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ClockFormatTest[jvm]" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-24T23:51:15.269Z" hostname="sjc22-bt147-3cca614e-fa61-4a26-a6d7-3ce28bbcc937-76B3E1E764B2.local" time="0.002">
-  <properties/>
-  <testcase name="twentyFourHourClockConverts[jvm]" classname="app.vela.core.data.ClockFormatTest" time="0.001"/>
-  <testcase name="otherTextIsUnchanged[jvm]" classname="app.vela.core.data.ClockFormatTest" time="0.0"/>
-  <testcase name="twelveHourClockLeavesTextAlone[jvm]" classname="app.vela.core.data.ClockFormatTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
