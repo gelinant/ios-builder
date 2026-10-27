@@ -1,0 +1,3 @@
+src=src/nav-life
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=NavAlertsUITests VELA_SKIP_ARCHIVE=1
