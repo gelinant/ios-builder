@@ -1,0 +1,3 @@
+src=src/wld-1
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=WorldLayersUITests VELA_SKIP_ARCHIVE=1
