@@ -1,0 +1,121 @@
+tag=wld-1-20261028-110902-546 src=src/wld-1 57d784e src: 16f7d093 iOS: add the shared host for the world layers
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 57d784e src: 16f7d093 iOS: add the shared host for the world layers
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610281110 (1793185834)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (11:10:34)
+notices: ok, 26 entries (7 libraries, 18 data sources)
+
+== Kotlin: tests and the VelaCore framework (11:10:35)
+gradle: ok in 656 s
+kotlin jvmTest: 434 tests, 0 failures
+kotlin iosSimulatorArm64Test: 338 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  82M, static library 81158232 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  51M, static library 48437248 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (11:21:32)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 51 30.3M   51 15.4M    0     0  27.1M      0  0:00:01 --:--:--  0:00:01 27.1M100 30.3M  100 30.3M    0     0  40.1M      0 --:--:-- --:--:-- --:--:-- 80.0M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (11:21:33)
+string catalog: 1444 keys, 24 resource locales (23 with translations), 24601 localized values, 184 Swift references, 24 picker languages
+
+== XcodeGen (11:21:34)
+xcodegen: Version: 2.46.0
+
+== Generate the project (11:21:35)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (11:21:35)
+  SWCompression: https://github.com/tsolomko/SWCompression @ 4.9.1
+
+resolved source packages: MapLibre Native, BitByteData, SWCompression
+(resolve: 17 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (11:21:52)
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (582B068E-2ACA-440E-8D01-417AEDF26981) (Shutdown) 
+
+== Build for the simulator (11:21:55)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 105 s)
+simulator build: ok
+
+== Boot the simulator (11:23:40)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (11:27:13)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 115 s)
+tests: ok, Executed 151 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Navigate_to_coffee samples=18948
+VOICE_ASR_PLAN action=navigate query=coffee
+VOICE_SYNTH samples=57235 rate=22050 wav_frames=57235
+
+== Launch and screenshot (11:29:08)
+app.vela.ios: 29447
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: C4994E29-D457-49DF-B570-3D8203910405 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (11:29:54)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(uitest: 143 s)
+ui scenarios: ok
+ui WorldLayersUITests.testWorldLayersStartHidden: passed (59.454 seconds)
+scripts/ios/ci-ipa.sh: line 286: 30440 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui world_layers=0
+ui world_requests=0
+ui screenshots: 
+
+== Route replay (11:32:20)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: C4994E29-D457-49DF-B570-3D8203910405 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: C4994E29-D457-49DF-B570-3D8203910405 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (11:33:37)
+251936
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 90785 bytes
+directions reply: directions-drive-sf 125471 bytes
+directions reply: directions-walk-sf 43564 bytes
+search reply: 251936 bytes, 33 feature ids
