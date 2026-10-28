@@ -1,0 +1,22 @@
+tag=g1-globe-20261028-132357-18120 src=src/g1-globe 48d5340 src: 99844500 G-1: reproducible globe xcframework fetch and throwaway spike app
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+G-1 globe spike, MapLibre Native ios-v2026.10.19-globe (MLN_WITH_GLOBE)
+[globe] 13:24:54 fetching the pinned globe xcframework
+maplibre-globe: downloading MapLibre.dynamic.xcframework.zip (169968107 bytes) from ios-v2026.10.19-globe
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  2  162M    2 4684k    0     0  11.0M      0  0:00:14 --:--:--  0:00:14 11.0M 52  162M   52 85.8M    0     0  60.7M      0  0:00:02  0:00:01  0:00:01 81.2M100  162M  100  162M    0     0  72.2M      0  0:00:02  0:00:02 --:--:-- 86.1M
+maplibre-globe ios-v2026.10.19-globe: ready at /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike/Vendor/MapLibre.xcframework (581M on disk)
+xcframework: 580 MiB on disk (581M), fetched in 6s
+[globe] 13:25:00 installing XcodeGen 2.46.0
+xcodegen: Version: 2.46.0
+[globe] 13:25:01 building the size baseline
+[globe] 13:25:38 building the spike app and its UI test
+/Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike/App/Autopilot.swift:165:13: error: 'setCenterCoordinate(_:animated:)' has been renamed to 'setCenter(_:animated:)'
+/Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike/App/GlobeModel.swift:47:14: error: 'rotateEnabled' has been renamed to 'isRotateEnabled'
+/Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike/App/GlobeModel.swift:48:14: error: 'pitchEnabled' has been renamed to 'isPitchEnabled'
+/Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike/App/GlobeModel.swift:49:14: error: 'zoomEnabled' has been renamed to 'isZoomEnabled'
+/Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike/App/GlobeModel.swift:109:21: error: 'setCenterCoordinate(_:animated:)' has been renamed to 'setCenter(_:animated:)'
+FAILED: the pre-release did not build the spike app
