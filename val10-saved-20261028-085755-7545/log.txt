@@ -1,0 +1,200 @@
+tag=val10-saved-20261028-085755-7545 src=src/val10-saved 06108ac src: cb2a4f36 iOS tests: type into a field that already has focus
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 06108ac src: cb2a4f36 iOS tests: type into a field that already has focus
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610280858 (1793177937)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (08:58:58)
+notices: ok, 26 entries (7 libraries, 18 data sources)
+
+== Kotlin: tests and the VelaCore framework (08:58:58)
+gradle: ok in 515 s
+kotlin jvmTest: 407 tests, 0 failures
+kotlin iosSimulatorArm64Test: 330 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  81M, static library 80086416 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  50M, static library 47395944 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (09:07:33)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 30.3M  100 30.3M    0     0  41.6M      0 --:--:-- --:--:-- --:--:-- 41.6M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (09:07:34)
+string catalog: 1444 keys, 24 resource locales (23 with translations), 24601 localized values, 184 Swift references, 24 picker languages
+
+== XcodeGen (09:07:36)
+xcodegen: Version: 2.46.0
+
+== Generate the project (09:07:37)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (09:07:38)
+  SWCompression: https://github.com/tsolomko/SWCompression @ 4.9.1
+
+resolved source packages: MapLibre Native, BitByteData, SWCompression
+(resolve: 18 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (09:07:56)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (600A45A3-B3A0-4A39-8A9C-5D051F9FDA9C) (Shutdown) 
+
+== Build for the simulator (09:08:00)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 102 s)
+simulator build: ok
+
+== Boot the simulator (09:09:42)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (09:13:32)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 104 s)
+tests: ok, Executed 144 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=navigate_to_coffee samples=18948
+VOICE_ASR_PLAN action=navigate query=coffee
+VOICE_SYNTH samples=57568 rate=22050 wav_frames=57568
+
+== Launch and screenshot (09:15:16)
+app.vela.ios: 27576
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 5EF9478F-6591-426D-9959-80CB8A8249C1 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (09:16:19)
+xcodebuild uitest failed after 692 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SavedFinishingUITests.swift:263: error: -[VelaUITests.SavedFinishingUITests testListEditingSelectionAndSound] : Failed to synthesize event: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: TextField, {{32.0, 77.7}, {338.0, 22.0}}, identifier: 'saved-name-field', placeholderValue: 'List name', value: UI Finish
+Test Case '-[VelaUITests.SavedFinishingUITests testListEditingSelectionAndSound]' failed (226.269 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =   205.68s     Checking existence of `"route-debug" StaticText`
+    t =   207.27s     Checking existence of `"route-debug" StaticText`
+    t =   207.50s     Checking existence of `"route-debug" StaticText`
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SavedFinishingUITests.swift:86: -[VelaUITests.SavedFinishingUITests testSavedLineReopensBesideComputedRoutes] : Test skipped - OSRM did not answer for the saved line: missing
+    t =   207.99s Tear Down
+Test Case '-[VelaUITests.SavedFinishingUITests testSavedLineReopensBesideComputedRoutes]' skipped (209.363 seconds).
+Test Case '-[VelaUITests.SavedFinishingUITests testTakeoutFixtureImportsIntoNamedList]' started.
+    t =     0.00s Start Test at 2026-10-28 09:26:47.383
+    t =     0.94s Set Up
+    t =     0.97s     Open app.vela.ios
+    t =     0.97s         Launch app.vela.ios
+    t =     0.97s             Terminate app.vela.ios:40015
+2026-10-28 09:26:50.877 xcodebuild[29431:84716] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-28 09:26:50.878 xcodebuild[29431:84716] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     5.24s             Setting up automation session
+    t =     8.94s             Wait for app.vela.ios to idle
+    t =    14.84s     Waiting 60.0s for "search-field" TextField to exist
+    t =    15.90s         Checking `Expect predicate `existsNoRetry == 1` for object "search-field" TextField`
+    t =    15.91s             Checking existence of `"search-field" TextField`
+    t =    16.36s     Tap "saved-open" Button
+    t =    16.36s         Wait for app.vela.ios to idle
+    t =    16.37s         Find the "saved-open" Button
+    t =    16.48s         Check for interrupting elements affecting "saved-open" Button
+    t =    16.58s         Synthesize event
+    t =    16.95s         Wait for app.vela.ios to idle
+    t =    19.23s     Checking existence of `"saved-import-message" StaticText`
+    t =    19.82s     Swipe up Target Application 'app.vela.ios'
+    t =    19.82s         Wait for app.vela.ios to idle
+    t =    19.87s         Find the Target Application 'app.vela.ios'
+    t =    20.24s         Check for interrupting elements affecting "Vela" Application
+    t =    20.45s         Synthesize event
+    t =    20.88s         Wait for app.vela.ios to idle
+    t =    21.65s     Checking existence of `"saved-import-message" StaticText`
+    t =    21.91s     Find the "saved-import-message" StaticText
+    t =    22.23s     Find the "saved-import-message" StaticText
+    t =    22.47s     Checking existence of `"TakeoutFixture, 2 places" Button`
+    t =    22.70s     Find the "TakeoutFixture, 2 places" Button
+    t =    23.23s Added attachment named 'saved-import'
+UITEST saved_takeout_places=2
+    t =    23.24s Tear Down
+Test Case '-[VelaUITests.SavedFinishingUITests testTakeoutFixtureImportsIntoNamedList]' passed (23.501 seconds).
+Test Suite 'SavedFinishingUITests' failed at 2026-10-28 09:27:10.883.
+	 Executed 4 tests, with 1 test skipped and 1 failure (0 unexpected) in 586.827 (586.839) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-28 09:27:10.885.
+	 Executed 4 tests, with 1 test skipped and 1 failure (0 unexpected) in 586.827 (586.843) seconds
+Test Suite 'Selected tests' failed at 2026-10-28 09:27:10.885.
+	 Executed 4 tests, with 1 test skipped and 1 failure (0 unexpected) in 586.827 (586.847) seconds
+2026-10-28 09:27:48.589 xcodebuild[29431:84716] [MT] IDETestOperationsObserverDebug: 658.598 elapsed -- Testing started completed.
+2026-10-28 09:27:48.590 xcodebuild[29431:84716] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-28 09:27:48.590 xcodebuild[29431:84716] [MT] IDETestOperationsObserverDebug: 658.598 sec, +658.598 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.2zKH29Hts8/uitest.xcresult
+
+Failing tests:
+	SavedFinishingUITests.testListEditingSelectionAndSound()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui SavedFinishingUITests.testHomeAndWorkOpenFromSavedAndMap: passed (127.694 seconds)
+ui SavedFinishingUITests.testListEditingSelectionAndSound: failed (226.269 seconds)
+ui SavedFinishingUITests.testTakeoutFixtureImportsIntoNamedList: passed (23.501 seconds)
+scripts/ios/ci-ipa.sh: line 286: 29428 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui saved_map_home=directions_opened
+ui saved_selection=1
+ui saved_shortcuts=home_and_work_opened
+ui saved_takeout_places=2
+ui screenshots: 
+
+== Route replay (09:27:57)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 5EF9478F-6591-426D-9959-80CB8A8249C1 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 5EF9478F-6591-426D-9959-80CB8A8249C1 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=27499 parsed=true times=false
+place load: details: nothing
+place load: details: page raw=27499 parsed=true times=false
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=27499 parsed=true times=false
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=-1 parsed=false times=false
+place load: details: nothing
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (09:29:36)
+277851
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 85075 bytes
+directions reply: directions-drive-sf 119860 bytes
+directions reply: directions-walk-sf 46342 bytes
+search reply: 277851 bytes, 37 feature ids
+failed steps: ui-scenarios
