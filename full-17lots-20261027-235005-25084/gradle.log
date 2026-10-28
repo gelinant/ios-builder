@@ -1,0 +1,208 @@
+
+Welcome to Gradle 9.8.0!
+
+Here are the highlights of this release:
+ - Java 27 support
+ - Maven mirror settings reuse
+ - Linked problem locations in build output
+
+For more details see https://docs.gradle.org/9.8.0/release-notes.html
+
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.8.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :core-common:kmpPartiallyResolvedDependenciesChecker
+> Task :ios-shared:kmpPartiallyResolvedDependenciesChecker
+> Task :ios-shared:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :core-common:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :ios-shared:downloadKotlinNativeDistribution
+> Task :core-common:downloadKotlinNativeDistribution
+> Task :ios-shared:skieProcessSwiftSourcesIosSimulatorArm64
+> Task :ios-shared:skieCreateSkieDirectoriesDebugFrameworkIosSimulatorArm64
+> Task :ios-shared:skieCreateConfigurationDebugFrameworkIosSimulatorArm64
+> Task :ios-shared:skieProcessSwiftSourcesIosArm64
+> Task :ios-shared:skieCreateSkieDirectoriesReleaseFrameworkIosArm64
+> Task :ios-shared:skieCreateConfigurationReleaseFrameworkIosArm64
+> Task :ios-shared:jvmProcessResources NO-SOURCE
+> Task :ios-shared:processJvmMainResources SKIPPED
+> Task :ios-shared:jvmTestProcessResources
+> Task :ios-shared:processJvmTestResources SKIPPED
+> Task :ios-shared:iosSimulatorArm64ProcessResources NO-SOURCE
+> Task :ios-shared:skieProcessSwiftSourcesTestIosSimulatorArm64
+> Task :ios-shared:validateLocalSwiftPMDependencies
+> Task :ios-shared:computeLocalPackageDependencyInputFiles
+> Task :ios-shared:fingerprintSyntheticPackage
+> Task :ios-shared:generateSyntheticLinkageSwiftPMImportProjectForCinteropsAndLdDump SKIPPED
+> Task :ios-shared:serializeSwiftPMDependenciesMetadataForLockFiles
+> Task :ios-shared:fingerprintXcodebuildIphonesimulator
+> Task :core-common:compileKotlinIosSimulatorArm64
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/PhotonGeocoder.kt:81:32 Unnecessary non-null assertion (!!) on a non-null receiver of type 'String'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/RouteGeometry.kt:560:29 Condition is always 'true'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/ValhallaRouter.kt:490:29 Unnecessary non-null assertion (!!) on a non-null receiver of type 'ValhallaRouter.Run'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/google/GoogleMapsDataSource.kt:714:78 Unnecessary non-null assertion (!!) on a non-null receiver of type 'Route'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/google/GoogleMapsDataSource.kt:731:52 Unnecessary non-null assertion (!!) on a non-null receiver of type 'Route'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/google/GoogleMapsDataSource.kt:794:77 Unnecessary safe call on a non-null receiver of type 'Route'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/google/GoogleMapsDataSource.kt:820:81 Unnecessary non-null assertion (!!) on a non-null receiver of type 'Route'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/google/GoogleMapsDataSource.kt:950:84 Unnecessary non-null assertion (!!) on a non-null receiver of type 'Route'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/google/GoogleMapsSource.kt:261:75 Unnecessary non-null assertion (!!) on a non-null receiver of type 'LatLng'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/google/GoogleMapsSource.kt:375:55 Redundant call of conversion method.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/naming/HybridRoute.kt:366:55 Unnecessary non-null assertion (!!) on a non-null receiver of type 'String'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/naming/LineNamer.kt:152:47 Unnecessary safe call on a non-null receiver of type 'LineNamer.NameRun'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/transit/Transitous.kt:552:60 Unnecessary non-null assertion (!!) on a non-null receiver of type 'Long'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/transit/Transitous.kt:557:48 Unnecessary non-null assertion (!!) on a non-null receiver of type 'Long'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/transit/Transitous.kt:557:63 Unnecessary non-null assertion (!!) on a non-null receiver of type 'Long'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/nav/NavEngine.kt:517:80 Unnecessary non-null assertion (!!) on a non-null receiver of type 'StopAhead'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/nav/NavEngine.kt:518:43 Unnecessary non-null assertion (!!) on a non-null receiver of type 'StopAhead'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/nav/NavSession.kt:291:41 Unnecessary safe call on a non-null receiver of type 'Double'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/iosMain/kotlin/app/vela/core/platform/RandomFile.ios.kt:76:91 Redundant call of conversion method.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/iosMain/kotlin/app/vela/core/platform/RandomFile.ios.kt:95:112 Redundant call of conversion method.
+
+> Task :core-common:exportCrossCompilationMetadataForIosSimulatorArm64ApiElements
+
+> Task :ios-shared:compileKotlinIosSimulatorArm64
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonMain/kotlin/app/vela/ios/MapSession.kt:366:84 Redundant call of conversion method.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonMain/kotlin/app/vela/ios/MapSession.kt:368:87 Redundant call of conversion method.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonMain/kotlin/app/vela/ios/MapSession.kt:369:80 Redundant call of conversion method.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonMain/kotlin/app/vela/ios/replay/TripDiagnostics.kt:54:29 Return in function with expression body and without explicit return type. Use block body '{...}' or add an explicit return type. This will become an error in language version 2.5. See https://youtrack.jetbrains.com/issue/KTLC-288.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonMain/kotlin/app/vela/ios/replay/TripsStore.kt:136:31 Return in function with expression body and without explicit return type. Use block body '{...}' or add an explicit return type. This will become an error in language version 2.5. See https://youtrack.jetbrains.com/issue/KTLC-288.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonMain/kotlin/app/vela/ios/replay/TripsStore.kt:148:58 Return in function with expression body and without explicit return type. Use block body '{...}' or add an explicit return type. This will become an error in language version 2.5. See https://youtrack.jetbrains.com/issue/KTLC-288.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonMain/kotlin/app/vela/ios/replay/TripsStore.kt:156:31 Return in function with expression body and without explicit return type. Use block body '{...}' or add an explicit return type. This will become an error in language version 2.5. See https://youtrack.jetbrains.com/issue/KTLC-288.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonMain/kotlin/app/vela/ios/replay/TripsStore.kt:190:34 Return in function with expression body and without explicit return type. Use block body '{...}' or add an explicit return type. This will become an error in language version 2.5. See https://youtrack.jetbrains.com/issue/KTLC-288.
+
+> Task :ios-shared:skieUnpackSwiftSourcesDebugFrameworkIosSimulatorArm64
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+> Task :core-common:compileKotlinIosArm64
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/PhotonGeocoder.kt:81:32 Unnecessary non-null assertion (!!) on a non-null receiver of type 'String'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/RouteGeometry.kt:560:29 Condition is always 'true'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/ValhallaRouter.kt:490:29 Unnecessary non-null assertion (!!) on a non-null receiver of type 'ValhallaRouter.Run'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/google/GoogleMapsDataSource.kt:714:78 Unnecessary non-null assertion (!!) on a non-null receiver of type 'Route'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/google/GoogleMapsDataSource.kt:731:52 Unnecessary non-null assertion (!!) on a non-null receiver of type 'Route'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/google/GoogleMapsDataSource.kt:794:77 Unnecessary safe call on a non-null receiver of type 'Route'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/google/GoogleMapsDataSource.kt:820:81 Unnecessary non-null assertion (!!) on a non-null receiver of type 'Route'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/google/GoogleMapsDataSource.kt:950:84 Unnecessary non-null assertion (!!) on a non-null receiver of type 'Route'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/google/GoogleMapsSource.kt:261:75 Unnecessary non-null assertion (!!) on a non-null receiver of type 'LatLng'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/google/GoogleMapsSource.kt:375:55 Redundant call of conversion method.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/naming/HybridRoute.kt:366:55 Unnecessary non-null assertion (!!) on a non-null receiver of type 'String'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/naming/LineNamer.kt:152:47 Unnecessary safe call on a non-null receiver of type 'LineNamer.NameRun'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/transit/Transitous.kt:552:60 Unnecessary non-null assertion (!!) on a non-null receiver of type 'Long'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/transit/Transitous.kt:557:48 Unnecessary non-null assertion (!!) on a non-null receiver of type 'Long'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/transit/Transitous.kt:557:63 Unnecessary non-null assertion (!!) on a non-null receiver of type 'Long'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/nav/NavEngine.kt:517:80 Unnecessary non-null assertion (!!) on a non-null receiver of type 'StopAhead'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/nav/NavEngine.kt:518:43 Unnecessary non-null assertion (!!) on a non-null receiver of type 'StopAhead'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/nav/NavSession.kt:291:41 Unnecessary safe call on a non-null receiver of type 'Double'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/iosMain/kotlin/app/vela/core/platform/RandomFile.ios.kt:76:91 Redundant call of conversion method.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/iosMain/kotlin/app/vela/core/platform/RandomFile.ios.kt:95:112 Redundant call of conversion method.
+
+> Task :core-common:exportCrossCompilationMetadataForIosArm64ApiElements
+> Task :core-common:jvmProcessResources NO-SOURCE
+> Task :core-common:processJvmMainResources SKIPPED
+> Task :core-common:serializeSwiftPMDependenciesMetadataForLockFiles
+> Task :core-common:generateUmbrellaPackageIdentifierBasedResolutionForDefault SKIPPED
+> Task :core-common:fetchUmbrellaPackageIdentifierForDefault SKIPPED
+> Task :ios-shared:linkDebugFrameworkIosSimulatorArm64
+> Task :core-common:compileKotlinJvm
+
+> Task :ios-shared:linkDebugFrameworkIosSimulatorArm64
+w: 'var VelaCore.ImportedList.description' was renamed to 'var VelaCore.ImportedList.description_' because of a name collision with an another declaration 'func VelaCore.KotlinBase.description() -> Swift.String'. Consider resolving the conflict either by changing the name in Kotlin, or via the @ObjCName annotation. You can also suppress this warning using the 'SuppressSkieWarning.NameCollision' configuration. However using renamed declarations from Swift is not recommended because their name will change if the conflict is resolved.
+    (at public final val description: kotlin.String? defined in app.vela.core.model.ImportedList from module <Vela:core-common>)
+w: 'var VelaCore.MapShape.description' was renamed to 'var VelaCore.MapShape.description_' because of a name collision with an another declaration 'func VelaCore.KotlinBase.description() -> Swift.String'. Consider resolving the conflict either by changing the name in Kotlin, or via the @ObjCName annotation. You can also suppress this warning using the 'SuppressSkieWarning.NameCollision' configuration. However using renamed declarations from Swift is not recommended because their name will change if the conflict is resolved.
+    (at public final val description: kotlin.String? defined in app.vela.core.model.MapShape from module <Vela:core-common>)
+w: 'var VelaCore.PlaceList.description' was renamed to 'var VelaCore.PlaceList.description_' because of a name collision with an another declaration 'func VelaCore.KotlinBase.description() -> Swift.String'. Consider resolving the conflict either by changing the name in Kotlin, or via the @ObjCName annotation. You can also suppress this warning using the 'SuppressSkieWarning.NameCollision' configuration. However using renamed declarations from Swift is not recommended because their name will change if the conflict is resolved.
+    (at public final val description: kotlin.String? defined in app.vela.core.model.PlaceList from module <Vela:core-common>)
+w: The number of threads 4 is more than the number of processors 3
+
+> Task :ios-shared:skieUploadAnalyticsDebugFrameworkIosSimulatorArm64
+
+> Task :core-common:compileKotlinJvm
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/PhotonGeocoder.kt:81:32 Unnecessary non-null assertion (!!) on a non-null receiver of type 'String'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/RouteGeometry.kt:560:29 Condition is always 'true'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/ValhallaRouter.kt:490:29 Unnecessary non-null assertion (!!) on a non-null receiver of type 'ValhallaRouter.Run'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/google/GoogleMapsDataSource.kt:714:78 Unnecessary non-null assertion (!!) on a non-null receiver of type 'Route'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/google/GoogleMapsDataSource.kt:731:52 Unnecessary non-null assertion (!!) on a non-null receiver of type 'Route'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/google/GoogleMapsDataSource.kt:794:77 Unnecessary safe call on a non-null receiver of type 'Route'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/google/GoogleMapsDataSource.kt:820:81 Unnecessary non-null assertion (!!) on a non-null receiver of type 'Route'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/google/GoogleMapsDataSource.kt:950:84 Unnecessary non-null assertion (!!) on a non-null receiver of type 'Route'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/google/GoogleMapsSource.kt:261:75 Unnecessary non-null assertion (!!) on a non-null receiver of type 'LatLng'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/google/GoogleMapsSource.kt:375:55 Redundant call of conversion method.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/naming/HybridRoute.kt:366:55 Unnecessary non-null assertion (!!) on a non-null receiver of type 'String'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/naming/LineNamer.kt:152:47 Unnecessary safe call on a non-null receiver of type 'LineNamer.NameRun'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/transit/Transitous.kt:552:60 Unnecessary non-null assertion (!!) on a non-null receiver of type 'Long'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/transit/Transitous.kt:557:48 Unnecessary non-null assertion (!!) on a non-null receiver of type 'Long'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/data/transit/Transitous.kt:557:63 Unnecessary non-null assertion (!!) on a non-null receiver of type 'Long'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/nav/NavEngine.kt:517:80 Unnecessary non-null assertion (!!) on a non-null receiver of type 'StopAhead'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/nav/NavEngine.kt:518:43 Unnecessary non-null assertion (!!) on a non-null receiver of type 'StopAhead'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/core-common/src/commonMain/kotlin/app/vela/core/nav/NavSession.kt:291:41 Unnecessary safe call on a non-null receiver of type 'Double'.
+
+> Task :core-common:compileJvmMainJava NO-SOURCE
+> Task :core-common:jvmMainClasses
+> Task :core-common:jvmJar
+
+> Task :ios-shared:compileKotlinIosArm64
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonMain/kotlin/app/vela/ios/MapSession.kt:366:84 Redundant call of conversion method.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonMain/kotlin/app/vela/ios/MapSession.kt:368:87 Redundant call of conversion method.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonMain/kotlin/app/vela/ios/MapSession.kt:369:80 Redundant call of conversion method.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonMain/kotlin/app/vela/ios/replay/TripDiagnostics.kt:54:29 Return in function with expression body and without explicit return type. Use block body '{...}' or add an explicit return type. This will become an error in language version 2.5. See https://youtrack.jetbrains.com/issue/KTLC-288.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonMain/kotlin/app/vela/ios/replay/TripsStore.kt:136:31 Return in function with expression body and without explicit return type. Use block body '{...}' or add an explicit return type. This will become an error in language version 2.5. See https://youtrack.jetbrains.com/issue/KTLC-288.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonMain/kotlin/app/vela/ios/replay/TripsStore.kt:148:58 Return in function with expression body and without explicit return type. Use block body '{...}' or add an explicit return type. This will become an error in language version 2.5. See https://youtrack.jetbrains.com/issue/KTLC-288.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonMain/kotlin/app/vela/ios/replay/TripsStore.kt:156:31 Return in function with expression body and without explicit return type. Use block body '{...}' or add an explicit return type. This will become an error in language version 2.5. See https://youtrack.jetbrains.com/issue/KTLC-288.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonMain/kotlin/app/vela/ios/replay/TripsStore.kt:190:34 Return in function with expression body and without explicit return type. Use block body '{...}' or add an explicit return type. This will become an error in language version 2.5. See https://youtrack.jetbrains.com/issue/KTLC-288.
+
+> Task :ios-shared:skieUnpackSwiftSourcesReleaseFrameworkIosArm64
+> Task :ios-shared:linkReleaseFrameworkIosArm64
+w: 'var VelaCore.ImportedList.description' was renamed to 'var VelaCore.ImportedList.description_' because of a name collision with an another declaration 'func VelaCore.KotlinBase.description() -> Swift.String'. Consider resolving the conflict either by changing the name in Kotlin, or via the @ObjCName annotation. You can also suppress this warning using the 'SuppressSkieWarning.NameCollision' configuration. However using renamed declarations from Swift is not recommended because their name will change if the conflict is resolved.
+    (at public final val description: kotlin.String? defined in app.vela.core.model.ImportedList from module <Vela:core-common>)
+w: 'var VelaCore.MapShape.description' was renamed to 'var VelaCore.MapShape.description_' because of a name collision with an another declaration 'func VelaCore.KotlinBase.description() -> Swift.String'. Consider resolving the conflict either by changing the name in Kotlin, or via the @ObjCName annotation. You can also suppress this warning using the 'SuppressSkieWarning.NameCollision' configuration. However using renamed declarations from Swift is not recommended because their name will change if the conflict is resolved.
+    (at public final val description: kotlin.String? defined in app.vela.core.model.MapShape from module <Vela:core-common>)
+w: 'var VelaCore.PlaceList.description' was renamed to 'var VelaCore.PlaceList.description_' because of a name collision with an another declaration 'func VelaCore.KotlinBase.description() -> Swift.String'. Consider resolving the conflict either by changing the name in Kotlin, or via the @ObjCName annotation. You can also suppress this warning using the 'SuppressSkieWarning.NameCollision' configuration. However using renamed declarations from Swift is not recommended because their name will change if the conflict is resolved.
+    (at public final val description: kotlin.String? defined in app.vela.core.model.PlaceList from module <Vela:core-common>)
+
+> Task :ios-shared:skieUploadAnalyticsReleaseFrameworkIosArm64
+> Task :ios-shared:iosSimulatorArm64MainKlibrary
+
+> Task :ios-shared:compileTestKotlinIosSimulatorArm64
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/nav/NavStoreTest.kt:234:35 Unnecessary safe call on a non-null receiver of type 'NavManeuver'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/replay/TripsStoreTest.kt:326:110 Unnecessary non-null assertion (!!) on a non-null receiver of type 'Any'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/search/SearchStoreTest.kt:93:40 Unnecessary non-null assertion (!!) on a non-null receiver of type 'LatLng'.
+
+> Task :ios-shared:syncPersistedPackageResolvedToSynthetic SKIPPED
+> Task :ios-shared:fetchSyntheticImportProjectPackages SKIPPED
+> Task :ios-shared:dumpXcodebuildArgsIphonesimulator SKIPPED
+> Task :ios-shared:convertSyntheticImportProjectIntoDefFileIphonesimulator
+> Task :ios-shared:compileKotlinJvm
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonMain/kotlin/app/vela/ios/MapSession.kt:366:84 Redundant call of conversion method.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonMain/kotlin/app/vela/ios/MapSession.kt:368:87 Redundant call of conversion method.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonMain/kotlin/app/vela/ios/MapSession.kt:369:80 Redundant call of conversion method.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonMain/kotlin/app/vela/ios/replay/TripDiagnostics.kt:54:29 Return in function with expression body and without explicit return type. Use block body '{...}' or add an explicit return type. This will become an error in language version 2.5. See https://youtrack.jetbrains.com/issue/KTLC-288.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonMain/kotlin/app/vela/ios/replay/TripsStore.kt:136:31 Return in function with expression body and without explicit return type. Use block body '{...}' or add an explicit return type. This will become an error in language version 2.5. See https://youtrack.jetbrains.com/issue/KTLC-288.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonMain/kotlin/app/vela/ios/replay/TripsStore.kt:148:58 Return in function with expression body and without explicit return type. Use block body '{...}' or add an explicit return type. This will become an error in language version 2.5. See https://youtrack.jetbrains.com/issue/KTLC-288.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonMain/kotlin/app/vela/ios/replay/TripsStore.kt:156:31 Return in function with expression body and without explicit return type. Use block body '{...}' or add an explicit return type. This will become an error in language version 2.5. See https://youtrack.jetbrains.com/issue/KTLC-288.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonMain/kotlin/app/vela/ios/replay/TripsStore.kt:190:34 Return in function with expression body and without explicit return type. Use block body '{...}' or add an explicit return type. This will become an error in language version 2.5. See https://youtrack.jetbrains.com/issue/KTLC-288.
+
+> Task :ios-shared:linkDebugTestIosSimulatorArm64
+w: The number of threads 4 is more than the number of processors 3
+
+> Task :ios-shared:compileJvmMainJava NO-SOURCE
+> Task :ios-shared:jvmMainClasses
+> Task :ios-shared:jvmJar
+> Task :ios-shared:iosSimulatorArm64Test
+
+> Task :ios-shared:compileTestKotlinJvm
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/nav/NavStoreTest.kt:234:35 Unnecessary safe call on a non-null receiver of type 'NavManeuver'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/replay/TripsStoreTest.kt:326:110 Unnecessary non-null assertion (!!) on a non-null receiver of type 'Any'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/search/SearchStoreTest.kt:93:40 Unnecessary non-null assertion (!!) on a non-null receiver of type 'LatLng'.
+
+> Task :ios-shared:compileJvmTestJava NO-SOURCE
+> Task :ios-shared:jvmTestClasses
+> Task :ios-shared:jvmTest
+
+[Incubating] Problems report is available at: file:///Users/runner/work/ios-builder/ios-builder/src/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.8.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 9m 23s
+40 actionable tasks: 40 executed

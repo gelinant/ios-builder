@@ -1,0 +1,88 @@
+tag=full-17lots-20261027-235005-25084 src=src/full-17lots d44ac52 src: 6470f231 Merge SET-ABOUT: About hub, help, notices and support
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: d44ac52 src: 6470f231 Merge SET-ABOUT: About hub, help, notices and support
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610272353 (1793145235)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (23:53:56)
+notices: ok, 26 entries (7 libraries, 18 data sources)
+
+== Kotlin: tests and the VelaCore framework (23:53:57)
+gradle: ok in 566 s
+kotlin jvmTest: 337 tests, 0 failures
+kotlin iosSimulatorArm64Test: 279 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  79M, static library 78686096 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  48M, static library 45965864 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (00:03:23)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 30.3M  100 30.3M    0     0  31.7M      0 --:--:-- --:--:-- --:--:-- 61.3M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (00:03:25)
+string catalog: 1434 keys, 24 resource locales (23 with translations), 24591 localized values, 159 Swift references, 24 picker languages
+
+== XcodeGen (00:03:27)
+xcodegen: Version: 2.46.0
+
+== Generate the project (00:03:28)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (00:03:28)
+  MapLibre Native: https://github.com/maplibre/maplibre-gl-native-distribution @ 6.31.0
+
+resolved source packages: SWCompression, BitByteData, MapLibre Native
+(resolve: 19 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (00:03:47)
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (582B068E-2ACA-440E-8D01-417AEDF26981) (Shutdown) 
+
+== Build for the simulator (00:03:49)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 106 s)
+simulator build: ok
+
+== Boot the simulator (00:05:35)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (00:09:31)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 129 s)
+tests: ok, Executed 131 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=navigate_to_coffee samples=18762
+VOICE_ASR_PLAN action=navigate query=coffee
+VOICE_SYNTH samples=56854 rate=22050 wav_frames=56854
+
+== Launch and screenshot (00:11:41)
+app.vela.ios: 32691
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: C296EA85-2855-4D21-A768-B73CD3BDE4B3 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (00:12:43)
+Parsed 8 waypoints
+Parsed 8 waypoints
+Parsed 8 waypoints
+Parsed 8 waypoints
+Parsed 8 waypoints
+Parsed 8 waypoints
+Parsed 8 waypoints
+Parsed 8 waypoints
