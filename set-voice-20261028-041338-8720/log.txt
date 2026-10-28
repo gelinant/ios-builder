@@ -1,0 +1,182 @@
+tag=set-voice-20261028-041338-8720 src=src/set-voice bf65938 src: 22d13254 SET-VOICE: voice settings, guidance language and download states
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: bf65938 src: 22d13254 SET-VOICE: voice settings, guidance language and download states
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610280415 (1793160924)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (04:15:24)
+notices: ok, 26 entries (7 libraries, 18 data sources)
+
+== Kotlin: tests and the VelaCore framework (04:15:25)
+gradle: ok in 904 s
+kotlin jvmTest: 387 tests, 0 failures
+kotlin iosSimulatorArm64Test: 310 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  81M, static library 79855352 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  50M, static library 47127224 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (04:30:29)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 30.3M  100 30.3M    0     0  39.1M      0 --:--:-- --:--:-- --:--:-- 64.3M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (04:30:31)
+string catalog: 1444 keys, 24 resource locales (23 with translations), 24601 localized values, 178 Swift references, 24 picker languages
+
+== XcodeGen (04:30:33)
+xcodegen: Version: 2.46.0
+
+== Generate the project (04:30:34)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (04:30:35)
+  MapLibre Native: https://github.com/maplibre/maplibre-gl-native-distribution @ 6.31.0
+
+resolved source packages: BitByteData, SWCompression, MapLibre Native
+(resolve: 28 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (04:31:03)
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (582B068E-2ACA-440E-8D01-417AEDF26981) (Shutdown) 
+
+== Build for the simulator (04:31:08)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 154 s)
+simulator build: ok
+
+== Boot the simulator (04:33:42)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (04:39:05)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 233 s)
+tests: ok, Executed 137 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=18576
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=53524 rate=22050 wav_frames=53524
+
+== Launch and screenshot (04:42:59)
+app.vela.ios: 44299
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: C36C43DD-F4F2-40E0-99F9-D32F72D8DDF7 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (04:44:04)
+xcodebuild uitest failed after 348 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SettingsVoiceUITests.swift:18: error: -[VelaUITests.SettingsVoiceUITests testVoiceAndLanguage] : XCTAssertTrue failed - no voice mode picker
+Test Case '-[VelaUITests.SettingsVoiceUITests testVoiceAndLanguage]' failed (206.150 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =   192.25s         Checking existence of `"voice-mode" Any`
+    t =   192.73s         Capturing element debug description
+    t =   193.24s     Checking `Expect predicate `existsNoRetry == 1` for object "voice-mode" Any`
+    t =   193.25s         Checking existence of `"voice-mode" Any`
+    t =   193.62s         Capturing element debug description
+    t =   194.21s     Checking `Expect predicate `existsNoRetry == 1` for object "voice-mode" Any`
+    t =   194.21s         Checking existence of `"voice-mode" Any`
+    t =   194.51s         Capturing element debug description
+    t =   195.24s     Checking `Expect predicate `existsNoRetry == 1` for object "voice-mode" Any`
+    t =   195.25s         Checking existence of `"voice-mode" Any`
+    t =   195.63s         Capturing element debug description
+    t =   196.17s     Checking `Expect predicate `existsNoRetry == 1` for object "voice-mode" Any`
+    t =   196.17s         Checking existence of `"voice-mode" Any`
+    t =   196.55s         Capturing element debug description
+    t =   197.26s     Checking `Expect predicate `existsNoRetry == 1` for object "voice-mode" Any`
+    t =   197.26s         Checking existence of `"voice-mode" Any`
+    t =   197.69s         Capturing element debug description
+    t =   198.18s     Checking `Expect predicate `existsNoRetry == 1` for object "voice-mode" Any`
+    t =   198.18s         Checking existence of `"voice-mode" Any`
+    t =   198.53s         Capturing element debug description
+    t =   199.25s     Checking `Expect predicate `existsNoRetry == 1` for object "voice-mode" Any`
+    t =   199.25s         Checking existence of `"voice-mode" Any`
+    t =   199.60s         Capturing element debug description
+    t =   200.23s     Checking `Expect predicate `existsNoRetry == 1` for object "voice-mode" Any`
+    t =   200.23s         Checking existence of `"voice-mode" Any`
+    t =   200.61s         Capturing element debug description
+    t =   201.21s     Checking `Expect predicate `existsNoRetry == 1` for object "voice-mode" Any`
+    t =   201.22s         Checking existence of `"voice-mode" Any`
+    t =   201.66s         Capturing element debug description
+    t =   202.19s     Checking `Expect predicate `existsNoRetry == 1` for object "voice-mode" Any`
+    t =   202.19s         Checking existence of `"voice-mode" Any`
+    t =   202.53s         Capturing element debug description
+    t =   203.18s     Checking `Expect predicate `existsNoRetry == 1` for object "voice-mode" Any`
+    t =   203.18s         Checking existence of `"voice-mode" Any`
+    t =   203.49s         Capturing element debug description
+    t =   203.49s     Checking existence of `"voice-mode" Any`
+    t =   203.87s Collecting debug information to assist test failure triage
+    t =   203.87s     Requesting snapshot of accessibility hierarchy for app with pid 47155
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SettingsVoiceUITests.swift:18: error: -[VelaUITests.SettingsVoiceUITests testVoiceAndLanguage] : XCTAssertTrue failed - no voice mode picker
+    t =   205.40s Tear Down
+Test Case '-[VelaUITests.SettingsVoiceUITests testVoiceAndLanguage]' failed (206.150 seconds).
+Test Suite 'SettingsVoiceUITests' failed at 2026-10-28 04:48:48.615.
+	 Executed 1 test, with 1 failure (0 unexpected) in 206.150 (206.154) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-28 04:48:48.628.
+	 Executed 1 test, with 1 failure (0 unexpected) in 206.150 (206.167) seconds
+Test Suite 'Selected tests' failed at 2026-10-28 04:48:48.629.
+	 Executed 1 test, with 1 failure (0 unexpected) in 206.150 (206.174) seconds
+2026-10-28 04:49:45.195 xcodebuild[45379:121518] [MT] IDETestOperationsObserverDebug: 293.270 elapsed -- Testing started completed.
+2026-10-28 04:49:45.198 xcodebuild[45379:121518] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-28 04:49:45.198 xcodebuild[45379:121518] [MT] IDETestOperationsObserverDebug: 293.271 sec, +293.271 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.SW3QXP0rKw/uitest.xcresult
+
+Failing tests:
+	SettingsVoiceUITests.testVoiceAndLanguage()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui SettingsVoiceUITests.testVoiceAndLanguage: failed (206.150 seconds)
+scripts/ios/ci-ipa.sh: line 279: 45376 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui screenshots: 
+
+== Route replay (04:50:12)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: C36C43DD-F4F2-40E0-99F9-D32F72D8DDF7 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: C36C43DD-F4F2-40E0-99F9-D32F72D8DDF7 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (04:51:59)
+261394
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 76355 bytes
+directions reply: directions-drive-sf 125651 bytes
+directions reply: directions-walk-sf 53212 bytes
+search reply: 261394 bytes, 29 feature ids
+failed steps: ui-scenarios

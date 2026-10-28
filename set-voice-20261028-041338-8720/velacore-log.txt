@@ -1,0 +1,19 @@
+Timestamp               Ty Process[PID:TID]
+2026-10-28 04:42:21.271 I  Vela[42861:1bec6] [app.vela.ios:Calibration] calibration at startup: version 1
+2026-10-28 04:42:23.526 Df Vela[42861:1c22e] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-28 04:42:26.451 I  Vela[42861:1bec6] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-28 04:42:44.038 I  Vela[42861:1bec6] [app.vela.ios:NeuralVoice] loaded en_US-hfc_female-medium: 22050 Hz, 1 speakers
+2026-10-28 04:42:47.630 Df Vela[42861:1c22d] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-28 04:42:52.613 I  Vela[42861:1bec6] [app.vela.ios:NeuralVoice] loaded en_US-hfc_female-medium: 22050 Hz, 1 speakers
+2026-10-28 04:42:54.019 I  Vela[42861:1bec6] [app.vela.ios:VoiceSearch] loaded whisper-tiny for en
+2026-10-28 04:43:24.520 I  Vela[44299:1cfbd] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-28 04:43:25.748 Df Vela[44299:1cfd2] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-28 04:43:26.980 I  Vela[44299:1cfbd] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-28 04:45:45.563 I  Vela[47155:1eee7] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-28 04:45:47.392 Df Vela[47155:1ef70] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-28 04:45:50.246 I  Vela[47155:1eee7] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-28 04:50:17.890 I  Vela[56432:24d57] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-28 04:50:20.239 Df Vela[56432:24da0] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-28 04:50:20.745 I  Vela[56432:24d57] [app.vela.ios:Location] location update failed: The operation couldn’t be completed. (kCLErrorDomain error 0.)
+2026-10-28 04:50:22.625 I  Vela[56432:24d57] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-28 04:51:26.353 I  Vela[56432:24d57] [app.vela.ios:Location] location update failed: The operation couldn’t be completed. (kCLErrorDomain error 0.)
