@@ -1,0 +1,3 @@
+src=src/road-markings
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=RoadMarkingsUITests VELA_SKIP_ARCHIVE=1
