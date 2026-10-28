@@ -1,0 +1,75 @@
+Command line invocation:
+    /Applications/Xcode_26.6.app/Contents/Developer/usr/bin/xcodebuild test-without-building -project /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike/GlobeSpike.xcodeproj -scheme GlobeSpike -configuration Debug -destination "platform=iOS Simulator,id=10B884BF-749F-4E8B-AFCD-26AB8F1DBD01" -derivedDataPath /tmp/globe-spike-dd "-only-testing:GlobeSpikeUITests" CODE_SIGNING_ALLOWED=NO
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+
+--- xcodebuild: WARNING: Using the first of multiple matching destinations:
+{ platform:iOS Simulator, arch:arm64, id:10B884BF-749F-4E8B-AFCD-26AB8F1DBD01, OS:26.5, name:iPhone 17 }
+{ platform:iOS Simulator, arch:x86_64, id:10B884BF-749F-4E8B-AFCD-26AB8F1DBD01, OS:26.5, name:iPhone 17 }
+2026-10-28 13:48:47.290831+0000 GlobeSpikeUITests-Runner[8906:31508] [Default] Running tests...
+objc[8906]: Class UIAccessibilityLoaderWebShared is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebCore.axbundle/WebCore (0x106b34310) and /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebKit.axbundle/WebKit (0x106bdc398). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'All tests' started at 2026-10-28 13:48:56.661.
+Test Suite 'GlobeSpikeUITests.xctest' started at 2026-10-28 13:48:56.663.
+Test Suite 'GlobeGestureTests' started at 2026-10-28 13:48:56.664.
+Test Case '-[GlobeSpikeUITests.GlobeGestureTests testGlobePinchAndDrag]' started.
+    t =     0.00s Start Test at 2026-10-28 13:48:56.667
+    t =     2.62s Set Up
+    t =     2.64s Open app.vela.globespike
+    t =     2.64s     Launch app.vela.globespike
+2026-10-28 13:49:00.172 xcodebuild[7793:28506] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-28 13:49:00.173 xcodebuild[7793:28506] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =    22.05s         Setting up automation session
+    t =    25.13s         Wait for app.vela.globespike to idle
+    t =    27.23s Waiting 90.0s for "camera-readout" StaticText to exist
+    t =    28.23s     Checking `Expect predicate `existsNoRetry == 1` for object "camera-readout" StaticText`
+    t =    28.24s         Checking existence of `"camera-readout" StaticText`
+    t =    29.45s Checking `Expect predicate `label BEGINSWITH "zoom="` for object "camera-readout" StaticText`
+    t =    29.45s     Find the "camera-readout" StaticText
+    t =    31.89s Find the "camera-readout" StaticText
+GESTURE start=zoom=2.00 bearing=-0.0 pitch=0.0 lat=20.00 lon=0.00
+    t =    31.96s Pinch with scale 0.25, velocity -4 in Target Application 'app.vela.globespike'
+    t =    31.96s     Wait for app.vela.globespike to idle
+    t =    31.97s     Find the Target Application 'app.vela.globespike'
+    t =    32.05s     Check for interrupting elements affecting "GlobeSpike" Application
+    t =    32.23s     Synthesize event
+    t =    32.28s         Pinching with rect {{50, 50}, {302, 774}}
+    t =    32.91s     Wait for app.vela.globespike to idle
+    t =    36.07s Find the "camera-readout" StaticText
+GESTURE step=pinch-out before=zoom=2.00 bearing=-0.0 pitch=0.0 lat=20.00 lon=0.00 after=zoom=0.03 bearing=0.0 pitch=0.0 lat=19.52 lon=0.51
+    t =    36.09s Pinch with scale 2.5, velocity 4 in Target Application 'app.vela.globespike'
+    t =    36.09s     Wait for app.vela.globespike to idle
+    t =    36.10s     Find the Target Application 'app.vela.globespike'
+    t =    36.13s     Check for interrupting elements affecting "GlobeSpike" Application
+    t =    36.15s     Synthesize event
+    t =    36.16s         Pinching with rect {{50, 50}, {302, 774}}
+    t =    37.14s     Wait for app.vela.globespike to idle
+    t =    40.16s Find the "camera-readout" StaticText
+GESTURE step=pinch-in after=zoom=1.16 bearing=329.3 pitch=0.0 lat=19.73 lon=0.29
+    t =    40.18s Swipe left Target Application 'app.vela.globespike'
+    t =    40.18s     Wait for app.vela.globespike to idle
+    t =    40.18s     Find the Target Application 'app.vela.globespike'
+    t =    40.20s     Check for interrupting elements affecting "GlobeSpike" Application
+    t =    40.22s     Synthesize event
+    t =    40.66s     Wait for app.vela.globespike to idle
+    t =    43.71s Find the "camera-readout" StaticText
+GESTURE step=drag after=zoom=1.22 bearing=34.7 pitch=0.0 lat=9.90 lon=136.71
+    t =    43.78s Tear Down
+Test Case '-[GlobeSpikeUITests.GlobeGestureTests testGlobePinchAndDrag]' passed (44.320 seconds).
+Test Suite 'GlobeGestureTests' passed at 2026-10-28 13:49:40.986.
+	 Executed 1 test, with 0 failures (0 unexpected) in 44.320 (44.322) seconds
+Test Suite 'GlobeSpikeUITests.xctest' passed at 2026-10-28 13:49:40.986.
+	 Executed 1 test, with 0 failures (0 unexpected) in 44.320 (44.324) seconds
+Test Suite 'All tests' passed at 2026-10-28 13:49:40.987.
+	 Executed 1 test, with 0 failures (0 unexpected) in 44.320 (44.326) seconds
+2026-10-28 13:49:41.638 xcodebuild[7793:28506] [MT] IDETestOperationsObserverDebug: 67.174 elapsed -- Testing started completed.
+2026-10-28 13:49:41.638 xcodebuild[7793:28506] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-28 13:49:41.638 xcodebuild[7793:28506] [MT] IDETestOperationsObserverDebug: 67.174 sec, +67.174 sec -- end
+
+Test session results, code coverage, and logs:
+	/tmp/globe-spike-dd/Logs/Test/Test-GlobeSpike-2026.10.28_13-48-28-+0000.xcresult
+
+** TEST EXECUTE SUCCEEDED **
+
+Testing started

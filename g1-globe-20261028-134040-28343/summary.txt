@@ -1,0 +1,13 @@
+G-1 globe spike, MapLibre Native ios-v2026.10.19-globe (MLN_WITH_GLOBE)
+xcframework: 589 MiB on disk (589M), fetched in 8s
+xcodegen: Version: 2.46.0
+simulator: 10B884BF-749F-4E8B-AFCD-26AB8F1DBD01 (iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown) )
+app size: 16 MiB spike, 0 MiB baseline, delta 16 MiB; embedded MapLibre.framework 16 MiB
+gesture UI test: passed
+rotate: 55.7 fps (614 frames / 11.0 s, avg render 0.00 ms)
+zoomOut: 55.1 fps (606 frames / 11.0 s, avg render 0.00 ms)
+camera: min zoom 0, max zoom 22, max pitch 59.99999999999999
+limits: zoom -3 kept -0.08973917531865368, zoom 30 kept 22, pitch 80 kept 59.99999999999999
+occlusion at z0: centre False, antipode True
+projection switch: globe in 0.00 s
+screenshots: globe-z3.png globe-z0.png globe-tilted.png

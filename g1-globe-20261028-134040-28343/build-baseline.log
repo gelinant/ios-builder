@@ -1,0 +1,554 @@
+Command line invocation:
+    /Applications/Xcode_26.6.app/Contents/Developer/usr/bin/xcodebuild build -project /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike/GlobeSpike.xcodeproj -scheme GlobeBaseline -configuration Debug -sdk iphonesimulator -destination "generic/platform=iOS Simulator" -derivedDataPath /tmp/globe-spike-dd CODE_SIGNING_ALLOWED=NO
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+    SDKROOT = iphonesimulator26.5
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (1 target)
+    Target 'GlobeBaseline' in project 'GlobeSpike' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: b4e9edf7994ab3063cbcc0f5a21b465a
+Build description path: /tmp/globe-spike-dd/Build/Intermediates.noindex/XCBuildData/b4e9edf7994ab3063cbcc0f5a21b465a.xcbuilddata
+CreateBuildDirectory /tmp/globe-spike-dd/Build/Products
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike/GlobeSpike.xcodeproj
+    builtin-create-build-directory /tmp/globe-spike-dd/Build/Products
+
+CreateBuildDirectory /tmp/globe-spike-dd/Build/Intermediates.noindex
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike/GlobeSpike.xcodeproj
+    builtin-create-build-directory /tmp/globe-spike-dd/Build/Intermediates.noindex
+
+ClangStatCache /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk /tmp/globe-spike-dd/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-688ef53f1462e2c8f657fdc38a81448ff45c64a1807a658693f2a61704f17a36.sdkstatcache
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike/GlobeSpike.xcodeproj
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -o /tmp/globe-spike-dd/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-688ef53f1462e2c8f657fdc38a81448ff45c64a1807a658693f2a61704f17a36.sdkstatcache
+
+CreateBuildDirectory /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike/GlobeSpike.xcodeproj
+    builtin-create-build-directory /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator
+
+WriteAuxiliaryFile /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeSpike-7cf6f9ed9ff703e2d4053ad08df9e2fe-VFS-iphonesimulator/all-product-headers.yaml
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike/GlobeSpike.xcodeproj
+    write-file /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeSpike-7cf6f9ed9ff703e2d4053ad08df9e2fe-VFS-iphonesimulator/all-product-headers.yaml
+
+CreateBuildDirectory /tmp/globe-spike-dd/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike/GlobeSpike.xcodeproj
+    builtin-create-build-directory /tmp/globe-spike-dd/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+CreateBuildDirectory /tmp/globe-spike-dd/Build/Intermediates.noindex/ExplicitPrecompiledModules
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike/GlobeSpike.xcodeproj
+    builtin-create-build-directory /tmp/globe-spike-dd/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+CreateBuildDirectory /tmp/globe-spike-dd/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike/GlobeSpike.xcodeproj
+    builtin-create-build-directory /tmp/globe-spike-dd/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator
+
+WriteAuxiliaryFile /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline.SwiftFileList (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    write-file /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline.SwiftFileList
+
+WriteAuxiliaryFile /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline_const_extract_protocols.json (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    write-file /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline_const_extract_protocols.json
+
+WriteAuxiliaryFile /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline.SwiftConstValuesFileList (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    write-file /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline.LinkFileList (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    write-file /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline.LinkFileList
+
+WriteAuxiliaryFile /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline-OutputFileMap.json (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    write-file /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline-OutputFileMap.json
+
+WriteAuxiliaryFile /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline_const_extract_protocols.json (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    write-file /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline_const_extract_protocols.json
+
+WriteAuxiliaryFile /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline.SwiftFileList (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    write-file /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline.SwiftFileList
+
+WriteAuxiliaryFile /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline.SwiftConstValuesFileList (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    write-file /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline.LinkFileList (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    write-file /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline.LinkFileList
+
+WriteAuxiliaryFile /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline-OutputFileMap.json (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    write-file /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline-OutputFileMap.json
+
+WriteAuxiliaryFile /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline.hmap (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    write-file /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline.hmap
+
+WriteAuxiliaryFile /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline.DependencyStaticMetadataFileList (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    write-file /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline.DependencyMetadataFileList (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    write-file /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline.DependencyMetadataFileList
+
+WriteAuxiliaryFile /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-project-headers.hmap (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    write-file /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-project-headers.hmap
+
+WriteAuxiliaryFile /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-own-target-headers.hmap (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    write-file /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-own-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-generated-files.hmap (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    write-file /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-generated-files.hmap
+
+WriteAuxiliaryFile /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-all-target-headers.hmap (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    write-file /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-all-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-all-non-framework-target-headers.hmap (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    write-file /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-all-non-framework-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-DebugDylibPath-normal-x86_64.txt (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    write-file /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-DebugDylibPath-normal-x86_64.txt
+
+WriteAuxiliaryFile /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-DebugDylibPath-normal-arm64.txt (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    write-file /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-DebugDylibPath-normal-arm64.txt
+
+WriteAuxiliaryFile /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-DebugDylibInstallName-normal-x86_64.txt (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    write-file /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-DebugDylibInstallName-normal-x86_64.txt
+
+WriteAuxiliaryFile /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-DebugDylibInstallName-normal-arm64.txt (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    write-file /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-DebugDylibInstallName-normal-arm64.txt
+
+MkDir /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.app (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    /bin/mkdir -p /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.app
+
+Ld /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/Binary/__preview.dylib normal x86_64 (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target x86_64-apple-ios17.0-simulator -dynamiclib -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator -F/tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator -install_name @rpath/GlobeBaseline.debug.dylib -Xlinker -dead_strip -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline_dependency_info.dat -o /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/Binary/__preview.dylib
+
+Ld /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/Binary/__preview.dylib normal arm64 (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -dynamiclib -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator -F/tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator -install_name @rpath/GlobeBaseline.debug.dylib -Xlinker -dead_strip -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline_dependency_info.dat -o /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/Binary/__preview.dylib
+
+ProcessInfoPlistFile /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.app/Info.plist /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike/Generated/GlobeBaseline-Info.plist (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    builtin-infoPlistUtility /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike/Generated/GlobeBaseline-Info.plist -producttype com.apple.product-type.application -genpkginfo /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.app/Info.plist
+
+CreateUniversalBinary /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.app/__preview.dylib normal arm64\ x86_64 (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo -create /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/Binary/__preview.dylib /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/Binary/__preview.dylib -output /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.app/__preview.dylib
+
+SwiftDriver GlobeBaseline normal arm64 com.apple.xcode.tools.swift.compiler (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    builtin-SwiftDriver -- /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name GlobeBaseline -Onone @/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /tmp/globe-spike-dd/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/globe-spike-dd/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator -F /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator -parse-as-library -c -j3 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/globe-spike-dd/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-688ef53f1462e2c8f657fdc38a81448ff45c64a1807a658693f2a61704f17a36.sdkstatcache -output-file-map /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/globe-spike-dd/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/globe-spike-dd/ModuleCache.noindex -sdk-module-cache-path /tmp/globe-spike-dd/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/globe-spike-dd/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-generated-files.hmap -Xcc -I/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-own-target-headers.hmap -Xcc -I/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-project-headers.hmap -Xcc -I/tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/DerivedSources-normal/arm64 -Xcc -I/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/DerivedSources/arm64 -Xcc -I/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline-Swift.h -working-directory /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike -experimental-emit-module-separately -disable-cmo
+
+SwiftDriver GlobeBaseline normal x86_64 com.apple.xcode.tools.swift.compiler (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    builtin-SwiftDriver -- /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name GlobeBaseline -Onone @/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target x86_64-apple-ios17.0-simulator -g -module-cache-path /tmp/globe-spike-dd/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/globe-spike-dd/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator -F /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator -parse-as-library -c -j3 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/globe-spike-dd/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-688ef53f1462e2c8f657fdc38a81448ff45c64a1807a658693f2a61704f17a36.sdkstatcache -output-file-map /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/globe-spike-dd/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/globe-spike-dd/ModuleCache.noindex -sdk-module-cache-path /tmp/globe-spike-dd/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/globe-spike-dd/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-generated-files.hmap -Xcc -I/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-own-target-headers.hmap -Xcc -I/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-project-headers.hmap -Xcc -I/tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/DerivedSources-normal/x86_64 -Xcc -I/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/DerivedSources/x86_64 -Xcc -I/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline-Swift.h -working-directory /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike -experimental-emit-module-separately -disable-cmo
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/_Builtin_stddef-SKFS5O3JYH4QGJ0KMNHN2F8C.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/_Builtin_float-F2YBYK5YHHAIEZVUAUJ1UDEVQ.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/SwiftShims-4KN7E1QTMZSMZR90J116L3PK6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/DeveloperToolsSupport-XFJSU3L0MXX6NW6M8UUETKP9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/_Builtin_stdarg-9KUGB0H6CHZD0EV4UH9NVF54X.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/DeveloperToolsSupport-9GQHDYCRZCA77PUC3M8KH35I2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/SwiftShims-78HEX1Y5PERNEZZT1N5VY3CDA.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/_Builtin_stdarg-W99ABAYX3Z27EDBUFPB5ASG1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/_SwiftConcurrencyShims-E83QS0M9DB9XD5YBX6J1GGLZI.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/_Builtin_stdbool-6DYFV171PYOWF2TR6WR6HY7MZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/_AvailabilityInternal-8IGFAW3ZZ636XRHR5SKCB0Z4H.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/_Builtin_stddef-6VGXTJHPQWJUZD632I3285NEH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/ptrauth-61IBG3GHJJ2SWYBPRC7AGUAUZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/_Builtin_float-DQ63HYKGBI4PRVVH3UGH2K6AF.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/ptrcheck-4CL2Q4ZLR5UFHJIDCP825BTHG.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/ptrauth-9W6TYK1AB9Z2PM08OH4OS7NR6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/ptrcheck-6709R5W3ITFJEEKKGGWHZ4GJ8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/_Builtin_stdbool-7EE9V6GIANBYXB1K4YYEBTG7Q.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/_SwiftConcurrencyShims-CTRTOB46F2NCQ4QJFLDU548L2.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/_AvailabilityInternal-8DR04V2PMS9VS4UPZWXH0OTJV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/_DarwinFoundation1-7JORPOWZ1CCX4T6L6SR4PZBH9.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/_DarwinFoundation1-A79K75VBAXBYH4K2DV7AA59WH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/_DarwinFoundation2-4LOAQGC94AYHUAADZYZS2B4X8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/_Builtin_limits-CT80ITMLP24DGFMS0GZ6AI0Z0.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/_Builtin_limits-9J7BQRXPBGUQQXIX8KS2COEDY.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/_DarwinFoundation2-1D5MDDFV969J772S3Q5TUAOA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/sys_types-961BQELIJSODTDCYNPD8AG0J6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/_Builtin_tgmath-8P5YAKDW74SQYI5Z4HMPZRT6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/_Builtin_stdint-3BFB4RM6DDALGSGWLODJQ912Q.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/_Builtin_tgmath-BBW9JYC32HLLMEUW9J2YVY5LH.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/sys_types-9C72H0BTKU968A6WNE2WOJL7X.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/_Builtin_stdint-216G86WB49ZF7LHNTXACCU6IT.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/_DarwinFoundation3-4OZX9O3GZ8SSEB6EBXP0M3AEL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/_Builtin_stdatomic-DIAWDKTAJL1W7D4LGCNLBMKBE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/_Builtin_intrinsics-9RIX7TFAQ70SUSZH9MIQFUZJD.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/_Builtin_stdatomic-APN2FJHBDGLIFPGMY4HKW4K8L.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/_DarwinFoundation3-E73YJKEZJ2LDILVPQSQ8UGLEP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/_Builtin_inttypes-870X29LMHUGJDXRQDI4WXB4MS.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/Darwin-FMSIXIG3XU5JJEZ5UO699FAO.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/_Builtin_inttypes-D1TW8A93HCB61UOM6YUHV7L7P.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/_Builtin_intrinsics-4HPX59F2AM27TZL91163QQL4B.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/Darwin-4RMEFW0P5H8R9AB3FZZCTA3T.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/simd-8R4V8PAEGCUOMDX2AFHEIMG9S.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/MachO-6P4492BP2NQT70YVOZM7ZKJ92.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/ObjectiveC-ERBTZYYD2Q9RCBTA5L6SJUY7M.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/MachO-EFU9GLK78YM69AYRKM59GBALN.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/simd-9GUTRTAP6BXOQ67L53UX5B9J3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/os_object-2JZGHU2Z2KK90CVU2ZK87XZCH.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/ObjectiveC-DSN8GV8IAGUARWI0972LNNIDB.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/os_workgroup-EYVSTQ5889VYGJ3P2U74MW45A.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/os_object-6MLWQ0BRMATL2PXLM3YW2W7FG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/Spatial-6EPVGMJDXSGM5ZJK3OUOE24O.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/Dispatch-73LVWAB6B2LOI140PDB7KJQXK.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/os_workgroup-5BIFHOLMD66I7453ZEX745GPH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/XPC-9C9AX2W8FWU23TAOFTJSRLXJN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/CoreFoundation-2PSX4M49U572U5GES3VYY9FZ8.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/Dispatch-594U84X3L1KAT18E6KHOM176L.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/os-8IMXSHHYG8SJH87D6BMMX0BXT.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/Spatial-48YSIXQNUB7Z46Z5NCB0QJ6P9.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/CoreFoundation-5I2YV029YLUMJGMN196QF8FV8.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/XPC-3WB70HFHDZW9KUQURI4Y4G10Y.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/CFNetwork-SZ5LYCOWHWXLM7UT3OSBI80J.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/Security-3ZLDWSVEV1OOETIULA97VY1SI.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/CoreGraphics-BDPOQQQVXRNE0EW7GQRLC4G6K.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/CFNetwork-3W89COIZP4S3Z4FX5NMJ9GLZZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/CoreGraphics-7MTBLA9N1V7GUCTLP7LEP8A7Y.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/Foundation-24OYRF66CEP8HASD2PBHG70GL.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/Security-38AISV2DJ9BSCQ8WOOY7D9D0W.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/ImageIO-B4VLJB3KOIKKWYUZ7EAL5ZYDT.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/CoreText-CWRW8UWQJL8KPP07NHS2NPVGG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/ImageIO-COMEGDSITO4IS5H2PWWHENDZ9.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/Foundation-8ANSB0NU06R45AOI5SABQHV4R.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/os-8LWWSEQ1LGQLQ34AMLITKO7WE.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/CoreText-46KS42J9PA4ALPCEF6HQZRQOW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/CoreTransferable-BAWQTPHV02A8RW5WP7X4M15KU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/UIUtilities-BFHMBJZWGCVB671F1NEHGD4AV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/UserNotifications-C5FULOW2A1KSRV972UD660KY1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/Accessibility-6B949L7RCATJEVA8QV3C0FCN7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/OpenGLES-ALTQQRKDKMV7AT4UO210N9UF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/Symbols-DXIG1ATMPP90RIHTBXTBE2EJ3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/UniformTypeIdentifiers-AIU8T1WIVHQAOFMJ3HVYJWNZJ.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/CoreTransferable-19LQ3JI10ILS7JEWUSPFS80U1.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/UIUtilities-B7T3C1JY4WQEM4HNS7T35GUBB.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/CoreData-38E58A6168SGYB301A98BNTSD.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/OpenGLES-6KEOQ00B4EKO7KS3IOKYJNDQE.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/Symbols-AYJONKMBYA7UADHB8407OK0ZU.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/UserNotifications-A8Y0JKY4KO6L48A9AQU6ADRT5.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/Accessibility-31RY3S7HZ0MRMIOHXR54A4K8A.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/OSLog-5337E13T96Y47BDZIUULF74WV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/FileProvider-35RXPL0N2P5XJZCGKDJGVU36A.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/IOSurface-76V6Q5CZHU4DEQ4K24SENL6UP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/CoreData-5V75V8DLQZ50O50Z7C0SQODBC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/OSLog-CYYRF5I2Z3ZUWAAUBEVUTDAQD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/Metal-3MZ1V5CGSWAEDS8J9NL0Z8OYG.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/FileProvider-2NC4DGIIP2KCR6VG6LYF321OA.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/UniformTypeIdentifiers-7C09NW5AKL3Z0T4UHNRDO6OK0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/DataDetection-DWM4KZUOVQIKRMOWJDV4ANUB4.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/IOSurface-6BA1OX4WGTKZ4F2UBNUN1R4SP.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/DataDetection-CG3IDQIJ8DB24XEXL2F1CILSO.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/CoreVideo-AL3CLASPX8YRJM82IXX227XZ1.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/Metal-7YOGMW5MUGAV45E1OKY6C27VH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/CoreImage-6W1CEEDDFES5VF0PA8C83K0RX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/QuartzCore-F48F3WOQ9AS5Y496CIM2LEY2.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/CoreVideo-1SQZQLRX59A7ZEAZWI9MGEGON.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/SwiftUICore-4C6M2AGREL0MW2RQJW85WGCIA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/UIKit-5QZLY5ZTAT20OTR81Z8LZEJLP.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/CoreImage-656H6IXCNOYGZ0AXHK24PYELO.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/QuartzCore-BIUYHFMN39A0D3P43682AFMBU.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/SwiftUICore-BBY46CIP0VJEYI1YLVOLG3HOR.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/UIKit-EAXKWAJ9OSL5LLJTX5085QITS.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/globe-spike-dd/ModuleCache.noindex/SwiftUI-1YQD2OLYQRVPJOV23VHDLTNWG.pcm
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ GlobeBaseline (in target 'GlobeBaseline' from project 'GlobeSpike')
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike/Baseline/BaselineApp.swift (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    
+
+SwiftCompile normal arm64 Compiling\ BaselineApp.swift /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike/Baseline/BaselineApp.swift (in target 'GlobeBaseline' from project 'GlobeSpike')
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike/Baseline/BaselineApp.swift (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    
+
+SwiftExplicitDependencyGeneratePcm x86_64 /tmp/globe-spike-dd/ModuleCache.noindex/SwiftUI-1ZQM01C3P5862ZBKSRJ5MC9DE.pcm
+
+SwiftEmitModule normal x86_64 Emitting\ module\ for\ GlobeBaseline (in target 'GlobeBaseline' from project 'GlobeSpike')
+
+SwiftCompile normal x86_64 /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike/Baseline/BaselineApp.swift (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    
+
+SwiftCompile normal x86_64 Compiling\ BaselineApp.swift /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike/Baseline/BaselineApp.swift (in target 'GlobeBaseline' from project 'GlobeSpike')
+
+SwiftCompile normal x86_64 /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike/Baseline/BaselineApp.swift (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for GlobeBaseline (in target 'GlobeBaseline' from project 'GlobeSpike')
+
+SwiftDriver\ Compilation\ Requirements GlobeBaseline normal arm64 com.apple.xcode.tools.swift.compiler (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name GlobeBaseline -Onone @/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /tmp/globe-spike-dd/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/globe-spike-dd/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator -F /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator -parse-as-library -c -j3 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/globe-spike-dd/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-688ef53f1462e2c8f657fdc38a81448ff45c64a1807a658693f2a61704f17a36.sdkstatcache -output-file-map /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/globe-spike-dd/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/globe-spike-dd/ModuleCache.noindex -sdk-module-cache-path /tmp/globe-spike-dd/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/globe-spike-dd/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-generated-files.hmap -Xcc -I/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-own-target-headers.hmap -Xcc -I/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-project-headers.hmap -Xcc -I/tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/DerivedSources-normal/arm64 -Xcc -I/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/DerivedSources/arm64 -Xcc -I/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline-Swift.h -working-directory /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal x86_64 Emitting module for GlobeBaseline (in target 'GlobeBaseline' from project 'GlobeSpike')
+
+SwiftDriver\ Compilation\ Requirements GlobeBaseline normal x86_64 com.apple.xcode.tools.swift.compiler (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name GlobeBaseline -Onone @/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target x86_64-apple-ios17.0-simulator -g -module-cache-path /tmp/globe-spike-dd/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/globe-spike-dd/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator -F /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator -parse-as-library -c -j3 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/globe-spike-dd/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-688ef53f1462e2c8f657fdc38a81448ff45c64a1807a658693f2a61704f17a36.sdkstatcache -output-file-map /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/globe-spike-dd/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/globe-spike-dd/ModuleCache.noindex -sdk-module-cache-path /tmp/globe-spike-dd/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/globe-spike-dd/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-generated-files.hmap -Xcc -I/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-own-target-headers.hmap -Xcc -I/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-project-headers.hmap -Xcc -I/tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/DerivedSources-normal/x86_64 -Xcc -I/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/DerivedSources/x86_64 -Xcc -I/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline-Swift.h -working-directory /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike -experimental-emit-module-separately -disable-cmo
+
+Copy /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.swiftmodule/arm64-apple-ios-simulator.swiftmodule /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline.swiftmodule (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline.swiftmodule /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+SwiftMergeGeneratedHeaders /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/DerivedSources/GlobeBaseline-Swift.h /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline-Swift.h /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline-Swift.h (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    builtin-swiftHeaderTool -arch arm64 /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline-Swift.h -arch x86_64 /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline-Swift.h -o /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/DerivedSources/GlobeBaseline-Swift.h
+
+Copy /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.swiftmodule/x86_64-apple-ios-simulator.swiftmodule /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline.swiftmodule (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline.swiftmodule /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.swiftmodule/x86_64-apple-ios-simulator.swiftmodule
+
+Copy /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.swiftmodule/x86_64-apple-ios-simulator.swiftdoc /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline.swiftdoc (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline.swiftdoc /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.swiftmodule/x86_64-apple-ios-simulator.swiftdoc
+
+Copy /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.swiftmodule/x86_64-apple-ios-simulator.abi.json /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline.abi.json (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline.abi.json /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.swiftmodule/x86_64-apple-ios-simulator.abi.json
+
+Copy /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.swiftmodule/arm64-apple-ios-simulator.swiftdoc /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline.swiftdoc (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline.swiftdoc /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.swiftmodule/arm64-apple-ios-simulator.swiftdoc
+
+Copy /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.swiftmodule/arm64-apple-ios-simulator.abi.json /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline.abi.json (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline.abi.json /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline.swiftsourceinfo (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline.swiftsourceinfo /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo
+
+Copy /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline.swiftsourceinfo (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline.swiftsourceinfo /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+SwiftDriverJobDiscovery normal x86_64 Compiling BaselineApp.swift (in target 'GlobeBaseline' from project 'GlobeSpike')
+
+SwiftDriver\ Compilation GlobeBaseline normal x86_64 com.apple.xcode.tools.swift.compiler (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    builtin-Swift-Compilation -- /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name GlobeBaseline -Onone @/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target x86_64-apple-ios17.0-simulator -g -module-cache-path /tmp/globe-spike-dd/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/globe-spike-dd/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator -F /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator -parse-as-library -c -j3 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/globe-spike-dd/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-688ef53f1462e2c8f657fdc38a81448ff45c64a1807a658693f2a61704f17a36.sdkstatcache -output-file-map /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/globe-spike-dd/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/globe-spike-dd/ModuleCache.noindex -sdk-module-cache-path /tmp/globe-spike-dd/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/globe-spike-dd/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-generated-files.hmap -Xcc -I/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-own-target-headers.hmap -Xcc -I/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-project-headers.hmap -Xcc -I/tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/DerivedSources-normal/x86_64 -Xcc -I/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/DerivedSources/x86_64 -Xcc -I/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline-Swift.h -working-directory /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike -experimental-emit-module-separately -disable-cmo
+
+Ld /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/Binary/GlobeBaseline.debug.dylib normal x86_64 (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target x86_64-apple-ios17.0-simulator -dynamiclib -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/tmp/globe-spike-dd/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator -F/tmp/globe-spike-dd/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator -filelist /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline.LinkFileList -install_name @rpath/GlobeBaseline.debug.dylib -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline.swiftmodule @/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline-linker-args.resp -Xlinker -alias -Xlinker _main -Xlinker ___debug_main_executable_dylib_entry_point -o /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/Binary/GlobeBaseline.debug.dylib
+
+SwiftDriverJobDiscovery normal arm64 Compiling BaselineApp.swift (in target 'GlobeBaseline' from project 'GlobeSpike')
+
+SwiftDriver\ Compilation GlobeBaseline normal arm64 com.apple.xcode.tools.swift.compiler (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    builtin-Swift-Compilation -- /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name GlobeBaseline -Onone @/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /tmp/globe-spike-dd/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/globe-spike-dd/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator -F /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator -parse-as-library -c -j3 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/globe-spike-dd/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-688ef53f1462e2c8f657fdc38a81448ff45c64a1807a658693f2a61704f17a36.sdkstatcache -output-file-map /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/globe-spike-dd/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/globe-spike-dd/ModuleCache.noindex -sdk-module-cache-path /tmp/globe-spike-dd/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/globe-spike-dd/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-generated-files.hmap -Xcc -I/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-own-target-headers.hmap -Xcc -I/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-project-headers.hmap -Xcc -I/tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/DerivedSources-normal/arm64 -Xcc -I/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/DerivedSources/arm64 -Xcc -I/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline-Swift.h -working-directory /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike -experimental-emit-module-separately -disable-cmo
+
+Ld /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/Binary/GlobeBaseline.debug.dylib normal arm64 (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -dynamiclib -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/tmp/globe-spike-dd/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator -F/tmp/globe-spike-dd/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator -filelist /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline.LinkFileList -install_name @rpath/GlobeBaseline.debug.dylib -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline.swiftmodule @/tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline-linker-args.resp -Xlinker -alias -Xlinker _main -Xlinker ___debug_main_executable_dylib_entry_point -o /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/Binary/GlobeBaseline.debug.dylib
+
+ConstructStubExecutorLinkFileList /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-ExecutorLinkFileList-normal-x86_64.txt (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    construct-stub-executor-link-file-list /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/Binary/GlobeBaseline.debug.dylib /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor_no_swift_entry_point.a /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor.a --output /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-ExecutorLinkFileList-normal-x86_64.txt
+note: Using stub executor library with Swift entry point. (in target 'GlobeBaseline' from project 'GlobeSpike')
+
+Ld /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/Binary/GlobeBaseline normal x86_64 (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target x86_64-apple-ios17.0-simulator -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator -F/tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator -Xlinker -rpath -Xlinker @executable_path -Xlinker -rpath -Xlinker @executable_path/Frameworks -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -e ___debug_blank_executor_main -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_dylib -Xlinker /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-DebugDylibPath-normal-x86_64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_instlnm -Xlinker /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-DebugDylibInstallName-normal-x86_64.txt -Xlinker -filelist -Xlinker /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-ExecutorLinkFileList-normal-x86_64.txt /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/Binary/GlobeBaseline.debug.dylib -o /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/Binary/GlobeBaseline
+
+CreateUniversalBinary /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.app/GlobeBaseline.debug.dylib normal arm64\ x86_64 (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo -create /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/Binary/GlobeBaseline.debug.dylib /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/Binary/GlobeBaseline.debug.dylib -output /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.app/GlobeBaseline.debug.dylib
+
+ConstructStubExecutorLinkFileList /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-ExecutorLinkFileList-normal-arm64.txt (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    construct-stub-executor-link-file-list /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/Binary/GlobeBaseline.debug.dylib /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor_no_swift_entry_point.a /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor.a --output /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-ExecutorLinkFileList-normal-arm64.txt
+note: Using stub executor library with Swift entry point. (in target 'GlobeBaseline' from project 'GlobeSpike')
+
+Ld /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/Binary/GlobeBaseline normal arm64 (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator -F/tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator -Xlinker -rpath -Xlinker @executable_path -Xlinker -rpath -Xlinker @executable_path/Frameworks -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -e ___debug_blank_executor_main -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_dylib -Xlinker /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-DebugDylibPath-normal-arm64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_instlnm -Xlinker /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-DebugDylibInstallName-normal-arm64.txt -Xlinker -filelist -Xlinker /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline-ExecutorLinkFileList-normal-arm64.txt /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/Binary/GlobeBaseline.debug.dylib -o /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/Binary/GlobeBaseline
+
+CreateUniversalBinary /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.app/GlobeBaseline normal arm64\ x86_64 (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo -create /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/Binary/GlobeBaseline /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/Binary/GlobeBaseline -output /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.app/GlobeBaseline
+
+CopySwiftLibs /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.app (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.app/GlobeBaseline.debug.dylib --scan-folder /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.app/Frameworks --scan-folder /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.app/PlugIns --scan-folder /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.app/SystemExtensions --scan-folder /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.app/Extensions --platform iphonesimulator --toolchain /var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v17.6.109.0.8QdliA/Metal.xctoolchain --toolchain /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os --back-deploy-swift-span
+Ignoring --strip-bitcode because --sign was not passed
+
+ExtractAppIntentsMetadata (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v17.6.109.0.8QdliA/Metal.xctoolchain --module-name GlobeBaseline --sdk-root /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk --xcode-version 17F113 --platform-family iOS --deployment-target 17.0 --bundle-identifier app.vela.globebaseline --output /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.app --target-triple arm64-apple-ios17.0-simulator --target-triple x86_64-apple-ios17.0-simulator --binary-file /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.app/GlobeBaseline --dependency-file /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline_dependency_info.dat --dependency-file /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline_dependency_info.dat --stringsdata-file /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --stringsdata-file /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline.SwiftFileList --source-file-list /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline.SwiftFileList --metadata-file-list /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline.DependencyMetadataFileList --static-metadata-file-list /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline.DependencyStaticMetadataFileList --swift-const-vals-list /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/arm64/GlobeBaseline.SwiftConstValuesFileList --swift-const-vals-list /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/Objects-normal/x86_64/GlobeBaseline.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-10-28 13:42:46.316 appintentsmetadataprocessor[2870:11999] Starting appintentsmetadataprocessor export
+2026-10-28 13:42:46.323 appintentsmetadataprocessor[2870:11999] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+
+AppIntentsSSUTraining (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsnltrainingprocessor --infoplist-path /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.app/Info.plist --temp-dir-path /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/ssu --bundle-id app.vela.globebaseline --product-path /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.app --extracted-metadata-path /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.app/Metadata.appintents --metadata-file-list /tmp/globe-spike-dd/Build/Intermediates.noindex/GlobeSpike.build/Debug-iphonesimulator/GlobeBaseline.build/GlobeBaseline.DependencyMetadataFileList --source-file /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.app/Info.plist --archive-ssu-assets
+2026-10-28 13:42:46.353 appintentsnltrainingprocessor[2871:12000] Parsing options for appintentsnltrainingprocessor
+2026-10-28 13:42:46.354 appintentsnltrainingprocessor[2871:12000] Starting AppIntents SSU YAML Generation
+2026-10-28 13:42:46.365 appintentsnltrainingprocessor[2871:12000] No AppShortcuts found - Skipping.
+
+RegisterExecutionPolicyException /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.app (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    builtin-RegisterExecutionPolicyException /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.app
+
+Validate /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.app (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    builtin-validationUtility /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.app -shallow-bundle -infoplist-subpath Info.plist
+
+Touch /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.app (in target 'GlobeBaseline' from project 'GlobeSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike
+    /usr/bin/touch -c /tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.app
+
+** BUILD SUCCEEDED **
+

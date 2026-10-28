@@ -1,0 +1,11 @@
+release=ios-v2026.10.19-globe
+download_seconds=8
+archive_bytes=169968107
+xcframework_kib=603564
+589M	/Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike/Vendor/MapLibre.xcframework
+4.0K	/Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike/Vendor/MapLibre.xcframework/Info.plist
+191M	/Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike/Vendor/MapLibre.xcframework/ios-arm64
+398M	/Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike/Vendor/MapLibre.xcframework/ios-arm64_x86_64-simulator
+Info.plist
+ios-arm64
+ios-arm64_x86_64-simulator

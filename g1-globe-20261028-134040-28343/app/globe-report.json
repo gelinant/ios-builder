@@ -1,0 +1,48 @@
+{
+  "camera" : {
+    "maximumPitch" : 59.999999999999993,
+    "maximumZoomLevel" : 22,
+    "minimumZoomLevel" : 0
+  },
+  "device" : "iPhone",
+  "endedAt" : "2026-10-28T13:48:05Z",
+  "finalCamera" : {
+    "heading" : 20,
+    "latitude" : 29.999999999999993,
+    "longitude" : 10,
+    "pitch" : 45,
+    "zoom" : 1
+  },
+  "limits" : {
+    "pitchKept" : 59.999999999999993,
+    "pitchRequested" : 80,
+    "zoomKeptAfterAbove" : 22,
+    "zoomKeptAfterBelow" : -0.089739175318653677,
+    "zoomRequestedAbove" : 30,
+    "zoomRequestedBelow" : -3
+  },
+  "mapLibreRelease" : "ios-v2026.10.19-globe",
+  "occlusion" : {
+    "antipode" : true,
+    "atZoom" : 0,
+    "center" : false
+  },
+  "projection" : "globe",
+  "rotate" : {
+    "avgRenderMs" : 3.4955877849758244e-05,
+    "fps" : 55.73561499368207,
+    "frames" : 614,
+    "seconds" : 11.016295416666708
+  },
+  "screenScale" : 3,
+  "startedAt" : "2026-10-28T13:47:24Z",
+  "styleLoaded" : true,
+  "styleLoadSeconds" : 0.0030612083333494411,
+  "system" : "26.5",
+  "zoomOut" : {
+    "avgRenderMs" : 3.5429645214848091e-05,
+    "fps" : 55.091308711576509,
+    "frames" : 606,
+    "seconds" : 10.999920208333322
+  }
+}
