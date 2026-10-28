@@ -1,0 +1,113 @@
+tag=trip-trace-20261028-135103-3583 src=src/trip-trace 6abdbbb src: 6cb3ff57 Trips: make the file stem callable from the folder writer
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 6abdbbb src: 6cb3ff57 Trips: make the file stem callable from the folder writer
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610281352 (1793195539)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (13:52:19)
+notices: ok, 29 entries (7 libraries, 21 data sources)
+
+== Kotlin: tests and the VelaCore framework (13:52:19)
+gradle: ok in 711 s
+kotlin jvmTest: 487 tests, 0 failures
+kotlin iosSimulatorArm64Test: 391 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  85M, static library 83002016 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  54M, static library 50472280 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (14:04:11)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0 30.3M    0 41170    0     0   120k      0  0:04:17 --:--:--  0:04:17  120k100 30.3M  100 30.3M    0     0  39.3M      0 --:--:-- --:--:-- --:--:-- 69.2M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (14:04:13)
+string catalog: 1444 keys, 24 resource locales (23 with translations), 24601 localized values, 186 Swift references, 24 picker languages
+
+== XcodeGen (14:04:14)
+xcodegen: Version: 2.46.0
+
+== Generate the project (14:04:14)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (14:04:15)
+  BitByteData: https://github.com/tsolomko/BitByteData @ 2.1.0
+
+resolved source packages: MapLibre Native, SWCompression, BitByteData
+(resolve: 19 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (14:04:34)
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (582B068E-2ACA-440E-8D01-417AEDF26981) (Shutdown) 
+
+== Build for the simulator (14:04:36)
+xcodebuild build-sim failed after 95 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/App/LaunchOptions.swift:83:35: error: cannot convert value of type 'String.Element?' (aka 'Optional<Character>') to closure result type 'String?'
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/App/LaunchOptions.swift:83:27: error: value of type 'String.Element' (aka 'Character') has no member 'isEmpty'
+** TEST BUILD FAILED **
+--- tail of build-sim log ---
+            .flatMap { $0.isEmpty ? nil : $0 }
+                                  ^
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/App/LaunchOptions.swift:83:35: note: arguments to generic parameter 'Wrapped' ('String.Element' (aka 'Character') and 'String') are expected to be equal
+            .flatMap { $0.isEmpty ? nil : $0 }
+                                  ^
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/App/LaunchOptions.swift:83:27: error: value of type 'String.Element' (aka 'Character') has no member 'isEmpty'
+            .flatMap { $0.isEmpty ? nil : $0 }
+                       ~~ ^~~~~~~
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/LayersModel.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/LayersView.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Location/LocationPermission.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapController.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapDefaults.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/MapLayers.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/MapLayersTestSupport.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Search/MapPoiModel.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/MapRasterLayers.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for Vela (in target 'Vela' from project 'Vela')
+
+SwiftDriver\ Compilation\ Requirements Vela normal arm64 com.apple.xcode.tools.swift.compiler (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name Vela -Onone @/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/Objects-normal/arm64/Vela.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator -F /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator -F /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor -F /Users/runner/work/ios-builder/ios-builder/src/ios-shared/build/xcode-frameworks/Debug/iphonesimulator26.5 -F Vendor -c -j3 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-688ef53f1462e2c8f657fdc38a81448ff45c64a1807a658693f2a61704f17a36.sdkstatcache -output-file-map /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/Objects-normal/arm64/Vela-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/ModuleCache.noindex -sdk-module-cache-path /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/Objects-normal/arm64/Vela.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/Objects-normal/arm64/Vela_const_extract_protocols.json -Xcc -iquote -Xcc /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/Vela-generated-files.hmap -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/Vela-own-target-headers.hmap -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/Vela-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela-438f92ddfb70ad582e8f4ae190871170-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/Vela-project-headers.hmap -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/DerivedSources-normal/arm64 -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/DerivedSources/arm64 -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/Objects-normal/arm64/Vela-Swift.h -import-objc-header /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Platform/Vela-Bridging-Header.h -working-directory /Users/runner/work/ios-builder/ios-builder/src/iosApp -experimental-emit-module-separately -disable-cmo
+
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD FAILED **
+
+
+The following build commands failed:
+	SwiftCompile normal arm64 Compiling\ EnergyLayer.swift,\ FileManagerPlatformFiles.swift,\ FoundationTextNormalizer.swift,\ FreeDriveChrome.swift,\ GalleryViews.swift,\ GuidanceAudioSession.swift,\ HiddenWebView.swift,\ IncomingCid.swift,\ IncomingLink.swift,\ IntentPlanning.swift,\ JavaScriptCoreJsEngine.swift,\ KeychainSecrets.swift,\ LaunchOptions.swift,\ LayersModel.swift,\ LayersView.swift,\ LocationPermission.swift,\ MapController.swift,\ MapDefaults.swift,\ MapLayers.swift,\ MapLayersTestSupport.swift,\ MapPoiModel.swift,\ MapRasterLayers.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/EnergyLayer.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Platform/FileManagerPlatformFiles.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Platform/FoundationTextNormalizer.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Nav/FreeDriveChrome.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Place/GalleryViews.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Voice/GuidanceAudioSession.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Web/HiddenWebView.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Links/IncomingCid.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Links/IncomingLink.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Intents/IntentPlanning.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Platform/JavaScriptCoreJsEngine.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Platform/KeychainSecrets.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/App/LaunchOptions.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/LayersModel.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/LayersView.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Location/LocationPermission.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapController.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapDefaults.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/MapLayers.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/MapLayersTestSupport.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Search/MapPoiModel.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/MapRasterLayers.swift (in target 'Vela' from project 'Vela')
+	SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/App/LaunchOptions.swift (in target 'Vela' from project 'Vela')
+	Building project Vela for testing with scheme Vela
+(3 failures)
