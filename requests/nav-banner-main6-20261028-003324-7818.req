@@ -1,0 +1,3 @@
+src=src/nav-banner-main6
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=NavBannerUITests VELA_SKIP_ARCHIVE=1
