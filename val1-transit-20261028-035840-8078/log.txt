@@ -1,0 +1,199 @@
+tag=val1-transit-20261028-035840-8078 src=src/val1-transit d23bf40 src: c94d2932 Merge FUEL-WIRE: closing and fuel hints in route and navigation
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: d23bf40 src: c94d2932 Merge FUEL-WIRE: closing and fuel hints in route and navigation
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610280359 (1793159958)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (03:59:18)
+notices: ok, 26 entries (7 libraries, 18 data sources)
+
+== Kotlin: tests and the VelaCore framework (03:59:19)
+gradle: ok in 218 s
+kotlin jvmTest: 371 tests, 0 failures
+kotlin iosSimulatorArm64Test: 308 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  80M, static library 79662608 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  49M, static library 46897336 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (04:02:57)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 41 30.3M   41 12.5M    0     0  33.6M      0 --:--:-- --:--:-- --:--:-- 33.6M100 30.3M  100 30.3M    0     0  66.7M      0 --:--:-- --:--:-- --:--:--  222M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (04:02:58)
+string catalog: 1434 keys, 24 resource locales (23 with translations), 24591 localized values, 163 Swift references, 24 picker languages
+
+== XcodeGen (04:02:59)
+xcodegen: Version: 2.46.0
+
+== Generate the project (04:02:59)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (04:02:59)
+  MapLibre Native: https://github.com/maplibre/maplibre-gl-native-distribution @ 6.31.0
+
+resolved source packages: BitByteData, SWCompression, MapLibre Native
+(resolve: 7 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (04:03:07)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (600A45A3-B3A0-4A39-8A9C-5D051F9FDA9C) (Shutdown) 
+
+== Build for the simulator (04:03:08)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 42 s)
+simulator build: ok
+
+== Boot the simulator (04:03:50)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (04:05:17)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 29 s)
+tests: ok, Executed 137 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=never_get_to_coffee samples=18948
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=56362 rate=22050 wav_frames=56362
+
+== Launch and screenshot (04:05:46)
+app.vela.ios: 25441
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: CEBACE0B-AD9A-4CCA-B197-4CE481A756CE (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (04:06:10)
+xcodebuild uitest failed after 141 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TransitCitymapperUITests.swift:90: error: -[VelaUITests.TransitCitymapperUITests testSegmentTimeChangeShowsANewOptionSet] : XCTAssertTrue failed - no shifted query label
+Test Case '-[VelaUITests.TransitCitymapperUITests testSegmentTimeChangeShowsANewOptionSet]' failed (27.522 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =     8.17s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-trip-close" Button`
+    t =     8.17s         Checking existence of `"transit-trip-close" Button`
+    t =     8.28s Checking existence of `"transit-trip-debug" StaticText`
+    t =     8.36s Find the "transit-trip-debug" StaticText
+    t =     8.53s Added attachment named 'transit-trip'
+    t =     8.54s Checking existence of `"transit-trip-debug" StaticText`
+    t =     8.61s Find the "transit-trip-debug" StaticText
+    t =     8.69s Checking existence of `"transit-trip-debug" StaticText`
+    t =     8.77s Find the "transit-trip-debug" StaticText
+    t =     8.86s Checking existence of `"transit-trip-debug" StaticText`
+    t =     8.94s Find the "transit-trip-debug" StaticText
+UITEST transit_trip_segments=4
+UITEST transit_trip_rides=1
+UITEST transit_trip_header=4
+    t =     9.02s Checking existence of `"transit-trip-debug" StaticText`
+    t =     9.09s Find the "transit-trip-debug" StaticText
+UITEST transit_trip_fixture=1
+    t =     9.16s Checking existence of `"transit-trip-debug" StaticText`
+    t =     9.24s Find the "transit-trip-debug" StaticText
+    t =     9.31s Checking existence of `"transit-trip-debug" StaticText`
+    t =     9.38s Find the "transit-trip-debug" StaticText
+    t =     9.46s Get number of matches for: Elements matching predicate '"transit-trip-segment" IN identifiers'
+    t =     9.53s Checking existence of `"Next departures" StaticText`
+    t =     9.61s Get number of matches for: Elements matching predicate 'label CONTAINS "Live"'
+    t =     9.68s Get number of matches for: Elements matching predicate 'label CONTAINS[c] "scheduled"'
+UITEST transit_trip=segments_and_header
+    t =     9.75s Tap "transit-trip-close" Button
+    t =     9.75s     Wait for app.vela.ios to idle
+    t =     9.76s     Find the "transit-trip-close" Button
+    t =     9.83s     Check for interrupting elements affecting "transit-trip-close" Button
+    t =     9.90s     Synthesize event
+    t =    10.19s     Wait for app.vela.ios to idle
+    t =    10.19s Waiting 20.0s for "transit-card" Other to exist
+    t =    11.22s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-card" Other`
+    t =    11.22s         Checking existence of `"transit-card" Other`
+    t =    11.25s Waiting 10.0s for "transit-debug" StaticText to exist
+    t =    12.27s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-debug" StaticText`
+    t =    12.27s         Checking existence of `"transit-debug" StaticText`
+    t =    12.32s Find the "transit-debug" StaticText
+    t =    12.34s Tear Down
+Test Case '-[VelaUITests.TransitCitymapperUITests testTripScreenShowsSegmentCardsAndNextDepartures]' passed (12.592 seconds).
+Test Suite 'TransitCitymapperUITests' failed at 2026-10-28 04:08:14.324.
+	 Executed 5 tests, with 1 test skipped and 1 failure (0 unexpected) in 112.859 (112.863) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-28 04:08:14.325.
+	 Executed 5 tests, with 1 test skipped and 1 failure (0 unexpected) in 112.859 (112.864) seconds
+Test Suite 'Selected tests' failed at 2026-10-28 04:08:14.326.
+	 Executed 5 tests, with 1 test skipped and 1 failure (0 unexpected) in 112.859 (112.866) seconds
+2026-10-28 04:08:27.725 xcodebuild[27323:78675] [MT] IDETestOperationsObserverDebug: 131.986 elapsed -- Testing started completed.
+2026-10-28 04:08:27.726 xcodebuild[27323:78675] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-28 04:08:27.726 xcodebuild[27323:78675] [MT] IDETestOperationsObserverDebug: 131.986 sec, +131.986 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.lcBAgr3c24/uitest.xcresult
+
+Failing tests:
+	TransitCitymapperUITests.testSegmentTimeChangeShowsANewOptionSet()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui TransitCitymapperUITests.testNearbyLinesTabListsTheStopsLines: passed (12.667 seconds)
+ui TransitCitymapperUITests.testSegmentTimeChangeShowsANewOptionSet: failed (27.522 seconds)
+ui TransitCitymapperUITests.testSkipLetsTheRunPassAndAdvancesTheHeader: passed (13.303 seconds)
+ui TransitCitymapperUITests.testTripScreenShowsSegmentCardsAndNextDepartures: passed (12.592 seconds)
+scripts/ios/ci-ipa.sh: line 279: 27321 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui transit_trip_fixture=1
+ui transit_trip_header_after_skip=3
+ui transit_trip_header_before_skip=4
+ui transit_trip_header=4
+ui transit_trip_nearby_lines=3
+ui transit_trip_nearby_rows=3
+ui transit_trip_rides=1
+ui transit_trip_segments=4
+ui transit_trip_shift_options=2
+ui transit_trip_skip_options=2
+ui transit_trip=segments_and_header
+ui screenshots: 
+
+== Route replay (04:08:32)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: CEBACE0B-AD9A-4CCA-B197-4CE481A756CE (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: CEBACE0B-AD9A-4CCA-B197-4CE481A756CE (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=90478 parsed=true times=false
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (04:09:33)
+258188
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 63798 bytes
+directions reply: directions-drive-sf 116194 bytes
+directions reply: directions-walk-sf 34511 bytes
+search reply: 258188 bytes, 34 feature ids
+failed steps: ui-scenarios
