@@ -1,0 +1,184 @@
+tag=srch-branch-20261028-003828-14079 src=src/srch-branch 6a46ac6 src: abd79fc0 iOS: keep the quick-chip model off the main actor
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 6a46ac6 src: abd79fc0 iOS: keep the quick-chip model off the main actor
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610280043 (1793148202)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (00:43:22)
+notices: ok, 26 entries (7 libraries, 18 data sources)
+
+== Kotlin: tests and the VelaCore framework (00:43:23)
+gradle: ok in 608 s
+kotlin jvmTest: 361 tests, 0 failures
+kotlin iosSimulatorArm64Test: 303 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  80M, static library 79217776 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  49M, static library 46527600 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (00:53:31)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 20 30.3M   20 6352k    0     0  14.3M      0  0:00:02 --:--:--  0:00:02 14.3M100 30.3M  100 30.3M    0     0  39.9M      0 --:--:-- --:--:-- --:--:-- 73.7M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (00:53:34)
+string catalog: 1434 keys, 24 resource locales (23 with translations), 24591 localized values, 165 Swift references, 24 picker languages
+
+== XcodeGen (00:53:35)
+xcodegen: Version: 2.46.0
+
+== Generate the project (00:53:36)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (00:53:36)
+  SWCompression: https://github.com/tsolomko/SWCompression @ 4.9.1
+
+resolved source packages: MapLibre Native, BitByteData, SWCompression
+(resolve: 22 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (00:53:58)
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (582B068E-2ACA-440E-8D01-417AEDF26981) (Shutdown) 
+
+== Build for the simulator (00:53:59)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 114 s)
+simulator build: ok
+
+== Boot the simulator (00:55:53)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (00:59:50)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 139 s)
+tests: ok, Executed 134 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.51 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=19133
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=55289 rate=22050 wav_frames=55289
+
+== Launch and screenshot (01:02:10)
+app.vela.ios: 30940
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 3AB4A2EA-D3AB-40E7-9F24-75DE69BA86F8 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (01:02:55)
+xcodebuild uitest failed after 211 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SearchBranchUITests.swift:71: error: -[VelaUITests.SearchBranchUITests testBranchChipAndShortcutEditor] : XCTAssertTrue failed - the row lost its More chip
+Test Case '-[VelaUITests.SearchBranchUITests testBranchChipAndShortcutEditor]' failed (89.184 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =    77.07s     Find the "settings-done" Button
+    t =    77.33s     Check for interrupting elements affecting "settings-done" Button
+    t =    77.46s     Synthesize event
+    t =    77.77s     Wait for app.vela.ios to idle
+    t =    77.79s Waiting 10.0s for "category-more" Button to exist
+    t =    78.83s     Checking `Expect predicate `existsNoRetry == 1` for object "category-more" Button`
+    t =    78.83s         Checking existence of `"category-more" Button`
+    t =    78.96s         Capturing element debug description
+    t =    79.80s     Checking `Expect predicate `existsNoRetry == 1` for object "category-more" Button`
+    t =    79.80s         Checking existence of `"category-more" Button`
+    t =    79.94s         Capturing element debug description
+    t =    80.88s     Checking `Expect predicate `existsNoRetry == 1` for object "category-more" Button`
+    t =    80.89s         Checking existence of `"category-more" Button`
+    t =    80.99s         Capturing element debug description
+    t =    81.82s     Checking `Expect predicate `existsNoRetry == 1` for object "category-more" Button`
+    t =    81.82s         Checking existence of `"category-more" Button`
+    t =    81.89s         Capturing element debug description
+    t =    82.83s     Checking `Expect predicate `existsNoRetry == 1` for object "category-more" Button`
+    t =    82.83s         Checking existence of `"category-more" Button`
+    t =    82.97s         Capturing element debug description
+    t =    83.82s     Checking `Expect predicate `existsNoRetry == 1` for object "category-more" Button`
+    t =    83.82s         Checking existence of `"category-more" Button`
+    t =    83.94s         Capturing element debug description
+    t =    84.79s     Checking `Expect predicate `existsNoRetry == 1` for object "category-more" Button`
+    t =    84.79s         Checking existence of `"category-more" Button`
+    t =    84.88s         Capturing element debug description
+    t =    85.82s     Checking `Expect predicate `existsNoRetry == 1` for object "category-more" Button`
+    t =    85.82s         Checking existence of `"category-more" Button`
+    t =    85.94s         Capturing element debug description
+    t =    86.87s     Checking `Expect predicate `existsNoRetry == 1` for object "category-more" Button`
+    t =    86.87s         Checking existence of `"category-more" Button`
+    t =    86.99s         Capturing element debug description
+    t =    87.80s     Checking `Expect predicate `existsNoRetry == 1` for object "category-more" Button`
+    t =    87.80s         Checking existence of `"category-more" Button`
+    t =    87.91s         Capturing element debug description
+    t =    87.91s     Checking existence of `"category-more" Button`
+    t =    87.98s Collecting debug information to assist test failure triage
+    t =    87.98s     Requesting snapshot of accessibility hierarchy for app with pid 34421
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SearchBranchUITests.swift:71: error: -[VelaUITests.SearchBranchUITests testBranchChipAndShortcutEditor] : XCTAssertTrue failed - the row lost its More chip
+    t =    88.83s Tear Down
+Test Case '-[VelaUITests.SearchBranchUITests testBranchChipAndShortcutEditor]' failed (89.184 seconds).
+Test Suite 'SearchBranchUITests' failed at 2026-10-28 01:05:38.307.
+	 Executed 1 test, with 1 failure (0 unexpected) in 89.184 (89.188) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-28 01:05:38.307.
+	 Executed 1 test, with 1 failure (0 unexpected) in 89.184 (89.188) seconds
+Test Suite 'Selected tests' failed at 2026-10-28 01:05:38.308.
+	 Executed 1 test, with 1 failure (0 unexpected) in 89.184 (89.190) seconds
+2026-10-28 01:06:21.663 xcodebuild[31800:90921] [MT] IDETestOperationsObserverDebug: 177.933 elapsed -- Testing started completed.
+2026-10-28 01:06:21.665 xcodebuild[31800:90921] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-28 01:06:21.665 xcodebuild[31800:90921] [MT] IDETestOperationsObserverDebug: 177.933 sec, +177.933 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.V82CVn3L6q/uitest.xcresult
+
+Failing tests:
+	SearchBranchUITests.testBranchChipAndShortcutEditor()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+scripts/ios/ci-ipa.sh: line 279: 31798 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui SearchBranchUITests.testBranchChipAndShortcutEditor: failed (89.184 seconds)
+ui branch_chip=Also
+ui branch_rows=3
+ui screenshots: place-branch-chip.png place-branch-list.png place-branch-opened.png 
+
+== Route replay (01:06:32)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 3AB4A2EA-D3AB-40E7-9F24-75DE69BA86F8 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 3AB4A2EA-D3AB-40E7-9F24-75DE69BA86F8 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (01:07:59)
+238549
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 88774 bytes
+directions reply: directions-drive-sf 114168 bytes
+directions reply: directions-walk-sf 34510 bytes
+search reply: 238549 bytes, 27 feature ids
+failed steps: ui-scenarios
