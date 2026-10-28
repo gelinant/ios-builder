@@ -1,0 +1,371 @@
+Command line invocation:
+    /Applications/Xcode_26.6.app/Contents/Developer/usr/bin/xcodebuild build -project /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/TerrainSpike.xcodeproj -scheme TerrainSpike -configuration Debug -destination "platform=iOS Simulator,id=10B884BF-749F-4E8B-AFCD-26AB8F1DBD01" -derivedDataPath /tmp/terrain-spike-dd CODE_SIGNING_ALLOWED=NO
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+
+Resolve Package Graph
+
+Fetching from https://github.com/maplibre/maplibre-gl-native-distribution (cached)
+
+Creating working copy of package ‘maplibre-gl-native-distribution’
+
+Checking out 6.31.0 of package ‘maplibre-gl-native-distribution’
+
+
+Resolved source packages:
+  MapLibre Native: https://github.com/maplibre/maplibre-gl-native-distribution @ 6.31.0
+
+--- xcodebuild: WARNING: Using the first of multiple matching destinations:
+{ platform:iOS Simulator, arch:arm64, id:10B884BF-749F-4E8B-AFCD-26AB8F1DBD01, OS:26.5, name:iPhone 17 }
+{ platform:iOS Simulator, arch:x86_64, id:10B884BF-749F-4E8B-AFCD-26AB8F1DBD01, OS:26.5, name:iPhone 17 }
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (2 targets)
+    Target 'TerrainSpike' in project 'TerrainSpike'
+        ➜ Explicit dependency on target 'MapLibre' in project 'MapLibre Native'
+    Target 'MapLibre' in project 'MapLibre Native' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: b32f7b2cb1b8b3154e04e2eba7e7396b
+Build description path: /tmp/terrain-spike-dd/Build/Intermediates.noindex/XCBuildData/b32f7b2cb1b8b3154e04e2eba7e7396b.xcbuilddata
+ClangStatCache /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk /tmp/terrain-spike-dd/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-688ef53f1462e2c8f657fdc38a81448ff45c64a1807a658693f2a61704f17a36.sdkstatcache
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/TerrainSpike.xcodeproj
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -o /tmp/terrain-spike-dd/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-688ef53f1462e2c8f657fdc38a81448ff45c64a1807a658693f2a61704f17a36.sdkstatcache
+
+CreateBuildDirectory /tmp/terrain-spike-dd/Build/Products
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/TerrainSpike.xcodeproj
+    builtin-create-build-directory /tmp/terrain-spike-dd/Build/Products
+
+CreateBuildDirectory /tmp/terrain-spike-dd/Build/Intermediates.noindex
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/TerrainSpike.xcodeproj
+    builtin-create-build-directory /tmp/terrain-spike-dd/Build/Intermediates.noindex
+
+CreateBuildDirectory /tmp/terrain-spike-dd/Build/Products/Debug-iphonesimulator
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/TerrainSpike.xcodeproj
+    builtin-create-build-directory /tmp/terrain-spike-dd/Build/Products/Debug-iphonesimulator
+
+WriteAuxiliaryFile /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike-592d27ba17fce559b9a4827044968393-VFS-iphonesimulator/all-product-headers.yaml
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/TerrainSpike.xcodeproj
+    write-file /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike-592d27ba17fce559b9a4827044968393-VFS-iphonesimulator/all-product-headers.yaml
+
+ProcessXCFramework /tmp/terrain-spike-dd/SourcePackages/artifacts/maplibre-gl-native-distribution/MapLibre/MapLibre.xcframework /tmp/terrain-spike-dd/Build/Products/Debug-iphonesimulator/MapLibre.framework ios simulator
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/TerrainSpike.xcodeproj
+    builtin-process-xcframework --xcframework /tmp/terrain-spike-dd/SourcePackages/artifacts/maplibre-gl-native-distribution/MapLibre/MapLibre.xcframework --platform ios --environment simulator --target-path /tmp/terrain-spike-dd/Build/Products/Debug-iphonesimulator
+
+CreateBuildDirectory /tmp/terrain-spike-dd/Build/Products/Debug-iphonesimulator/PackageFrameworks
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/TerrainSpike.xcodeproj
+    builtin-create-build-directory /tmp/terrain-spike-dd/Build/Products/Debug-iphonesimulator/PackageFrameworks
+
+CreateBuildDirectory /tmp/terrain-spike-dd/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/TerrainSpike.xcodeproj
+    builtin-create-build-directory /tmp/terrain-spike-dd/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+CreateBuildDirectory /tmp/terrain-spike-dd/Build/Intermediates.noindex/ExplicitPrecompiledModules
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/TerrainSpike.xcodeproj
+    builtin-create-build-directory /tmp/terrain-spike-dd/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+CreateBuildDirectory /tmp/terrain-spike-dd/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/TerrainSpike.xcodeproj
+    builtin-create-build-directory /tmp/terrain-spike-dd/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator
+
+WriteAuxiliaryFile /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/TerrainSpike.hmap (in target 'TerrainSpike' from project 'TerrainSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike
+    write-file /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/TerrainSpike.hmap
+
+WriteAuxiliaryFile /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/TerrainSpike.DependencyStaticMetadataFileList (in target 'TerrainSpike' from project 'TerrainSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike
+    write-file /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/TerrainSpike.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/TerrainSpike.DependencyMetadataFileList (in target 'TerrainSpike' from project 'TerrainSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike
+    write-file /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/TerrainSpike.DependencyMetadataFileList
+
+WriteAuxiliaryFile /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/TerrainSpike-project-headers.hmap (in target 'TerrainSpike' from project 'TerrainSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike
+    write-file /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/TerrainSpike-project-headers.hmap
+
+WriteAuxiliaryFile /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/TerrainSpike-own-target-headers.hmap (in target 'TerrainSpike' from project 'TerrainSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike
+    write-file /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/TerrainSpike-own-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/TerrainSpike-generated-files.hmap (in target 'TerrainSpike' from project 'TerrainSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike
+    write-file /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/TerrainSpike-generated-files.hmap
+
+WriteAuxiliaryFile /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/TerrainSpike-all-target-headers.hmap (in target 'TerrainSpike' from project 'TerrainSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike
+    write-file /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/TerrainSpike-all-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/TerrainSpike-all-non-framework-target-headers.hmap (in target 'TerrainSpike' from project 'TerrainSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike
+    write-file /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/TerrainSpike-all-non-framework-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/Objects-normal/arm64/TerrainSpike_const_extract_protocols.json (in target 'TerrainSpike' from project 'TerrainSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike
+    write-file /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/Objects-normal/arm64/TerrainSpike_const_extract_protocols.json
+
+WriteAuxiliaryFile /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/Objects-normal/arm64/TerrainSpike.SwiftFileList (in target 'TerrainSpike' from project 'TerrainSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike
+    write-file /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/Objects-normal/arm64/TerrainSpike.SwiftFileList
+
+WriteAuxiliaryFile /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/Objects-normal/arm64/TerrainSpike.SwiftConstValuesFileList (in target 'TerrainSpike' from project 'TerrainSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike
+    write-file /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/Objects-normal/arm64/TerrainSpike.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/Objects-normal/arm64/TerrainSpike.LinkFileList (in target 'TerrainSpike' from project 'TerrainSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike
+    write-file /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/Objects-normal/arm64/TerrainSpike.LinkFileList
+
+WriteAuxiliaryFile /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/Objects-normal/arm64/TerrainSpike-OutputFileMap.json (in target 'TerrainSpike' from project 'TerrainSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike
+    write-file /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/Objects-normal/arm64/TerrainSpike-OutputFileMap.json
+
+MkDir /tmp/terrain-spike-dd/Build/Products/Debug-iphonesimulator/TerrainSpike.app/Frameworks (in target 'TerrainSpike' from project 'TerrainSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike
+    /bin/mkdir -p /tmp/terrain-spike-dd/Build/Products/Debug-iphonesimulator/TerrainSpike.app/Frameworks
+
+MkDir /tmp/terrain-spike-dd/Build/Products/Debug-iphonesimulator/TerrainSpike.app (in target 'TerrainSpike' from project 'TerrainSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike
+    /bin/mkdir -p /tmp/terrain-spike-dd/Build/Products/Debug-iphonesimulator/TerrainSpike.app
+
+Copy /tmp/terrain-spike-dd/Build/Products/Debug-iphonesimulator/TerrainSpike.app/Frameworks/MapLibre.framework /tmp/terrain-spike-dd/SourcePackages/artifacts/maplibre-gl-native-distribution/MapLibre/MapLibre.xcframework/ios-arm64_x86_64-simulator/MapLibre.framework (in target 'TerrainSpike' from project 'TerrainSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -resolve-src-symlinks -remove-static-executable /tmp/terrain-spike-dd/SourcePackages/artifacts/maplibre-gl-native-distribution/MapLibre/MapLibre.xcframework/ios-arm64_x86_64-simulator/MapLibre.framework /tmp/terrain-spike-dd/Build/Products/Debug-iphonesimulator/TerrainSpike.app/Frameworks
+
+ProcessInfoPlistFile /tmp/terrain-spike-dd/Build/Products/Debug-iphonesimulator/TerrainSpike.app/Info.plist /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/Generated/TerrainSpike-Info.plist (in target 'TerrainSpike' from project 'TerrainSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike
+    builtin-infoPlistUtility /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/Generated/TerrainSpike-Info.plist -producttype com.apple.product-type.application -genpkginfo /tmp/terrain-spike-dd/Build/Products/Debug-iphonesimulator/TerrainSpike.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -scanforprivacyfile /tmp/terrain-spike-dd/Build/Products/Debug-iphonesimulator/TerrainSpike.app/Frameworks/MapLibre.framework -o /tmp/terrain-spike-dd/Build/Products/Debug-iphonesimulator/TerrainSpike.app/Info.plist
+
+SwiftDriver TerrainSpike normal arm64 com.apple.xcode.tools.swift.compiler (in target 'TerrainSpike' from project 'TerrainSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike
+    builtin-SwiftDriver -- /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name TerrainSpike -O @/tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/Objects-normal/arm64/TerrainSpike.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /tmp/terrain-spike-dd/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/terrain-spike-dd/Build/Products/Debug-iphonesimulator -F /tmp/terrain-spike-dd/Build/Products/Debug-iphonesimulator -c -j3 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/terrain-spike-dd/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-688ef53f1462e2c8f657fdc38a81448ff45c64a1807a658693f2a61704f17a36.sdkstatcache -output-file-map /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/Objects-normal/arm64/TerrainSpike-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/terrain-spike-dd/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/terrain-spike-dd/ModuleCache.noindex -sdk-module-cache-path /tmp/terrain-spike-dd/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/Objects-normal/arm64/TerrainSpike.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/terrain-spike-dd/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/Objects-normal/arm64/TerrainSpike_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/TerrainSpike-generated-files.hmap -Xcc -I/tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/TerrainSpike-own-target-headers.hmap -Xcc -I/tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/TerrainSpike-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/TerrainSpike-project-headers.hmap -Xcc -I/tmp/terrain-spike-dd/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/DerivedSources-normal/arm64 -Xcc -I/tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/DerivedSources/arm64 -Xcc -I/tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/Objects-normal/arm64/TerrainSpike-Swift.h -working-directory /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike -experimental-emit-module-separately -disable-cmo
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/_AvailabilityInternal-D9JPD4F4H06E1BZ1JEZI8HAUC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/_Builtin_stddef-DVDNBHSRKBK1NT4QHMG2WOS8F.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/DeveloperToolsSupport-6C8TEY7TK1T95INEJBSHQJCK8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/SwiftShims-E29IMJ3K8LNAOC7L4R22F8SQO.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/ptrauth-9F2RNL22YC4XRNZOAF1PHO4KZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/ptrcheck-5CD4986RM5AFI2YKXCGD3L50H.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/_Builtin_stdarg-B06UEYVH93II6VEZIB80SHABV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/_Builtin_stdbool-38QFQSGT8T1Q1NR2CR78HL22H.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/_DarwinFoundation1-DL5SI8IWNLV8N6EP0BNVSGONJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/_SwiftConcurrencyShims-CF5VYAL1ZG5TDZHKZUYA31RPE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/_Builtin_float-DEMQJQ47LFJFOW8TF9RZLAN9W.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/_Builtin_limits-4W9LZ077CWYAOBNR51X741RSF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/_DarwinFoundation2-4D3WPY410T69YQNRZJU29SJUC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/_Builtin_stdint-6JSU4RVYTMID0BRZKUQTJSJNV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/_Builtin_tgmath-FYRHQAXYFK45YKNL8E3AWQEI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/sys_types-6LE4X5Z7NN8ACYF7VEOKZO21C.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/_DarwinFoundation3-6XJC003277HXHPOK789DV7AMU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/_Builtin_stdatomic-695Y7MR3XYSWMU6SW7M1WG9LG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/_Builtin_intrinsics-4FW9ENVEV0M5YHKT8RYXZTH3R.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/_Builtin_inttypes-24YES6WOOG82UK1IW4F7H6ZN8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/Darwin-8KETO7W6C44ZYPU7USJQOD8L4.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/simd-9FKQVM18UMEIDSYBGBNGQ62I2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/MachO-7FCTKHL1OMUKQZRAN13EYB7M8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/ObjectiveC-8CL5DIBJ77JGZYY2VF9AUVAKO.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/os_object-3NU66GVPRXD53D8IZ4DE87HTM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/os_workgroup-6AVIN7HNPL2GGDACFD81Q7HCL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/Dispatch-BMOSBR23FXCQN1DOS6S5MOZ8B.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/Spatial-AKWUH686MHH4RON2NQP8XHVOG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/CoreFoundation-9AYZ5BDEI3NJSH6C5DZX3Y9MC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/XPC-3E1Z4UO955Z3K819TWOZ7FBNN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/os-56AORJAOC4VWQGAOLGFZXVZG9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/Security-6HX9SZ2CW2I1HSN7KWLUY846Z.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/CFNetwork-66DTWERX529DB8OABN49U2IS4.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/CoreGraphics-49ZU35H3E7K1X9IJHPMHIPYTX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/Foundation-CY7PVICVQ5FPGQRF43V2K50FW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/ImageIO-6RDUFTU4G99UQZ9DC611ROEWP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/CoreText-H9A4ILK9DKPZYIO36XMD9RSV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/FileProvider-ASSHDZ57YHUQSZNLQXAUHD56A.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/CoreTransferable-3P27XFY6143UFDX8GJNVQ9KH7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/UIUtilities-1HHBQQ08MO3XC5A5HX4URV0FS.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/CoreData-8OLLUN503FQ3KXWMOYDF1CVCF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/UserNotifications-8XA7MEWHO7FPS4UM4KJL9ZRX8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/IOSurface-5F43DI43O09BTRO601AV37OLE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/OpenGLES-1L93GEBU3E553V604L9F91MD9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/UniformTypeIdentifiers-7OZ9T5PEAXWG54K7WLO99XTL0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/Metal-2N86WOAYNTBW8S66XSIQOFPGN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/DataDetection-6VL3P4EB3EOCUS7VWP7Q55673.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/_LocationEssentials-4W66JG8THQMMNLZ8IPHV5CK7A.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/Symbols-91SZZO2ONBSVIMGM68MMHE1WX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/OSLog-13L7NQ9T7HZ59C4LI5G3JJT7R.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/CoreLocation-1OXICQ8LIAICRQ3KO0PB8NJ3W.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/CoreVideo-EELF8Q8HBTUGMDD39YF3Y4FKU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/Accessibility-A3PLPNYYX5VITPRWQCZUI7OES.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/ModelIO-2YTWMR7YE0ACFNIF49CMF985Q.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/CoreImage-4DLMFCR5AXCVS0UQIHRMYKSXE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/QuartzCore-EBVD4YDFSG2CT7YZ8CJYZGA85.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/SwiftUICore-95BUYDHPAIG4CLJPEE6MQYEW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/UIKit-EG8JEZ6ZMGCHNGD3CYCII87NK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/MetalKit-BRG0A5QA1FU0S3E7M4SOUQG7U.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/ModuleCache.noindex/SwiftUI-CCR3N9CLY2BJ854SLVIN9823T.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/terrain-spike-dd/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules/MapLibre-BMD12P4STU7Z53DQXWE6KAID2.pcm
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ TerrainSpike (in target 'TerrainSpike' from project 'TerrainSpike')
+
+EmitSwiftModule normal arm64 (in target 'TerrainSpike' from project 'TerrainSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike
+    
+
+SwiftCompile normal arm64 Compiling\ SpikeFiles.swift,\ TerrainCustomLayer.swift,\ TerrainModel.swift /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/App/SpikeFiles.swift /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/App/TerrainCustomLayer.swift /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/App/TerrainModel.swift (in target 'TerrainSpike' from project 'TerrainSpike')
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/App/SpikeFiles.swift (in target 'TerrainSpike' from project 'TerrainSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/App/TerrainCustomLayer.swift (in target 'TerrainSpike' from project 'TerrainSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/App/TerrainModel.swift (in target 'TerrainSpike' from project 'TerrainSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike
+    
+/Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/App/TerrainModel.swift:156:19: error: 'insertLayer(_:belowLayer:)' has been renamed to 'insertLayer(_:below:)'
+            style.insertLayer(layer, belowLayer: roads)
+                  ^                  ~~~~~~~~~~
+                                     below
+MapLibre.MLNStyle.insertLayer:3:13: note: 'insertLayer(_:belowLayer:)' was obsoleted in Swift 3
+  open func insertLayer(_ layer: MLNStyleLayer, belowLayer sibling: MLNStyleLayer)}
+            ^
+/Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/App/TerrainModel.swift:194:19: error: 'insertLayer(_:belowLayer:)' has been renamed to 'insertLayer(_:below:)'
+            style.insertLayer(line, belowLayer: labels)
+                  ^                 ~~~~~~~~~~
+                                    below
+MapLibre.MLNStyle.insertLayer:3:13: note: 'insertLayer(_:belowLayer:)' was obsoleted in Swift 3
+  open func insertLayer(_ layer: MLNStyleLayer, belowLayer sibling: MLNStyleLayer)}
+            ^
+/Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/App/TerrainModel.swift:251:13: warning: variable 'camera' was never mutated; consider changing to 'let' constant
+        var camera = map.camera
+        ~~~ ^
+        let
+/Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/App/TerrainModel.swift:258:13: warning: variable 'camera' was never mutated; consider changing to 'let' constant
+        var camera = map.camera
+        ~~~ ^
+        let
+/Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/App/TerrainModel.swift:382:33: warning: expression implicitly coerced from 'CGFloat?' to 'Any'
+                "maximumPitch": mapView?.maximumPitch ?? 0,
+                                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/App/TerrainModel.swift:382:55: note: provide a default value to avoid this warning
+                "maximumPitch": mapView?.maximumPitch ?? 0,
+                                ~~~~~~~~~~~~~~~~~~~~~~^~~~
+                                                           ?? <#default value#>
+/Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/App/TerrainModel.swift:382:55: note: force-unwrap the value to avoid this warning
+                "maximumPitch": mapView?.maximumPitch ?? 0,
+                                ~~~~~~~~~~~~~~~~~~~~~~^~~~
+                                                          !
+/Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/App/TerrainModel.swift:382:55: note: explicitly cast to 'Any' with 'as Any' to silence this warning
+                "maximumPitch": mapView?.maximumPitch ?? 0,
+                                ~~~~~~~~~~~~~~~~~~~~~~^~~~
+                                                           as Any
+
+Failed frontend command:
+/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-frontend -frontend -c /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/App/Autopilot.swift /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/App/CameraProbe.swift /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/App/DEM.swift -primary-file /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/App/SpikeFiles.swift -primary-file /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/App/TerrainCustomLayer.swift -primary-file /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/App/TerrainModel.swift /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/App/TerrainRenderer.swift /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/App/TerrainSpikeApp.swift -supplementary-output-file-map /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/Objects-normal/arm64/supplementaryOutputs-2 -target arm64-apple-ios17.0-simulator -load-resolved-plugin /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libFoundationMacros.dylib\#/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#FoundationMacros -load-resolved-plugin /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libObservationMacros.dylib\#/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#ObservationMacros -load-resolved-plugin /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libPreviewsMacros.dylib\#/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#PreviewsMacros -load-resolved-plugin /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libSwiftMacros.dylib\#/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#SwiftMacros -load-resolved-plugin /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libSwiftUIMacros.dylib\#/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#SwiftUIMacros -disable-implicit-swift-modules -Xcc -fno-implicit-modules -Xcc -fno-implicit-module-maps -explicit-swift-module-map-file /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/Objects-normal/arm64/TerrainSpike-dependencies-1.json -debug-module-path /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/Objects-normal/arm64/TerrainSpike.swiftmodule -Xllvm -aarch64-use-tbi -enable-objc-interop -sdk /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -I /tmp/terrain-spike-dd/Build/Products/Debug-iphonesimulator -F /tmp/terrain-spike-dd/Build/Products/Debug-iphonesimulator -no-color-diagnostics -Xcc -fno-color-diagnostics -enable-testing -g -debug-info-format\=dwarf -dwarf-version\=4 -module-cache-path /tmp/terrain-spike-dd/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -swift-version 5 -O -D DEBUG -serialize-debugging-options -const-gather-protocols-file /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/Objects-normal/arm64/TerrainSpike_const_extract_protocols.json -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -empty-abi-descriptor -validate-clang-modules-once -clang-build-session-file /tmp/terrain-spike-dd/ModuleCache.noindex/Session.modulevalidation -Xcc -working-directory -Xcc /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike -file-compilation-dir /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -Xcc -ivfsstatcache -Xcc /tmp/terrain-spike-dd/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-688ef53f1462e2c8f657fdc38a81448ff45c64a1807a658693f2a61704f17a36.sdkstatcache -Xcc -I/tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/swift-overrides.hmap -Xcc -iquote -Xcc /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/TerrainSpike-generated-files.hmap -Xcc -I/tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/TerrainSpike-own-target-headers.hmap -Xcc -I/tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/TerrainSpike-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/TerrainSpike-project-headers.hmap -Xcc -I/tmp/terrain-spike-dd/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/DerivedSources-normal/arm64 -Xcc -I/tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/DerivedSources/arm64 -Xcc -I/tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/DerivedSources -Xcc -DDEBUG\=1 -no-auto-bridging-header-chaining -module-name TerrainSpike -frontend-parseable-output -disable-clang-spi -clang-target arm64-apple-ios26.5-simulator -target-sdk-version 26.5 -target-sdk-name iphonesimulator26.5 -in-process-plugin-server-path /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/libSwiftInProcPluginServer.dylib -o /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/Objects-normal/arm64/SpikeFiles.o -o /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/Objects-normal/arm64/TerrainCustomLayer.o -o /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/Objects-normal/arm64/TerrainModel.o -index-unit-output-path /TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/Objects-normal/arm64/SpikeFiles.o -index-unit-output-path /TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/Objects-normal/arm64/TerrainCustomLayer.o -index-unit-output-path /TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/Objects-normal/arm64/TerrainModel.o
+SwiftCompile normal arm64 Compiling\ Autopilot.swift,\ CameraProbe.swift,\ DEM.swift /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/App/Autopilot.swift /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/App/CameraProbe.swift /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/App/DEM.swift (in target 'TerrainSpike' from project 'TerrainSpike')
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/App/Autopilot.swift (in target 'TerrainSpike' from project 'TerrainSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/App/CameraProbe.swift (in target 'TerrainSpike' from project 'TerrainSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/App/DEM.swift (in target 'TerrainSpike' from project 'TerrainSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike
+    
+
+SwiftCompile normal arm64 Compiling\ TerrainRenderer.swift,\ TerrainSpikeApp.swift /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/App/TerrainRenderer.swift /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/App/TerrainSpikeApp.swift (in target 'TerrainSpike' from project 'TerrainSpike')
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for TerrainSpike (in target 'TerrainSpike' from project 'TerrainSpike')
+
+SwiftDriver\ Compilation\ Requirements TerrainSpike normal arm64 com.apple.xcode.tools.swift.compiler (in target 'TerrainSpike' from project 'TerrainSpike')
+    cd /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name TerrainSpike -O @/tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/Objects-normal/arm64/TerrainSpike.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /tmp/terrain-spike-dd/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/terrain-spike-dd/Build/Products/Debug-iphonesimulator -F /tmp/terrain-spike-dd/Build/Products/Debug-iphonesimulator -c -j3 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/terrain-spike-dd/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-688ef53f1462e2c8f657fdc38a81448ff45c64a1807a658693f2a61704f17a36.sdkstatcache -output-file-map /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/Objects-normal/arm64/TerrainSpike-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/terrain-spike-dd/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/terrain-spike-dd/ModuleCache.noindex -sdk-module-cache-path /tmp/terrain-spike-dd/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/Objects-normal/arm64/TerrainSpike.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/terrain-spike-dd/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/Objects-normal/arm64/TerrainSpike_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/TerrainSpike-generated-files.hmap -Xcc -I/tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/TerrainSpike-own-target-headers.hmap -Xcc -I/tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/TerrainSpike-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/TerrainSpike-project-headers.hmap -Xcc -I/tmp/terrain-spike-dd/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/DerivedSources-normal/arm64 -Xcc -I/tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/DerivedSources/arm64 -Xcc -I/tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/terrain-spike-dd/Build/Intermediates.noindex/TerrainSpike.build/Debug-iphonesimulator/TerrainSpike.build/Objects-normal/arm64/TerrainSpike-Swift.h -working-directory /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike -experimental-emit-module-separately -disable-cmo
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/App/TerrainModel.swift (in target 'TerrainSpike' from project 'TerrainSpike')
+	SwiftCompile normal arm64 Compiling\ SpikeFiles.swift,\ TerrainCustomLayer.swift,\ TerrainModel.swift /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/App/SpikeFiles.swift /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/App/TerrainCustomLayer.swift /Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/App/TerrainModel.swift (in target 'TerrainSpike' from project 'TerrainSpike')
+	Building project TerrainSpike with scheme TerrainSpike and configuration Debug
+(3 failures)
