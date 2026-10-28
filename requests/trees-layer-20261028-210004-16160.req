@@ -1,0 +1,3 @@
+src=src/trees-layer
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=TreesUITests,MapLayersUITests VELA_SKIP_ARCHIVE=1
