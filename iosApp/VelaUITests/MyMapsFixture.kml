@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Davis weekend</name>
+    <description>Where to eat and walk</description>
+    <Style id="icon-1577-FFD600">
+      <IconStyle>
+        <color>ff00d6ff</color>
+        <Icon><href>https://example.invalid/fork.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>Food</name>
+      <Placemark>
+        <name>Davis Food Co-op</name>
+        <description><![CDATA[<b>Bulk bins</b><br>Saturday market]]></description>
+        <styleUrl>#icon-1577-FFD600</styleUrl>
+        <Point><coordinates>-121.7405,38.5449,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Mishka's Cafe</name>
+        <Point><coordinates>-121.7400,38.5440,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Sights</name>
+      <Placemark>
+        <name>Tower Bridge</name>
+        <description>Gold and green</description>
+        <Point><coordinates>-121.5085,38.5816,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
