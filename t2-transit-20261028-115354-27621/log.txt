@@ -1,0 +1,198 @@
+tag=t2-transit-20261028-115354-27621 src=src/t2-transit 83f6e44 src: 340c4c38 iOS: expose via stop controls to UI tests
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 83f6e44 src: 340c4c38 iOS: expose via stop controls to UI tests
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610281157 (1793188639)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (11:57:19)
+notices: ok, 26 entries (7 libraries, 18 data sources)
+
+== Kotlin: tests and the VelaCore framework (11:57:19)
+gradle: ok in 256 s
+kotlin jvmTest: 451 tests, 0 failures
+kotlin iosSimulatorArm64Test: 355 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  84M, static library 82050368 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  53M, static library 49361840 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (12:01:36)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 30.3M  100 30.3M    0     0  51.0M      0 --:--:-- --:--:-- --:--:-- 51.0M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (12:01:37)
+string catalog: 1444 keys, 24 resource locales (23 with translations), 24601 localized values, 184 Swift references, 24 picker languages
+
+== XcodeGen (12:01:39)
+xcodegen: Version: 2.46.0
+
+== Generate the project (12:01:39)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (12:01:39)
+  BitByteData: https://github.com/tsolomko/BitByteData @ 2.1.0
+
+resolved source packages: MapLibre Native, SWCompression, BitByteData
+(resolve: 11 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (12:01:50)
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (582B068E-2ACA-440E-8D01-417AEDF26981) (Shutdown) 
+
+== Build for the simulator (12:01:51)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 43 s)
+simulator build: ok
+
+== Boot the simulator (12:02:34)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (12:04:16)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 35 s)
+tests: ok, Executed 151 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Navigate_the_coffee samples=19133
+VOICE_ASR_PLAN action=search query=Navigate the coffee
+VOICE_SYNTH samples=58112 rate=22050 wav_frames=58112
+
+== Launch and screenshot (12:04:52)
+app.vela.ios: 13171
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 5EEB6E59-C200-4521-8603-E5A3771D4EAE (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (12:05:17)
+xcodebuild uitest failed after 133 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TransitAdvancedUITests.swift:162: error: -[VelaUITests.TransitAdvancedUITests testViaAlternativeInsideTrip] : XCTAssertTrue failed - no via query line
+Test Case '-[VelaUITests.TransitAdvancedUITests testViaAlternativeInsideTrip]' failed (45.094 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+UITEST transit_via_options=2
+    t =    33.96s Checking existence of `"transit-trip-debug" StaticText`
+    t =    34.06s Find the "transit-trip-debug" StaticText
+UITEST transit_via_candidates=3
+    t =    34.16s Waiting 10.0s for "transit-trip-via-query" StaticText to exist
+    t =    35.22s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-trip-via-query" StaticText`
+    t =    35.22s         Checking existence of `"transit-trip-via-query" StaticText`
+    t =    35.32s         Capturing element debug description
+    t =    36.17s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-trip-via-query" StaticText`
+    t =    36.17s         Checking existence of `"transit-trip-via-query" StaticText`
+    t =    36.27s         Capturing element debug description
+    t =    37.21s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-trip-via-query" StaticText`
+    t =    37.21s         Checking existence of `"transit-trip-via-query" StaticText`
+    t =    37.30s         Capturing element debug description
+    t =    38.24s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-trip-via-query" StaticText`
+    t =    38.24s         Checking existence of `"transit-trip-via-query" StaticText`
+    t =    38.35s         Capturing element debug description
+    t =    39.36s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-trip-via-query" StaticText`
+    t =    39.36s         Checking existence of `"transit-trip-via-query" StaticText`
+    t =    39.51s         Capturing element debug description
+    t =    40.24s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-trip-via-query" StaticText`
+    t =    40.24s         Checking existence of `"transit-trip-via-query" StaticText`
+    t =    40.35s         Capturing element debug description
+    t =    41.19s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-trip-via-query" StaticText`
+    t =    41.19s         Checking existence of `"transit-trip-via-query" StaticText`
+    t =    41.30s         Capturing element debug description
+    t =    42.23s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-trip-via-query" StaticText`
+    t =    42.23s         Checking existence of `"transit-trip-via-query" StaticText`
+    t =    42.33s         Capturing element debug description
+    t =    43.18s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-trip-via-query" StaticText`
+    t =    43.18s         Checking existence of `"transit-trip-via-query" StaticText`
+    t =    43.28s         Capturing element debug description
+    t =    44.17s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-trip-via-query" StaticText`
+    t =    44.17s         Checking existence of `"transit-trip-via-query" StaticText`
+    t =    44.27s         Capturing element debug description
+    t =    44.27s     Checking existence of `"transit-trip-via-query" StaticText`
+    t =    44.38s Collecting debug information to assist test failure triage
+    t =    44.38s     Requesting snapshot of accessibility hierarchy for app with pid 18763
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TransitAdvancedUITests.swift:162: error: -[VelaUITests.TransitAdvancedUITests testViaAlternativeInsideTrip] : XCTAssertTrue failed - no via query line
+    t =    44.81s Tear Down
+Test Case '-[VelaUITests.TransitAdvancedUITests testViaAlternativeInsideTrip]' failed (45.094 seconds).
+Test Suite 'TransitAdvancedUITests' failed at 2026-10-28 12:07:11.757.
+	 Executed 4 tests, with 1 failure (0 unexpected) in 99.829 (99.831) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-28 12:07:11.757.
+	 Executed 4 tests, with 1 failure (0 unexpected) in 99.829 (99.832) seconds
+Test Suite 'Selected tests' failed at 2026-10-28 12:07:11.758.
+	 Executed 4 tests, with 1 failure (0 unexpected) in 99.829 (99.833) seconds
+2026-10-28 12:07:27.760 xcodebuild[14948:51265] [MT] IDETestOperationsObserverDebug: 121.486 elapsed -- Testing started completed.
+2026-10-28 12:07:27.760 xcodebuild[14948:51265] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-28 12:07:27.761 xcodebuild[14948:51265] [MT] IDETestOperationsObserverDebug: 121.486 sec, +121.486 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.7BJa62RMUJ/uitest.xcresult
+
+Failing tests:
+	TransitAdvancedUITests.testViaAlternativeInsideTrip()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui TransitAdvancedUITests.testIsochroneAndColoredLines: passed (21.655 seconds)
+ui TransitAdvancedUITests.testLineDelayColors: passed (15.304 seconds)
+ui TransitAdvancedUITests.testLiveTripBadgeOnlyWhenRealTime: passed (17.776 seconds)
+ui TransitAdvancedUITests.testViaAlternativeInsideTrip: failed (45.094 seconds)
+scripts/ios/ci-ipa.sh: line 286: 14945 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui transit_delay_amber=2
+ui transit_delay_green=2
+ui transit_delay_red=1
+ui transit_lines_colored=5
+ui transit_lines_fixture=1
+ui transit_lines=8
+ui transit_live_lines=5
+ui transit_live_total=8
+ui transit_reach_fixture=1
+ui transit_reach_hull=6
+ui transit_reach_stops=14
+ui transit_via_candidates=3
+ui transit_via_options=2
+ui screenshots: 
+
+== Route replay (12:07:32)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 5EEB6E59-C200-4521-8603-E5A3771D4EAE (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 5EEB6E59-C200-4521-8603-E5A3771D4EAE (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (12:08:35)
+273204
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 118200 bytes
+directions reply: directions-drive-sf 120326 bytes
+directions reply: directions-walk-sf 34602 bytes
+search reply: 273204 bytes, 34 feature ids
+failed steps: ui-scenarios
