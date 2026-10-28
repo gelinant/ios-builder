@@ -1,0 +1,3 @@
+src=src/compile-after-savmark3
+script=scripts/ios/ci-compile.sh
+args=
