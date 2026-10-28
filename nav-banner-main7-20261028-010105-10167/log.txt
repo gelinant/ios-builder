@@ -1,0 +1,136 @@
+tag=nav-banner-main7-20261028-010105-10167 src=src/nav-banner-main7 bd7d28c src: 3cf5832c iOS tests: open the stop case from a shared link instead of the pinned picker
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: bd7d28c src: 3cf5832c iOS tests: open the stop case from a shared link instead of the pinned picker
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610280109 (1793149797)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (01:09:57)
+notices: ok, 26 entries (7 libraries, 18 data sources)
+
+== Kotlin: tests and the VelaCore framework (01:09:58)
+gradle: ok in 615 s
+kotlin jvmTest: 368 tests, 0 failures
+kotlin iosSimulatorArm64Test: 305 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  80M, static library 79614000 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  49M, static library 46863120 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (01:20:14)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 30.3M  100 30.3M    0     0  29.9M      0  0:00:01  0:00:01 --:--:-- 29.9M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (01:20:16)
+string catalog: 1434 keys, 24 resource locales (23 with translations), 24591 localized values, 163 Swift references, 24 picker languages
+
+== XcodeGen (01:20:18)
+xcodegen: Version: 2.46.0
+
+== Generate the project (01:20:19)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (01:20:19)
+  BitByteData: https://github.com/tsolomko/BitByteData @ 2.1.0
+
+resolved source packages: MapLibre Native, SWCompression, BitByteData
+(resolve: 17 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (01:20:36)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (600A45A3-B3A0-4A39-8A9C-5D051F9FDA9C) (Shutdown) 
+
+== Build for the simulator (01:20:39)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 112 s)
+simulator build: ok
+
+== Boot the simulator (01:22:31)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (01:26:04)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 129 s)
+tests: ok, Executed 134 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=never_get_to_coffee samples=18948
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=54872 rate=22050 wav_frames=54872
+
+== Launch and screenshot (01:28:13)
+app.vela.ios: 30081
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 2A5F60CD-E7D6-4F00-A10C-CE8285D53683 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (01:28:57)
+Parsed 8 waypoints
+Parsed 8 waypoints
+Parsed 8 waypoints
+Parsed 8 waypoints
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(uitest: 251 s)
+ui scenarios: ok
+scripts/ios/ci-ipa.sh: line 278: 31539 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui NavBannerUITests.testBannerAtAccessibilityXXXL: passed (62.060 seconds)
+ui NavBannerUITests.testFrenchShieldStyles: passed (39.119 seconds)
+ui NavBannerUITests.testLanesShieldPreviewAndPerStopEta: passed (41.104 seconds)
+ui NavBannerUITests.testUkShieldStyles: passed (25.141 seconds)
+ui nav_banner_ax_fraction=0.35
+ui nav_banner_lanes=4
+ui nav_banner_preview=2
+ui nav_banner_restored=1
+ui nav_banner_shield_fr=A7
+ui nav_banner_shield_gb=M25
+ui nav_banner_shield=US
+ui nav_banner_stop_eta=5
+ui nav_banner_stops=1
+ui nav_banner_trip=Trip
+ui screenshots: nav-banner-ax.png nav-banner-lanes-shield-stop.png nav-banner-live-restored.png nav-banner-preview.png nav-banner-shield-fr.png nav-banner-shield-gb.png 
+
+== Route replay (01:33:13)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 2A5F60CD-E7D6-4F00-A10C-CE8285D53683 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 2A5F60CD-E7D6-4F00-A10C-CE8285D53683 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (01:34:45)
+277380
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 76212 bytes
+directions reply: directions-drive-sf 108019 bytes
+directions reply: directions-walk-sf 34606 bytes
+search reply: 277380 bytes, 36 feature ids
