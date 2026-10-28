@@ -1,0 +1,3 @@
+src=src/w1-wiki
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=PlaceKnowledgeUITests VELA_SKIP_ARCHIVE=1
