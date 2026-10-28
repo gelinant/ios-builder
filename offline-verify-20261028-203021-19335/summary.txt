@@ -1,0 +1,7 @@
+commit: a25e237 src: 5de188d5 Merge OFFLINE-FIX: fixture URL rewriter, piece retry and area toggles
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610282036 (1793219784)
+java: openjdk version "17.0.20.1" 2026-08-18
+notices: ok, 35 entries (7 libraries, 27 data sources)
+gradle: FAILED after 122 s
+VelaCore framework missing, stopping
