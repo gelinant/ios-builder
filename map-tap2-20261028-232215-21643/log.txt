@@ -1,0 +1,183 @@
+tag=map-tap2-20261028-232215-21643 src=src/map-tap2 4f2e02e src: fa7f4ee1 Map: apply the live zoom after a style load so POI layers become visible
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 4f2e02e src: fa7f4ee1 Map: apply the live zoom after a style load so POI layers become visible
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610282323 (1793229781)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (23:23:02)
+notices: ok, 35 entries (7 libraries, 27 data sources)
+
+== Kotlin: tests and the VelaCore framework (23:23:02)
+gradle: ok in 292 s
+kotlin jvmTest: 550 tests, 0 failures
+kotlin iosSimulatorArm64Test: 449 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  87M, static library 84828856 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  56M, static library 52406520 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (23:27:54)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 30.3M  100 30.3M    0     0  54.4M      0 --:--:-- --:--:-- --:--:-- 54.4M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (23:27:55)
+string catalog: 1444 keys, 24 resource locales (23 with translations), 24601 localized values, 186 Swift references, 24 picker languages
+
+== XcodeGen (23:27:56)
+xcodegen: Version: 2.46.0
+
+== Generate the project (23:27:57)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (23:27:57)
+  BitByteData: https://github.com/tsolomko/BitByteData @ 2.1.0
+
+resolved source packages: SWCompression, MapLibre Native, BitByteData
+(resolve: 8 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (23:28:06)
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (582B068E-2ACA-440E-8D01-417AEDF26981) (Shutdown) 
+
+== Build for the simulator (23:28:07)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 44 s)
+simulator build: ok
+
+== Boot the simulator (23:28:51)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (23:30:28)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 34 s)
+tests: ok, Executed 182 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=19133
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=55926 rate=22050 wav_frames=55926
+
+== Launch and screenshot (23:31:02)
+app.vela.ios: 14897
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 15632FD4-2B0B-488F-9490-8F478B87F310 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (23:31:27)
+xcodebuild uitest failed after 85 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/MapTapUITests.swift:25: error: -[VelaUITests.MapTapUITests testTapEachKindOpensItsSheet] : XCTAssertTrue failed - a place tap opened no sheet: layers painted=off:0 speed=off:0 alpr=off:0 controls=off:0 fuel=off:0 bridges=off:0 poi=both cats=food,fuel,transit,parking,other pack=337 density=normal icon=1.00 look=vela appearance=system names=english_latin house=normal traffic=off satellite=off raster=none tiles=0 cam=live oriented=0 unoriented=0 zoom=18.0 tap=7 tap_at=217.0,483.7 tap_layers=13 tap_features=1 tap_center=37.79560,-122.39367 tap_ids=vela-route-alt,vela-route-alt-edge,vela-route-casing,vela-route-selected,vela-route-traffic-1,vela-route-traffic-2,vela-route-traffic-3,vela-route-ends,vela-poi,poi_r20,poi_r7,poi_r1,poi_transit tap_layer=poi_r20 tap_id=11890714532 tap_event=place tap_note=routed tap_unaudited=
+Test Case '-[VelaUITests.MapTapUITests testTapEachKindOpensItsSheet]' failed (55.538 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =    48.89s Find the "layers-debug" StaticText
+UITEST tap_probe=layers painted=off:0 speed=off:0 alpr=off:0 controls=off:0 fuel=off:0 bridges=off:0 poi=both cats=food,fuel,transit,parking,other pack=337 density=normal icon=1.00 look=vela appearance=system names=english_latin house=normal traffic=off satellite=off raster=none tiles=0 cam=live oriented=0 unoriented=0 zoom=18.0 tap=5 tap_at=201.0,465.7 tap_layers=13 tap_features=1 tap_center=37.79560,-122.39367 tap_ids=vela-route-alt,vela-route-alt-edge,vela-route-casing,vela-route-selected,vela-route-traffic-1,vela-route-traffic-2,vela-route-traffic-3,vela-route-ends,vela-poi,poi_r20,poi_r7,poi_r1,poi_transit tap_layer=poi_r20 tap_id=11890714532 tap_event=place tap_note=routed tap_unaudited=
+    t =    48.92s Checking existence of `"transit-board-close" Button`
+    t =    48.94s Checking existence of `"map-tap-card-close" Button`
+    t =    49.38s Tap "map" Other[0.54, 0.54]
+    t =    49.38s     Wait for app.vela.ios to idle
+    t =    49.38s     Find the "map" Other
+    t =    49.42s     Check for interrupting elements affecting "map" Other
+    t =    49.45s     Synthesize event
+    t =    49.45s         Find the "map" Other
+    t =    49.50s         Find the "map" Other
+    t =    49.55s         Find the "map" Other
+    t =    49.87s     Wait for app.vela.ios to idle
+    t =    49.88s Checking existence of `"place-name" StaticText`
+    t =    49.91s Checking existence of `"map-poi-name" StaticText`
+    t =    50.45s Checking existence of `"place-name" StaticText`
+    t =    50.48s Checking existence of `"map-poi-name" StaticText`
+    t =    51.02s Checking existence of `"place-name" StaticText`
+    t =    51.05s Checking existence of `"map-poi-name" StaticText`
+    t =    51.58s Checking existence of `"place-name" StaticText`
+    t =    51.62s Checking existence of `"map-poi-name" StaticText`
+    t =    52.16s Checking existence of `"place-name" StaticText`
+    t =    52.18s Checking existence of `"map-poi-name" StaticText`
+    t =    52.72s Checking existence of `"place-name" StaticText`
+    t =    52.74s Checking existence of `"map-poi-name" StaticText`
+    t =    53.27s Checking existence of `"place-name" StaticText`
+    t =    53.30s Checking existence of `"map-poi-name" StaticText`
+    t =    53.84s Checking existence of `"place-name" StaticText`
+    t =    53.86s Checking existence of `"map-poi-name" StaticText`
+    t =    54.39s Checking existence of `"place-name" StaticText`
+    t =    54.42s Checking existence of `"map-poi-name" StaticText`
+    t =    54.45s Checking existence of `"layers-debug" StaticText`
+    t =    54.47s Find the "layers-debug" StaticText
+UITEST tap_probe=layers painted=off:0 speed=off:0 alpr=off:0 controls=off:0 fuel=off:0 bridges=off:0 poi=both cats=food,fuel,transit,parking,other pack=337 density=normal icon=1.00 look=vela appearance=system names=english_latin house=normal traffic=off satellite=off raster=none tiles=0 cam=live oriented=0 unoriented=0 zoom=18.0 tap=7 tap_at=217.0,483.7 tap_layers=13 tap_features=1 tap_center=37.79560,-122.39367 tap_ids=vela-route-alt,vela-route-alt-edge,vela-route-casing,vela-route-selected,vela-route-traffic-1,vela-route-traffic-2,vela-route-traffic-3,vela-route-ends,vela-poi,poi_r20,poi_r7,poi_r1,poi_transit tap_layer=poi_r20 tap_id=11890714532 tap_event=place tap_note=routed tap_unaudited=
+    t =    54.49s Checking existence of `"transit-board-close" Button`
+    t =    54.52s Checking existence of `"map-tap-card-close" Button`
+    t =    54.95s Checking existence of `"layers-debug" StaticText`
+    t =    54.97s Find the "layers-debug" StaticText
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/MapTapUITests.swift:25: error: -[VelaUITests.MapTapUITests testTapEachKindOpensItsSheet] : XCTAssertTrue failed - a place tap opened no sheet: layers painted=off:0 speed=off:0 alpr=off:0 controls=off:0 fuel=off:0 bridges=off:0 poi=both cats=food,fuel,transit,parking,other pack=337 density=normal icon=1.00 look=vela appearance=system names=english_latin house=normal traffic=off satellite=off raster=none tiles=0 cam=live oriented=0 unoriented=0 zoom=18.0 tap=7 tap_at=217.0,483.7 tap_layers=13 tap_features=1 tap_center=37.79560,-122.39367 tap_ids=vela-route-alt,vela-route-alt-edge,vela-route-casing,vela-route-selected,vela-route-traffic-1,vela-route-traffic-2,vela-route-traffic-3,vela-route-ends,vela-poi,poi_r20,poi_r7,poi_r1,poi_transit tap_layer=poi_r20 tap_id=11890714532 tap_event=place tap_note=routed tap_unaudited=
+    t =    55.29s Tear Down
+Test Case '-[VelaUITests.MapTapUITests testTapEachKindOpensItsSheet]' failed (55.538 seconds).
+Test Suite 'MapTapUITests' failed at 2026-10-28 23:32:34.243.
+	 Executed 1 test, with 1 failure (0 unexpected) in 55.538 (55.539) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-28 23:32:34.244.
+	 Executed 1 test, with 1 failure (0 unexpected) in 55.538 (55.540) seconds
+Test Suite 'Selected tests' failed at 2026-10-28 23:32:34.244.
+	 Executed 1 test, with 1 failure (0 unexpected) in 55.538 (55.541) seconds
+2026-10-28 23:32:48.282 xcodebuild[16271:54006] [MT] IDETestOperationsObserverDebug: 74.827 elapsed -- Testing started completed.
+2026-10-28 23:32:48.301 xcodebuild[16271:54006] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-28 23:32:48.301 xcodebuild[16271:54006] [MT] IDETestOperationsObserverDebug: 74.827 sec, +74.827 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.Mu2HVSMzv4/uitest.xcresult
+
+Failing tests:
+	MapTapUITests.testTapEachKindOpensItsSheet()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui MapTapUITests.testTapEachKindOpensItsSheet: failed (55.538 seconds)
+scripts/ios/ci-ipa.sh: line 286: 16268 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui tap_probe=layers
+ui screenshots: 
+
+== Route replay (23:32:55)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 15632FD4-2B0B-488F-9490-8F478B87F310 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 15632FD4-2B0B-488F-9490-8F478B87F310 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (23:33:54)
+250799
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 88743 bytes
+directions reply: directions-drive-sf 114489 bytes
+directions reply: directions-walk-sf 34612 bytes
+search reply: 250799 bytes, 33 feature ids
+failed steps: ui-scenarios
