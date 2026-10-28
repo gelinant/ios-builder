@@ -1,13 +1,13 @@
-commit: 6f82406 src: 35526715 iOS: fix GO bridge integer types and test lookup
+commit: 9d07a82 src: c602a136 iOS: keep the suggestion arrow and identifiers for place rows
 xcode: Xcode 26.6 Build version 17F113 
-version: 0.1.202610281601 (1793203270)
+version: 0.1.202610281558 (1793203100)
 java: openjdk version "17.0.20.1" 2026-08-18
 notices: ok, 32 entries (7 libraries, 24 data sources)
-gradle: ok in 635 s
-kotlin jvmTest: 526 tests, 0 failures
-kotlin iosSimulatorArm64Test: 430 tests, 0 failures
-VelaCore.framework iosSimulatorArm64/debugFramework:  86M, static library 83902592 bytes, SKIE Swift module: yes
-VelaCore.framework iosArm64/releaseFramework:  55M, static library 51403024 bytes, SKIE Swift module: yes
+gradle: ok in 742 s
+kotlin jvmTest: 522 tests, 0 failures
+kotlin iosSimulatorArm64Test: 425 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  86M, static library 84184176 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  55M, static library 51672312 bytes, SKIE Swift module: yes
 sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
 sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
 string catalog: 1444 keys, 24 resource locales (23 with translations), 24601 localized values, 186 Swift references, 24 picker languages
