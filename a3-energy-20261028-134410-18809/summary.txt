@@ -1,0 +1,45 @@
+commit: 9b7e628 src: 982fda15 iOS: make the energy UI scenario tolerate the persisted switch
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610281346 (1793195217)
+java: openjdk version "17.0.20.1" 2026-08-18
+notices: ok, 29 entries (7 libraries, 21 data sources)
+gradle: ok in 612 s
+kotlin jvmTest: 445 tests, 0 failures
+kotlin iosSimulatorArm64Test: 349 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  82M, static library 81634680 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  51M, static library 48987304 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 1444 keys, 24 resource locales (23 with translations), 24601 localized values, 184 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (582B068E-2ACA-440E-8D01-417AEDF26981) (Shutdown) 
+simulator build: ok
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+tests: ok, Executed 151 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.54 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=18762
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=54779 rate=22050 wav_frames=54779
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: ok
+ui EnergyRadarUITests.testCarbonAndRadar: passed (286.166 seconds)
+ui energy_source=neso
+ui radar_state=fresh
+ui radar_state=key_required
+ui screenshots: 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 63690 bytes
+directions reply: directions-drive-sf 116104 bytes
+directions reply: directions-walk-sf 34514 bytes
+search reply: 261274 bytes, 35 feature ids
