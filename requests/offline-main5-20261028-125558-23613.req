@@ -1,0 +1,3 @@
+src=src/offline-main5
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=OfflineAreaUITests,OfflineUITests
