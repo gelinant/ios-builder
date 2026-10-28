@@ -1,0 +1,208 @@
+# Guidage transport GO (TRANSIT-GO)
+
+Ce lot ajoute un écran de guidage pas à pas inspiré du GO de Citymapper, avec les assets et les
+textes de Vela. Il ne remplace ni la carte de guidage compacte, ni la Live Activity X-3, ni l'écran
+de trajet T-3. Il répond à une seule question pendant un trajet : quelle est l'action maintenant,
+et quand faut-il descendre.
+
+## Ce que l'écran montre
+
+La moitié haute est une seule action, en grand :
+
+- « Walk 4 min to République » avant la montée ;
+- « Take M2 towards Nation » à l'arrêt, avec la pastille de ligne dans sa couleur ;
+- « Get off at Belleville in 2 stops », puis « Get off at Belleville at the next stop », puis
+  « Get off now at Belleville » ;
+- « Walk 2 min to the destination » à la fin ;
+- « You have arrived at Belleville » après la dernière jambe.
+
+Le compte à rebours occupe la même carte : « departing in 2 min », « now », « arrival time passed »
+ou « No time ». Il est recalculé chaque seconde depuis l'epoch cible et l'horloge de l'appareil.
+Aucun minuteur ne demande un nouvel horaire au flux. La carte porte aussi l'état de l'heure,
+« Live », « Scheduled » ou « No time », toujours en toutes lettres.
+
+Sous cette carte, un bandeau de descente apparaît quand la machine déclenche l'invite. Il porte le
+texte, l'icône et la mention du mode d'heure. Il ne repose jamais sur la couleur seule.
+
+La partie basse de la course montre les arrêts restants, l'arrêt passé, l'arrêt courant, le prochain
+arrêt et la descente. Quand le flux fournit deux heures estimées voisines, un marqueur « Estimated »
+situe la position entre les deux arrêts, avec une barre de progression orange. Sans ces deux
+heures, aucun marqueur n'est dessiné. Un toucher de la rail ou du bouton « See line » ouvre la liste
+des arrêts et de leurs heures. La feuille de ligne du lot TRANSIT-LINEVIEW peut remplacer cette
+liste locale par le hook `onOpenLine`.
+
+Les quatre commandes du bas reprennent la forme de Citymapper : « Next departures », « Leave later »,
+« Whole trip » et « End ». Chacune fait au moins 44 pt, porte un libellé VoiceOver avec la ligne et
+la direction, et garde un état lisible sans couleur. « Leave later » propose plus 5, 15 ou 30 minutes
+et repasse par `RouteStore.setTime`, donc par le même planificateur que le reste de l'application.
+Il ne réécrit pas l'itinéraire affiché avant qu'une nouvelle option soit choisie.
+
+## Machine à étapes
+
+`TransitGoMachine`, dans `TransitGoState.kt`, possède la séquence et rien d'autre. Elle part de la
+première jambe de l'itinéraire sélectionné : marche, attente de la course, course, marche de
+correspondance, course suivante, marche finale, arrivée. Les quatre valeurs rendues sont `walk`,
+`ride`, `transfer` et `done`. Une attente avant la première course compte comme `walk` pour la
+personne qui marche encore ; une attente entre deux courses compte comme `transfer`.
+
+La session partagée peut pousser sa progression avec `sync(legIndex:passedStops:boarded:arrived:)`.
+La machine ne recule jamais : un index de jambe ou un arrêt plus petit est ignoré. Sans session,
+les commandes manuelles restent disponibles : « I'm on board » passe de l'attente à la course,
+« Skip this step » avance d'une étape et « Next stop (preview) » n'existe qu'en Debug. Un trajet
+sans heure, sans arrêt intermédiaire ou sans position reste donc utilisable.
+
+La machine ne calcule ni itinéraire ni heure. `TransitGoPlanBuilder` traduit seulement les champs
+déjà présents dans `TransitItinerary` : ligne, couleur, direction, arrêts, heures imprimées,
+retard et nombre d'arrêts. Une heure imprimée est ancrée au jour de l'itinéraire dans le fuseau de
+l'appareil ; une heure illisible reste zéro. Aucun arrêt et aucune heure ne sont inventés.
+
+## Compte à rebours et honnêteté
+
+Trois états d'heure sont distingués :
+
+- estimate du flux quand l'itinéraire portait un couple réel et théorique et que le réseau est
+  présent : l'epoch estimée est affichée, l'étiquette est « Live » ;
+- horaire théorique quand le flux n'a pas donné d'estimation, quand le plan est hors ligne ou quand
+  il est périmé : l'epoch théorique est affichée, l'étiquette est « Scheduled » ;
+- aucune heure quand le flux n'a rien donné : « No time », et l'invite de descente reste muette.
+
+Un plan est périmé au-delà de deux heures depuis son chargement, ou trente minutes après sa
+dernière arrivée théorique. Il reste affiché, mais il perd toute étiquette Live, tout marqueur
+estimé et toute invite de descente. Le bandeau dit qu'il peut être obsolète. Un plan hors ligne
+garde ses étapes et ses horaires, affiche « No network. Showing the last itinerary from HH:MM » et
+repasse partout à « Scheduled ». Aucun état ne mélange une heure théorique avec une étiquette Live.
+
+## Invite de descente
+
+Une seule invite est jouée à deux arrêts de la descente, une seule à l'arrêt. La machine les
+déclenche sur le nombre d'arrêts restants, jamais sur une minuterie. Chaque invite est un motif
+haptique et une phrase :
+
+- deux arrêts avant : deux impulsions courtes et « Get off in two stops at Belleville » ;
+- à l'arrêt : une notification de succès et « Get off now at Belleville ».
+
+La voix lit les clés NAV-LIFE au moment de l'invite, dans `NavStore`, sans les posséder :
+`spoken_directions` et `spoken_alerts_only`. En mode On, la phrase est prononcée par
+`VelaNavVoice`, la même voix que la conduite et la marche. En mode Alerts only, le motif haptique
+reste et la phrase est coupée. En mode Off, rien n'est joué, haptique compris. Un itinéraire sans
+heure ou périmé ne déclenche aucune invite. Une invite déjà jouée n'est jamais répétée, même si
+l'écran se redessine chaque seconde.
+
+## Accessibilité
+
+L'écran plafonne le texte à AX3. L'action reste une seule zone de texte, redimensionnable. Les
+arrêts de la rail portent « nom, statut, heure estimée » et sont des boutons. Le bandeau de descente
+est combiné en un seul élément qui commence par « Get off cue ». Les quatre commandes du bas et les
+commandes manuelles font au moins 44 pt. Les états Live, Scheduled, Estimated, passé, prochain et
+descente sont des mots, jamais seulement une couleur.
+
+## Branchement
+
+Le seul point de montage est une ligne dans `TransitGuidanceCard.swift`, à côté de Trip et End :
+
+```swift
+TransitGoButton(model: model)
+```
+
+`TransitGoButton` présente `TransitGoHostView` en plein écran. L'hôte construit le modèle depuis
+`transit.activeTrip` ou, en Debug, depuis l'itinéraire de fixture, puis relie les quatre commandes
+aux surfaces existantes : `TransitBoardSheet` pour les prochains départs, `RouteStore.setTime` pour
+« Leave later », `TransitTripScreen` pour le trajet entier et `TransitSession.end` pour End. Il
+n'édite ni `MapScreen.swift` ni `TransitModel.swift`.
+
+Hooks facultatifs, dans cet ordre de priorité :
+
+- `onOpenLine` : passer la feuille de ligne de TRANSIT-LINEVIEW. Sans ce hook, la feuille locale
+  liste les arrêts de la course et leurs heures.
+- `onNextDepartures` : remplacer l'ouverture du tableau T-1 par la surface de départs du lot de
+  lignes. Sans ce hook, l'hôte ouvre `TransitBoardSheet` sur l'arrêt de montée.
+- `onLeaveLater` : brancher un autre calcul de départ. Sans ce hook, l'hôte appelle
+  `transit.setTimeMode(1, epochSec:)`.
+- `onWholeTrip` : ouvrir une autre vue de trajet. Sans ce hook, l'hôte ouvre `TransitTripScreen`.
+- `vehicleHint` : position du lot TRANSIT-INTERP. L'hôte peut le remplir ainsi, sans que ce lot
+  dépende du type de l'autre :
+
+```swift
+let hint = vehicleModel.vehicles
+    .first { $0.label == go.state?.line }
+    .map {
+        TransitGoVehicleHint(
+            line: $0.label,
+            fraction: $0.fraction,
+            fromStop: $0.fromStopName,
+            toStop: $0.nextStopName)
+    }
+```
+
+`TransitGoVehicleHint` est une structure locale, donc ce lot compile sans le fichier de l'autre.
+Le marqueur reste toujours « Estimated », que la position vienne du véhicule interpolé ou des
+heures estimées de deux arrêts voisins.
+
+Pour réutiliser les lignes du lot TRANSIT-LINEVIEW sans le hook, `TransitGoState` expose déjà
+`line`, `colorHex`, `textColorHex`, `direction` et `stops` ; la rail et la pastille lisent ces
+champs. Aucune couleur d'agence n'est recalculée par GO.
+
+`TransitGoTestBootstrap.m` et `TransitGoTestSupport.swift` sont une couture de test Debug. Le
+constructeur ObjC ne fait rien sans l'argument `-VelaTransitGoTest` ; il présente l'écran au-dessus
+de l'application pour `TransitGoUITests`, car `MapScreen.swift` appartient à un autre lot.
+
+## Tests
+
+Tests Kotlin, `TransitGoStateTest` :
+
+- marche, attente, montée, course, descente, correspondance et arrivée, avec les quatre valeurs
+  rendues ;
+- deux courses consécutives donnent `transfer` et « Skip this step » avance ;
+- invite à deux arrêts puis à l'arrêt, une seule fois chacune, texte compris ;
+- course sans heure : « No time », aucune invite, commandes manuelles toujours possibles ;
+- hors ligne : compte à rebours théorique, aucune étiquette Live, aucun marqueur estimé ;
+- plan périmé : étapes conservées, plus aucune prétention au direct, aucune invite ;
+- position estimée seulement entre deux heures estimées voisines ;
+- compte à rebours qui avance avec l'horloge, sans nouveau plan ;
+- progression de session qui ne recule jamais ;
+- construction depuis `TransitPreview.sf` avec arrêts, couleur et heures, et depuis un itinéraire
+  muet sans heure inventée.
+
+Scénario interface, `TransitGoUITests.testGoModeCuesAndRail` : la course et sa rail, l'invite à
+l'arrêt, le passage à `transfer` puis `done`, et le mode dégradé. Captures `transit-go-ride.png`,
+`transit-go-getoff.png` et `transit-go-degraded.png`. Lignes de rapport `go_step`, `go_estimated`
+et `go_cue`.
+
+Vérification Linux, en avant-plan :
+
+```
+source ~/opt/env.sh
+flock /tmp/opencode/gradle.lock ./gradlew --no-daemon -Pvela.iosOnly=true \
+  :core-common:jvmTest :ios-shared:jvmTest :ios-shared:compileKotlinIosSimulatorArm64
+```
+
+## Limites et risques
+
+- L'epoch d'un arrêt vient de son heure imprimée, ancrée au jour de l'itinéraire dans le fuseau de
+  l'appareil. Un trajet qui traverse un fuseau peut décaler une heure de quelques heures ; Vela ne
+  prétend alors pas à une estimation live, mais l'horaire affiché reste celui du flux.
+- Transitous ne fournit pas de position de véhicule. Le marqueur estimé est une interpolation entre
+  deux heures du flux, ou la position du lot TRANSIT-INTERP quand il est monté. Il n'est jamais
+  présenté comme une mesure.
+- La feuille de ligne locale ne montre que les arrêts de la course choisie. La ligne entière demande
+  le hook `onOpenLine` du lot TRANSIT-LINEVIEW.
+- Le plan n'est pas persisté sur disque. « No network » conserve l'itinéraire de la session en
+  cours, pas celui d'un lancement précédent ; ce dernier cas reste couvert par le cache de T-1.
+- Aucune passe iPhone réelle n'a encore mesuré les deux motifs haptiques en poche, ni la voix GO en
+  mode Alerts only sur un vrai appel entrant.
+
+## Tests humains sur iPhone
+
+1. Démarrer un trajet avec marche, course et marche finale, ouvrir GO et vérifier l'action unique,
+   la pastille, le compte à rebours et la rail.
+2. Toucher « I'm on board » sans bouger : l'écran doit passer à la course, puis les arrêts doivent
+   avancer avec la position réelle ou avec « Next stop (preview) » en Debug.
+3. À deux arrêts de la descente, vérifier une seule phrase et un seul motif haptique, puis la
+   seconde invite à l'arrêt. Rejouer en Alerts only puis en Off.
+4. Couper le réseau : vérifier « No network », « Scheduled » partout, aucun marqueur estimé et
+   aucune invite inventée. Attendre plus de deux heures ou avancer l'horloge pour vérifier le
+   bandeau périmé.
+5. Avec VoiceOver et un texte jusqu'à AX3, parcourir l'action, la rail, l'invite et les quatre
+   commandes du bas ; vérifier les cibles de 44 pt et les libellés avec ligne et direction.
+6. Toucher « Next departures », puis « Leave later » plus 15, puis « Whole trip » et « End » :
+   vérifier que chaque surface reste la même session et que End termine la Live Activity.
