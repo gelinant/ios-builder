@@ -1,0 +1,112 @@
+tag=trees-layer-20261028-210004-16160 src=src/trees-layer 2c85bc1 src: f6c8340b TREES-LAYER: use encodeToByteArray in the shared tree test
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 2c85bc1 src: f6c8340b TREES-LAYER: use encodeToByteArray in the shared tree test
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610282101 (1793221283)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (21:01:23)
+notices: ok, 35 entries (7 libraries, 27 data sources)
+
+== Kotlin: tests and the VelaCore framework (21:01:24)
+gradle: ok in 1055 s
+kotlin jvmTest: 561 tests, 0 failures
+kotlin iosSimulatorArm64Test: 460 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  87M, static library 85055104 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  56M, static library 52652736 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (21:19:00)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 63 30.3M   63 19.2M    0     0  21.2M      0  0:00:01 --:--:--  0:00:01 21.2M100 30.3M  100 30.3M    0     0  19.5M      0  0:00:01  0:00:01 --:--:-- 17.1M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (21:19:04)
+string catalog: 1444 keys, 24 resource locales (23 with translations), 24601 localized values, 186 Swift references, 24 picker languages
+
+== XcodeGen (21:19:08)
+xcodegen: Version: 2.46.0
+
+== Generate the project (21:19:09)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (21:19:10)
+  SWCompression: https://github.com/tsolomko/SWCompression @ 4.9.1
+
+resolved source packages: MapLibre Native, BitByteData, SWCompression
+(resolve: 41 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (21:19:51)
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (582B068E-2ACA-440E-8D01-417AEDF26981) (Shutdown) 
+
+== Build for the simulator (21:19:58)
+xcodebuild build-sim failed after 178 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/TreesLayer.swift:93:16: error: 'circleTranslate' is unavailable: Use circleTranslation instead.
+** TEST BUILD FAILED **
+--- tail of build-sim log ---
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Voice/VoiceSearchModel.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Voice/VoiceSearchView.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Voice/VoiceSettingsSection.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/WikiLayer.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/WikiLayer.swift:81:14: warning: instance method 'lock' is unavailable from asynchronous contexts; Use async-safe scoped locking instead; this is an error in the Swift 6 language mode
+        lock.lock()
+             ^
+Foundation.NSLock.lock:2:11: note: 'lock()' declared here
+open func lock()}
+          ^
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/WikiLayer.swift:84:14: warning: instance method 'unlock' is unavailable from asynchronous contexts; Use async-safe scoped locking instead; this is an error in the Swift 6 language mode
+        lock.unlock()
+             ^
+Foundation.NSLock.unlock:2:11: note: 'unlock()' declared here
+open func unlock()}
+          ^
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/WorldLayerSection.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/WorldLayers.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/WorldLayers.swift:131:39: warning: reference to captured var 'self' in concurrently-executing code; this is an error in the Swift 6 language mode
+                await MainActor.run { self?.finish(layer, result) }
+                                      ^
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Offline/ZipArchive.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftMergeGeneratedHeaders /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/DerivedSources/Vela-Swift.h /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/Objects-normal/arm64/Vela-Swift.h (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    builtin-swiftHeaderTool -arch arm64 /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/Objects-normal/arm64/Vela-Swift.h -o /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/DerivedSources/Vela-Swift.h
+
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD FAILED **
+
+
+The following build commands failed:
+	SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/TreesLayer.swift (in target 'Vela' from project 'Vela')
+	SwiftCompile normal arm64 Compiling\ TransitActivityState.swift,\ TransitBoardSheet.swift,\ TransitDetail.swift,\ TransitDetailSheet.swift,\ TransitGuidanceCard.swift,\ TransitLegMode.swift,\ TransitLinesLayer.swift,\ TransitLiveFixtures.swift,\ TransitLiveModel.swift,\ TransitLiveSheet.swift,\ TransitModel.swift,\ TransitOptionsSheet.swift,\ TransitPlanFixture.swift,\ TransitReachOverlay.swift,\ TransitStops.swift,\ TransitTripModel.swift,\ TransitTripScreen.swift,\ TreesLayer.swift,\ TripDetailMap.swift,\ TripModel.swift,\ TripReplay.swift,\ TripsView.swift,\ URLSessionVelaHttp.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/LiveActivity/TransitActivityState.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitBoardSheet.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitDetail.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitDetailSheet.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitGuidanceCard.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitLegMode.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/TransitLinesLayer.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitLiveFixtures.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitLiveModel.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitLiveSheet.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitModel.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitOptionsSheet.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitPlanFixture.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/TransitReachOverlay.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitStops.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitTripModel.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitTripScreen.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/TreesLayer.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Trips/TripDetailMap.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Trips/TripModel.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Trips/TripReplay.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Trips/TripsView.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Platform/URLSessionVelaHttp.swift (in target 'Vela' from project 'Vela')
+	Building project Vela for testing with scheme Vela
+(3 failures)
