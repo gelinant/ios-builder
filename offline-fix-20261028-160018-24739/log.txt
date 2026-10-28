@@ -1,0 +1,200 @@
+tag=offline-fix-20261028-160018-24739 src=src/offline-fix 2942057 src: 78e79a36 iOS offline: route fixture plan URLs through the bundled names
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 2942057 src: 78e79a36 iOS offline: route fixture plan URLs through the bundled names
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610281602 (1793203362)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (16:02:43)
+notices: ok, 32 entries (7 libraries, 24 data sources)
+
+== Kotlin: tests and the VelaCore framework (16:02:43)
+gradle: ok in 387 s
+kotlin jvmTest: 506 tests, 0 failures
+kotlin iosSimulatorArm64Test: 406 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  85M, static library 83463104 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  54M, static library 50922120 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (16:09:11)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 30.3M  100 30.3M    0     0  23.5M      0  0:00:01  0:00:01 --:--:-- 45.8M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (16:09:12)
+string catalog: 1444 keys, 24 resource locales (23 with translations), 24601 localized values, 186 Swift references, 24 picker languages
+
+== XcodeGen (16:09:13)
+xcodegen: Version: 2.46.0
+
+== Generate the project (16:09:14)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (16:09:14)
+  BitByteData: https://github.com/tsolomko/BitByteData @ 2.1.0
+
+resolved source packages: MapLibre Native, SWCompression, BitByteData
+(resolve: 13 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (16:09:27)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (600A45A3-B3A0-4A39-8A9C-5D051F9FDA9C) (Shutdown) 
+
+== Build for the simulator (16:09:29)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 62 s)
+simulator build: ok
+
+== Boot the simulator (16:10:31)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (16:12:49)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 99 s)
+tests: ok, Executed 151 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Navigate_the_coffee._Nav samples=19319
+VOICE_ASR_PLAN action=search query=Navigate the coffee. Nav
+VOICE_SYNTH samples=58248 rate=22050 wav_frames=58248
+
+== Launch and screenshot (16:14:28)
+app.vela.ios: 17797
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 27137E0B-12BE-4959-8C60-69CCB369A53A (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (16:15:03)
+xcodebuild uitest failed after 218 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/OfflineAreaUITests.swift:67: error: -[VelaUITests.OfflineAreaUITests testFrameAreaAndPreferences] : XCTAssertTrue failed - the progress state did not survive the confirmation
+Test Case '-[VelaUITests.OfflineAreaUITests testFrameAreaAndPreferences]' failed (46.042 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/OfflineUITests.swift:107: error: -[VelaUITests.OfflineUITests testMonacoDeltaUpdateStorageAndWorldFallback] : XCTAssertTrue failed
+Test Case '-[VelaUITests.OfflineUITests testMonacoDeltaUpdateStorageAndWorldFallback]' failed (33.048 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =    49.07s     Synthesize event
+    t =    49.37s     Wait for app.vela.ios to idle
+    t =    49.37s Checking existence of `"offline-map-debug" StaticText`
+    t =    49.41s Find the "offline-map-debug" StaticText
+    t =    49.46s Checking existence of `"offline-debug" StaticText`
+    t =    49.51s Find the "offline-debug" StaticText
+UITEST offline_pack_bytes=364544
+UITEST offline_places_bytes=571133
+UITEST offline_basemap_bytes=11382167
+UITEST offline_glyphs_bytes=104667742
+UITEST offline_total_bytes=116985834
+UITEST offline_installed=1
+UITEST offline_remote_urls=0
+    t =    57.77s Added attachment named 'offline-map'
+    t =    57.78s Tap "search-field" TextField
+    t =    57.78s     Wait for app.vela.ios to idle
+    t =    57.78s     Find the "search-field" TextField
+    t =    57.88s     Check for interrupting elements affecting "search-field" TextField
+    t =    57.93s     Synthesize event
+    t =    58.25s     Wait for app.vela.ios to idle
+    t =    58.81s Type 'Casino de Monte Ca...' into "search-field" TextField
+    t =    58.81s     Wait for app.vela.ios to idle
+    t =    58.84s     Find the "search-field" TextField
+    t =    58.94s     Check for interrupting elements affecting "search-field" TextField
+    t =    58.97s     Synthesize event
+    t =    59.55s     Wait for app.vela.ios to idle
+    t =    59.75s Waiting 30.0s for "search-result" Button to exist
+    t =    60.80s     Checking `Expect predicate `existsNoRetry == 1` for object "search-result" Button`
+    t =    60.80s         Checking existence of `"search-result" Button`
+    t =    60.93s         Capturing element debug description
+    t =    61.76s     Checking `Expect predicate `existsNoRetry == 1` for object "search-result" Button`
+    t =    61.76s         Checking existence of `"search-result" Button`
+    t =    61.88s Checking existence of `"search-debug" StaticText`
+    t =    62.12s Find the "search-debug" StaticText
+    t =    62.36s Get number of matches for: Elements matching predicate '"search-result" IN identifiers'
+UITEST offline_search_results=29
+    t =    62.81s Added attachment named 'offline-search'
+    t =    62.82s Get number of matches for: Elements matching predicate '"search-result" IN identifiers'
+    t =    63.06s Tear Down
+Test Case '-[VelaUITests.OfflineUITests testMonacoDownloadOfflineMapAndSearch]' passed (63.798 seconds).
+Test Suite 'OfflineUITests' failed at 2026-10-28 16:18:10.544.
+	 Executed 2 tests, with 1 failure (0 unexpected) in 96.845 (96.847) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-28 16:18:10.545.
+	 Executed 3 tests, with 2 failures (0 unexpected) in 142.888 (142.893) seconds
+Test Suite 'Selected tests' failed at 2026-10-28 16:18:10.545.
+	 Executed 3 tests, with 2 failures (0 unexpected) in 142.888 (142.895) seconds
+2026-10-28 16:18:35.370 xcodebuild[18881:59002] [MT] IDETestOperationsObserverDebug: 196.827 elapsed -- Testing started completed.
+2026-10-28 16:18:35.370 xcodebuild[18881:59002] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-28 16:18:35.370 xcodebuild[18881:59002] [MT] IDETestOperationsObserverDebug: 196.827 sec, +196.827 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.rIqy57HfD8/uitest.xcresult
+
+Failing tests:
+	OfflineAreaUITests.testFrameAreaAndPreferences()
+	OfflineUITests.testMonacoDeltaUpdateStorageAndWorldFallback()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui OfflineAreaUITests.testFrameAreaAndPreferences: failed (46.042 seconds)
+ui OfflineUITests.testMonacoDeltaUpdateStorageAndWorldFallback: failed (33.048 seconds)
+ui OfflineUITests.testMonacoDownloadOfflineMapAndSearch: passed (63.798 seconds)
+scripts/ios/ci-ipa.sh: line 286: 18878 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui area_estimate_mb=43
+ui area_free_bytes=94.45
+ui area_pref_addresses=0
+ui area_pref_cameras=0
+ui area_prefs=100
+ui offline_basemap_bytes=11382167
+ui offline_fixture_world=0
+ui offline_glyphs_bytes=104667742
+ui offline_installed=1
+ui offline_pack_bytes=364544
+ui offline_places_bytes=571133
+ui offline_remote_urls=0
+ui offline_search_results=29
+ui offline_total_bytes=116985834
+ui screenshots: 
+
+== Route replay (16:18:43)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 27137E0B-12BE-4959-8C60-69CCB369A53A (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 27137E0B-12BE-4959-8C60-69CCB369A53A (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (16:19:58)
+299632
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 88827 bytes
+directions reply: directions-drive-sf 115823 bytes
+directions reply: directions-walk-sf 35618 bytes
+search reply: 299632 bytes, 39 feature ids
+failed steps: ui-scenarios
