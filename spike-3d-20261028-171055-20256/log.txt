@@ -1,0 +1,49 @@
+tag=spike-3d-20261028-171055-20256 src=src/spike-3d 5b7f025 src: 162fa981 Fix style layer insertion and terrain Z units, probe camera on main thread
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+terrain spike, MapLibre Native 6.31.0, MLNCustomStyleLayer + Metal
+[terrain] 17:12:14 checking the pinned terrarium tiles
+terrain-dem: downloading 11/1062/729 (142987 bytes)
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  139k  100  139k    0     0   500k      0 --:--:-- --:--:-- --:--:--  502k
+terrain-dem: downloading 11/1063/729 (147068 bytes)
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 11  143k   11 16933    0     0   119k      0  0:00:01 --:--:--  0:00:01  118k100  143k  100  143k    0     0   674k      0 --:--:-- --:--:-- --:--:--  674k
+terrain-dem: downloading 11/1062/730 (145412 bytes)
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  142k  100  142k    0     0   604k      0 --:--:-- --:--:-- --:--:--  606k
+terrain-dem: downloading 11/1063/730 (146805 bytes)
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  143k  100  143k    0     0   615k      0 --:--:-- --:--:-- --:--:--  617k
+terrain-dem: 4 tiles, 582272 bytes, 11/1062..1063/729..730
+terrain-dem: Mapzen terrain tiles / AWS Open Data elevation-tiles-prod, CC BY 4.0
+terrain-dem: sources NASA SRTM, USGS NED, GMTED2010, NOAA ETOPO1
+terrain-dem: attribution: Terrain data: Mapzen terrain tiles (AWS Open Data elevation-tiles-prod), CC BY 4.0
+DEM: 4 tiles z11 over Mont Blanc, 572 KiB on disk
+[terrain] 17:12:16 installing XcodeGen 2.46.0
+xcodegen: Version: 2.46.0
+simulator: 10B884BF-749F-4E8B-AFCD-26AB8F1DBD01 (iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown) )
+[terrain] 17:12:27 building the spike app
+app built:  16M
+[terrain] 17:13:18 booting simulator 10B884BF-749F-4E8B-AFCD-26AB8F1DBD01
+[terrain] 17:18:07 launching the autopilot
+[terrain] 17:18:35 screenshot terrain-valley.png
+[terrain] 17:19:25 screenshot terrain-tilted.png
+[terrain] 17:19:38 screenshot terrain-overlay.png
+dem: elevation-tiles-prod/terrarium z11 2x2 tiles, 582272 bytes, 1515 ms download+decode
+pass: depth=True format=260 colour=80, projection matrix=True
+mesh 128: 131072 tris, build 1.9 ms, upload 6.3 ms, arrays 3686432 bytes, footprint +3751936 bytes; fps 54.9, cpu 5.27 ms/frame, encode 0.005 ms; idle 0 frames in 2.1 s
+mesh 256: 524288 tris, build 8.3 ms, upload 42.5 ms, arrays 14712864 bytes, footprint +18546752 bytes; fps 57.4, cpu 5.22 ms/frame, encode 0.006 ms; idle 0 frames in 2.1 s
+mesh 512: 2097152 tris, build 46.5 ms, upload 141.5 ms, arrays 58785824 bytes, footprint +77430976 bytes; fps 55.6, cpu 4.63 ms/frame, encode 0.004 ms; idle 0 frames in 2.1 s
+probe pitch0: 25 pts, max 0.00 px, mean 0.00 px, horizon lift 349.27 px
+probe pan: 25 pts, max 0.00 px, mean 0.00 px, horizon lift 95.25 px
+probe zoom: 25 pts, max 0.00 px, mean 0.00 px, horizon lift 47958.35 px
+probe rotate: 21 pts, max 0.00 px, mean 0.00 px, horizon lift 135.81 px
+probe pitch60: 24 pts, max 0.00 px, mean 0.00 px, horizon lift 203.59 px
+overlay: 59.1 fps, cpu 1.91 ms/frame, 260 frames
+footprint: 232 MiB
+screenshots: terrain-valley.png terrain-tilted.png terrain-overlay.png

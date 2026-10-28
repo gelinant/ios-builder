@@ -1,0 +1,42 @@
+2026-10-28 17:18:13.233 TerrainSpike[5620:22850] MLNMapView WARNING UIViewController.automaticallyAdjustsScrollViewInsets is deprecated use MLNMapView.automaticallyAdjustContentInset instead.
+TERRAIN 1793207893.884917 dem tile 11/1062/729 142987 bytes
+TERRAIN 1793207893.892766 style loaded, 112 layers
+TERRAIN 1793207893.895014 route line inserted
+TERRAIN 1793207893.895135 terrain layer inserted
+TERRAIN 1793207893.90488 custom layer attached
+TERRAIN 1793207894.138311 dem tile 11/1063/729 147068 bytes
+TERRAIN 1793207894.220008 dem tile 11/1062/730 145412 bytes
+TERRAIN 1793207894.290278 dem tile 11/1063/730 146805 bytes
+TERRAIN 1793207894.292335 mesh 128: 131072 tris, 3686432 bytes, 1.9 ms
+TERRAIN 1793207894.300839 mesh 256: 524288 tris, 14712864 bytes, 8.3 ms
+TERRAIN 1793207894.3475718 mesh 512: 2097152 tris, 58785824 bytes, 46.5 ms
+TERRAIN 1793207897.717061 pipeline ready, colour 80, depth 260
+TERRAIN 1793207897.720463 map pass: depth true format 260, colour 80
+TERRAIN 1793207897.746959 upload 513 grid: vb 8421408 ib 6291456 in 23.2 ms
+TERRAIN 1793207897.7536721 dem ready: 582272 bytes, download+decode 1515 ms
+TERRAIN 1793207897.7537909 autopilot start
+TERRAIN 1793207898.9931278 mode custom
+TERRAIN 1793207898.9994211 upload 257 grid: vb 2113568 ib 1572864 in 6.2 ms
+TERRAIN 1793207906.877686 upload 257 grid: vb 2113568 ib 1572864 in 6.3 ms
+TERRAIN 1793207912.4399529 measure custom 128: 248 frames, 54.9 fps, cpu 5.27 ms/frame
+TERRAIN 1793207916.08864 measure custom 128: 0 frames, 0.0 fps, cpu 76.71 ms/frame
+TERRAIN 1793207916.131654 upload 513 grid: vb 8421408 ib 6291456 in 42.5 ms
+TERRAIN 1793207921.591578 measure custom 256: 253 frames, 57.4 fps, cpu 5.22 ms/frame
+TERRAIN 1793207925.193563 measure custom 256: 0 frames, 0.0 fps, cpu 63.93 ms/frame
+TERRAIN 1793207925.441694 upload 1025 grid: vb 33620000 ib 25165824 in 247.1 ms
+TERRAIN 1793207930.996289 measure custom 512: 251 frames, 55.6 fps, cpu 4.63 ms/frame
+TERRAIN 1793207934.647843 measure custom 512: 0 frames, 0.0 fps, cpu 66.16 ms/frame
+TERRAIN 1793207934.858264 upload 1025 grid: vb 33620000 ib 25165824 in 210.2 ms
+TERRAIN 1793207936.21913 probe pitch0: max 0.00 px
+TERRAIN 1793207937.58269 probe pan: max 0.00 px
+TERRAIN 1793207938.939234 probe zoom: max 0.00 px
+TERRAIN 1793207940.304438 probe rotate: max 0.00 px
+TERRAIN 1793207941.673967 probe pitch60: max 0.00 px
+TERRAIN 1793207941.8156629 upload 1025 grid: vb 33620000 ib 25165824 in 141.5 ms
+TERRAIN 1793207941.815899 mode custom
+TERRAIN 1793207949.690768 mode overlay
+TERRAIN 1793207949.867735 pipeline ready, colour 80, depth 252
+TERRAIN 1793207958.797086 measure overlay 512: 260 frames, 59.1 fps, cpu 1.91 ms/frame
+TERRAIN 1793207958.797608 mode custom
+TERRAIN 1793207958.828072 done
+app.vela.terrainspike: 5620
