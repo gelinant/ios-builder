@@ -1,0 +1,3 @@
+src=src/freedrive-main
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=NavStopsUITests,FreeDriveUITests VELA_SKIP_ARCHIVE=1
