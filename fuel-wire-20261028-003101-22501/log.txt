@@ -1,0 +1,172 @@
+tag=fuel-wire-20261028-003101-22501 src=src/fuel-wire 9576072 src: 4c87cea9 Wire the closing and fuel hints into the route and nav flows
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 9576072 src: 4c87cea9 Wire the closing and fuel hints into the route and nav flows
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610280032 (1793147526)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (00:32:06)
+notices: ok, 26 entries (7 libraries, 18 data sources)
+
+== Kotlin: tests and the VelaCore framework (00:32:07)
+gradle: FAILED after 452 s
+NoGooglePhotonSourceTest[jvm] > noGoogleSearchAsksPhotonOnlyAndMergesInstalledRows[jvm] FAILED
+    java.lang.AssertionError at NoGooglePhotonSourceTest.kt:37
+
+353 tests completed, 1 failed
+--
+> Task :ios-shared:jvmTest FAILED
+
+[Incubating] Problems report is available at: file:///Users/runner/work/ios-builder/ios-builder/src/build/reports/problems/problems-report.html
+
+--
+* What went wrong:
+Execution failed for task ':ios-shared:jvmTest'.
+> There were failing tests. See the report at: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/build/reports/tests/jvmTest/index.html
+
+--
+BUILD FAILED in 7m 29s
+40 actionable tasks: 40 executed
+> Task :ios-shared:compileTestKotlinJvm
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/nav/NavStoreTest.kt:239:35 Unnecessary safe call on a non-null receiver of type 'NavManeuver'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/nav/NavStoreTest.kt:436:14 'typealias Instant = Instant' is deprecated. This type is deprecated in favor of `kotlin.time.Instant`.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/place/PlaceTravelHintsTest.kt:39:17 'typealias Instant = Instant' is deprecated. This type is deprecated in favor of `kotlin.time.Instant`.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/place/PlaceTravelHintsTest.kt:47:17 'typealias Instant = Instant' is deprecated. This type is deprecated in favor of `kotlin.time.Instant`.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/replay/TripsStoreTest.kt:326:110 Unnecessary non-null assertion (!!) on a non-null receiver of type 'Any'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/route/RouteStoreTest.kt:141:14 'typealias Instant = Instant' is deprecated. This type is deprecated in favor of `kotlin.time.Instant`.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/search/SearchStoreTest.kt:93:40 Unnecessary non-null assertion (!!) on a non-null receiver of type 'LatLng'.
+
+> Task :ios-shared:compileJvmTestJava NO-SOURCE
+> Task :ios-shared:jvmTestClasses
+
+> Task :ios-shared:jvmTest
+
+NoGooglePhotonSourceTest[jvm] > noGoogleSearchAsksPhotonOnlyAndMergesInstalledRows[jvm] FAILED
+    java.lang.AssertionError at NoGooglePhotonSourceTest.kt:37
+
+353 tests completed, 1 failed
+
+> Task :ios-shared:jvmTest FAILED
+
+[Incubating] Problems report is available at: file:///Users/runner/work/ios-builder/ios-builder/src/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':ios-shared:jvmTest'.
+> There were failing tests. See the report at: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/build/reports/tests/jvmTest/index.html
+
+* Try:
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.8.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 7m 29s
+40 actionable tasks: 40 executed
+kotlin jvmTest: 353 tests, 1 failures
+kotlin iosSimulatorArm64Test: 295 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  80M, static library 79420880 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  49M, static library 46627680 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (00:39:39)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 30.3M  100 30.3M    0     0  56.9M      0 --:--:-- --:--:-- --:--:-- 56.9M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (00:39:40)
+string catalog: 1434 keys, 24 resource locales (23 with translations), 24591 localized values, 162 Swift references, 24 picker languages
+
+== XcodeGen (00:39:42)
+xcodegen: Version: 2.46.0
+
+== Generate the project (00:39:42)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (00:39:43)
+  BitByteData: https://github.com/tsolomko/BitByteData @ 2.1.0
+
+resolved source packages: MapLibre Native, SWCompression, BitByteData
+(resolve: 16 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (00:40:00)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (600A45A3-B3A0-4A39-8A9C-5D051F9FDA9C) (Shutdown) 
+
+== Build for the simulator (00:40:04)
+xcodebuild build-sim failed after 68 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Routes/RouteSheets.swift:367:22: error: cannot find type 'ClosingTimeArrivalWarning' in scope
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Routes/RouteSheets.swift:370:25: error: cannot find type 'PlaceTravelHintsFuelDetour' in scope
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Routes/RouteSheets.swift:420:18: error: cannot find type 'ClosingTimeArrivalWarning' in scope
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Routes/RouteSheets.swift:443:17: error: cannot find type 'PlaceTravelHintsFuelDetour' in scope
+** TEST BUILD FAILED **
+--- tail of build-sim log ---
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Search/MapPoiModel.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/MapRasterLayers.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapScreen.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/MapStyleBuilder.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/MapStyleImages.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/MapStyleSettings.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/MapTileNetwork.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapView.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Shared/NavActivityAttributes.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/LiveActivity/NavActivityController.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/LiveActivity/NavActivityState.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Nav/NavAlertTestSupport.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 Compiling\ TransitTripScreen.swift,\ TripDetailMap.swift,\ TripModel.swift,\ TripsView.swift,\ URLSessionVelaHttp.swift,\ VelaApp.swift,\ VelaCoreCheck.swift,\ VelaIntents.swift,\ VelaL10n.swift,\ VelaNavVoice.swift,\ VelaPoiPack.swift,\ VoiceCapture.swift,\ VoiceCatalog.swift,\ VoiceControl.swift,\ VoiceIntentPlanner.swift,\ VoiceLayout.swift,\ VoiceLibrary.swift,\ VoiceModelInstaller.swift,\ VoiceSearchModel.swift,\ VoiceSearchView.swift,\ VoiceSettingsSection.swift,\ ZipArchive.swift,\ GeneratedAssetSymbols.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitTripScreen.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Trips/TripDetailMap.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Trips/TripModel.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Trips/TripsView.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Platform/URLSessionVelaHttp.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/App/VelaApp.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Core/VelaCoreCheck.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Intents/VelaIntents.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Resources/VelaL10n.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Voice/VelaNavVoice.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/VelaPoiPack.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Voice/VoiceCapture.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Voice/VoiceCatalog.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Voice/VoiceControl.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Voice/VoiceIntentPlanner.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Voice/VoiceLayout.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Voice/VoiceLibrary.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Voice/VoiceModelInstaller.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Voice/VoiceSearchModel.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Voice/VoiceSearchView.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Voice/VoiceSettingsSection.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Offline/ZipArchive.swift /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'Vela' from project 'Vela')
+
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD FAILED **
+
+
+The following build commands failed:
+	EmitSwiftModule normal arm64 (in target 'Vela' from project 'Vela')
+	SwiftEmitModule normal arm64 Emitting\ module\ for\ Vela (in target 'Vela' from project 'Vela')
+	Building project Vela for testing with scheme Vela
+(3 failures)

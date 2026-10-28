@@ -1,0 +1,17 @@
+commit: 9576072 src: 4c87cea9 Wire the closing and fuel hints into the route and nav flows
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610280032 (1793147526)
+java: openjdk version "17.0.20.1" 2026-08-18
+notices: ok, 26 entries (7 libraries, 18 data sources)
+gradle: FAILED after 452 s
+kotlin jvmTest: 353 tests, 1 failures
+kotlin iosSimulatorArm64Test: 295 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  80M, static library 79420880 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  49M, static library 46627680 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 1434 keys, 24 resource locales (23 with translations), 24591 localized values, 162 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (600A45A3-B3A0-4A39-8A9C-5D051F9FDA9C) (Shutdown) 
