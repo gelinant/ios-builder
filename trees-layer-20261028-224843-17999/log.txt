@@ -1,0 +1,198 @@
+tag=trees-layer-20261028-224843-17999 src=src/trees-layer 4b0cce3 src: 5003cddf TREES-LAYER: place the UI fixture in the visible box
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 4b0cce3 src: 5003cddf TREES-LAYER: place the UI fixture in the visible box
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610282249 (1793227795)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (22:49:55)
+notices: ok, 35 entries (7 libraries, 27 data sources)
+
+== Kotlin: tests and the VelaCore framework (22:49:56)
+gradle: ok in 688 s
+kotlin jvmTest: 561 tests, 0 failures
+kotlin iosSimulatorArm64Test: 460 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  87M, static library 85055344 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  56M, static library 52652808 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (23:01:24)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0 30.3M    0 49125    0     0   104k      0  0:04:59 --:--:--  0:04:59  104k100 30.3M  100 30.3M    0     0  34.1M      0 --:--:-- --:--:-- --:--:-- 70.7M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (23:01:26)
+string catalog: 1444 keys, 24 resource locales (23 with translations), 24601 localized values, 186 Swift references, 24 picker languages
+
+== XcodeGen (23:01:29)
+xcodegen: Version: 2.46.0
+
+== Generate the project (23:01:31)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (23:01:31)
+  MapLibre Native: https://github.com/maplibre/maplibre-gl-native-distribution @ 6.31.0
+
+resolved source packages: BitByteData, SWCompression, MapLibre Native
+(resolve: 21 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (23:01:53)
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (582B068E-2ACA-440E-8D01-417AEDF26981) (Shutdown) 
+
+== Build for the simulator (23:01:54)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 101 s)
+simulator build: ok
+
+== Boot the simulator (23:03:35)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (23:07:41)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 166 s)
+tests: ok, Executed 172 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.55 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=18390
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=58945 rate=22050 wav_frames=58945
+
+== Launch and screenshot (23:10:27)
+app.vela.ios: 33942
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: E3E0BC5E-7EEA-42EE-BAA1-DC3186F47778 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (23:11:13)
+xcodebuild uitest failed after 482 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/MapLayersUITests.swift:64: error: -[VelaUITests.MapLayersUITests testGoogleTrafficAndSatelliteOverSanFrancisco] : XCTAssertTrue failed - no layers sheet
+Test Case '-[VelaUITests.MapLayersUITests testGoogleTrafficAndSatelliteOverSanFrancisco]' failed (24.334 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/MapLayersUITests.swift:18: error: -[VelaUITests.MapLayersUITests testLayerSheetLoadsOverlaysAtCloseZoom] : XCTAssertTrue failed - the traffic switch must be offered
+Test Case '-[VelaUITests.MapLayersUITests testLayerSheetLoadsOverlaysAtCloseZoom]' failed (13.870 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =    24.76s     Check for interrupting elements affecting "layers-button" Button
+    t =    24.86s     Synthesize event
+    t =    25.17s     Wait for app.vela.ios to idle
+    t =    25.49s Waiting 10.0s for "layer-trees" Button to exist
+    t =    26.55s     Checking `Expect predicate `existsNoRetry == 1` for object "layer-trees" Button`
+    t =    26.55s         Checking existence of `"layer-trees" Button`
+    t =    26.88s Find the "layer-trees" Button
+    t =    27.02s Tap "layers-close" Button
+    t =    27.02s     Wait for app.vela.ios to idle
+    t =    27.03s     Find the "layers-close" Button
+    t =    27.22s     Check for interrupting elements affecting "layers-close" Button
+    t =    27.32s     Synthesize event
+    t =    27.63s     Wait for app.vela.ios to idle
+    t =    27.65s Checking existence of `"layers-debug" StaticText`
+    t =    27.78s Find the "layers-debug" StaticText
+UITEST trees_zoom_gate=1
+    t =    28.12s Added attachment named 'trees-forest'
+    t =    28.13s Tap "layers-button" Button
+    t =    28.13s     Wait for app.vela.ios to idle
+    t =    28.13s     Find the "layers-button" Button
+    t =    28.22s     Check for interrupting elements affecting "layers-button" Button
+    t =    28.28s     Synthesize event
+    t =    28.61s     Wait for app.vela.ios to idle
+    t =    28.62s Waiting 5.0s for "layer-trees" Button to exist
+    t =    29.69s     Checking `Expect predicate `existsNoRetry == 1` for object "layer-trees" Button`
+    t =    29.69s         Checking existence of `"layer-trees" Button`
+    t =    30.08s Tap "layer-trees" Button
+    t =    30.08s     Wait for app.vela.ios to idle
+    t =    30.08s     Find the "layer-trees" Button
+    t =    30.51s     Check for interrupting elements affecting "layer-trees" Button
+    t =    30.78s     Synthesize event
+    t =    31.08s     Wait for app.vela.ios to idle
+    t =    31.16s Tap "layers-close" Button
+    t =    31.16s     Wait for app.vela.ios to idle
+    t =    31.16s     Find the "layers-close" Button
+    t =    31.49s     Check for interrupting elements affecting "layers-close" Button
+    t =    31.70s     Synthesize event
+    t =    32.05s     Wait for app.vela.ios to idle
+    t =    32.06s Tear Down
+Test Case '-[VelaUITests.TreesUITests testTreesAndCanopyAtHighZoom]' passed (32.355 seconds).
+Test Suite 'TreesUITests' passed at 2026-10-28 23:18:39.844.
+	 Executed 1 test, with 0 failures (0 unexpected) in 32.355 (32.356) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-28 23:18:39.846.
+	 Executed 7 tests, with 2 failures (0 unexpected) in 390.541 (390.554) seconds
+Test Suite 'Selected tests' failed at 2026-10-28 23:18:39.847.
+	 Executed 7 tests, with 2 failures (0 unexpected) in 390.541 (390.557) seconds
+2026-10-28 23:19:11.029 xcodebuild[34679:97329] [MT] IDETestOperationsObserverDebug: 441.661 elapsed -- Testing started completed.
+2026-10-28 23:19:11.030 xcodebuild[34679:97329] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-28 23:19:11.030 xcodebuild[34679:97329] [MT] IDETestOperationsObserverDebug: 441.661 sec, +441.661 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.1s4FAScWpy/uitest.xcresult
+
+Failing tests:
+	MapLayersUITests.testGoogleTrafficAndSatelliteOverSanFrancisco()
+	MapLayersUITests.testLayerSheetLoadsOverlaysAtCloseZoom()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui MapLayersUITests.testCameraConesFollowTheMap: passed (45.410 seconds)
+ui MapLayersUITests.testGoogleTrafficAndSatelliteOverSanFrancisco: failed (24.334 seconds)
+ui MapLayersUITests.testLayerSheetLoadsOverlaysAtCloseZoom: failed (13.870 seconds)
+ui MapLayersUITests.testNamesModesHouseNumbersAndExits: passed (98.966 seconds)
+ui MapLayersUITests.testOfflineCameraPackDraws: passed (58.551 seconds)
+ui MapLayersUITests.testStyleVariantsRender: passed (117.055 seconds)
+ui TreesUITests.testTreesAndCanopyAtHighZoom: passed (32.355 seconds)
+scripts/ios/ci-ipa.sh: line 286: 34676 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui cameras_oriented=1
+ui cameras_pack_count=11
+ui cameras_pack_date=2026-07-21
+ui cameras_pack=camera-pack-2026-07-21
+ui cameras_unoriented=1
+ui trees_count=8
+ui trees_source=fixture
+ui trees_zoom_gate=1
+ui screenshots: 
+
+== Route replay (23:19:19)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: E3E0BC5E-7EEA-42EE-BAA1-DC3186F47778 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: E3E0BC5E-7EEA-42EE-BAA1-DC3186F47778 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (23:20:44)
+246423
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 88785 bytes
+directions reply: directions-drive-sf 112821 bytes
+directions reply: directions-walk-sf 34614 bytes
+search reply: 246423 bytes, 30 feature ids
+failed steps: ui-scenarios
