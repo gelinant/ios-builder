@@ -1,0 +1,3 @@
+src=src/map-tap2
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=MapTapUITests VELA_SKIP_ARCHIVE=1
