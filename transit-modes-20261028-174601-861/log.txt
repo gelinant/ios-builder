@@ -1,0 +1,271 @@
+tag=transit-modes-20261028-174601-861 src=src/transit-modes 116cc7a src: 04e0764b iOS transit: name every leg's mode and keep the whole itinerary
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 116cc7a src: 04e0764b iOS transit: name every leg's mode and keep the whole itinerary
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610281748 (1793209731)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (17:48:52)
+notices: ok, 32 entries (7 libraries, 24 data sources)
+
+== Kotlin: tests and the VelaCore framework (17:48:52)
+gradle: ok in 315 s
+kotlin jvmTest: 505 tests, 0 failures
+kotlin iosSimulatorArm64Test: 409 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  85M, static library 83469096 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  54M, static library 50926960 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (17:54:07)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 30.3M  100 30.3M    0     0  66.3M      0 --:--:-- --:--:-- --:--:-- 66.3M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (17:54:08)
+string catalog: 1444 keys, 24 resource locales (23 with translations), 24601 localized values, 186 Swift references, 24 picker languages
+
+== XcodeGen (17:54:09)
+xcodegen: Version: 2.46.0
+
+== Generate the project (17:54:10)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (17:54:10)
+  MapLibre Native: https://github.com/maplibre/maplibre-gl-native-distribution @ 6.31.0
+
+resolved source packages: BitByteData, SWCompression, MapLibre Native
+(resolve: 10 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (17:54:20)
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (582B068E-2ACA-440E-8D01-417AEDF26981) (Shutdown) 
+
+== Build for the simulator (17:54:21)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 60 s)
+simulator build: ok
+
+== Boot the simulator (17:55:21)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (17:56:49)
+xcodebuild test failed after 98 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaTests/TransitModeTests.swift:63: error: -[VelaTests.TransitModeTests testTheWholeTwoLegTripIsInTravelOrder] : XCTAssertEqual failed: ("Walk · M1 · Walk · Transit A · Walk") is not equal to ("Walk · M1 · Walk · RER A · Walk")
+Test Case '-[VelaTests.TransitModeTests testTheWholeTwoLegTripIsInTravelOrder]' failed (0.602 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of test log ---
+Test Suite 'VoiceSearchTests' started at 2026-10-28 17:57:55.458.
+Test Case '-[VelaTests.VoiceSearchTests testCatalogMatchesTheAndroidRelease]' started.
+Test Case '-[VelaTests.VoiceSearchTests testCatalogMatchesTheAndroidRelease]' passed (0.001 seconds).
+Test Case '-[VelaTests.VoiceSearchTests testInstalledEnginesComeFromTheFilesystem]' started.
+Test Case '-[VelaTests.VoiceSearchTests testInstalledEnginesComeFromTheFilesystem]' passed (0.004 seconds).
+Test Case '-[VelaTests.VoiceSearchTests testRecognizedPhrasesBecomeTheSameActionsAsAndroid]' started.
+Test Case '-[VelaTests.VoiceSearchTests testRecognizedPhrasesBecomeTheSameActionsAsAndroid]' passed (0.007 seconds).
+Test Case '-[VelaTests.VoiceSearchTests testWhisperTinyTranscribesSynthesizedSpeech]' started.
+2026-10-28 17:57:55.902380+0000 Vela[13624:44372] [NeuralVoice] loaded en_US-hfc_female-medium: 22050 Hz, 1 speakers
+2026-10-28 17:57:56.290822+0000 Vela[13624:44372] [VoiceSearch] loaded whisper-tiny for en
+SEAM_TEST VOICE_ASR text=Never_get_to_coffee. samples=18948
+SEAM_TEST VOICE_ASR_PLAN action=route query=
+Test Case '-[VelaTests.VoiceSearchTests testWhisperTinyTranscribesSynthesizedSpeech]' passed (0.963 seconds).
+Test Suite 'VoiceSearchTests' passed at 2026-10-28 17:57:56.434.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.975 (0.976) seconds
+Test Suite 'VoiceSelectionTests' started at 2026-10-28 17:57:56.434.
+Test Case '-[VelaTests.VoiceSelectionTests testAnotherLanguageFallsBackToSystem]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testAnotherLanguageFallsBackToSystem]' passed (0.014 seconds).
+Test Case '-[VelaTests.VoiceSelectionTests testCatalogMatchesAndroidIds]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testCatalogMatchesAndroidIds]' passed (0.003 seconds).
+Test Case '-[VelaTests.VoiceSelectionTests testCorruptModelFallsBackToSystem]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testCorruptModelFallsBackToSystem]' passed (0.009 seconds).
+Test Case '-[VelaTests.VoiceSelectionTests testExtractionStripsTopFolderAndValidatesModel]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testExtractionStripsTopFolderAndValidatesModel]' passed (0.513 seconds).
+Test Case '-[VelaTests.VoiceSelectionTests testInstalledSetComesFromCompleteDirectories]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testInstalledSetComesFromCompleteDirectories]' passed (0.008 seconds).
+Test Case '-[VelaTests.VoiceSelectionTests testMissingModelKeepsSystemVoice]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testMissingModelKeepsSystemVoice]' passed (0.003 seconds).
+Test Case '-[VelaTests.VoiceSelectionTests testSelectedVoiceWinsAndMissingSelectionFallsBack]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testSelectedVoiceWinsAndMissingSelectionFallsBack]' passed (0.007 seconds).
+Test Case '-[VelaTests.VoiceSelectionTests testUnsafeArchiveEntryIsRejected]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testUnsafeArchiveEntryIsRejected]' passed (0.005 seconds).
+Test Suite 'VoiceSelectionTests' passed at 2026-10-28 17:57:56.999.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.562 (0.565) seconds
+Test Suite 'WebTests' started at 2026-10-28 17:57:56.999.
+Test Case '-[VelaTests.WebTests testBlockedHostsCompileAsAContentRuleList]' started.
+Test Case '-[VelaTests.WebTests testBlockedHostsCompileAsAContentRuleList]' passed (0.011 seconds).
+Test Case '-[VelaTests.WebTests testBridgeNamesAreSwappedForRandomOnes]' started.
+Test Case '-[VelaTests.WebTests testBridgeNamesAreSwappedForRandomOnes]' passed (0.001 seconds).
+Test Case '-[VelaTests.WebTests testTheSheetShowsTheSiteHost]' started.
+Test Case '-[VelaTests.WebTests testTheSheetShowsTheSiteHost]' passed (0.001 seconds).
+Test Suite 'WebTests' passed at 2026-10-28 17:57:57.014.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.013 (0.014) seconds
+Test Suite 'VelaTests.xctest' failed at 2026-10-28 17:57:57.014.
+	 Executed 156 tests, with 1 failure (0 unexpected) in 7.206 (8.965) seconds
+Test Suite 'All tests' failed at 2026-10-28 17:57:57.052.
+	 Executed 156 tests, with 1 failure (0 unexpected) in 7.206 (9.004) seconds
+2026-10-28 17:58:25.798 xcodebuild[12880:41677] [MT] IDETestOperationsObserverDebug: 87.640 elapsed -- Testing started completed.
+2026-10-28 17:58:25.798 xcodebuild[12880:41677] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-28 17:58:25.798 xcodebuild[12880:41677] [MT] IDETestOperationsObserverDebug: 87.640 sec, +87.640 sec -- end
+
+Test session results, code coverage, and logs:
+	/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Logs/Test/Test-Vela-2026.10.28_17-56-53-+0000.xcresult
+
+Failing tests:
+	TransitModeTests.testTheWholeTwoLegTripIsInTravelOrder()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+tests: FAILED
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=18948
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=54415 rate=22050 wav_frames=54415
+
+== Launch and screenshot (17:58:28)
+app.vela.ios: 17455
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: E7F60B73-463B-4D37-8786-F19260E55F94 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (17:59:15)
+xcodebuild uitest failed after 232 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TransitModesUITests.swift:46: error: -[VelaUITests.TransitModesUITests testAllLegsAndModes] : XCTAssertEqual failed: ("0") is not equal to ("5") - one mode headline per leg
+Test Case '-[VelaUITests.TransitModesUITests testAllLegsAndModes]' failed (11.280 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+Test Suite 'TransitCitymapperUITests' passed at 2026-10-28 18:02:27.159.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 159.047 (159.051) seconds
+Test Suite 'TransitModesUITests' started at 2026-10-28 18:02:27.160.
+Test Case '-[VelaUITests.TransitModesUITests testAllLegsAndModes]' started.
+    t =     0.00s Start Test at 2026-10-28 18:02:27.160
+    t =     0.02s Set Up
+    t =     0.02s Open app.vela.ios
+    t =     0.02s     Launch app.vela.ios
+    t =     0.02s         Terminate app.vela.ios:28041
+2026-10-28 18:02:28.250 xcodebuild[19240:60346] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-28 18:02:28.250 xcodebuild[19240:60346] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.65s         Setting up automation session
+    t =     2.75s         Wait for app.vela.ios to idle
+    t =     5.70s Waiting 30.0s for "transit-card" Other to exist
+    t =     6.78s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-card" Other`
+    t =     6.78s         Checking existence of `"transit-card" Other`
+    t =     6.85s Waiting 20.0s for "transit-detail-open" Button to exist
+    t =     7.86s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-detail-open" Button`
+    t =     7.86s         Checking existence of `"transit-detail-open" Button`
+    t =     7.90s Tap "transit-detail-open" Button
+    t =     7.90s     Wait for app.vela.ios to idle
+    t =     7.90s     Find the "transit-detail-open" Button
+    t =     7.94s     Check for interrupting elements affecting "transit-detail-open" Button
+    t =     7.96s     Synthesize event
+    t =     8.26s     Wait for app.vela.ios to idle
+    t =     8.27s Waiting 20.0s for "steps-sheet" Any to exist
+    t =     9.29s     Checking `Expect predicate `existsNoRetry == 1` for object "steps-sheet" Any`
+    t =     9.30s         Checking existence of `"steps-sheet" Any`
+    t =     9.41s Waiting 20.0s for "transit-modes-debug" StaticText to exist
+    t =    10.44s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-modes-debug" StaticText`
+    t =    10.44s         Checking existence of `"transit-modes-debug" StaticText`
+    t =    10.52s Find the "transit-modes-debug" StaticText
+    t =    10.60s Find the "transit-modes-debug" StaticText
+    t =    10.69s Find the "transit-modes-debug" StaticText
+UITEST transit_legs=5
+UITEST transit_modes=walk,metro,walk,rail,walk
+UITEST transit_transfer=1
+    t =    10.78s Get number of matches for: Elements matching predicate '"transit-detail-mode" IN identifiers'
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TransitModesUITests.swift:46: error: -[VelaUITests.TransitModesUITests testAllLegsAndModes] : XCTAssertEqual failed: ("0") is not equal to ("5") - one mode headline per leg
+    t =    11.04s Tear Down
+Test Case '-[VelaUITests.TransitModesUITests testAllLegsAndModes]' failed (11.280 seconds).
+Test Suite 'TransitModesUITests' failed at 2026-10-28 18:02:38.441.
+	 Executed 1 test, with 1 failure (0 unexpected) in 11.280 (11.281) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-28 18:02:38.441.
+	 Executed 6 tests, with 1 failure (0 unexpected) in 170.327 (170.333) seconds
+Test Suite 'Selected tests' failed at 2026-10-28 18:02:38.442.
+	 Executed 6 tests, with 1 failure (0 unexpected) in 170.327 (170.334) seconds
+2026-10-28 18:03:00.367 xcodebuild[19240:60346] [MT] IDETestOperationsObserverDebug: 212.276 elapsed -- Testing started completed.
+2026-10-28 18:03:00.368 xcodebuild[19240:60346] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-28 18:03:00.368 xcodebuild[19240:60346] [MT] IDETestOperationsObserverDebug: 212.276 sec, +212.276 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.Sn2svfwsKm/uitest.xcresult
+
+Failing tests:
+	TransitModesUITests.testAllLegsAndModes()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui TransitCitymapperUITests.testLiveTripScreenWhenTheFeedAnswers: passed (45.997 seconds)
+ui TransitCitymapperUITests.testNearbyLinesTabListsTheStopsLines: passed (16.423 seconds)
+ui TransitCitymapperUITests.testSegmentTimeChangeShowsANewOptionSet: passed (62.662 seconds)
+ui TransitCitymapperUITests.testSkipLetsTheRunPassAndAdvancesTheHeader: passed (17.508 seconds)
+ui TransitCitymapperUITests.testTripScreenShowsSegmentCardsAndNextDepartures: passed (16.457 seconds)
+ui TransitModesUITests.testAllLegsAndModes: failed (11.280 seconds)
+scripts/ios/ci-ipa.sh: line 286: 19237 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui transit_legs=5
+ui transit_modes=walk,metro,walk,rail,walk
+ui transit_transfer=1
+ui transit_trip_fixture=1
+ui transit_trip_header_after_skip=3
+ui transit_trip_header_before_skip=4
+ui transit_trip_header=4
+ui transit_trip_live_available=1
+ui transit_trip_live_header=4
+ui transit_trip_live_segments=4
+ui transit_trip_nearby_lines=3
+ui transit_trip_nearby_rows=3
+ui transit_trip_option_rows=0
+ui transit_trip_rides=1
+ui transit_trip_segments=4
+ui transit_trip_shift_options=2
+ui transit_trip_shift_query=in-screenshot
+ui transit_trip_skip_options=2
+ui transit_trip=segments_and_header
+ui screenshots: 
+
+== Route replay (18:03:08)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: E7F60B73-463B-4D37-8786-F19260E55F94 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: E7F60B73-463B-4D37-8786-F19260E55F94 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=48593 parsed=true times=false
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (18:04:22)
+278026
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 63698 bytes
+directions reply: directions-drive-sf 114461 bytes
+directions reply: directions-walk-sf 34607 bytes
+search reply: 278026 bytes, 37 feature ids
+failed steps: tests ui-scenarios
