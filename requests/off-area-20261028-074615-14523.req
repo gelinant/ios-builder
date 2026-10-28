@@ -1,0 +1,3 @@
+src=src/off-area
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=OfflineAreaUITests VELA_SKIP_ARCHIVE=1
