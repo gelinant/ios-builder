@@ -1,0 +1,244 @@
+tag=set-voice-20261028-031306-10215 src=src/set-voice 480e182 src: bef43409 SET-VOICE: voice settings, guidance language and download states
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 480e182 src: bef43409 SET-VOICE: voice settings, guidance language and download states
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610280314 (1793157269)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (03:14:30)
+notices: ok, 26 entries (7 libraries, 18 data sources)
+
+== Kotlin: tests and the VelaCore framework (03:14:30)
+gradle: FAILED after 630 s
+NavStoreTest[jvm] > trafficOfferIsMirroredAndAcceptanceAdoptsTheCandidate[jvm] FAILED
+    java.lang.AssertionError at NavStoreTest.kt:131
+
+387 tests completed, 1 failed
+--
+> Task :ios-shared:jvmTest FAILED
+
+[Incubating] Problems report is available at: file:///Users/runner/work/ios-builder/ios-builder/src/build/reports/problems/problems-report.html
+
+--
+* What went wrong:
+Execution failed for task ':ios-shared:jvmTest'.
+> There were failing tests. See the report at: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/build/reports/tests/jvmTest/index.html
+
+--
+BUILD FAILED in 10m 27s
+40 actionable tasks: 40 executed
+> Task :ios-shared:compileTestKotlinJvm
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/nav/NavStoreTest.kt:241:35 Unnecessary safe call on a non-null receiver of type 'NavManeuver'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/nav/NavStoreTest.kt:438:14 'typealias Instant = Instant' is deprecated. This type is deprecated in favor of `kotlin.time.Instant`.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/place/PlaceTravelHintsTest.kt:39:17 'typealias Instant = Instant' is deprecated. This type is deprecated in favor of `kotlin.time.Instant`.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/place/PlaceTravelHintsTest.kt:47:17 'typealias Instant = Instant' is deprecated. This type is deprecated in favor of `kotlin.time.Instant`.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/replay/TripsStoreTest.kt:326:110 Unnecessary non-null assertion (!!) on a non-null receiver of type 'Any'.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/route/RouteStoreTest.kt:141:14 'typealias Instant = Instant' is deprecated. This type is deprecated in favor of `kotlin.time.Instant`.
+w: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/src/commonTest/kotlin/app/vela/ios/search/SearchStoreTest.kt:93:40 Unnecessary non-null assertion (!!) on a non-null receiver of type 'LatLng'.
+
+> Task :ios-shared:compileJvmTestJava NO-SOURCE
+> Task :ios-shared:jvmTestClasses
+
+> Task :ios-shared:jvmTest
+
+NavStoreTest[jvm] > trafficOfferIsMirroredAndAcceptanceAdoptsTheCandidate[jvm] FAILED
+    java.lang.AssertionError at NavStoreTest.kt:131
+
+387 tests completed, 1 failed
+
+> Task :ios-shared:jvmTest FAILED
+
+[Incubating] Problems report is available at: file:///Users/runner/work/ios-builder/ios-builder/src/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':ios-shared:jvmTest'.
+> There were failing tests. See the report at: file:///Users/runner/work/ios-builder/ios-builder/src/ios-shared/build/reports/tests/jvmTest/index.html
+
+* Try:
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.8.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 10m 27s
+40 actionable tasks: 40 executed
+kotlin jvmTest: 387 tests, 1 failures
+kotlin iosSimulatorArm64Test: 310 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  81M, static library 79855352 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  50M, static library 47127224 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (03:25:00)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 30.3M  100 30.3M    0     0  55.1M      0 --:--:-- --:--:-- --:--:-- 55.1M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (03:25:02)
+string catalog: 1444 keys, 24 resource locales (23 with translations), 24601 localized values, 178 Swift references, 24 picker languages
+
+== XcodeGen (03:25:03)
+xcodegen: Version: 2.46.0
+
+== Generate the project (03:25:04)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (03:25:04)
+  MapLibre Native: https://github.com/maplibre/maplibre-gl-native-distribution @ 6.31.0
+
+resolved source packages: SWCompression, BitByteData, MapLibre Native
+(resolve: 20 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (03:25:24)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (600A45A3-B3A0-4A39-8A9C-5D051F9FDA9C) (Shutdown) 
+
+== Build for the simulator (03:25:25)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 92 s)
+simulator build: ok
+
+== Boot the simulator (03:26:57)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (03:30:08)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 109 s)
+tests: ok, Executed 137 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=19691
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=56086 rate=22050 wav_frames=56086
+
+== Launch and screenshot (03:31:58)
+app.vela.ios: 32264
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: FA963601-01C5-4D37-A43E-D90ABBB4F8BA (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (03:32:40)
+xcodebuild uitest failed after 230 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SettingsVoiceUITests.swift:69: error: -[VelaUITests.SettingsVoiceUITests testVoiceAndLanguage] : XCTAssertTrue failed
+Test Case '-[VelaUITests.SettingsVoiceUITests testVoiceAndLanguage]' failed (131.249 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =   122.08s Find the "voice-library" Button
+    t =   122.24s Find the "voice-library" Button
+    t =   122.42s Find the "voice-library" Button
+    t =   122.58s Find the "voice-library" Button
+    t =   122.79s Find the "voice-library" Button
+    t =   122.95s Find the "voice-library" Button
+    t =   123.07s Find the "voice-library" Button
+    t =   123.23s Find the "voice-library" Button
+    t =   123.41s Find the "voice-library" Button
+    t =   123.55s Find the "voice-library" Button
+    t =   123.70s Find the "voice-library" Button
+    t =   123.85s Find the "voice-library" Button
+    t =   123.95s Find the "voice-library" Button
+    t =   124.04s Find the "voice-library" Button
+    t =   124.16s Find the "voice-library" Button
+    t =   124.28s Find the "voice-library" Button
+    t =   124.47s Find the "voice-library" Button
+    t =   124.58s Find the "voice-library" Button
+    t =   124.69s Find the "voice-library" Button
+    t =   124.81s Find the "voice-library" Button
+    t =   124.91s Find the "voice-library" Button
+    t =   125.05s Find the "voice-library" Button
+    t =   125.20s Find the "voice-library" Button
+    t =   125.34s Find the "voice-library" Button
+    t =   125.44s Find the "voice-library" Button
+    t =   125.55s Waiting 10.0s for "voice-library" Button to exist
+    t =   126.59s     Checking `Expect predicate `existsNoRetry == 1` for object "voice-library" Button`
+    t =   126.59s         Checking existence of `"voice-library" Button`
+    t =   126.68s Tap "voice-library" Button
+    t =   126.68s     Wait for app.vela.ios to idle
+    t =   126.68s     Find the "voice-library" Button
+    t =   126.77s     Check for interrupting elements affecting "voice-library" Button
+    t =   126.86s     Synthesize event
+    t =   127.17s     Wait for app.vela.ios to idle
+    t =   127.50s Waiting 10.0s for "voice-library-list" Any to exist
+    t =   128.54s     Checking `Expect predicate `existsNoRetry == 1` for object "voice-library-list" Any`
+    t =   128.54s         Checking existence of `"voice-library-list" Any`
+    t =   129.02s Checking existence of `"voice-row-en_US-hfc_female-medium" Any`
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SettingsVoiceUITests.swift:69: error: -[VelaUITests.SettingsVoiceUITests testVoiceAndLanguage] : XCTAssertTrue failed
+    t =   130.50s Tear Down
+Test Case '-[VelaUITests.SettingsVoiceUITests testVoiceAndLanguage]' failed (131.249 seconds).
+Test Suite 'SettingsVoiceUITests' failed at 2026-10-28 03:35:51.105.
+	 Executed 1 test, with 1 failure (0 unexpected) in 131.249 (131.256) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-28 03:35:51.105.
+	 Executed 1 test, with 1 failure (0 unexpected) in 131.249 (131.256) seconds
+Test Suite 'Selected tests' failed at 2026-10-28 03:35:51.105.
+	 Executed 1 test, with 1 failure (0 unexpected) in 131.249 (131.258) seconds
+2026-10-28 03:36:25.177 xcodebuild[33249:93375] [MT] IDETestOperationsObserverDebug: 180.710 elapsed -- Testing started completed.
+2026-10-28 03:36:25.178 xcodebuild[33249:93375] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-28 03:36:25.178 xcodebuild[33249:93375] [MT] IDETestOperationsObserverDebug: 180.710 sec, +180.710 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.mUiO2puDZI/uitest.xcresult
+
+Failing tests:
+	SettingsVoiceUITests.testVoiceAndLanguage()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+scripts/ios/ci-ipa.sh: line 277: 33247 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui SettingsVoiceUITests.testVoiceAndLanguage: failed (131.249 seconds)
+ui voice_download=Downloading_LibriTTS-R…_42%
+ui voice_engine=none
+ui voice_fallback=Directions_are_in_Français,_but_no_Vela_voice_for_Français_is_installed._The_iPhone_voice_speaks_them_and_cannot_be_levelled_or_amplified.
+ui voice_language=fr
+ui voice_mode=alerts
+ui screenshots: settings-voice-alerts.png settings-voice-download.png settings-voice-language.png settings-voice.png 
+
+== Route replay (03:36:33)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: FA963601-01C5-4D37-A43E-D90ABBB4F8BA (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: FA963601-01C5-4D37-A43E-D90ABBB4F8BA (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (03:37:59)
+240937
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 63713 bytes
+directions reply: directions-drive-sf 119249 bytes
+directions reply: directions-walk-sf 34606 bytes
+search reply: 240937 bytes, 27 feature ids
+failed steps: gradle ui-scenarios
