@@ -1,0 +1,271 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "id": "vela",
+      "title": "Vela Maps",
+      "kind": "app",
+      "license": "GNU GPL-3.0",
+      "url": "https://github.com/PimpinPumpkin/Vela/blob/main/LICENSE",
+      "note": "The app itself, including the SwiftUI screens and the shared Kotlin framework. Source code and the full license text are in the repository."
+    },
+    {
+      "id": "maplibre",
+      "title": "MapLibre Native 6.31.0",
+      "kind": "library",
+      "license": "BSD-2-Clause",
+      "url": "https://github.com/maplibre/maplibre-native/blob/main/LICENSE.md",
+      "note": "Vector map renderer, gestures, tile loading and the raster layer support used for traffic and satellite."
+    },
+    {
+      "id": "swcompression",
+      "title": "SWCompression 4.9.1",
+      "kind": "library",
+      "license": "MIT",
+      "url": "https://github.com/tsolomko/SWCompression",
+      "note": "Pure Swift bzip2 and tar reader used to unpack the downloadable Piper voices."
+    },
+    {
+      "id": "sherpa-onnx",
+      "title": "sherpa-onnx 1.13.8",
+      "kind": "library",
+      "license": "Apache-2.0",
+      "url": "https://github.com/k2-fsa/sherpa-onnx",
+      "note": "On-device neural speech runtime. It is linked as a static xcframework and runs the Piper voices and the speech recognition models. The framework carries ONNX Runtime, which is MIT licensed."
+    },
+    {
+      "id": "kotlin",
+      "title": "Kotlin standard library 2.4.20",
+      "kind": "library",
+      "license": "Apache-2.0",
+      "url": "https://github.com/JetBrains/kotlin",
+      "note": "The shared Kotlin code and its standard library are linked into the app binary."
+    },
+    {
+      "id": "kotlinx",
+      "title": "kotlinx libraries",
+      "kind": "library",
+      "license": "Apache-2.0",
+      "url": "https://github.com/Kotlin/kotlinx.coroutines",
+      "note": "Coroutines 1.11.0, serialization 1.11.0, datetime 0.8.0 and atomicfu 0.33.0, all statically linked through the shared framework."
+    },
+    {
+      "id": "androidx-sqlite",
+      "title": "AndroidX SQLite 2.7.1",
+      "kind": "library",
+      "license": "Apache-2.0",
+      "url": "https://developer.android.com/jetpack/androidx/releases/sqlite",
+      "note": "SQLite compiled into the shared framework for downloaded places, addresses and recorded trips. The AndroidX wrapper is Apache-2.0; SQLite itself is public domain."
+    },
+    {
+      "id": "skie",
+      "title": "SKIE 0.10.15",
+      "kind": "library",
+      "license": "Apache-2.0",
+      "url": "https://github.com/touchlab/SKIE",
+      "note": "Compiler plugin and runtime that let Swift call the Kotlin flows and suspend functions."
+    },
+    {
+      "id": "osm",
+      "title": "OpenStreetMap",
+      "kind": "data",
+      "license": "ODbL 1.0",
+      "url": "https://www.openstreetmap.org/copyright",
+      "note": "Streets, names, house numbers, places, road markings, cameras, signals and the community DeFlock camera data. Data copyright OpenStreetMap contributors.",
+      "hosts": [
+        "www.openstreetmap.org"
+      ]
+    },
+    {
+      "id": "openfreemap",
+      "title": "OpenFreeMap",
+      "kind": "data",
+      "license": "MIT service, ODbL map data",
+      "url": "https://openfreemap.org",
+      "note": "Online vector tiles, glyphs and sprites built from OpenStreetMap. Attribution: OpenFreeMap, OpenMapTiles, OpenStreetMap contributors.",
+      "hosts": [
+        "tiles.openfreemap.org"
+      ]
+    },
+    {
+      "id": "openmaptiles",
+      "title": "OpenMapTiles and the Liberty style",
+      "kind": "data",
+      "license": "BSD and CC-BY schema, ODbL data",
+      "url": "https://openmaptiles.org",
+      "note": "The vector tile schema and the Liberty style base that the six bundled Vela looks are generated from. The glyphs are served by OpenFreeMap.",
+      "hosts": [
+        "fonts.openmaptiles.org"
+      ]
+    },
+    {
+      "id": "adsb-lol",
+      "title": "adsb.lol",
+      "kind": "data",
+      "license": "ODbL 1.0",
+      "url": "https://adsb.lol",
+      "note": "Data from adsb.lol, ODbL 1.0. Community ADS-B aircraft positions, callsigns, altitudes and headings around the current map view.",
+      "hosts": [
+        "api.adsb.lol"
+      ]
+    },
+    {
+      "id": "esri",
+      "title": "Esri World Imagery",
+      "kind": "data",
+      "license": "Esri Terms of Use",
+      "url": "https://www.esri.com/en-us/legal/terms/full-master-agreement",
+      "note": "The satellite basemap below zoom 19. Required attribution: Esri, Maxar, Earthstar Geographics.",
+      "hosts": [
+        "services.arcgisonline.com",
+        "www.esri.com"
+      ]
+    },
+    {
+      "id": "google",
+      "title": "Google Maps",
+      "kind": "data",
+      "license": "Google Maps terms of service",
+      "url": "https://www.google.com/help/terms_maps/",
+      "note": "Place pages, reviews, photos, opening hours, popular times, driving and walking routes, live traffic, Street View and deep satellite imagery. Vela uses Google's public logged-out pages, with no account and no API key.",
+      "hosts": [
+        "www.google.com",
+        "maps.google.com",
+        "maps.googleapis.com",
+        "mt1.google.com",
+        "mt.googleapis.com",
+        "streetviewpixels-pa.googleapis.com",
+        "lh5.googleusercontent.com",
+        "maps.app.goo.gl"
+      ]
+    },
+    {
+      "id": "transitous",
+      "title": "Transitous",
+      "kind": "data",
+      "license": "Per-feed transit data licenses, ODbL for OpenStreetMap data",
+      "url": "https://transitous.org/sources",
+      "note": "Departures, lines and public transport journeys. Transitous is a community-run service that combines GTFS feeds from transit operators, each under its own license, plus OpenStreetMap data.",
+      "hosts": [
+        "api.transitous.org"
+      ]
+    },
+    {
+      "id": "photon",
+      "title": "Photon by komoot",
+      "kind": "data",
+      "license": "Apache-2.0 software, ODbL data",
+      "url": "https://photon.komoot.io",
+      "note": "Address and place search, including every online search when Vela runs without Google.",
+      "hosts": [
+        "photon.komoot.io"
+      ]
+    },
+    {
+      "id": "overpass",
+      "title": "Overpass API",
+      "kind": "data",
+      "license": "AGPL-3.0 software, ODbL data",
+      "url": "https://overpass-api.de",
+      "note": "Speed cameras, license plate reader cameras, traffic signals, stop signs, level crossings and speed humps read from OpenStreetMap.",
+      "hosts": [
+        "overpass-api.de",
+        "overpass.kumi.systems",
+        "overpass.private.coffee",
+        "maps.mail.ru"
+      ]
+    },
+    {
+      "id": "nominatim",
+      "title": "Nominatim",
+      "kind": "data",
+      "license": "GPL-3.0 software, ODbL data",
+      "url": "https://nominatim.org",
+      "note": "Reverse geocoding for a long press on the map when Google is not used.",
+      "hosts": [
+        "nominatim.openstreetmap.org"
+      ]
+    },
+    {
+      "id": "osrm",
+      "title": "OSRM",
+      "kind": "data",
+      "license": "BSD-2-Clause software, ODbL data",
+      "url": "https://project-osrm.org",
+      "note": "The open router that answers driving and walking routes before any Google fallback.",
+      "hosts": [
+        "routing.openstreetmap.de"
+      ]
+    },
+    {
+      "id": "valhalla",
+      "title": "Valhalla",
+      "kind": "data",
+      "license": "MIT software, ODbL data",
+      "url": "https://valhalla.github.io/valhalla/",
+      "note": "The open router used for bicycle routes and alternative driving routes.",
+      "hosts": [
+        "valhalla1.openstreetmap.de"
+      ]
+    },
+    {
+      "id": "ndw",
+      "title": "NDW open road data",
+      "kind": "data",
+      "license": "CC0 1.0",
+      "url": "https://opendata.ndw.nu",
+      "note": "Dutch bridge openings, read only when the map or a route enters the Netherlands. Nationaal Dataportaal Wegverkeer.",
+      "hosts": [
+        "opendata.ndw.nu"
+      ]
+    },
+    {
+      "id": "fuel-gb",
+      "title": "UK Fuel Finder",
+      "kind": "data",
+      "license": "Open Government License v3.0",
+      "url": "https://www.nationalarchives.gov.uk/doc/open-government-license/version/3/",
+      "note": "UK fuel prices from the government Fuel Finder, republished by matthewgall/fuelfinder-archive. Contains public sector information licensed under the Open Government License v3.0."
+    },
+    {
+      "id": "piper-voices",
+      "title": "Piper voices",
+      "kind": "data",
+      "license": "Per-voice model licenses",
+      "url": "https://github.com/k2-fsa/sherpa-onnx/tree/master/tts-models",
+      "note": "Downloadable neural voices, published by the sherpa-onnx project as vits-piper archives. Each voice carries its own model card and license. No voice model is bundled; the app downloads the one the user picks."
+    },
+    {
+      "id": "whisper",
+      "title": "Whisper speech models",
+      "kind": "data",
+      "license": "MIT",
+      "url": "https://github.com/openai/whisper",
+      "note": "Optional on-device speech recognition models, downloaded on demand from Vela's release assets. The iPhone's own speech recognizer is the fallback."
+    },
+    {
+      "id": "wikipedia-place-names",
+      "title": "Wikipedia place names",
+      "kind": "data",
+      "license": "CC BY-SA 4.0",
+      "url": "https://www.wikipedia.org",
+      "note": "About 3,500 English place-name pronunciations, from English Wikipedia and its contributors, shipped as the en_dict used by English Piper voices."
+    },
+    {
+      "id": "geofabrik-polygons",
+      "title": "Geofabrik region polygons",
+      "kind": "data",
+      "license": "ODbL 1.0",
+      "url": "https://download.geofabrik.de",
+      "note": "The download region boundaries shipped in the app, cut from OpenStreetMap extracts."
+    },
+    {
+      "id": "painted-roads",
+      "title": "Painted road markings",
+      "kind": "data",
+      "license": "ODbL 1.0",
+      "url": "https://github.com/PimpinPumpkin/Vela/releases",
+      "note": "An optional PMTiles pack of painted lane markings, derived from OpenStreetMap and downloaded on demand."
+    }
+  ]
+}
