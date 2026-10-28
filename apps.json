@@ -29,25 +29,27 @@
       "category": "utilities",
       "versions": [
         {
-          "version": "0.1.202610260648",
-          "buildVersion": "1792997314",
-          "date": "2026-10-26T07:40:20Z",
-          "localizedDescription": "Full V1 simulator suite: navigation alerts, offline resume, complete place gallery, transit Live Activity, accessibility\n\nBuild 1792997314.",
+          "version": "0.1.202610280149",
+          "buildVersion": "1793152145",
+          "date": "2026-10-28T02:22:17Z",
+          "localizedDescription": "Build 28 octobre 02 h : styles de carte, trafic et satellite, filtres de recherche, confidentialite, favoris et partage, bandeau de navigation.\n\nBuild 1793152145.",
           "downloadURL": "https://raw.githubusercontent.com/gelinant/ios-builder/dist/Vela.ipa",
-          "size": 9822942,
+          "size": 21817800,
           "minOSVersion": "17.0"
         }
       ],
-      "version": "0.1.202610260648",
-      "versionDate": "2026-10-26T07:40:20Z",
-      "versionDescription": "Full V1 simulator suite: navigation alerts, offline resume, complete place gallery, transit Live Activity, accessibility\n\nBuild 1792997314.",
+      "version": "0.1.202610280149",
+      "versionDate": "2026-10-28T02:22:17Z",
+      "versionDescription": "Build 28 octobre 02 h : styles de carte, trafic et satellite, filtres de recherche, confidentialite, favoris et partage, bandeau de navigation.\n\nBuild 1793152145.",
       "downloadURL": "https://raw.githubusercontent.com/gelinant/ios-builder/dist/Vela.ipa",
-      "size": 9822942,
+      "size": 21817800,
       "appPermissions": {
         "entitlements": [],
         "privacy": {
           "NSLocationAlwaysAndWhenInUseUsageDescription": "Vela keeps guiding you during navigation while the screen is off or another app is open.",
-          "NSLocationWhenInUseUsageDescription": "Vela shows where you are on the map and guides you along your route."
+          "NSLocationWhenInUseUsageDescription": "Vela shows where you are on the map and guides you along your route.",
+          "NSMicrophoneUsageDescription": "Vela listens to what you say when you tap the microphone for voice search. Nothing is recorded until you tap it.",
+          "NSSpeechRecognitionUsageDescription": "Vela uses on-device speech recognition to turn your voice into a search or a destination."
         }
       }
     }
