@@ -1,0 +1,295 @@
+tag=harness-fix-20261029-145124-4604 src=src/harness-fix 7e39acb src: 5d743874 Merge BUG-HUNT: 50 failures triaged with evidence
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 7e39acb src: 5d743874 Merge BUG-HUNT: 50 failures triaged with evidence
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610291452 (1793285573)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (14:52:53)
+notices: ok, 35 entries (7 libraries, 27 data sources)
+
+== Kotlin: tests and the VelaCore framework (14:52:55)
+gradle: ok in 704 s
+kotlin jvmTest: 606 tests, 0 failures
+kotlin iosSimulatorArm64Test: 505 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  88M, static library 86570480 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  58M, static library 54260040 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (15:04:40)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 68 30.3M   68 20.7M    0     0  38.4M      0 --:--:-- --:--:-- --:--:-- 38.4M100 30.3M  100 30.3M    0     0  48.0M      0 --:--:-- --:--:-- --:--:--  104M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (15:04:41)
+string catalog: 1444 keys, 24 resource locales (23 with translations), 24601 localized values, 186 Swift references, 24 picker languages
+
+== XcodeGen (15:04:42)
+xcodegen: Version: 2.46.0
+
+== Generate the project (15:04:43)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (15:04:43)
+  MapLibre Native: https://github.com/maplibre/maplibre-gl-native-distribution @ 6.31.0
+
+resolved source packages: BitByteData, SWCompression, MapLibre Native
+(resolve: 14 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (15:04:57)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (600A45A3-B3A0-4A39-8A9C-5D051F9FDA9C) (Shutdown) 
+
+== Build for the simulator (15:04:59)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 125 s)
+simulator build: ok
+
+== Boot the simulator (15:07:04)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (15:11:11)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 182 s)
+tests: ok, Executed 188 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=19319
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=56100 rate=22050 wav_frames=56100
+
+== Launch and screenshot (15:14:13)
+app.vela.ios: 35968
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: FF4A83CC-A4F5-458C-9026-622C99A3D927 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (15:15:15)
+xcodebuild uitest failed after 2939 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/IncomingLinksUITests.swift:76: error: -[VelaUITests.IncomingLinksUITests testIncomingDirectionsLinkWithOneStopOpensIt] : XCTAssertTrue failed - the link's stop is not in the chooser
+Test Case '-[VelaUITests.IncomingLinksUITests testIncomingDirectionsLinkWithOneStopOpensIt]' failed (77.708 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/IncomingLinksUITests.swift:56: error: -[VelaUITests.IncomingLinksUITests testIncomingDirectionsLinkWithTwoStopsKeepsTheirOrder] : XCTAssertTrue failed - the first stop is not in the chooser
+Test Case '-[VelaUITests.IncomingLinksUITests testIncomingDirectionsLinkWithTwoStopsKeepsTheirOrder]' failed (72.995 seconds).
+    t =    13.81s         Failed: Failed to scroll to visible (by AX action) Button, {{708.3, -95.3}, {19.7, 19.0}}, identifier: 'map-overflow', label: 'More options', error: Error kAXErrorCannotComplete performing AXAction kAXScrollToVisibleAction on element AX element pid: 47188, elementOrHash.elementID: 4412378176.11
+    t =    15.22s             Failed: Failed to scroll to visible (by AX action) Button, {{708.3, -95.3}, {19.7, 19.0}}, identifier: 'map-overflow', label: 'More options', error: Error kAXErrorCannotComplete performing AXAction kAXScrollToVisibleAction on element AX element pid: 47188, elementOrHash.elementID: 4412378176.11
+    t =    16.53s             Failed: Failed to scroll to visible (by AX action) Button, {{708.3, -95.3}, {19.7, 19.0}}, identifier: 'map-overflow', label: 'More options', error: Error kAXErrorCannotComplete performing AXAction kAXScrollToVisibleAction on element AX element pid: 47188, elementOrHash.elementID: 4412378176.11
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/QualityUITests.swift:756: error: -[VelaUITests.QualityUITests testCompactHeightSettingsLandscape] : Failed to failed to scroll to visible (by AX action) Button, {{708.3, -95.3}, {19.7, 19.0}}, identifier: 'map-overflow', label: 'More options', error: Error kAXErrorCannotComplete performing AXAction kAXScrollToVisibleAction on element AX element pid: 47188, elementOrHash.elementID: 4412378176.11. (Underlying Error: Error kAXErrorCannotComplete performing AXAction kAXScrollToVisibleAction on element AX element pid: 47188, elementOrHash.elementID: 4412378176.11)
+Test Case '-[VelaUITests.QualityUITests testCompactHeightSettingsLandscape]' failed (17.545 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/QualityUITests.swift:354: error: -[VelaUITests.QualityUITests testHebrewRightToLeft] : XCTAssertTrue failed - missing target: category-gas
+Test Case '-[VelaUITests.QualityUITests testHebrewRightToLeft]' failed (23.659 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/QualityUITests.swift:737: error: -[VelaUITests.QualityUITests testMapAndPlaceReadingOrder] : Failed to get matching snapshot: Find single matching element. Multiple matching elements found for <XCUIElementQuery: 0x115a69180>.
+Test Case '-[VelaUITests.QualityUITests testMapAndPlaceReadingOrder]' failed (83.411 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/QualityUITests.swift:47: error: -[VelaUITests.QualityUITests testPlaceLargeTextLandscape] : XCTAssertTrue failed - place photo is not reachable
+Test Case '-[VelaUITests.QualityUITests testPlaceLargeTextLandscape]' failed (329.841 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/QualityUITests.swift:749: error: -[VelaUITests.QualityUITests testRoutePickerLargeTextLandscape] : XCTAssertTrue failed - Directions is not reachable
+Test Case '-[VelaUITests.QualityUITests testRoutePickerLargeTextLandscape]' failed (713.325 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/VelaUITestCase.swift:42: error: -[VelaUITests.QualityUITests testRoutePickerReadingOrder] : Failed to terminate app.vela.ios:64388: Failed to terminate app.vela.ios:0
+Test Case '-[VelaUITests.QualityUITests testRoutePickerReadingOrder]' failed (61.630 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/QualityUITests.swift:354: error: -[VelaUITests.QualityUITests testSearchLargeTextLandscape] : XCTAssertTrue failed - missing target: category-gas
+Test Case '-[VelaUITests.QualityUITests testSearchLargeTextLandscape]' failed (39.536 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/QualityUITests.swift:354: error: -[VelaUITests.QualityUITests testSmallScreenKeyScreens] : XCTAssertTrue failed - missing target: category-gas
+Test Case '-[VelaUITests.QualityUITests testSmallScreenKeyScreens]' failed (23.549 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SavedExportUITests.swift:59: error: -[VelaUITests.SavedExportUITests testListExportImportsBackFromTheShareSheet] : XCTAssertTrue failed - import did not finish
+Test Case '-[VelaUITests.SavedExportUITests testListExportImportsBackFromTheShareSheet]' failed (130.576 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SettingsUITests.swift:124: error: -[VelaUITests.SettingsUITests testContentAndData] : XCTAssertTrue failed - settings-redact-exports did not change: 0
+Test Case '-[VelaUITests.SettingsUITests testContentAndData]' failed (247.493 seconds).
+VelaUITests/VelaUITestCase.swift:79: Fatal error: Unexpectedly found nil while implicitly unwrapping an Optional value
+2026-10-29 16:02:05.052880+0000 VelaUITests-Runner[38776:107107] VelaUITests/VelaUITestCase.swift:79: Fatal error: Unexpectedly found nil while implicitly unwrapping an Optional value
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =    14.73s                 Find the "transit-board-debug" StaticText
+UITEST wired_board_lines=2
+    t =    14.81s                 Waiting 10.0s for "transit-board-line" Any to exist
+    t =    15.85s                     Checking `Expect predicate `existsNoRetry == 1` for object "transit-board-line" Any`
+    t =    15.86s                         Checking existence of `"transit-board-line" Any`
+    t =    16.62s                 Tap "transit-board-line" Any
+    t =    16.62s                     Wait for app.vela.ios to idle
+    t =    16.62s                     Find the "transit-board-line" Any
+    t =    17.37s                     Check for interrupting elements affecting "transit-board-line" StaticText
+    t =    17.62s                     Synthesize event
+    t =    17.96s                     Wait for app.vela.ios to idle
+    t =    18.10s                 Waiting 20.0s for "transit-line-sheet" Other to exist
+    t =    19.13s                     Checking `Expect predicate `existsNoRetry == 1` for object "transit-line-sheet" Other`
+    t =    19.13s                         Checking existence of `"transit-line-sheet" Other`
+    t =    19.32s                 Waiting 10.0s for "transit-line-badge" Any to exist
+    t =    20.36s                     Checking `Expect predicate `existsNoRetry == 1` for object "transit-line-badge" Any`
+    t =    20.36s                         Checking existence of `"transit-line-badge" Any`
+    t =    20.53s                 Get number of matches for: Elements matching predicate '"transit-line-departure" IN identifiers'
+UITEST wired_line_departures=0
+VelaUITests/VelaUITestCase.swift:79: Fatal error: Unexpectedly found nil while implicitly unwrapping an Optional value
+2026-10-29 16:02:05.052880+0000 VelaUITests-Runner[38776:107107] VelaUITests/VelaUITestCase.swift:79: Fatal error: Unexpectedly found nil while implicitly unwrapping an Optional value
+2026-10-29 16:02:40.832027+0000 VelaUITests-Runner[32049:334013] [Default] Running tests...
+    t =      nans Interface orientation changed to Portrait
+
+Restarting after unexpected exit, crash, or test timeout; summary will include totals from previous launches.
+
+Test Suite 'Selected tests' started at 2026-10-29 16:02:43.131.
+Test Suite 'VelaUITests.xctest' started at 2026-10-29 16:02:43.131.
+Test Suite 'TransitWiredUITests' started at 2026-10-29 16:02:43.132.
+Test Suite 'TransitWiredUITests' passed at 2026-10-29 16:02:43.132.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'VelaUITests.xctest' passed at 2026-10-29 16:02:43.132.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
+Test Suite 'Selected tests' passed at 2026-10-29 16:02:43.132.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.002) seconds
+2026-10-29 16:03:53.746 xcodebuild[37207:103209] [MT] IDETestOperationsObserverDebug: 2895.055 elapsed -- Testing started completed.
+2026-10-29 16:03:53.752 xcodebuild[37207:103209] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-29 16:03:53.752 xcodebuild[37207:103209] [MT] IDETestOperationsObserverDebug: 2895.055 sec, +2895.055 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.2gOdd2tKy4/uitest.xcresult
+
+Failing tests:
+	IncomingLinksUITests.testIncomingDirectionsLinkWithOneStopOpensIt()
+	IncomingLinksUITests.testIncomingDirectionsLinkWithTwoStopsKeepsTheirOrder()
+	QualityUITests.testCompactHeightSettingsLandscape()
+	QualityUITests.testHebrewRightToLeft()
+	QualityUITests.testMapAndPlaceReadingOrder()
+	QualityUITests.testPlaceLargeTextLandscape()
+	QualityUITests.testRoutePickerLargeTextLandscape()
+	QualityUITests.testRoutePickerReadingOrder()
+	QualityUITests.testSearchLargeTextLandscape()
+	QualityUITests.testSmallScreenKeyScreens()
+	SavedExportUITests.testListExportImportsBackFromTheShareSheet()
+	SettingsUITests.testContentAndData()
+	TransitWiredUITests.testTapTransitEverywhereAndSeeTheLine()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui IncomingLinksUITests.testBareCidLinkShowsTheVelaError: passed (23.599 seconds)
+ui IncomingLinksUITests.testIncomingDirectionsLinkOpensTheChooser: passed (15.366 seconds)
+ui IncomingLinksUITests.testIncomingDirectionsLinkWithOneStopOpensIt: failed (77.708 seconds)
+ui IncomingLinksUITests.testIncomingDirectionsLinkWithTwoStopsKeepsTheirOrder: failed (72.995 seconds)
+ui IncomingLinksUITests.testIncomingPlaceLinkOpensThePlaceSheet: passed (14.980 seconds)
+ui IncomingLinksUITests.testMalformedStopLinkShowsTheVelaError: passed (11.683 seconds)
+ui QualityUITests.testCompactHeightSettingsLandscape: failed (17.545 seconds)
+ui QualityUITests.testHebrewRightToLeft: failed (23.659 seconds)
+ui QualityUITests.testMapAndPlaceReadingOrder: failed (83.411 seconds)
+ui QualityUITests.testPlaceLargeTextLandscape: failed (329.841 seconds)
+ui QualityUITests.testRoutePickerLargeTextLandscape: failed (713.325 seconds)
+ui QualityUITests.testRoutePickerReadingOrder: failed (61.630 seconds)
+ui QualityUITests.testSearchLargeTextLandscape: failed (39.536 seconds)
+ui QualityUITests.testSettingsLargeTextLandscape: passed (91.968 seconds)
+ui QualityUITests.testSmallScreenKeyScreens: failed (23.549 seconds)
+ui SavedExportUITests.testFindMyCarOpensTheSpotWithDirections: passed (28.302 seconds)
+ui SavedExportUITests.testListExportImportsBackFromTheShareSheet: failed (130.576 seconds)
+ui SettingsAboutUITests.testHubSearchAboutNoticesSupport: passed (279.930 seconds)
+ui SettingsUITests.testContentAndData: failed (247.493 seconds)
+ui SettingsVoiceUITests.testVoiceAndLanguage: passed (252.703 seconds)
+ui StreetViewUITests.testStreetViewFromPlace: passed (201.438 seconds)
+scripts/ios/ci-ipa.sh: line 286: 37204 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui about_installer=Not,available,on,iOS
+ui about_notices_seen=13
+ui about_version=Vela,0.1.202610291452,(build,1793285573)
+ui incoming_cid_error=shown
+ui incoming_directions=Dropped_pin
+ui incoming_place=Davis_Food_Co-op
+ui link_malformed_stop=shown
+ui quality_map_controls=map,locate,overflow
+ui quality_map_label=Map
+ui quality_map_overflow=19x19
+ui quality_place_actions_order_checks=4
+ui quality_place_actions_order_missing=none
+ui quality_place_hours_order_checks=2
+ui quality_place_hours_order_missing=none
+ui quality_place_top_order_checks=4
+ui quality_place_top_order_missing=none
+ui quality_required_target_category_coffee=104x44
+ui quality_required_target_category_coffee=114x44
+ui quality_required_target_category_coffee=253x59
+ui quality_required_target_category_restaurants=102x44
+ui quality_required_target_category_restaurants=132x44
+ui quality_required_target_category_restaurants=338x65
+ui quality_required_target_settings_done=120x63
+ui quality_required_target_settings_language=718x155
+ui quality_required_target_settings_no_google=718x93
+ui quality_required_target_settings_privacy_link=718x103
+ui quality_required_target_settings_units=718x93
+ui quality_screen_size=402x874
+ui quality_settings_missing_targets=4
+ui quality_settings_small_targets=0
+ui quality_settings_target_settings_done=120x63
+ui quality_settings_target_settings_privacy_link=718x103
+ui quality_settings_unlabeled_buttons=0
+ui quality_small_overflow=19x19
+ui quality_small_screen=not-small-runner-device
+ui quality_small_search_field=233x22
+ui saved_export_sheet=opened
+ui saved_find_my_car=opened
+ui settings_google_swipes=0
+ui street_view_base=1
+ui street_view_bearing=45
+ui street_view_closed=1
+ui street_view_cone=1
+ui street_view_dates=3
+ui street_view_fov=48
+ui street_view_history_back=202610
+ui street_view_history_bearing=0
+ui street_view_history_date=202306
+ui street_view_mode=fixture
+ui street_view_neighbors=1
+ui street_view_north=0
+ui street_view_pano=Optional("vela-fixture-pano-0001")
+ui street_view_pinch_fov=30
+ui street_view_pitch=51
+ui street_view_thumbnail=0
+ui street_view_tiles=6
+ui voice_download=Downloading_LibriTTS-R…_42%
+ui voice_engine=Voice:_HFC_Female_(Vela)
+ui voice_fallback=Directions_are_in_Français,_but_no_Vela_voice_for_Français_is_installed._The_iPhone_voice_speaks_them_and_cannot_be_levelled_or_amplified.
+ui voice_language=fr
+ui voice_mode=alerts
+ui wired_board_lines=2
+ui wired_line_departures=0
+ui screenshots: incoming-directions.png incoming-place.png settings-about-notices.png settings-about-search.png settings-about-support.png settings-voice-alerts.png settings-voice-download.png settings-voice-language.png settings-voice-section.png settings-voice.png street-view-cone.png street-view-history-list.png street-view-history.png street-view-zoom.png street-view.png voice-library.png 
+
+== Route replay (16:04:20)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: FF4A83CC-A4F5-458C-9026-622C99A3D927 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: FF4A83CC-A4F5-458C-9026-622C99A3D927 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 27; highest after refresh: 27
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=56740 parsed=true times=false
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (16:06:24)
+282740
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 63707 bytes
+directions reply: directions-drive-sf 117855 bytes
+directions reply: directions-walk-sf 47655 bytes
+search reply: 282740 bytes, 33 feature ids
+failed steps: ui-scenarios
