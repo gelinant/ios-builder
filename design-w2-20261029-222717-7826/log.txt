@@ -1,0 +1,230 @@
+tag=design-w2-20261029-222717-7826 src=src/design-w2 26a9ed7 src: 9190d8ec DESIGN-W2: keep every result row in the accessibility tree
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 26a9ed7 src: 9190d8ec DESIGN-W2: keep every result row in the accessibility tree
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610292239 (1793313599)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (22:39:59)
+notices: ok, 37 entries (7 libraries, 29 data sources)
+
+== Kotlin: tests and the VelaCore framework (22:40:00)
+gradle: ok in 518 s
+kotlin jvmTest: 645 tests, 0 failures
+kotlin iosSimulatorArm64Test: 537 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  88M, static library 86847456 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  57M, static library 54541048 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (22:48:38)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 72 30.3M   72 22.0M    0     0  36.6M      0 --:--:-- --:--:-- --:--:-- 36.6M100 30.3M  100 30.3M    0     0  42.3M      0 --:--:-- --:--:-- --:--:-- 72.4M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (22:48:40)
+string catalog: 2052 keys, 24 resource locales (24 with translations), 38396 localized values, 909 Swift references, 24 picker languages
+
+== XcodeGen (22:48:42)
+xcodegen: Version: 2.46.0
+
+== Generate the project (22:48:43)
+maplibre-globe: downloading MapLibre.dynamic.xcframework.zip (169968107 bytes) from ios-v2026.10.19-globe
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 44  162M   44 72.4M    0     0  75.8M      0  0:00:02 --:--:--  0:00:02 75.8M100  162M  100  162M    0     0  97.7M      0  0:00:01  0:00:01 --:--:--  127M
+maplibre-globe ios-v2026.10.19-globe: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/MapLibre.xcframework (581M on disk)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (22:48:47)
+  BitByteData: https://github.com/tsolomko/BitByteData @ 2.1.0
+
+resolved source packages: SWCompression, BitByteData
+(resolve: 16 s)
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+
+== Pick a simulator (22:49:03)
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (582B068E-2ACA-440E-8D01-417AEDF26981) (Shutdown) 
+
+== Build for the simulator (22:49:04)
+note: Run script build phase 'Fetch MapLibre globe' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 120 s)
+simulator build: ok
+
+== Boot the simulator (22:51:05)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (22:55:17)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 138 s)
+tests: ok, Executed 188 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.51 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Navigate_the_coffee. samples=19133
+VOICE_ASR_PLAN action=search query=Navigate the coffee
+VOICE_SYNTH samples=56473 rate=22050 wav_frames=56473
+
+== Launch and screenshot (22:57:35)
+app.vela.ios: 26453
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 5CF4A8A4-E865-4833-93BC-31FFA90E4BE8 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (22:58:26)
+xcodebuild uitest failed after 842 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SearchUITests.swift:171: error: -[VelaUITests.SearchUITests testAddressSearchMergesWithoutDuplicateRows] : XCTAssertTrue failed - Google and Photon did not return the typed house number
+Test Case '-[VelaUITests.SearchUITests testAddressSearchMergesWithoutDuplicateRows]' failed (191.000 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =     0.00s Start Test at 2026-10-29 23:11:33.073
+    t =     0.04s Set Up
+    t =     0.05s Open app.vela.ios
+    t =     0.05s     Launch app.vela.ios
+    t =     0.05s         Terminate app.vela.ios:54476
+2026-10-29 23:11:34.180 xcodebuild[27759:81916] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-29 23:11:34.180 xcodebuild[27759:81916] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.93s         Setting up automation session
+    t =     3.26s         Wait for app.vela.ios to idle
+    t =     6.23s Waiting 60.0s for "search-field" TextField to exist
+    t =     7.29s     Checking `Expect predicate `existsNoRetry == 1` for object "search-field" TextField`
+    t =     7.29s         Checking existence of `"search-field" TextField`
+    t =     7.62s Tap "search-field" TextField
+    t =     7.62s     Wait for app.vela.ios to idle
+    t =     7.62s     Find the "search-field" TextField
+    t =     7.72s     Check for interrupting elements affecting "search-field" TextField
+    t =     7.81s     Synthesize event
+    t =     8.13s     Wait for app.vela.ios to idle
+    t =     8.66s Type 'coff' into "search-field" TextField
+    t =     8.66s     Wait for app.vela.ios to idle
+    t =     8.68s     Find the "search-field" TextField
+    t =     8.85s     Check for interrupting elements affecting "search-field" TextField
+    t =     8.93s     Synthesize event
+    t =     9.22s     Wait for app.vela.ios to idle
+    t =     9.36s Waiting 45.0s for "search-suggestion" Button to exist
+    t =    10.43s     Checking `Expect predicate `existsNoRetry == 1` for object "search-suggestion" Button`
+    t =    10.43s         Checking existence of `"search-suggestion" Button`
+    t =    11.30s Get number of matches for: Elements matching predicate '"search-suggestion" IN identifiers'
+UITEST suggestion_rows=4
+    t =    11.76s Added attachment named 'suggest'
+    t =    11.77s Tap "search-suggestion" Button
+    t =    11.77s     Wait for app.vela.ios to idle
+    t =    11.77s     Find the "search-suggestion" Button
+    t =    12.11s     Check for interrupting elements affecting "search-suggestion" Button
+    t =    12.29s     Synthesize event
+    t =    12.66s     Wait for app.vela.ios to idle
+    t =    13.68s Get number of matches for: Elements matching predicate '"search-suggestion" IN identifiers'
+    t =    16.50s Get number of matches for: Elements matching predicate '"search-suggestion" IN identifiers'
+    t =    16.68s Checking existence of `"place-name" StaticText`
+    t =    16.88s Tear Down
+Test Case '-[VelaUITests.SearchUITests testSuggestionsAppearAndFreezeAfterSelection]' passed (17.154 seconds).
+Test Suite 'SearchUITests' failed at 2026-10-29 23:11:50.227.
+	 Executed 8 tests, with 1 failure (0 unexpected) in 386.120 (386.126) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-29 23:11:50.228.
+	 Executed 11 tests, with 1 failure (0 unexpected) in 765.074 (765.093) seconds
+Test Suite 'Selected tests' failed at 2026-10-29 23:11:50.228.
+	 Executed 11 tests, with 1 failure (0 unexpected) in 765.074 (765.095) seconds
+2026-10-29 23:12:21.459 xcodebuild[27759:81916] [MT] IDETestOperationsObserverDebug: 814.147 elapsed -- Testing started completed.
+2026-10-29 23:12:21.460 xcodebuild[27759:81916] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-29 23:12:21.460 xcodebuild[27759:81916] [MT] IDETestOperationsObserverDebug: 814.147 sec, +814.147 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.g8AoVx75QH/uitest.xcresult
+
+Failing tests:
+	SearchUITests.testAddressSearchMergesWithoutDuplicateRows()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui MapChromeUITests.testChromeFitsWithSheetOpen: passed (86.777 seconds)
+ui MapChromeUITests.testDesignDetentsMatchMapInset: passed (114.048 seconds)
+ui MapTapUITests.testTapEachKindOpensItsSheet: passed (178.129 seconds)
+ui SearchUITests.testAddressSearchMergesWithoutDuplicateRows: failed (191.000 seconds)
+ui SearchUITests.testCoffeeSearchShowsResultsAndPins: passed (49.850 seconds)
+ui SearchUITests.testNoGoogleSearchReturnsPhotonRows: passed (36.917 seconds)
+ui SearchUITests.testPhotonAddressSearchShowsTheTypedHouseNumber: passed (16.254 seconds)
+ui SearchUITests.testQuickCategoryRunsSearch: passed (17.064 seconds)
+ui SearchUITests.testResultCardFields: passed (25.669 seconds)
+ui SearchUITests.testSuggestionPriorityAndArrow: passed (32.212 seconds)
+ui SearchUITests.testSuggestionsAppearAndFreezeAfterSelection: passed (17.154 seconds)
+scripts/ios/ci-ipa.sh: line 286: 27756 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui card_call_rows=33
+ui card_photo_rows=22
+ui card_status_label=San
+ui category_rows=60
+ui chrome_overflow=0
+ui chrome_search_y=87.0
+ui chrome_steps_close_y=376.7
+ui detent_expanded=0.85
+ui detent=0.42
+ui map_inset_matches_sheet=1
+ui merged_chrome=1
+ui nogoogle_photon_hits=17
+ui nogoogle_photon_rows=17
+ui nogoogle_search_debug=offline=0
+ui photon_address_hits=9
+ui photon_address_rows=11
+ui search_rows=36
+ui suggestion_leading_row=Great
+ui suggestion_priority=local
+ui suggestion_rows=4
+ui tap_chain=tap_seen=1
+ui tap_debug=layers
+ui tap_debug=no-layers-debug
+ui tap_kind=aircraft
+ui tap_kind=camera
+ui tap_kind=place
+ui tap_kind=saved
+ui screenshots: category.png search-card-fields.png search-centered.png search-list.png search-map.png search-photon-nogoogle.png search-photon.png search-suggestion-priority.png suggest.png 
+
+== Route replay (23:12:32)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 5CF4A8A4-E865-4833-93BC-31FFA90E4BE8 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 5CF4A8A4-E865-4833-93BC-31FFA90E4BE8 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=26523 parsed=true times=false
+place load: photos: rpc 10
+place load: photos: rpc 10
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (23:14:00)
+252177
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 88836 bytes
+directions reply: directions-drive-sf 43960 bytes
+directions reply: directions-walk-sf 40712 bytes
+search reply: 252177 bytes, 30 feature ids
+failed steps: ui-scenarios
