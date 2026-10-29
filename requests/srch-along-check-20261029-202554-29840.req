@@ -1,0 +1,3 @@
+src=src/srch-along-check
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=SearchCommandUITests VELA_SKIP_ARCHIVE=1
