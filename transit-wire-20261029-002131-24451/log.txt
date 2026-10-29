@@ -1,0 +1,199 @@
+tag=transit-wire-20261029-002131-24451 src=src/transit-wire b275a4d src: 52a3af85 iOS: read the board by its scroll view in the wired transit scenario
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: b275a4d src: 52a3af85 iOS: read the board by its scroll view in the wired transit scenario
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610290022 (1793233350)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (00:22:31)
+notices: ok, 35 entries (7 libraries, 27 data sources)
+
+== Kotlin: tests and the VelaCore framework (00:22:32)
+gradle: ok in 535 s
+kotlin jvmTest: 589 tests, 0 failures
+kotlin iosSimulatorArm64Test: 488 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  87M, static library 86103344 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  57M, static library 53729936 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (00:31:27)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 30.3M  100 30.3M    0     0  46.4M      0 --:--:-- --:--:-- --:--:-- 46.4M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (00:31:28)
+string catalog: 1444 keys, 24 resource locales (23 with translations), 24601 localized values, 186 Swift references, 24 picker languages
+
+== XcodeGen (00:31:29)
+xcodegen: Version: 2.46.0
+
+== Generate the project (00:31:30)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (00:31:30)
+  BitByteData: https://github.com/tsolomko/BitByteData @ 2.1.0
+
+resolved source packages: SWCompression, MapLibre Native, BitByteData
+(resolve: 14 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (00:31:44)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (600A45A3-B3A0-4A39-8A9C-5D051F9FDA9C) (Shutdown) 
+
+== Build for the simulator (00:31:45)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 104 s)
+simulator build: ok
+
+== Boot the simulator (00:33:29)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (00:36:48)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 104 s)
+tests: ok, Executed 172 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=20062
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=56152 rate=22050 wav_frames=56152
+
+== Launch and screenshot (00:38:32)
+app.vela.ios: 40143
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 72D0E1E9-6EA3-40FB-BD9F-CDA01EA06884 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (00:39:05)
+xcodebuild uitest failed after 174 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TransitWiredUITests.swift:60: error: -[VelaUITests.TransitWiredUITests testTapTransitEverywhereAndSeeTheLine] : XCTAssertGreaterThan failed: ("0") is not greater than ("0") - the line sheet lists no departure
+Test Case '-[VelaUITests.TransitWiredUITests testTapTransitEverywhereAndSeeTheLine]' failed (21.727 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =     4.70s         Setting up automation session
+    t =     6.61s         Wait for app.vela.ios to idle
+    t =    11.69s Waiting 15.0s for "transit-line-sheet" Other to exist
+    t =    12.74s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-line-sheet" Other`
+    t =    12.74s         Checking existence of `"transit-line-sheet" Other`
+    t =    13.07s Tap "transit-line-close" Button
+    t =    13.07s     Wait for app.vela.ios to idle
+    t =    13.08s     Find the "transit-line-close" Button
+    t =    13.28s     Check for interrupting elements affecting "transit-line-close" Button
+    t =    13.48s     Synthesize event
+    t =    13.82s     Wait for app.vela.ios to idle
+    t =    13.84s Checking existence of `"transit-line-sheet" Other`
+    t =    14.08s Waiting 30.0s for "transit-board" Any to exist
+    t =    15.11s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-board" Any`
+    t =    15.11s         Checking existence of `"transit-board" Any`
+    t =    15.34s Checking existence of `"transit-board-debug" StaticText`
+    t =    15.49s Find the "transit-board-debug" StaticText
+    t =    15.63s Checking existence of `"transit-board-debug" StaticText`
+    t =    15.73s Find the "transit-board-debug" StaticText
+    t =    15.85s Checking existence of `"transit-board-debug" StaticText`
+    t =    15.95s Find the "transit-board-debug" StaticText
+UITEST wired_board_lines=2
+    t =    16.08s Waiting 10.0s for "transit-board-line" Any to exist
+    t =    17.11s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-board-line" Any`
+    t =    17.11s         Checking existence of `"transit-board-line" Any`
+    t =    17.38s Tap "transit-board-line" Any
+    t =    17.38s     Wait for app.vela.ios to idle
+    t =    17.38s     Find the "transit-board-line" Any
+    t =    17.69s     Check for interrupting elements affecting "transit-board-line" StaticText
+    t =    17.89s     Synthesize event
+    t =    18.20s     Wait for app.vela.ios to idle
+    t =    18.30s Waiting 20.0s for "transit-line-sheet" Other to exist
+    t =    19.33s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-line-sheet" Other`
+    t =    19.33s         Checking existence of `"transit-line-sheet" Other`
+    t =    19.50s Waiting 10.0s for "transit-line-badge" Any to exist
+    t =    20.53s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-line-badge" Any`
+    t =    20.53s         Checking existence of `"transit-line-badge" Any`
+    t =    20.69s Get number of matches for: Elements matching predicate '"transit-line-departure" IN identifiers'
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TransitWiredUITests.swift:60: error: -[VelaUITests.TransitWiredUITests testTapTransitEverywhereAndSeeTheLine] : XCTAssertGreaterThan failed: ("0") is not greater than ("0") - the line sheet lists no departure
+    t =    21.45s Tear Down
+Test Case '-[VelaUITests.TransitWiredUITests testTapTransitEverywhereAndSeeTheLine]' failed (21.727 seconds).
+Test Suite 'TransitWiredUITests' failed at 2026-10-29 00:41:17.980.
+	 Executed 1 test, with 1 failure (0 unexpected) in 21.727 (21.728) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-29 00:41:17.980.
+	 Executed 3 tests, with 1 failure (0 unexpected) in 85.189 (85.193) seconds
+Test Suite 'Selected tests' failed at 2026-10-29 00:41:17.981.
+	 Executed 3 tests, with 1 failure (0 unexpected) in 85.189 (85.194) seconds
+2026-10-29 00:41:53.605 xcodebuild[41258:109790] [MT] IDETestOperationsObserverDebug: 135.490 elapsed -- Testing started completed.
+2026-10-29 00:41:53.606 xcodebuild[41258:109790] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-29 00:41:53.606 xcodebuild[41258:109790] [MT] IDETestOperationsObserverDebug: 135.490 sec, +135.490 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.H8tYuq1pOT/uitest.xcresult
+
+Failing tests:
+	TransitWiredUITests.testTapTransitEverywhereAndSeeTheLine()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui TransitGoUITests.testGoModeCuesAndRail: passed (35.443 seconds)
+ui TransitLineViewUITests.testLineRibbonAndColors: passed (28.020 seconds)
+ui TransitWiredUITests.testTapTransitEverywhereAndSeeTheLine: failed (21.727 seconds)
+scripts/ios/ci-ipa.sh: line 286: 41256 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui go_cue=none
+ui go_cue=stop
+ui go_estimated=0
+ui go_estimated=1
+ui go_step=done
+ui go_step=ride
+ui go_step=transfer
+ui line_color=437c93
+ui line_directions=2
+ui line_estimated=1
+ui line_fixture=1
+ui line_source=feed
+ui line_stops=20
+ui transit_go_degraded=offline=1
+ui wired_board_lines=2
+ui screenshots: 
+
+== Route replay (00:42:03)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 72D0E1E9-6EA3-40FB-BD9F-CDA01EA06884 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 72D0E1E9-6EA3-40FB-BD9F-CDA01EA06884 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (00:43:35)
+247085
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 101381 bytes
+directions reply: directions-drive-sf 117818 bytes
+directions reply: directions-walk-sf 34616 bytes
+search reply: 247085 bytes, 30 feature ids
+failed steps: ui-scenarios
