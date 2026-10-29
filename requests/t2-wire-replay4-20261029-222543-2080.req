@@ -1,0 +1,3 @@
+src=src/t2-wire-replay4
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=TransitMapUITests,MapLayersUITests VELA_SKIP_ARCHIVE=1
