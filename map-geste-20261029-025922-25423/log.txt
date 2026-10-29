@@ -1,0 +1,112 @@
+tag=map-geste-20261029-025922-25423 src=src/map-geste 9faea01 src: 2c80146c Add map rotation, north lock, scale and long-press pin
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 9faea01 src: 2c80146c Add map rotation, north lock, scale and long-press pin
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610290300 (1793242841)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (03:00:42)
+notices: ok, 35 entries (7 libraries, 27 data sources)
+
+== Kotlin: tests and the VelaCore framework (03:00:42)
+gradle: ok in 593 s
+kotlin jvmTest: 602 tests, 0 failures
+kotlin iosSimulatorArm64Test: 501 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  88M, static library 86365208 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  57M, static library 54015536 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (03:10:35)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 84 30.3M   84 25.7M    0     0  22.4M      0  0:00:01  0:00:01 --:--:-- 22.4M100 30.3M  100 30.3M    0     0  25.0M      0  0:00:01  0:00:01 --:--:-- 70.2M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (03:10:37)
+string catalog: 1444 keys, 24 resource locales (23 with translations), 24601 localized values, 186 Swift references, 24 picker languages
+
+== XcodeGen (03:10:39)
+xcodegen: Version: 2.46.0
+
+== Generate the project (03:10:39)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (03:10:40)
+  SWCompression: https://github.com/tsolomko/SWCompression @ 4.9.1
+
+resolved source packages: BitByteData, MapLibre Native, SWCompression
+(resolve: 16 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (03:10:57)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (600A45A3-B3A0-4A39-8A9C-5D051F9FDA9C) (Shutdown) 
+
+== Build for the simulator (03:10:58)
+xcodebuild build-sim failed after 75 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapController.swift:146:17: error: 'rotateEnabled' has been renamed to 'isRotateEnabled'
+** TEST BUILD FAILED **
+--- tail of build-sim log ---
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Shared/TransitActivityAttributes.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Shared/TransitActivityComponents.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/LiveActivity/TransitActivityController.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Shared/TransitActivityPalette.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/LiveActivity/TransitActivityState.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitBoardSheet.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitDetail.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitDetailSheet.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitGoCue.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitGoModel.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitGoScreen.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitGoTestSupport.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for Vela (in target 'Vela' from project 'Vela')
+
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD FAILED **
+
+
+The following build commands failed:
+	SwiftCompile normal arm64 Compiling\ FileManagerPlatformFiles.swift,\ FoundationTextNormalizer.swift,\ FreeDriveChrome.swift,\ GalleryViews.swift,\ GuidanceAudioSession.swift,\ HiddenWebView.swift,\ IncomingCid.swift,\ IncomingLink.swift,\ IntentPlanning.swift,\ JavaScriptCoreJsEngine.swift,\ KeychainSecrets.swift,\ LaunchOptions.swift,\ LayersModel.swift,\ LayersView.swift,\ LocationPermission.swift,\ MapController.swift,\ MapDefaults.swift,\ MapLayers.swift,\ MapLayersTestSupport.swift,\ MapPoiModel.swift,\ MapRasterLayers.swift,\ MapSavedMarkers.swift,\ MapScreen.swift,\ MapStyleBuilder.swift,\ MapStyleImages.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Platform/FileManagerPlatformFiles.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Platform/FoundationTextNormalizer.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Nav/FreeDriveChrome.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Place/GalleryViews.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Voice/GuidanceAudioSession.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Web/HiddenWebView.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Links/IncomingCid.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Links/IncomingLink.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Intents/IntentPlanning.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Platform/JavaScriptCoreJsEngine.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Platform/KeychainSecrets.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/App/LaunchOptions.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/LayersModel.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/LayersView.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Location/LocationPermission.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapController.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapDefaults.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/MapLayers.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/MapLayersTestSupport.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Search/MapPoiModel.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/MapRasterLayers.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/MapSavedMarkers.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapScreen.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/MapStyleBuilder.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/MapStyleImages.swift (in target 'Vela' from project 'Vela')
+	SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapController.swift (in target 'Vela' from project 'Vela')
+	Building project Vela for testing with scheme Vela
+(3 failures)
