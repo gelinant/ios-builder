@@ -1,0 +1,3 @@
+src=src/m1-3d
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=Map3DUITests,MapLayersUITests VELA_SKIP_ARCHIVE=1
