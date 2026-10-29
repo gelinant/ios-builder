@@ -1,0 +1,36 @@
+Locales:
+  en      strings=1996 plurals=22 array_items=0
+  ar      strings=574 plurals=0 array_items=0
+  de      strings=1920 plurals=22 array_items=0
+  en-GB   strings=575 plurals=0 array_items=0
+  es      strings=1813 plurals=13 array_items=0
+  et      strings=659 plurals=0 array_items=0
+  fr      strings=1813 plurals=13 array_items=0
+  hu      strings=1813 plurals=13 array_items=0
+  it      strings=1870 plurals=15 array_items=0
+  he      strings=1824 plurals=13 array_items=0
+  ja      strings=1813 plurals=13 array_items=0
+  kmr     strings=288 plurals=0 array_items=0
+  nl      strings=1813 plurals=13 array_items=0
+  pl      strings=1958 plurals=22 array_items=0
+  pt-PT   strings=1921 plurals=22 array_items=0
+  pt-BR   strings=1813 plurals=13 array_items=0
+  ro      strings=1958 plurals=22 array_items=0
+  ru      strings=1813 plurals=13 array_items=0
+  sl      strings=1362 plurals=0 array_items=0
+  sv      strings=1813 plurals=13 array_items=0
+  tr      strings=671 plurals=3 array_items=0
+  uk      strings=1813 plurals=13 array_items=0
+  zh-Hans strings=1813 plurals=13 array_items=0
+  zh-Hant strings=1813 plurals=13 array_items=0
+Skipped: 3
+  translatable=false outside source: 3
+    - ja app_name
+    - zh-Hans app_name
+    - zh-Hant app_name
+Warnings: 2
+  plural count is argument 2 (substitution): 1
+    - area_pick_cells
+  unbalanced double quote: 1
+    - values-iw/strings.xml settings_km_h
+Keys: 2018
