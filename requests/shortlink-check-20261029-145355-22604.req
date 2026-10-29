@@ -1,0 +1,3 @@
+src=src/shortlink-check
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=SavedShortLinkUITests,SavedImportUITests VELA_SKIP_ARCHIVE=1
