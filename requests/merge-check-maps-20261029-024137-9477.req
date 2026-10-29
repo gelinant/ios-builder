@@ -1,0 +1,3 @@
+src=src/merge-check-maps
+script=scripts/ios/ci-compile.sh
+args=
