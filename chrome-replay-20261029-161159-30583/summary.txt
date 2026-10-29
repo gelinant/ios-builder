@@ -1,0 +1,68 @@
+commit: d491ab4 src: 78f3a560 Merge BUGFIX-CHROME: the tap reaches the app and the chrome fits
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610291628 (1793291306)
+java: openjdk version "17.0.20.1" 2026-08-18
+notices: ok, 35 entries (7 libraries, 27 data sources)
+gradle: ok in 795 s
+kotlin jvmTest: 617 tests, 0 failures
+kotlin iosSimulatorArm64Test: 516 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  88M, static library 86634992 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  58M, static library 54314544 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 2043 keys, 24 resource locales (24 with translations), 38378 localized values, 896 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (600A45A3-B3A0-4A39-8A9C-5D051F9FDA9C) (Shutdown) 
+simulator build: ok
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+tests: ok, Executed 188 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=18948
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=55498 rate=22050 wav_frames=55498
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: ok
+ui MapChromeUITests.testChromeFitsWithSheetOpen: passed (97.849 seconds)
+ui MapGestureUITests.testKeepNorthUp: passed (74.637 seconds)
+ui MapGestureUITests.testLongPressDropsPin: passed (20.673 seconds)
+ui MapGestureUITests.testRotationReturnsNorth: passed (20.087 seconds)
+ui MapGestureUITests.testStartPosition: passed (97.783 seconds)
+ui MapTapUITests.testTapEachKindOpensItsSheet: passed (191.327 seconds)
+ui chrome_overflow=0
+ui chrome_search_y=83.0
+ui chrome_steps_close_y=373.3
+ui dropped_pin=37.77490,-122.41940
+ui gesture_bearing=302.0
+ui gesture_north=1
+ui gesture_scale=2000
+ui gesture_start_zoom=12.0
+ui keep_north_up=1
+ui merged_chrome=1
+ui tap_chain=tap_seen=1
+ui tap_debug=layers
+ui tap_debug=no-layers-debug
+ui tap_kind=aircraft
+ui tap_kind=camera
+ui tap_kind=place
+ui tap_kind=saved
+ui screenshots: 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=27494 parsed=true times=false
+place load: photos: rpc 10
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 76287 bytes
+directions reply: directions-drive-sf 118832 bytes
+directions reply: directions-walk-sf 49514 bytes
+search reply: 248116 bytes, 29 feature ids
