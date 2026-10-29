@@ -29,20 +29,20 @@
       "category": "utilities",
       "versions": [
         {
-          "version": "0.1.202610280149",
-          "buildVersion": "1793152145",
-          "date": "2026-10-28T02:22:17Z",
-          "localizedDescription": "Build 28 octobre 02 h : styles de carte, trafic et satellite, filtres de recherche, confidentialite, favoris et partage, bandeau de navigation.\n\nBuild 1793152145.",
+          "version": "0.1.202610291017",
+          "buildVersion": "1793269046",
+          "date": "2026-10-29T10:53:04Z",
+          "localizedDescription": "Build 29 octobre : carte cliquable partout, transports cliquables avec fiche de ligne et ruban, rames interpolees et mode GO, arbres et marquages au sol, ouverture sur votre position, themes et contraste corrige.\n\nBuild 1793269046.",
           "downloadURL": "https://raw.githubusercontent.com/gelinant/ios-builder/dist/Vela.ipa",
-          "size": 21817800,
+          "size": 24322590,
           "minOSVersion": "17.0"
         }
       ],
-      "version": "0.1.202610280149",
-      "versionDate": "2026-10-28T02:22:17Z",
-      "versionDescription": "Build 28 octobre 02 h : styles de carte, trafic et satellite, filtres de recherche, confidentialite, favoris et partage, bandeau de navigation.\n\nBuild 1793152145.",
+      "version": "0.1.202610291017",
+      "versionDate": "2026-10-29T10:53:04Z",
+      "versionDescription": "Build 29 octobre : carte cliquable partout, transports cliquables avec fiche de ligne et ruban, rames interpolees et mode GO, arbres et marquages au sol, ouverture sur votre position, themes et contraste corrige.\n\nBuild 1793269046.",
       "downloadURL": "https://raw.githubusercontent.com/gelinant/ios-builder/dist/Vela.ipa",
-      "size": 21817800,
+      "size": 24322590,
       "appPermissions": {
         "entitlements": [],
         "privacy": {
