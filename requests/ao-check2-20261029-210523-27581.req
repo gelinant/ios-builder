@@ -1,0 +1,3 @@
+src=src/ao-check2
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=PlaceObscuraUITests,PlaceUITests VELA_SKIP_ARCHIVE=1
