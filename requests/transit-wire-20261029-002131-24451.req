@@ -1,0 +1,3 @@
+src=src/transit-wire
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=TransitWiredUITests,TransitLineViewUITests,TransitGoUITests VELA_SKIP_ARCHIVE=1
