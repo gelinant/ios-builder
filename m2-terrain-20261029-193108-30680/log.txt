@@ -1,0 +1,185 @@
+tag=m2-terrain-20261029-193108-30680 src=src/m2-terrain 9358f1a src: 05497a6d M-2: route the terrain screen copy through the string catalog
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 9358f1a src: 05497a6d M-2: route the terrain screen copy through the string catalog
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610291931 (1793302316)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (19:31:57)
+notices: ok, 37 entries (8 libraries, 28 data sources)
+
+== Kotlin: tests and the VelaCore framework (19:31:57)
+gradle: ok in 240 s
+kotlin jvmTest: 632 tests, 0 failures
+kotlin iosSimulatorArm64Test: 524 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 86791864 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  58M, static library 54473704 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (19:35:57)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 30.3M  100 30.3M    0     0  54.7M      0 --:--:-- --:--:-- --:--:-- 54.7M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (19:35:58)
+string catalog: 2047 keys, 24 resource locales (24 with translations), 38386 localized values, 902 Swift references, 24 picker languages
+
+== XcodeGen (19:36:00)
+xcodegen: Version: 2.46.0
+
+== Generate the project (19:36:00)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (19:36:00)
+  BitByteData: https://github.com/tsolomko/BitByteData @ 2.1.0
+
+resolved source packages: MapLibre Native, SWCompression, BitByteData
+(resolve: 12 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (19:36:12)
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (582B068E-2ACA-440E-8D01-417AEDF26981) (Shutdown) 
+
+== Build for the simulator (19:36:13)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 72 s)
+simulator build: ok
+
+== Boot the simulator (19:37:25)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (19:39:13)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 111 s)
+tests: ok, Executed 188 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.54 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=19319
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=59295 rate=22050 wav_frames=59295
+
+== Launch and screenshot (19:41:04)
+app.vela.ios: 12799
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 9ED1AECC-95D7-49D4-91F4-FF94E81B8EE6 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (19:41:45)
+xcodebuild uitest failed after 171 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TerrainUITests.swift:11: error: -[VelaUITests.TerrainUITests testTerrainScreenRenders] : XCTAssertTrue failed - the terrain screen did not open
+Test Case '-[VelaUITests.TerrainUITests testTerrainScreenRenders]' failed (53.471 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =    41.20s         Checking existence of `"terrain-close" Button`
+    t =    41.26s         Capturing element debug description
+    t =    42.20s     Checking `Expect predicate `existsNoRetry == 1` for object "terrain-close" Button`
+    t =    42.20s         Checking existence of `"terrain-close" Button`
+    t =    42.27s         Capturing element debug description
+    t =    43.20s     Checking `Expect predicate `existsNoRetry == 1` for object "terrain-close" Button`
+    t =    43.20s         Checking existence of `"terrain-close" Button`
+    t =    43.26s         Capturing element debug description
+    t =    44.20s     Checking `Expect predicate `existsNoRetry == 1` for object "terrain-close" Button`
+    t =    44.20s         Checking existence of `"terrain-close" Button`
+    t =    44.26s         Capturing element debug description
+    t =    45.20s     Checking `Expect predicate `existsNoRetry == 1` for object "terrain-close" Button`
+    t =    45.20s         Checking existence of `"terrain-close" Button`
+    t =    45.27s         Capturing element debug description
+    t =    46.19s     Checking `Expect predicate `existsNoRetry == 1` for object "terrain-close" Button`
+    t =    46.19s         Checking existence of `"terrain-close" Button`
+    t =    46.25s         Capturing element debug description
+    t =    47.17s     Checking `Expect predicate `existsNoRetry == 1` for object "terrain-close" Button`
+    t =    47.17s         Checking existence of `"terrain-close" Button`
+    t =    47.22s         Capturing element debug description
+    t =    48.17s     Checking `Expect predicate `existsNoRetry == 1` for object "terrain-close" Button`
+    t =    48.17s         Checking existence of `"terrain-close" Button`
+    t =    48.23s         Capturing element debug description
+    t =    49.17s     Checking `Expect predicate `existsNoRetry == 1` for object "terrain-close" Button`
+    t =    49.17s         Checking existence of `"terrain-close" Button`
+    t =    49.23s         Capturing element debug description
+    t =    50.19s     Checking `Expect predicate `existsNoRetry == 1` for object "terrain-close" Button`
+    t =    50.19s         Checking existence of `"terrain-close" Button`
+    t =    50.25s         Capturing element debug description
+    t =    51.20s     Checking `Expect predicate `existsNoRetry == 1` for object "terrain-close" Button`
+    t =    51.20s         Checking existence of `"terrain-close" Button`
+    t =    51.27s         Capturing element debug description
+    t =    52.17s     Checking `Expect predicate `existsNoRetry == 1` for object "terrain-close" Button`
+    t =    52.17s         Checking existence of `"terrain-close" Button`
+    t =    52.24s         Capturing element debug description
+    t =    52.24s     Checking existence of `"terrain-close" Button`
+    t =    52.32s Collecting debug information to assist test failure triage
+    t =    52.32s     Requesting snapshot of accessibility hierarchy for app with pid 18324
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TerrainUITests.swift:11: error: -[VelaUITests.TerrainUITests testTerrainScreenRenders] : XCTAssertTrue failed - the terrain screen did not open
+    t =    53.01s Tear Down
+Test Case '-[VelaUITests.TerrainUITests testTerrainScreenRenders]' failed (53.471 seconds).
+Test Suite 'TerrainUITests' failed at 2026-10-29 19:44:05.771.
+	 Executed 1 test, with 1 failure (0 unexpected) in 53.471 (53.472) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-29 19:44:05.771.
+	 Executed 3 tests, with 1 failure (0 unexpected) in 102.403 (102.407) seconds
+Test Suite 'Selected tests' failed at 2026-10-29 19:44:05.772.
+	 Executed 3 tests, with 1 failure (0 unexpected) in 102.403 (102.408) seconds
+2026-10-29 19:44:31.225 xcodebuild[14010:47040] [MT] IDETestOperationsObserverDebug: 149.131 elapsed -- Testing started completed.
+2026-10-29 19:44:31.226 xcodebuild[14010:47040] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-29 19:44:31.226 xcodebuild[14010:47040] [MT] IDETestOperationsObserverDebug: 149.131 sec, +149.131 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.NMtvFzkXSz/uitest.xcresult
+
+Failing tests:
+	TerrainUITests.testTerrainScreenRenders()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui LaunchUITests.testLaunchShowsTheMapOverSanFrancisco: passed (31.176 seconds)
+ui LaunchUITests.testStartCameraArgumentMovesTheMapToDavis: passed (17.756 seconds)
+ui TerrainUITests.testTerrainScreenRenders: failed (53.471 seconds)
+scripts/ios/ci-ipa.sh: line 286: 14007 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui map_element=yes
+ui screenshots: launch-davis.png launch-sf.png 
+
+== Route replay (19:44:38)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 9ED1AECC-95D7-49D4-91F4-FF94E81B8EE6 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 9ED1AECC-95D7-49D4-91F4-FF94E81B8EE6 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (19:45:51)
+251217
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 76264 bytes
+directions reply: directions-drive-sf 114659 bytes
+directions reply: directions-walk-sf 35549 bytes
+search reply: 251217 bytes, 31 feature ids
+failed steps: ui-scenarios
