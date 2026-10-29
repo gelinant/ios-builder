@@ -1,0 +1,182 @@
+tag=road-markings-20261029-002900-15406 src=src/road-markings 55f7bb5 src: e7d65491 ROAD-MARKINGS: bridge the shape collection as MLNShape
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 55f7bb5 src: e7d65491 ROAD-MARKINGS: bridge the shape collection as MLNShape
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610290030 (1793233808)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (00:30:08)
+notices: ok, 35 entries (7 libraries, 27 data sources)
+
+== Kotlin: tests and the VelaCore framework (00:30:09)
+gradle: ok in 635 s
+kotlin jvmTest: 536 tests, 0 failures
+kotlin iosSimulatorArm64Test: 440 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  86M, static library 84246752 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  55M, static library 51829968 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (00:40:45)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 36 30.3M   36 11.1M    0     0  18.2M      0  0:00:01 --:--:--  0:00:01 18.2M100 30.3M  100 30.3M    0     0  35.7M      0 --:--:-- --:--:-- --:--:-- 80.5M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (00:40:46)
+string catalog: 1444 keys, 24 resource locales (23 with translations), 24601 localized values, 186 Swift references, 24 picker languages
+
+== XcodeGen (00:40:47)
+xcodegen: Version: 2.46.0
+
+== Generate the project (00:40:48)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (00:40:48)
+  MapLibre Native: https://github.com/maplibre/maplibre-gl-native-distribution @ 6.31.0
+
+resolved source packages: BitByteData, SWCompression, MapLibre Native
+(resolve: 19 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (00:41:08)
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (582B068E-2ACA-440E-8D01-417AEDF26981) (Shutdown) 
+
+== Build for the simulator (00:41:10)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 95 s)
+simulator build: ok
+
+== Boot the simulator (00:42:45)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (00:47:22)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 112 s)
+tests: ok, Executed 151 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=18762
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=55661 rate=22050 wav_frames=55661
+
+== Launch and screenshot (00:49:14)
+app.vela.ios: 29008
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 7772D39C-F338-450A-BF5B-9A7D9A3712EE (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (00:50:10)
+xcodebuild uitest failed after 167 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/RoadMarkingsUITests.swift:63: error: -[VelaUITests.RoadMarkingsUITests testPaintedMarksAtStreetZoom] : XCTAssertTrue failed - painted marks never reached the style: layers painted=ready:23 speed=off:0 alpr=off:0 controls=off:0 fuel=off:0 bridges=off:0 poi=both cats=food,fuel,transit,parking,other pack=337 density=normal icon=1.00 look=vela appearance=system names=english_latin house=normal traffic=off satellite=off raster=none tiles=0 cam=live oriented=0 unoriented=0 marks_source=tiles marks_count=23 marks_zoom=17.0 zoom=17.0 paint_apply=3 paint_layers=9 paint_features=0 paint_vis=9 paint_z=17.0 paint_marks=0 paint_built=0 paint_src=1
+Test Case '-[VelaUITests.RoadMarkingsUITests testPaintedMarksAtStreetZoom]' failed (95.214 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =    83.27s Checking existence of `"layers-debug" StaticText`
+    t =    83.32s Find the "layers-debug" StaticText
+    t =    83.86s Checking existence of `"layers-debug" StaticText`
+    t =    83.91s Find the "layers-debug" StaticText
+    t =    84.45s Checking existence of `"layers-debug" StaticText`
+    t =    84.49s Find the "layers-debug" StaticText
+    t =    85.04s Checking existence of `"layers-debug" StaticText`
+    t =    85.09s Find the "layers-debug" StaticText
+    t =    85.69s Checking existence of `"layers-debug" StaticText`
+    t =    85.75s Find the "layers-debug" StaticText
+    t =    86.30s Checking existence of `"layers-debug" StaticText`
+    t =    86.34s Find the "layers-debug" StaticText
+    t =    86.90s Checking existence of `"layers-debug" StaticText`
+    t =    86.94s Find the "layers-debug" StaticText
+    t =    87.48s Checking existence of `"layers-debug" StaticText`
+    t =    87.55s Find the "layers-debug" StaticText
+    t =    88.12s Checking existence of `"layers-debug" StaticText`
+    t =    88.18s Find the "layers-debug" StaticText
+    t =    88.74s Checking existence of `"layers-debug" StaticText`
+    t =    88.81s Find the "layers-debug" StaticText
+    t =    89.36s Checking existence of `"layers-debug" StaticText`
+    t =    89.41s Find the "layers-debug" StaticText
+    t =    89.96s Checking existence of `"layers-debug" StaticText`
+    t =    90.01s Find the "layers-debug" StaticText
+    t =    90.56s Checking existence of `"layers-debug" StaticText`
+    t =    90.62s Find the "layers-debug" StaticText
+    t =    91.18s Checking existence of `"layers-debug" StaticText`
+    t =    91.25s Find the "layers-debug" StaticText
+    t =    91.80s Checking existence of `"layers-debug" StaticText`
+    t =    91.87s Find the "layers-debug" StaticText
+    t =    92.43s Checking existence of `"layers-debug" StaticText`
+    t =    92.47s Find the "layers-debug" StaticText
+    t =    93.06s Checking existence of `"layers-debug" StaticText`
+    t =    93.12s Find the "layers-debug" StaticText
+    t =    93.67s Checking existence of `"layers-debug" StaticText`
+    t =    93.73s Find the "layers-debug" StaticText
+    t =    93.80s Checking existence of `"layers-debug" StaticText`
+    t =    93.85s Find the "layers-debug" StaticText
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/RoadMarkingsUITests.swift:63: error: -[VelaUITests.RoadMarkingsUITests testPaintedMarksAtStreetZoom] : XCTAssertTrue failed - painted marks never reached the style: layers painted=ready:23 speed=off:0 alpr=off:0 controls=off:0 fuel=off:0 bridges=off:0 poi=both cats=food,fuel,transit,parking,other pack=337 density=normal icon=1.00 look=vela appearance=system names=english_latin house=normal traffic=off satellite=off raster=none tiles=0 cam=live oriented=0 unoriented=0 marks_source=tiles marks_count=23 marks_zoom=17.0 zoom=17.0 paint_apply=3 paint_layers=9 paint_features=0 paint_vis=9 paint_z=17.0 paint_marks=0 paint_built=0 paint_src=1
+    t =    94.82s Tear Down
+Test Case '-[VelaUITests.RoadMarkingsUITests testPaintedMarksAtStreetZoom]' failed (95.214 seconds).
+Test Suite 'RoadMarkingsUITests' failed at 2026-10-29 00:52:22.823.
+	 Executed 1 test, with 1 failure (0 unexpected) in 95.214 (95.216) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-29 00:52:22.823.
+	 Executed 1 test, with 1 failure (0 unexpected) in 95.214 (95.216) seconds
+Test Suite 'Selected tests' failed at 2026-10-29 00:52:22.823.
+	 Executed 1 test, with 1 failure (0 unexpected) in 95.214 (95.218) seconds
+2026-10-29 00:52:52.398 xcodebuild[30616:87771] [MT] IDETestOperationsObserverDebug: 142.075 elapsed -- Testing started completed.
+2026-10-29 00:52:52.399 xcodebuild[30616:87771] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-29 00:52:52.399 xcodebuild[30616:87771] [MT] IDETestOperationsObserverDebug: 142.075 sec, +142.075 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.mvudseGEFx/uitest.xcresult
+
+Failing tests:
+	RoadMarkingsUITests.testPaintedMarksAtStreetZoom()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui RoadMarkingsUITests.testPaintedMarksAtStreetZoom: failed (95.214 seconds)
+scripts/ios/ci-ipa.sh: line 286: 30613 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui screenshots: 
+
+== Route replay (00:53:01)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 7772D39C-F338-450A-BF5B-9A7D9A3712EE (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 7772D39C-F338-450A-BF5B-9A7D9A3712EE (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (00:54:21)
+242352
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 88795 bytes
+directions reply: directions-drive-sf 83378 bytes
+directions reply: directions-walk-sf 36891 bytes
+search reply: 242352 bytes, 29 feature ids
+failed steps: ui-scenarios
