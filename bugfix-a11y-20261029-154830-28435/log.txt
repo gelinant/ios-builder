@@ -1,0 +1,216 @@
+tag=bugfix-a11y-20261029-154830-28435 src=src/bugfix-a11y 6a18e55 src: 5ce983bd iOS: expose search settings sheet and transit card controls
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 6a18e55 src: 5ce983bd iOS: expose search settings sheet and transit card controls
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610291556 (1793289386)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (15:56:26)
+notices: ok, 35 entries (7 libraries, 27 data sources)
+
+== Kotlin: tests and the VelaCore framework (15:56:27)
+gradle: ok in 734 s
+kotlin jvmTest: 606 tests, 0 failures
+kotlin iosSimulatorArm64Test: 505 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  88M, static library 86570480 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  58M, static library 54260040 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (16:08:41)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 30.3M  100 30.3M    0     0  53.0M      0 --:--:-- --:--:-- --:--:-- 53.0M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (16:08:43)
+string catalog: 1444 keys, 24 resource locales (23 with translations), 24601 localized values, 186 Swift references, 24 picker languages
+
+== XcodeGen (16:08:44)
+xcodegen: Version: 2.46.0
+
+== Generate the project (16:08:45)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (16:08:45)
+  BitByteData: https://github.com/tsolomko/BitByteData @ 2.1.0
+
+resolved source packages: SWCompression, MapLibre Native, BitByteData
+(resolve: 23 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (16:09:08)
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (582B068E-2ACA-440E-8D01-417AEDF26981) (Shutdown) 
+
+== Build for the simulator (16:09:10)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 121 s)
+simulator build: ok
+
+== Boot the simulator (16:11:11)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (16:15:19)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 145 s)
+tests: ok, Executed 188 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=19133
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=54771 rate=22050 wav_frames=54771
+
+== Launch and screenshot (16:17:45)
+app.vela.ios: 33447
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 2ED4AC99-2AB7-425E-BC10-0B67D6718F4D (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (16:18:26)
+xcodebuild uitest failed after 460 s. Error lines:
+    t =    59.43s         Failed: Failed to scroll to visible (by AX action) Button, {{114.7, 880.3}, {123.7, 34.3}}, identifier: 'transit-trip-open', label: 'Trip view', error: Error kAXErrorCannotComplete performing AXAction kAXScrollToVisibleAction on element AX element pid: 37420, elementOrHash.elementID: 6341668224.688
+    t =    62.35s             Failed: Failed to scroll to visible (by AX action) Button, {{114.7, 880.3}, {123.7, 34.3}}, identifier: 'transit-trip-open', label: 'Trip view', error: Error kAXErrorCannotComplete performing AXAction kAXScrollToVisibleAction on element AX element pid: 37420, elementOrHash.elementID: 6341668224.688
+    t =    64.06s             Failed: Failed to scroll to visible (by AX action) Button, {{114.7, 880.3}, {123.7, 34.3}}, identifier: 'transit-trip-open', label: 'Trip view', error: Error kAXErrorCannotComplete performing AXAction kAXScrollToVisibleAction on element AX element pid: 37420, elementOrHash.elementID: 6341668224.688
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TransitCitymapperUITests.swift:212: error: -[VelaUITests.TransitCitymapperUITests testLiveTripScreenWhenTheFeedAnswers] : Failed to failed to scroll to visible (by AX action) Button, {{114.7, 880.3}, {123.7, 34.3}}, identifier: 'transit-trip-open', label: 'Trip view', error: Error kAXErrorCannotComplete performing AXAction kAXScrollToVisibleAction on element AX element pid: 37420, elementOrHash.elementID: 6341668224.688. (Underlying Error: Error kAXErrorCannotComplete performing AXAction kAXScrollToVisibleAction on element AX element pid: 37420, elementOrHash.elementID: 6341668224.688)
+Test Case '-[VelaUITests.TransitCitymapperUITests testLiveTripScreenWhenTheFeedAnswers]' failed (67.814 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/UnifiedSearchUITests.swift:147: error: -[VelaUITests.UnifiedSearchUITests testFindSavedTransitWikiSettingAndPlace] : XCTAssertTrue failed - the coordinate dropped no pin
+Test Case '-[VelaUITests.UnifiedSearchUITests testFindSavedTransitWikiSettingAndPlace]' failed (108.961 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =    97.31s         Capturing element debug description
+    t =    98.23s     Checking `Expect predicate `existsNoRetry == 1` for object "map-poi-coordinates" StaticText`
+    t =    98.23s         Checking existence of `"map-poi-coordinates" StaticText`
+    t =    98.34s         Capturing element debug description
+    t =    99.28s     Checking `Expect predicate `existsNoRetry == 1` for object "map-poi-coordinates" StaticText`
+    t =    99.28s         Checking existence of `"map-poi-coordinates" StaticText`
+    t =    99.39s         Capturing element debug description
+    t =   100.21s     Checking `Expect predicate `existsNoRetry == 1` for object "map-poi-coordinates" StaticText`
+    t =   100.21s         Checking existence of `"map-poi-coordinates" StaticText`
+    t =   100.29s         Capturing element debug description
+    t =   101.23s     Checking `Expect predicate `existsNoRetry == 1` for object "map-poi-coordinates" StaticText`
+    t =   101.24s         Checking existence of `"map-poi-coordinates" StaticText`
+    t =   101.32s         Capturing element debug description
+    t =   102.26s     Checking `Expect predicate `existsNoRetry == 1` for object "map-poi-coordinates" StaticText`
+    t =   102.26s         Checking existence of `"map-poi-coordinates" StaticText`
+    t =   102.33s         Capturing element debug description
+    t =   103.26s     Checking `Expect predicate `existsNoRetry == 1` for object "map-poi-coordinates" StaticText`
+    t =   103.26s         Checking existence of `"map-poi-coordinates" StaticText`
+    t =   103.33s         Capturing element debug description
+    t =   104.26s     Checking `Expect predicate `existsNoRetry == 1` for object "map-poi-coordinates" StaticText`
+    t =   104.27s         Checking existence of `"map-poi-coordinates" StaticText`
+    t =   104.32s         Capturing element debug description
+    t =   105.27s     Checking `Expect predicate `existsNoRetry == 1` for object "map-poi-coordinates" StaticText`
+    t =   105.27s         Checking existence of `"map-poi-coordinates" StaticText`
+    t =   105.36s         Capturing element debug description
+    t =   106.26s     Checking `Expect predicate `existsNoRetry == 1` for object "map-poi-coordinates" StaticText`
+    t =   106.27s         Checking existence of `"map-poi-coordinates" StaticText`
+    t =   106.31s         Capturing element debug description
+    t =   107.25s     Checking `Expect predicate `existsNoRetry == 1` for object "map-poi-coordinates" StaticText`
+    t =   107.25s         Checking existence of `"map-poi-coordinates" StaticText`
+    t =   107.32s         Capturing element debug description
+    t =   108.21s     Checking `Expect predicate `existsNoRetry == 1` for object "map-poi-coordinates" StaticText`
+    t =   108.21s         Checking existence of `"map-poi-coordinates" StaticText`
+    t =   108.28s         Capturing element debug description
+    t =   108.28s     Checking existence of `"map-poi-coordinates" StaticText`
+    t =   108.35s Collecting debug information to assist test failure triage
+    t =   108.35s     Requesting snapshot of accessibility hierarchy for app with pid 44549
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/UnifiedSearchUITests.swift:147: error: -[VelaUITests.UnifiedSearchUITests testFindSavedTransitWikiSettingAndPlace] : XCTAssertTrue failed - the coordinate dropped no pin
+    t =   108.49s Tear Down
+Test Case '-[VelaUITests.UnifiedSearchUITests testFindSavedTransitWikiSettingAndPlace]' failed (108.961 seconds).
+Test Suite 'UnifiedSearchUITests' failed at 2026-10-29 16:25:14.452.
+	 Executed 1 test, with 1 failure (0 unexpected) in 108.961 (108.962) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-29 16:25:14.453.
+	 Executed 6 tests, with 2 failures (0 unexpected) in 352.544 (352.566) seconds
+Test Suite 'Selected tests' failed at 2026-10-29 16:25:14.453.
+	 Executed 6 tests, with 2 failures (0 unexpected) in 352.544 (352.567) seconds
+2026-10-29 16:26:00.321 xcodebuild[35062:98502] [MT] IDETestOperationsObserverDebug: 422.487 elapsed -- Testing started completed.
+2026-10-29 16:26:00.322 xcodebuild[35062:98502] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-29 16:26:00.322 xcodebuild[35062:98502] [MT] IDETestOperationsObserverDebug: 422.487 sec, +422.487 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.XUHByEA4iH/uitest.xcresult
+
+Failing tests:
+	TransitCitymapperUITests.testLiveTripScreenWhenTheFeedAnswers()
+	UnifiedSearchUITests.testFindSavedTransitWikiSettingAndPlace()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+scripts/ios/ci-ipa.sh: line 285: 35060 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui TransitCitymapperUITests.testLiveTripScreenWhenTheFeedAnswers: failed (67.814 seconds)
+ui TransitCitymapperUITests.testNearbyLinesTabListsTheStopsLines: passed (24.796 seconds)
+ui TransitCitymapperUITests.testSegmentTimeChangeShowsANewOptionSet: passed (91.315 seconds)
+ui TransitCitymapperUITests.testSkipLetsTheRunPassAndAdvancesTheHeader: passed (32.988 seconds)
+ui TransitCitymapperUITests.testTripScreenShowsSegmentCardsAndNextDepartures: passed (26.671 seconds)
+ui UnifiedSearchUITests.testFindSavedTransitWikiSettingAndPlace: failed (108.961 seconds)
+ui transit_trip_fixture=1
+ui transit_trip_header_after_skip=3
+ui transit_trip_header_before_skip=4
+ui transit_trip_header=4
+ui transit_trip_nearby_lines=3
+ui transit_trip_nearby_rows=3
+ui transit_trip_option_rows=0
+ui transit_trip_rides=1
+ui transit_trip_segments=4
+ui transit_trip_shift_options=2
+ui transit_trip_shift_query=in-screenshot
+ui transit_trip_skip_options=2
+ui transit_trip=segments_and_header
+ui unified_kind=coord
+ui unified_kind=line
+ui unified_kind=list
+ui unified_kind=saved
+ui unified_kind=setting
+ui unified_kind=stop
+ui unified_kind=wiki
+ui unified_local_ms=14
+ui screenshots: 
+
+== Route replay (16:26:11)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 2ED4AC99-2AB7-425E-BC10-0B67D6718F4D (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 2ED4AC99-2AB7-425E-BC10-0B67D6718F4D (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=48594 parsed=true times=false
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (16:27:51)
+248744
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 101358 bytes
+directions reply: directions-drive-sf 115782 bytes
+directions reply: directions-walk-sf 54877 bytes
+search reply: 248744 bytes, 30 feature ids
+failed steps: ui-scenarios
