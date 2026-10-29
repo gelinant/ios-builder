@@ -1,0 +1,206 @@
+tag=srch-along-check4-20261029-220940-6711 src=src/srch-along-check4 9a0c358 src: 32afd218 SRCH-ALONG: refocus the search field after the route sheet closes
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 9a0c358 src: 32afd218 SRCH-ALONG: refocus the search field after the route sheet closes
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610292219 (1793312386)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (22:19:46)
+notices: ok, 36 entries (7 libraries, 28 data sources)
+
+== Kotlin: tests and the VelaCore framework (22:19:47)
+gradle: ok in 551 s
+kotlin jvmTest: 639 tests, 0 failures
+kotlin iosSimulatorArm64Test: 529 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 86830680 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  58M, static library 54517896 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (22:28:59)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 30.3M  100 30.3M    0     0  43.4M      0 --:--:-- --:--:-- --:--:-- 43.4M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (22:29:01)
+string catalog: 2047 keys, 24 resource locales (24 with translations), 38386 localized values, 901 Swift references, 24 picker languages
+
+== XcodeGen (22:29:04)
+xcodegen: Version: 2.46.0
+
+== Generate the project (22:29:04)
+maplibre-globe: downloading MapLibre.dynamic.xcframework.zip (169968107 bytes) from ios-v2026.10.19-globe
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0  162M    0  204k    0     0   496k      0  0:05:34 --:--:--  0:05:34  496k 18  162M   18 30.0M    0     0  21.1M      0  0:00:07  0:00:01  0:00:06 29.4M 44  162M   44 72.6M    0     0  30.2M      0  0:00:05  0:00:02  0:00:03 36.4M 68  162M   68  111M    0     0  32.2M      0  0:00:05  0:00:03  0:00:02 36.5M 98  162M   98  160M    0     0  36.0M      0  0:00:04  0:00:04 --:--:-- 39.6M100  162M  100  162M    0     0  36.3M      0  0:00:04  0:00:04 --:--:-- 39.9M
+maplibre-globe ios-v2026.10.19-globe: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/MapLibre.xcframework (590M on disk)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (22:29:12)
+  BitByteData: https://github.com/tsolomko/BitByteData @ 2.1.0
+
+resolved source packages: SWCompression, BitByteData
+(resolve: 17 s)
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+
+== Pick a simulator (22:29:29)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (600A45A3-B3A0-4A39-8A9C-5D051F9FDA9C) (Shutdown) 
+
+== Build for the simulator (22:29:30)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 118 s)
+simulator build: ok
+
+== Boot the simulator (22:31:28)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (22:34:55)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 156 s)
+tests: ok, Executed 188 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.59 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=18762
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=55124 rate=22050 wav_frames=55124
+
+== Launch and screenshot (22:37:32)
+app.vela.ios: 25136
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 7D788D84-FE71-4537-8206-C6FEBAF50AE4 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (22:38:22)
+Parsed 8 waypoints
+xcodebuild uitest failed after 609 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SearchCommandUITests.swift:167: error: -[VelaUITests.SearchCommandUITests testAlongRouteSkipsTheTravelledPart] : XCTAssertTrue failed - the along command did not publish its corridor: none
+Test Case '-[VelaUITests.SearchCommandUITests testAlongRouteSkipsTheTravelledPart]' failed (312.598 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SearchCommandUITests.swift:207: error: -[VelaUITests.SearchCommandUITests testTypedAndSpokenCommands] : XCTAssertTrue failed - the field did not hold coffee: Ada Lovelacoffee
+Test Case '-[VelaUITests.SearchCommandUITests testTypedAndSpokenCommands]' failed (203.847 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =   185.45s Checking existence of `"search-debug" StaticText`
+    t =   185.82s Find the "search-debug" StaticText
+UITEST cmd_kind=call
+UITEST cmd_len=17
+    t =   186.24s Checking existence of `"search-debug" StaticText`
+    t =   186.74s Find the "search-debug" StaticText
+UITEST cmd_contacts=denied
+    t =   187.23s Tap "search-field" TextField
+    t =   187.23s     Wait for app.vela.ios to idle
+    t =   187.23s     Find the "search-field" TextField
+    t =   187.69s     Check for interrupting elements affecting "search-field" TextField
+    t =   187.92s     Synthesize event
+    t =   188.25s     Wait for app.vela.ios to idle
+    t =   188.54s Waiting 3.0s for Keyboard (First Match) to exist
+    t =   189.66s     Checking `Expect predicate `existsNoRetry == 1` for object Keyboard (First Match)`
+    t =   189.68s         Checking existence of `Keyboard (First Match)`
+    t =   189.93s Find the "search-field" TextField
+    t =   190.73s Type '' into "search-field" TextField
+    t =   190.73s     Wait for app.vela.ios to idle
+    t =   190.76s     Find the "search-field" TextField
+    t =   191.47s     Check for interrupting elements affecting "search-field" TextField
+    t =   192.21s     Synthesize event
+    t =   192.62s     Wait for app.vela.ios to idle
+    t =   193.79s Type 'coffee' into "search-field" TextField
+    t =   193.79s     Wait for app.vela.ios to idle
+    t =   194.27s     Find the "search-field" TextField
+    t =   194.87s     Check for interrupting elements affecting "search-field" TextField
+    t =   195.20s     Synthesize event
+    t =   195.54s     Wait for app.vela.ios to idle
+    t =   195.95s Find the "search-field" TextField
+    t =   197.29s Find the "search-field" TextField
+    t =   198.34s Find the "search-field" TextField
+    t =   199.46s Find the "search-field" TextField
+    t =   200.45s Find the "search-field" TextField
+    t =   201.54s Find the "search-field" TextField
+    t =   201.99s Find the "search-field" TextField
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SearchCommandUITests.swift:207: error: -[VelaUITests.SearchCommandUITests testTypedAndSpokenCommands] : XCTAssertTrue failed - the field did not hold coffee: Ada Lovelacoffee
+    t =   202.48s Tear Down
+    t =   202.48s     Checking existence of `"nav-end" Button`
+Test Case '-[VelaUITests.SearchCommandUITests testTypedAndSpokenCommands]' failed (203.847 seconds).
+Test Suite 'SearchCommandUITests' failed at 2026-10-29 22:47:43.302.
+	 Executed 2 tests, with 2 failures (0 unexpected) in 516.445 (516.450) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-29 22:47:43.304.
+	 Executed 2 tests, with 2 failures (0 unexpected) in 516.445 (516.452) seconds
+Test Suite 'Selected tests' failed at 2026-10-29 22:47:43.306.
+	 Executed 2 tests, with 2 failures (0 unexpected) in 516.445 (516.457) seconds
+2026-10-29 22:48:27.095 xcodebuild[26152:78374] [MT] IDETestOperationsObserverDebug: 579.421 elapsed -- Testing started completed.
+2026-10-29 22:48:27.096 xcodebuild[26152:78374] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-29 22:48:27.096 xcodebuild[26152:78374] [MT] IDETestOperationsObserverDebug: 579.421 sec, +579.421 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.9Gukt43k6L/uitest.xcresult
+
+Failing tests:
+	SearchCommandUITests.testAlongRouteSkipsTheTravelledPart()
+	SearchCommandUITests.testTypedAndSpokenCommands()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui SearchCommandUITests.testAlongRouteSkipsTheTravelledPart: failed (312.598 seconds)
+ui SearchCommandUITests.testTypedAndSpokenCommands: failed (203.847 seconds)
+scripts/ios/ci-ipa.sh: line 286: 26148 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui cmd_contacts=denied
+ui cmd_corridor_m=3000
+ui cmd_found=56
+ui cmd_kind=along
+ui cmd_kind=call
+ui cmd_kind=directions
+ui cmd_kind=home
+ui cmd_kind=work
+ui cmd_len=17
+ui cmd_len=20
+ui cmd_len=29
+ui cmd_len=4
+ui cmd_searches=0
+ui screenshots: search-along-route.png search-command.png 
+
+== Route replay (22:48:36)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 7D788D84-FE71-4537-8206-C6FEBAF50AE4 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 7D788D84-FE71-4537-8206-C6FEBAF50AE4 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (22:49:57)
+245398
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 88729 bytes
+directions reply: directions-drive-sf 71371 bytes
+directions reply: directions-walk-sf 34513 bytes
+search reply: 245398 bytes, 29 feature ids
+failed steps: ui-scenarios
