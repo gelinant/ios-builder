@@ -1,0 +1,188 @@
+tag=t2-wire-replay-20261029-205055-14034 src=src/t2-wire-replay b141653 src: f0e60d0e iOS T2-WIRE: launch the map test on the transit card
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: b141653 src: f0e60d0e iOS T2-WIRE: launch the map test on the transit card
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610292052 (1793307126)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (20:52:07)
+notices: ok, 36 entries (7 libraries, 28 data sources)
+
+== Kotlin: tests and the VelaCore framework (20:52:07)
+gradle: ok in 422 s
+kotlin jvmTest: 637 tests, 0 failures
+kotlin iosSimulatorArm64Test: 529 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 86822544 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  58M, static library 54509208 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (20:59:10)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 30.3M  100 30.3M    0     0  48.2M      0 --:--:-- --:--:-- --:--:-- 48.2M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (20:59:11)
+string catalog: 2047 keys, 24 resource locales (24 with translations), 38386 localized values, 901 Swift references, 24 picker languages
+
+== XcodeGen (20:59:13)
+xcodegen: Version: 2.46.0
+
+== Generate the project (20:59:14)
+maplibre-globe: downloading MapLibre.dynamic.xcframework.zip (169968107 bytes) from ios-v2026.10.19-globe
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 60  162M   60 98.6M    0     0  84.8M      0  0:00:01  0:00:01 --:--:-- 84.8M100  162M  100  162M    0     0  96.2M      0  0:00:01  0:00:01 --:--:--  121M
+maplibre-globe ios-v2026.10.19-globe: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/MapLibre.xcframework (577M on disk)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (20:59:18)
+  SWCompression: https://github.com/tsolomko/SWCompression @ 4.9.1
+
+resolved source packages: BitByteData, SWCompression
+(resolve: 12 s)
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+
+== Pick a simulator (20:59:30)
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (582B068E-2ACA-440E-8D01-417AEDF26981) (Shutdown) 
+
+== Build for the simulator (20:59:31)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 105 s)
+simulator build: ok
+
+== Boot the simulator (21:01:16)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (21:04:58)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 101 s)
+tests: ok, Executed 188 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=19319
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=55232 rate=22050 wav_frames=55232
+
+== Launch and screenshot (21:06:40)
+app.vela.ios: 20313
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: B362E7F6-E534-4197-BEE2-328210BBF556 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (21:07:22)
+xcodebuild uitest failed after 182 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TransitMapUITests.swift:28: error: -[VelaUITests.TransitMapUITests testLinesAndVehiclesOnTheMap] : XCTAssertTrue failed - the lines never reached the map: no tap chain
+Test Case '-[VelaUITests.TransitMapUITests testLinesAndVehiclesOnTheMap]' failed (74.329 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =    50.40s         Checking existence of `"transit-card" Other`
+    t =    50.48s Checking existence of `"tap-chain-debug" StaticText`
+    t =    51.03s Checking existence of `"tap-chain-debug" StaticText`
+    t =    51.65s Checking existence of `"tap-chain-debug" StaticText`
+    t =    52.31s Checking existence of `"tap-chain-debug" StaticText`
+    t =    52.87s Checking existence of `"tap-chain-debug" StaticText`
+    t =    53.45s Checking existence of `"tap-chain-debug" StaticText`
+    t =    54.03s Checking existence of `"tap-chain-debug" StaticText`
+    t =    54.60s Checking existence of `"tap-chain-debug" StaticText`
+    t =    55.16s Checking existence of `"tap-chain-debug" StaticText`
+    t =    55.71s Checking existence of `"tap-chain-debug" StaticText`
+    t =    56.29s Checking existence of `"tap-chain-debug" StaticText`
+    t =    56.89s Checking existence of `"tap-chain-debug" StaticText`
+    t =    57.48s Checking existence of `"tap-chain-debug" StaticText`
+    t =    58.04s Checking existence of `"tap-chain-debug" StaticText`
+    t =    58.62s Checking existence of `"tap-chain-debug" StaticText`
+    t =    59.20s Checking existence of `"tap-chain-debug" StaticText`
+    t =    59.77s Checking existence of `"tap-chain-debug" StaticText`
+    t =    60.33s Checking existence of `"tap-chain-debug" StaticText`
+    t =    60.89s Checking existence of `"tap-chain-debug" StaticText`
+    t =    61.44s Checking existence of `"tap-chain-debug" StaticText`
+    t =    62.01s Checking existence of `"tap-chain-debug" StaticText`
+    t =    62.58s Checking existence of `"tap-chain-debug" StaticText`
+    t =    63.21s Checking existence of `"tap-chain-debug" StaticText`
+    t =    63.78s Checking existence of `"tap-chain-debug" StaticText`
+    t =    64.37s Checking existence of `"tap-chain-debug" StaticText`
+    t =    64.93s Checking existence of `"tap-chain-debug" StaticText`
+    t =    65.51s Checking existence of `"tap-chain-debug" StaticText`
+    t =    66.11s Checking existence of `"tap-chain-debug" StaticText`
+    t =    66.66s Checking existence of `"tap-chain-debug" StaticText`
+    t =    67.22s Checking existence of `"tap-chain-debug" StaticText`
+    t =    67.77s Checking existence of `"tap-chain-debug" StaticText`
+    t =    68.33s Checking existence of `"tap-chain-debug" StaticText`
+    t =    68.92s Checking existence of `"tap-chain-debug" StaticText`
+    t =    69.48s Checking existence of `"tap-chain-debug" StaticText`
+    t =    70.03s Checking existence of `"tap-chain-debug" StaticText`
+    t =    70.58s Checking existence of `"tap-chain-debug" StaticText`
+    t =    70.62s Checking existence of `"tap-chain-debug" StaticText`
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TransitMapUITests.swift:28: error: -[VelaUITests.TransitMapUITests testLinesAndVehiclesOnTheMap] : XCTAssertTrue failed - the lines never reached the map: no tap chain
+    t =    73.58s Tear Down
+Test Case '-[VelaUITests.TransitMapUITests testLinesAndVehiclesOnTheMap]' failed (74.329 seconds).
+Test Suite 'TransitMapUITests' failed at 2026-10-29 21:09:40.079.
+	 Executed 1 test, with 1 failure (0 unexpected) in 74.329 (74.332) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-29 21:09:40.080.
+	 Executed 1 test, with 1 failure (0 unexpected) in 74.329 (74.333) seconds
+Test Suite 'Selected tests' failed at 2026-10-29 21:09:40.081.
+	 Executed 1 test, with 1 failure (0 unexpected) in 74.329 (74.335) seconds
+2026-10-29 21:10:19.318 xcodebuild[21662:66930] [MT] IDETestOperationsObserverDebug: 147.419 elapsed -- Testing started completed.
+2026-10-29 21:10:19.318 xcodebuild[21662:66930] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-29 21:10:19.318 xcodebuild[21662:66930] [MT] IDETestOperationsObserverDebug: 147.419 sec, +147.419 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.nfkamSEm93/uitest.xcresult
+
+Failing tests:
+	TransitMapUITests.testLinesAndVehiclesOnTheMap()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui TransitMapUITests.testLinesAndVehiclesOnTheMap: failed (74.329 seconds)
+scripts/ios/ci-ipa.sh: line 286: 21659 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui screenshots: 
+
+== Route replay (21:10:29)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: B362E7F6-E534-4197-BEE2-328210BBF556 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: B362E7F6-E534-4197-BEE2-328210BBF556 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (21:11:45)
+254461
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 88731 bytes
+directions reply: directions-drive-sf 110095 bytes
+directions reply: directions-walk-sf 34621 bytes
+search reply: 254461 bytes, 32 feature ids
+failed steps: ui-scenarios
