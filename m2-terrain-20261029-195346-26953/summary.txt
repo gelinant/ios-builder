@@ -1,0 +1,17 @@
+commit: 7d29490 src: dde9f278 M-2: serve elevation tiles through the app and inline the bundled page
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610291955 (1793303701)
+java: openjdk version "17.0.20.1" 2026-08-18
+notices: ok, 37 entries (8 libraries, 28 data sources)
+gradle: ok in 446 s
+kotlin jvmTest: 632 tests, 0 failures
+kotlin iosSimulatorArm64Test: 524 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 86791864 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  58M, static library 54473704 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 2047 keys, 24 resource locales (24 with translations), 38386 localized values, 902 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (600A45A3-B3A0-4A39-8A9C-5D051F9FDA9C) (Shutdown) 
