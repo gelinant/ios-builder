@@ -1,0 +1,194 @@
+tag=perf-1-20261029-192139-16155 src=src/perf-1 2f46009 src: bb13137d PERF-1: measure cold start and move offline work after the first frame
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 2f46009 src: bb13137d PERF-1: measure cold start and move offline work after the first frame
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610291922 (1793301756)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (19:22:36)
+notices: ok, 36 entries (7 libraries, 28 data sources)
+
+== Kotlin: tests and the VelaCore framework (19:22:37)
+gradle: ok in 439 s
+kotlin jvmTest: 632 tests, 0 failures
+kotlin iosSimulatorArm64Test: 524 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 86798624 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  58M, static library 54479392 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (19:29:57)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0 30.3M    0 35182    0     0   111k      0  0:04:38 --:--:--  0:04:38  111k 20 30.3M   20 6508k    0     0  4983k      0  0:00:06  0:00:01  0:00:05 6480k 79 30.3M   79 24.0M    0     0  10.4M      0  0:00:02  0:00:02 --:--:-- 12.0M100 30.3M  100 30.3M    0     0  11.7M      0  0:00:02  0:00:02 --:--:-- 13.2M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (19:30:00)
+string catalog: 2047 keys, 24 resource locales (24 with translations), 38386 localized values, 901 Swift references, 24 picker languages
+
+== XcodeGen (19:30:01)
+xcodegen: Version: 2.46.0
+
+== Generate the project (19:30:02)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (19:30:03)
+  MapLibre Native: https://github.com/maplibre/maplibre-gl-native-distribution @ 6.31.0
+
+resolved source packages: BitByteData, SWCompression, MapLibre Native
+(resolve: 14 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (19:30:17)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (600A45A3-B3A0-4A39-8A9C-5D051F9FDA9C) (Shutdown) 
+
+== Build for the simulator (19:30:20)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 80 s)
+simulator build: ok
+
+== Boot the simulator (19:31:40)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (19:34:41)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 75 s)
+tests: ok, Executed 188 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=19319
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=57092 rate=22050 wav_frames=57092
+
+== Launch and screenshot (19:35:56)
+app.vela.ios: 22652
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 56F5A45B-71D4-4618-835A-A05DF25A9EC7 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (19:36:36)
+xcodebuild uitest failed after 172 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/PerformanceUITests.swift:67: error: -[VelaUITests.PerformanceUITests testColdStartBudget] : XCTAssertLessThanOrEqual failed: ("6273.0") is greater than ("1500.0") - cold first frame 6273 ms is over the 1500 ms budget
+Test Case '-[VelaUITests.PerformanceUITests testColdStartBudget]' failed (71.312 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =    55.33s Waiting 30.0s for "search-field" TextField to exist
+    t =    56.43s     Checking `Expect predicate `existsNoRetry == 1` for object "search-field" TextField`
+    t =    56.43s         Checking existence of `"search-field" TextField`
+    t =    57.10s Waiting 10.0s for "launch-probe" StaticText to exist
+    t =    58.15s     Checking `Expect predicate `existsNoRetry == 1` for object "launch-probe" StaticText`
+    t =    58.15s         Checking existence of `"launch-probe" StaticText`
+    t =    58.21s Find the "launch-probe" StaticText
+    t =    58.27s Find the "launch-probe" StaticText
+    t =    58.32s Terminate app.vela.ios:30110
+    t =    59.36s Open app.vela.ios
+    t =    59.36s     Launch app.vela.ios
+2026-10-29 19:38:52.462 xcodebuild[23769:71852] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-29 19:38:52.462 xcodebuild[23769:71852] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =    60.13s         Setting up automation session
+    t =    61.21s         Wait for app.vela.ios to idle
+    t =    64.10s Waiting 30.0s for "search-field" TextField to exist
+    t =    65.15s     Checking `Expect predicate `existsNoRetry == 1` for object "search-field" TextField`
+    t =    65.15s         Checking existence of `"search-field" TextField`
+    t =    65.28s Waiting 10.0s for "launch-probe" StaticText to exist
+    t =    66.33s     Checking `Expect predicate `existsNoRetry == 1` for object "launch-probe" StaticText`
+    t =    66.33s         Checking existence of `"launch-probe" StaticText`
+    t =    66.40s Find the "launch-probe" StaticText
+    t =    67.01s Find the "launch-probe" StaticText
+    t =    67.61s Find the "launch-probe" StaticText
+    t =    68.20s Find the "launch-probe" StaticText
+    t =    68.78s Find the "launch-probe" StaticText
+    t =    69.36s Find the "launch-probe" StaticText
+    t =    69.42s Find the "launch-probe" StaticText
+    t =    69.47s Terminate app.vela.ios:30392
+UITEST cold_first_frame_ms=6273
+UITEST cold_map_tap_ms=6321
+UITEST cold_first_fix_ms=5552
+UITEST cold_peak_mb=118
+UITEST cold_baseline_first_frame_ms=3782
+UITEST cold_baseline_map_tap_ms=3887
+UITEST cold_baseline_first_fix_ms=3203
+UITEST cold_baseline_peak_mb=117
+UITEST cold_first_frame_gain_ms=-2491
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/PerformanceUITests.swift:67: error: -[VelaUITests.PerformanceUITests testColdStartBudget] : XCTAssertLessThanOrEqual failed: ("6273.0") is greater than ("1500.0") - cold first frame 6273 ms is over the 1500 ms budget
+    t =    70.99s Tear Down
+Test Case '-[VelaUITests.PerformanceUITests testColdStartBudget]' failed (71.312 seconds).
+Test Suite 'PerformanceUITests' failed at 2026-10-29 19:39:04.416.
+	 Executed 1 test, with 1 failure (0 unexpected) in 71.312 (71.313) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-29 19:39:04.417.
+	 Executed 3 tests, with 1 failure (0 unexpected) in 113.328 (113.332) seconds
+Test Suite 'Selected tests' failed at 2026-10-29 19:39:04.417.
+	 Executed 3 tests, with 1 failure (0 unexpected) in 113.328 (113.334) seconds
+2026-10-29 19:39:26.221 xcodebuild[23769:71852] [MT] IDETestOperationsObserverDebug: 155.854 elapsed -- Testing started completed.
+2026-10-29 19:39:26.222 xcodebuild[23769:71852] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-29 19:39:26.222 xcodebuild[23769:71852] [MT] IDETestOperationsObserverDebug: 155.854 sec, +155.854 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.JRN1T7DNKF/uitest.xcresult
+
+Failing tests:
+	PerformanceUITests.testColdStartBudget()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui LaunchUITests.testLaunchShowsTheMapOverSanFrancisco: passed (25.065 seconds)
+ui LaunchUITests.testStartCameraArgumentMovesTheMapToDavis: passed (16.951 seconds)
+ui PerformanceUITests.testColdStartBudget: failed (71.312 seconds)
+scripts/ios/ci-ipa.sh: line 286: 23766 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui cold_baseline_first_fix_ms=3203
+ui cold_baseline_first_frame_ms=3782
+ui cold_baseline_map_tap_ms=3887
+ui cold_baseline_peak_mb=117
+ui cold_first_fix_ms=5552
+ui cold_first_frame_gain_ms=-2491
+ui cold_first_frame_ms=6273
+ui cold_map_tap_ms=6321
+ui cold_peak_mb=118
+ui map_element=yes
+ui screenshots: launch-davis.png launch-sf.png 
+
+== Route replay (19:39:32)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 56F5A45B-71D4-4618-835A-A05DF25A9EC7 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 56F5A45B-71D4-4618-835A-A05DF25A9EC7 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (19:40:41)
+248213
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 76258 bytes
+directions reply: directions-drive-sf 109000 bytes
+directions reply: directions-walk-sf 37076 bytes
+search reply: 248213 bytes, 30 feature ids
+failed steps: ui-scenarios
