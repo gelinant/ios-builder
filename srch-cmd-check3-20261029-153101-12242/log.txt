@@ -1,0 +1,209 @@
+tag=srch-cmd-check3-20261029-153101-12242 src=src/srch-cmd-check3 371d518 src: 45c7601f SRCH-CMD: typed and spoken commands, contacts and along-route search
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 371d518 src: 45c7601f SRCH-CMD: typed and spoken commands, contacts and along-route search
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610291536 (1793288201)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (15:36:41)
+notices: ok, 35 entries (7 libraries, 27 data sources)
+
+== Kotlin: tests and the VelaCore framework (15:36:42)
+gradle: ok in 663 s
+kotlin jvmTest: 613 tests, 0 failures
+kotlin iosSimulatorArm64Test: 505 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  88M, static library 86689864 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  58M, static library 54392464 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (15:47:46)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 30.3M  100 30.3M    0     0  46.0M      0 --:--:-- --:--:-- --:--:-- 77.7M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (15:47:47)
+string catalog: 1444 keys, 24 resource locales (23 with translations), 24601 localized values, 186 Swift references, 24 picker languages
+
+== XcodeGen (15:47:48)
+xcodegen: Version: 2.46.0
+
+== Generate the project (15:47:49)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (15:47:49)
+  MapLibre Native: https://github.com/maplibre/maplibre-gl-native-distribution @ 6.31.0
+
+resolved source packages: BitByteData, SWCompression, MapLibre Native
+(resolve: 22 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (15:48:11)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (600A45A3-B3A0-4A39-8A9C-5D051F9FDA9C) (Shutdown) 
+
+== Build for the simulator (15:48:14)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 111 s)
+simulator build: ok
+
+== Boot the simulator (15:50:05)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (15:53:41)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 157 s)
+tests: ok, Executed 188 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.51 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=18019
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=54996 rate=22050 wav_frames=54996
+
+== Launch and screenshot (15:56:18)
+app.vela.ios: 30531
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 64C61FD5-9D2E-46DB-AAB4-AC69F2087CE1 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (15:56:53)
+xcodebuild uitest failed after 553 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SearchCommandUITests.swift:18: error: -[VelaUITests.SearchCommandUITests testTypedAndSpokenCommands] : XCTAssertTrue failed - home did not open the route chooser: offline=0 results=45 suggestions=0 area=1 dropped=0 searches=1 unified=0 ulocal=0ms cmd_kind=- cmd_contacts=- cmd_corridor_m=0 cmd_found=0 cmd_total=0
+Test Case '-[VelaUITests.SearchCommandUITests testTypedAndSpokenCommands]' failed (94.229 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =     0.00s Start Test at 2026-10-29 16:05:01.385
+    t =     0.18s Set Up
+    t =     0.18s Open app.vela.ios
+    t =     0.18s     Launch app.vela.ios
+    t =     0.18s         Terminate app.vela.ios:49436
+2026-10-29 16:05:02.642 xcodebuild[31993:91242] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-29 16:05:02.642 xcodebuild[31993:91242] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     2.14s         Setting up automation session
+    t =     4.88s         Wait for app.vela.ios to idle
+    t =     8.80s Waiting 60.0s for "search-field" TextField to exist
+    t =     9.86s     Checking `Expect predicate `existsNoRetry == 1` for object "search-field" TextField`
+    t =     9.86s         Checking existence of `"search-field" TextField`
+    t =    10.09s Tap "search-field" TextField
+    t =    10.09s     Wait for app.vela.ios to idle
+    t =    10.10s     Find the "search-field" TextField
+    t =    10.27s     Check for interrupting elements affecting "search-field" TextField
+    t =    10.40s     Synthesize event
+    t =    10.73s     Wait for app.vela.ios to idle
+    t =    11.82s Type 'coff' into "search-field" TextField
+    t =    11.82s     Wait for app.vela.ios to idle
+    t =    12.02s     Find the "search-field" TextField
+    t =    12.37s     Check for interrupting elements affecting "search-field" TextField
+    t =    12.44s     Synthesize event
+    t =    12.73s     Wait for app.vela.ios to idle
+    t =    13.10s Waiting 45.0s for "search-suggestion" Button to exist
+    t =    14.13s     Checking `Expect predicate `existsNoRetry == 1` for object "search-suggestion" Button`
+    t =    14.13s         Checking existence of `"search-suggestion" Button`
+    t =    14.55s Get number of matches for: Elements matching predicate '"search-suggestion" IN identifiers'
+UITEST suggestion_rows=5
+    t =    15.14s Added attachment named 'suggest'
+    t =    15.15s Tap "search-suggestion" Button
+    t =    15.15s     Wait for app.vela.ios to idle
+    t =    15.17s     Find the "search-suggestion" Button
+    t =    15.42s     Check for interrupting elements affecting "search-suggestion" Button
+    t =    15.51s     Synthesize event
+    t =    15.84s     Wait for app.vela.ios to idle
+    t =    16.45s Get number of matches for: Elements matching predicate '"search-suggestion" IN identifiers'
+    t =    18.76s Get number of matches for: Elements matching predicate '"search-suggestion" IN identifiers'
+    t =    18.86s Checking existence of `"place-name" StaticText`
+    t =    18.95s Tear Down
+Test Case '-[VelaUITests.SearchUITests testSuggestionsAppearAndFreezeAfterSelection]' passed (19.217 seconds).
+Test Suite 'SearchUITests' passed at 2026-10-29 16:05:20.603.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 385.509 (385.529) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-29 16:05:20.604.
+	 Executed 9 tests, with 1 failure (0 unexpected) in 479.737 (479.762) seconds
+Test Suite 'Selected tests' failed at 2026-10-29 16:05:20.605.
+	 Executed 9 tests, with 1 failure (0 unexpected) in 479.737 (479.764) seconds
+2026-10-29 16:05:58.513 xcodebuild[31993:91242] [MT] IDETestOperationsObserverDebug: 532.270 elapsed -- Testing started completed.
+2026-10-29 16:05:58.514 xcodebuild[31993:91242] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-29 16:05:58.514 xcodebuild[31993:91242] [MT] IDETestOperationsObserverDebug: 532.270 sec, +532.270 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.nmRurXItc3/uitest.xcresult
+
+Failing tests:
+	SearchCommandUITests.testTypedAndSpokenCommands()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui SearchCommandUITests.testTypedAndSpokenCommands: failed (94.229 seconds)
+ui SearchUITests.testAddressSearchMergesWithoutDuplicateRows: passed (98.359 seconds)
+ui SearchUITests.testCoffeeSearchShowsResultsAndPins: passed (53.334 seconds)
+ui SearchUITests.testNoGoogleSearchReturnsPhotonRows: passed (55.197 seconds)
+ui SearchUITests.testPhotonAddressSearchShowsTheTypedHouseNumber: passed (43.224 seconds)
+ui SearchUITests.testQuickCategoryRunsSearch: passed (19.165 seconds)
+ui SearchUITests.testResultCardFields: passed (46.527 seconds)
+ui SearchUITests.testSuggestionPriorityAndArrow: passed (50.485 seconds)
+ui SearchUITests.testSuggestionsAppearAndFreezeAfterSelection: passed (19.217 seconds)
+scripts/ios/ci-ipa.sh: line 286: 31990 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui address_hits=14
+ui address_rows=28
+ui card_call_rows=45
+ui card_photo_rows=60
+ui card_status_label=Blue
+ui category_rows=60
+ui dedup_duplicate_rows=0
+ui dedup_rows=28
+ui nogoogle_photon_hits=16
+ui nogoogle_photon_rows=16
+ui nogoogle_search_debug=offline=0
+ui photon_address_hits=10
+ui photon_address_rows=28
+ui search_rows=60
+ui suggestion_leading_row=Blue
+ui suggestion_priority=local
+ui suggestion_rows=5
+ui screenshots: category.png search-card-fields.png search-centered.png search-list.png search-map.png search-photon-nogoogle.png search-photon.png search-suggestion-priority.png suggest.png 
+
+== Route replay (16:06:08)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 64C61FD5-9D2E-46DB-AAB4-AC69F2087CE1 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 64C61FD5-9D2E-46DB-AAB4-AC69F2087CE1 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: photos: rpc 10
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (16:07:36)
+257368
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 63707 bytes
+directions reply: directions-drive-sf 111705 bytes
+directions reply: directions-walk-sf 34512 bytes
+search reply: 257368 bytes, 34 feature ids
+failed steps: ui-scenarios
