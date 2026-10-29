@@ -1,0 +1,207 @@
+tag=i18n-trans-20261029-122717-5679 src=src/i18n-trans ce7cc07 src: 3d6d9b12 I18N-TRANS: read the GO controls from the launched app
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: ce7cc07 src: 3d6d9b12 I18N-TRANS: read the GO controls from the launched app
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610291228 (1793276912)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (12:28:32)
+notices: ok, 35 entries (7 libraries, 27 data sources)
+
+== Kotlin: tests and the VelaCore framework (12:28:33)
+gradle: ok in 637 s
+kotlin jvmTest: 606 tests, 0 failures
+kotlin iosSimulatorArm64Test: 505 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  88M, static library 86567056 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  58M, static library 54256536 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (12:39:10)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 30.3M  100 30.3M    0     0  50.6M      0 --:--:-- --:--:-- --:--:-- 50.6M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (12:39:12)
+string catalog: 2007 keys, 24 resource locales (24 with translations), 37550 localized values, 861 Swift references, 24 picker languages
+
+== XcodeGen (12:39:13)
+xcodegen: Version: 2.46.0
+
+== Generate the project (12:39:14)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (12:39:14)
+  SWCompression: https://github.com/tsolomko/SWCompression @ 4.9.1
+
+resolved source packages: BitByteData, MapLibre Native, SWCompression
+(resolve: 16 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (12:39:30)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (600A45A3-B3A0-4A39-8A9C-5D051F9FDA9C) (Shutdown) 
+
+== Build for the simulator (12:39:33)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 106 s)
+simulator build: ok
+
+== Boot the simulator (12:41:19)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (12:44:43)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 129 s)
+tests: ok, Executed 188 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=18576
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=56727 rate=22050 wav_frames=56727
+
+== Launch and screenshot (12:46:53)
+app.vela.ios: 30799
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 0B8C8A46-59ED-4951-B999-CF61296F91EC (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (12:47:37)
+xcodebuild uitest failed after 255 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/LocalizationUITests.swift:72: error: -[VelaUITests.LocalizationUITests testFrenchTransitWorldAndSearchSurfaces] : XCTAssertEqual failed: ("Next departures for Ligne M2 vers Nation") is not equal to ("Départs")
+Test Case '-[VelaUITests.LocalizationUITests testFrenchTransitWorldAndSearchSurfaces]' failed (17.336 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =    16.17s Tap "transit-go-skip" Button
+    t =    16.17s     Wait for app.vela.ios to idle
+    t =    16.17s     Find the "transit-go-skip" Button
+    t =    16.21s     Check for interrupting elements affecting "transit-go-skip" Button
+    t =    16.27s     Synthesize event
+    t =    16.56s     Wait for app.vela.ios to idle
+    t =    16.57s Checking existence of `"transit-go-debug" StaticText`
+    t =    16.59s Find the "transit-go-debug" StaticText
+    t =    16.63s Checking existence of `"transit-go-debug" StaticText`
+    t =    16.66s Find the "transit-go-debug" StaticText
+UITEST go_step=done
+    t =    16.68s Terminate app.vela.ios:38347
+    t =    17.69s Open app.vela.ios
+    t =    17.70s     Launch app.vela.ios
+2026-10-29 12:51:03.753 xcodebuild[31721:90730] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-29 12:51:03.753 xcodebuild[31721:90730] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =    19.52s         Setting up automation session
+    t =    22.47s         Wait for app.vela.ios to idle
+    t =    28.08s Waiting 60.0s for "transit-go-screen" Any to exist
+    t =    29.11s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-go-screen" Any`
+    t =    29.11s         Checking existence of `"transit-go-screen" Any`
+    t =    29.24s Checking existence of `"transit-go-debug" StaticText`
+    t =    29.32s Find the "transit-go-debug" StaticText
+    t =    29.39s Checking existence of `"transit-go-offline" Any`
+    t =    29.44s Checking existence of `"transit-go-estimated" Any`
+    t =    29.50s Checking existence of `"transit-go-debug" StaticText`
+    t =    29.54s Find the "transit-go-debug" StaticText
+    t =    29.60s Checking existence of `"transit-go-debug" StaticText`
+    t =    29.65s Find the "transit-go-debug" StaticText
+    t =    29.72s Checking existence of `"transit-go-debug" StaticText`
+    t =    29.76s Find the "transit-go-debug" StaticText
+    t =    29.83s Checking existence of `"transit-go-debug" StaticText`
+    t =    29.87s Find the "transit-go-debug" StaticText
+UITEST go_estimated=0
+    t =    29.90s Checking existence of `"transit-go-debug" StaticText`
+    t =    29.94s Find the "transit-go-debug" StaticText
+UITEST go_cue=none
+UITEST transit_go_degraded=offline=1
+    t =    30.15s Added attachment named 'transit-go-degraded'
+    t =    30.16s Tear Down
+Test Case '-[VelaUITests.TransitGoUITests testGoModeCuesAndRail]' passed (30.408 seconds).
+Test Suite 'TransitGoUITests' passed at 2026-10-29 12:51:16.456.
+	 Executed 1 test, with 0 failures (0 unexpected) in 30.408 (30.409) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-29 12:51:16.457.
+	 Executed 5 tests, with 1 failure (0 unexpected) in 173.685 (173.692) seconds
+Test Suite 'Selected tests' failed at 2026-10-29 12:51:16.458.
+	 Executed 5 tests, with 1 failure (0 unexpected) in 173.685 (173.694) seconds
+2026-10-29 12:51:47.309 xcodebuild[31721:90730] [MT] IDETestOperationsObserverDebug: 230.416 elapsed -- Testing started completed.
+2026-10-29 12:51:47.309 xcodebuild[31721:90730] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-29 12:51:47.309 xcodebuild[31721:90730] [MT] IDETestOperationsObserverDebug: 230.416 sec, +230.416 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.KWOZAZi3O2/uitest.xcresult
+
+Failing tests:
+	LocalizationUITests.testFrenchTransitWorldAndSearchSurfaces()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui LocalizationUITests.testFrenchLabelsWithoutChangingSimulatorLanguage: passed (46.632 seconds)
+ui LocalizationUITests.testFrenchTransitWorldAndSearchSurfaces: failed (17.336 seconds)
+ui LocalizationUITests.testGermanSettingsLayout: passed (24.940 seconds)
+ui LocalizationUITests.testSettingsPersistAcrossRelaunch: passed (54.369 seconds)
+ui TransitGoUITests.testGoModeCuesAndRail: passed (30.408 seconds)
+scripts/ios/ci-ipa.sh: line 286: 31718 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui go_cue=none
+ui go_cue=stop
+ui go_estimated=0
+ui go_estimated=1
+ui go_step=done
+ui go_step=ride
+ui go_step=transfer
+ui l10n_de_language=Sprache
+ui l10n_de_no_google=Vela_ohne_Google_nutzen
+ui l10n_de_placeholder=Suchen
+ui l10n_de_title=Einstellungen
+ui l10n_fr_language=Langue
+ui l10n_fr_no_google=Utiliser_Vela_sans_Google
+ui l10n_fr_placeholder=Rechercher
+ui l10n_fr_title=Paramètres
+ui l10n_fr_units=Unités
+ui settings_google_after=1
+ui settings_google_before=0
+ui settings_google_debug=language=system,units=imperial,clock=24,google=1,rot=week,telemetry=0,lookup=1,links=1,greq=0,gblocked=0
+ui settings_persistence=language=fr,units=imperial,clock=24,google=1,rot=week,telemetry=0,lookup=1,links=1,greq=0,gblocked=0
+ui transit_go_degraded=offline=1
+ui screenshots: settings-de.png settings-fr.png 
+
+== Route replay (12:51:55)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 0B8C8A46-59ED-4951-B999-CF61296F91EC (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 0B8C8A46-59ED-4951-B999-CF61296F91EC (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (12:53:21)
+276667
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 70289 bytes
+directions reply: directions-drive-sf 126030 bytes
+directions reply: directions-walk-sf 34597 bytes
+search reply: 276667 bytes, 36 feature ids
+failed steps: ui-scenarios
