@@ -1,0 +1,131 @@
+commit: 295270f src: 669633b8 Merge SETTINGS-FIX: the debug block no longer pushes the search chrome off screen
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610291151 (1793274681)
+java: openjdk version "17.0.20.1" 2026-08-18
+notices: ok, 35 entries (7 libraries, 27 data sources)
+gradle: FAILED after 687 s
+kotlin jvmTest: 602 tests, 1 failures
+kotlin iosSimulatorArm64Test: 501 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  88M, static library 86537472 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  58M, static library 54226592 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 1444 keys, 24 resource locales (23 with translations), 24601 localized values, 186 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (600A45A3-B3A0-4A39-8A9C-5D051F9FDA9C) (Shutdown) 
+simulator build: ok
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+tests: ok, Executed 188 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=19319
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=56311 rate=22050 wav_frames=56311
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: FAILED
+ui PlaceFuelUITests.testClosingTimeCard: passed (29.082 seconds)
+ui PlaceFuelUITests.testFuelPlaceCard: passed (17.182 seconds)
+ui PlaceKnowledgeUITests.testWikidataAndWikivoyage: passed (107.105 seconds)
+ui PlaceReviewsUITests.testGalleryViewerSwipesWithCaptionAndSource: passed (52.845 seconds)
+ui PlaceReviewsUITests.testMoreReviewsAppendsAPage: failed (346.533 seconds)
+ui PlaceReviewsUITests.testReviewsHistogramAndControls: passed (131.677 seconds)
+ui PlaceUITests.testCompleteFixturePlace: passed (83.883 seconds)
+ui PlaceUITests.testDetailsHoursTabsActionsAndRelated: passed (76.374 seconds)
+ui SavedExportUITests.testFindMyCarOpensTheSpotWithDirections: passed (20.382 seconds)
+ui SavedExportUITests.testListExportImportsBackFromTheShareSheet: failed (121.588 seconds)
+ui SavedFinishingUITests.testHomeAndWorkOpenFromSavedAndMap: failed (57.206 seconds)
+ui SavedFinishingUITests.testListEditingSelectionAndSound: failed (44.806 seconds)
+ui SavedFinishingUITests.testSavedLineReopensBesideComputedRoutes: failed (36.184 seconds)
+ui SavedFinishingUITests.testTakeoutFixtureImportsIntoNamedList: passed (21.603 seconds)
+ui SavedImportUITests.testGoogleListAndMyMaps: passed (183.402 seconds)
+ui SavedUITests.testSavedPlaceListAndRecentsPersist: failed (34.472 seconds)
+ui TripsUITests.testFullTraceAndDemoMode: passed (87.667 seconds)
+ui TripsUITests.testRecordDriveAndOpenTrip: passed (94.597 seconds)
+ui diagnostics_lines=16
+ui gallery_categories=0
+ui gallery_menu_fallback=0
+ui gallery_photos=10
+ui gallery_viewer_page=2/10
+ui place_about=1
+ui place_action_link=0
+ui place_avatars_loaded=4
+ui place_avatars_nonblack=4
+ui place_call=1
+ui place_closing=Closes
+ui place_fuel_nearby=Cheaper
+ui place_fuel=172.9p/E10
+ui place_gallery_categories=0
+ui place_gallery_count=20
+ui place_gallery_page=2/20
+ui place_gallery_paging=rpc
+ui place_gallery_walk=not-run-on-ci
+ui place_hours_expanded=1
+ui place_hours=7
+ui place_menu_photos=google-omitted
+ui place_open=1
+ui place_phone=1
+ui place_photos_tab=10
+ui place_popular_fallback=details
+ui place_popular_hours=0
+ui place_related_open=Whole
+ui place_related=4
+ui place_reviews_from=feed
+ui place_reviews_initial=5
+ui place_reviews_paging=no-cursor
+ui place_reviews=5
+ui place_tabs=overview,reviews,about,photos,updates
+ui place_updates=10
+ui place_viewer_state=1
+ui place_website=1
+ui reviews_histogram=google-omitted
+ui reviews_sort=1
+ui reviews_translated=0
+ui saved_export_sheet=opened
+ui saved_find_my_car=opened
+ui saved_google_duplicate=merge_or_replace
+ui saved_google_idempotent=2
+ui saved_google_merge=unchanged
+ui saved_google_places=2
+ui saved_kml_duplicate=merge_unchanged
+ui saved_kml_lists=2
+ui saved_kml_note=kept
+ui saved_nogoogle=blocked
+ui saved_takeout_places=2
+ui trip_fixes=Fixes,
+ui trips_flow=full_trace_map_demo_replay
+ui trips_flow=recorded_opened_exportable
+ui wiki_fields=3
+ui wiki_image=none
+ui wiki_rows=1
+ui wikivoyage_chars=634
+ui screenshots: place-actions.png place-after-gallery.png place-after-photo-tap.png place-avatars.png place-closing.png place-fuel.png place-gallery-grid.png place-gallery.png place-hours-expanded.png place-photos.png place-related-row.png place-related.png place-reviews-full.png place-reviews.png place-save.png place-tab-about.png place-tab-photos.png place-tab-reviews.png place-tab-updates.png place-tabs.png place-top.png place-wikidata.png.png place-wikivoyage.png.png 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 27; highest after refresh: 27
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: details: plain search (no popular times)
+place load: details: page raw=48741 parsed=true times=false
+place load: reviews: page asked for 0x8085299fd6f41a23:0x10d37b4cae550f0
+place load: reviews: view created
+place load: reviews: answered
+place load: reviews: more from page 5
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=48741 parsed=true times=false
+place load: reviews: feed 5 (limited view)
+web: reviews: page asked for 0x8085299fd6f41a23:0x10d37b4cae550f0
+web: reviews: answered
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 79940 bytes
+directions reply: directions-drive-sf 125830 bytes
+directions reply: directions-walk-sf 34622 bytes
+search reply: 270187 bytes, 33 feature ids
+failed steps: gradle ui-scenarios
