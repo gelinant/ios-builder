@@ -1,0 +1,744 @@
+import SwiftUI
+
+/// The first iOS settings screen: language, measurement units, clock, and the shared Google switch.
+struct SettingsScreen: View {
+    @ObservedObject var model: SettingsModel
+    @ObservedObject var offline: OfflineModel
+    @StateObject private var privacy = PrivacySettings.shared
+    @StateObject private var appearance = AppearanceSettings.shared
+    @StateObject private var bike = BikeProfileSettings()
+    @ObservedObject private var gestures = MapGestureSettings.shared
+    @StateObject private var navCamera = NavCameraSettings.shared
+    @Environment(\.dismiss) private var dismiss
+
+    @State private var activeSheet: SettingsSheet?
+    @State private var shareItems: [Any] = []
+    @State private var exportFailed = false
+    @State private var confirmTripDelete = false
+    @State private var photoBytes: Int64 = 0
+    /// Set by an About search hit that names a Settings row. Applied after the sheet closes.
+    @State private var pendingAnchor: String?
+
+    /// One sheet at a time: two `.sheet(isPresented:)` on the same view made the second refuse to
+    /// present once the map had several (MapScreen's note, and the same iOS 26 behavior here).
+    private enum SettingsSheet: String, Identifiable {
+        case appearance
+        case privacy
+        case about
+        case quickChips
+        case share
+        var id: String { rawValue }
+    }
+
+    var body: some View {
+        ScrollViewReader { proxy in
+            NavigationStack {
+                Form {
+                    #if DEBUG
+                    Section {
+                        Text("language=\(model.languageTag.isEmpty ? "system" : model.languageTag) units=\(model.units) clock=\(model.clockMode) google=\(offline.googleDisabled ? 1 : 0) rot=\(privacy.rotationMode) telemetry=\(privacy.telemetryBlocked ? 1 : 0) lookup=\(privacy.lookupTappedPlaces ? 1 : 0) links=\(privacy.resolveShortLinks ? 1 : 0) \(PrivacyRequestCounter.debugLine)")
+                            .font(.caption2.monospaced())
+                            .dynamicTypeSize(.xSmall)
+                            .lineLimit(1)
+                            .minimumScaleFactor(0.4)
+                            .accessibilityIdentifier("settings-debug")
+                    }
+                    #endif
+
+                    Section {
+                        SettingsMenu(
+                            id: "settings-language",
+                            title: VelaL10n.text("settings_language"),
+                            selection: Binding(get: { model.languageTag }, set: model.setLanguage),
+                            options: [(title: VelaL10n.text("settings_follow_system_language"), value: "")]
+                                + VelaL10n.languages.map { (title: $0.endonym, value: $0.code) })
+                        .id("settings-language")
+
+                        SettingsMenu(
+                            id: "settings-units",
+                            title: VelaL10n.text("settings_units"),
+                            selection: Binding(get: { model.units }, set: model.setUnits),
+                            options: [
+                                (title: VelaL10n.text("settings_follow_system"), value: "system"),
+                                (title: VelaL10n.text("settings_units_metric"), value: "metric"),
+                                (title: VelaL10n.text("settings_units_imperial"), value: "imperial"),
+                            ])
+                        .id("settings-units")
+
+                        SettingsMenu(
+                            id: "settings-clock",
+                            title: VelaL10n.text("settings_clock"),
+                            selection: Binding(get: { model.clockMode }, set: model.setClockMode),
+                            options: [
+                                (title: VelaL10n.text("settings_clock_system"), value: "system"),
+                                (title: VelaL10n.text("settings_clock_12"), value: "12"),
+                                (title: VelaL10n.text("settings_clock_24"), value: "24"),
+                            ])
+                        .id("settings-clock")
+
+                        Button {
+                            activeSheet = .appearance
+                        } label: {
+                            HStack(spacing: Design.Spacing.s) {
+                                SettingsRowLabel(
+                                    title: "Theme and navigation chrome",
+                                    subtitle: "App theme, map look, icon and label size, speed and vehicle")
+                                Spacer(minLength: Design.Spacing.s)
+                                SettingsValue(text: appearance.theme.title)
+                                SettingsChevron()
+                            }
+                            .settingsRowFrame()
+                        }
+                        .accessibilityIdentifier("settings-appearance")
+                        .id("settings-appearance")
+                    } header: {
+                        SettingsSectionHeader(title: VelaL10n.text("settings_appearance"))
+                    }
+
+                    Section {
+                        Toggle(VelaL10n.text("settings_google_free"), isOn: Binding(
+                            get: { offline.googleDisabled },
+                            set: { offline.setGoogleDisabled($0) }))
+                            .frame(minHeight: Design.Size.hitTarget)
+                            .accessibilityIdentifier("settings-no-google")
+                            .id("settings-no-google")
+                        Text(VelaL10n.text("settings_google_free_hint_ios"))
+                            .settingsHint()
+
+                        if offline.googleDisabled {
+                            Toggle(VelaL10n.text("settings_google_free_links"), isOn: Binding(
+                                get: { privacy.resolveShortLinks },
+                                set: { privacy.setResolveShortLinks($0) }))
+                                .frame(minHeight: Design.Size.hitTarget)
+                                .accessibilityIdentifier("settings-resolve-links")
+                                .id("settings-resolve-links")
+                            Text(VelaL10n.text("settings_google_free_links_hint"))
+                                .settingsHint()
+                        }
+
+                        Toggle(VelaL10n.text("settings_places_lookup"), isOn: Binding(
+                            get: { privacy.lookupTappedPlaces },
+                            set: { privacy.setLookupTappedPlaces($0) }))
+                            .frame(minHeight: Design.Size.hitTarget)
+                            .accessibilityIdentifier("settings-lookup-tapped")
+                            .id("settings-lookup-tapped")
+                        Text(VelaL10n.text("settings_places_lookup_hint"))
+                            .settingsHint()
+
+                        Toggle(VelaL10n.text("settings_block_google_telemetry"), isOn: Binding(
+                            get: { privacy.telemetryBlocked },
+                            set: { privacy.setTelemetryBlocked($0) }))
+                            .frame(minHeight: Design.Size.hitTarget)
+                            .accessibilityIdentifier("settings-telemetry")
+                            .id("settings-telemetry")
+                        Text(VelaL10n.text("settings_block_google_telemetry_hint"))
+                            .settingsHint()
+
+                        SettingsMenu(
+                            id: "settings-session-mode",
+                            title: VelaL10n.text("settings_google_session"),
+                            selection: Binding(get: { privacy.rotationMode }, set: { privacy.setRotationMode($0) }),
+                            options: [
+                                (title: VelaL10n.text("settings_google_session_week"), value: "week"),
+                                (title: VelaL10n.text("settings_google_session_day"), value: "day"),
+                                (title: VelaL10n.text("settings_google_session_launch"), value: "launch"),
+                            ])
+                            .id("settings-session-mode")
+                        if let started = privacy.sessionStarted {
+                            Text(VelaL10n.text("settings_google_session_started", started.formatted(date: .abbreviated, time: .shortened)))
+                                .settingsHint()
+                                .accessibilityIdentifier("settings-session-started")
+                        }
+                        Button(VelaL10n.text("settings_google_session_now")) {
+                            privacy.startNewNow()
+                        }
+                        .frame(minHeight: Design.Size.hitTarget)
+                        .accessibilityIdentifier("settings-session-new")
+                        .id("settings-session-new")
+
+                        Button(VelaL10n.text("settings_privacy_page")) {
+                            activeSheet = .privacy
+                        }
+                        .frame(minHeight: Design.Size.hitTarget)
+                        .accessibilityIdentifier("settings-privacy-page")
+                        .id("settings-privacy-page")
+
+                        Text(VelaL10n.text("settings_data_privacy_hint"))
+                            .settingsHint()
+                        Link(VelaL10n.text("settings_privacy_button"), destination: model.privacyURL)
+                            .font(Design.Typography.body)
+                            .frame(minHeight: Design.Size.hitTarget)
+                            .accessibilityIdentifier("settings-privacy-link")
+
+                        Button(VelaL10n.text("settings_diag_export")) {
+                            exportDiagnostics()
+                        }
+                        .frame(minHeight: Design.Size.hitTarget)
+                        .accessibilityIdentifier("settings-export-diagnostics")
+                        .id("settings-export-diagnostics")
+                    } header: {
+                        SettingsSectionHeader(title: VelaL10n.text("settings_privacy"))
+                    }
+
+                    bikeSection
+                    navigationCameraSection
+                    gestureSection
+                    contentSection
+                    searchSection
+                    tripsSection
+
+                    VoiceSettingsSection(model: model)
+                        .id("settings-voice")
+                    aboutSection
+                }
+                .accessibilityIdentifier("settings-screen")
+                .environment(\.defaultMinListRowHeight, Design.Size.hitTarget)
+                .scrollContentBackground(.hidden)
+                .background(Design.Colors.surface)
+                .tint(Design.Colors.accent)
+                .toolbar(.hidden, for: .navigationBar)
+                .safeAreaInset(edge: .top, spacing: 0) {
+                    header
+                }
+            }
+            // Sheets do not consistently inherit the presenting view's locale and direction.
+            .environment(\.locale, model.locale)
+            .environment(\.layoutDirection, model.layoutDirection)
+            .sheet(item: $activeSheet, onDismiss: { scrollAfterAbout(proxy) }) { sheet in
+                switch sheet {
+                case .appearance:
+                    AppearanceScreen()
+                        .environment(\.locale, model.locale)
+                        .environment(\.layoutDirection, model.layoutDirection)
+                case .privacy:
+                    PrivacyScreen(model: model, offline: offline, privacy: privacy)
+                        .environment(\.locale, model.locale)
+                        .environment(\.layoutDirection, model.layoutDirection)
+                case .about:
+                    AboutScreen { anchor in
+                        pendingAnchor = anchor
+                        activeSheet = nil
+                    }
+                    .environment(\.locale, model.locale)
+                    .environment(\.layoutDirection, model.layoutDirection)
+                case .quickChips:
+                    QuickChipsEditor(model: QuickChipsModel.shared)
+                        .environment(\.locale, model.locale)
+                        .environment(\.layoutDirection, model.layoutDirection)
+                case .share:
+                    ShareSheet(items: shareItems)
+                }
+            }
+            .alert(VelaL10n.text("settings_diagnostics"), isPresented: $exportFailed) {
+                Button(VelaL10n.text("settings_trip_select_done"), role: .cancel) {}
+            } message: {
+                Text(VelaL10n.text("settings_diag_nothing"))
+            }
+            .confirmationDialog("Delete all recorded trips?", isPresented: $confirmTripDelete, titleVisibility: .visible) {
+                Button("Delete all recorded trips", role: .destructive) {
+                    model.deleteAllTrips()
+                    photoBytes = model.photoCacheBytes
+                }
+                Button(VelaL10n.text("settings_cancel"), role: .cancel) {}
+            } message: {
+                Text("Every recorded drive on this phone will be removed. This cannot be undone. Saved places and lists stay.")
+            }
+            .onAppear {
+                photoBytes = model.photoCacheBytes
+                model.refreshTrips()
+                bike.start()
+            }
+        }
+    }
+
+    /// A Settings hit in the About search closes the sheet and lands on the real control. Waiting
+    /// for the dismissal keeps the Form's scroll position stable.
+    private func scrollAfterAbout(_ proxy: ScrollViewProxy) {
+        guard let anchor = pendingAnchor else { return }
+        pendingAnchor = nil
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+            withAnimation(.easeInOut(duration: 0.2)) {
+                proxy.scrollTo(anchor, anchor: .center)
+            }
+        }
+    }
+
+    // MARK: - Bike routing
+
+    /// Android's single bike preference, under its own `bike_safe` key, plus the three knobs this
+    /// router cannot honour named honestly. A disabled switch that did nothing would be worse than
+    /// saying so.
+    private var bikeSection: some View {
+        Section {
+            Toggle(VelaL10n.text("settings_bike_safe"), isOn: Binding(
+                get: { bike.safe },
+                set: { bike.setSafe($0) }))
+                .frame(minHeight: Design.Size.hitTarget)
+                .accessibilityIdentifier("settings-bike-safe")
+                .id("settings-bike-safe")
+            Text("On: the open bicycle router favors signed cycle routes, bike lanes and quiet streets. Off: the fastest bike route. Applies to the next route and every replan; it never changes the travel mode.")
+                .settingsHint()
+
+            unsupportedBikeKnob("Avoid hills", id: "settings-bike-hills")
+            unsupportedBikeKnob("Avoid steps", id: "settings-bike-steps")
+            unsupportedBikeKnob("Avoid unpaved surfaces", id: "settings-bike-unpaved")
+
+            #if DEBUG
+            Text("bikeSafe=\(bike.safe ? 1 : 0) unsupported=hills,steps,unpaved")
+                .font(.caption2.monospaced())
+                .dynamicTypeSize(.xSmall)
+                .lineLimit(1)
+                .minimumScaleFactor(0.4)
+                .accessibilityIdentifier("settings-bike-debug")
+            #endif
+        } header: {
+            SettingsSectionHeader(title: "Bike")
+        }
+    }
+
+    private func unsupportedBikeKnob(_ title: String, id: String) -> some View {
+        HStack(alignment: .firstTextBaseline, spacing: Design.Spacing.s) {
+            Text(title)
+                .font(Design.Typography.body)
+                .foregroundStyle(Design.Colors.secondaryLabel)
+                .accessibilityIdentifier(id)
+            Spacer(minLength: Design.Spacing.s)
+            Text("Not supported by this open router")
+                .font(Design.Typography.caption)
+                .foregroundStyle(Design.Colors.secondaryLabel)
+                .multilineTextAlignment(.trailing)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+        .frame(minHeight: Design.Size.hitTarget)
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel("\(title). Not supported by this open router")
+        .accessibilityIdentifier("\(id)-row")
+    }
+
+    // MARK: - Navigation camera
+
+    /// NAV-CAMERA (FEATURES L124-L129, L162). `zoom_to_turn` and `zoom_to_turn_floor` are
+    /// Android's keys; the tilt and lower-third switches are iOS-only, because Android keeps
+    /// those two behaviours implicit. Every row applies to the current drive at once.
+    private var navigationCameraSection: some View {
+        Section {
+            Toggle("Zoom to the next turn", isOn: Binding(
+                get: { navCamera.autoZoom },
+                set: { navCamera.setAutoZoom($0) }))
+                .frame(minHeight: Design.Size.hitTarget)
+                .accessibilityIdentifier("settings-nav-auto-zoom")
+                .id("settings-nav-auto-zoom")
+            Text("The map pulls out until the next turn sits under the turn card, turns toward a turn off to the side, and comes back in as you near it. Off by default, as on Android.")
+                .settingsHint()
+
+            if navCamera.autoZoom {
+                SettingsMenu(
+                    id: "settings-nav-turn-floor",
+                    title: "Zoom out as far as",
+                    selection: Binding(
+                        get: { String(NavCameraSettings.floors.first { $0.value == navCamera.floor }?.value ?? 12) },
+                        set: { raw in
+                            if let value = Double(raw) { navCamera.setFloor(value) }
+                        }),
+                    options: NavCameraSettings.floors.map {
+                        (title: $0.title, value: String($0.value))
+                    })
+                    .id("settings-nav-turn-floor")
+                Text("How far out the map may go to keep the next turn on screen. Town, region and far reach about four times farther at each step.")
+                    .settingsHint()
+            }
+
+            Toggle("Tilt the driving map", isOn: Binding(
+                get: { navCamera.tilt },
+                set: { navCamera.setTilt($0) }))
+                .frame(minHeight: Design.Size.hitTarget)
+                .accessibilityIdentifier("settings-nav-tilt")
+                .id("settings-nav-tilt")
+            Text("The drive camera leans forward, capped at MapLibre's 60 degree pitch. Off: the drive stays flat and north-up reads like the browse map.")
+                .settingsHint()
+
+            Toggle("Keep the car in the lower third", isOn: Binding(
+                get: { navCamera.lowerThird },
+                set: { navCamera.setLowerThird($0) }))
+                .frame(minHeight: Design.Size.hitTarget)
+                .accessibilityIdentifier("settings-nav-lower-third")
+                .id("settings-nav-lower-third")
+            Text("The car sits about a third of the screen up from the bottom, leaving the road ahead visible. Off: the car stays at the centre.")
+                .settingsHint()
+
+            #if DEBUG
+            Text("autoZoom=\(navCamera.autoZoom ? 1 : 0) floor=\(Int(navCamera.floor)) tilt=\(navCamera.tilt ? 1 : 0) third=\(navCamera.lowerThird ? 1 : 0)")
+                .font(.caption2.monospaced())
+                .dynamicTypeSize(.xSmall)
+                .lineLimit(1)
+                .minimumScaleFactor(0.4)
+                .accessibilityIdentifier("settings-nav-camera-debug")
+            #endif
+        } header: {
+            SettingsSectionHeader(title: "Navigation camera")
+        }
+    }
+
+    // MARK: - Map gestures
+
+    /// L16-L18, L38-L40 and L264. Every row writes the shared `vela_settings` suite, so a relaunch
+    /// reads the same choice; MapController applies north lock and shape without waiting.
+    private var gestureSection: some View {
+        Section {
+            Toggle("Keep north up", isOn: Binding(
+                get: { gestures.keepNorthUp },
+                set: { gestures.setKeepNorthUp($0) }))
+                .frame(minHeight: Design.Size.hitTarget)
+                .accessibilityIdentifier("settings-keep-north-up")
+                .id("settings-keep-north-up")
+            Text("The map never turns: two-finger rotation is off and drives stay north-up.")
+                .settingsHint()
+
+            Toggle("Prefer buttons over swipes", isOn: Binding(
+                get: { gestures.preferButtons },
+                set: { gestures.setPreferButtons($0) }))
+                .frame(minHeight: Design.Size.hitTarget)
+                .accessibilityIdentifier("settings-prefer-buttons")
+                .id("settings-prefer-buttons")
+            Text("Adds zoom in and zoom out buttons under the compass, for the things a swipe also does.")
+                .settingsHint()
+
+            SettingsMenu(
+                id: "settings-map-buttons",
+                title: "Map buttons",
+                selection: Binding(
+                    get: { gestures.buttonShape.rawValue },
+                    set: { gestures.setButtonShape(MapButtonShape(rawValue: $0) ?? .round) }),
+                options: MapButtonShape.allCases.map { (title: $0.title, value: $0.rawValue) })
+                .id("settings-map-buttons")
+            Text("The buttons floating over the map: round, or with square corners.")
+                .settingsHint()
+
+            SettingsMenu(
+                id: "settings-start-view",
+                title: "Where the map opens",
+                selection: Binding(
+                    get: { gestures.startView.rawValue },
+                    set: { gestures.setStartView(MapStartView(rawValue: $0) ?? .here) }),
+                options: MapStartView.allCases.map { (title: $0.title, value: $0.rawValue) })
+                .id("settings-start-view")
+            Text("A link from another app still opens on its own place. Where I am moves onto your position when one is available; a city view opens at the default zoom.")
+                .settingsHint()
+
+            #if DEBUG
+            Text("north=\(gestures.keepNorthUp ? 1 : 0) zoomButtons=\(gestures.preferButtons ? 1 : 0) buttons=\(gestures.buttonShape.rawValue) start=\(gestures.startView.rawValue)")
+                .font(.caption2.monospaced())
+                .dynamicTypeSize(.xSmall)
+                .lineLimit(1)
+                .minimumScaleFactor(0.4)
+                .accessibilityIdentifier("settings-gesture-debug")
+            #endif
+        } header: {
+            SettingsSectionHeader(title: "Map gestures")
+        }
+    }
+
+    // MARK: - Data and content
+
+    private var contentSection: some View {
+        Section {
+            SettingsMenu(
+                id: "settings-place-content",
+                title: "Place content",
+                selection: Binding(get: { model.placeContent }, set: model.setPlaceContent),
+                options: [
+                    (title: "Full place data", value: "full"),
+                    (title: "Tiles only", value: "tiles"),
+                ])
+                .id("settings-place-content")
+
+            Toggle(VelaL10n.text("settings_show_reviews"), isOn: Binding(
+                get: { model.showReviews }, set: model.setShowReviews))
+                .frame(minHeight: Design.Size.hitTarget)
+                .accessibilityIdentifier("settings-show-reviews")
+                .id("settings-show-reviews")
+
+            Toggle(VelaL10n.text("settings_load_photos"), isOn: Binding(
+                get: { model.loadPhotos }, set: model.setLoadPhotos))
+                .frame(minHeight: Design.Size.hitTarget)
+                .accessibilityIdentifier("settings-load-photos")
+                .id("settings-load-photos")
+
+            Toggle("Load photos only on Wi-Fi", isOn: Binding(
+                get: { model.photosWifiOnly }, set: model.setPhotosWifiOnly))
+                .frame(minHeight: Design.Size.hitTarget)
+                .accessibilityIdentifier("settings-photos-wifi")
+                .id("settings-photos-wifi")
+            Text("On a mobile connection place pages keep the photo space but download no new photo.")
+                .settingsHint()
+
+            SettingsMenu(
+                id: "settings-photo-quality",
+                title: "Photo quality",
+                selection: Binding(get: { model.photoQuality }, set: model.setPhotoQuality),
+                options: [
+                    (title: "High", value: "high"),
+                    (title: "Standard", value: "standard"),
+                    (title: "Low", value: "low"),
+                ])
+                .id("settings-photo-quality")
+
+            SettingsMenu(
+                id: "settings-photo-cache-size",
+                title: "Photo cache size",
+                selection: Binding(
+                    get: { String(model.photoCacheMb) },
+                    set: { if let mb = Int($0) { model.setPhotoCacheMb(mb) } }),
+                options: [
+                    (title: "50 MB", value: "50"),
+                    (title: "100 MB", value: "100"),
+                    (title: "200 MB", value: "200"),
+                    (title: "400 MB", value: "400"),
+                ])
+                .id("settings-photo-cache-size")
+
+            Text("Photo cache: \(bytesText(photoBytes)) used of \(model.photoCacheMb) MB")
+                .settingsHint()
+                .accessibilityIdentifier("settings-photo-cache-used")
+            Button("Clear photo cache") {
+                model.clearPhotoCache()
+                photoBytes = model.photoCacheBytes
+            }
+            .frame(minHeight: Design.Size.hitTarget)
+            .accessibilityIdentifier("settings-photo-cache-clear")
+            .id("settings-photo-cache-clear")
+
+            Toggle(VelaL10n.text("settings_full_place_load"), isOn: Binding(
+                get: { model.fullPlaceLoad }, set: model.setFullPlaceLoad))
+                .frame(minHeight: Design.Size.hitTarget)
+                .accessibilityIdentifier("settings-full-place-load")
+                .id("settings-full-place-load")
+            Text(VelaL10n.text("settings_full_place_load_hint"))
+                .settingsHint()
+
+            Toggle(VelaL10n.text("settings_details_retry"), isOn: Binding(
+                get: { model.detailsRetry }, set: model.setDetailsRetry))
+                .frame(minHeight: Design.Size.hitTarget)
+                .accessibilityIdentifier("settings-details-retry")
+                .id("settings-details-retry")
+            Text(VelaL10n.text("settings_details_retry_hint"))
+                .settingsHint()
+
+            Toggle(VelaL10n.text("settings_hide_adult"), isOn: Binding(
+                get: { model.hideAdult }, set: model.setHideAdult))
+                .frame(minHeight: Design.Size.hitTarget)
+                .accessibilityIdentifier("settings-hide-adult")
+                .id("settings-hide-adult")
+            Text(VelaL10n.text("settings_hide_adult_hint"))
+                .settingsHint()
+
+            Toggle(VelaL10n.text("settings_hide_external_links"), isOn: Binding(
+                get: { model.hideExternalLinks }, set: model.setHideExternalLinks))
+                .frame(minHeight: Design.Size.hitTarget)
+                .accessibilityIdentifier("settings-hide-external")
+                .id("settings-hide-external")
+            Text(VelaL10n.text("settings_hide_external_links_hint"))
+                .settingsHint()
+
+            Toggle("Low data mode (LowDataMode)", isOn: Binding(
+                get: { model.lowDataMode }, set: model.setLowDataMode))
+                .frame(minHeight: Design.Size.hitTarget)
+                .accessibilityIdentifier("settings-low-data")
+                .id("settings-low-data")
+            Text("Skips photos and asks Google for less, as the LowDataMode flag does on Android.")
+                .settingsHint()
+
+            Toggle("Low RAM mode (LowRamMode)", isOn: Binding(
+                get: { model.lowRamMode }, set: model.setLowRamMode))
+                .frame(minHeight: Design.Size.hitTarget)
+                .accessibilityIdentifier("settings-low-ram")
+                .id("settings-low-ram")
+            Text("Trims speculative map work, as the LowRamMode flag does on Android. Off by default on iOS.")
+                .settingsHint()
+
+            #if DEBUG
+            Text(model.contentDebugLine)
+                .font(.caption2.monospaced())
+                .dynamicTypeSize(.xSmall)
+                .lineLimit(2)
+                .minimumScaleFactor(0.4)
+                .accessibilityIdentifier("settings-content-debug")
+            #endif
+        } header: {
+            SettingsSectionHeader(title: "Data and content")
+        }
+    }
+
+    // MARK: - Search
+
+    private var searchSection: some View {
+        Section {
+            Button {
+                activeSheet = .quickChips
+            } label: {
+                HStack(spacing: Design.Spacing.s) {
+                    SettingsRowLabel(
+                        title: VelaL10n.text("settings_quick_chips"),
+                        subtitle: VelaL10n.text("settings_quick_chips_sub"))
+                    Spacer(minLength: Design.Spacing.s)
+                    SettingsChevron()
+                }
+                .settingsRowFrame()
+            }
+            .accessibilityIdentifier("settings-quick-chips")
+            .id("settings-quick-chips")
+            Text(VelaL10n.text("settings_quick_chips_hint"))
+                .settingsHint()
+        } header: {
+            SettingsSectionHeader(title: VelaL10n.text("settings_quick_chips"))
+        }
+    }
+
+    // MARK: - Recorded trips
+
+    private var tripsSection: some View {
+        Section {
+            Toggle(VelaL10n.text("settings_diag_redact"), isOn: Binding(
+                get: { model.redactPlacesInExports }, set: model.setRedactPlacesInExports))
+                .frame(minHeight: Design.Size.hitTarget)
+                .accessibilityIdentifier("settings-redact-exports")
+                .id("settings-redact-exports")
+            Text(VelaL10n.text("settings_diag_redact_trips_hint"))
+                .settingsHint()
+
+            Text("\(model.recordedTripCount) trip(s), \(bytesText(model.recordedTripBytes)) on this phone")
+                .settingsHint()
+                .accessibilityIdentifier("settings-trips-size")
+                .id("settings-trips-size")
+            Button("Delete all recorded trips", role: .destructive) {
+                confirmTripDelete = true
+            }
+            .frame(minHeight: Design.Size.hitTarget)
+            .accessibilityIdentifier("settings-trips-delete")
+            .id("settings-trips-delete")
+        } header: {
+            SettingsSectionHeader(title: "Recorded trips")
+        }
+    }
+
+    // MARK: - About
+
+    private var aboutSection: some View {
+        Section {
+            Button {
+                activeSheet = .about
+            } label: {
+                HStack(spacing: Design.Spacing.s) {
+                    SettingsRowLabel(
+                        title: "Help, notices and support",
+                        subtitle: "Search every settings row, read a help topic, or check a license.")
+                    Spacer(minLength: Design.Spacing.s)
+                    SettingsChevron()
+                }
+                .settingsRowFrame()
+            }
+            .accessibilityIdentifier("settings-about")
+            .id("settings-about")
+
+            Text(AboutInfo.versionLine)
+                .settingsHint()
+                .accessibilityIdentifier("settings-about-version")
+        } header: {
+            SettingsSectionHeader(title: VelaL10n.text("settings_about"))
+        }
+    }
+
+    private func bytesText(_ bytes: Int64) -> String {
+        guard bytes > 0 else { return "0 KB" }
+        let formatter = ByteCountFormatter()
+        formatter.allowedUnits = bytes >= 1_048_576 ? [.useMB] : [.useKB]
+        formatter.countStyle = .file
+        return formatter.string(fromByteCount: bytes)
+    }
+
+    private func exportDiagnostics() {
+        do {
+            shareItems = [try DiagnosticsExport.fileURL()]
+            activeSheet = .share
+        } catch {
+            exportFailed = true
+        }
+    }
+
+    /// A toolbar clips its button to 36 points. This header keeps the actual Done target 44 points.
+    /// The title takes the `nav` role and the surface is opaque, so no material band cuts the page
+    /// in two (`DESIGN.md` 2.6 and 3.4).
+    private var header: some View {
+        ZStack {
+            Text(VelaL10n.text("settings_title"))
+                .font(Design.Typography.nav)
+                .foregroundStyle(Design.Colors.label)
+                .accessibilityAddTraits(.isHeader)
+            HStack {
+                Spacer()
+                Button(VelaL10n.text("settings_trip_select_done")) { dismiss() }
+                    .font(Design.Typography.button)
+                    .foregroundStyle(Design.Colors.accentFill)
+                    .frame(minWidth: Design.Size.hitTarget, minHeight: Design.Size.hitTarget)
+                    .contentShape(Rectangle())
+                    .accessibilityIdentifier("settings-done")
+            }
+        }
+        .frame(minHeight: Design.Size.hitTarget)
+        .padding(.horizontal, Design.Padding.page)
+        .padding(.vertical, Design.Spacing.xxs)
+        .background(Design.Colors.surface)
+        .overlay(alignment: .bottom) {
+            Rectangle()
+                .fill(Design.Colors.separator)
+                .frame(height: 1 / 3)
+        }
+    }
+}
+
+/// A menu label owns its full 44-point row. Form's menu Picker reports only its 34-point text.
+struct SettingsMenu: View {
+    let id: String
+    let title: String
+    @Binding var selection: String
+    let options: [(title: String, value: String)]
+
+    private var selectedTitle: String {
+        options.first { $0.value == selection }?.title ?? selection
+    }
+
+    var body: some View {
+        Menu {
+            ForEach(Array(options.enumerated()), id: \.offset) { _, option in
+                Button {
+                    selection = option.value
+                } label: {
+                    HStack {
+                        Text(option.title)
+                        if option.value == selection {
+                            Image(systemName: "checkmark")
+                        }
+                    }
+                }
+                .accessibilityAddTraits(option.value == selection ? .isSelected : [])
+            }
+        } label: {
+            HStack(spacing: Design.Spacing.s) {
+                Text(title)
+                    .font(Design.Typography.body)
+                    .foregroundStyle(Design.Colors.label)
+                    .fixedSize(horizontal: false, vertical: true)
+                Spacer(minLength: Design.Spacing.s)
+                SettingsValue(text: selectedTitle)
+                Image(systemName: "chevron.up.chevron.down")
+                    .font(Design.Typography.caption)
+                    .foregroundStyle(Design.Colors.secondaryLabel)
+                    .accessibilityHidden(true)
+            }
+            .frame(maxWidth: .infinity, minHeight: Design.Size.hitTarget, alignment: .leading)
+            .contentShape(Rectangle())
+        }
+        .accessibilityIdentifier(id)
+        .accessibilityValue(selection)
+    }
+}
