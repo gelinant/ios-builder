@@ -1,0 +1,112 @@
+tag=design-w1-20261029-132845-21757 src=src/design-w1 77690ce src: 76ac88ff DESIGN-W1: apply the design tokens to Settings, About and Offline
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 77690ce src: 76ac88ff DESIGN-W1: apply the design tokens to Settings, About and Offline
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610291329 (1793280592)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (13:29:52)
+notices: ok, 35 entries (7 libraries, 27 data sources)
+
+== Kotlin: tests and the VelaCore framework (13:29:53)
+gradle: ok in 644 s
+kotlin jvmTest: 606 tests, 0 failures
+kotlin iosSimulatorArm64Test: 505 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  88M, static library 86570480 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  58M, static library 54260040 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (13:40:38)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 29 30.3M   29 9263k    0     0  20.8M      0  0:00:01 --:--:--  0:00:01 20.8M100 30.3M  100 30.3M    0     0  44.0M      0 --:--:-- --:--:-- --:--:-- 83.0M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (13:40:40)
+string catalog: 1444 keys, 24 resource locales (23 with translations), 24601 localized values, 186 Swift references, 24 picker languages
+
+== XcodeGen (13:40:42)
+xcodegen: Version: 2.46.0
+
+== Generate the project (13:40:42)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (13:40:43)
+  BitByteData: https://github.com/tsolomko/BitByteData @ 2.1.0
+
+resolved source packages: SWCompression, MapLibre Native, BitByteData
+(resolve: 19 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (13:41:02)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (600A45A3-B3A0-4A39-8A9C-5D051F9FDA9C) (Shutdown) 
+
+== Build for the simulator (13:41:04)
+xcodebuild build-sim failed after 85 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Settings/SettingsChrome.swift:127:46: error: type 'Design.Padding' has no member 'm'
+** TEST BUILD FAILED **
+--- tail of build-sim log ---
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Web/HiddenWebView.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Links/IncomingCid.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Links/IncomingLink.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Intents/IntentPlanning.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Platform/JavaScriptCoreJsEngine.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Platform/KeychainSecrets.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/App/LaunchOptions.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/LayersModel.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/LayersView.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Location/LocationPermission.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapController.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapDefaults.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD FAILED **
+
+
+The following build commands failed:
+	SwiftCompile normal arm64 Compiling\ SavedModel.swift,\ SavedRoutePickerSheet.swift,\ SavedShare.swift,\ SavedSoundPlayer.swift,\ SavedTestSupport.swift,\ SavedViews.swift,\ SearchModel.swift,\ SearchPanels.swift,\ SearchUnified.swift,\ SearchViews.swift,\ SecKeySignatureVerifier.swift,\ SettingsAboutView.swift,\ SettingsChrome.swift,\ SettingsModel.swift,\ SettingsPersistence.swift,\ SettingsScreen.swift,\ SherpaAsr.swift,\ SherpaTts.swift,\ ShortLinkResolver.swift,\ SpotlightIndexer.swift,\ StartCamera.swift,\ StreetViewFixture.swift,\ StreetViewModel.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Saved/SavedModel.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Saved/SavedRoutePickerSheet.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Saved/SavedShare.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Saved/SavedSoundPlayer.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Saved/SavedTestSupport.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Saved/SavedViews.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Search/SearchModel.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Search/SearchPanels.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Search/SearchUnified.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Search/SearchViews.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Platform/SecKeySignatureVerifier.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Settings/SettingsAboutView.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Settings/SettingsChrome.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Settings/SettingsModel.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Settings/SettingsPersistence.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Settings/SettingsScreen.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Voice/SherpaAsr.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Voice/SherpaTts.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Links/ShortLinkResolver.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Spotlight/SpotlightIndexer.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/StartCamera.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/StreetView/StreetViewFixture.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/StreetView/StreetViewModel.swift (in target 'Vela' from project 'Vela')
+	SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Settings/SettingsChrome.swift (in target 'Vela' from project 'Vela')
+	Building project Vela for testing with scheme Vela
+(3 failures)
