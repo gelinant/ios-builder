@@ -1,0 +1,3 @@
+src=src/bug-hunt1
+script=scripts/ios/ci-ipa.sh
+args=VELA_SKIP_ARCHIVE=1 VELA_ONLY_UI=LaunchUITests,MapLayersUITests,MapGestureUITests,MapTapUITests,MapPoiUITests,SearchUITests,SearchFiltersUITests,SearchBranchUITests,SearchAreaUITests,UnifiedSearchUITests
