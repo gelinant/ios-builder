@@ -1,11 +1,11 @@
 Locales:
-  en      strings=2025 plurals=22 array_items=0
+  en      strings=2030 plurals=22 array_items=0
   ar      strings=599 plurals=0 array_items=0
   de      strings=1945 plurals=22 array_items=0
   en-GB   strings=600 plurals=0 array_items=0
   es      strings=1838 plurals=13 array_items=0
   et      strings=684 plurals=0 array_items=0
-  fr      strings=1842 plurals=13 array_items=0
+  fr      strings=1847 plurals=13 array_items=0
   hu      strings=1838 plurals=13 array_items=0
   it      strings=1895 plurals=15 array_items=0
   he      strings=1849 plurals=13 array_items=0
@@ -40,4 +40,4 @@ Warnings: 10
     - values-fr/strings.xml map3d_hint
     - values-fr/strings.xml map3d_hint
     ... 3 more
-Keys: 2047
+Keys: 2052
