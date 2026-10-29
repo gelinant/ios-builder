@@ -1,0 +1,184 @@
+tag=transit-wire-check2-20261029-033321-17568 src=src/transit-wire-check2 db17900 src: c423d0e1 iOS tests: the line sheet proves its ribbon, departures are reported
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: db17900 src: c423d0e1 iOS tests: the line sheet proves its ribbon, departures are reported
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610290334 (1793244876)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (03:34:37)
+notices: ok, 35 entries (7 libraries, 27 data sources)
+
+== Kotlin: tests and the VelaCore framework (03:34:38)
+gradle: ok in 679 s
+kotlin jvmTest: 602 tests, 0 failures
+kotlin iosSimulatorArm64Test: 501 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  88M, static library 86365208 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  57M, static library 54015536 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (03:45:57)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 48 30.3M   48 14.8M    0     0  22.0M      0  0:00:01 --:--:--  0:00:01 22.0M100 30.3M  100 30.3M    0     0  26.1M      0  0:00:01  0:00:01 --:--:-- 31.7M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (03:45:59)
+string catalog: 1444 keys, 24 resource locales (23 with translations), 24601 localized values, 186 Swift references, 24 picker languages
+
+== XcodeGen (03:46:01)
+xcodegen: Version: 2.46.0
+
+== Generate the project (03:46:01)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (03:46:01)
+  BitByteData: https://github.com/tsolomko/BitByteData @ 2.1.0
+
+resolved source packages: MapLibre Native, SWCompression, BitByteData
+(resolve: 18 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (03:46:19)
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (582B068E-2ACA-440E-8D01-417AEDF26981) (Shutdown) 
+
+== Build for the simulator (03:46:22)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 118 s)
+simulator build: ok
+
+== Boot the simulator (03:48:20)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (03:50:49)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 71 s)
+tests: ok, Executed 182 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Navigate_to_coffee samples=19691
+VOICE_ASR_PLAN action=navigate query=coffee
+VOICE_SYNTH samples=54674 rate=22050 wav_frames=54674
+
+== Launch and screenshot (03:52:00)
+app.vela.ios: 35056
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: B64255E1-3A01-42E5-9405-65C67D4CBD62 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (03:52:33)
+xcodebuild uitest failed after 126 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TransitWiredUITests.swift:64: error: -[VelaUITests.TransitWiredUITests testTapTransitEverywhereAndSeeTheLine] : XCTAssertTrue failed - the line sheet opened without its ribbon
+Test Case '-[VelaUITests.TransitWiredUITests testTapTransitEverywhereAndSeeTheLine]' failed (48.038 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =    34.92s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-line-badge" Any`
+    t =    34.92s         Checking existence of `"transit-line-badge" Any`
+    t =    35.14s Get number of matches for: Elements matching predicate '"transit-line-departure" IN identifiers'
+UITEST wired_line_departures=0
+    t =    35.29s Waiting 10.0s for "transit-line-ribbon" Any to exist
+    t =    36.32s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-line-ribbon" Any`
+    t =    36.32s         Checking existence of `"transit-line-ribbon" Any`
+    t =    36.47s         Capturing element debug description
+    t =    37.31s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-line-ribbon" Any`
+    t =    37.31s         Checking existence of `"transit-line-ribbon" Any`
+    t =    37.53s         Capturing element debug description
+    t =    38.39s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-line-ribbon" Any`
+    t =    38.39s         Checking existence of `"transit-line-ribbon" Any`
+    t =    38.56s         Capturing element debug description
+    t =    39.30s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-line-ribbon" Any`
+    t =    39.30s         Checking existence of `"transit-line-ribbon" Any`
+    t =    39.45s         Capturing element debug description
+    t =    40.30s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-line-ribbon" Any`
+    t =    40.30s         Checking existence of `"transit-line-ribbon" Any`
+    t =    40.43s         Capturing element debug description
+    t =    41.39s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-line-ribbon" Any`
+    t =    41.39s         Checking existence of `"transit-line-ribbon" Any`
+    t =    41.53s         Capturing element debug description
+    t =    42.37s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-line-ribbon" Any`
+    t =    42.37s         Checking existence of `"transit-line-ribbon" Any`
+    t =    42.53s         Capturing element debug description
+    t =    43.37s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-line-ribbon" Any`
+    t =    43.37s         Checking existence of `"transit-line-ribbon" Any`
+    t =    43.48s         Capturing element debug description
+    t =    44.32s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-line-ribbon" Any`
+    t =    44.32s         Checking existence of `"transit-line-ribbon" Any`
+    t =    44.44s         Capturing element debug description
+    t =    45.30s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-line-ribbon" Any`
+    t =    45.30s         Checking existence of `"transit-line-ribbon" Any`
+    t =    45.45s         Capturing element debug description
+    t =    45.45s     Checking existence of `"transit-line-ribbon" Any`
+    t =    45.62s Collecting debug information to assist test failure triage
+    t =    45.62s     Requesting snapshot of accessibility hierarchy for app with pid 38364
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TransitWiredUITests.swift:64: error: -[VelaUITests.TransitWiredUITests testTapTransitEverywhereAndSeeTheLine] : XCTAssertTrue failed - the line sheet opened without its ribbon
+    t =    47.32s Tear Down
+Test Case '-[VelaUITests.TransitWiredUITests testTapTransitEverywhereAndSeeTheLine]' failed (48.038 seconds).
+Test Suite 'TransitWiredUITests' failed at 2026-10-29 03:53:59.418.
+	 Executed 1 test, with 1 failure (0 unexpected) in 48.038 (48.040) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-29 03:53:59.419.
+	 Executed 1 test, with 1 failure (0 unexpected) in 48.038 (48.041) seconds
+Test Suite 'Selected tests' failed at 2026-10-29 03:53:59.419.
+	 Executed 1 test, with 1 failure (0 unexpected) in 48.038 (48.044) seconds
+2026-10-29 03:54:34.042 xcodebuild[36658:100712] [MT] IDETestOperationsObserverDebug: 103.789 elapsed -- Testing started completed.
+2026-10-29 03:54:34.043 xcodebuild[36658:100712] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-29 03:54:34.044 xcodebuild[36658:100712] [MT] IDETestOperationsObserverDebug: 103.789 sec, +103.789 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.8EvdGFWVqr/uitest.xcresult
+
+Failing tests:
+	TransitWiredUITests.testTapTransitEverywhereAndSeeTheLine()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui TransitWiredUITests.testTapTransitEverywhereAndSeeTheLine: failed (48.038 seconds)
+scripts/ios/ci-ipa.sh: line 286: 36652 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui wired_board_lines=2
+ui wired_line_departures=0
+ui screenshots: 
+
+== Route replay (03:54:43)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: B64255E1-3A01-42E5-9405-65C67D4CBD62 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: B64255E1-3A01-42E5-9405-65C67D4CBD62 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (03:56:00)
+233939
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 63719 bytes
+directions reply: directions-drive-sf 115067 bytes
+directions reply: directions-walk-sf 37602 bytes
+search reply: 233939 bytes, 25 feature ids
+failed steps: ui-scenarios
