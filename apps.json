@@ -29,20 +29,20 @@
       "category": "utilities",
       "versions": [
         {
-          "version": "0.1.202610291017",
-          "buildVersion": "1793269046",
-          "date": "2026-10-29T10:53:04Z",
-          "localizedDescription": "Build 29 octobre : carte cliquable partout, transports cliquables avec fiche de ligne et ruban, rames interpolees et mode GO, arbres et marquages au sol, ouverture sur votre position, themes et contraste corrige.\n\nBuild 1793269046.",
+          "version": "0.1.202610291812",
+          "buildVersion": "1793297533",
+          "date": "2026-10-29T18:33:33Z",
+          "localizedDescription": "Build 29 octobre soir : carte 3D avec relief, 711 chaines traduites en 22 langues, heure unifiee, import Google avec consentement, tap carte repare et fiche OpenStreetMap de repli, panneau avis fluide.\n\nBuild 1793297533.",
           "downloadURL": "https://raw.githubusercontent.com/gelinant/ios-builder/dist/Vela.ipa",
-          "size": 24322590,
+          "size": 24980205,
           "minOSVersion": "17.0"
         }
       ],
-      "version": "0.1.202610291017",
-      "versionDate": "2026-10-29T10:53:04Z",
-      "versionDescription": "Build 29 octobre : carte cliquable partout, transports cliquables avec fiche de ligne et ruban, rames interpolees et mode GO, arbres et marquages au sol, ouverture sur votre position, themes et contraste corrige.\n\nBuild 1793269046.",
+      "version": "0.1.202610291812",
+      "versionDate": "2026-10-29T18:33:33Z",
+      "versionDescription": "Build 29 octobre soir : carte 3D avec relief, 711 chaines traduites en 22 langues, heure unifiee, import Google avec consentement, tap carte repare et fiche OpenStreetMap de repli, panneau avis fluide.\n\nBuild 1793297533.",
       "downloadURL": "https://raw.githubusercontent.com/gelinant/ios-builder/dist/Vela.ipa",
-      "size": 24322590,
+      "size": 24980205,
       "appPermissions": {
         "entitlements": [],
         "privacy": {
