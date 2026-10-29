@@ -1,0 +1,3 @@
+src=src/val2-b2
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=SearchUITests,SearchFiltersUITests,SearchBranchUITests,SearchAreaUITests,UnifiedSearchUITests,SearchCommandUITests,SavedUITests,SavedFinishingUITests,SavedImportUITests,SavedExportUITests,TripsUITests VELA_SKIP_ARCHIVE=1
