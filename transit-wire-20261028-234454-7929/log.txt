@@ -1,0 +1,215 @@
+tag=transit-wire-20261028-234454-7929 src=src/transit-wire 90483b2 src: 9b0f4783 iOS: wire transit taps, whole-line map drawing, GO and the overlay style pass
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 90483b2 src: 9b0f4783 iOS: wire transit taps, whole-line map drawing, GO and the overlay style pass
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610282346 (1793231186)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (23:46:26)
+notices: ok, 35 entries (7 libraries, 27 data sources)
+
+== Kotlin: tests and the VelaCore framework (23:46:27)
+gradle: ok in 588 s
+kotlin jvmTest: 589 tests, 0 failures
+kotlin iosSimulatorArm64Test: 488 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  88M, static library 86103344 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  57M, static library 53729936 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (23:56:15)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 65 30.3M   65 19.7M    0     0  16.3M      0  0:00:01  0:00:01 --:--:-- 16.3M100 30.3M  100 30.3M    0     0  21.6M      0  0:00:01  0:00:01 --:--:-- 54.5M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (23:56:18)
+string catalog: 1444 keys, 24 resource locales (23 with translations), 24601 localized values, 186 Swift references, 24 picker languages
+
+== XcodeGen (23:56:19)
+xcodegen: Version: 2.46.0
+
+== Generate the project (23:56:20)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (23:56:20)
+  BitByteData: https://github.com/tsolomko/BitByteData @ 2.1.0
+
+resolved source packages: MapLibre Native, SWCompression, BitByteData
+(resolve: 16 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (23:56:36)
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (582B068E-2ACA-440E-8D01-417AEDF26981) (Shutdown) 
+
+== Build for the simulator (23:56:38)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 82 s)
+simulator build: ok
+
+== Boot the simulator (23:58:00)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (00:00:20)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 150 s)
+tests: ok, Executed 172 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=18762
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=57856 rate=22050 wav_frames=57856
+
+== Launch and screenshot (00:02:50)
+app.vela.ios: 27737
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 7748B0B2-98F1-4DEC-B7A8-971F46EB6161 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (00:03:31)
+xcodebuild uitest failed after 357 s. Error lines:
+    t =    56.60s         Failed: Failed to scroll to visible (by AX action) Button, {{114.7, 875.0}, {123.7, 34.3}}, identifier: 'transit-trip-open', label: 'Trip view', error: Error kAXErrorCannotComplete performing AXAction kAXScrollToVisibleAction on element AX element pid: 30212, elementOrHash.elementID: 4530728768.1227
+    t =    58.03s             Failed: Failed to scroll to visible (by AX action) Button, {{114.7, 875.0}, {123.7, 34.3}}, identifier: 'transit-trip-open', label: 'Trip view', error: Error kAXErrorCannotComplete performing AXAction kAXScrollToVisibleAction on element AX element pid: 30212, elementOrHash.elementID: 4530728768.1227
+    t =    59.67s             Failed: Failed to scroll to visible (by AX action) Button, {{114.7, 875.0}, {123.7, 34.3}}, identifier: 'transit-trip-open', label: 'Trip view', error: Error kAXErrorCannotComplete performing AXAction kAXScrollToVisibleAction on element AX element pid: 30212, elementOrHash.elementID: 4530728768.1227
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TransitCitymapperUITests.swift:208: error: -[VelaUITests.TransitCitymapperUITests testLiveTripScreenWhenTheFeedAnswers] : Failed to failed to scroll to visible (by AX action) Button, {{114.7, 875.0}, {123.7, 34.3}}, identifier: 'transit-trip-open', label: 'Trip view', error: Error kAXErrorCannotComplete performing AXAction kAXScrollToVisibleAction on element AX element pid: 30212, elementOrHash.elementID: 4530728768.1227. (Underlying Error: Error kAXErrorCannotComplete performing AXAction kAXScrollToVisibleAction on element AX element pid: 30212, elementOrHash.elementID: 4530728768.1227)
+Test Case '-[VelaUITests.TransitCitymapperUITests testLiveTripScreenWhenTheFeedAnswers]' failed (63.679 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TransitWiredUITests.swift:28: error: -[VelaUITests.TransitWiredUITests testTapTransitEverywhereAndSeeTheLine] : XCTAssertTrue failed - the cached board never opened
+Test Case '-[VelaUITests.TransitWiredUITests testTapTransitEverywhereAndSeeTheLine]' failed (41.348 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =    29.91s         Capturing element debug description
+    t =    30.85s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-board" Other`
+    t =    30.85s         Checking existence of `"transit-board" Other`
+    t =    30.90s         Capturing element debug description
+    t =    31.84s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-board" Other`
+    t =    31.84s         Checking existence of `"transit-board" Other`
+    t =    32.10s         Capturing element debug description
+    t =    32.85s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-board" Other`
+    t =    32.85s         Checking existence of `"transit-board" Other`
+    t =    32.93s         Capturing element debug description
+    t =    33.88s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-board" Other`
+    t =    33.88s         Checking existence of `"transit-board" Other`
+    t =    34.12s         Capturing element debug description
+    t =    34.86s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-board" Other`
+    t =    34.86s         Checking existence of `"transit-board" Other`
+    t =    34.93s         Capturing element debug description
+    t =    35.88s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-board" Other`
+    t =    35.88s         Checking existence of `"transit-board" Other`
+    t =    35.96s         Capturing element debug description
+    t =    36.81s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-board" Other`
+    t =    36.81s         Checking existence of `"transit-board" Other`
+    t =    36.90s         Capturing element debug description
+    t =    37.85s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-board" Other`
+    t =    37.85s         Checking existence of `"transit-board" Other`
+    t =    37.95s         Capturing element debug description
+    t =    38.91s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-board" Other`
+    t =    38.91s         Checking existence of `"transit-board" Other`
+    t =    39.01s         Capturing element debug description
+    t =    39.84s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-board" Other`
+    t =    39.84s         Checking existence of `"transit-board" Other`
+    t =    39.90s         Capturing element debug description
+    t =    40.82s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-board" Other`
+    t =    40.82s         Checking existence of `"transit-board" Other`
+    t =    40.88s         Capturing element debug description
+    t =    40.88s     Checking existence of `"transit-board" Other`
+    t =    40.95s Collecting debug information to assist test failure triage
+    t =    40.95s     Requesting snapshot of accessibility hierarchy for app with pid 38955
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TransitWiredUITests.swift:28: error: -[VelaUITests.TransitWiredUITests testTapTransitEverywhereAndSeeTheLine] : XCTAssertTrue failed - the cached board never opened
+    t =    41.09s Tear Down
+Test Case '-[VelaUITests.TransitWiredUITests testTapTransitEverywhereAndSeeTheLine]' failed (41.348 seconds).
+Test Suite 'TransitWiredUITests' failed at 2026-10-29 00:08:56.002.
+	 Executed 1 test, with 1 failure (0 unexpected) in 41.348 (41.349) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-29 00:08:56.003.
+	 Executed 7 tests, with 2 failures (0 unexpected) in 284.594 (284.603) seconds
+Test Suite 'Selected tests' failed at 2026-10-29 00:08:56.003.
+	 Executed 7 tests, with 2 failures (0 unexpected) in 284.594 (284.604) seconds
+2026-10-29 00:09:23.035 xcodebuild[29226:83802] [MT] IDETestOperationsObserverDebug: 333.799 elapsed -- Testing started completed.
+2026-10-29 00:09:23.036 xcodebuild[29226:83802] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-29 00:09:23.036 xcodebuild[29226:83802] [MT] IDETestOperationsObserverDebug: 333.799 sec, +333.799 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.gbLcRTtham/uitest.xcresult
+
+Failing tests:
+	TransitCitymapperUITests.testLiveTripScreenWhenTheFeedAnswers()
+	TransitWiredUITests.testTapTransitEverywhereAndSeeTheLine()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui TransitCitymapperUITests.testLiveTripScreenWhenTheFeedAnswers: failed (63.679 seconds)
+ui TransitCitymapperUITests.testNearbyLinesTabListsTheStopsLines: passed (25.538 seconds)
+ui TransitCitymapperUITests.testSegmentTimeChangeShowsANewOptionSet: passed (90.843 seconds)
+ui TransitCitymapperUITests.testSkipLetsTheRunPassAndAdvancesTheHeader: passed (21.746 seconds)
+ui TransitCitymapperUITests.testTripScreenShowsSegmentCardsAndNextDepartures: passed (18.959 seconds)
+ui TransitLineViewUITests.testLineRibbonAndColors: passed (22.480 seconds)
+ui TransitWiredUITests.testTapTransitEverywhereAndSeeTheLine: failed (41.348 seconds)
+scripts/ios/ci-ipa.sh: line 286: 29223 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui line_color=437c93
+ui line_directions=2
+ui line_estimated=1
+ui line_fixture=1
+ui line_source=feed
+ui line_stops=20
+ui transit_trip_fixture=1
+ui transit_trip_header_after_skip=3
+ui transit_trip_header_before_skip=4
+ui transit_trip_header=4
+ui transit_trip_nearby_lines=3
+ui transit_trip_nearby_rows=3
+ui transit_trip_option_rows=0
+ui transit_trip_rides=1
+ui transit_trip_segments=4
+ui transit_trip_shift_options=2
+ui transit_trip_shift_query=in-screenshot
+ui transit_trip_skip_options=2
+ui transit_trip=segments_and_header
+ui screenshots: 
+
+== Route replay (00:09:33)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 7748B0B2-98F1-4DEC-B7A8-971F46EB6161 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 7748B0B2-98F1-4DEC-B7A8-971F46EB6161 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=100782 parsed=true times=false
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (00:11:21)
+250910
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 88781 bytes
+directions reply: directions-drive-sf 127780 bytes
+directions reply: directions-walk-sf 34616 bytes
+search reply: 250910 bytes, 32 feature ids
+failed steps: ui-scenarios
