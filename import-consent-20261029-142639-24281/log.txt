@@ -1,0 +1,196 @@
+tag=import-consent-20261029-142639-24281 src=src/import-consent d0b88a6 src: 4a347680 IMPORT-CONSENT: keep the non-breaking space in the third list title
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: d0b88a6 src: 4a347680 IMPORT-CONSENT: keep the non-breaking space in the third list title
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610291427 (1793284060)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (14:27:40)
+notices: ok, 35 entries (7 libraries, 27 data sources)
+
+== Kotlin: tests and the VelaCore framework (14:27:41)
+gradle: ok in 362 s
+kotlin jvmTest: 607 tests, 0 failures
+kotlin iosSimulatorArm64Test: 506 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  88M, static library 86577776 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  58M, static library 54268976 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (14:33:44)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 30.3M  100 30.3M    0     0  43.6M      0 --:--:-- --:--:-- --:--:-- 72.5M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (14:33:45)
+string catalog: 1444 keys, 24 resource locales (23 with translations), 24601 localized values, 186 Swift references, 24 picker languages
+
+== XcodeGen (14:33:46)
+xcodegen: Version: 2.46.0
+
+== Generate the project (14:33:46)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (14:33:46)
+  SWCompression: https://github.com/tsolomko/SWCompression @ 4.9.1
+
+resolved source packages: BitByteData, MapLibre Native, SWCompression
+(resolve: 10 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (14:33:56)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (600A45A3-B3A0-4A39-8A9C-5D051F9FDA9C) (Shutdown) 
+
+== Build for the simulator (14:33:57)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 71 s)
+simulator build: ok
+
+== Boot the simulator (14:35:08)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (14:37:44)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 66 s)
+tests: ok, Executed 188 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=navigate_to_coffee samples=19319
+VOICE_ASR_PLAN action=navigate query=coffee
+VOICE_SYNTH samples=56821 rate=22050 wav_frames=56821
+
+== Launch and screenshot (14:38:50)
+app.vela.ios: 20899
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 4C40B62B-2D66-4C93-8A35-0240C124628F (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (14:39:29)
+xcodebuild uitest failed after 297 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SavedShortLinkUITests.swift:38: error: -[VelaUITests.SavedShortLinkUITests testShortLinksImportTheirRealLists] : Failed to tap "saved-import-replace" Button: Find single matching element. Multiple matching elements found for <XCUIElementQuery: 0x1065e0550>.
+Test Case '-[VelaUITests.SavedShortLinkUITests testShortLinksImportTheirRealLists]' failed (76.893 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =    74.22s     Wait for app.vela.ios to idle
+    t =    74.55s Checking existence of `"saved-import-link" TextField`
+    t =    74.78s Waiting 3.0s for "saved-import-replace" Button to exist
+    t =    75.82s     Checking `Expect predicate `existsNoRetry == 1` for object "saved-import-replace" Button`
+    t =    75.82s         Checking existence of `"saved-import-replace" Button`
+    t =    75.96s Tap "saved-import-replace" Button
+    t =    75.96s     Wait for app.vela.ios to idle
+    t =    75.96s     Find the "saved-import-replace" Button
+    t =    76.10s Requesting snapshot of accessibility hierarchy for app with pid 30719
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SavedShortLinkUITests.swift:38: error: -[VelaUITests.SavedShortLinkUITests testShortLinksImportTheirRealLists] : Failed to tap "saved-import-replace" Button: Find single matching element. Multiple matching elements found for <XCUIElementQuery: 0x1065e0550>.
+Sparse tree of matches:
+→Application, pid: 30719, label: 'Vela'
+  ↳Window (Main)
+    ↳Other
+      ↳Popover
+        ↳Other
+          ↳Sheet, label: 'validé is already saved'
+            ↳Other
+              ↳Other
+                ↳Other
+                  ↳ScrollView
+                    ↳Other
+                      ↳Other
+                        ↳Button, identifier: 'saved-import-replace', label: 'Replace'
+                          ↳Button, identifier: 'saved-import-replace', label: 'Replace'
+Possibly caused by runtime issues:
+Automation type mismatch: computed Button from legacy attributes vs PopUpButton from modern attribute. Input attributes and values: {
+    "XC_kAXXCAttributeAutomationType" = 14;
+    "XC_kAXXCAttributeElementBaseType" = UIResponder;
+    "XC_kAXXCAttributeElementType" = "SwiftUI.AccessibilityNode";
+    "XC_kAXXCAttributeTraits" = 1108101562369;
+}
+Automation type mismatch: computed Button from legacy attributes vs Link from modern attribute. Input attributes and values: {
+    "XC_kAXXCAttributeAutomationType" = 42;
+    "XC_kAXXCAttributeElementBaseType" = UIResponder;
+    "XC_kAXXCAttributeElementType" = "SwiftUI.AccessibilityNode";
+    "XC_kAXXCAttributeTraits" = 8589934595;
+}
+See test report attachments for more detail.
+    t =    76.65s Tear Down
+Test Case '-[VelaUITests.SavedShortLinkUITests testShortLinksImportTheirRealLists]' failed (76.893 seconds).
+Test Suite 'SavedShortLinkUITests' failed at 2026-10-29 14:43:58.214.
+	 Executed 2 tests, with 1 failure (0 unexpected) in 100.019 (100.021) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-29 14:43:58.214.
+	 Executed 3 tests, with 1 failure (0 unexpected) in 236.013 (236.017) seconds
+Test Suite 'Selected tests' failed at 2026-10-29 14:43:58.215.
+	 Executed 3 tests, with 1 failure (0 unexpected) in 236.013 (236.018) seconds
+2026-10-29 14:44:20.610 xcodebuild[22807:68432] [MT] IDETestOperationsObserverDebug: 278.586 elapsed -- Testing started completed.
+2026-10-29 14:44:20.611 xcodebuild[22807:68432] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-29 14:44:20.611 xcodebuild[22807:68432] [MT] IDETestOperationsObserverDebug: 278.586 sec, +278.586 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.FieNi4QkAC/uitest.xcresult
+
+Failing tests:
+	SavedShortLinkUITests.testShortLinksImportTheirRealLists()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui SavedImportUITests.testGoogleListAndMyMaps: passed (135.994 seconds)
+ui SavedShortLinkUITests.testConsentRefusalSaysSo: passed (23.126 seconds)
+ui SavedShortLinkUITests.testShortLinksImportTheirRealLists: failed (76.893 seconds)
+scripts/ios/ci-ipa.sh: line 286: 22804 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui saved_google_duplicate=merge_or_replace
+ui saved_google_idempotent=2
+ui saved_google_merge=unchanged
+ui saved_google_places=2
+ui saved_kml_duplicate=merge_unchanged
+ui saved_kml_lists=2
+ui saved_kml_note=kept
+ui saved_nogoogle=blocked
+ui shortlink_consent=refused
+ui shortlink_places=159
+ui shortlink_places=20
+ui shortlink_places=36
+ui screenshots: 
+
+== Route replay (14:44:28)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 4C40B62B-2D66-4C93-8A35-0240C124628F (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 4C40B62B-2D66-4C93-8A35-0240C124628F (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (14:45:46)
+253568
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 88792 bytes
+directions reply: directions-drive-sf 75118 bytes
+directions reply: directions-walk-sf 44510 bytes
+search reply: 253568 bytes, 33 feature ids
+failed steps: ui-scenarios

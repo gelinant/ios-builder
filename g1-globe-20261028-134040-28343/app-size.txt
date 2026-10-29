@@ -1,8 +1,0 @@
-app_kib=17112
-baseline_kib=232
-delta_kib=16880
-embedded_framework_kib=16720
-app_executable_bytes=40344
- 17M	/tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeSpike.app
-232K	/tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeBaseline.app
- 16M	/tmp/globe-spike-dd/Build/Products/Debug-iphonesimulator/GlobeSpike.app/Frameworks/MapLibre.framework

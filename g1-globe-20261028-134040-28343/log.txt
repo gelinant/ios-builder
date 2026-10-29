@@ -1,36 +1,0 @@
-tag=g1-globe-20261028-134040-28343 src=src/g1-globe f2600d9 src: 12f290d3 G-1: use the Swift names of the prebuilt MapLibre headers
-ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
-Xcode 26.6 Build version 17F113 
-G-1 globe spike, MapLibre Native ios-v2026.10.19-globe (MLN_WITH_GLOBE)
-[globe] 13:42:04 fetching the pinned globe xcframework
-maplibre-globe: downloading MapLibre.dynamic.xcframework.zip (169968107 bytes) from ios-v2026.10.19-globe
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 24  162M   24 40.1M    0     0  31.9M      0  0:00:05  0:00:01  0:00:04 39.3M 52  162M   52 85.1M    0     0  37.7M      0  0:00:04  0:00:02  0:00:02 42.1M 67  162M   67  110M    0     0  33.8M      0  0:00:04  0:00:03  0:00:01 36.4M 83  162M   83  134M    0     0  31.7M      0  0:00:05  0:00:04  0:00:01 33.6M100  162M  100  162M    0     0  31.3M      0  0:00:05  0:00:05 --:--:-- 32.8M
-maplibre-globe ios-v2026.10.19-globe: ready at /Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike/Vendor/MapLibre.xcframework (589M on disk)
-xcframework: 589 MiB on disk (589M), fetched in 8s
-[globe] 13:42:12 installing XcodeGen 2.46.0
-xcodegen: Version: 2.46.0
-simulator: 10B884BF-749F-4E8B-AFCD-26AB8F1DBD01 (iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown) )
-[globe] 13:42:20 building the size baseline
-[globe] 13:42:46 building the spike app and its UI test
-app size: 16 MiB spike, 0 MiB baseline, delta 16 MiB; embedded MapLibre.framework 16 MiB
-[globe] 13:42:54 booting simulator 10B884BF-749F-4E8B-AFCD-26AB8F1DBD01
-[globe] 13:47:18 launching the autopilot
-[globe] 13:47:49 screenshot globe-z3.png
-[globe] 13:48:12 screenshot globe-z0.png
-[globe] 13:48:16 screenshot globe-tilted.png
-[globe] 13:48:17 running the gesture UI test
-GESTURE start=zoom=2.00 bearing=-0.0 pitch=0.0 lat=20.00 lon=0.00
-GESTURE step=pinch-out before=zoom=2.00 bearing=-0.0 pitch=0.0 lat=20.00 lon=0.00 after=zoom=0.03 bearing=0.0 pitch=0.0 lat=19.52 lon=0.51
-GESTURE step=pinch-in after=zoom=1.16 bearing=329.3 pitch=0.0 lat=19.73 lon=0.29
-GESTURE step=drag after=zoom=1.22 bearing=34.7 pitch=0.0 lat=9.90 lon=136.71
-gesture UI test: passed
-rotate: 55.7 fps (614 frames / 11.0 s, avg render 0.00 ms)
-zoomOut: 55.1 fps (606 frames / 11.0 s, avg render 0.00 ms)
-camera: min zoom 0, max zoom 22, max pitch 59.99999999999999
-limits: zoom -3 kept -0.08973917531865368, zoom 30 kept 22, pitch 80 kept 59.99999999999999
-occlusion at z0: centre False, antipode True
-projection switch: globe in 0.00 s
-screenshots: globe-z3.png globe-z0.png globe-tilted.png

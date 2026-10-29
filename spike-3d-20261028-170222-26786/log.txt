@@ -1,33 +1,0 @@
-tag=spike-3d-20261028-170222-26786 src=src/spike-3d d42aa64 src: aa758ae7 Add terrain renderer spike: custom layer vs sibling Metal view
-ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
-Xcode 26.6 Build version 17F113 
-terrain spike, MapLibre Native 6.31.0, MLNCustomStyleLayer + Metal
-[terrain] 17:03:42 checking the pinned terrarium tiles
-terrain-dem: downloading 11/1062/729 (142987 bytes)
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  139k  100  139k    0     0   337k      0 --:--:-- --:--:-- --:--:--  338k
-terrain-dem: downloading 11/1063/729 (147068 bytes)
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  143k  100  143k    0     0   377k      0 --:--:-- --:--:-- --:--:--  377k
-terrain-dem: downloading 11/1062/730 (145412 bytes)
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  142k  100  142k    0     0   379k      0 --:--:-- --:--:-- --:--:--  378k
-terrain-dem: downloading 11/1063/730 (146805 bytes)
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  143k  100  143k    0     0   365k      0 --:--:-- --:--:-- --:--:--  365k
-terrain-dem: 4 tiles, 582272 bytes, 11/1062..1063/729..730
-terrain-dem: Mapzen terrain tiles / AWS Open Data elevation-tiles-prod, CC BY 4.0
-terrain-dem: sources NASA SRTM, USGS NED, GMTED2010, NOAA ETOPO1
-terrain-dem: attribution: Terrain data: Mapzen terrain tiles (AWS Open Data elevation-tiles-prod), CC BY 4.0
-DEM: 4 tiles z11 over Mont Blanc, 572 KiB on disk
-[terrain] 17:03:44 installing XcodeGen 2.46.0
-xcodegen: Version: 2.46.0
-simulator: 10B884BF-749F-4E8B-AFCD-26AB8F1DBD01 (iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown) )
-[terrain] 17:03:50 building the spike app
-/Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/App/TerrainModel.swift:156:19: error: 'insertLayer(_:belowLayer:)' has been renamed to 'insertLayer(_:below:)'
-/Users/runner/work/ios-builder/ios-builder/src/tools/ios-terrain-spike/App/TerrainModel.swift:194:19: error: 'insertLayer(_:belowLayer:)' has been renamed to 'insertLayer(_:below:)'
-FAILED: build failed

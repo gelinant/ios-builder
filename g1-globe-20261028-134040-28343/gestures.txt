@@ -1,4 +1,0 @@
-GESTURE start=zoom=2.00 bearing=-0.0 pitch=0.0 lat=20.00 lon=0.00
-GESTURE step=pinch-out before=zoom=2.00 bearing=-0.0 pitch=0.0 lat=20.00 lon=0.00 after=zoom=0.03 bearing=0.0 pitch=0.0 lat=19.52 lon=0.51
-GESTURE step=pinch-in after=zoom=1.16 bearing=329.3 pitch=0.0 lat=19.73 lon=0.29
-GESTURE step=drag after=zoom=1.22 bearing=34.7 pitch=0.0 lat=9.90 lon=136.71

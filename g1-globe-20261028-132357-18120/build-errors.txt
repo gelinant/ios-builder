@@ -1,5 +1,0 @@
-/Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike/App/Autopilot.swift:165:13: error: 'setCenterCoordinate(_:animated:)' has been renamed to 'setCenter(_:animated:)'
-/Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike/App/GlobeModel.swift:47:14: error: 'rotateEnabled' has been renamed to 'isRotateEnabled'
-/Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike/App/GlobeModel.swift:48:14: error: 'pitchEnabled' has been renamed to 'isPitchEnabled'
-/Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike/App/GlobeModel.swift:49:14: error: 'zoomEnabled' has been renamed to 'isZoomEnabled'
-/Users/runner/work/ios-builder/ios-builder/src/tools/ios-globe-spike/App/GlobeModel.swift:109:21: error: 'setCenterCoordinate(_:animated:)' has been renamed to 'setCenter(_:animated:)'
