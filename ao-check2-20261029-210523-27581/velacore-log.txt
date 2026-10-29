@@ -1,0 +1,65 @@
+Timestamp               Ty Process[PID:TID]
+2026-10-29 21:20:23.895 I  Vela[28856:14334] [app.vela.ios:Calibration] calibration at startup: version 1
+2026-10-29 21:20:25.226 Df Vela[28856:14633] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-29 21:20:27.158 I  Vela[28856:14334] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-29 21:20:36.728 I  Vela[28856:14334] [app.vela.ios:NeuralVoice] loaded en_US-hfc_female-medium: 22050 Hz, 1 speakers
+2026-10-29 21:20:39.213 Df Vela[28856:14689] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-29 21:20:41.572 I  Vela[28856:14334] [app.vela.ios:NeuralVoice] loaded en_US-hfc_female-medium: 22050 Hz, 1 speakers
+2026-10-29 21:20:42.301 I  Vela[28856:14334] [app.vela.ios:VoiceSearch] loaded whisper-tiny for en
+2026-10-29 21:21:02.567 I  Vela[30398:15341] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-29 21:21:03.548 Df Vela[30398:15426] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-29 21:21:04.991 I  Vela[30398:15341] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-29 21:22:29.087 I  Vela[33692:1754d] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-29 21:22:31.437 Df Vela[33692:17773] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-29 21:22:33.608 I  Vela[33692:1754d] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-29 21:22:53.907 Df Vela[33692:181b7] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-29 21:23:20.238 I  Vela[35725:18947] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-29 21:23:21.771 Df Vela[35725:18f04] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-29 21:23:24.241 I  Vela[35725:18947] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-29 21:23:42.992 Df Vela[35725:18edd] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-29 21:23:48.887 I  Vela[37518:19aca] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-29 21:23:49.646 Df Vela[37518:19c2c] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-29 21:23:51.761 I  Vela[37518:19aca] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-29 21:24:10.127 I  Vela[37518:19aca] [app.vela.ios:PlaceLoad] photos: rpc 1
+2026-10-29 21:24:17.686 I  Vela[37518:19aca] [app.vela.ios:PlaceLoad] details: plain search (no popular times)
+2026-10-29 21:24:19.402 Db Vela[37518:19aca] [app.vela.ios:Web] popular: view created
+2026-10-29 21:24:27.180 Db Vela[37518:19aca] [app.vela.ios:Web] popular: same-origin details fetch
+2026-10-29 21:24:27.487 Db Vela[37518:19aca] [app.vela.ios:Web] popular: replied with 31589 characters
+2026-10-29 21:24:27.522 I  Vela[37518:19aca] [app.vela.ios:PlaceLoad] details: page raw=31588 parsed=true times=false
+2026-10-29 21:24:41.443 I  Vela[37518:19aca] [app.vela.ios:PlaceLoad] photos: next page empty, walking the page
+2026-10-29 21:24:41.467 Db Vela[37518:19aca] [app.vela.ios:Web] photos: view created
+2026-10-29 21:24:55.721 Db Vela[37518:19aca] [app.vela.ios:Web] photos: gallery probe received
+2026-10-29 21:24:55.733 Db Vela[37518:19aca] [app.vela.ios:Web] photos: gallery answered
+2026-10-29 21:24:55.748 I  Vela[37518:19aca] [app.vela.ios:PlaceLoad] photos: page 1, categories=0
+2026-10-29 21:25:11.800 I  Vela[37518:19aca] [app.vela.ios:PlaceLoad] reviews: feed 5 (limited view)
+2026-10-29 21:25:17.019 Db Vela[37518:19aca] [app.vela.ios:Web] reviews: page asked for 0x809ad003705044bb:0x58e1d0fd630e026f
+2026-10-29 21:25:17.090 Db Vela[37518:19aca] [app.vela.ios:Web] reviews: view created
+2026-10-29 21:25:20.493 Db Vela[37518:19aca] [app.vela.ios:Web] reviews probe: {"start":1,"title":"Google Maps","url":"/maps","ready":"complete","w":1200,"h":904}
+2026-10-29 21:25:21.009 Db Vela[37518:19aca] [app.vela.ios:Web] reviews probe: {"tries":2,"tabs":["Overview of Disabled American Veterans","Reviews for Disabled American Veterans","About Disabled American Veterans"],"sawEntry":true,"opened":false,"by":"","cardsNow":3,"acc":3,"w":1200,"h":904,"main":true,"title":"Google Maps","body":1782,"url":"/maps"}
+2026-10-29 21:25:25.727 Db Vela[37518:19aca] [app.vela.ios:Web] reviews probe: {"tries":16,"tabs":["Overview of Disabled American Veterans","Reviews for Disabled American Veterans","About Disabled American Veterans"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":904,"main":true,"title":"Disabled American Veterans - Google Maps","body":1644,"url":"/maps/place/Disabled+American+Veterans"}
+2026-10-29 21:25:29.996 Db Vela[37518:19aca] [app.vela.ios:Web] reviews probe: {"tries":32,"tabs":["Overview of Disabled American Veterans","Reviews for Disabled American Veterans","About Disabled American Veterans"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":904,"main":true,"title":"Disabled American Veterans - Google Maps","body":1736,"url":"/maps/place/Disabled+American+Veterans"}
+2026-10-29 21:25:34.059 Db Vela[37518:19aca] [app.vela.ios:Web] reviews probe: {"tries":48,"tabs":["Overview of Disabled American Veterans","Reviews for Disabled American Veterans","About Disabled American Veterans"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":904,"main":true,"title":"Disabled American Veterans - Google Maps","body":1736,"url":"/maps/place/Disabled+American+Veterans"}
+2026-10-29 21:25:38.064 Db Vela[37518:19aca] [app.vela.ios:Web] reviews probe: {"tries":64,"tabs":["Overview of Disabled American Veterans","Reviews for Disabled American Veterans","About Disabled American Veterans"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":904,"main":true,"title":"Disabled American Veterans - Google Maps","body":1736,"url":"/maps/place/Disabled+American+Veterans"}
+2026-10-29 21:25:42.147 Db Vela[37518:19aca] [app.vela.ios:Web] reviews probe: {"tries":80,"tabs":["Overview of Disabled American Veterans","Reviews for Disabled American Veterans","About Disabled American Veterans"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":904,"main":true,"title":"Disabled American Veterans - Google Maps","body":1736,"url":"/maps/place/Disabled+American+Veterans"}
+2026-10-29 21:25:46.235 Db Vela[37518:19aca] [app.vela.ios:Web] reviews probe: {"tries":96,"tabs":["Overview of Disabled American Veterans","Reviews for Disabled American Veterans","About Disabled American Veterans"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":904,"main":true,"title":"Disabled American Veterans - Google Maps","body":1736,"url":"/maps/place/Disabled+American+Veterans"}
+2026-10-29 21:25:50.331 Db Vela[37518:19aca] [app.vela.ios:Web] reviews probe: {"tries":112,"tabs":["Overview of Disabled American Veterans","Reviews for Disabled American Veterans","About Disabled American Veterans"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":904,"main":true,"title":"Disabled American Veterans - Google Maps","body":1736,"url":"/maps/place/Disabled+American+Veterans"}
+2026-10-29 21:25:54.416 Db Vela[37518:19aca] [app.vela.ios:Web] reviews probe: {"tries":128,"tabs":["Overview of Disabled American Veterans","Reviews for Disabled American Veterans","About Disabled American Veterans"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":904,"main":true,"title":"Disabled American Veterans - Google Maps","body":1736,"url":"/maps/place/Disabled+American+Veterans"}
+2026-10-29 21:25:55.189 Db Vela[37518:19aca] [app.vela.ios:Web] reviews: answered
+2026-10-29 21:25:55.200 Db Vela[37518:19aca] [app.vela.ios:Web] reviews: view destroyed
+2026-10-29 21:25:55.312 I  Vela[37518:19aca] [app.vela.ios:PlaceLoad] reviews: more from page 5
+2026-10-29 21:25:55.314 I  Vela[37518:19aca] [app.vela.ios:PlaceLoad] reviews: limited view, More reviews loaded nothing
+2026-10-29 21:26:08.823 I  Vela[43301:1d0a0] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-29 21:26:10.057 Df Vela[43301:1d257] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-29 21:26:12.100 I  Vela[43301:1d0a0] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-29 21:26:26.911 I  Vela[43301:1d0a0] [app.vela.ios:PlaceLoad] photos: rpc 10
+2026-10-29 21:26:34.118 I  Vela[43301:1d0a0] [app.vela.ios:PlaceLoad] details: plain search (no popular times)
+2026-10-29 21:26:34.985 Db Vela[43301:1d0a0] [app.vela.ios:Web] popular: view created
+2026-10-29 21:26:41.913 Db Vela[43301:1d0a0] [app.vela.ios:Web] popular: same-origin details fetch
+2026-10-29 21:26:42.393 Db Vela[43301:1d0a0] [app.vela.ios:Web] popular: replied with 23335 characters
+2026-10-29 21:26:42.403 I  Vela[43301:1d0a0] [app.vela.ios:PlaceLoad] details: page raw=23282 parsed=true times=false
+2026-10-29 21:27:01.133 I  Vela[43301:1d0a0] [app.vela.ios:PlaceLoad] reviews: feed 5 (limited view)
+2026-10-29 21:27:46.913 I  Vela[48036:203a3] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-29 21:27:47.942 Df Vela[48036:203e6] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-29 21:27:48.477 I  Vela[48036:203a3] [app.vela.ios:Location] location update failed: The operation couldn’t be completed. (kCLErrorDomain error 0.)
+2026-10-29 21:27:49.253 I  Vela[48036:203a3] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-29 21:28:47.428 I  Vela[48036:203a3] [app.vela.ios:Location] location update failed: The operation couldn’t be completed. (kCLErrorDomain error 0.)
