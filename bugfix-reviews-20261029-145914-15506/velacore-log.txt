@@ -1,0 +1,87 @@
+Timestamp               Ty Process[PID:TID]
+2026-10-29 15:14:18.111 I  Vela[21158:fb58] [app.vela.ios:Calibration] calibration at startup: version 1
+2026-10-29 15:14:19.338 Df Vela[21158:fea6] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-29 15:14:21.274 I  Vela[21158:fb58] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-29 15:14:28.736 I  Vela[21158:fb58] [app.vela.ios:NeuralVoice] loaded en_US-hfc_female-medium: 22050 Hz, 1 speakers
+2026-10-29 15:14:31.082 Df Vela[21158:fdfa] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-29 15:14:32.618 I  Vela[21158:fb58] [app.vela.ios:NeuralVoice] loaded en_US-hfc_female-medium: 22050 Hz, 1 speakers
+2026-10-29 15:14:33.279 I  Vela[21158:fb58] [app.vela.ios:VoiceSearch] loaded whisper-tiny for en
+2026-10-29 15:15:09.086 I  Vela[23473:113ca] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-29 15:15:10.252 Df Vela[23473:113eb] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-29 15:15:11.812 I  Vela[23473:113ca] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-29 15:17:26.620 I  Vela[28101:14291] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-29 15:17:34.335 Df Vela[28101:1472d] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-29 15:17:37.567 I  Vela[28101:14291] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-29 15:18:02.323 I  Vela[28101:14291] [app.vela.ios:PlaceLoad] photos: rpc 10
+2026-10-29 15:18:09.589 I  Vela[28101:14291] [app.vela.ios:PlaceLoad] details: plain search (no popular times)
+2026-10-29 15:18:11.139 Db Vela[28101:14291] [app.vela.ios:Web] popular: view created
+2026-10-29 15:18:18.837 Db Vela[28101:14291] [app.vela.ios:Web] popular: same-origin details fetch
+2026-10-29 15:18:19.696 Db Vela[28101:14291] [app.vela.ios:Web] popular: injecting again after the page finished
+2026-10-29 15:18:19.912 Db Vela[28101:14291] [app.vela.ios:Web] popular: replied with 48805 characters
+2026-10-29 15:18:20.200 I  Vela[28101:14291] [app.vela.ios:PlaceLoad] details: page raw=48724 parsed=true times=false
+2026-10-29 15:18:38.175 I  Vela[29922:156c6] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-29 15:18:44.256 Df Vela[29922:1577b] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-29 15:18:46.371 I  Vela[29922:156c6] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-29 15:19:10.621 I  Vela[29922:156c6] [app.vela.ios:PlaceLoad] photos: rpc 10
+2026-10-29 15:19:15.853 I  Vela[29922:156c6] [app.vela.ios:PlaceLoad] reviews: feed 5 (limited view)
+2026-10-29 15:19:16.665 I  Vela[29922:156c6] [app.vela.ios:PlaceLoad] details: plain search (no popular times)
+2026-10-29 15:19:19.226 Db Vela[29922:156c6] [app.vela.ios:Web] popular: view created
+2026-10-29 15:19:25.805 Db Vela[29922:156c6] [app.vela.ios:Web] popular: same-origin details fetch
+2026-10-29 15:19:25.978 Db Vela[29922:156c6] [app.vela.ios:Web] popular: replied with 0 characters
+2026-10-29 15:19:25.992 I  Vela[29922:156c6] [app.vela.ios:PlaceLoad] details: page raw=0 parsed=false times=false
+2026-10-29 15:19:52.218 Db Vela[29922:156c6] [app.vela.ios:Web] reviews: page asked for 0x8085299fd6f41a23:0x10d37b4cae550f0
+2026-10-29 15:19:52.281 Db Vela[29922:156c6] [app.vela.ios:Web] reviews: view created
+2026-10-29 15:19:54.400 Db Vela[29922:156c6] [app.vela.ios:Web] reviews probe: {"start":1,"title":"Google Maps","url":"/maps","ready":"complete","w":1200,"h":904}
+2026-10-29 15:19:55.214 Db Vela[29922:156c6] [app.vela.ios:Web] reviews probe: {"tries":2,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":false,"by":"","cardsNow":3,"acc":3,"w":1200,"h":904,"main":true,"title":"Google Maps","body":2991,"url":"/maps"}
+2026-10-29 15:19:59.766 Db Vela[29922:156c6] [app.vela.ios:Web] reviews probe: {"tries":16,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":904,"main":true,"title":"Davis Food Co-op - Google Maps","body":4096,"url":"/maps"}
+2026-10-29 15:20:04.358 Db Vela[29922:156c6] [app.vela.ios:Web] reviews probe: {"tries":32,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":904,"main":true,"title":"Davis Food Co-op - Google Maps","body":4600,"url":"/maps/place/Davis+Food+Co-op"}
+2026-10-29 15:20:09.732 Db Vela[29922:156c6] [app.vela.ios:Web] reviews probe: {"tries":48,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":904,"main":true,"title":"Davis Food Co-op - Google Maps","body":4603,"url":"/maps/place/Davis+Food+Co-op"}
+2026-10-29 15:20:13.840 Db Vela[29922:156c6] [app.vela.ios:Web] reviews probe: {"tries":64,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":904,"main":true,"title":"Davis Food Co-op - Google Maps","body":4603,"url":"/maps/place/Davis+Food+Co-op"}
+2026-10-29 15:20:17.770 Db Vela[29922:156c6] [app.vela.ios:Web] reviews probe: {"tries":80,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":904,"main":true,"title":"Davis Food Co-op - Google Maps","body":4603,"url":"/maps/place/Davis+Food+Co-op"}
+2026-10-29 15:20:22.157 Db Vela[29922:156c6] [app.vela.ios:Web] reviews probe: {"tries":96,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":904,"main":true,"title":"Davis Food Co-op - Google Maps","body":4603,"url":"/maps/place/Davis+Food+Co-op"}
+2026-10-29 15:20:26.001 Db Vela[29922:156c6] [app.vela.ios:Web] reviews probe: {"tries":112,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":904,"main":true,"title":"Davis Food Co-op - Google Maps","body":4603,"url":"/maps/place/Davis+Food+Co-op"}
+2026-10-29 15:20:30.208 Db Vela[29922:156c6] [app.vela.ios:Web] reviews probe: {"tries":128,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":904,"main":true,"title":"Davis Food Co-op - Google Maps","body":4603,"url":"/maps/place/Davis+Food+Co-op"}
+2026-10-29 15:20:31.071 Db Vela[29922:156c6] [app.vela.ios:Web] reviews: answered
+2026-10-29 15:20:31.101 Db Vela[29922:156c6] [app.vela.ios:Web] reviews: view destroyed
+2026-10-29 15:20:31.624 I  Vela[29922:156c6] [app.vela.ios:PlaceLoad] reviews: more from page 5
+2026-10-29 15:20:46.693 I  Vela[33011:177b0] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-29 15:20:48.171 Df Vela[33011:178a7] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-29 15:20:50.812 I  Vela[33011:177b0] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-29 15:21:10.063 I  Vela[33011:177b0] [app.vela.ios:PlaceLoad] photos: rpc 10
+2026-10-29 15:21:16.950 I  Vela[33011:177b0] [app.vela.ios:PlaceLoad] details: plain search (no popular times)
+2026-10-29 15:21:17.210 I  Vela[33011:177b0] [app.vela.ios:PlaceLoad] reviews: feed 5 (limited view)
+2026-10-29 15:21:17.919 Db Vela[33011:177b0] [app.vela.ios:Web] popular: view created
+2026-10-29 15:21:25.589 Db Vela[33011:177b0] [app.vela.ios:Web] popular: same-origin details fetch
+2026-10-29 15:21:26.277 Db Vela[33011:177b0] [app.vela.ios:Web] popular: replied with 48818 characters
+2026-10-29 15:21:26.305 I  Vela[33011:177b0] [app.vela.ios:PlaceLoad] details: page raw=48737 parsed=true times=false
+2026-10-29 15:21:49.244 Db Vela[33011:177b0] [app.vela.ios:Web] reviews: page asked for 0x8085299fd6f41a23:0x10d37b4cae550f0
+2026-10-29 15:21:49.319 Db Vela[33011:177b0] [app.vela.ios:Web] reviews: view created
+2026-10-29 15:21:52.075 Db Vela[33011:177b0] [app.vela.ios:Web] reviews probe: {"start":1,"title":"Google Maps","url":"/maps","ready":"complete","w":1200,"h":904}
+2026-10-29 15:21:52.703 Db Vela[33011:177b0] [app.vela.ios:Web] reviews probe: {"tries":2,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":false,"by":"","cardsNow":3,"acc":3,"w":1200,"h":904,"main":true,"title":"Google Maps","body":2991,"url":"/maps"}
+2026-10-29 15:21:57.325 Db Vela[33011:177b0] [app.vela.ios:Web] reviews probe: {"tries":16,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":904,"main":true,"title":"Davis Food Co-op - Google Maps","body":4096,"url":"/maps"}
+2026-10-29 15:22:01.526 Db Vela[33011:177b0] [app.vela.ios:Web] reviews probe: {"tries":32,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":904,"main":true,"title":"Davis Food Co-op - Google Maps","body":4603,"url":"/maps/place/Davis+Food+Co-op"}
+2026-10-29 15:22:05.665 Db Vela[33011:177b0] [app.vela.ios:Web] reviews probe: {"tries":48,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":904,"main":true,"title":"Davis Food Co-op - Google Maps","body":4603,"url":"/maps/place/Davis+Food+Co-op"}
+2026-10-29 15:22:09.883 Db Vela[33011:177b0] [app.vela.ios:Web] reviews probe: {"tries":64,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":904,"main":true,"title":"Davis Food Co-op - Google Maps","body":4603,"url":"/maps/place/Davis+Food+Co-op"}
+2026-10-29 15:22:14.040 Db Vela[33011:177b0] [app.vela.ios:Web] reviews probe: {"tries":80,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":904,"main":true,"title":"Davis Food Co-op - Google Maps","body":4603,"url":"/maps/place/Davis+Food+Co-op"}
+2026-10-29 15:22:18.188 Db Vela[33011:177b0] [app.vela.ios:Web] reviews probe: {"tries":96,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":904,"main":true,"title":"Davis Food Co-op - Google Maps","body":4603,"url":"/maps/place/Davis+Food+Co-op"}
+2026-10-29 15:22:22.383 Db Vela[33011:177b0] [app.vela.ios:Web] reviews probe: {"tries":112,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":904,"main":true,"title":"Davis Food Co-op - Google Maps","body":4603,"url":"/maps/place/Davis+Food+Co-op"}
+2026-10-29 15:22:26.711 Db Vela[33011:177b0] [app.vela.ios:Web] reviews probe: {"tries":128,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":904,"main":true,"title":"Davis Food Co-op - Google Maps","body":4603,"url":"/maps/place/Davis+Food+Co-op"}
+2026-10-29 15:22:27.268 Db Vela[33011:177b0] [app.vela.ios:Web] reviews: answered
+2026-10-29 15:22:27.293 Db Vela[33011:177b0] [app.vela.ios:Web] reviews: view destroyed
+2026-10-29 15:22:27.602 I  Vela[33011:177b0] [app.vela.ios:PlaceLoad] reviews: more from page 5
+2026-10-29 15:23:08.462 I  Vela[37427:1a3f0] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-29 15:23:09.993 Df Vela[37427:1a60d] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-29 15:23:12.551 I  Vela[37427:1a3f0] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-29 15:23:30.664 I  Vela[37427:1a3f0] [app.vela.ios:PlaceLoad] photos: rpc 10
+2026-10-29 15:23:34.315 I  Vela[37427:1a3f0] [app.vela.ios:PlaceLoad] reviews: feed 5 (limited view)
+2026-10-29 15:23:39.065 I  Vela[37427:1a3f0] [app.vela.ios:PlaceLoad] details: plain search (no popular times)
+2026-10-29 15:23:40.510 Db Vela[37427:1a3f0] [app.vela.ios:Web] popular: view created
+2026-10-29 15:23:48.317 Db Vela[37427:1a3f0] [app.vela.ios:Web] popular: same-origin details fetch
+2026-10-29 15:23:48.780 Db Vela[37427:1a3f0] [app.vela.ios:Web] popular: injecting again after the page finished
+2026-10-29 15:23:49.132 Db Vela[37427:1a3f0] [app.vela.ios:Web] popular: replied with 48818 characters
+2026-10-29 15:23:49.409 I  Vela[37427:1a3f0] [app.vela.ios:PlaceLoad] details: page raw=48737 parsed=true times=false
+2026-10-29 15:24:53.086 I  Vela[41459:1d0c0] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-29 15:24:54.866 Df Vela[41459:1d10c] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-29 15:24:55.581 I  Vela[41459:1d0c0] [app.vela.ios:Location] location update failed: The operation couldn’t be completed. (kCLErrorDomain error 0.)
+2026-10-29 15:24:56.242 I  Vela[41459:1d0c0] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-29 15:25:51.344 I  Vela[41459:1d0c0] [app.vela.ios:Location] location update failed: The operation couldn’t be completed. (kCLErrorDomain error 0.)
