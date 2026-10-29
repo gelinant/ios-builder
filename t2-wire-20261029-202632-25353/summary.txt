@@ -1,0 +1,63 @@
+commit: 91995c4 src: 88269119 iOS T2-WIRE: publish transit lines and vehicles to the map
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610292027 (1793305637)
+java: openjdk version "17.0.21" 2026-10-20
+notices: ok, 36 entries (7 libraries, 28 data sources)
+gradle: ok in 223 s
+kotlin jvmTest: 637 tests, 0 failures
+kotlin iosSimulatorArm64Test: 529 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  88M, static library 86822544 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  57M, static library 54509208 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 2047 keys, 24 resource locales (24 with translations), 38386 localized values, 901 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+simulator: iPhone 17 (062CFAA4-9ACF-40ED-A1E2-3625F5ED4DA9) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (F6F146B6-18AA-4FE2-9F0B-AA6D02028DDA) (Shutdown) 
+simulator build: ok
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+tests: ok, Executed 188 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=18948
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=55287 rate=22050 wav_frames=55287
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: FAILED
+ui GlobeUITests.testSwitchToGlobeAndBack: failed (199.351 seconds)
+ui MapLayersUITests.testCameraConesFollowTheMap: passed (20.058 seconds)
+ui MapLayersUITests.testGoogleTrafficAndSatelliteOverSanFrancisco: passed (58.880 seconds)
+ui MapLayersUITests.testLayerSheetLoadsOverlaysAtCloseZoom: passed (28.043 seconds)
+ui MapLayersUITests.testNamesModesHouseNumbersAndExits: passed (81.243 seconds)
+ui MapLayersUITests.testOfflineCameraPackDraws: passed (32.555 seconds)
+ui MapLayersUITests.testStyleVariantsRender: passed (90.313 seconds)
+ui TransitMapUITests.testLinesAndVehiclesOnTheMap: failed (65.611 seconds)
+ui cameras_oriented=1
+ui cameras_pack_count=11
+ui cameras_pack_date=2026-07-21
+ui cameras_pack=camera-pack-2026-07-21
+ui cameras_unoriented=1
+ui globe_camera_kept=1
+ui globe_projection_back=mercator
+ui globe_projection=globe
+ui globe_zoom_clamp=1
+ui layers_alpr=2
+ui layers_controls=2
+ui layers_painted=23
+ui layers_speed=3
+ui screenshots: 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 88769 bytes
+directions reply: directions-drive-sf 120592 bytes
+directions reply: directions-walk-sf 35551 bytes
+search reply: 272273 bytes, 37 feature ids
+failed steps: ui-scenarios
