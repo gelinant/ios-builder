@@ -1,0 +1,28 @@
+tag=m2-terrain-20261029-191612-31765 src=src/m2-terrain dce9d4a src: d19039e6 M-2: separate Relief screen in MapLibre GL JS
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: dce9d4a src: d19039e6 M-2: separate Relief screen in MapLibre GL JS
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610291917 (1793301445)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (19:17:25)
+notices: ok, 37 entries (8 libraries, 28 data sources)
+
+== Kotlin: tests and the VelaCore framework (19:17:26)
+gradle: ok in 686 s
+kotlin jvmTest: 632 tests, 0 failures
+kotlin iosSimulatorArm64Test: 524 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 86791864 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  58M, static library 54473704 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (19:28:52)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 30.3M  100 30.3M    0     0  36.0M      0 --:--:-- --:--:-- --:--:-- 36.0M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (19:28:54)
+check_ios_strings: user-visible literals bypass VelaL10n: iosApp/Vela/Map/TerrainScreen.swift:19 'Relief'; iosApp/Vela/Map/TerrainScreen.swift:69 'Close terrain'; iosApp/Vela/Map/TerrainScreen.swift:72 'Relief'; iosApp/Vela/Map/TerrainScreen.swift:94 'Terrain: Mapzen terrain tiles (AWS Open Data elevation-tiles-prod). '; iosApp/Vela/Map/TerrainScreen.swift:95 '© OpenFreeMap © OpenMapTiles © OpenStreetMap contributors'; iosApp/Vela/Map/TerrainScreen.swift:111 'Terrain is unavailable'; iosApp/Vela/Map/TerrainScreen.swift:118 'Close'
