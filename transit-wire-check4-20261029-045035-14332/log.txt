@@ -1,0 +1,183 @@
+tag=transit-wire-check4-20261029-045035-14332 src=src/transit-wire-check4 ca3261e src: 8d9319f0 iOS tests: read the line sheet's own reason when it has no ribbon
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: ca3261e src: 8d9319f0 iOS tests: read the line sheet's own reason when it has no ribbon
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610290451 (1793249501)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (04:51:41)
+notices: ok, 35 entries (7 libraries, 27 data sources)
+
+== Kotlin: tests and the VelaCore framework (04:51:42)
+gradle: ok in 680 s
+kotlin jvmTest: 602 tests, 0 failures
+kotlin iosSimulatorArm64Test: 501 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  88M, static library 86537472 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  58M, static library 54226592 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (05:03:02)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0 30.3M    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 30.3M  100 30.3M    0     0  45.8M      0 --:--:-- --:--:-- --:--:-- 86.0M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (05:03:03)
+string catalog: 1444 keys, 24 resource locales (23 with translations), 24601 localized values, 186 Swift references, 24 picker languages
+
+== XcodeGen (05:03:05)
+xcodegen: Version: 2.46.0
+
+== Generate the project (05:03:06)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (05:03:06)
+  SWCompression: https://github.com/tsolomko/SWCompression @ 4.9.1
+
+resolved source packages: MapLibre Native, BitByteData, SWCompression
+(resolve: 17 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (05:03:23)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (600A45A3-B3A0-4A39-8A9C-5D051F9FDA9C) (Shutdown) 
+
+== Build for the simulator (05:03:24)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 99 s)
+simulator build: ok
+
+== Boot the simulator (05:05:03)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (05:10:06)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 104 s)
+tests: ok, Executed 188 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=18576
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=58112 rate=22050 wav_frames=58112
+
+== Launch and screenshot (05:11:51)
+app.vela.ios: 30619
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: B3E0E79D-36BD-494B-B609-06BE05CDD8DF (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (05:12:34)
+xcodebuild uitest failed after 146 s. Error lines:
+VelaUITests/VelaUITestCase.swift:79: Fatal error: Unexpectedly found nil while implicitly unwrapping an Optional value
+2026-10-29 05:13:49.911354+0000 VelaUITests-Runner[32838:92990] VelaUITests/VelaUITestCase.swift:79: Fatal error: Unexpectedly found nil while implicitly unwrapping an Optional value
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =    29.45s     Wait for app.vela.ios to idle
+    t =    29.61s Checking existence of `"transit-line-sheet" Other`
+    t =    29.86s Waiting 30.0s for "transit-board" Any to exist
+    t =    30.92s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-board" Any`
+    t =    30.92s         Checking existence of `"transit-board" Any`
+    t =    31.10s Checking existence of `"transit-board-debug" StaticText`
+    t =    31.28s Find the "transit-board-debug" StaticText
+    t =    31.45s Checking existence of `"transit-board-debug" StaticText`
+    t =    31.61s Find the "transit-board-debug" StaticText
+    t =    31.72s Checking existence of `"transit-board-debug" StaticText`
+    t =    31.84s Find the "transit-board-debug" StaticText
+UITEST wired_board_lines=2
+    t =    32.00s Waiting 10.0s for "transit-board-line" Any to exist
+    t =    33.06s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-board-line" Any`
+    t =    33.06s         Checking existence of `"transit-board-line" Any`
+    t =    33.63s Tap "transit-board-line" Any
+    t =    33.63s     Wait for app.vela.ios to idle
+    t =    33.64s     Find the "transit-board-line" Any
+    t =    34.27s     Check for interrupting elements affecting "transit-board-line" StaticText
+    t =    34.62s     Synthesize event
+    t =    34.99s     Wait for app.vela.ios to idle
+    t =    35.31s Waiting 20.0s for "transit-line-sheet" Other to exist
+    t =    36.41s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-line-sheet" Other`
+    t =    36.41s         Checking existence of `"transit-line-sheet" Other`
+    t =    36.82s Waiting 10.0s for "transit-line-badge" Any to exist
+    t =    37.88s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-line-badge" Any`
+    t =    37.88s         Checking existence of `"transit-line-badge" Any`
+    t =    38.15s Get number of matches for: Elements matching predicate '"transit-line-departure" IN identifiers'
+UITEST wired_line_departures=0
+VelaUITests/VelaUITestCase.swift:79: Fatal error: Unexpectedly found nil while implicitly unwrapping an Optional value
+2026-10-29 05:13:49.911354+0000 VelaUITests-Runner[32838:92990] VelaUITests/VelaUITestCase.swift:79: Fatal error: Unexpectedly found nil while implicitly unwrapping an Optional value
+2026-10-29 05:14:15.905641+0000 VelaUITests-Runner[35213:99502] [Default] Running tests...
+2026-10-29 05:14:15.994065+0000 VelaUITests-Runner[35213:99620] [General] Failed to send CA Event for app launch measurements for ca_event_type: 0 event_name: com.apple.app_launch_measurement.FirstFramePresentationMetric
+2026-10-29 05:14:16.094198+0000 VelaUITests-Runner[35213:99617] [General] Failed to send CA Event for app launch measurements for ca_event_type: 1 event_name: com.apple.app_launch_measurement.ExtendedLaunchMetrics
+    t =      nans Interface orientation changed to Portrait
+
+Restarting after unexpected exit, crash, or test timeout; summary will include totals from previous launches.
+
+Test Suite 'Selected tests' started at 2026-10-29 05:14:17.941.
+Test Suite 'VelaUITests.xctest' started at 2026-10-29 05:14:17.943.
+Test Suite 'TransitWiredUITests' started at 2026-10-29 05:14:17.944.
+Test Suite 'TransitWiredUITests' passed at 2026-10-29 05:14:17.944.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'VelaUITests.xctest' passed at 2026-10-29 05:14:17.945.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.002) seconds
+Test Suite 'Selected tests' passed at 2026-10-29 05:14:17.946.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.004) seconds
+2026-10-29 05:14:49.194 xcodebuild[31927:90554] [MT] IDETestOperationsObserverDebug: 118.397 elapsed -- Testing started completed.
+2026-10-29 05:14:49.195 xcodebuild[31927:90554] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-29 05:14:49.195 xcodebuild[31927:90554] [MT] IDETestOperationsObserverDebug: 118.398 sec, +118.398 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.371d82zGSU/uitest.xcresult
+
+Failing tests:
+	TransitWiredUITests.testTapTransitEverywhereAndSeeTheLine()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+scripts/ios/ci-ipa.sh: line 286: 31924 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui wired_board_lines=2
+ui wired_line_departures=0
+ui screenshots: 
+
+== Route replay (05:15:10)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: B3E0E79D-36BD-494B-B609-06BE05CDD8DF (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: B3E0E79D-36BD-494B-B609-06BE05CDD8DF (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (05:17:20)
+243371
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 63676 bytes
+directions reply: directions-drive-sf 111090 bytes
+directions reply: directions-walk-sf 37446 bytes
+search reply: 243371 bytes, 29 feature ids
+failed steps: ui-scenarios
