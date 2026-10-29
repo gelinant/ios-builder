@@ -1,0 +1,12 @@
+commit: 22cda7d src: 871ac55f iOS G-2: native globe inside the main map
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610291910 (1793301054)
+java: openjdk version "17.0.20.1" 2026-08-18
+notices: ok, 36 entries (7 libraries, 28 data sources)
+gradle: ok in 348 s
+kotlin jvmTest: 637 tests, 0 failures
+kotlin iosSimulatorArm64Test: 529 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 86822544 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  58M, static library 54509208 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
