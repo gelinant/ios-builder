@@ -1,0 +1,3 @@
+src=src/ipa-29b
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=LaunchUITests
