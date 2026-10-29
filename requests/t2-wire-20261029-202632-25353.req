@@ -1,0 +1,3 @@
+src=src/t2-wire
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=TransitMapUITests,MapLayersUITests,GlobeUITests VELA_SKIP_ARCHIVE=1
