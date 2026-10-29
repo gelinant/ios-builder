@@ -1,0 +1,114 @@
+commit: d622330 src: 9b4e66e5 iOS tests: accept the place sheet as it is after Safari closes
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610292118 (1793308723)
+java: openjdk version "17.0.20.1" 2026-08-18
+notices: ok, 37 entries (7 libraries, 29 data sources)
+gradle: ok in 625 s
+kotlin jvmTest: 645 tests, 0 failures
+kotlin iosSimulatorArm64Test: 537 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 86847456 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  58M, static library 54541048 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 2052 keys, 24 resource locales (24 with translations), 38396 localized values, 906 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (582B068E-2ACA-440E-8D01-417AEDF26981) (Shutdown) 
+simulator build: ok
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+tests: ok, Executed 188 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=18576
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=55252 rate=22050 wav_frames=55252
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: FAILED
+ui AviationLayerUITests.testAircraftAroundView: passed (94.733 seconds)
+ui EnergyRadarUITests.testCarbonAndRadar: passed (359.416 seconds)
+ui GlobeUITests.testSwitchToGlobeAndBack: failed (262.114 seconds)
+ui LaunchUITests.testLaunchShowsTheMapOverSanFrancisco: passed (23.079 seconds)
+ui LaunchUITests.testStartCameraArgumentMovesTheMapToDavis: passed (16.753 seconds)
+ui MapChromeUITests.testChromeFitsWithSheetOpen: passed (54.695 seconds)
+ui MapGestureUITests.testKeepNorthUp: passed (59.462 seconds)
+ui MapGestureUITests.testLongPressDropsPin: passed (14.028 seconds)
+ui MapGestureUITests.testRotationReturnsNorth: passed (16.214 seconds)
+ui MapGestureUITests.testStartPosition: passed (73.079 seconds)
+ui MapLayersUITests.testCameraConesFollowTheMap: passed (27.637 seconds)
+ui MapLayersUITests.testGoogleTrafficAndSatelliteOverSanFrancisco: passed (64.868 seconds)
+ui MapLayersUITests.testLayerSheetLoadsOverlaysAtCloseZoom: passed (32.153 seconds)
+ui MapLayersUITests.testNamesModesHouseNumbersAndExits: passed (105.907 seconds)
+ui MapLayersUITests.testOfflineCameraPackDraws: passed (47.691 seconds)
+ui MapLayersUITests.testStyleVariantsRender: passed (106.198 seconds)
+ui MapPoiUITests.testPoiSourceAndIconSize: passed (128.333 seconds)
+ui MapTapUITests.testTapEachKindOpensItsSheet: passed (159.059 seconds)
+ui MaritimeUITests.testShipsAndUkmtoList: passed (95.664 seconds)
+ui PlaceKnowledgeUITests.testWikidataAndWikivoyage: passed (131.483 seconds)
+ui WorldLayersUITests.testWorldLayersStartHidden: failed (35.197 seconds)
+ui aviation_count=17
+ui aviation_live=0
+ui aviation_source=fixture
+ui cameras_oriented=1
+ui cameras_pack_count=11
+ui cameras_pack_date=2026-07-21
+ui cameras_pack=camera-pack-2026-07-21
+ui cameras_unoriented=1
+ui chrome_overflow=0
+ui chrome_search_y=83.0
+ui chrome_steps_close_y=373.3
+ui dropped_pin=37.77490,-122.41940
+ui energy_source=neso
+ui gesture_bearing=302.0
+ui gesture_north=1
+ui gesture_scale=2000
+ui gesture_start_zoom=12.0
+ui globe_camera_kept=1
+ui globe_projection_back=mercator
+ui globe_projection=globe
+ui globe_zoom_clamp=1
+ui keep_north_up=1
+ui layers_alpr=2
+ui layers_controls=2
+ui layers_painted=23
+ui layers_speed=3
+ui map_3d=1
+ui map_element=yes
+ui map_pitch=45
+ui map_pitch=60
+ui map_relief=1
+ui maritime_count=3
+ui merged_chrome=1
+ui poi_pack=337
+ui poi_source=vela
+ui poi_tiles=0
+ui radar_state=fresh
+ui radar_state=key_required
+ui tap_chain=tap_seen=1
+ui tap_debug=layers
+ui tap_debug=no-layers-debug
+ui tap_kind=aircraft
+ui tap_kind=camera
+ui tap_kind=place
+ui tap_kind=saved
+ui ukmto_mode=link_only
+ui wiki_fields=3
+ui wiki_image=none
+ui wiki_rows=1
+ui wikivoyage_chars=634
+ui screenshots: launch-davis.png launch-sf.png place-wikidata.png.png place-wikivoyage.png.png 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 27; highest after refresh: 27
+place load: photos: rpc 10
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 101369 bytes
+directions reply: directions-drive-sf 132656 bytes
+directions reply: directions-walk-sf 34602 bytes
+search reply: 264296 bytes, 35 feature ids
+failed steps: ui-scenarios
