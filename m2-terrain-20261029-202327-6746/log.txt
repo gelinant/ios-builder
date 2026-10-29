@@ -1,0 +1,185 @@
+tag=m2-terrain-20261029-202327-6746 src=src/m2-terrain 1931cbf src: ee9b3e53 M-2: declare the sky as the GL JS 5 top-level object
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 1931cbf src: ee9b3e53 M-2: declare the sky as the GL JS 5 top-level object
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610292024 (1793305490)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (20:24:51)
+notices: ok, 37 entries (8 libraries, 28 data sources)
+
+== Kotlin: tests and the VelaCore framework (20:24:51)
+gradle: ok in 526 s
+kotlin jvmTest: 632 tests, 0 failures
+kotlin iosSimulatorArm64Test: 524 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  88M, static library 86791864 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  57M, static library 54473704 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (20:33:38)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 30.3M  100 30.3M    0     0  36.1M      0 --:--:-- --:--:-- --:--:-- 36.1M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (20:33:41)
+string catalog: 2047 keys, 24 resource locales (24 with translations), 38386 localized values, 902 Swift references, 24 picker languages
+
+== XcodeGen (20:33:44)
+xcodegen: Version: 2.46.0
+
+== Generate the project (20:33:45)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (20:33:45)
+  BitByteData: https://github.com/tsolomko/BitByteData @ 2.1.0
+
+resolved source packages: MapLibre Native, SWCompression, BitByteData
+(resolve: 21 s)
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+
+== Pick a simulator (20:34:06)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (600A45A3-B3A0-4A39-8A9C-5D051F9FDA9C) (Shutdown) 
+
+== Build for the simulator (20:34:09)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 133 s)
+simulator build: ok
+
+== Boot the simulator (20:36:22)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (20:40:26)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 150 s)
+tests: ok, Executed 188 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.58 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=19691
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=56899 rate=22050 wav_frames=56899
+
+== Launch and screenshot (20:42:57)
+app.vela.ios: 24979
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 2B7957F2-EA46-4844-AC86-76933C40D1D3 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (20:43:39)
+xcodebuild uitest failed after 279 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TerrainUITests.swift:20: error: -[VelaUITests.TerrainUITests testTerrainScreenRenders] : XCTAssertTrue failed - terrain never reported the web document and the DEM: terrain_doc=1 terrain_web=1 terrain_dem=0 terrain_state=unavailable terrain_offline=0 terrain_failure=terrain._AJAXError._Load_failed_(0)._vela-dem.//tile/12/2126/1458.png
+Test Case '-[VelaUITests.TerrainUITests testTerrainScreenRenders]' failed (106.267 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =    91.40s Checking existence of `"terrain-debug" StaticText`
+    t =    91.47s Find the "terrain-debug" StaticText
+    t =    92.03s Checking existence of `"terrain-debug" StaticText`
+    t =    92.08s Find the "terrain-debug" StaticText
+    t =    92.64s Checking existence of `"terrain-debug" StaticText`
+    t =    92.73s Find the "terrain-debug" StaticText
+    t =    93.31s Checking existence of `"terrain-debug" StaticText`
+    t =    93.39s Find the "terrain-debug" StaticText
+    t =    94.00s Checking existence of `"terrain-debug" StaticText`
+    t =    94.11s Find the "terrain-debug" StaticText
+    t =    94.74s Checking existence of `"terrain-debug" StaticText`
+    t =    94.82s Find the "terrain-debug" StaticText
+    t =    95.39s Checking existence of `"terrain-debug" StaticText`
+    t =    95.47s Find the "terrain-debug" StaticText
+    t =    96.05s Checking existence of `"terrain-debug" StaticText`
+    t =    96.17s Find the "terrain-debug" StaticText
+    t =    96.76s Checking existence of `"terrain-debug" StaticText`
+    t =    96.88s Find the "terrain-debug" StaticText
+    t =    97.51s Checking existence of `"terrain-debug" StaticText`
+    t =    97.68s Find the "terrain-debug" StaticText
+    t =    98.33s Checking existence of `"terrain-debug" StaticText`
+    t =    98.47s Find the "terrain-debug" StaticText
+    t =    99.15s Checking existence of `"terrain-debug" StaticText`
+    t =    99.28s Find the "terrain-debug" StaticText
+    t =    99.86s Checking existence of `"terrain-debug" StaticText`
+    t =    99.93s Find the "terrain-debug" StaticText
+    t =   100.55s Checking existence of `"terrain-debug" StaticText`
+    t =   100.67s Find the "terrain-debug" StaticText
+    t =   101.32s Checking existence of `"terrain-debug" StaticText`
+    t =   101.45s Find the "terrain-debug" StaticText
+    t =   102.12s Checking existence of `"terrain-debug" StaticText`
+    t =   102.26s Find the "terrain-debug" StaticText
+    t =   102.89s Checking existence of `"terrain-debug" StaticText`
+    t =   102.97s Find the "terrain-debug" StaticText
+    t =   103.56s Checking existence of `"terrain-debug" StaticText`
+    t =   103.81s Find the "terrain-debug" StaticText
+    t =   103.96s Checking existence of `"terrain-debug" StaticText`
+    t =   104.30s Find the "terrain-debug" StaticText
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TerrainUITests.swift:20: error: -[VelaUITests.TerrainUITests testTerrainScreenRenders] : XCTAssertTrue failed - terrain never reported the web document and the DEM: terrain_doc=1 terrain_web=1 terrain_dem=0 terrain_state=unavailable terrain_offline=0 terrain_failure=terrain._AJAXError._Load_failed_(0)._vela-dem.//tile/12/2126/1458.png
+    t =   105.91s Tear Down
+Test Case '-[VelaUITests.TerrainUITests testTerrainScreenRenders]' failed (106.267 seconds).
+Test Suite 'TerrainUITests' failed at 2026-10-29 20:47:15.769.
+	 Executed 1 test, with 1 failure (0 unexpected) in 106.267 (106.269) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-29 20:47:15.769.
+	 Executed 3 tests, with 1 failure (0 unexpected) in 164.175 (164.184) seconds
+Test Suite 'Selected tests' failed at 2026-10-29 20:47:15.769.
+	 Executed 3 tests, with 1 failure (0 unexpected) in 164.175 (164.187) seconds
+2026-10-29 20:48:11.036 xcodebuild[26538:78768] [MT] IDETestOperationsObserverDebug: 238.561 elapsed -- Testing started completed.
+2026-10-29 20:48:11.037 xcodebuild[26538:78768] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-29 20:48:11.037 xcodebuild[26538:78768] [MT] IDETestOperationsObserverDebug: 238.561 sec, +238.561 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.o5f6kzvQSf/uitest.xcresult
+
+Failing tests:
+	TerrainUITests.testTerrainScreenRenders()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui LaunchUITests.testLaunchShowsTheMapOverSanFrancisco: passed (37.907 seconds)
+ui LaunchUITests.testStartCameraArgumentMovesTheMapToDavis: passed (20.002 seconds)
+ui TerrainUITests.testTerrainScreenRenders: failed (106.267 seconds)
+scripts/ios/ci-ipa.sh: line 286: 26528 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui map_element=yes
+ui screenshots: launch-davis.png launch-sf.png 
+
+== Route replay (20:48:20)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 2B7957F2-EA46-4844-AC86-76933C40D1D3 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 2B7957F2-EA46-4844-AC86-76933C40D1D3 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (20:49:43)
+284132
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 88772 bytes
+directions reply: directions-drive-sf 116695 bytes
+directions reply: directions-walk-sf 34514 bytes
+search reply: 284132 bytes, 35 feature ids
+failed steps: ui-scenarios
