@@ -1,0 +1,54 @@
+commit: 6ef1f18 src: 50967d09 iOS tests: visit settings rows in form order and tap the switches themselves
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610290806 (1793261206)
+java: openjdk version "17.0.20.1" 2026-08-18
+notices: ok, 35 entries (7 libraries, 27 data sources)
+gradle: ok in 767 s
+kotlin jvmTest: 602 tests, 0 failures
+kotlin iosSimulatorArm64Test: 501 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  88M, static library 86537472 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  58M, static library 54226592 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 1444 keys, 24 resource locales (23 with translations), 24601 localized values, 186 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 maplibre-gl-native-distribution@6.31.0 swcompression@4.9.1
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (582B068E-2ACA-440E-8D01-417AEDF26981) (Shutdown) 
+simulator build: ok
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+tests: ok, Executed 188 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=19319
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=56559 rate=22050 wav_frames=56559
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: ok
+ui MapGestureUITests.testKeepNorthUp: passed (75.530 seconds)
+ui MapGestureUITests.testLongPressDropsPin: passed (17.063 seconds)
+ui MapGestureUITests.testRotationReturnsNorth: passed (18.321 seconds)
+ui MapGestureUITests.testStartPosition: passed (86.967 seconds)
+ui SettingsUITests.testContentAndData: passed (302.599 seconds)
+ui dropped_pin=37.77490,-122.41940
+ui gesture_bearing=290.0
+ui gesture_north=1
+ui gesture_scale=2000
+ui gesture_start_zoom=12.0
+ui keep_north_up=1
+ui settings_content=lowData=1,lowRam=1,place=tiles,reviews=1,photos=1,wifi=1,quality=low,cacheMb=50,full=0,retry=1,adult=0,ext=0,redact=1,trips=0,tripBytes=0,photoBytes=0
+ui settings_google_swipes=0
+ui screenshots: settings-content.png 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 94930 bytes
+directions reply: directions-drive-sf 124416 bytes
+directions reply: directions-walk-sf 34604 bytes
+search reply: 249458 bytes, 32 feature ids
