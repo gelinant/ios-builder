@@ -1,0 +1,3 @@
+src=src/i18n-trans
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=LocalizationUITests,TransitGoUITests VELA_SKIP_ARCHIVE=1
