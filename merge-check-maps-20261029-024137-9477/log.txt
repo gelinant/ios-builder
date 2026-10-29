@@ -1,0 +1,15 @@
+tag=merge-check-maps-20261029-024137-9477 src=src/merge-check-maps 1ca34c0 src: 9991ae4f Merge ROAD-MARKINGS: painted lanes, bike lanes and one-way arrows
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+
+== Voice framework
+
+== String catalog
+
+== XcodeGen
+xcodegen: Version: 2.46.0
+
+== Generate and build
+simulator: 2263B19F-42E8-4C8B-8AF1-D79508216C90
+simulator build: ok
+compile check green
