@@ -1,0 +1,3 @@
+src=src/bug-hunt2
+script=scripts/ios/ci-ipa.sh
+args=VELA_SKIP_ARCHIVE=1 VELA_ONLY_UI=PlaceUITests,PlaceReviewsUITests,PlaceFuelUITests,PlaceKnowledgeUITests,SavedUITests,SavedFinishingUITests,SavedImportUITests,SavedExportUITests,TripsUITests
