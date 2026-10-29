@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
-# Publishes $OUT for run.yml: small files to `results/<tag>/`, files over 50 MB to `builds/<tag>/`.
+# Publishes $OUT for run.yml: small files to `results/<tag>/`, files over 8 MB to `builds/<tag>/`.
 # `builds` is force-pushed as one fresh commit: it only ever holds the latest large artifacts.
 set -euo pipefail
 tag="$1"
 url="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 big=$(mktemp -d)
-find "$OUT" -type f -size +50M -exec mv {} "$big/" \;
+# 8 MB, not 50: a 24 MB IPA stayed on `results` for every archived run, and the branch grew to
+# several gigabytes, which filled the coordinator's disk with 10 GB clones.
+find "$OUT" -type f -size +8M -exec mv {} "$big/" \;
 
 push_dir() { # <branch> <srcdir> <single-commit?>
   local branch="$1" from="$2" single="$3"
@@ -20,6 +22,10 @@ push_dir() { # <branch> <srcdir> <single-commit?>
   if [ "$branch" = results ]; then
     # A new tag has no directory yet: `ls` failing here must not abort the publish.
     old="$(ls -1d res/"$tag"-* 2>/dev/null | head -n -6 || true)"
+    [ -z "$old" ] || rm -rf $old
+    # Keep the twelve most recent runs overall, newest first by mtime. Per-tag pruning alone let
+    # dozens of distinct lots accumulate and made every shallow clone gigabytes wide.
+    old="$(ls -1dt res/*/ 2>/dev/null | tail -n +13 || true)"
     [ -z "$old" ] || rm -rf $old
   fi
   git -C res config user.name ios-builder; git -C res config user.email ios-builder@users.noreply.github.com
