@@ -1,13 +1,13 @@
-commit: b275a4d src: 52a3af85 iOS: read the board by its scroll view in the wired transit scenario
+commit: 613b391 src: 288d212f Map tap test: force the aviation refresh and trace the world layer state
 xcode: Xcode 26.6 Build version 17F113 
-version: 0.1.202610290022 (1793233350)
+version: 0.1.202610290013 (1793232787)
 java: openjdk version "17.0.20.1" 2026-08-18
 notices: ok, 35 entries (7 libraries, 27 data sources)
-gradle: ok in 535 s
-kotlin jvmTest: 589 tests, 0 failures
-kotlin iosSimulatorArm64Test: 488 tests, 0 failures
-VelaCore.framework iosSimulatorArm64/debugFramework:  87M, static library 86103344 bytes, SKIE Swift module: yes
-VelaCore.framework iosArm64/releaseFramework:  57M, static library 53729936 bytes, SKIE Swift module: yes
+gradle: ok in 784 s
+kotlin jvmTest: 550 tests, 0 failures
+kotlin iosSimulatorArm64Test: 449 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  87M, static library 84828856 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  56M, static library 52406520 bytes, SKIE Swift module: yes
 sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
 sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
 string catalog: 1444 keys, 24 resource locales (23 with translations), 24601 localized values, 186 Swift references, 24 picker languages
@@ -18,43 +18,32 @@ compact simulators: iPhone 16e (600A45A3-B3A0-4A39-8A9C-5D051F9FDA9C) (Shutdown)
 simulator build: ok
 voice fixture:  78M in the Debug app
 asr fixture:  99M in the Debug app
-tests: ok, Executed 172 tests, with 0 failures
+tests: ok, Executed 182 tests, with 0 failures
 js transform: ok
 js while(true) killed after 0.52 s, next call ok
 signature: real calibration.json verified, tampered byte refused
-VOICE_ASR text=Never_get_to_coffee. samples=20062
+VOICE_ASR text=Never_get_to_coffee. samples=19877
 VOICE_ASR_PLAN action=route query=
-VOICE_SYNTH samples=56152 rate=22050 wav_frames=56152
+VOICE_SYNTH samples=55444 rate=22050 wav_frames=55444
 screenshot: saved 20 s after launch
 app running after 20 s: yes
 ui scenarios: FAILED
-ui TransitGoUITests.testGoModeCuesAndRail: passed (35.443 seconds)
-ui TransitLineViewUITests.testLineRibbonAndColors: passed (28.020 seconds)
-ui TransitWiredUITests.testTapTransitEverywhereAndSeeTheLine: failed (21.727 seconds)
-ui go_cue=none
-ui go_cue=stop
-ui go_estimated=0
-ui go_estimated=1
-ui go_step=done
-ui go_step=ride
-ui go_step=transfer
-ui line_color=437c93
-ui line_directions=2
-ui line_estimated=1
-ui line_fixture=1
-ui line_source=feed
-ui line_stops=20
-ui transit_go_degraded=offline=1
-ui wired_board_lines=2
+ui MapTapUITests.testTapEachKindOpensItsSheet: failed (235.709 seconds)
+ui tap_debug=layers
+ui tap_debug=no-layers-debug
+ui tap_kind=aircraft
+ui tap_kind=camera
+ui tap_kind=place
 ui screenshots: 
 route replay: sf-market at 20 m/s, route-1.png and route-2.png
 calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
 live calibration: scenario skipped by VELA_ONLY_UI
 kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
 open reply: osrm-car-sf 19982 bytes
 open reply: osrm-foot-sf 28840 bytes
 open reply: transit-plan-sf 101381 bytes
-directions reply: directions-drive-sf 117818 bytes
-directions reply: directions-walk-sf 34616 bytes
-search reply: 247085 bytes, 30 feature ids
+directions reply: directions-drive-sf 119179 bytes
+directions reply: directions-walk-sf 35558 bytes
+search reply: 246987 bytes, 31 feature ids
 failed steps: ui-scenarios
