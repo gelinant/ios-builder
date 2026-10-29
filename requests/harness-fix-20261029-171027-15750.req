@@ -1,0 +1,3 @@
+src=src/harness-fix
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=QualityUITests,SettingsUITests,SettingsAboutUITests,SettingsVoiceUITests,StreetViewUITests,SavedExportUITests,IncomingLinksUITests,TransitWiredUITests VELA_SKIP_ARCHIVE=1
