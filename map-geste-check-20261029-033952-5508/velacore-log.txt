@@ -1,0 +1,34 @@
+Timestamp               Ty Process[PID:TID]
+2026-10-29 04:05:45.757 I  Vela[41264:1b0b5] [app.vela.ios:Calibration] calibration at startup: version 1
+2026-10-29 04:05:47.417 Df Vela[41264:1b391] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-29 04:05:49.760 I  Vela[41264:1b0b5] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-29 04:06:01.704 I  Vela[41264:1b0b5] [app.vela.ios:NeuralVoice] loaded en_US-hfc_female-medium: 22050 Hz, 1 speakers
+2026-10-29 04:06:04.329 Df Vela[41264:1b574] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-29 04:06:06.578 I  Vela[41264:1b0b5] [app.vela.ios:NeuralVoice] loaded en_US-hfc_female-medium: 22050 Hz, 1 speakers
+2026-10-29 04:06:07.512 I  Vela[41264:1b0b5] [app.vela.ios:VoiceSearch] loaded whisper-tiny for en
+2026-10-29 04:06:35.859 I  Vela[43383:1c675] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-29 04:06:37.026 Df Vela[43383:1c690] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-29 04:06:38.280 I  Vela[43383:1c675] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-29 04:08:10.075 I  Vela[46811:1e951] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-29 04:08:15.932 Df Vela[46811:1eb38] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-29 04:08:20.375 I  Vela[46811:1e951] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-29 04:08:44.483 I  Vela[48063:1f5d0] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-29 04:08:45.581 Df Vela[48063:1f632] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-29 04:08:48.928 I  Vela[48063:1f5d0] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-29 04:09:01.887 I  Vela[48699:1fc38] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-29 04:09:02.899 Df Vela[48699:1fd7b] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-29 04:09:04.800 I  Vela[48699:1fc38] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-29 04:09:24.910 I  Vela[49949:20803] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-29 04:09:25.963 Df Vela[49949:208ed] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-29 04:09:27.867 I  Vela[49949:20803] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-29 04:09:46.723 I  Vela[50812:210a0] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-29 04:09:49.250 Df Vela[50812:210fd] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-29 04:09:51.464 I  Vela[50812:210a0] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-29 04:10:13.677 I  Vela[51474:217cb] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-29 04:10:15.766 Df Vela[51474:218d7] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-29 04:10:18.572 I  Vela[51474:217cb] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-29 04:11:19.510 I  Vela[54333:2388b] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-29 04:11:21.359 Df Vela[54333:238be] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-29 04:11:21.832 I  Vela[54333:2388b] [app.vela.ios:Location] location update failed: The operation couldn’t be completed. (kCLErrorDomain error 0.)
+2026-10-29 04:11:22.746 I  Vela[54333:2388b] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-29 04:12:17.541 I  Vela[54333:2388b] [app.vela.ios:Location] location update failed: The operation couldn’t be completed. (kCLErrorDomain error 0.)
