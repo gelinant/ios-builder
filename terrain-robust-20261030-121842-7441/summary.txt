@@ -1,0 +1,79 @@
+commit: 0939ed0 src: 521f075d Terrain: keep a slow start out of the unavailable state
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610301219 (1793362790)
+java: openjdk version "17.0.20.1" 2026-08-18
+notices: ok, 39 entries (8 libraries, 30 data sources)
+gradle: ok in 856 s
+kotlin jvmTest: 662 tests, 0 failures
+kotlin iosSimulatorArm64Test: 551 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87549872 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55180680 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 2128 keys, 24 resource locales (24 with translations), 38549 localized values, 1009 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (582B068E-2ACA-440E-8D01-417AEDF26981) (Shutdown) 
+simulator build: ok
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+tests: ok, Executed 189 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.54 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=18390
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=54936 rate=22050 wav_frames=54936
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: FAILED
+ui LocalizationUITests.testFrenchLabelsWithoutChangingSimulatorLanguage: passed (33.627 seconds)
+ui LocalizationUITests.testFrenchPreviouslyUnlocalizedSurfaces: failed (110.701 seconds)
+ui LocalizationUITests.testFrenchSatelliteCard: passed (122.951 seconds)
+ui LocalizationUITests.testFrenchTerrainScreen: passed (33.282 seconds)
+ui LocalizationUITests.testFrenchTransitWorldAndSearchSurfaces: passed (88.332 seconds)
+ui LocalizationUITests.testGermanSettingsLayout: passed (20.746 seconds)
+ui LocalizationUITests.testSettingsPersistAcrossRelaunch: passed (57.976 seconds)
+ui TerrainUITests.testTerrainScreenRenders: passed (44.105 seconds)
+ui l10n_de_language=Sprache
+ui l10n_de_no_google=Vela_ohne_Google_nutzen
+ui l10n_de_placeholder=Suchen
+ui l10n_de_title=Einstellungen
+ui l10n_fr_free_drive=Carte
+ui l10n_fr_go_departures=Prochains
+ui l10n_fr_language=Langue
+ui l10n_fr_line_close=Fermer
+ui l10n_fr_no_google=Utiliser_Vela_sans_Google
+ui l10n_fr_placeholder=Rechercher
+ui l10n_fr_result_count=1
+ui l10n_fr_satellite_velocity=Vitesse_7.64_km/s
+ui l10n_fr_search_everywhere=Recherchez_"coffee"_partout
+ui l10n_fr_terrain_state=ready
+ui l10n_fr_terrain_status=Relief_activé,_ciel_et_atmosphère
+ui l10n_fr_title=Paramètres
+ui l10n_fr_units=Unités
+ui l10n_fr_world_aviation=Avions,_Indisponible,_pas_encore_de_données
+ui settings_google_after=1
+ui settings_google_before=0
+ui settings_google_debug=language=system,units=imperial,clock=24,google=1,rot=week,telemetry=0,lookup=1,links=1,greq=0,gblocked=0
+ui settings_persistence=language=fr,units=imperial,clock=24,google=1,rot=week,telemetry=0,lookup=1,links=1,greq=0,gblocked=0
+ui terrain_dem=1
+ui terrain_frame=1
+ui terrain_retry=0
+ui terrain_return=1
+ui terrain_state=ready
+ui terrain_web=1
+ui terrain_webgl=1
+ui screenshots: search-results-fr.png settings-de.png settings-fr.png 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 63661 bytes
+directions reply: directions-drive-sf 138203 bytes
+directions reply: directions-walk-sf 71855 bytes
+search reply: 245881 bytes, 29 feature ids
+failed steps: ui-scenarios
