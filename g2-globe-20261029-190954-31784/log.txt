@@ -1,28 +1,0 @@
-tag=g2-globe-20261029-190954-31784 src=src/g2-globe 22cda7d src: 871ac55f iOS G-2: native globe inside the main map
-ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
-Xcode 26.6 Build version 17F113 
-commit: 22cda7d src: 871ac55f iOS G-2: native globe inside the main map
-xcode: Xcode 26.6 Build version 17F113 
-version: 0.1.202610291910 (1793301054)
-java: openjdk version "17.0.20.1" 2026-08-18
-
-== Notices (19:10:54)
-notices: ok, 36 entries (7 libraries, 28 data sources)
-
-== Kotlin: tests and the VelaCore framework (19:10:55)
-gradle: ok in 348 s
-kotlin jvmTest: 637 tests, 0 failures
-kotlin iosSimulatorArm64Test: 529 tests, 0 failures
-VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 86822544 bytes, SKIE Swift module: yes
-VelaCore.framework iosArm64/releaseFramework:  58M, static library 54509208 bytes, SKIE Swift module: yes
-
-== Neural voice runtime (19:16:44)
-sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
- 25 30.3M   25 7982k    0     0  18.7M      0  0:00:01 --:--:--  0:00:01 18.7M100 30.3M  100 30.3M    0     0  54.8M      0 --:--:-- --:--:-- --:--:--  164M
-sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
-
-== String Catalog (19:16:45)
-check_ios_strings: user-visible literals bypass VelaL10n: iosApp/Vela/Map/Layers/LayersView.swift:188 'This MapLibre build has no globe projection. The map stays in Mercator.'; iosApp/Vela/Map/Layers/LayersView.swift:200 'Globe'; iosApp/Vela/Map/Layers/LayersView.swift:202 'Native globe with the same routes, saved places, layers and offline region. The camera and its zoom, centre, bearing and pitch are kept across the switch. Zoom-out stops at z1.'

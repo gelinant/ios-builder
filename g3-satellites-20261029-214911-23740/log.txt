@@ -1,28 +1,0 @@
-tag=g3-satellites-20261029-214911-23740 src=src/g3-satellites 10bf0dc src: a74ca2cf G-3: satellites on the globe with SGP4 and CelesTrak TLEs
-ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
-Xcode 26.6 Build version 17F113 
-commit: 10bf0dc src: a74ca2cf G-3: satellites on the globe with SGP4 and CelesTrak TLEs
-xcode: Xcode 26.6 Build version 17F113 
-version: 0.1.202610292157 (1793311024)
-java: openjdk version "17.0.20.1" 2026-08-18
-
-== Notices (21:57:05)
-notices: ok, 37 entries (7 libraries, 29 data sources)
-
-== Kotlin: tests and the VelaCore framework (21:57:05)
-gradle: ok in 713 s
-kotlin jvmTest: 644 tests, 0 failures
-kotlin iosSimulatorArm64Test: 536 tests, 0 failures
-VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87208296 bytes, SKIE Swift module: yes
-VelaCore.framework iosArm64/releaseFramework:  58M, static library 54925064 bytes, SKIE Swift module: yes
-
-== Neural voice runtime (22:08:59)
-sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
- 36 30.3M   36 10.9M    0     0  22.3M      0  0:00:01 --:--:--  0:00:01 22.3M100 30.3M  100 30.3M    0     0  42.1M      0 --:--:-- --:--:-- --:--:-- 84.4M
-sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
-
-== String Catalog (22:09:01)
-check_ios_strings: user-visible literals bypass VelaL10n: iosApp/Vela/Map/Layers/SatelliteLayer.swift:436 'Altitude \\(Int(satellite.altitudeKm.rounded())) km'; iosApp/Vela/Map/Layers/SatelliteLayer.swift:439 'Velocity \\(String(format: "%.2f", satellite.speedKmS)) km/s'; iosApp/Vela/Map/Layers/SatelliteLayer.swift:442 'In the sky \\(Int(satellite.elevationDeg.rounded())) deg up, azimuth '
