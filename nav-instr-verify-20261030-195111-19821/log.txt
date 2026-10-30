@@ -1,0 +1,345 @@
+tag=nav-instr-verify-20261030-195111-19821 src=src/nav-instr-verify a8ad236 src: 61540266 Nav: publish the AX banner instruction again
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: a8ad236 src: 61540266 Nav: publish the AX banner instruction again
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610301951 (1793389914)
+java: openjdk version "17.0.21" 2026-10-20
+
+== Notices (19:51:54)
+notices: ok, 39 entries (8 libraries, 30 data sources)
+
+== Kotlin: tests and the VelaCore framework (19:51:54)
+gradle: ok in 289 s
+kotlin jvmTest: 666 tests, 0 failures
+kotlin iosSimulatorArm64Test: 555 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87573328 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55204640 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (19:56:43)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0 30.3M    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 30.3M  100 30.3M    0     0  54.2M      0 --:--:-- --:--:-- --:--:--  166M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (19:56:44)
+string catalog: 2145 keys, 24 resource locales (24 with translations), 38583 localized values, 1036 Swift references, 24 picker languages
+
+== XcodeGen (19:56:45)
+xcodegen: Version: 2.46.0
+
+== Generate the project (19:56:46)
+maplibre-globe: downloading MapLibre.dynamic.xcframework.zip (169968107 bytes) from ios-v2026.10.19-globe
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0  162M    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  162M  100  162M    0     0   119M      0  0:00:01  0:00:01 --:--:--  170M
+maplibre-globe ios-v2026.10.19-globe: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/MapLibre.xcframework (577M on disk)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (19:56:49)
+  SWCompression: https://github.com/tsolomko/SWCompression @ 4.9.1
+
+resolved source packages: BitByteData, SWCompression
+(resolve: 7 s)
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+
+== Pick a simulator (19:56:56)
+simulator: iPhone 17 (062CFAA4-9ACF-40ED-A1E2-3625F5ED4DA9) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (F6F146B6-18AA-4FE2-9F0B-AA6D02028DDA) (Shutdown) 
+
+== Build for the simulator (19:56:58)
+note: Run script build phase 'Fetch MapLibre globe' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 54 s)
+simulator build: ok
+
+== Boot the simulator (19:57:52)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (19:59:24)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 38 s)
+tests: ok, Executed 200 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=18576
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=57792 rate=22050 wav_frames=57792
+
+== Launch and screenshot (20:00:02)
+app.vela.ios: 13484
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 7D775FF1-2DB9-4CA3-8FC0-F78A1399F283 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (20:00:29)
+Parsed 8 waypoints
+Parsed 8 waypoints
+Parsed 8 waypoints
+Parsed 8 waypoints
+Parsed 8 waypoints
+Parsed 8 waypoints
+Parsed 8 waypoints
+Parsed 8 waypoints
+Parsed 8 waypoints
+xcodebuild uitest failed after 622 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/NavBannerUITests.swift:172: error: -[VelaUITests.NavBannerUITests testBannerAtAccessibilityXXXL] : XCTAssertTrue failed - navigation did not start
+Test Case '-[VelaUITests.NavBannerUITests testBannerAtAccessibilityXXXL]' failed (30.327 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =     7.48s Checking existence of `"route-debug" StaticText`
+    t =     7.54s Find the "route-debug" StaticText
+    t =     7.61s Checking existence of `"route-start" Button`
+    t =     7.68s Find the "route-start" Button
+    t =     7.73s Tap "route-start" Button
+    t =     7.73s     Wait for app.vela.ios to idle
+    t =     7.74s     Find the "route-start" Button
+    t =     7.79s     Check for interrupting elements affecting "route-start" Button
+    t =     7.83s     Synthesize event
+    t =     8.14s     Wait for app.vela.ios to idle
+    t =     8.86s Checking existence of `"nav-debug" StaticText`
+    t =     9.32s Find the "nav-debug" StaticText
+    t =     9.52s Waiting 10.0s for "nav-shield" Any to exist
+    t =    10.59s     Checking `Expect predicate `existsNoRetry == 1` for object "nav-shield" Any`
+    t =    10.59s         Checking existence of `"nav-shield" Any`
+    t =    10.73s Find the "nav-shield" Any
+    t =    10.87s Checking existence of `"nav-debug" StaticText`
+    t =    10.93s Find the "nav-debug" StaticText
+    t =    11.41s Added attachment named 'nav-banner-shield-gb'
+    t =    11.41s Find the "nav-shield" Other
+UITEST nav_banner_shield_gb=M25
+    t =    11.52s Tear Down
+    t =    11.52s     Checking existence of `"nav-end" Button`
+    t =    11.58s     Tap "nav-end" Button
+    t =    11.58s         Wait for app.vela.ios to idle
+    t =    11.58s         Find the "nav-end" Button
+    t =    11.67s         Check for interrupting elements affecting "nav-end" Button
+    t =    11.87s         Synthesize event
+    t =    12.23s         Wait for app.vela.ios to idle
+    t =    12.24s     Waiting 2.0s for "nav-end-confirm" Button to exist
+    t =    13.29s         Checking `Expect predicate `existsNoRetry == 1` for object "nav-end-confirm" Button`
+    t =    13.29s             Checking existence of `"nav-end-confirm" Button`
+    t =    13.48s     Tap "nav-end-confirm" Button
+    t =    13.48s         Wait for app.vela.ios to idle
+    t =    13.54s         Find the "nav-end-confirm" Button
+    t =    13.71s         Check for interrupting elements affecting "nav-end-confirm" Button
+    t =    13.95s         Synthesize event
+    t =    14.41s         Wait for app.vela.ios to idle
+    t =    14.59s     Checking existence of `"nav-debug" StaticText`
+    t =    14.81s     Find the "nav-debug" StaticText
+Test Case '-[VelaUITests.NavBannerUITests testUkShieldStyles]' passed (15.230 seconds).
+Test Suite 'NavBannerUITests' failed at 2026-10-30 20:10:32.437.
+	 Executed 4 tests, with 1 failure (0 unexpected) in 83.006 (83.009) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-30 20:10:32.438.
+	 Executed 8 tests, with 1 failure (0 unexpected) in 590.428 (590.437) seconds
+Test Suite 'Selected tests' failed at 2026-10-30 20:10:32.439.
+	 Executed 8 tests, with 1 failure (0 unexpected) in 590.428 (590.438) seconds
+2026-10-30 20:10:47.216 xcodebuild[14499:49739] [MT] IDETestOperationsObserverDebug: 610.282 elapsed -- Testing started completed.
+2026-10-30 20:10:47.217 xcodebuild[14499:49739] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-30 20:10:47.217 xcodebuild[14499:49739] [MT] IDETestOperationsObserverDebug: 610.282 sec, +610.282 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.kQmsZd3Ksp/uitest.xcresult
+
+Failing tests:
+	NavBannerUITests.testBannerAtAccessibilityXXXL()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui AccessibilitySuiteUITests.testNavAndFreeDriveDarkLandscape: passed (69.436 seconds)
+ui AccessibilitySuiteUITests.testSearchAtAccessibilitySizes: passed (96.791 seconds)
+ui AccessibilitySuiteUITests.testSettingsRtlAndDark: passed (141.479 seconds)
+ui AccessibilitySuiteUITests.testTransitAtAccessibilitySizes: passed (199.717 seconds)
+ui NavBannerUITests.testBannerAtAccessibilityXXXL: failed (30.327 seconds)
+ui NavBannerUITests.testFrenchShieldStyles: passed (15.138 seconds)
+ui NavBannerUITests.testLanesShieldPreviewAndPerStopEta: passed (22.310 seconds)
+ui NavBannerUITests.testUkShieldStyles: passed (15.230 seconds)
+scripts/ios/ci-ipa.sh: line 286: 14497 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui a11y_case_free_drive_ax5_dark=truncated=0
+ui a11y_case_free_drive_rtl=truncated=0
+ui a11y_case_nav_ax3=truncated=0
+ui a11y_case_nav_ax5=truncated=0
+ui a11y_case_nav_dark_rtl=truncated=0
+ui a11y_case_search_ax3=truncated=0
+ui a11y_case_search_ax5=truncated=0
+ui a11y_case_search_dark_landscape=truncated=0
+ui a11y_case_search_rtl=truncated=0
+ui a11y_case_settings_ax3=truncated=0
+ui a11y_case_settings_ax5=truncated=0
+ui a11y_case_settings_dark_landscape=truncated=0
+ui a11y_case_settings_rtl=truncated=0
+ui a11y_case_transit_board_ax3=truncated=0
+ui a11y_case_transit_board_ax5=truncated=0
+ui a11y_case_transit_board_rtl_dark=truncated=0
+ui a11y_case_transit_detail_ax5=truncated=0
+ui a11y_case_transit_detail_rtl=truncated=0
+ui a11y_case_transit_go_ax5_dark=truncated=0
+ui a11y_case_transit_go_rtl=truncated=0
+ui a11y_cases=4
+ui a11y_cases=5
+ui a11y_cases=7
+ui a11y_clipped_targets=0
+ui a11y_clipped_targets=15
+ui a11y_clipped_targets=7
+ui a11y_failures=0
+ui a11y_free_drive_ax5_dark_target_free_exit=46x46
+ui a11y_free_drive_ax5_dark_target_free_locate=46x46
+ui a11y_free_drive_ax5_dark_target_free_simple_map=46x46
+ui a11y_free_drive_ax5_dark_target_free_voice=46x46
+ui a11y_free_drive_rtl_target_free_exit=46x46
+ui a11y_free_drive_rtl_target_free_locate=46x46
+ui a11y_free_drive_rtl_target_free_simple_map=46x46
+ui a11y_free_drive_rtl_target_free_voice=46x46
+ui a11y_nav_ax3_banner_fraction=0.18
+ui a11y_nav_ax3_target_nav_banner=378x160
+ui a11y_nav_ax3_target_nav_end=48x48
+ui a11y_nav_ax3_target_nav_heading=44x48
+ui a11y_nav_ax3_target_nav_pause=44x48
+ui a11y_nav_ax3_target_nav_voice=44x48
+ui a11y_nav_ax5_banner_fraction=0.23
+ui a11y_nav_ax5_target_nav_banner=378x198
+ui a11y_nav_ax5_target_nav_end=48x48
+ui a11y_nav_ax5_target_nav_heading=44x48
+ui a11y_nav_ax5_target_nav_pause=44x48
+ui a11y_nav_ax5_target_nav_voice=44x48
+ui a11y_nav_dark_rtl_appearance=dark
+ui a11y_nav_dark_rtl_banner_fraction=0.21
+ui a11y_nav_dark_rtl_target_nav_banner=378x182
+ui a11y_nav_dark_rtl_target_nav_end=48x48
+ui a11y_nav_dark_rtl_target_nav_heading=44x48
+ui a11y_nav_dark_rtl_target_nav_pause=44x48
+ui a11y_nav_dark_rtl_target_nav_voice=44x48
+ui a11y_scope=nav_free_drive
+ui a11y_scope=search
+ui a11y_scope=settings
+ui a11y_scope=transit
+ui a11y_search_ax3_target_map_overflow=44x44
+ui a11y_search_ax3_target_result_directions=222x44
+ui a11y_search_ax3_target_result_save=137x44
+ui a11y_search_ax3_target_search_clear=44x44
+ui a11y_search_ax3_target_search_field=146x49
+ui a11y_search_ax3_target_search_panel_toggle=354x48
+ui a11y_search_ax5_target_map_overflow=44x44
+ui a11y_search_ax5_target_result_directions=286x58
+ui a11y_search_ax5_target_result_save=172x54
+ui a11y_search_ax5_target_search_clear=44x44
+ui a11y_search_ax5_target_search_field=146x65
+ui a11y_search_ax5_target_search_panel_toggle=354x63
+ui a11y_search_dark_landscape_target_map_overflow=44x44
+ui a11y_search_dark_landscape_target_result_directions=108x44
+ui a11y_search_dark_landscape_target_result_save=73x44
+ui a11y_search_dark_landscape_target_search_clear=44x44
+ui a11y_search_dark_landscape_target_search_field=494x22
+ui a11y_search_dark_landscape_target_search_panel_toggle=702x44
+ui a11y_search_rtl_placeholder=بحث
+ui a11y_search_rtl_target_map_overflow=44x44
+ui a11y_search_rtl_target_result_directions=108x44
+ui a11y_search_rtl_target_result_save=73x44
+ui a11y_search_rtl_target_search_clear=44x44
+ui a11y_search_rtl_target_search_field=146x22
+ui a11y_search_rtl_target_search_panel_toggle=354x44
+ui a11y_search_rtl_window=402x874
+ui a11y_settings_ax3_target_settings_clock=370x123
+ui a11y_settings_ax3_target_settings_done=86x44
+ui a11y_settings_ax3_target_settings_language=370x165
+ui a11y_settings_ax3_target_settings_units=370x123
+ui a11y_settings_ax5_target_settings_clock=370x212
+ui a11y_settings_ax5_target_settings_done=116x58
+ui a11y_settings_ax5_target_settings_language=370x270
+ui a11y_settings_ax5_target_settings_units=370x212
+ui a11y_settings_dark_landscape_target_settings_clock=718x74
+ui a11y_settings_dark_landscape_target_settings_done=44x44
+ui a11y_settings_dark_landscape_target_settings_language=718x74
+ui a11y_settings_dark_landscape_target_settings_units=718x74
+ui a11y_settings_open_attempts=1
+ui a11y_settings_rtl_done=trailing
+ui a11y_settings_rtl_target_settings_clock=370x74
+ui a11y_settings_rtl_target_settings_done=44x44
+ui a11y_settings_rtl_target_settings_language=370x74
+ui a11y_settings_rtl_target_settings_units=370x73
+ui a11y_small_targets=1
+ui a11y_small_targets=2
+ui a11y_small_targets=20
+ui a11y_small_targets=6
+ui a11y_transit_board_ax3_target_transit_board_close=76x36
+ui a11y_transit_board_ax3_target_transit_board_line=370x319
+ui a11y_transit_board_ax3_target_transit_board_refresh=36x36
+ui a11y_transit_board_ax5_target_transit_board_close=76x36
+ui a11y_transit_board_ax5_target_transit_board_line=370x473
+ui a11y_transit_board_ax5_target_transit_board_refresh=36x36
+ui a11y_transit_board_rtl_dark_target_transit_board_close=68x36
+ui a11y_transit_board_rtl_dark_target_transit_board_line=370x126
+ui a11y_transit_board_rtl_dark_target_transit_board_refresh=36x36
+ui a11y_transit_detail_ax5_target_steps_close=173x77
+ui a11y_transit_detail_ax5_target_transit_start=171x325
+ui a11y_transit_detail_ax5_target_transit_trip_open=98x58
+ui a11y_transit_detail_rtl_target_steps_close=68x58
+ui a11y_transit_detail_rtl_target_transit_start=114x58
+ui a11y_transit_detail_rtl_target_transit_trip_open=68x57
+ui a11y_transit_go_ax5_dark_target_transit_go_close=129x63
+ui a11y_transit_go_ax5_dark_target_transit_go_departures=181x162
+ui a11y_transit_go_ax5_dark_target_transit_go_end=181x114
+ui a11y_transit_go_ax5_dark_target_transit_go_later=181x158
+ui a11y_transit_go_ax5_dark_target_transit_go_trip=181x158
+ui a11y_transit_go_rtl_target_transit_go_close=44x44
+ui a11y_transit_go_rtl_target_transit_go_departures=86x68
+ui a11y_transit_go_rtl_target_transit_go_end=86x68
+ui a11y_transit_go_rtl_target_transit_go_later=86x68
+ui a11y_transit_go_rtl_target_transit_go_trip=86x68
+ui a11y_truncated=0
+ui nav_banner_lanes=4
+ui nav_banner_preview=2
+ui nav_banner_restored=1
+ui nav_banner_shield_fr=A7
+ui nav_banner_shield_gb=M25
+ui nav_banner_shield=US
+ui nav_banner_stop_eta=5
+ui nav_banner_stops=1
+ui nav_banner_trip=Trip
+ui screenshots: nav-banner-lanes-shield-stop.png nav-banner-live-restored.png nav-banner-preview.png nav-banner-shield-fr.png nav-banner-shield-gb.png 
+
+== Route replay (20:10:52)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 7D775FF1-2DB9-4CA3-8FC0-F78A1399F283 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 7D775FF1-2DB9-4CA3-8FC0-F78A1399F283 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (20:12:25)
+248695
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 88804 bytes
+directions reply: directions-drive-sf 114648 bytes
+directions reply: directions-walk-sf 35541 bytes
+search reply: 248695 bytes, 31 feature ids
+failed steps: ui-scenarios
