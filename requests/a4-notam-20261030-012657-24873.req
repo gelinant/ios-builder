@@ -1,0 +1,3 @@
+src=src/a4-notam
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=NotamUITests VELA_SKIP_ARCHIVE=1
