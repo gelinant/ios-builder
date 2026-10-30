@@ -1,0 +1,244 @@
+import SwiftUI
+
+/// The one-line entry the map chrome adds: `TerrainButton()`. It owns its presentation, so the
+/// map screen only places the button and never holds terrain state.
+struct TerrainButton: View {
+    @State private var showsTerrain = false
+
+    var body: some View {
+        Button {
+            showsTerrain = true
+        } label: {
+            Image(systemName: "mountain.2")
+                .font(.system(size: 18, weight: .medium))
+                .foregroundStyle(.white)
+                .frame(width: Design.Chrome.actionSize, height: Design.Chrome.actionSize)
+                .background(.black.opacity(0.55), in: Circle())
+        }
+        .accessibilityIdentifier("terrain-open")
+        .accessibilityLabel(VelaL10n.text("map_layers_terrain"))
+        .fullScreenCover(isPresented: $showsTerrain) {
+            TerrainScreen()
+        }
+    }
+}
+
+/// M-2: the separate Relief screen. It hosts one WKWebView running the bundled MapLibre GL JS
+/// with terrain, a sky and distance fog. It is read-only and owns no camera link with the native
+/// map: opening it never moves the map behind it, and closing it destroys the page.
+///
+/// The state machine separates a slow start from a failure:
+/// - `loading`: the document, the renderer or the first elevation tiles are still on their way.
+///   A late frame or a failed tile stays here, because MapLibre retries tiles on its own.
+/// - `ready`: the DEM source delivered tiles and the terrain is drawing.
+/// - `offline`: the page reported no network. It has its own message, never "unavailable".
+/// - `unavailable`: WebGL could not start or the bundled document failed. A WebGL failure gets
+///   one retry in a fresh WKWebView before the message is shown.
+struct TerrainScreen: View {
+    @Environment(\.dismiss) private var dismiss
+    @State private var documentLoaded = false
+    @State private var webLoaded = false
+    @State private var webGLStarted = false
+    @State private var frameDrawn = false
+    @State private var demReady = false
+    @State private var offline = false
+    @State private var lastFailure = ""
+    @State private var unavailableReason: String?
+    @State private var retries = 0
+    /// Changing the identity tears the failed WKWebView down and builds a fresh one.
+    @State private var attempt = 0
+
+    /// The dark surround of the screen, including the area behind the sky.
+    private static let surround = Color(red: 8 / 255, green: 11 / 255, blue: 14 / 255)
+
+    var body: some View {
+        ZStack(alignment: .top) {
+            Self.surround.ignoresSafeArea()
+
+            if offline {
+                offlineView
+            } else if let reason = unavailableReason {
+                unavailable(reason)
+            } else {
+                TerrainWebView(onEvent: handle)
+                    .id(attempt)
+                    .ignoresSafeArea()
+            }
+
+            chrome
+        }
+        .background(Self.surround.ignoresSafeArea())
+        .preferredColorScheme(.dark)
+    }
+
+    private var chrome: some View {
+        VStack(spacing: 0) {
+            HStack(spacing: 12) {
+                Button {
+                    dismiss()
+                } label: {
+                    Image(systemName: "xmark")
+                        .font(.system(size: 15, weight: .semibold))
+                        .foregroundStyle(.white)
+                        .frame(width: 44, height: 44)
+                        .background(.black.opacity(0.55), in: Circle())
+                }
+                .accessibilityIdentifier("terrain-close")
+                .accessibilityLabel(VelaL10n.text("place_close"))
+
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(VelaL10n.text("map_layers_terrain"))
+                        .font(.headline)
+                        .foregroundStyle(.white)
+                    Text(statusLine)
+                        .font(.caption)
+                        .foregroundStyle(.white.opacity(0.72))
+                        .lineLimit(2)
+                        .accessibilityIdentifier("terrain-status")
+                }
+                Spacer(minLength: 0)
+            }
+            .padding(.horizontal, 16)
+            .padding(.top, 8)
+
+            Spacer(minLength: 0)
+
+            VStack(alignment: .leading, spacing: 4) {
+                #if DEBUG
+                Text(debugLine)
+                    .font(.system(size: 9, design: .monospaced))
+                    .foregroundStyle(.white.opacity(0.55))
+                    .accessibilityIdentifier("terrain-debug")
+                #endif
+                Text(VelaL10n.text("map_terrain_attribution"))
+                    .font(.system(size: 10))
+                    .foregroundStyle(.white.opacity(0.82))
+                    .accessibilityIdentifier("terrain-attribution")
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(8)
+            .background(.black.opacity(0.45),
+                        in: RoundedRectangle(cornerRadius: 8, style: .continuous))
+            .padding(.horizontal, 12)
+            .padding(.bottom, 12)
+        }
+    }
+
+    /// Offline is not a broken renderer: the screen names the network instead of showing the
+    /// generic unavailable title.
+    private var offlineView: some View {
+        messageView(title: VelaL10n.text("map_terrain_reason_offline"), body: nil)
+    }
+
+    private func unavailable(_ reason: String) -> some View {
+        messageView(title: VelaL10n.text("map_terrain_unavailable_title"),
+                    body: reasonText(reason))
+    }
+
+    private func messageView(title: String, body: String?) -> some View {
+        VStack(spacing: 12) {
+            Image(systemName: "mountain.2")
+                .font(.system(size: 40, weight: .light))
+                .foregroundStyle(.white.opacity(0.7))
+            Text(title)
+                .font(.title3.weight(.semibold))
+                .foregroundStyle(.white)
+                .multilineTextAlignment(.center)
+            if let body {
+                Text(body)
+                    .font(.subheadline)
+                    .foregroundStyle(.white.opacity(0.72))
+                    .multilineTextAlignment(.center)
+            }
+            Button(VelaL10n.text("place_close")) { dismiss() }
+                .buttonStyle(.borderedProminent)
+                .tint(Design.Colors.accentFill)
+                .padding(.top, 4)
+                .accessibilityIdentifier("terrain-unavailable-close")
+        }
+        .padding(32)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Self.surround)
+    }
+
+    private func reasonText(_ reason: String) -> String {
+        switch reason {
+        case "missing-resource":
+            return VelaL10n.text("map_terrain_reason_missing_resource")
+        case "webgl":
+            return VelaL10n.text("map_terrain_reason_webgl")
+        case "load":
+            return VelaL10n.text("map_terrain_reason_load")
+        default:
+            return VelaL10n.text("map_terrain_reason_unreachable")
+        }
+    }
+
+    private var statusLine: String {
+        if offline { return VelaL10n.text("map_terrain_reason_offline") }
+        if unavailableReason != nil { return VelaL10n.text("world_state_unavailable") }
+        if demReady { return VelaL10n.text("map_terrain_status_ready") }
+        if webLoaded { return VelaL10n.text("map_terrain_status_loading_elevation") }
+        return VelaL10n.text("map_terrain_status_loading")
+    }
+
+    private var debugLine: String {
+        let state: String
+        if offline {
+            state = "offline"
+        } else if unavailableReason != nil {
+            state = "unavailable"
+        } else if demReady {
+            state = "ready"
+        } else {
+            state = "loading"
+        }
+        return "terrain_doc=\(documentLoaded ? 1 : 0) terrain_web=\(webLoaded ? 1 : 0) "
+            + "terrain_webgl=\(webGLStarted ? 1 : 0) "
+            + "terrain_dem=\(demReady ? 1 : 0) "
+            + "terrain_frame=\(frameDrawn ? 1 : 0) "
+            + "terrain_state=\(state) terrain_retry=\(retries) "
+            + "terrain_offline=\(offline ? 1 : 0) "
+            + "terrain_failure=\(lastFailure)"
+    }
+
+    private func handle(_ event: TerrainScreenEvent) {
+        switch event {
+        case .document:
+            documentLoaded = true
+        case .loaded:
+            webLoaded = true
+        case .webgl(let started):
+            webGLStarted = started
+        case .frame:
+            frameDrawn = true
+        case .dem:
+            webLoaded = true
+            demReady = true
+        case .offline:
+            offline = true
+        case .failure(let message):
+            // Keep the diagnostic line short; the last failure is enough to tell a style error
+            // from a tile error in the UI scenario.
+            let cleaned = message
+                .replacingOccurrences(of: " ", with: "_")
+                .replacingOccurrences(of: ":", with: ".")
+            lastFailure = String(cleaned.prefix(100))
+        case .unavailable(let reason):
+            // A loaded simulator occasionally refuses the first WebGL context. One retry in a
+            // fresh WKWebView turns that into a slow start instead of a false failure.
+            if reason == "webgl", retries == 0 {
+                retries = 1
+                documentLoaded = false
+                webLoaded = false
+                webGLStarted = false
+                frameDrawn = false
+                demReady = false
+                lastFailure = ""
+                attempt += 1
+                return
+            }
+            unavailableReason = reason
+        }
+    }
+}
