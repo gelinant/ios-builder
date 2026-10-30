@@ -1,0 +1,103 @@
+commit: 40955df src: 23e05165 iOS tests: Arabic settings title and the 44 pt float tolerance
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610300607 (1793340429)
+java: openjdk version "17.0.20.1" 2026-08-18
+notices: ok, 39 entries (8 libraries, 30 data sources)
+gradle: ok in 719 s
+kotlin jvmTest: 655 tests, 0 failures
+kotlin iosSimulatorArm64Test: 544 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  88M, static library 87314912 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  58M, static library 55047192 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 2102 keys, 24 resource locales (24 with translations), 38497 localized values, 982 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (582B068E-2ACA-440E-8D01-417AEDF26981) (Shutdown) 
+simulator build: ok
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+tests: ok, Executed 188 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.55 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Navigate_to_coffee samples=19505
+VOICE_ASR_PLAN action=navigate query=coffee
+VOICE_SYNTH samples=56589 rate=22050 wav_frames=56589
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: FAILED
+ui PlaceReviewsUITests.testGalleryViewerSwipesWithCaptionAndSource: passed (77.613 seconds)
+ui PlaceReviewsUITests.testMoreReviewsAppendsAPage: passed (99.659 seconds)
+ui PlaceReviewsUITests.testReviewsHistogramAndControls: failed (221.327 seconds)
+ui PlaceReviewsUITests.testSwipeKeepsThePanelResponsive: failed (79.575 seconds)
+ui PlaceUITests.testCompleteFixturePlace: passed (144.208 seconds)
+ui PlaceUITests.testDetailsHoursTabsActionsAndRelated: passed (80.988 seconds)
+ui gallery_categories=0
+ui gallery_menu_fallback=1
+ui gallery_photos=10
+ui gallery_viewer_page=2/10
+ui place_about=1
+ui place_action_link=1
+ui place_action_primary=directions
+ui place_avatars_loaded=5
+ui place_avatars_nonblack=5
+ui place_call=1
+ui place_gallery_categories=0
+ui place_gallery_count=2
+ui place_gallery_page=2/2
+ui place_gallery_paging=rpc
+ui place_gallery_walk=not-run-on-ci
+ui place_header=photo
+ui place_hours_expanded=1
+ui place_hours=0
+ui place_menu_photos=google-omitted
+ui place_open=1
+ui place_phone=1
+ui place_photos_tab=10
+ui place_popular_fallback=details
+ui place_popular_hours=0
+ui place_related=0
+ui place_reviews_from=page
+ui place_reviews_initial=5
+ui place_reviews_paging=limited
+ui place_reviews=5
+ui place_tabs_present=overview,reviews,about,photos
+ui place_tabs=underlined
+ui place_updates=google-omitted
+ui place_viewer_state=1
+ui place_website=1
+ui reviews_after_more=7
+ui reviews_initial=5
+ui reviews_paging=added-2
+ui screenshots: place-actions.png place-after-gallery.png place-after-photo-tap.png place-avatars.png place-gallery-grid.png place-gallery.png place-hours-expanded.png place-photos.png place-related-empty.png place-reviews-full.png place-reviews.png place-tab-about.png place-tab-photos.png place-tab-reviews.png place-tabs.png place-top.png 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: reviews: page asked for 0x80852900710382f1:0x347fcc169a4ad82f
+place load: reviews: view created
+place load: reviews: injecting again after the page finished
+place load: reviews: given up
+place load: reviews: view destroyed
+place load: reviews: more from page 5
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: reviews: page asked for 0x8085299fd6f41a23:0x10d37b4cae550f0
+web: reviews: page asked for 0x80852900710382f1:0x347fcc169a4ad82f
+web: reviews: injecting again after the page finished
+web: reviews: given up
+web: reviews: page asked for 0x8085299fd6f41a23:0x10d37b4cae550f0
+web: reviews: page asked for 0x809ad003705044bb:0x58e1d0fd630e026f
+web: reviews: answered
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 93418 bytes
+directions reply: directions-drive-sf 120567 bytes
+directions reply: directions-walk-sf 44616 bytes
+search reply: 255617 bytes, 34 feature ids
+failed steps: ui-scenarios
