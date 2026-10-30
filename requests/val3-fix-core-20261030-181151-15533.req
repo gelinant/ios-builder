@@ -1,0 +1,3 @@
+src=src/val3-fix-core
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=OfflineAreaUITests,SearchCommandUITests,WorldLayersUITests,EnergyRadarUITests,OfflineUITests,NotamUITests,SatelliteUITests VELA_SKIP_ARCHIVE=1
