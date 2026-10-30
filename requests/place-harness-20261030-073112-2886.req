@@ -1,0 +1,3 @@
+src=src/place-harness
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=PlaceReviewsUITests,PlaceUITests VELA_SKIP_ARCHIVE=1
