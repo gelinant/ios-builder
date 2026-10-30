@@ -1,0 +1,144 @@
+commit: 7ae4c35 src: 2ac45324 A11Y-W4: sweep AX3, AX5, RTL and dark layouts
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610300309 (1793329778)
+java: openjdk version "17.0.20.1" 2026-08-18
+notices: ok, 39 entries (8 libraries, 30 data sources)
+gradle: ok in 706 s
+kotlin jvmTest: 654 tests, 0 failures
+kotlin iosSimulatorArm64Test: 544 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  88M, static library 87241032 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  58M, static library 54965472 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 2052 keys, 24 resource locales (24 with translations), 38396 localized values, 915 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (582B068E-2ACA-440E-8D01-417AEDF26981) (Shutdown) 
+simulator build: ok
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+tests: ok, Executed 188 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.54 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=navigate_to_coffee samples=19505
+VOICE_ASR_PLAN action=navigate query=coffee
+VOICE_SYNTH samples=56707 rate=22050 wav_frames=56707
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: FAILED
+ui AccessibilitySuiteUITests.testAccessibilitySweepMatrix: failed (5273.961 seconds)
+ui LocalizationUITests.testFrenchLabelsWithoutChangingSimulatorLanguage: passed (31.364 seconds)
+ui LocalizationUITests.testFrenchTransitWorldAndSearchSurfaces: failed (76.499 seconds)
+ui LocalizationUITests.testGermanSettingsLayout: passed (15.633 seconds)
+ui LocalizationUITests.testSettingsPersistAcrossRelaunch: passed (48.174 seconds)
+ui a11y_case_free_drive_ax5_dark=truncated=0
+ui a11y_case_free_drive_rtl=truncated=0
+ui a11y_case_search_ax3=truncated=0
+ui a11y_case_search_ax5=truncated=0
+ui a11y_case_search_dark_landscape=truncated=0
+ui a11y_case_search_rtl=truncated=0
+ui a11y_case_transit_board_ax3=truncated=0
+ui a11y_case_transit_board_ax5=truncated=0
+ui a11y_case_transit_board_rtl_dark=truncated=0
+ui a11y_case_transit_detail_rtl=truncated=0
+ui a11y_case_transit_go_ax5_dark=truncated=0
+ui a11y_case_transit_go_rtl=truncated=0
+ui a11y_cases=12
+ui a11y_clipped_targets=59
+ui a11y_failures=33
+ui a11y_free_drive_ax5_dark_target_free_exit=46x46
+ui a11y_free_drive_ax5_dark_target_free_locate=46x46
+ui a11y_free_drive_ax5_dark_target_free_simple_map=46x46
+ui a11y_free_drive_ax5_dark_target_free_voice=46x46
+ui a11y_free_drive_rtl_target_free_exit=46x46
+ui a11y_free_drive_rtl_target_free_locate=46x46
+ui a11y_free_drive_rtl_target_free_simple_map=46x46
+ui a11y_free_drive_rtl_target_free_voice=46x46
+ui a11y_search_ax3_target_map_overflow=44x43
+ui a11y_search_ax3_target_result_directions=222x44
+ui a11y_search_ax3_target_result_save=137x44
+ui a11y_search_ax3_target_search_clear=44x43
+ui a11y_search_ax3_target_search_field=146x49
+ui a11y_search_ax3_target_search_panel_toggle=354x48
+ui a11y_search_ax5_target_map_overflow=44x43
+ui a11y_search_ax5_target_result_directions=286x58
+ui a11y_search_ax5_target_result_save=172x54
+ui a11y_search_ax5_target_search_clear=44x43
+ui a11y_search_ax5_target_search_field=146x65
+ui a11y_search_ax5_target_search_panel_toggle=354x63
+ui a11y_search_dark_landscape_target_map_overflow=44x44
+ui a11y_search_dark_landscape_target_result_directions=108x44
+ui a11y_search_dark_landscape_target_result_save=73x44
+ui a11y_search_dark_landscape_target_search_clear=44x44
+ui a11y_search_dark_landscape_target_search_field=494x22
+ui a11y_search_dark_landscape_target_search_panel_toggle=702x44
+ui a11y_search_rtl_placeholder=Search
+ui a11y_search_rtl_target_map_overflow=44x44
+ui a11y_search_rtl_target_result_directions=108x44
+ui a11y_search_rtl_target_result_save=73x44
+ui a11y_search_rtl_target_search_clear=44x44
+ui a11y_search_rtl_target_search_field=146x22
+ui a11y_search_rtl_target_search_panel_toggle=354x44
+ui a11y_search_rtl_window=402x874
+ui a11y_small_targets=52
+ui a11y_transit_board_ax3_target_transit_board_close=76x36
+ui a11y_transit_board_ax3_target_transit_board_departure=249x96
+ui a11y_transit_board_ax3_target_transit_board_line=718x320
+ui a11y_transit_board_ax3_target_transit_board_refresh=36x36
+ui a11y_transit_board_ax3_target_transit_board_station=272x52
+ui a11y_transit_board_ax5_target_transit_board_close=76x36
+ui a11y_transit_board_ax5_target_transit_board_departure=328x126
+ui a11y_transit_board_ax5_target_transit_board_line=718x408
+ui a11y_transit_board_ax5_target_transit_board_refresh=36x36
+ui a11y_transit_board_ax5_target_transit_board_station=344x67
+ui a11y_transit_board_rtl_dark_target_transit_board_close=67x36
+ui a11y_transit_board_rtl_dark_target_transit_board_departure=694x24
+ui a11y_transit_board_rtl_dark_target_transit_board_line=718x126
+ui a11y_transit_board_rtl_dark_target_transit_board_refresh=36x36
+ui a11y_transit_board_rtl_dark_target_transit_board_station=138x26
+ui a11y_transit_detail_rtl_target_steps_close=67x34
+ui a11y_transit_detail_rtl_target_transit_start=307x36
+ui a11y_transit_detail_rtl_target_transit_trip_open=52x34
+ui a11y_transit_go_ax5_dark_target_transit_go_action=591x143
+ui a11y_transit_go_ax5_dark_target_transit_go_close=76x36
+ui a11y_transit_go_ax5_dark_target_transit_go_departures=355x114
+ui a11y_transit_go_ax5_dark_target_transit_go_end=355x114
+ui a11y_transit_go_ax5_dark_target_transit_go_later=355x110
+ui a11y_transit_go_ax5_dark_target_transit_go_trip=355x110
+ui a11y_transit_go_rtl_target_transit_go_action=547x40
+ui a11y_transit_go_rtl_target_transit_go_close=67x36
+ui a11y_transit_go_rtl_target_transit_go_departures=173x68
+ui a11y_transit_go_rtl_target_transit_go_end=173x68
+ui a11y_transit_go_rtl_target_transit_go_later=173x68
+ui a11y_transit_go_rtl_target_transit_go_trip=173x68
+ui a11y_truncated=0
+ui l10n_de_language=Sprache
+ui l10n_de_no_google=Vela_ohne_Google_nutzen
+ui l10n_de_placeholder=Suchen
+ui l10n_de_title=Einstellungen
+ui l10n_fr_go_departures=Prochains
+ui l10n_fr_language=Langue
+ui l10n_fr_line_close=Fermer
+ui l10n_fr_no_google=Utiliser_Vela_sans_Google
+ui l10n_fr_placeholder=Rechercher
+ui l10n_fr_title=Paramètres
+ui l10n_fr_units=Unités
+ui l10n_fr_world_aviation=Avions,_Indisponible,_pas_encore_de_données
+ui settings_google_after=1
+ui settings_google_before=0
+ui settings_google_debug=language=system,units=imperial,clock=24,google=1,rot=week,telemetry=0,lookup=1,links=1,greq=0,gblocked=0
+ui settings_persistence=language=fr,units=imperial,clock=24,google=1,rot=week,telemetry=0,lookup=1,links=1,greq=0,gblocked=0
+ui screenshots: settings-de.png settings-fr.png 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 27; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 76230 bytes
+directions reply: directions-drive-sf 112077 bytes
+directions reply: directions-walk-sf 46550 bytes
+search reply: 244579 bytes, 29 feature ids
+failed steps: ui-scenarios
