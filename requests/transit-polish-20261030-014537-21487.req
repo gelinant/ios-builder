@@ -1,0 +1,3 @@
+src=src/transit-polish
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=TransitPolishUITests,TransitCitymapperUITests,TransitGoUITests VELA_SKIP_ARCHIVE=1
