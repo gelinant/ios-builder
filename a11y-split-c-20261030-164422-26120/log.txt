@@ -1,0 +1,312 @@
+tag=a11y-split-c-20261030-164422-26120 src=src/a11y-split-c afad712 src: be1d8420 A11Y-SPLIT: handle the throwing hierarchy snapshot
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: afad712 src: be1d8420 A11Y-SPLIT: handle the throwing hierarchy snapshot
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610301645 (1793378726)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (16:45:26)
+notices: ok, 39 entries (8 libraries, 30 data sources)
+
+== Kotlin: tests and the VelaCore framework (16:45:27)
+gradle: ok in 792 s
+kotlin jvmTest: 662 tests, 0 failures
+kotlin iosSimulatorArm64Test: 551 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87549872 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55180680 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (16:58:39)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 30.3M  100 30.3M    0     0  47.7M      0 --:--:-- --:--:-- --:--:-- 47.7M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (16:58:41)
+string catalog: 2128 keys, 24 resource locales (24 with translations), 38549 localized values, 1009 Swift references, 24 picker languages
+
+== XcodeGen (16:58:44)
+xcodegen: Version: 2.46.0
+
+== Generate the project (16:58:44)
+maplibre-globe: downloading MapLibre.dynamic.xcframework.zip (169968107 bytes) from ios-v2026.10.19-globe
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 12  162M   12 20.0M    0     0  42.1M      0  0:00:03 --:--:--  0:00:03 42.1M 73  162M   73  118M    0     0  80.3M      0  0:00:02  0:00:01  0:00:01 98.4M100  162M  100  162M    0     0  84.8M      0  0:00:01  0:00:01 --:--:-- 99.0M
+maplibre-globe ios-v2026.10.19-globe: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/MapLibre.xcframework (582M on disk)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (16:58:49)
+  BitByteData: https://github.com/tsolomko/BitByteData @ 2.1.0
+
+resolved source packages: SWCompression, BitByteData
+(resolve: 24 s)
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+
+== Pick a simulator (16:59:13)
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (582B068E-2ACA-440E-8D01-417AEDF26981) (Shutdown) 
+
+== Build for the simulator (16:59:14)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 155 s)
+simulator build: ok
+
+== Boot the simulator (17:01:49)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (17:05:09)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 103 s)
+tests: ok, Executed 189 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.51 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=18948
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=59392 rate=22050 wav_frames=59392
+
+== Launch and screenshot (17:06:53)
+app.vela.ios: 35006
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 02FC5CA6-9338-4C4F-BB4E-4D17CF320281 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (17:07:38)
+Parsed 8 waypoints
+Parsed 8 waypoints
+Parsed 8 waypoints
+xcodebuild uitest failed after 770 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/AccessibilitySuiteUITests.swift:112: error: -[VelaUITests.AccessibilitySuiteUITests testNavAndFreeDriveDarkLandscape] : XCTAssertGreaterThanOrEqual failed: ("3") is less than ("5") - nav_free_drive: the sweep did not reach every case
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/AccessibilitySuiteUITests.swift:114: error: -[VelaUITests.AccessibilitySuiteUITests testNavAndFreeDriveDarkLandscape] : XCTAssertTrue failed - nav: the Start button is not reachable on the runner | nav_ax3: the nav banner did not open | nav: the Start button is not reachable on the runner | nav_ax5: the nav banner did not open | nav_dark_rtl: required target nav-heading is 40x48
+Test Case '-[VelaUITests.AccessibilitySuiteUITests testNavAndFreeDriveDarkLandscape]' failed (215.746 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/AccessibilitySuiteUITests.swift:112: error: -[VelaUITests.AccessibilitySuiteUITests testSettingsRtlAndDark] : XCTAssertGreaterThanOrEqual failed: ("3") is less than ("4") - settings: the sweep did not reach every case
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/AccessibilitySuiteUITests.swift:114: error: -[VelaUITests.AccessibilitySuiteUITests testSettingsRtlAndDark] : XCTAssertTrue failed - settings_dark_landscape: the settings screen did not open
+Test Case '-[VelaUITests.AccessibilitySuiteUITests testSettingsRtlAndDark]' failed (120.037 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/AccessibilitySuiteUITests.swift:112: error: -[VelaUITests.AccessibilitySuiteUITests testTransitAtAccessibilitySizes] : XCTAssertGreaterThanOrEqual failed: ("6") is less than ("7") - transit: the sweep did not reach every case
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/AccessibilitySuiteUITests.swift:114: error: -[VelaUITests.AccessibilitySuiteUITests testTransitAtAccessibilitySizes] : XCTAssertTrue failed - transit_detail_ax5: the detail entry is not reachable on the card | transit_detail_rtl: required target steps-close is 67x34 | transit_detail_rtl: required target transit-trip-open is 53x34 | transit_detail_rtl: required target transit-start is 114x36
+Test Case '-[VelaUITests.AccessibilitySuiteUITests testTransitAtAccessibilitySizes]' failed (225.980 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =   224.41s Find the Window (First Match)
+    t =   224.43s Find the Target Application 'app.vela.ios'
+A11Y_CLIPPED case=transit_go_rtl text=transit-go-debug frame=(16.0, 851.9999999999999, 370.0, 39.33333333333337)
+A11Y_SMALL case=transit_go_rtl id=transit-go-close size=68x36 label=إغلاق توجيه GO
+A11Y_SMALL case=transit_go_rtl id=transit-go-line size=90x18 label=أظهر الخط ⁨M2⁩ باتجاه ⁨Nation⁩
+A11Y_SMALL case=transit_go_rtl id=transit-go-close size=68x36 label=إغلاق توجيه GO
+A11Y_SMALL case=transit_go_rtl id=transit-go-close size=68x36 label=إغلاق توجيه GO
+    t =   224.50s Checking existence of `"transit-go-close" Any`
+    t =   224.54s Find the "transit-go-close" Any
+UITEST a11y_transit_go_rtl_target_transit_go_close=68x36
+    t =   224.57s Checking existence of `"transit-go-departures" Any`
+    t =   224.62s Find the "transit-go-departures" Any
+UITEST a11y_transit_go_rtl_target_transit_go_departures=86x68
+    t =   224.66s Checking existence of `"transit-go-later" Any`
+    t =   224.71s Find the "transit-go-later" Any
+UITEST a11y_transit_go_rtl_target_transit_go_later=86x68
+    t =   224.77s Checking existence of `"transit-go-trip" Any`
+    t =   224.83s Find the "transit-go-trip" Any
+UITEST a11y_transit_go_rtl_target_transit_go_trip=86x68
+    t =   224.89s Checking existence of `"transit-go-end" Any`
+    t =   224.95s Find the "transit-go-end" Any
+UITEST a11y_transit_go_rtl_target_transit_go_end=86x68
+    t =   225.02s Checking existence of `"transit-go-time-status" Any`
+    t =   225.11s Find the "transit-go-time-status" Any
+UITEST a11y_case_transit_go_rtl=truncated=0 small=4 clipped=1 contrast=not-measured-xcuitest color_only=0
+UITEST a11y_truncated=0
+UITEST a11y_small_targets=33
+UITEST a11y_clipped_targets=5
+UITEST a11y_cases=6
+UITEST a11y_failures=4
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/AccessibilitySuiteUITests.swift:112: error: -[VelaUITests.AccessibilitySuiteUITests testTransitAtAccessibilitySizes] : XCTAssertGreaterThanOrEqual failed: ("6") is less than ("7") - transit: the sweep did not reach every case
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/AccessibilitySuiteUITests.swift:114: error: -[VelaUITests.AccessibilitySuiteUITests testTransitAtAccessibilitySizes] : XCTAssertTrue failed - transit_detail_ax5: the detail entry is not reachable on the card | transit_detail_rtl: required target steps-close is 67x34 | transit_detail_rtl: required target transit-trip-open is 53x34 | transit_detail_rtl: required target transit-start is 114x36
+    t =   225.24s Tear Down
+    t =   225.24s     Setting device orientation to Portrait
+    t =   225.28s         Wait for app.vela.ios to idle
+Test Case '-[VelaUITests.AccessibilitySuiteUITests testTransitAtAccessibilitySizes]' failed (225.980 seconds).
+Test Suite 'AccessibilitySuiteUITests' failed at 2026-10-30 17:20:02.305.
+	 Executed 4 tests, with 6 failures (0 unexpected) in 694.977 (694.989) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-30 17:20:02.306.
+	 Executed 4 tests, with 6 failures (0 unexpected) in 694.977 (694.990) seconds
+Test Suite 'Selected tests' failed at 2026-10-30 17:20:02.306.
+	 Executed 4 tests, with 6 failures (0 unexpected) in 694.977 (694.991) seconds
+2026-10-30 17:20:24.672 xcodebuild[36355:101183] [MT] IDETestOperationsObserverDebug: 748.611 elapsed -- Testing started completed.
+2026-10-30 17:20:24.673 xcodebuild[36355:101183] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-30 17:20:24.673 xcodebuild[36355:101183] [MT] IDETestOperationsObserverDebug: 748.611 sec, +748.611 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.EyiNyuBnXx/uitest.xcresult
+
+Failing tests:
+	AccessibilitySuiteUITests.testNavAndFreeDriveDarkLandscape()
+	AccessibilitySuiteUITests.testNavAndFreeDriveDarkLandscape()
+	AccessibilitySuiteUITests.testSettingsRtlAndDark()
+	AccessibilitySuiteUITests.testSettingsRtlAndDark()
+	AccessibilitySuiteUITests.testTransitAtAccessibilitySizes()
+	AccessibilitySuiteUITests.testTransitAtAccessibilitySizes()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui AccessibilitySuiteUITests.testNavAndFreeDriveDarkLandscape: failed (215.746 seconds)
+ui AccessibilitySuiteUITests.testSearchAtAccessibilitySizes: passed (133.214 seconds)
+ui AccessibilitySuiteUITests.testSettingsRtlAndDark: failed (120.037 seconds)
+ui AccessibilitySuiteUITests.testTransitAtAccessibilitySizes: failed (225.980 seconds)
+scripts/ios/ci-ipa.sh: line 286: 36352 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui a11y_case_free_drive_ax5_dark=truncated=0
+ui a11y_case_free_drive_rtl=truncated=0
+ui a11y_case_nav_dark_rtl=truncated=0
+ui a11y_case_search_ax3=truncated=0
+ui a11y_case_search_ax5=truncated=0
+ui a11y_case_search_dark_landscape=truncated=0
+ui a11y_case_search_rtl=truncated=0
+ui a11y_case_settings_ax3=truncated=0
+ui a11y_case_settings_ax5=truncated=0
+ui a11y_case_settings_rtl=truncated=0
+ui a11y_case_transit_board_ax3=truncated=0
+ui a11y_case_transit_board_ax5=truncated=0
+ui a11y_case_transit_board_rtl_dark=truncated=0
+ui a11y_case_transit_detail_rtl=truncated=0
+ui a11y_case_transit_go_ax5_dark=truncated=0
+ui a11y_case_transit_go_rtl=truncated=0
+ui a11y_cases=3
+ui a11y_cases=4
+ui a11y_cases=6
+ui a11y_clipped_targets=0
+ui a11y_clipped_targets=15
+ui a11y_clipped_targets=5
+ui a11y_clipped_targets=7
+ui a11y_failures=0
+ui a11y_failures=1
+ui a11y_failures=4
+ui a11y_failures=5
+ui a11y_free_drive_ax5_dark_target_free_exit=46x46
+ui a11y_free_drive_ax5_dark_target_free_locate=46x46
+ui a11y_free_drive_ax5_dark_target_free_simple_map=46x46
+ui a11y_free_drive_ax5_dark_target_free_voice=46x46
+ui a11y_free_drive_rtl_target_free_exit=46x46
+ui a11y_free_drive_rtl_target_free_locate=46x46
+ui a11y_free_drive_rtl_target_free_simple_map=46x46
+ui a11y_free_drive_rtl_target_free_voice=46x46
+ui a11y_nav_dark_rtl_banner_fraction=0.21
+ui a11y_nav_dark_rtl_target_nav_banner=378x182
+ui a11y_nav_dark_rtl_target_nav_end=48x48
+ui a11y_nav_dark_rtl_target_nav_heading=40x48
+ui a11y_nav_dark_rtl_target_nav_pause=44x48
+ui a11y_nav_dark_rtl_target_nav_voice=44x48
+ui a11y_scope=nav_free_drive
+ui a11y_scope=search
+ui a11y_scope=settings
+ui a11y_scope=transit
+ui a11y_search_ax3_target_map_overflow=44x44
+ui a11y_search_ax3_target_result_directions=222x44
+ui a11y_search_ax3_target_result_save=137x44
+ui a11y_search_ax3_target_search_clear=44x44
+ui a11y_search_ax3_target_search_field=146x49
+ui a11y_search_ax3_target_search_panel_toggle=354x48
+ui a11y_search_ax5_target_map_overflow=44x44
+ui a11y_search_ax5_target_result_directions=286x58
+ui a11y_search_ax5_target_result_save=172x54
+ui a11y_search_ax5_target_search_clear=44x44
+ui a11y_search_ax5_target_search_field=146x65
+ui a11y_search_ax5_target_search_panel_toggle=354x63
+ui a11y_search_dark_landscape_target_map_overflow=44x44
+ui a11y_search_dark_landscape_target_result_directions=108x44
+ui a11y_search_dark_landscape_target_result_save=73x44
+ui a11y_search_dark_landscape_target_search_clear=44x44
+ui a11y_search_dark_landscape_target_search_field=494x22
+ui a11y_search_dark_landscape_target_search_panel_toggle=702x44
+ui a11y_search_rtl_placeholder=بحث
+ui a11y_search_rtl_target_map_overflow=44x44
+ui a11y_search_rtl_target_result_directions=108x44
+ui a11y_search_rtl_target_result_save=73x44
+ui a11y_search_rtl_target_search_clear=44x44
+ui a11y_search_rtl_target_search_field=146x22
+ui a11y_search_rtl_target_search_panel_toggle=354x44
+ui a11y_search_rtl_window=402x874
+ui a11y_settings_ax3_target_settings_clock=370x123
+ui a11y_settings_ax3_target_settings_done=86x44
+ui a11y_settings_ax3_target_settings_language=370x165
+ui a11y_settings_ax3_target_settings_units=370x123
+ui a11y_settings_ax5_target_settings_clock=370x212
+ui a11y_settings_ax5_target_settings_done=116x58
+ui a11y_settings_ax5_target_settings_language=370x270
+ui a11y_settings_ax5_target_settings_units=370x212
+ui a11y_settings_rtl_done=trailing
+ui a11y_settings_rtl_target_settings_clock=370x74
+ui a11y_settings_rtl_target_settings_done=44x44
+ui a11y_settings_rtl_target_settings_language=370x74
+ui a11y_settings_rtl_target_settings_units=370x73
+ui a11y_small_targets=1
+ui a11y_small_targets=33
+ui a11y_small_targets=4
+ui a11y_small_targets=6
+ui a11y_transit_board_ax3_target_transit_board_close=76x36
+ui a11y_transit_board_ax3_target_transit_board_line=370x319
+ui a11y_transit_board_ax3_target_transit_board_refresh=36x36
+ui a11y_transit_board_ax5_target_transit_board_close=76x36
+ui a11y_transit_board_ax5_target_transit_board_line=370x473
+ui a11y_transit_board_ax5_target_transit_board_refresh=36x36
+ui a11y_transit_board_rtl_dark_target_transit_board_close=68x36
+ui a11y_transit_board_rtl_dark_target_transit_board_line=370x126
+ui a11y_transit_board_rtl_dark_target_transit_board_refresh=36x36
+ui a11y_transit_detail_rtl_target_steps_close=67x34
+ui a11y_transit_detail_rtl_target_transit_start=114x36
+ui a11y_transit_detail_rtl_target_transit_trip_open=53x34
+ui a11y_transit_go_ax5_dark_target_transit_go_close=76x36
+ui a11y_transit_go_ax5_dark_target_transit_go_departures=181x162
+ui a11y_transit_go_ax5_dark_target_transit_go_end=181x114
+ui a11y_transit_go_ax5_dark_target_transit_go_later=181x158
+ui a11y_transit_go_ax5_dark_target_transit_go_trip=181x158
+ui a11y_transit_go_rtl_target_transit_go_close=68x36
+ui a11y_transit_go_rtl_target_transit_go_departures=86x68
+ui a11y_transit_go_rtl_target_transit_go_end=86x68
+ui a11y_transit_go_rtl_target_transit_go_later=86x68
+ui a11y_transit_go_rtl_target_transit_go_trip=86x68
+ui a11y_truncated=0
+ui screenshots: 
+
+== Route replay (17:20:33)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 02FC5CA6-9338-4C4F-BB4E-4D17CF320281 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 02FC5CA6-9338-4C4F-BB4E-4D17CF320281 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (17:22:27)
+256040
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 101284 bytes
+directions reply: directions-drive-sf 113967 bytes
+directions reply: directions-walk-sf 34595 bytes
+search reply: 256040 bytes, 33 feature ids
+failed steps: ui-scenarios
