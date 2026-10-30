@@ -1,0 +1,3 @@
+src=src/selection-sync
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=SelectionSyncUITests,TransitMapUITests VELA_SKIP_ARCHIVE=1
