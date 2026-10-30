@@ -1,0 +1,254 @@
+# Chasse aux bugs de la suite UI iOS
+
+Passe de triage du 29 octobre 2026, sur `ios/main` au commit `669633b8` (merge SETTINGS-FIX). Aucun
+code Swift ou Kotlin n'a ete modifie : ce document est la carte de ce qui est casse, pas le
+correctif.
+
+## Methode
+
+Trois lots en avant-plan sur le runner GitHub, via `scripts/ios/ci-ipa.sh`, avec
+`VELA_SKIP_ARCHIVE=1` et `VELA_ONLY_UI` en liste. Le Mac LAN n'a pas ete appele.
+
+| Alias | Tag |
+|---|---|
+| B1 | `bug-hunt1-20261029-101707-20686` |
+| B2 | `bug-hunt2-20261029-115029-21707` |
+| B3 | `bug-hunt3-20261029-124729-9344` |
+
+Classes demandees mais absentes de `iosApp/VelaUITests/`, donc retirees du lot :
+
+- `TakeoutUITests` (B2) : le fixture Takeout est joue par `SavedFinishingUITests.testTakeoutFixtureImportsIntoNamedList`.
+- `RoutePickerUITests` (B3) : le choix d'itineraire est couvert par `DirectionsUITests`.
+
+Resultat brut : B1 26 tests, 2 echecs ; B2 15 tests UI, 6 echecs, plus 1 echec Kotlin ; B3 41
+echecs, dont un plantage du runner. Total : 50 echecs.
+
+Categories : **a** defaut produit, **b** harnais ou defilement ou ligne paresseuse, **c**
+environnement (reseau, OSRM, fixture), **d** flake.
+
+## Tableau des echecs
+
+| Classe / test | Tag | Preuve (log ou hierarchie) | Cat. | Prochaine action |
+|---|---|---|---|---|
+| `MapTapUITests.testTapEachKindOpensItsSheet` | B1 | `MapTapUITests.swift:25 XCTAssertTrue failed - a place tap opened no sheet` ; les 5 sondes donnent `tap=0 tap_at=- tap_layers=0`, alors que le log montre 5 `Synthesize event` sur `map` sans element interrupteur ; dans le meme lot `MapGestureUITests.testLongPressDropsPin` passe avec `dropped_pin=37.77490,-121.41940` | a | Compter le geste avant le delai de 0,35 s dans `tapped` et journaliser `gestureRecognizers`, puis corriger le chemin du toucher simple |
+| `UnifiedSearchUITests.testFindSavedTransitWikiSettingAndPlace` | B1 | `Failed to tap "unified-settings-close" Button: No matches found` ; hierarchie : `Button, identifier: 'unified-settings-sheet', label: 'Close', value: settings-units` ; `SearchUnified.swift:312` pose l'identifiant sur le `VStack` sans `.accessibilityElement(children: .contain)` | a | Ajouter `.accessibilityElement(children: .contain)` avant `unified-settings-sheet` et rejouer la classe |
+| `PlaceReviewsUITests.testMoreReviewsAppendsAPage` | B2 | `PlaceReviewsUITests.swift:83 ... Failed to swipe up ... Timed out while evaluating UI query` ; deux fois `App event loop idle notification not received` ; les deux autres tests de la classe passent | a | Corrige par `BUGFIX-REVIEWS` (run `bugfix-reviews-20261029-145914-15506`) : analyse hors fil principal, images bornees, page cachee detruite apres sa reponse ; `testSwipeKeepsThePanelResponsive` mesure `mainloop_stall_ms` |
+| `SavedExportUITests.testListExportImportsBackFromTheShareSheet` | B2 | `SavedExportUITests.swift:59 ... import did not finish` ; le test frere `SavedImportUITests.swift:48` utilise `reveal(message, ...)` pour le meme `saved-import-message` et passe dans B2 | b | Remplacer `waitForExistence` par `reveal(message, in: importer)` |
+| `SavedFinishingUITests.testHomeAndWorkOpenFromSavedAndMap` | B2 | `SavedFinishingUITests.swift:21 Saved sheet missing` ; `Computed hit point {-1, -1} after scrolling to visible` sur `saved-open` ; `saved-home.png` montre la barre de recherche et le signet Saved coupes par le bord haut avec la fiche lieu ouverte | a | Sortir `PlaceSheet` du `VStack` de `browserChrome` et ancrer le chrome dans la zone sure |
+| `SavedFinishingUITests.testListEditingSelectionAndSound` | B2 | Meme `Computed hit point {-1, -1}` sur `saved-open` ; `:132 Saved sheet missing` | a | Meme correctif de chrome |
+| `SavedFinishingUITests.testSavedLineReopensBesideComputedRoutes` | B2 | Meme `Computed hit point {-1, -1}` sur `saved-open` ; `:63 Saved sheet missing` | a | Meme correctif de chrome |
+| `SavedUITests.testSavedPlaceListAndRecentsPersist` | B2 | `SavedUITests.swift:27 saved place missing` ; apres `place-save`, `Tap "saved-open"` donne `Computed hit point {-1, -1} after scrolling to visible` | a | Meme correctif de chrome |
+| `NavStoreTest.trafficOfferIsMirroredAndAcceptanceAdoptsTheCandidate` (Kotlin JVM) | B2 | `NavStoreTest[jvm] > trafficOfferIsMirroredAndAcceptanceAdoptsTheCandidate[jvm] FAILED` ; `java.lang.AssertionError at NavStoreTest.kt:131` ; le test attend l'offre dans une boucle de 9000 fois 10 ms et le commit `23fbbdbe` a deja repousse l'echeance pour un runner charge | d | Rejouer `:ios-shared:jvmTest` seul ; si cela se repete, imprimer le champ qui echoue |
+| `AppearanceUITests.testThemesSpeedAndVehicle` | B3 | `AppearanceUITests.swift:66 XCTAssertTrue failed` avec `unit=imperial` ; `AppearanceSettings.swift:286` imprime `speedUnit.rawValue` et `SpeedUnitChoice.imperial` est la valeur brute du titre « mph » | b | Asserter `unit=imperial` |
+| `DirectionsUITests.testDirectionsToTheFirstCoffeeResult` | B3 | `DirectionsUITests.swift:129 ... 'steps-close' ... {{12.0, 880.3}, {67.0, 34.3}} ... kAXScrollToVisibleAction ... kAXErrorCannotComplete` ; l'en-tete est au-dessus du `ScrollView` dans `RouteSheets.swift:778`, donc la feuille entiere commence sous la fenetre | a | Meme correctif de chrome, puis asserter `steps-close.isHittable` |
+| `IncomingLinksUITests.testIncomingDirectionsLinkWithTwoStopsKeepsTheirOrder` | B3 | `:56 the first stop is not in the chooser` ; la capture du chooser compact `incoming-directions.png` montre destination, modes et Start sans aucune ligne d'arret ; `DirectionsUITests.testWaypointAndDepartureTime` deplie la feuille avant `route-add-stop` et passe | b | Taper `route-expand` ou faire glisser la feuille avant de chercher les lignes d'arret |
+| `IncomingLinksUITests.testIncomingDirectionsLinkWithOneStopOpensIt` | B3 | Meme cause ; `:76 the link's stop is not in the chooser` | b | Meme defilement ou depliage de la feuille |
+| `IntentsUITests.testDeepLinkOpensSavedPlace` | B3 | `XCTAssertEqual failed: ("nil") is not equal to ("Optional("route=place error=0")")` ; `MapScreen.swift:787` masque le bloc qui porte `intents-debug` des que `place.isOpen` | b | Lire `intents-debug` avant d'ouvrir la fiche, ou garder la ligne hors de la condition place et route |
+| `IntentsUITests.testParkingDeepLinkOpensPlaceAndCleansUp` | B3 | Meme cause ; `("nil") is not equal to ("Optional("route=parking error=0")")` | b | Meme lecture avant la fiche |
+| `NavAlertsUITests.testBackgroundNotificationAndTapBridge` | B3 | `:131 the notification tap did not reach the drive: ... notifreq=1 notifpost=1 notifopen=0 notifauth=granted` | a | Faire passer `nav-test-notify-open` par le meme delegate que le toucher systeme et journaliser le rappel |
+| `NavArrivalUITests.testWaypointArrivalParkingAndEnd` | B3 | `:29 no driving route: routes=2 active=0 ... loading=0 ... netOpen=11` ; la route est prete au moment du message, juste apres le `waitUntil(120)` | d | Porter l'attente a 180 s et rejouer |
+| `OfflineAreaUITests.testFrameAreaAndPreferences` | B3 | `:69 the progress state did not survive the confirmation` ; VALIDATION.md documente deja l'absence de `area-progress` apres Download | a | Ajouter une ligne `offline-area-debug` avec `areaReportVisible` et `areaId` juste apres le tap |
+| `OfflineUITests.testMonacoDeltaUpdateStorageAndWorldFallback` | B3 | `:109 the update manifest button is missing` ; VALIDATION.md demande de verifier `OfflineFixtureSupport.isEnabled` | b | Journaliser le drapeau de fixture dans `offline-download-debug` et conditionner le bouton a la meme valeur |
+| `PrivacyUITests.testPrivacyControlsAndSessionRotation` | B3 | `PrivacyUITests.swift:42 settings-telemetry` introuvable ; la hierarchie a l'echec est la carte nue avec `sheet=none ... settings_taps=1` ; `scrollTo` balaie `app.scrollViews.firstMatch` ligne 285, le piege deja documente dans VALIDATION.md | b | Defiler `settings-screen` et reveler la ligne au lieu de `scrollViews.firstMatch` |
+| `PrivacyUITests.testRequestCounterAndClearHistory` | B3 | `:191 the place was not saved` ; `Tap "saved-open"` puis `Computed hit point {-1, -1} after scrolling to visible` | a | Meme correctif de chrome |
+| `QualityPerformanceUITests.testNavigationMemoryMetric` | B3 | Le test demarre la conduite, relance l'app, puis `Waiting 60.0s for "search-field"` et `QualityUITests.swift:676` ; la relance reprend la conduite, ce que prouve `NavLifecycleUITests.testRelaunchResumesTheDrive` qui passe | b | Terminer la conduite avant la relance mesuree, ou ajouter `-VelaResetNavigation YES` a `launch()` |
+| `QualityPerformanceUITests.testOfflineMemoryMetric` | B3 | `VelaUITestCase.swift:44 ... no map screen` ; l'app herite de la conduite restauree par le test precedent | b | Meme remise a zero de session |
+| `QualityPerformanceUITests.testPlaceMemoryMetric` | B3 | `QualityUITests.swift:676` sur `search-field` ; meme heritage | b | Meme remise a zero |
+| `QualityPerformanceUITests.testSearchMemoryMetric` | B3 | `QualityUITests.swift:676` sur `search-field` ; meme heritage | b | Meme remise a zero |
+| `QualityUITests.testCompactHeightSettingsLandscape` | B3 | `QualityUITests.swift:756 Failed to tap "map-overflow"` ; hierarchie : `nav-add-stop`, `nav-end`, `nav-pause`, `nav-voice`, `nav-heading` seulement | b | Meme remise a zero de session |
+| `QualityUITests.testHebrewRightToLeft` | B3 | `:133 No matches found for Descendants matching type TextField` ; chrome de navigation seul | b | Meme remise a zero |
+| `QualityUITests.testMapAndPlaceReadingOrder` | B3 | `:187 the locate button is not in the hierarchy` ; chrome de navigation seul | b | Meme remise a zero |
+| `QualityUITests.testPlaceLargeTextLandscape` | B3 | `QualityUITests.swift:676` sur `search-field` ; chrome de navigation seul | b | Meme remise a zero |
+| `QualityUITests.testRoutePickerLargeTextLandscape` | B3 | `:676` sur `search-field` ; chrome de navigation seul | b | Meme remise a zero |
+| `QualityUITests.testRoutePickerReadingOrder` | B3 | `:677 Failed to tap "search-field" ... Timed out while evaluating UI query` ; chrome de navigation seul | b | Meme remise a zero |
+| `QualityUITests.testSearchLargeTextLandscape` | B3 | `VelaUITestCase.swift:42 Failed to terminate app.vela.ios` puis `:676` ; chrome de navigation seul | b | Meme remise a zero |
+| `QualityUITests.testSettingsLargeTextLandscape` | B3 | `VelaUITestCase.swift:42 Timed out while launching application via Xcode` ; consequence du meme etat | b | Meme remise a zero |
+| `QualityUITests.testSmallScreenKeyScreens` | B3 | `:301 No matches found for Descendants matching type TextField` ; chrome de navigation seul | b | Meme remise a zero |
+| `SettingsAboutUITests.testHubSearchAboutNoticesSupport` | B3 | `:119 map-overflow` introuvable ; hierarchie : `nav-add-stop`, `nav-end`, `nav-pause`, `nav-voice`, `nav-heading` seulement | b | Meme remise a zero |
+| `SettingsUITests.testContentAndData` | B3 | `:68 Failed to tap "map-overflow"` ; meme hierarchie de navigation seule ; `search-field` existait a `t=23.18s` et `map-overflow` a un cadre `{{inf, inf}, {0.0, 0.0}}` a `t=25.20s` | b | Meme remise a zero |
+| `SettingsVoiceUITests.testVoiceAndLanguage` | B3 | `:76 no map overflow menu` ; chrome de navigation seul | b | Meme remise a zero |
+| `StreetViewUITests.testStreetViewFromPlace` | B3 | `:176 Failed to tap "search-field" ... No matches` ; chrome de navigation seul | b | Meme remise a zero |
+| `TransitAdvancedUITests.testIsochroneAndColoredLines` | B3 | `:23 no trip-view button` ; `transit-card` existe, `transit-trip-open` absent pendant 20 s ; TRANSIT.md note deja le meme bouton Trip hors ecran a `y=875` | a | Mettre la rangee Trip, GO et End dans une barre basse fixe de la carte de guidage |
+| `TransitAdvancedUITests.testLineDelayColors` | B3 | Meme `:23`, meme carte sans bouton Trip | a | Meme barre basse |
+| `TransitAdvancedUITests.testLiveTripBadgeOnlyWhenRealTime` | B3 | Meme `:23`, meme carte sans bouton Trip | a | Meme barre basse |
+| `TransitAdvancedUITests.testViaAlternativeInsideTrip` | B3 | Meme `:23`, meme carte sans bouton Trip | a | Meme barre basse |
+| `TransitCitymapperUITests.testTripScreenShowsSegmentCardsAndNextDepartures` | B3 | `:23 no trip-view button on the guidance card` ; `transit-card` existe | a | Meme barre basse |
+| `TransitCitymapperUITests.testSegmentTimeChangeShowsANewOptionSet` | B3 | Meme `:23` | a | Meme barre basse |
+| `TransitCitymapperUITests.testSkipLetsTheRunPassAndAdvancesTheHeader` | B3 | Meme `:23` | a | Meme barre basse |
+| `TransitCitymapperUITests.testNearbyLinesTabListsTheStopsLines` | B3 | Meme `:23` | a | Meme barre basse |
+| `TransitCitymapperUITests.testLiveTripScreenWhenTheFeedAnswers` | B3 | `:183 Failed to tap "search-field" ... No matches` ; `launch()` a vu le champ, puis il disparait pendant le `sleep(4)`, signature d'une session restauree qui remplace le chrome | b | Meme remise a zero de session |
+| `TransitModesUITests.testAllLegsAndModes` | B3 | `:25 no detail sheet control on the fixture card` ; `transit-card` existe, `transit-detail-open` absent (bouton conditionne dans la carte par `#if DEBUG`, `!model.arrived` et `detail != nil`) | a | Meme barre basse et exposer `transit-detail-open` hors de la rangee compressee |
+| `TransitVehiclesUITests.testInterpolatedVehicles` | B3 | `:23 no trip-view button` ; `transit-card` existe | a | Meme barre basse |
+| `TransitWiredUITests.testTapTransitEverywhereAndSeeTheLine` | B3 | `VelaUITests/VelaUITestCase.swift:79: Fatal error: Unexpectedly found nil while implicitly unwrapping an Optional value` apres `wired_line_departures=0` ; `launchWired()` construit un `XCUIApplication` local et n'assigne jamais `self.app` | b | Assigner `self.app = app` dans chaque lanceur local, ou garder `debugText` avec un `guard let app` |
+
+## Correctifs du 29 octobre (ios/bugfix-chrome)
+
+Les deux defauts P1 ci-dessous sont corriges sur `ios/bugfix-chrome`. Le run Mac de reference est
+`bugfix-chrome-20261029-151217-7647` (simulateur iPhone 17, iOS 26.5).
+
+### P1 1, le toucher simple de la carte
+
+Le toucher n'etait pas perdu dans la couche SwiftUI : le `UITapGestureRecognizer` de
+`MapView.swift` etait bloque par les recognizers de MapLibre (toucher simple integre et
+quick zoom a duree nulle), qui gagnaient le toucher avant lui. Le compteur `tap=0` du run B1
+etait aussi un artefact : `layers-debug` n'etait reevalue que si un etat publie changeait.
+
+Correctif : le recognizer attend l'echec de tous les touchers integres, recoit le coordinateur
+comme delegate pour reconnaitre en simultane avec le quick zoom, et la chaine est tracee a chaque
+etage dans `tap-chain-debug` (`tap_seen`, `tap_delivered`, `tap_queried`, `tap_events`). Le
+compteur `tap=` de MAP-TAP est incremente avant la fenetre de 0,35 s.
+
+Preuve : `MapTapUITests.testTapEachKindOpensItsSheet` ouvre la fiche du lieu au centre de Davis
+avec `tap_seen=1 tap_delivered=1 tap_queried=1`, et `tap-place.png` montre `3rd & U Cafe`. Le cas
+chrome fusionne est verifie dans le meme scenario, fiche lieu ouverte.
+
+Note du run : le sous-cas camera a echoue apres la fiche lieu, parce qu'un nouveau scenario de
+chrome laissait une epingle Saved importee au centre de la camera. Le controle de chrome est
+desormais fusionne dans `tapPlace` et le fixture Saved reste en dernier ; ce sous-cas est a
+rejouer.
+
+### P1 2, le chrome qui depasse
+
+La cause etait le `VStack` unique de `browserChrome` : sa hauteur intrinseque, recherche, colonne
+d'actions, feuille du bas et attribution, depassait la fenetre et SwiftUI le centrait. Le bloc
+debug, deja a hauteur nulle, ne participait plus a cette hauteur.
+
+Correctif : trois ancrages dans un `GeometryReader`. La recherche, le bloc debug et la colonne
+d'actions sont ancres en haut de la zone sure ; la feuille du bas et le pied sont ancres en bas.
+La feuille ne peut donc plus deplacer la recherche, et la colonne est decalee sous le microphone
+de recherche vocale pour laisser la boussole visible.
+
+Preuve : `MapChromeUITests.testChromeFitsWithSheetOpen` ouvre la feuille d'etapes et rend
+`chrome-fit.png` avec `chrome_overflow=0`, `chrome_search_y=83.0` et `chrome_steps_close_y=373.3`.
+Dans le cas fiche lieu, `search-field`, `map-overflow` et `saved-open` sont hittables.
+
+## Defauts produit, par priorite
+
+### P1, visibles par l'utilisateur
+
+1. **Le toucher simple de la carte n'ouvre plus rien.** Corrige le 29 octobre (`ios/bugfix-chrome`). `MapTapUITests` envoie cinq touchers au
+   centre de la carte, aucun n'arrive au `UITapGestureRecognizer` (`tap=0`), alors que l'appui long
+   au meme endroit fonctionne. Aucun POI, camera ou avion ne peut etre ouvert au doigt.
+2. **Le chrome de la carte depasse l'ecran et coupe ses controles.** Corrige le 29 octobre (`ios/bugfix-chrome`). Le `VStack` de
+   `browserChrome` (recherche, bloc debug, colonne de 7 a 9 boutons, feuille du bas, attribution)
+   est plus haut que la fenetre et se centre, donc il deborde en haut et en bas. Consequences
+   observees : `saved-open` sans point de toucher des qu'une fiche lieu est ouverte
+   (`Computed hit point {-1, -1}`, 4 tests), `steps-close` a `y=880.3` hors ecran, barre de
+   recherche sous la barre d'etat sur toutes les captures. C'est la meme famille que la regression
+   `map-overflow` deja corrigee une fois.
+3. **La feuille Reglages ouverte depuis la recherche unifiee est un seul element d'accessibilite.**
+   `unified-settings-sheet` avale ses enfants : VoiceOver ne voit ni Close ni aucun reglage. Le
+   meme piege de conteneur que HIVE.md decrit.
+   Corrige sur `ios/bugfix-a11y` : `.accessibilityElement(children: .contain)` avant
+   `unified-settings-sheet`, sans la valeur qui transformait la feuille en bouton, et
+   `UnifiedSearchUITests` verifie que Close est un bouton atteignable. Run
+   `bugfix-a11y-20261029-154830-28435` : Close trouve et touche.
+4. **La carte de guidage transports n'expose plus ses commandes.** `transit-card` existe, mais
+   `transit-trip-open` est absent dans 10 tests et 4 classes ; TRANSIT.md note deja ce bouton hors
+   ecran a `y=875`. La rangee Trip, GO et End est comprimee ou poussee hors cadre. Le meme defaut
+   prive `TransitModesUITests` de `transit-detail-open`.
+   Corrige sur `ios/bugfix-a11y` : la rangee deborde depuis l'ajout de GO, et la `Text` de
+   direction passait avant les boutons. `layoutPriority(1)` sur Trip, GO et End garde la rangee
+   dans la carte et dans la fenetre ; le portrait normal est inchange. `TransitCitymapperUITests`
+   exige desormais que le bouton soit atteignable et que GO et End soient la. Run
+   `bugfix-a11y-20261029-154830-28435` : 4 tests sur 4 passent sur fixture. Le test en direct
+   echoue plus loin, sur `transit-trip-open` de `TransitDetailSheet` a `y=880,3` (defaut P1 2).
+5. **Le panneau d'avis bloque la boucle principale.** Apres le premier `swipeUp` dans le panneau,
+   l'app ne repond plus pendant plus de 60 s (`App event loop idle notification not received`), et
+   XCUITest abandonne la requete. Le WebView cache est le composant suspect, mais l'app reste
+   bloquee dans cette session.
+5. **Le panneau d'avis bloque la boucle principale.** ✅ Corrige par `BUGFIX-REVIEWS`, run
+   `bugfix-reviews-20261029-145914-15506`. Apres le premier `swipeUp`, l'app ne repondait plus
+   pendant plus de 60 s (`App event loop idle notification not received`) et XCUITest abandonnait
+   la requete. Trois causes mesurees : le scrape d'avis diffuse un instantane JSON complet toutes
+   les 250 ms et chaque instantane etait analyse deux fois sur le fil principal (magasin et
+   traductions) ; les photos et avatars d'avis partaient a la taille de Google et se decodaient sur
+   le fil principal pendant le defilement ; la page Google cachee qui avait repondu restait deux
+   minutes dans la fenetre avec tout son DOM dans l'arbre d'accessibilite. Correctifs : analyse des
+   instantanes sur `Dispatchers.IO` avec fusion du dernier instantane seulement, URL d'images
+   ramenees a la taille dessinee, echantillonnage des avatars hors du fil principal, page detruite
+   des qu'elle a repondu. Mesure apres correctif : `reviews_swipe_answer_ms=898`,
+   `mainloop_stall_ms=457` (277 ms avant le geste), `reviews_swipe_fps=41`, capture
+   `reviews-swipe.png`. Le test de regression est
+   `PlaceReviewsUITests.testSwipeKeepsThePanelResponsive`, vert en 55,0 s.
+
+### P2, genants mais contournables
+
+6. **La progression d'une zone hors ligne n'apparait jamais.** Apres Download, `area-progress`
+   reste absent alors que l'app vit. Deja ouvert dans VALIDATION.md.
+7. **Le pont de notification de navigation ne compte pas le toucher.** La notification est
+   publiee (`notifpost=1`, `notifauth=granted`) mais `notifopen` reste a 0 apres le bouton de test.
+
+### P3, internes ou Debug seulement
+
+8. **Le bloc debug chevauche la barre d'etat.** Les trois lignes toujours visibles ajoutent la
+   hauteur qui fait deborder le chrome ; c'est aussi la cause directe du point 2.
+
+## Defauts de harnais et correctif partage
+
+1. **Session de navigation restauree entre les tests (18 echecs). Corrige dans `ios/harness-fix`.**
+   Un test de `QualityPerformanceUITests` demarre une conduite, la relance pour la mesure et ne la
+   termine pas. La reprise de conduite, voulue et prouvee par `NavLifecycleUITests.testRelaunchResumesTheDrive`,
+   fait demarrer toutes les classes suivantes en navigation : `search-field` et `map-overflow`
+   disparaissent, la hierarchie ne contient plus que `nav-add-stop`, `nav-end`, `nav-pause`,
+   `nav-voice` et `nav-heading`. Correctif partage : `launch()` ajoute `-VelaResetNavigation YES`,
+   lu par `LaunchOptions` avant la construction de la session, qui efface le domaine
+   `app.vela.ios.vela_nav_resume`. Une feuille restauree ne vient que de cet enregistrement ; le
+   processus neuf n'a aucun autre etat de feuille. `NavLifecycleUITests` garde sa relance brute,
+   sans l'argument, pour continuer a tester la reprise.
+2. **Lignes paresseuses et mauvais conteneur de defilement (4 echecs). Corrige dans
+   `ios/harness-fix`.** `SavedExport` attend un message de formulaire sans `reveal`, `IncomingLinks`
+   cherche des arrets dans le chooser compact sans le deplier, et `PrivacyUITests` balaie
+   `scrollViews.firstMatch`, qui tombe sur `quick-categories` derriere la feuille. Correctif
+   partage : `revealInSheet` prend l'identifiant de la feuille (ou de son ancre), trouve la racine
+   presentee, deplie `route-expand` si besoin, et fait defiler le plus grand `ScrollView` vertical
+   de cette feuille. Il sait aussi remonter (`up: false`).
+3. **Lignes debug masquees par une feuille (2 echecs). Corrige dans `ios/harness-fix`.**
+   `intents-debug` est dans le bloc que `MapScreen` cache des que `place.isOpen` ou `route.isOpen`.
+   La ligne rejoint l'en-tete debug toujours visible, qui garde une hauteur nulle
+   (`.frame(height: 0, alignment: .top)`), donc aucun centrage ni debordement du chrome.
+4. **Lanceur local sans `self.app` (1 echec, mais il tue le runner). Corrige dans
+   `ios/harness-fix`.** `TransitWiredUITests` passe par `launch()` et recoit donc `self.app` ; en
+   plus, `debugText` retourne nil au lieu de forcer unwrap.
+5. **Assertion sur une valeur brute (1 echec).** `AppearanceUITests` attend `unit=mph` alors que la
+   ligne debug imprime la valeur brute `imperial`. Correctif : asserter `unit=imperial`.
+6. **Bouton de fixture hors ligne non prouve (1 echec).** Le bouton de manifeste delta est derriere
+   `OfflineFixtureSupport.isEnabled`, sans ligne debug qui prouve le drapeau. Correctif : exposer
+   le drapeau dans `offline-download-debug`.
+7. **Delai OSRM trop court (1 echec).** `NavArrivalUITests` attend 120 s une route qui arrive juste
+   apres. Correctif : 180 s, comme les autres attentes de calcul deja repoussees.
+
+## Passe de correctif du 29 octobre 2026
+
+Branche `ios/harness-fix`, commits `8958b54a` (harnais) et `20f8ec47` (lanceur transit). Deux lots
+Mac ont valide le correctif : R2 `harness-fix-20261029-160741-26596` et R3
+`harness-fix-20261029-171027-15750`. Le premier lot de la journee, `harness-fix-20261029-145124-4604`,
+a tourne sur un HEAD non commite : il ne compte pas.
+
+R2 et R3 donnent verts `IncomingLinksUITests` (6 tests), `SavedExportUITests` (2), `SettingsAboutUITests`,
+`SettingsVoiceUITests` et `StreetViewUITests`. `SettingsUITests.testContentAndData` passe en R2 et
+echoue en R3 sur `settings-low-data did not change: 0`, apres 171 s : flake ou bascule produit, pas
+la session restauree.
+
+`TransitWiredUITests` ne plante plus et n'affiche plus `Executed 0 tests`. Il va jusqu'a la feuille
+de ligne et s'y arrete sur `line_seq=0 line_stops=0`, donc sur le defaut produit de sequence, pas
+sur le harnais.
+
+`QualityUITests` n'est plus contamine par la session, mais reste rouge sur des defauts etrangers a
+cette passe : `map-overflow` hors cadre en paysage compact, `category-gas` absente des suggestions,
+une requete non unique a `QualityUITests.swift:739`, la photo de fiche inatteignable en grand texte,
+les options d'evitement inatteignables, et aucune route pour l'audit d'ordre.
+
+
+
+## Ce que ces runs ne prouvent pas
+
+- Aucun de ces echecs n'a ete rejoue sur un iPhone.
+- Les 18 echecs de session restauree ont ete rejoues apres la remise a zero. Les classes de
+  Settings, SettingsAbout, SettingsVoice, StreetView et SavedExport passent ; Quality reste rouge
+  sur les defauts produits listes plus haut.
+- La carte de guidage transports n'a pas de hierarchie publiee dans le tag B3 : le bouton absent
+  est prouve par la requete XCUITest, pas par une ligne de cadre. La prochaine passe doit capturer
+  la hierarchie avant de conclure sur la largeur de la rangee.
+- `MapTapUITests` n'a aucun run vert enregistre depuis le merge MAP-TAP, mais la passe ne prouve
+  pas encore si le geste est mort ou si le style n'etait pas pret. Le compteur propose tranchera.
