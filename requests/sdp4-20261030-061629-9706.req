@@ -1,0 +1,3 @@
+src=src/sdp4
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=SatelliteUITests VELA_SKIP_ARCHIVE=1
