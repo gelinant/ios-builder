@@ -1,0 +1,3 @@
+src=src/search-home
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=SearchUITests,UnifiedSearchUITests VELA_SKIP_ARCHIVE=1
