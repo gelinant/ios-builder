@@ -1,0 +1,277 @@
+tag=val3-b1-20261030-121707-25560 src=src/val3-b1 a33e35c src: bfb47a26 Docs: record the 30 October noon build
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: a33e35c src: bfb47a26 Docs: record the 30 October noon build
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610301218 (1793362691)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (12:18:11)
+notices: ok, 39 entries (8 libraries, 30 data sources)
+
+== Kotlin: tests and the VelaCore framework (12:18:11)
+gradle: ok in 695 s
+kotlin jvmTest: 662 tests, 0 failures
+kotlin iosSimulatorArm64Test: 551 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87549872 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55180680 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (12:29:47)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 78 30.3M   78 23.8M    0     0  36.1M      0 --:--:-- --:--:-- --:--:-- 36.1M100 30.3M  100 30.3M    0     0  41.6M      0 --:--:-- --:--:-- --:--:-- 93.6M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (12:29:48)
+string catalog: 2128 keys, 24 resource locales (24 with translations), 38549 localized values, 1009 Swift references, 24 picker languages
+
+== XcodeGen (12:29:51)
+xcodegen: Version: 2.46.0
+
+== Generate the project (12:29:52)
+maplibre-globe: downloading MapLibre.dynamic.xcframework.zip (169968107 bytes) from ios-v2026.10.19-globe
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 52  162M   52 85.5M    0     0  68.7M      0  0:00:02  0:00:01  0:00:01 68.7M100  162M  100  162M    0     0  90.0M      0  0:00:01  0:00:01 --:--:--  137M
+maplibre-globe ios-v2026.10.19-globe: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/MapLibre.xcframework (580M on disk)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (12:29:56)
+  BitByteData: https://github.com/tsolomko/BitByteData @ 2.1.0
+
+resolved source packages: SWCompression, BitByteData
+(resolve: 18 s)
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+
+== Pick a simulator (12:30:14)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (600A45A3-B3A0-4A39-8A9C-5D051F9FDA9C) (Shutdown) 
+
+== Build for the simulator (12:30:15)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 106 s)
+simulator build: ok
+
+== Boot the simulator (12:32:01)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (12:35:27)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 127 s)
+tests: ok, Executed 189 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=19691
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=57316 rate=22050 wav_frames=57316
+
+== Launch and screenshot (12:37:35)
+app.vela.ios: 28861
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 12F2A327-59F8-4E11-B472-0D8BF6E02941 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (12:38:12)
+xcodebuild uitest failed after 3091 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/EnergyRadarUITests.swift:86: error: -[VelaUITests.EnergyRadarUITests testCarbonAndRadar] : XCTAssertTrue failed - no energy layer row
+Test Case '-[VelaUITests.EnergyRadarUITests testCarbonAndRadar]' failed (89.609 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/NotamUITests.swift:50: error: -[VelaUITests.NotamUITests testNotamDisabledStateAndCredentialPrompt] : XCTAssertTrue failed - the disabled layer made a request: world_layers=5 world_requests=2 world_on=2 world_viewport=1
+Test Case '-[VelaUITests.NotamUITests testNotamDisabledStateAndCredentialPrompt]' failed (44.576 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SatelliteUITests.swift:28: error: -[VelaUITests.SatelliteUITests testSatellitesOverGlobe] : XCTAssertTrue failed - no Satellites row
+Test Case '-[VelaUITests.SatelliteUITests testSatellitesOverGlobe]' failed (145.928 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/WorldLayersUITests.swift:59: error: -[VelaUITests.WorldLayersUITests testWorldLayersStartHidden] : XCTAssertEqual failed: ("3") is not equal to ("0") - the host made a world request: world_layers=5 world_requests=3 world_on=3 world_viewport=1
+Test Case '-[VelaUITests.WorldLayersUITests testWorldLayersStartHidden]' failed (49.384 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =    43.58s Find the "world-layer-notam" Button
+    t =    43.72s Find the "world-layer-notam" Button
+    t =    43.85s Find the "world-layer-satellite" Button
+    t =    44.00s Find the "world-layer-satellite" Button
+    t =    44.16s Find the "world-layer-satellite" Button
+    t =    44.30s Find the "world-layer-satellite" Button
+    t =    44.47s Checking existence of `"world-layer-satellite" Button`
+    t =    44.60s Find the "world-layer-satellite" Button
+    t =    44.75s Find the "world-layer-wiki" Button
+    t =    44.94s Find the "world-layer-wiki" Button
+    t =    45.09s Find the "world-layer-wiki" Button
+    t =    45.24s Find the "world-layer-wiki" Button
+    t =    45.40s Checking existence of `"world-layer-wiki" Button`
+    t =    45.53s Find the "world-layer-wiki" Button
+    t =    45.66s Checking existence of `"world-key-field-notam" SecureTextField`
+    t =    45.80s Checking existence of `"world-key-field-notam" SecureTextField`
+    t =    45.92s Checking existence of `"world-key-field-notam" SecureTextField`
+    t =    46.04s Checking existence of `"world-key-field-notam" SecureTextField`
+    t =    46.16s Checking existence of `"world-key-field-notam" SecureTextField`
+    t =    46.29s Checking existence of `"world-layers-debug" StaticText`
+    t =    46.42s Swipe up Target Application 'app.vela.ios'
+    t =    46.42s     Wait for app.vela.ios to idle
+    t =    46.42s     Find the Target Application 'app.vela.ios'
+    t =    46.50s     Check for interrupting elements affecting "Vela" Application
+    t =    46.58s     Synthesize event
+    t =    47.01s     Wait for app.vela.ios to idle
+    t =    48.26s Checking existence of `"world-layers-debug" StaticText`
+    t =    48.43s Checking existence of `"world-layers-debug" StaticText`
+    t =    48.52s Checking existence of `"world-layers-debug" StaticText`
+    t =    48.62s Checking existence of `"world-layers-debug" StaticText`
+    t =    48.73s Checking existence of `"world-layers-debug" StaticText`
+    t =    48.82s Checking existence of `"world-layers-debug" StaticText`
+    t =    48.91s Find the "world-layers-debug" StaticText
+UITEST world_layers=5
+UITEST world_requests=3
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/WorldLayersUITests.swift:59: error: -[VelaUITests.WorldLayersUITests testWorldLayersStartHidden] : XCTAssertEqual failed: ("3") is not equal to ("0") - the host made a world request: world_layers=5 world_requests=3 world_on=3 world_viewport=1
+    t =    49.05s Tear Down
+Test Case '-[VelaUITests.WorldLayersUITests testWorldLayersStartHidden]' failed (49.384 seconds).
+Test Suite 'WorldLayersUITests' failed at 2026-10-30 13:29:10.626.
+	 Executed 1 test, with 1 failure (0 unexpected) in 49.384 (49.385) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-30 13:29:10.627.
+	 Executed 26 tests, with 4 failures (0 unexpected) in 3002.932 (3002.993) seconds
+Test Suite 'Selected tests' failed at 2026-10-30 13:29:10.628.
+	 Executed 26 tests, with 4 failures (0 unexpected) in 3002.932 (3002.995) seconds
+2026-10-30 13:29:33.665 xcodebuild[30347:87183] [MT] IDETestOperationsObserverDebug: 3066.044 elapsed -- Testing started completed.
+2026-10-30 13:29:33.665 xcodebuild[30347:87183] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-30 13:29:33.665 xcodebuild[30347:87183] [MT] IDETestOperationsObserverDebug: 3066.044 sec, +3066.044 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.hOSKCLNBnm/uitest.xcresult
+
+Failing tests:
+	EnergyRadarUITests.testCarbonAndRadar()
+	NotamUITests.testNotamDisabledStateAndCredentialPrompt()
+	SatelliteUITests.testSatellitesOverGlobe()
+	WorldLayersUITests.testWorldLayersStartHidden()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui AviationLayerUITests.testAircraftAroundView: passed (109.148 seconds)
+ui EnergyRadarUITests.testCarbonAndRadar: failed (89.609 seconds)
+ui GlobeUITests.testSwitchToGlobeAndBack: passed (730.385 seconds)
+ui LaunchUITests.testLaunchShowsTheMapOverSanFrancisco: passed (25.095 seconds)
+ui LaunchUITests.testStartCameraArgumentMovesTheMapToDavis: passed (18.248 seconds)
+ui MapChromeUITests.testChromeFitsWithSheetOpen: passed (54.580 seconds)
+ui MapChromeUITests.testDesignDetentsMatchMapInset: passed (58.935 seconds)
+ui MapGestureUITests.testKeepNorthUp: passed (55.195 seconds)
+ui MapGestureUITests.testLongPressDropsPin: passed (14.470 seconds)
+ui MapGestureUITests.testRotationReturnsNorth: passed (18.593 seconds)
+ui MapGestureUITests.testStartPosition: passed (81.733 seconds)
+ui MapLayersUITests.testCameraConesFollowTheMap: passed (24.764 seconds)
+ui MapLayersUITests.testGoogleTrafficAndSatelliteOverSanFrancisco: passed (71.122 seconds)
+ui MapLayersUITests.testLayerSheetLoadsOverlaysAtCloseZoom: passed (40.473 seconds)
+ui MapLayersUITests.testNamesModesHouseNumbersAndExits: passed (100.039 seconds)
+ui MapLayersUITests.testOfflineCameraPackDraws: passed (42.763 seconds)
+ui MapLayersUITests.testStyleVariantsRender: passed (105.548 seconds)
+ui MapPoiUITests.testPoiSourceAndIconSize: passed (130.638 seconds)
+ui MapTapUITests.testTapEachKindOpensItsSheet: passed (222.803 seconds)
+ui MaritimeUITests.testShipsAndUkmtoList: passed (135.166 seconds)
+ui NotamUITests.testNotamDisabledStateAndCredentialPrompt: failed (44.576 seconds)
+ui PlaceKnowledgeUITests.testWikidataAndWikivoyage: passed (117.495 seconds)
+ui SatelliteUITests.testSatellitesOverGlobe: failed (145.928 seconds)
+ui TerrainUITests.testTerrainScreenRenders: passed (36.695 seconds)
+ui WorldLayersUITests.testWorldLayersStartHidden: failed (49.384 seconds)
+scripts/ios/ci-ipa.sh: line 286: 30344 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui aviation_count=18
+ui aviation_live=0
+ui aviation_source=fixture
+ui cameras_oriented=1
+ui cameras_pack_count=11
+ui cameras_pack_date=2026-07-21
+ui cameras_pack=camera-pack-2026-07-21
+ui cameras_unoriented=1
+ui chrome_overflow=0
+ui chrome_search_y=87.0
+ui chrome_steps_close_y=376.7
+ui detent_expanded=0.85
+ui detent=0.42
+ui dropped_pin=37.77490,-122.41940
+ui gesture_bearing=290.0
+ui gesture_north=1
+ui gesture_scale=2000
+ui gesture_start_zoom=12.0
+ui globe_camera_kept=1
+ui globe_offline_remote=0
+ui globe_offline=1
+ui globe_projection_back=mercator
+ui globe_projection=globe
+ui globe_zoom_clamp=1
+ui keep_north_up=1
+ui layers_alpr=2
+ui layers_controls=2
+ui layers_painted=23
+ui layers_speed=3
+ui map_3d=1
+ui map_element=yes
+ui map_inset_matches_sheet=1
+ui map_pitch=45
+ui map_pitch=60
+ui map_relief=1
+ui maritime_count=3
+ui merged_chrome=1
+ui poi_pack=337
+ui poi_source=vela
+ui poi_tiles=0
+ui sat_projection=globe
+ui tap_chain=tap_seen=1
+ui tap_debug=layers
+ui tap_kind=aircraft
+ui tap_kind=camera
+ui tap_kind=place
+ui tap_kind=saved
+ui terrain_dem=1
+ui terrain_return=1
+ui terrain_state=ready
+ui terrain_web=1
+ui ukmto_mode=link_only
+ui wiki_fields=3
+ui wiki_image=none
+ui wiki_rows=1
+ui wikivoyage_chars=634
+ui world_layers=5
+ui world_requests=3
+ui screenshots: launch-davis.png launch-sf.png place-wikidata.png.png place-wikivoyage.png.png 
+
+== Route replay (13:29:47)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 12F2A327-59F8-4E11-B472-0D8BF6E02941 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 12F2A327-59F8-4E11-B472-0D8BF6E02941 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 27; highest after refresh: 27
+place load: photos: rpc 10
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (13:31:02)
+239992
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 63622 bytes
+directions reply: directions-drive-sf 114569 bytes
+directions reply: directions-walk-sf 34604 bytes
+search reply: 239992 bytes, 28 feature ids
+failed steps: ui-scenarios
