@@ -1,0 +1,3 @@
+src=src/place-w3-verify
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=PlaceUITests,PlaceReviewsUITests,PlaceKnowledgeUITests VELA_SKIP_ARCHIVE=1
