@@ -1,0 +1,287 @@
+tag=a11y-fix-20261030-183752-31330 src=src/a11y-fix 84c981f src: a502e5d3 A11Y-FIX: keep the GO stack, trim the AX banner, apply the theme at launch
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 84c981f src: a502e5d3 A11Y-FIX: keep the GO stack, trim the AX banner, apply the theme at launch
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610301838 (1793385530)
+java: openjdk version "17.0.21" 2026-10-20
+
+== Notices (18:38:50)
+notices: ok, 39 entries (8 libraries, 30 data sources)
+
+== Kotlin: tests and the VelaCore framework (18:38:51)
+gradle: ok in 660 s
+kotlin jvmTest: 666 tests, 0 failures
+kotlin iosSimulatorArm64Test: 555 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87573328 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55204640 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (18:49:52)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 24 30.3M   24 7646k    0     0  10.9M      0  0:00:02 --:--:--  0:00:02 10.9M100 30.3M  100 30.3M    0     0  26.5M      0  0:00:01  0:00:01 --:--:-- 49.4M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (18:49:54)
+string catalog: 2145 keys, 24 resource locales (24 with translations), 38583 localized values, 1036 Swift references, 24 picker languages
+
+== XcodeGen (18:49:58)
+xcodegen: Version: 2.46.0
+
+== Generate the project (18:49:59)
+maplibre-globe: downloading MapLibre.dynamic.xcframework.zip (169968107 bytes) from ios-v2026.10.19-globe
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 15  162M   15 25.3M    0     0  39.6M      0  0:00:04 --:--:--  0:00:04 39.6M 70  162M   70  114M    0     0  70.1M      0  0:00:02  0:00:01  0:00:01 89.6M100  162M  100  162M    0     0  78.9M      0  0:00:02  0:00:02 --:--:-- 96.7M
+maplibre-globe ios-v2026.10.19-globe: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/MapLibre.xcframework (584M on disk)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (18:50:04)
+  SWCompression: https://github.com/tsolomko/SWCompression @ 4.9.1
+
+resolved source packages: BitByteData, SWCompression
+(resolve: 20 s)
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+
+== Pick a simulator (18:50:24)
+simulator: iPhone 17 (062CFAA4-9ACF-40ED-A1E2-3625F5ED4DA9) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (F6F146B6-18AA-4FE2-9F0B-AA6D02028DDA) (Shutdown) 
+
+== Build for the simulator (18:50:26)
+note: Run script build phase 'Fetch MapLibre globe' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 122 s)
+simulator build: ok
+
+== Boot the simulator (18:52:28)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (18:56:32)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 142 s)
+tests: ok, Executed 200 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.55 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=19691
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=60392 rate=22050 wav_frames=60392
+
+== Launch and screenshot (18:58:55)
+app.vela.ios: 31786
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 4BB549EC-4268-4531-897C-9F68F9DFD972 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (18:59:41)
+Parsed 8 waypoints
+Parsed 8 waypoints
+Parsed 8 waypoints
+Parsed 8 waypoints
+Parsed 8 waypoints
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(uitest: 1059 s)
+ui scenarios: ok
+scripts/ios/ci-ipa.sh: line 284: 33409 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui AccessibilitySuiteUITests.testNavAndFreeDriveDarkLandscape: passed (310.106 seconds)
+ui AccessibilitySuiteUITests.testSearchAtAccessibilitySizes: passed (137.506 seconds)
+ui AccessibilitySuiteUITests.testSettingsRtlAndDark: passed (92.861 seconds)
+ui AccessibilitySuiteUITests.testTransitAtAccessibilitySizes: passed (255.524 seconds)
+ui TransitCitymapperUITests.testNearbyLinesTabListsTheStopsLines: passed (24.429 seconds)
+ui TransitCitymapperUITests.testSegmentTimeChangeShowsANewOptionSet: passed (34.755 seconds)
+ui TransitCitymapperUITests.testSkipLetsTheRunPassAndAdvancesTheHeader: passed (24.596 seconds)
+ui TransitCitymapperUITests.testTripScreenShowsSegmentCardsAndNextDepartures: passed (21.285 seconds)
+ui a11y_case_free_drive_ax5_dark=truncated=0
+ui a11y_case_free_drive_rtl=truncated=0
+ui a11y_case_nav_ax3=truncated=2
+ui a11y_case_nav_ax5=truncated=0
+ui a11y_case_nav_dark_rtl=truncated=1
+ui a11y_case_search_ax3=truncated=0
+ui a11y_case_search_ax5=truncated=0
+ui a11y_case_search_dark_landscape=truncated=0
+ui a11y_case_search_rtl=truncated=0
+ui a11y_case_settings_ax3=truncated=0
+ui a11y_case_settings_ax5=truncated=0
+ui a11y_case_settings_dark_landscape=truncated=0
+ui a11y_case_settings_rtl=truncated=0
+ui a11y_case_transit_board_ax3=truncated=0
+ui a11y_case_transit_board_ax5=truncated=0
+ui a11y_case_transit_board_rtl_dark=truncated=0
+ui a11y_case_transit_detail_ax5=truncated=0
+ui a11y_case_transit_detail_rtl=truncated=0
+ui a11y_case_transit_go_ax5_dark=truncated=0
+ui a11y_case_transit_go_rtl=truncated=0
+ui a11y_cases=4
+ui a11y_cases=5
+ui a11y_cases=7
+ui a11y_clipped_targets=0
+ui a11y_clipped_targets=13
+ui a11y_clipped_targets=7
+ui a11y_clipped_targets=8
+ui a11y_failures=0
+ui a11y_free_drive_ax5_dark_target_free_exit=46x46
+ui a11y_free_drive_ax5_dark_target_free_locate=46x46
+ui a11y_free_drive_ax5_dark_target_free_simple_map=46x46
+ui a11y_free_drive_ax5_dark_target_free_voice=46x46
+ui a11y_free_drive_rtl_target_free_exit=46x46
+ui a11y_free_drive_rtl_target_free_locate=46x46
+ui a11y_free_drive_rtl_target_free_simple_map=46x46
+ui a11y_free_drive_rtl_target_free_voice=46x46
+ui a11y_nav_ax3_banner_fraction=0.25
+ui a11y_nav_ax3_target_nav_banner=378x216
+ui a11y_nav_ax3_target_nav_end=48x48
+ui a11y_nav_ax3_target_nav_heading=44x48
+ui a11y_nav_ax3_target_nav_pause=44x48
+ui a11y_nav_ax3_target_nav_voice=44x48
+ui a11y_nav_ax5_banner_fraction=0.29
+ui a11y_nav_ax5_target_nav_banner=378x254
+ui a11y_nav_ax5_target_nav_end=48x48
+ui a11y_nav_ax5_target_nav_heading=44x48
+ui a11y_nav_ax5_target_nav_pause=44x48
+ui a11y_nav_ax5_target_nav_voice=44x48
+ui a11y_nav_dark_rtl_appearance=dark
+ui a11y_nav_dark_rtl_banner_fraction=0.21
+ui a11y_nav_dark_rtl_target_nav_banner=378x84
+ui a11y_nav_dark_rtl_target_nav_end=48x48
+ui a11y_nav_dark_rtl_target_nav_heading=44x48
+ui a11y_nav_dark_rtl_target_nav_pause=44x48
+ui a11y_nav_dark_rtl_target_nav_voice=44x48
+ui a11y_scope=nav_free_drive
+ui a11y_scope=search
+ui a11y_scope=settings
+ui a11y_scope=transit
+ui a11y_search_ax3_target_map_overflow=44x44
+ui a11y_search_ax3_target_result_directions=222x44
+ui a11y_search_ax3_target_result_save=137x44
+ui a11y_search_ax3_target_search_clear=44x44
+ui a11y_search_ax3_target_search_field=146x49
+ui a11y_search_ax3_target_search_panel_toggle=354x48
+ui a11y_search_ax5_target_map_overflow=44x44
+ui a11y_search_ax5_target_result_directions=286x58
+ui a11y_search_ax5_target_result_save=172x54
+ui a11y_search_ax5_target_search_clear=44x44
+ui a11y_search_ax5_target_search_field=146x65
+ui a11y_search_ax5_target_search_panel_toggle=354x63
+ui a11y_search_dark_landscape_target_map_overflow=44x44
+ui a11y_search_dark_landscape_target_result_directions=108x44
+ui a11y_search_dark_landscape_target_result_save=73x44
+ui a11y_search_dark_landscape_target_search_clear=44x44
+ui a11y_search_dark_landscape_target_search_field=494x22
+ui a11y_search_dark_landscape_target_search_panel_toggle=702x44
+ui a11y_search_rtl_placeholder=بحث
+ui a11y_search_rtl_target_map_overflow=44x44
+ui a11y_search_rtl_target_result_directions=108x44
+ui a11y_search_rtl_target_result_save=73x44
+ui a11y_search_rtl_target_search_clear=44x44
+ui a11y_search_rtl_target_search_field=146x22
+ui a11y_search_rtl_target_search_panel_toggle=354x44
+ui a11y_search_rtl_window=402x874
+ui a11y_settings_ax3_target_settings_clock=370x123
+ui a11y_settings_ax3_target_settings_done=86x44
+ui a11y_settings_ax3_target_settings_language=370x165
+ui a11y_settings_ax3_target_settings_units=370x123
+ui a11y_settings_ax5_target_settings_clock=370x212
+ui a11y_settings_ax5_target_settings_done=116x58
+ui a11y_settings_ax5_target_settings_language=370x270
+ui a11y_settings_ax5_target_settings_units=370x212
+ui a11y_settings_dark_landscape_target_settings_clock=718x74
+ui a11y_settings_dark_landscape_target_settings_done=44x44
+ui a11y_settings_dark_landscape_target_settings_language=718x74
+ui a11y_settings_dark_landscape_target_settings_units=718x74
+ui a11y_settings_open_attempts=1
+ui a11y_settings_rtl_done=trailing
+ui a11y_settings_rtl_target_settings_clock=370x74
+ui a11y_settings_rtl_target_settings_done=44x44
+ui a11y_settings_rtl_target_settings_language=370x74
+ui a11y_settings_rtl_target_settings_units=370x73
+ui a11y_small_targets=1
+ui a11y_small_targets=2
+ui a11y_small_targets=20
+ui a11y_small_targets=6
+ui a11y_transit_board_ax3_target_transit_board_close=76x36
+ui a11y_transit_board_ax3_target_transit_board_line=370x319
+ui a11y_transit_board_ax3_target_transit_board_refresh=36x36
+ui a11y_transit_board_ax5_target_transit_board_close=76x36
+ui a11y_transit_board_ax5_target_transit_board_line=370x473
+ui a11y_transit_board_ax5_target_transit_board_refresh=36x36
+ui a11y_transit_board_rtl_dark_target_transit_board_close=68x36
+ui a11y_transit_board_rtl_dark_target_transit_board_line=370x126
+ui a11y_transit_board_rtl_dark_target_transit_board_refresh=36x36
+ui a11y_transit_detail_ax5_target_steps_close=97x201
+ui a11y_transit_detail_ax5_target_transit_start=118x573
+ui a11y_transit_detail_ax5_target_transit_trip_open=98x58
+ui a11y_transit_detail_rtl_target_steps_close=68x58
+ui a11y_transit_detail_rtl_target_transit_start=114x58
+ui a11y_transit_detail_rtl_target_transit_trip_open=68x57
+ui a11y_transit_go_ax5_dark_target_transit_go_close=129x63
+ui a11y_transit_go_ax5_dark_target_transit_go_departures=181x162
+ui a11y_transit_go_ax5_dark_target_transit_go_end=181x114
+ui a11y_transit_go_ax5_dark_target_transit_go_later=181x158
+ui a11y_transit_go_ax5_dark_target_transit_go_trip=181x158
+ui a11y_transit_go_rtl_target_transit_go_close=44x44
+ui a11y_transit_go_rtl_target_transit_go_departures=86x68
+ui a11y_transit_go_rtl_target_transit_go_end=86x68
+ui a11y_transit_go_rtl_target_transit_go_later=86x68
+ui a11y_transit_go_rtl_target_transit_go_trip=86x68
+ui a11y_truncated=0
+ui a11y_truncated=3
+ui transit_trip_fixture=1
+ui transit_trip_header_after_skip=3
+ui transit_trip_header_before_skip=4
+ui transit_trip_header=4
+ui transit_trip_nearby_lines=3
+ui transit_trip_nearby_rows=3
+ui transit_trip_option_rows=2
+ui transit_trip_rides=1
+ui transit_trip_segments=4
+ui transit_trip_shift_options=2
+ui transit_trip_shift_query=Depart
+ui transit_trip_skip_options=2
+ui transit_trip=segments_and_header
+ui screenshots: 
+
+== Route replay (19:17:26)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 4BB549EC-4268-4531-897C-9F68F9DFD972 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 4BB549EC-4268-4531-897C-9F68F9DFD972 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 27; highest after refresh: 27
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=94070 parsed=true times=false
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (19:19:29)
+265577
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 88756 bytes
+directions reply: directions-drive-sf 114091 bytes
+directions reply: directions-walk-sf 34594 bytes
+search reply: 265577 bytes, 37 feature ids
