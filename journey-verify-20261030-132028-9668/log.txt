@@ -1,0 +1,208 @@
+tag=journey-verify-20261030-132028-9668 src=src/journey-verify eef5bd1 src: 7a28306e Merge UX-JOURNEY: five journey defects fixed and four paths mapped
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: eef5bd1 src: 7a28306e Merge UX-JOURNEY: five journey defects fixed and four paths mapped
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610301321 (1793366497)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (13:21:37)
+notices: ok, 39 entries (8 libraries, 30 data sources)
+
+== Kotlin: tests and the VelaCore framework (13:21:38)
+gradle: ok in 585 s
+kotlin jvmTest: 666 tests, 0 failures
+kotlin iosSimulatorArm64Test: 555 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87573328 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55204640 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (13:31:23)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 57 30.3M   57 17.5M    0     0  29.3M      0  0:00:01 --:--:--  0:00:01 29.3M100 30.3M  100 30.3M    0     0  38.5M      0 --:--:-- --:--:-- --:--:-- 68.0M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (13:31:26)
+string catalog: 2145 keys, 24 resource locales (24 with translations), 38583 localized values, 1036 Swift references, 24 picker languages
+
+== XcodeGen (13:31:29)
+xcodegen: Version: 2.46.0
+
+== Generate the project (13:31:29)
+maplibre-globe: downloading MapLibre.dynamic.xcframework.zip (169968107 bytes) from ios-v2026.10.19-globe
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 10  162M   10 17.6M    0     0  37.9M      0  0:00:04 --:--:--  0:00:04 37.9M 57  162M   57 92.6M    0     0  63.2M      0  0:00:02  0:00:01  0:00:01 75.0M100  162M  100  162M    0     0  73.1M      0  0:00:02  0:00:02 --:--:-- 82.5M
+maplibre-globe ios-v2026.10.19-globe: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/MapLibre.xcframework (578M on disk)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (13:31:35)
+  BitByteData: https://github.com/tsolomko/BitByteData @ 2.1.0
+
+resolved source packages: SWCompression, BitByteData
+(resolve: 17 s)
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+
+== Pick a simulator (13:31:52)
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (582B068E-2ACA-440E-8D01-417AEDF26981) (Shutdown) 
+
+== Build for the simulator (13:31:53)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 110 s)
+simulator build: ok
+
+== Boot the simulator (13:33:43)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (13:37:20)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 153 s)
+tests: ok, Executed 200 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.56 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=19505
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=57304 rate=22050 wav_frames=57304
+
+== Launch and screenshot (13:39:53)
+app.vela.ios: 33862
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: B3E550BE-45DD-4ADA-99FB-4905BD6678F0 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (13:40:34)
+Parsed 8 waypoints
+xcodebuild uitest failed after 467 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/JourneyUITests.swift:95: error: -[VelaUITests.JourneyUITests testJourney1SearchToGuidanceAndBack] : failed - journey 1: the map did not return to its pre-guidance camera: before=37.77436,-122.41749,14.9 after=37.77312,-122.41749,14.9
+Test Case '-[VelaUITests.JourneyUITests testJourney1SearchToGuidanceAndBack]' failed (173.313 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/JourneyUITests.swift:199: error: -[VelaUITests.JourneyUITests testJourney2PlaceToSavedListToRouteAndBack] : failed - journey 2: the Saved sheet reopened on the root instead of the list
+Test Case '-[VelaUITests.JourneyUITests testJourney2PlaceToSavedListToRouteAndBack]' failed (91.239 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/JourneyUITests.swift:295: error: -[VelaUITests.JourneyUITests testJourney3TransitDoorToDoor] : failed - journey 3: the trip screen entry is not reachable in the itinerary
+Test Case '-[VelaUITests.JourneyUITests testJourney3TransitDoorToDoor]' failed (43.668 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =    54.82s     Synthesize event
+    t =    55.18s     Wait for app.vela.ios to idle
+    t =    55.19s Waiting 3.0s for "offline-menu-item" Button to exist
+    t =    56.23s     Checking `Expect predicate `existsNoRetry == 1` for object "offline-menu-item" Button`
+    t =    56.23s         Checking existence of `"offline-menu-item" Button`
+    t =    56.34s Tap "offline-menu-item" Button
+    t =    56.34s     Wait for app.vela.ios to idle
+    t =    56.34s     Find the "offline-menu-item" Button
+    t =    56.48s     Check for interrupting elements affecting "offline-menu-item" Button
+    t =    56.71s     Synthesize event
+    t =    57.04s     Wait for app.vela.ios to idle
+    t =    57.25s Waiting 3.0s for "area-sheet-ready" StaticText to exist
+    t =    58.28s     Checking `Expect predicate `existsNoRetry == 1` for object "area-sheet-ready" StaticText`
+    t =    58.28s         Checking existence of `"area-sheet-ready" StaticText`
+    t =    58.97s Added attachment named 'journey-4-reopen-again'
+UITEST journey_4_second_open_pieces=100
+    t =    58.98s Tap "offline-done" Button
+    t =    58.98s     Wait for app.vela.ios to idle
+    t =    58.98s     Find the "offline-done" Button
+    t =    59.17s     Check for interrupting elements affecting "offline-done" Button
+    t =    59.31s     Synthesize event
+    t =    59.64s     Wait for app.vela.ios to idle
+    t =    59.71s Checking existence of `"offline-sheet" Any`
+    t =    60.40s Added attachment named 'journey-4-end'
+    t =    60.41s Waiting 10.0s for "search-field" TextField to exist
+    t =    61.45s     Checking `Expect predicate `existsNoRetry == 1` for object "search-field" TextField`
+    t =    61.45s         Checking existence of `"search-field" TextField`
+    t =    61.53s Checking existence of `"route-sheet" Any`
+    t =    61.61s Checking existence of `"steps-sheet" Any`
+    t =    61.68s Checking existence of `"place-sheet" Any`
+    t =    61.77s Checking existence of `"map-poi-sheet" Any`
+    t =    61.84s Checking existence of `"offline-sheet" Any`
+    t =    61.93s Checking existence of `"transit-board" Any`
+    t =    62.03s Checking existence of `"transit-line-sheet" Any`
+    t =    62.10s Checking existence of `"transit-go-screen" Any`
+    t =    62.20s Checking existence of `"transit-card" Any`
+UITEST journey_4=ok
+    t =    62.29s Tear Down
+Test Case '-[VelaUITests.JourneyUITests testJourney4OfflineAreaDownloadAndReopen]' passed (62.596 seconds).
+Test Suite 'JourneyUITests' failed at 2026-10-30 13:47:30.070.
+	 Executed 4 tests, with 3 failures (0 unexpected) in 370.815 (370.827) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-30 13:47:30.071.
+	 Executed 4 tests, with 3 failures (0 unexpected) in 370.815 (370.828) seconds
+Test Suite 'Selected tests' failed at 2026-10-30 13:47:30.071.
+	 Executed 4 tests, with 3 failures (0 unexpected) in 370.815 (370.835) seconds
+2026-10-30 13:48:14.328 xcodebuild[34836:97079] [MT] IDETestOperationsObserverDebug: 437.191 elapsed -- Testing started completed.
+2026-10-30 13:48:14.329 xcodebuild[34836:97079] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-30 13:48:14.330 xcodebuild[34836:97079] [MT] IDETestOperationsObserverDebug: 437.191 sec, +437.191 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.JO2bX0FSJp/uitest.xcresult
+
+Failing tests:
+	JourneyUITests.testJourney1SearchToGuidanceAndBack()
+	JourneyUITests.testJourney2PlaceToSavedListToRouteAndBack()
+	JourneyUITests.testJourney3TransitDoorToDoor()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+scripts/ios/ci-ipa.sh: line 286: 34832 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui journey_1=fail
+ui journey_2=fail
+ui journey_3=fail
+ui journey_4_first_pieces=1
+ui journey_4_reopened_pieces=100
+ui journey_4_second_open_pieces=100
+ui journey_4=ok
+ui screenshots: 
+
+== Route replay (13:48:25)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: B3E550BE-45DD-4ADA-99FB-4905BD6678F0 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: B3E550BE-45DD-4ADA-99FB-4905BD6678F0 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=-1 parsed=false times=false
+place load: photos: rpc 8
+place load: details: nothing
+place load: details: page raw=-1 parsed=false times=false
+place load: photos: cache 8
+place load: details: nothing
+place load: details: page raw=-1 parsed=false times=false
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (13:49:55)
+254951
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 109105 bytes
+directions reply: directions-drive-sf 131391 bytes
+directions reply: directions-walk-sf 46847 bytes
+search reply: 254951 bytes, 31 feature ids
+failed steps: ui-scenarios

@@ -1,0 +1,58 @@
+commit: eef5bd1 src: 7a28306e Merge UX-JOURNEY: five journey defects fixed and four paths mapped
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610301321 (1793366497)
+java: openjdk version "17.0.20.1" 2026-08-18
+notices: ok, 39 entries (8 libraries, 30 data sources)
+gradle: ok in 585 s
+kotlin jvmTest: 666 tests, 0 failures
+kotlin iosSimulatorArm64Test: 555 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87573328 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55204640 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 2145 keys, 24 resource locales (24 with translations), 38583 localized values, 1036 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (582B068E-2ACA-440E-8D01-417AEDF26981) (Shutdown) 
+simulator build: ok
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+tests: ok, Executed 200 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.56 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=19505
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=57304 rate=22050 wav_frames=57304
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: FAILED
+ui journey_1=fail
+ui journey_2=fail
+ui journey_3=fail
+ui journey_4_first_pieces=1
+ui journey_4_reopened_pieces=100
+ui journey_4_second_open_pieces=100
+ui journey_4=ok
+ui screenshots: 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=-1 parsed=false times=false
+place load: photos: rpc 8
+place load: details: nothing
+place load: details: page raw=-1 parsed=false times=false
+place load: photos: cache 8
+place load: details: nothing
+place load: details: page raw=-1 parsed=false times=false
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 109105 bytes
+directions reply: directions-drive-sf 131391 bytes
+directions reply: directions-walk-sf 46847 bytes
+search reply: 254951 bytes, 31 feature ids
+failed steps: ui-scenarios
