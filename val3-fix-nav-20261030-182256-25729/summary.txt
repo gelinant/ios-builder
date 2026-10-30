@@ -1,0 +1,110 @@
+commit: 6afdbd8 src: b51ac977 Fix four VAL-3 drive and transit defects
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610301824 (1793384668)
+java: openjdk version "17.0.20.1" 2026-08-18
+notices: ok, 39 entries (8 libraries, 30 data sources)
+gradle: ok in 851 s
+kotlin jvmTest: 666 tests, 0 failures
+kotlin iosSimulatorArm64Test: 555 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87573328 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55204640 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 2145 keys, 24 resource locales (24 with translations), 38583 localized values, 1036 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (600A45A3-B3A0-4A39-8A9C-5D051F9FDA9C) (Shutdown) 
+simulator build: ok
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+tests: ok, Executed 200 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=18576
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=55841 rate=22050 wav_frames=55841
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: FAILED
+ui NavBannerUITests.testBannerAtAccessibilityXXXL: passed (50.277 seconds)
+ui NavBannerUITests.testFrenchShieldStyles: passed (45.841 seconds)
+ui NavBannerUITests.testLanesShieldPreviewAndPerStopEta: failed (80.792 seconds)
+ui NavBannerUITests.testUkShieldStyles: passed (44.949 seconds)
+ui NavCameraUITests.testThirdOfScreenZoomAndOverview: failed (75.358 seconds)
+ui TransitCitymapperUITests.testLiveTripScreenWhenTheFeedAnswers: passed (65.481 seconds)
+ui TransitCitymapperUITests.testNearbyLinesTabListsTheStopsLines: passed (27.210 seconds)
+ui TransitCitymapperUITests.testSegmentTimeChangeShowsANewOptionSet: passed (41.690 seconds)
+ui TransitCitymapperUITests.testSkipLetsTheRunPassAndAdvancesTheHeader: passed (23.619 seconds)
+ui TransitCitymapperUITests.testTripScreenShowsSegmentCardsAndNextDepartures: passed (25.389 seconds)
+ui TransitLineViewUITests.testLineRibbonAndColors: passed (31.836 seconds)
+ui TransitTimeUITests.testTimeEverywhere: passed (136.263 seconds)
+ui TransitWiredUITests.testTapTransitEverywhereAndSeeTheLine: failed (82.329 seconds)
+ui line_color=437c93
+ui line_directions=2
+ui line_estimated=1
+ui line_fixture=1
+ui line_sheet_state=no_sequence
+ui line_source=feed
+ui line_stops=20
+ui nav_banner_ax_fraction=0.11
+ui nav_banner_ax_heights=banner=95
+ui nav_banner_lanes=4
+ui nav_banner_shield_fr=A7
+ui nav_banner_shield_gb=M25
+ui nav_banner_shield=US
+ui nav_banner_stop_eta=4
+ui nav_banner_stops=1
+ui nav_banner_trip=Trip
+ui nav_camera_third=1
+ui nav_camera_zoom=18.5
+ui time_board_query=Depart_at_7:20_PM_·_GMT_·_asked_7:00 PM
+ui time_route_mode=1
+ui time_route_query=Depart_at_7:20_PM_·_GMT_·_asked_7:01 PM
+ui time_segment_query=Depart_at_7:17 PM_from_Metro_Van_Ness_Station_·_fixture,_display_only
+ui time_surfaces=4
+ui time_transit_query=Depart_at_7:35_PM_·_GMT_·_asked_7:02 PM
+ui time_trip_query=Depart_at_7:35_PM_·_GMT_·_asked_7:00 PM
+ui transit_options_hittable=1
+ui transit_trip_fixture=1
+ui transit_trip_header_after_skip=3
+ui transit_trip_header_before_skip=4
+ui transit_trip_header=4
+ui transit_trip_live_available=1
+ui transit_trip_live_header=4
+ui transit_trip_live_segments=7
+ui transit_trip_nearby_lines=3
+ui transit_trip_nearby_rows=3
+ui transit_trip_option_rows=2
+ui transit_trip_rides=1
+ui transit_trip_segments=4
+ui transit_trip_shift_options=2
+ui transit_trip_shift_query=Depart
+ui transit_trip_skip_options=2
+ui transit_trip=segments_and_header
+ui wired_board_lines=3
+ui wired_departure=1
+ui wired_line_departures=0
+ui wired_line_sequence=unavailable
+ui wired_line=1
+ui wired_nearby=1
+ui wired_segment=1
+ui screenshots: nav-banner-ax.png nav-banner-lanes-shield-stop.png nav-banner-shield-fr.png nav-banner-shield-gb.png nav-camera-tilt.png 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=26121 parsed=true times=false
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=27917 parsed=true times=false
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 101335 bytes
+directions reply: directions-drive-sf 113373 bytes
+directions reply: directions-walk-sf 34595 bytes
+search reply: 257338 bytes, 35 feature ids
+failed steps: ui-scenarios
