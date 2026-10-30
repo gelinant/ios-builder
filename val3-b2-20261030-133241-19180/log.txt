@@ -1,0 +1,314 @@
+tag=val3-b2-20261030-133241-19180 src=src/val3-b2 be7e54a src: bfb47a26 Docs: record the 30 October noon build
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: be7e54a src: bfb47a26 Docs: record the 30 October noon build
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610301334 (1793367258)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (13:34:18)
+notices: ok, 39 entries (8 libraries, 30 data sources)
+
+== Kotlin: tests and the VelaCore framework (13:34:19)
+gradle: ok in 801 s
+kotlin jvmTest: 662 tests, 0 failures
+kotlin iosSimulatorArm64Test: 551 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87549872 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55180680 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (13:47:41)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0 30.3M    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 30.3M  100 30.3M    0     0  36.4M      0 --:--:-- --:--:-- --:--:-- 75.3M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (13:47:45)
+string catalog: 2128 keys, 24 resource locales (24 with translations), 38549 localized values, 1009 Swift references, 24 picker languages
+
+== XcodeGen (13:47:48)
+xcodegen: Version: 2.46.0
+
+== Generate the project (13:47:49)
+maplibre-globe: downloading MapLibre.dynamic.xcframework.zip (169968107 bytes) from ios-v2026.10.19-globe
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0  162M    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 52  162M   52 85.5M    0     0  68.2M      0  0:00:02  0:00:01  0:00:01 88.7M100  162M  100  162M    0     0  78.1M      0  0:00:02  0:00:02 --:--:-- 90.8M
+maplibre-globe ios-v2026.10.19-globe: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/MapLibre.xcframework (589M on disk)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (13:47:54)
+  BitByteData: https://github.com/tsolomko/BitByteData @ 2.1.0
+
+resolved source packages: SWCompression, BitByteData
+(resolve: 18 s)
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+
+== Pick a simulator (13:48:12)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (600A45A3-B3A0-4A39-8A9C-5D051F9FDA9C) (Shutdown) 
+
+== Build for the simulator (13:48:15)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 138 s)
+simulator build: ok
+
+== Boot the simulator (13:50:33)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (13:53:46)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 181 s)
+tests: ok, Executed 189 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Navigate_to_coffee samples=19691
+VOICE_ASR_PLAN action=navigate query=coffee
+VOICE_SYNTH samples=55522 rate=22050 wav_frames=55522
+
+== Launch and screenshot (13:56:47)
+app.vela.ios: 39088
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: F4D2C3EE-3F40-4064-BD72-E9296642E71B (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (13:57:30)
+Parsed 8 waypoints
+Parsed 8 waypoints
+xcodebuild uitest failed after 3038 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SavedFinishingUITests.swift:263: error: -[VelaUITests.SavedFinishingUITests testListEditingSelectionAndSound] : Failed to synthesize event: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: TextField, {{32.0, 77.7}, {338.0, 22.0}}, identifier: 'saved-name-field', placeholderValue: 'List name', value: UI Finish
+Test Case '-[VelaUITests.SavedFinishingUITests testListEditingSelectionAndSound]' failed (234.658 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SavedFinishingUITests.swift:75: error: -[VelaUITests.SavedFinishingUITests testSavedLineReopensBesideComputedRoutes] : XCTAssertTrue failed - saved route row missing
+Test Case '-[VelaUITests.SavedFinishingUITests testSavedLineReopensBesideComputedRoutes]' failed (90.319 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SearchCommandUITests.swift:169: error: -[VelaUITests.SearchCommandUITests testAlongRouteSkipsTheTravelledPart] : XCTAssertEqual failed: ("Optional("origin")") is not equal to ("Optional("progress")") - the corridor did not start at the car: offline=0 results=60 suggestions=0 area=1 dropped=0 searches=1 unified=6 ulocal=28ms cmd_kind=along cmd_len=22 cmd_contacts=- cmd_corridor_m=3000 cmd_found=60 cmd_total=60 cmd_from=origin cmd_route_m=3220 cmd_hook=fired
+Test Case '-[VelaUITests.SearchCommandUITests testAlongRouteSkipsTheTravelledPart]' failed (179.152 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SearchUITests.swift:171: error: -[VelaUITests.SearchUITests testAddressSearchMergesWithoutDuplicateRows] : XCTAssertTrue failed - Google and Photon did not return the typed house number
+Test Case '-[VelaUITests.SearchUITests testAddressSearchMergesWithoutDuplicateRows]' failed (192.621 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TripsUITests.swift:129: error: -[VelaUITests.TripsUITests testFullTraceAndDemoMode] : XCTAssertTrue failed - no driving route
+Test Case '-[VelaUITests.TripsUITests testFullTraceAndDemoMode]' failed (121.216 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/UnifiedSearchUITests.swift:160: error: -[VelaUITests.UnifiedSearchUITests testFindSavedTransitWikiSettingAndPlace] : XCTAssertTrue failed - no place row: offline=0 results=0 suggestions=7 area=0 dropped=0 searches=0 unified=11 ulocal=13ms cmd_kind=- cmd_len=0 cmd_contacts=- cmd_corridor_m=0 cmd_found=0 cmd_total=0 cmd_from=origin cmd_route_m=0 cmd_hook=-
+Test Case '-[VelaUITests.UnifiedSearchUITests testFindSavedTransitWikiSettingAndPlace]' failed (188.326 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =   177.71s         Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =   177.71s             Checking existence of `Button (First Match)`
+    t =   178.04s             Capturing element debug description
+    t =   178.69s         Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =   178.69s             Checking existence of `Button (First Match)`
+    t =   178.93s             Capturing element debug description
+    t =   179.77s         Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =   179.77s             Checking existence of `Button (First Match)`
+    t =   180.08s             Capturing element debug description
+    t =   180.72s         Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =   180.72s             Checking existence of `Button (First Match)`
+    t =   180.95s             Capturing element debug description
+    t =   181.69s         Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =   181.69s             Checking existence of `Button (First Match)`
+    t =   182.00s             Capturing element debug description
+    t =   182.72s         Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =   182.72s             Checking existence of `Button (First Match)`
+    t =   183.22s             Capturing element debug description
+    t =   183.75s         Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =   183.76s             Checking existence of `Button (First Match)`
+    t =   184.21s             Capturing element debug description
+    t =   184.72s         Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =   184.72s             Checking existence of `Button (First Match)`
+    t =   185.06s             Capturing element debug description
+    t =   185.69s         Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =   185.69s             Checking existence of `Button (First Match)`
+    t =   185.97s             Capturing element debug description
+    t =   185.98s         Checking existence of `Button (First Match)`
+    t =   186.73s     Collecting debug information to assist test failure triage
+    t =   186.73s         Requesting snapshot of accessibility hierarchy for app with pid 25823
+    t =   186.95s     Checking existence of `"search-message" StaticText`
+    t =   187.12s     Checking existence of `"search-debug" StaticText`
+    t =   187.37s     Find the "search-debug" StaticText
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/UnifiedSearchUITests.swift:160: error: -[VelaUITests.UnifiedSearchUITests testFindSavedTransitWikiSettingAndPlace] : XCTAssertTrue failed - no place row: offline=0 results=0 suggestions=7 area=0 dropped=0 searches=0 unified=11 ulocal=13ms cmd_kind=- cmd_len=0 cmd_contacts=- cmd_corridor_m=0 cmd_found=0 cmd_total=0 cmd_from=origin cmd_route_m=0 cmd_hook=-
+    t =   187.61s Tear Down
+Test Case '-[VelaUITests.UnifiedSearchUITests testFindSavedTransitWikiSettingAndPlace]' failed (188.326 seconds).
+Test Suite 'UnifiedSearchUITests' failed at 2026-10-30 14:47:00.677.
+	 Executed 1 test, with 1 failure (0 unexpected) in 188.326 (188.328) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-30 14:47:00.681.
+	 Executed 26 tests, with 6 failures (0 unexpected) in 2903.905 (2903.975) seconds
+Test Suite 'Selected tests' failed at 2026-10-30 14:47:00.683.
+	 Executed 26 tests, with 6 failures (0 unexpected) in 2903.905 (2903.977) seconds
+2026-10-30 14:48:00.628 xcodebuild[40442:110714] [MT] IDETestOperationsObserverDebug: 3008.898 elapsed -- Testing started completed.
+2026-10-30 14:48:00.631 xcodebuild[40442:110714] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-30 14:48:00.632 xcodebuild[40442:110714] [MT] IDETestOperationsObserverDebug: 3008.898 sec, +3008.898 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.a3KPdtgv9K/uitest.xcresult
+
+Failing tests:
+	SavedFinishingUITests.testListEditingSelectionAndSound()
+	SavedFinishingUITests.testSavedLineReopensBesideComputedRoutes()
+	SearchCommandUITests.testAlongRouteSkipsTheTravelledPart()
+	SearchUITests.testAddressSearchMergesWithoutDuplicateRows()
+	TripsUITests.testFullTraceAndDemoMode()
+	UnifiedSearchUITests.testFindSavedTransitWikiSettingAndPlace()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui PlaceObscuraUITests.testAtlasObscuraLinkOpensWebSheet: passed (112.034 seconds)
+ui PlaceObscuraUITests.testGastroObscuraLinkOpensWebSheet: passed (86.064 seconds)
+ui SavedExportUITests.testFindMyCarOpensTheSpotWithDirections: passed (27.508 seconds)
+ui SavedExportUITests.testListExportImportsBackFromTheShareSheet: passed (159.513 seconds)
+ui SavedFinishingUITests.testHomeAndWorkOpenFromSavedAndMap: passed (89.516 seconds)
+ui SavedFinishingUITests.testListEditingSelectionAndSound: failed (234.658 seconds)
+ui SavedFinishingUITests.testSavedLineReopensBesideComputedRoutes: failed (90.319 seconds)
+ui SavedFinishingUITests.testTakeoutFixtureImportsIntoNamedList: passed (25.444 seconds)
+ui SavedImportUITests.testGoogleListAndMyMaps: passed (213.802 seconds)
+ui SavedUITests.testSavedPlaceListAndRecentsPersist: passed (90.615 seconds)
+ui SearchAreaUITests.testSearchThisAreaAndMoreResults: passed (109.302 seconds)
+ui SearchBranchUITests.testBranchChipAndShortcutEditor: passed (101.321 seconds)
+ui SearchCommandUITests.testAlongRouteSkipsTheTravelledPart: failed (179.152 seconds)
+ui SearchCommandUITests.testTypedAndSpokenCommands: passed (182.450 seconds)
+ui SearchFiltersUITests.testFiltersAndSort: passed (324.675 seconds)
+ui SearchUITests.testAddressSearchMergesWithoutDuplicateRows: failed (192.621 seconds)
+ui SearchUITests.testCoffeeSearchShowsResultsAndPins: passed (59.146 seconds)
+ui SearchUITests.testNoGoogleSearchReturnsPhotonRows: passed (37.910 seconds)
+ui SearchUITests.testPhotonAddressSearchShowsTheTypedHouseNumber: passed (26.161 seconds)
+ui SearchUITests.testQuickCategoryRunsSearch: passed (22.235 seconds)
+ui SearchUITests.testResultCardFields: passed (28.990 seconds)
+ui SearchUITests.testSuggestionPriorityAndArrow: passed (45.018 seconds)
+ui SearchUITests.testSuggestionsAppearAndFreezeAfterSelection: passed (19.538 seconds)
+ui TripsUITests.testFullTraceAndDemoMode: failed (121.216 seconds)
+ui TripsUITests.testRecordDriveAndOpenTrip: passed (136.372 seconds)
+ui UnifiedSearchUITests.testFindSavedTransitWikiSettingAndPlace: failed (188.326 seconds)
+scripts/ios/ci-ipa.sh: line 286: 40440 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui branch_chip=Also
+ui branch_rows=3
+ui card_call_rows=32
+ui card_photo_rows=23
+ui card_status_label=San
+ui category_rows=60
+ui cmd_contacts=denied
+ui cmd_contacts=granted
+ui cmd_corridor_m=3000
+ui cmd_found=55
+ui cmd_kind=-
+ui cmd_kind=along
+ui cmd_kind=call
+ui cmd_kind=directions
+ui cmd_kind=home
+ui cmd_kind=work
+ui cmd_len=0
+ui cmd_len=17
+ui cmd_len=20
+ui cmd_len=29
+ui cmd_len=4
+ui cmd_len=6
+ui cmd_searches=0
+ui cmd_searches=1
+ui diagnostics_lines=16
+ui filter_baseline_rows=59
+ui filter_rows_after_rating=55
+ui filter_sorted_first_m=213.35999317248022
+ui filter_sorted_last_m=2414.016
+ui filter_sorted_rows=55
+ui nogoogle_photon_hits=17
+ui nogoogle_photon_rows=17
+ui nogoogle_search_debug=offline=0
+ui obscura_action=atlas_nearby
+ui obscura_action=gastro_places
+ui obscura_host=www.atlasobscura.com
+ui obscura_sheet=Close
+ui photon_address_hits=9
+ui photon_address_rows=19
+ui quick_chip_hidden=Coffee
+ui saved_export_roundtrip=1
+ui saved_export_sheet=opened
+ui saved_find_my_car=opened
+ui saved_google_duplicate=merge_or_replace
+ui saved_google_idempotent=2
+ui saved_google_merge=unchanged
+ui saved_google_places=2
+ui saved_kml_duplicate=merge_unchanged
+ui saved_kml_lists=2
+ui saved_kml_note=kept
+ui saved_lists_after_restart=7
+ui saved_lists=7
+ui saved_map_home=directions_opened
+ui saved_nogoogle=blocked
+ui saved_places=1
+ui saved_recents_after_restart=6
+ui saved_selection=1
+ui saved_shortcuts=home_and_work_opened
+ui saved_takeout_places=2
+ui search_area_debug=offline=0
+ui search_area_dropped=0
+ui search_area_label=Search
+ui search_area_rows_after=12
+ui search_area_rows_before=37
+ui search_area_searches_before=1
+ui search_more_dropped=0
+ui search_more_rows_after=12
+ui search_more_rows_before=12
+ui search_more_scrolls=2
+ui search_rows=37
+ui suggestion_leading_row=Great
+ui suggestion_priority=local
+ui suggestion_rows=4
+ui trip_fixes=Fixes,
+ui trips_flow=recorded_opened_exportable
+ui unified_kind=coord
+ui unified_kind=line
+ui unified_kind=list
+ui unified_kind=saved
+ui unified_kind=setting
+ui unified_kind=stop
+ui unified_kind=wiki
+ui unified_local_ms=16
+ui screenshots: category.png place-atlas-obscura.png place-branch-chip.png place-branch-list.png place-branch-opened.png place-gastro-obscura.png place-save.png search-along-route.png search-area-button.png search-area-refreshed.png search-card-fields.png search-centered.png search-command.png search-filter-sheet.png search-filtered.png search-list.png search-map.png search-more-chip.png search-photon-nogoogle.png search-photon.png search-suggestion-priority.png suggest.png 
+
+== Route replay (14:48:15)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: F4D2C3EE-3F40-4064-BD72-E9296642E71B (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: F4D2C3EE-3F40-4064-BD72-E9296642E71B (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 27; highest after refresh: 27
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=0 parsed=false times=false
+place load: photos: rpc 0
+place load: details: plain search (no popular times)
+place load: details: page raw=0 parsed=false times=false
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (14:49:52)
+256010
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 101297 bytes
+directions reply: directions-drive-sf 113659 bytes
+directions reply: directions-walk-sf 34603 bytes
+search reply: 256010 bytes, 34 feature ids
+failed steps: ui-scenarios

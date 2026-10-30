@@ -1,0 +1,157 @@
+commit: be7e54a src: bfb47a26 Docs: record the 30 October noon build
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610301334 (1793367258)
+java: openjdk version "17.0.20.1" 2026-08-18
+notices: ok, 39 entries (8 libraries, 30 data sources)
+gradle: ok in 801 s
+kotlin jvmTest: 662 tests, 0 failures
+kotlin iosSimulatorArm64Test: 551 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87549872 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55180680 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 2128 keys, 24 resource locales (24 with translations), 38549 localized values, 1009 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (600A45A3-B3A0-4A39-8A9C-5D051F9FDA9C) (Shutdown) 
+simulator build: ok
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+tests: ok, Executed 189 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Navigate_to_coffee samples=19691
+VOICE_ASR_PLAN action=navigate query=coffee
+VOICE_SYNTH samples=55522 rate=22050 wav_frames=55522
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: FAILED
+ui PlaceObscuraUITests.testAtlasObscuraLinkOpensWebSheet: passed (112.034 seconds)
+ui PlaceObscuraUITests.testGastroObscuraLinkOpensWebSheet: passed (86.064 seconds)
+ui SavedExportUITests.testFindMyCarOpensTheSpotWithDirections: passed (27.508 seconds)
+ui SavedExportUITests.testListExportImportsBackFromTheShareSheet: passed (159.513 seconds)
+ui SavedFinishingUITests.testHomeAndWorkOpenFromSavedAndMap: passed (89.516 seconds)
+ui SavedFinishingUITests.testListEditingSelectionAndSound: failed (234.658 seconds)
+ui SavedFinishingUITests.testSavedLineReopensBesideComputedRoutes: failed (90.319 seconds)
+ui SavedFinishingUITests.testTakeoutFixtureImportsIntoNamedList: passed (25.444 seconds)
+ui SavedImportUITests.testGoogleListAndMyMaps: passed (213.802 seconds)
+ui SavedUITests.testSavedPlaceListAndRecentsPersist: passed (90.615 seconds)
+ui SearchAreaUITests.testSearchThisAreaAndMoreResults: passed (109.302 seconds)
+ui SearchBranchUITests.testBranchChipAndShortcutEditor: passed (101.321 seconds)
+ui SearchCommandUITests.testAlongRouteSkipsTheTravelledPart: failed (179.152 seconds)
+ui SearchCommandUITests.testTypedAndSpokenCommands: passed (182.450 seconds)
+ui SearchFiltersUITests.testFiltersAndSort: passed (324.675 seconds)
+ui SearchUITests.testAddressSearchMergesWithoutDuplicateRows: failed (192.621 seconds)
+ui SearchUITests.testCoffeeSearchShowsResultsAndPins: passed (59.146 seconds)
+ui SearchUITests.testNoGoogleSearchReturnsPhotonRows: passed (37.910 seconds)
+ui SearchUITests.testPhotonAddressSearchShowsTheTypedHouseNumber: passed (26.161 seconds)
+ui SearchUITests.testQuickCategoryRunsSearch: passed (22.235 seconds)
+ui SearchUITests.testResultCardFields: passed (28.990 seconds)
+ui SearchUITests.testSuggestionPriorityAndArrow: passed (45.018 seconds)
+ui SearchUITests.testSuggestionsAppearAndFreezeAfterSelection: passed (19.538 seconds)
+ui TripsUITests.testFullTraceAndDemoMode: failed (121.216 seconds)
+ui TripsUITests.testRecordDriveAndOpenTrip: passed (136.372 seconds)
+ui UnifiedSearchUITests.testFindSavedTransitWikiSettingAndPlace: failed (188.326 seconds)
+ui branch_chip=Also
+ui branch_rows=3
+ui card_call_rows=32
+ui card_photo_rows=23
+ui card_status_label=San
+ui category_rows=60
+ui cmd_contacts=denied
+ui cmd_contacts=granted
+ui cmd_corridor_m=3000
+ui cmd_found=55
+ui cmd_kind=-
+ui cmd_kind=along
+ui cmd_kind=call
+ui cmd_kind=directions
+ui cmd_kind=home
+ui cmd_kind=work
+ui cmd_len=0
+ui cmd_len=17
+ui cmd_len=20
+ui cmd_len=29
+ui cmd_len=4
+ui cmd_len=6
+ui cmd_searches=0
+ui cmd_searches=1
+ui diagnostics_lines=16
+ui filter_baseline_rows=59
+ui filter_rows_after_rating=55
+ui filter_sorted_first_m=213.35999317248022
+ui filter_sorted_last_m=2414.016
+ui filter_sorted_rows=55
+ui nogoogle_photon_hits=17
+ui nogoogle_photon_rows=17
+ui nogoogle_search_debug=offline=0
+ui obscura_action=atlas_nearby
+ui obscura_action=gastro_places
+ui obscura_host=www.atlasobscura.com
+ui obscura_sheet=Close
+ui photon_address_hits=9
+ui photon_address_rows=19
+ui quick_chip_hidden=Coffee
+ui saved_export_roundtrip=1
+ui saved_export_sheet=opened
+ui saved_find_my_car=opened
+ui saved_google_duplicate=merge_or_replace
+ui saved_google_idempotent=2
+ui saved_google_merge=unchanged
+ui saved_google_places=2
+ui saved_kml_duplicate=merge_unchanged
+ui saved_kml_lists=2
+ui saved_kml_note=kept
+ui saved_lists_after_restart=7
+ui saved_lists=7
+ui saved_map_home=directions_opened
+ui saved_nogoogle=blocked
+ui saved_places=1
+ui saved_recents_after_restart=6
+ui saved_selection=1
+ui saved_shortcuts=home_and_work_opened
+ui saved_takeout_places=2
+ui search_area_debug=offline=0
+ui search_area_dropped=0
+ui search_area_label=Search
+ui search_area_rows_after=12
+ui search_area_rows_before=37
+ui search_area_searches_before=1
+ui search_more_dropped=0
+ui search_more_rows_after=12
+ui search_more_rows_before=12
+ui search_more_scrolls=2
+ui search_rows=37
+ui suggestion_leading_row=Great
+ui suggestion_priority=local
+ui suggestion_rows=4
+ui trip_fixes=Fixes,
+ui trips_flow=recorded_opened_exportable
+ui unified_kind=coord
+ui unified_kind=line
+ui unified_kind=list
+ui unified_kind=saved
+ui unified_kind=setting
+ui unified_kind=stop
+ui unified_kind=wiki
+ui unified_local_ms=16
+ui screenshots: category.png place-atlas-obscura.png place-branch-chip.png place-branch-list.png place-branch-opened.png place-gastro-obscura.png place-save.png search-along-route.png search-area-button.png search-area-refreshed.png search-card-fields.png search-centered.png search-command.png search-filter-sheet.png search-filtered.png search-list.png search-map.png search-more-chip.png search-photon-nogoogle.png search-photon.png search-suggestion-priority.png suggest.png 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 27; highest after refresh: 27
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=0 parsed=false times=false
+place load: photos: rpc 0
+place load: details: plain search (no popular times)
+place load: details: page raw=0 parsed=false times=false
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 101297 bytes
+directions reply: directions-drive-sf 113659 bytes
+directions reply: directions-walk-sf 34603 bytes
+search reply: 256010 bytes, 34 feature ids
+failed steps: ui-scenarios
