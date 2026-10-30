@@ -1,0 +1,3 @@
+src=src/harness-2
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=IncomingLinksUITests,IntentsUITests,LocalizationUITests,PrivacyUITests,OfflineUITests VELA_SKIP_ARCHIVE=1
