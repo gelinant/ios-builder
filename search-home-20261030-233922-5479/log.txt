@@ -1,0 +1,118 @@
+tag=search-home-20261030-233922-5479 src=src/search-home be641f8 src: 19a2b0d3 Search: offer a home sheet with recents, saved and nearby transit
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: be641f8 src: 19a2b0d3 Search: offer a home sheet with recents, saved and nearby transit
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610302340 (1793403606)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (23:40:07)
+notices: ok, 39 entries (8 libraries, 30 data sources)
+
+== Kotlin: tests and the VelaCore framework (23:40:07)
+gradle: ok in 346 s
+kotlin jvmTest: 667 tests, 0 failures
+kotlin iosSimulatorArm64Test: 555 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87578000 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55208824 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (23:45:53)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 36 30.3M   36 11.1M    0     0  28.0M      0  0:00:01 --:--:--  0:00:01 28.0M100 30.3M  100 30.3M    0     0  60.7M      0 --:--:-- --:--:-- --:--:--  191M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (23:45:54)
+string catalog: 2148 keys, 24 resource locales (24 with translations), 38589 localized values, 1042 Swift references, 24 picker languages
+
+== XcodeGen (23:45:55)
+xcodegen: Version: 2.46.0
+
+== Generate the project (23:45:56)
+maplibre-globe: downloading MapLibre.dynamic.xcframework.zip (169968107 bytes) from ios-v2026.10.19-globe
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 19  162M   19 31.2M    0     0  53.4M      0  0:00:03 --:--:--  0:00:03 53.4M100  162M  100  162M    0     0   111M      0  0:00:01  0:00:01 --:--:--  150M
+maplibre-globe ios-v2026.10.19-globe: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/MapLibre.xcframework (577M on disk)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (23:45:59)
+  SWCompression: https://github.com/tsolomko/SWCompression @ 4.9.1
+
+resolved source packages: BitByteData, SWCompression
+(resolve: 11 s)
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+
+== Pick a simulator (23:46:10)
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (582B068E-2ACA-440E-8D01-417AEDF26981) (Shutdown) 
+
+== Build for the simulator (23:46:11)
+xcodebuild build-sim failed after 45 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Search/SearchModel.swift:970:38: error: cannot convert return expression of type '(lat: Double, lng: Double)' to return type '(latitude: Double, longitude: Double)'
+** TEST BUILD FAILED **
+--- tail of build-sim log ---
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/RadarLayer.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Offline/RegionDownloadInstaller.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Offline/RegionDownloader.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Place/RemoteImage.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Place/ReviewsPanel.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Web/ReviewsWebFetcher.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Routes/RouteBikeTestSupport.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Routes/RouteCameraTestSupport.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/RouteLayers.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Routes/RouteModel.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Routes/RouteOptions.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Routes/RouteSheets.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+note: Run script build phase 'Fetch MapLibre globe' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD FAILED **
+
+
+The following build commands failed:
+	SwiftCompile normal arm64 Compiling\ SatelliteLayer.swift,\ SatelliteOrbitLayer.swift,\ SavedContent.swift,\ SavedDocument.swift,\ SavedImportDocument.swift,\ SavedImportGoogle.swift,\ SavedImportSupport.swift,\ SavedImportViews.swift,\ SavedModel.swift,\ SavedRoutePickerSheet.swift,\ SavedShare.swift,\ SavedSoundPlayer.swift,\ SavedTestSupport.swift,\ SavedViews.swift,\ SearchCommandTestSupport.swift,\ SearchModel.swift,\ SearchPanels.swift,\ SearchUnified.swift,\ SearchViews.swift,\ SecKeySignatureVerifier.swift,\ SettingsAboutView.swift,\ SettingsChrome.swift,\ SettingsModel.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/SatelliteLayer.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/SatelliteOrbitLayer.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Intents/SavedContent.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Saved/SavedDocument.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Saved/SavedImportDocument.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Saved/SavedImportGoogle.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Saved/SavedImportSupport.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Saved/SavedImportViews.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Saved/SavedModel.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Saved/SavedRoutePickerSheet.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Saved/SavedShare.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Saved/SavedSoundPlayer.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Saved/SavedTestSupport.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Saved/SavedViews.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Search/SearchCommandTestSupport.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Search/SearchModel.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Search/SearchPanels.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Search/SearchUnified.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Search/SearchViews.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Platform/SecKeySignatureVerifier.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Settings/SettingsAboutView.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Settings/SettingsChrome.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Settings/SettingsModel.swift (in target 'Vela' from project 'Vela')
+	SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Search/SearchModel.swift (in target 'Vela' from project 'Vela')
+	Building project Vela for testing with scheme Vela
+(3 failures)
