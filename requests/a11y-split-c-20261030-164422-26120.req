@@ -1,0 +1,3 @@
+src=src/a11y-split-c
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=AccessibilitySuiteUITests/testSearchAtAccessibilitySizes,AccessibilitySuiteUITests/testSettingsRtlAndDark,AccessibilitySuiteUITests/testTransitAtAccessibilitySizes,AccessibilitySuiteUITests/testNavAndFreeDriveDarkLandscape VELA_SKIP_ARCHIVE=1
