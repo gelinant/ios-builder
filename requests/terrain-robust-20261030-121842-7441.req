@@ -1,0 +1,3 @@
+src=src/terrain-robust
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=TerrainUITests,LocalizationUITests VELA_SKIP_ARCHIVE=1
