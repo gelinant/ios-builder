@@ -1,0 +1,217 @@
+tag=i18n-4-20261030-104206-manual3 src=src/i18n-4 0c3d92c src: 1d3bc2df I18N-4: hold the GO model for the loading-line scene
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 0c3d92c src: 1d3bc2df I18N-4: hold the GO model for the loading-line scene
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610301043 (1793356987)
+java: openjdk version "17.0.21" 2026-10-20
+
+== Notices (10:43:07)
+notices: ok, 39 entries (8 libraries, 30 data sources)
+
+== Kotlin: tests and the VelaCore framework (10:43:08)
+gradle: ok in 642 s
+kotlin jvmTest: 655 tests, 0 failures
+kotlin iosSimulatorArm64Test: 544 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87315528 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  58M, static library 55048640 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (10:53:51)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 30.3M  100 30.3M    0     0  39.8M      0 --:--:-- --:--:-- --:--:-- 39.8M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (10:53:53)
+string catalog: 2108 keys, 24 resource locales (24 with translations), 38509 localized values, 989 Swift references, 24 picker languages
+
+== XcodeGen (10:53:55)
+xcodegen: Version: 2.46.0
+
+== Generate the project (10:53:56)
+maplibre-globe: downloading MapLibre.dynamic.xcframework.zip (169968107 bytes) from ios-v2026.10.19-globe
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 57  162M   57 92.4M    0     0  86.4M      0  0:00:01  0:00:01 --:--:-- 86.4M100  162M  100  162M    0     0  95.7M      0  0:00:01  0:00:01 --:--:--  111M
+maplibre-globe ios-v2026.10.19-globe: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/MapLibre.xcframework (591M on disk)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (10:54:00)
+  BitByteData: https://github.com/tsolomko/BitByteData @ 2.1.0
+
+resolved source packages: SWCompression, BitByteData
+(resolve: 12 s)
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+
+== Pick a simulator (10:54:12)
+simulator: iPhone 17 (062CFAA4-9ACF-40ED-A1E2-3625F5ED4DA9) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (F6F146B6-18AA-4FE2-9F0B-AA6D02028DDA) (Shutdown) 
+
+== Build for the simulator (10:54:14)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 124 s)
+simulator build: ok
+
+== Boot the simulator (10:56:18)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (10:59:55)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 211 s)
+tests: ok, Executed 189 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=19319
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=55324 rate=22050 wav_frames=55324
+
+== Launch and screenshot (11:03:26)
+app.vela.ios: 31898
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: C8274ADC-2112-4F2C-9C15-8EDBC8E07A59 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (11:04:28)
+Parsed 8 waypoints
+xcodebuild uitest failed after 586 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/LocalizationUITests.swift:220: error: -[VelaUITests.LocalizationUITests testFrenchTerrainScreen] : XCTAssertTrue failed - the terrain status stayed English: Indisponible
+Test Case '-[VelaUITests.LocalizationUITests testFrenchTerrainScreen]' failed (105.367 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =    42.60s Waiting 60.0s for "search-field" TextField to exist
+    t =    43.64s     Checking `Expect predicate `existsNoRetry == 1` for object "search-field" TextField`
+    t =    43.64s         Checking existence of `"search-field" TextField`
+    t =    43.86s Tap "map-overflow" Button
+    t =    43.86s     Wait for app.vela.ios to idle
+    t =    43.87s     Find the "map-overflow" Button
+    t =    43.98s     Check for interrupting elements affecting "map-overflow" Button
+    t =    44.05s     Synthesize event
+    t =    44.37s     Wait for app.vela.ios to idle
+    t =    44.51s Waiting 5.0s for "settings-menu-item" Button to exist
+    t =    45.55s     Checking `Expect predicate `existsNoRetry == 1` for object "settings-menu-item" Button`
+    t =    45.55s         Checking existence of `"settings-menu-item" Button`
+    t =    45.68s Tap "settings-menu-item" Button
+    t =    45.68s     Wait for app.vela.ios to idle
+    t =    45.68s     Find the "settings-menu-item" Button
+    t =    45.80s     Check for interrupting elements affecting "settings-menu-item" Button
+    t =    45.89s     Synthesize event
+    t =    46.21s     Wait for app.vela.ios to idle
+    t =    46.69s Waiting 15.0s for "settings-debug" StaticText to exist
+    t =    47.72s     Checking `Expect predicate `existsNoRetry == 1` for object "settings-debug" StaticText`
+    t =    47.73s         Checking existence of `"settings-debug" StaticText`
+    t =    47.96s Checking existence of `"settings-debug" StaticText`
+    t =    48.09s Find the "settings-debug" StaticText
+UITEST settings_persistence=language=fr,units=imperial,clock=24,google=1,rot=week,telemetry=0,lookup=1,links=1,greq=0,gblocked=0
+    t =    48.24s Tap "settings-done" Button
+    t =    48.24s     Wait for app.vela.ios to idle
+    t =    48.24s     Find the "settings-done" Button
+    t =    48.37s     Check for interrupting elements affecting "settings-done" Button
+    t =    48.50s     Synthesize event
+    t =    48.82s     Wait for app.vela.ios to idle
+    t =    48.83s Find the "search-field" TextField
+    t =    49.08s Open app.vela.ios
+    t =    49.08s     Launch app.vela.ios
+    t =    49.09s         Terminate app.vela.ios:48309
+2026-10-30 11:13:34.447 xcodebuild[32907:93444] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-30 11:13:34.447 xcodebuild[32907:93444] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =    50.88s         Setting up automation session
+    t =    52.67s         Wait for app.vela.ios to idle
+    t =    56.10s Terminate app.vela.ios:49251
+    t =    57.18s Tear Down
+Test Case '-[VelaUITests.LocalizationUITests testSettingsPersistAcrossRelaunch]' passed (57.395 seconds).
+Test Suite 'LocalizationUITests' failed at 2026-10-30 11:13:41.647.
+	 Executed 7 tests, with 1 failure (0 unexpected) in 483.267 (483.277) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-30 11:13:41.651.
+	 Executed 7 tests, with 1 failure (0 unexpected) in 483.267 (483.281) seconds
+Test Suite 'Selected tests' failed at 2026-10-30 11:13:41.652.
+	 Executed 7 tests, with 1 failure (0 unexpected) in 483.267 (483.284) seconds
+2026-10-30 11:14:09.859 xcodebuild[32907:93444] [MT] IDETestOperationsObserverDebug: 558.538 elapsed -- Testing started completed.
+2026-10-30 11:14:09.860 xcodebuild[32907:93444] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-30 11:14:09.860 xcodebuild[32907:93444] [MT] IDETestOperationsObserverDebug: 558.538 sec, +558.538 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.RMxIxIyCqW/uitest.xcresult
+
+Failing tests:
+	LocalizationUITests.testFrenchTerrainScreen()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui LocalizationUITests.testFrenchLabelsWithoutChangingSimulatorLanguage: passed (33.024 seconds)
+ui LocalizationUITests.testFrenchPreviouslyUnlocalizedSurfaces: passed (73.507 seconds)
+ui LocalizationUITests.testFrenchSatelliteCard: passed (116.242 seconds)
+ui LocalizationUITests.testFrenchTerrainScreen: failed (105.367 seconds)
+ui LocalizationUITests.testFrenchTransitWorldAndSearchSurfaces: passed (75.101 seconds)
+ui LocalizationUITests.testGermanSettingsLayout: passed (22.630 seconds)
+ui LocalizationUITests.testSettingsPersistAcrossRelaunch: passed (57.395 seconds)
+scripts/ios/ci-ipa.sh: line 286: 32904 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui l10n_de_language=Sprache
+ui l10n_de_no_google=Vela_ohne_Google_nutzen
+ui l10n_de_placeholder=Suchen
+ui l10n_de_title=Einstellungen
+ui l10n_fr_board_ferry=Ferry
+ui l10n_fr_free_drive=Carte
+ui l10n_fr_go_departures=Prochains
+ui l10n_fr_go_preparing=Préparation
+ui l10n_fr_language=Langue
+ui l10n_fr_line_close=Fermer
+ui l10n_fr_no_google=Utiliser_Vela_sans_Google
+ui l10n_fr_placeholder=Rechercher
+ui l10n_fr_result_count=60
+ui l10n_fr_satellite_velocity=Vitesse_7.64_km/s
+ui l10n_fr_search_everywhere=Recherchez_"coffee"_partout
+ui l10n_fr_title=Paramètres
+ui l10n_fr_units=Unités
+ui l10n_fr_world_aviation=Avions,_Indisponible,_pas_encore_de_données
+ui settings_google_after=1
+ui settings_google_before=0
+ui settings_google_debug=language=system,units=imperial,clock=24,google=1,rot=week,telemetry=0,lookup=1,links=1,greq=0,gblocked=0
+ui settings_persistence=language=fr,units=imperial,clock=24,google=1,rot=week,telemetry=0,lookup=1,links=1,greq=0,gblocked=0
+ui screenshots: search-results-fr.png settings-de.png settings-fr.png 
+
+== Route replay (11:14:17)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: C8274ADC-2112-4F2C-9C15-8EDBC8E07A59 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: C8274ADC-2112-4F2C-9C15-8EDBC8E07A59 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (11:15:35)
+254964
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 80727 bytes
+directions reply: directions-drive-sf 125477 bytes
+directions reply: directions-walk-sf 46691 bytes
+search reply: 254964 bytes, 33 feature ids
+failed steps: ui-scenarios
