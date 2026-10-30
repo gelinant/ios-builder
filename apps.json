@@ -29,20 +29,20 @@
       "category": "utilities",
       "versions": [
         {
-          "version": "0.1.202610300758",
-          "buildVersion": "1793347086",
-          "date": "2026-10-30T08:29:52Z",
-          "localizedDescription": "Build 30 octobre 8 h : satellites GPS et geostationnaires, globe natif, relief, guidage avec recherche pendant la conduite, zone accessible, demarrage 430 ms plus rapide, avis fluides.\n\nBuild 1793347086.",
+          "version": "0.1.202610301001",
+          "buildVersion": "1793354494",
+          "date": "2026-10-30T10:44:49Z",
+          "localizedDescription": "Build 30 octobre 10 h : feuille d'itineraire qui defile en tres grands caracteres, partir plus tard ancre sur l'arret, fiche lieu deterministe, satellites GPS, guidage avec recherche, demarrage plus rapide.\n\nBuild 1793354494.",
           "downloadURL": "https://raw.githubusercontent.com/gelinant/ios-builder/dist/Vela.ipa",
-          "size": 27257099,
+          "size": 27269305,
           "minOSVersion": "17.0"
         }
       ],
-      "version": "0.1.202610300758",
-      "versionDate": "2026-10-30T08:29:52Z",
-      "versionDescription": "Build 30 octobre 8 h : satellites GPS et geostationnaires, globe natif, relief, guidage avec recherche pendant la conduite, zone accessible, demarrage 430 ms plus rapide, avis fluides.\n\nBuild 1793347086.",
+      "version": "0.1.202610301001",
+      "versionDate": "2026-10-30T10:44:49Z",
+      "versionDescription": "Build 30 octobre 10 h : feuille d'itineraire qui defile en tres grands caracteres, partir plus tard ancre sur l'arret, fiche lieu deterministe, satellites GPS, guidage avec recherche, demarrage plus rapide.\n\nBuild 1793354494.",
       "downloadURL": "https://raw.githubusercontent.com/gelinant/ios-builder/dist/Vela.ipa",
-      "size": 27257099,
+      "size": 27269305,
       "appPermissions": {
         "entitlements": [],
         "privacy": {
