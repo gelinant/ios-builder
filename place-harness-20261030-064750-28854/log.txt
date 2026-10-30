@@ -1,0 +1,11 @@
+tag=place-harness-20261030-064750-28854 src=src/place-harness 42fce70 src: 933ce09c iOS place tests: deterministic place fixture for the Davis sheet
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 42fce70 src: 933ce09c iOS place tests: deterministic place fixture for the Davis sheet
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610300648 (1793342937)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (06:48:58)
+NOTICES host lh3.googleusercontent.com: no notice covers it. Add the host to a data notice's hosts array or to EXEMPT_HOSTS in scripts/ios/check_notices.py.
+notices: 1 gap(s)
