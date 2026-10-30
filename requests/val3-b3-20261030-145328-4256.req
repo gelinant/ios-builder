@@ -1,0 +1,3 @@
+src=src/val3-b3
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=PlaceUITests,PlaceReviewsUITests,PlaceFuelUITests,DirectionsUITests,BikeProfileUITests,NavUITests,NavBannerUITests,NavAlertsUITests,NavLifecycleUITests,NavRobustnessUITests,NavArrivalUITests,NavRenderUITests,NavCameraUITests,FreeDriveUITests,NavStopsUITests,DriveSearchUITests VELA_SKIP_ARCHIVE=1
