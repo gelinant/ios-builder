@@ -1,0 +1,3 @@
+src=src/reach-hook
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=TransitReachUITests,TransitAdvancedUITests VELA_SKIP_ARCHIVE=1
