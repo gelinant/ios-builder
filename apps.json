@@ -29,20 +29,20 @@
       "category": "utilities",
       "versions": [
         {
-          "version": "0.1.202610300242",
-          "buildVersion": "1793328177",
-          "date": "2026-10-30T03:09:13Z",
-          "localizedDescription": "Build 30 octobre : globe natif, relief 3D natif et ecran Relief avec ciel, satellites et prochain passage, widgets, design des fiches lieu, hors ligne repare, demarrage 430 ms plus rapide.\n\nBuild 1793328177.",
+          "version": "0.1.202610300758",
+          "buildVersion": "1793347086",
+          "date": "2026-10-30T08:29:52Z",
+          "localizedDescription": "Build 30 octobre 8 h : satellites GPS et geostationnaires, globe natif, relief, guidage avec recherche pendant la conduite, zone accessible, demarrage 430 ms plus rapide, avis fluides.\n\nBuild 1793347086.",
           "downloadURL": "https://raw.githubusercontent.com/gelinant/ios-builder/dist/Vela.ipa",
-          "size": 27132010,
+          "size": 27257099,
           "minOSVersion": "17.0"
         }
       ],
-      "version": "0.1.202610300242",
-      "versionDate": "2026-10-30T03:09:13Z",
-      "versionDescription": "Build 30 octobre : globe natif, relief 3D natif et ecran Relief avec ciel, satellites et prochain passage, widgets, design des fiches lieu, hors ligne repare, demarrage 430 ms plus rapide.\n\nBuild 1793328177.",
+      "version": "0.1.202610300758",
+      "versionDate": "2026-10-30T08:29:52Z",
+      "versionDescription": "Build 30 octobre 8 h : satellites GPS et geostationnaires, globe natif, relief, guidage avec recherche pendant la conduite, zone accessible, demarrage 430 ms plus rapide, avis fluides.\n\nBuild 1793347086.",
       "downloadURL": "https://raw.githubusercontent.com/gelinant/ios-builder/dist/Vela.ipa",
-      "size": 27132010,
+      "size": 27257099,
       "appPermissions": {
         "entitlements": [],
         "privacy": {
