@@ -1,0 +1,241 @@
+tag=perf-guard-20261030-060102-30546 src=src/perf-guard 1b1e0de src: c678fd57 iOS tests: baseline-relative performance budgets
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 1b1e0de src: c678fd57 iOS tests: baseline-relative performance budgets
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610300601 (1793340105)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (06:01:45)
+notices: ok, 39 entries (8 libraries, 30 data sources)
+
+== Kotlin: tests and the VelaCore framework (06:01:46)
+gradle: ok in 285 s
+kotlin jvmTest: 655 tests, 0 failures
+kotlin iosSimulatorArm64Test: 544 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87314912 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  58M, static library 55047192 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (06:06:32)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 30.3M  100 30.3M    0     0  44.6M      0 --:--:-- --:--:-- --:--:-- 44.6M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (06:06:33)
+string catalog: 2102 keys, 24 resource locales (24 with translations), 38497 localized values, 982 Swift references, 24 picker languages
+
+== XcodeGen (06:06:34)
+xcodegen: Version: 2.46.0
+
+== Generate the project (06:06:35)
+maplibre-globe: downloading MapLibre.dynamic.xcframework.zip (169968107 bytes) from ios-v2026.10.19-globe
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 66  162M   66  107M    0     0  96.4M      0  0:00:01  0:00:01 --:--:-- 96.4M100  162M  100  162M    0     0   108M      0  0:00:01  0:00:01 --:--:--  146M
+maplibre-globe ios-v2026.10.19-globe: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/MapLibre.xcframework (577M on disk)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (06:06:38)
+  SWCompression: https://github.com/tsolomko/SWCompression @ 4.9.1
+
+resolved source packages: BitByteData, SWCompression
+(resolve: 9 s)
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+
+== Pick a simulator (06:06:47)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (600A45A3-B3A0-4A39-8A9C-5D051F9FDA9C) (Shutdown) 
+
+== Build for the simulator (06:06:48)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 53 s)
+simulator build: ok
+
+== Boot the simulator (06:07:41)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (06:09:17)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 32 s)
+tests: ok, Executed 188 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.51 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=19133
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=55196 rate=22050 wav_frames=55196
+
+== Launch and screenshot (06:09:49)
+app.vela.ios: 40042
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: E0B92163-7492-4DEA-A9A1-9D136BB9278C (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (06:10:15)
+xcodebuild uitest failed after 441 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/PlaceReviewsUITests.swift:99: error: -[VelaUITests.PlaceReviewsUITests testMoreReviewsAppendsAPage] : Failed to get matching snapshots: Timed out while evaluating UI query.
+Test Case '-[VelaUITests.PlaceReviewsUITests testMoreReviewsAppendsAPage]' failed (134.065 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =    24.78s         Checking existence of `"place-reviews-scroll" ScrollView`
+    t =    24.90s Checking existence of `"place-reviews-debug" StaticText`
+    t =    25.02s Find the "place-reviews-debug" StaticText
+    t =    25.65s Checking existence of `"place-reviews-close" Button`
+    t =    25.79s Swipe up "place-reviews-scroll" ScrollView
+    t =    25.79s     Wait for app.vela.ios to idle
+    t =    25.79s     Find the "place-reviews-scroll" ScrollView
+    t =    25.90s     Check for interrupting elements affecting "place-reviews-scroll" ScrollView
+    t =    25.99s     Synthesize event
+    t =    26.45s     Wait for app.vela.ios to idle
+    t =    28.55s Checking existence of `"place-reviews-close" Button`
+    t =    28.90s Added attachment named 'reviews-swipe'
+    t =    28.90s Checking existence of `"place-reviews-debug" StaticText`
+    t =    29.03s Checking existence of `"place-reviews-debug" StaticText`
+    t =    29.16s Checking existence of `"place-reviews-debug" StaticText`
+    t =    29.32s Checking existence of `"place-reviews-debug" StaticText`
+    t =    29.46s Checking existence of `"place-reviews-debug" StaticText`
+    t =    29.61s Find the "place-reviews-debug" StaticText
+    t =    29.74s Checking existence of `"place-reviews-debug" StaticText`
+    t =    29.88s Find the "place-reviews-debug" StaticText
+    t =    30.00s Checking existence of `"place-reviews-debug" StaticText`
+    t =    30.13s Find the "place-reviews-debug" StaticText
+UITEST mainloop_stall_ms=149
+UITEST mainloop_stall_before_ms=149
+UITEST reviews_live_pages=0
+UITEST reviews_swipe_answer_ms=136
+UITEST reviews_swipe_fps=44
+UITEST reviews_swipe_baseline_ms=648
+UITEST reviews_swipe_action_ms=136
+UITEST reviews_swipe_ratio=0.21
+UITEST reviews_stall_baseline_ms=648
+UITEST reviews_stall_action_ms=149
+UITEST reviews_stall_ratio=0.23
+    t =    30.26s Tap "place-reviews-close" Button
+    t =    30.26s     Wait for app.vela.ios to idle
+    t =    30.27s     Find the "place-reviews-close" Button
+    t =    30.40s     Check for interrupting elements affecting "place-reviews-close" Button
+    t =    30.52s     Synthesize event
+    t =    30.83s     Wait for app.vela.ios to idle
+    t =    30.84s Tear Down
+Test Case '-[VelaUITests.PlaceReviewsUITests testSwipeKeepsThePanelResponsive]' passed (31.131 seconds).
+Test Suite 'PlaceReviewsUITests' failed at 2026-10-30 06:17:18.245.
+	 Executed 4 tests, with 1 failure (0 unexpected) in 315.380 (315.383) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-30 06:17:18.245.
+	 Executed 7 tests, with 1 failure (0 unexpected) in 412.066 (412.074) seconds
+Test Suite 'Selected tests' failed at 2026-10-30 06:17:18.246.
+	 Executed 7 tests, with 1 failure (0 unexpected) in 412.066 (412.076) seconds
+2026-10-30 06:17:32.776 xcodebuild[40920:109938] [MT] IDETestOperationsObserverDebug: 431.949 elapsed -- Testing started completed.
+2026-10-30 06:17:32.776 xcodebuild[40920:109938] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-30 06:17:32.776 xcodebuild[40920:109938] [MT] IDETestOperationsObserverDebug: 431.949 sec, +431.949 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.yKzLViV6wI/uitest.xcresult
+
+Failing tests:
+	PlaceReviewsUITests.testMoreReviewsAppendsAPage()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui LaunchUITests.testLaunchShowsTheMapOverSanFrancisco: passed (17.127 seconds)
+ui LaunchUITests.testStartCameraArgumentMovesTheMapToDavis: passed (14.575 seconds)
+ui PerformanceUITests.testColdStartBudget: passed (64.985 seconds)
+ui PlaceReviewsUITests.testGalleryViewerSwipesWithCaptionAndSource: passed (32.540 seconds)
+ui PlaceReviewsUITests.testMoreReviewsAppendsAPage: failed (134.065 seconds)
+ui PlaceReviewsUITests.testReviewsHistogramAndControls: passed (117.643 seconds)
+ui PlaceReviewsUITests.testSwipeKeepsThePanelResponsive: passed (31.131 seconds)
+scripts/ios/ci-ipa.sh: line 286: 40918 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui cold_baseline_first_fix_ms=2047
+ui cold_baseline_first_frame_ms=2424
+ui cold_baseline_map_tap_ms=2404
+ui cold_baseline_peak_mb=121
+ui cold_budget_ms=3030
+ui cold_first_fix_ms=1923
+ui cold_first_frame_gain_ms=239
+ui cold_first_frame_ms=2185
+ui cold_map_tap_ms=2298
+ui cold_peak_mb=122
+ui cold_start_action_ms=2185
+ui cold_start_baseline_ms=2424
+ui cold_start_ratio=0.90
+ui gallery_categories=0
+ui gallery_menu_fallback=0
+ui gallery_photos=10
+ui gallery_viewer_page=2/10
+ui mainloop_stall_before_ms=149
+ui mainloop_stall_ms=149
+ui map_element=yes
+ui reviews_histogram=google-omitted
+ui reviews_live_pages=0
+ui reviews_sort=1
+ui reviews_stall_action_ms=149
+ui reviews_stall_baseline_ms=648
+ui reviews_stall_ratio=0.23
+ui reviews_swipe_action_ms=136
+ui reviews_swipe_answer_ms=136
+ui reviews_swipe_baseline_ms=648
+ui reviews_swipe_fps=44
+ui reviews_swipe_ratio=0.21
+ui reviews_translated=0
+ui screenshots: launch-davis.png launch-sf.png 
+
+== Route replay (06:17:37)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: E0B92163-7492-4DEA-A9A1-9D136BB9278C (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: E0B92163-7492-4DEA-A9A1-9D136BB9278C (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: reviews: page asked for 0x8085299fd6f41a23:0x10d37b4cae550f0
+place load: reviews: view created
+place load: photos: rpc 10
+place load: reviews: feed 5 (limited view)
+place load: reviews: page asked for 0x8085299fd6f41a23:0x10d37b4cae550f0
+place load: reviews: view created
+place load: reviews: answered
+place load: reviews: view destroyed
+place load: reviews: more from page 5
+web: reviews: page asked for 0x8085299fd6f41a23:0x10d37b4cae550f0
+web: reviews: page asked for 0x8085299fd6f41a23:0x10d37b4cae550f0
+web: reviews: answered
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (06:18:42)
+246230
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 63700 bytes
+directions reply: directions-drive-sf 126605 bytes
+directions reply: directions-walk-sf 34603 bytes
+search reply: 246230 bytes, 31 feature ids
+failed steps: ui-scenarios

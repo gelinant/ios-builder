@@ -1,0 +1,93 @@
+Timestamp               Ty Process[PID:TID]
+2026-10-30 06:09:37.160 I  Vela[38697:195c4] [app.vela.ios:Calibration] calibration at startup: version 1
+2026-10-30 06:09:37.817 Df Vela[38697:1996f] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-30 06:09:38.709 I  Vela[38697:195c4] [app.vela.ios:VelaRegion] start installed=0 pending=false completed=0
+2026-10-30 06:09:39.675 I  Vela[38697:195c4] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-30 06:09:44.326 I  Vela[38697:195c4] [app.vela.ios:NeuralVoice] loaded en_US-hfc_female-medium: 22050 Hz, 1 speakers
+2026-10-30 06:09:45.868 Df Vela[38697:19d63] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-30 06:09:47.183 I  Vela[38697:195c4] [app.vela.ios:NeuralVoice] loaded en_US-hfc_female-medium: 22050 Hz, 1 speakers
+2026-10-30 06:09:47.751 I  Vela[38697:195c4] [app.vela.ios:VoiceSearch] loaded whisper-tiny for en
+2026-10-30 06:09:55.152 I  Vela[40042:1a420] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-30 06:09:55.621 Df Vela[40042:1a43a] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-30 06:09:56.173 I  Vela[40042:1a420] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-30 06:09:56.185 I  Vela[40042:1a420] [app.vela.ios:VelaRegion] start installed=0 pending=false completed=0
+2026-10-30 06:10:30.792 I  Vela[41709:1b663] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-30 06:10:31.424 Df Vela[41709:1b6c8] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-30 06:10:32.500 I  Vela[41709:1b663] [app.vela.ios:VelaRegion] start installed=0 pending=false completed=0
+2026-10-30 06:10:32.545 I  Vela[41709:1b663] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-30 06:10:46.101 I  Vela[42483:1bdf4] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-30 06:10:46.501 Df Vela[42483:1be7b] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-30 06:10:47.268 I  Vela[42483:1bdf4] [app.vela.ios:VelaRegion] start installed=0 pending=false completed=0
+2026-10-30 06:10:47.309 I  Vela[42483:1bdf4] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-30 06:11:00.383 I  Vela[43666:1c910] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-30 06:11:00.734 Df Vela[43666:1c98d] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-30 06:11:01.428 I  Vela[43666:1c910] [app.vela.ios:VelaRegion] start installed=0 pending=false completed=0
+2026-10-30 06:11:01.532 I  Vela[43666:1c910] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-30 06:11:11.022 I  Vela[44413:1cfa0] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-30 06:11:11.430 Df Vela[44413:1cfbd] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-30 06:11:12.123 I  Vela[44413:1cfa0] [app.vela.ios:VelaRegion] start installed=0 pending=false completed=0
+2026-10-30 06:11:12.222 I  Vela[44413:1cfa0] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-30 06:11:21.665 I  Vela[45161:1d644] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-30 06:11:22.061 Df Vela[45161:1d655] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-30 06:11:22.773 I  Vela[45161:1d644] [app.vela.ios:VelaRegion] start installed=0 pending=false completed=0
+2026-10-30 06:11:22.918 I  Vela[45161:1d644] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-30 06:11:32.238 I  Vela[45904:1dcd1] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-30 06:11:32.544 Df Vela[45904:1dce8] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-30 06:11:33.224 I  Vela[45904:1dcd1] [app.vela.ios:VelaRegion] start installed=0 pending=false completed=0
+2026-10-30 06:11:33.616 I  Vela[45904:1dcd1] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-30 06:11:42.695 I  Vela[46643:1e353] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-30 06:11:43.006 Df Vela[46643:1e365] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-30 06:11:43.622 I  Vela[46643:1e353] [app.vela.ios:VelaRegion] start installed=0 pending=false completed=0
+2026-10-30 06:11:43.772 I  Vela[46643:1e353] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-30 06:11:53.311 I  Vela[46812:1e578] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-30 06:11:53.745 Df Vela[46812:1e757] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-30 06:11:54.458 I  Vela[46812:1e578] [app.vela.ios:VelaRegion] start installed=0 pending=false completed=0
+2026-10-30 06:11:54.589 I  Vela[46812:1e578] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-30 06:12:04.455 I  Vela[47819:1eed4] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-30 06:12:04.778 Df Vela[47819:1eeef] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-30 06:12:05.508 I  Vela[47819:1eed4] [app.vela.ios:VelaRegion] start installed=0 pending=false completed=0
+2026-10-30 06:12:05.602 I  Vela[47819:1eed4] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-30 06:12:20.692 I  Vela[47819:1eed4] [app.vela.ios:PlaceLoad] photos: rpc 10
+2026-10-30 06:12:37.821 I  Vela[50085:2029d] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-30 06:12:38.103 Df Vela[50085:202be] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-30 06:12:38.867 I  Vela[50085:2029d] [app.vela.ios:VelaRegion] start installed=0 pending=false completed=0
+2026-10-30 06:12:38.945 I  Vela[50085:2029d] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-30 06:12:53.348 I  Vela[50085:2029d] [app.vela.ios:PlaceLoad] photos: rpc 10
+2026-10-30 06:12:57.541 I  Vela[50085:2029d] [app.vela.ios:PlaceLoad] reviews: feed 5 (limited view)
+2026-10-30 06:13:12.300 Db Vela[50085:2029d] [app.vela.ios:Web] reviews: page asked for 0x8085299fd6f41a23:0x10d37b4cae550f0
+2026-10-30 06:13:12.902 Db Vela[50085:2029d] [app.vela.ios:Web] reviews: view created
+2026-10-30 06:13:15.282 Db Vela[50085:2029d] [app.vela.ios:Web] reviews probe: {"start":1,"title":"Google Maps","url":"/maps","ready":"complete","w":1200,"h":904}
+2026-10-30 06:13:15.549 Db Vela[50085:2029d] [app.vela.ios:Web] reviews probe: {"tries":2,"tabs":[],"sawEntry":false,"opened":false,"by":"","cardsNow":0,"acc":0,"w":1200,"h":904,"main":false,"title":"Davis Food Co-op - Google Maps","body":24,"url":"/maps"}
+2026-10-30 06:14:54.442 I  Vela[59149:25318] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-30 06:14:54.854 Df Vela[59149:2535f] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-30 06:14:55.609 I  Vela[59149:25318] [app.vela.ios:VelaRegion] start installed=0 pending=false completed=0
+2026-10-30 06:14:56.008 I  Vela[59149:25318] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-30 06:15:11.107 I  Vela[59149:25318] [app.vela.ios:PlaceLoad] photos: rpc 10
+2026-10-30 06:15:16.064 I  Vela[59149:25318] [app.vela.ios:PlaceLoad] reviews: feed 5 (limited view)
+2026-10-30 06:15:45.753 Db Vela[59149:25318] [app.vela.ios:Web] reviews: page asked for 0x8085299fd6f41a23:0x10d37b4cae550f0
+2026-10-30 06:15:46.461 Db Vela[59149:25318] [app.vela.ios:Web] reviews: view created
+2026-10-30 06:15:48.094 Db Vela[59149:25318] [app.vela.ios:Web] reviews probe: {"start":1,"title":"Google Maps","url":"/maps","ready":"complete","w":1200,"h":904}
+2026-10-30 06:15:48.425 Db Vela[59149:25318] [app.vela.ios:Web] reviews probe: {"tries":2,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":false,"by":"","cardsNow":3,"acc":3,"w":1200,"h":904,"main":true,"title":"Davis Food Co-op - Google Maps","body":3974,"url":"/maps"}
+2026-10-30 06:15:52.199 Db Vela[59149:25318] [app.vela.ios:Web] reviews probe: {"tries":16,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":904,"main":true,"title":"Davis Food Co-op - Google Maps","body":4623,"url":"/maps/place/Davis+Food+Co-op"}
+2026-10-30 06:15:56.502 Db Vela[59149:25318] [app.vela.ios:Web] reviews probe: {"tries":32,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":904,"main":true,"title":"Davis Food Co-op - Google Maps","body":4603,"url":"/maps/place/Davis+Food+Co-op"}
+2026-10-30 06:16:00.580 Db Vela[59149:25318] [app.vela.ios:Web] reviews probe: {"tries":48,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":904,"main":true,"title":"Davis Food Co-op - Google Maps","body":4603,"url":"/maps/place/Davis+Food+Co-op"}
+2026-10-30 06:16:04.631 Db Vela[59149:25318] [app.vela.ios:Web] reviews probe: {"tries":64,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":904,"main":true,"title":"Davis Food Co-op - Google Maps","body":4603,"url":"/maps/place/Davis+Food+Co-op"}
+2026-10-30 06:16:08.793 Db Vela[59149:25318] [app.vela.ios:Web] reviews probe: {"tries":80,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":904,"main":true,"title":"Davis Food Co-op - Google Maps","body":4603,"url":"/maps/place/Davis+Food+Co-op"}
+2026-10-30 06:16:13.012 Db Vela[59149:25318] [app.vela.ios:Web] reviews probe: {"tries":96,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":904,"main":true,"title":"Davis Food Co-op - Google Maps","body":4603,"url":"/maps/place/Davis+Food+Co-op"}
+2026-10-30 06:16:16.994 Db Vela[59149:25318] [app.vela.ios:Web] reviews probe: {"tries":112,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":904,"main":true,"title":"Davis Food Co-op - Google Maps","body":4603,"url":"/maps/place/Davis+Food+Co-op"}
+2026-10-30 06:16:21.177 Db Vela[59149:25318] [app.vela.ios:Web] reviews probe: {"tries":128,"tabs":["Overview of Davis Food Co-op","Reviews for Davis Food Co-op","About Davis Food Co-op"],"sawEntry":true,"opened":true,"by":"tab","cardsNow":5,"acc":5,"w":1200,"h":904,"main":true,"title":"Davis Food Co-op - Google Maps","body":4603,"url":"/maps/place/Davis+Food+Co-op"}
+2026-10-30 06:16:21.950 Db Vela[59149:25318] [app.vela.ios:Web] reviews: answered
+2026-10-30 06:16:21.951 Db Vela[59149:25318] [app.vela.ios:Web] reviews: view destroyed
+2026-10-30 06:16:21.976 I  Vela[59149:25318] [app.vela.ios:PlaceLoad] reviews: more from page 5
+2026-10-30 06:16:50.137 I  Vela[63690:27d11] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-30 06:16:50.560 Df Vela[63690:27e93] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-30 06:16:51.331 I  Vela[63690:27d11] [app.vela.ios:VelaRegion] start installed=0 pending=false completed=0
+2026-10-30 06:16:51.709 I  Vela[63690:27d11] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-30 06:17:05.205 I  Vela[63690:27d11] [app.vela.ios:PlaceLoad] photos: rpc 10
+2026-10-30 06:17:09.522 I  Vela[63690:27d11] [app.vela.ios:PlaceLoad] reviews: feed 5 (limited view)
+2026-10-30 06:17:39.340 I  Vela[67102:2a5ef] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-30 06:17:39.793 Df Vela[67102:2a614] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-30 06:17:40.139 I  Vela[67102:2a5ef] [app.vela.ios:Location] location update failed: The operation couldn’t be completed. (kCLErrorDomain error 0.)
+2026-10-30 06:17:40.368 I  Vela[67102:2a5ef] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-30 06:17:40.382 I  Vela[67102:2a5ef] [app.vela.ios:VelaRegion] start installed=0 pending=false completed=0
+2026-10-30 06:18:31.679 I  Vela[67102:2a5ef] [app.vela.ios:Location] location update failed: The operation couldn’t be completed. (kCLErrorDomain error 0.)
