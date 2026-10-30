@@ -1,0 +1,3 @@
+src=src/harness-2c
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=PrivacyUITests VELA_SKIP_ARCHIVE=1
