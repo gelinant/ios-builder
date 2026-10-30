@@ -1,0 +1,261 @@
+tag=harness-2-20261030-021429-28682 src=src/harness-2 7827ab5 src: bc312f24 UI tests: one named-sheet reveal helper and a debug line readable behind a sheet
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 7827ab5 src: bc312f24 UI tests: one named-sheet reveal helper and a debug line readable behind a sheet
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610300215 (1793326537)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (02:15:38)
+notices: ok, 39 entries (8 libraries, 30 data sources)
+
+== Kotlin: tests and the VelaCore framework (02:15:38)
+gradle: ok in 754 s
+kotlin jvmTest: 655 tests, 0 failures
+kotlin iosSimulatorArm64Test: 544 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87279160 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  58M, static library 55007584 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (02:28:13)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 31 30.3M   31 9724k    0     0  8950k      0  0:00:03  0:00:01  0:00:02 8950k100 30.3M  100 30.3M    0     0  15.6M      0  0:00:01  0:00:01 --:--:-- 24.5M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (02:28:17)
+string catalog: 2101 keys, 24 resource locales (24 with translations), 38494 localized values, 971 Swift references, 24 picker languages
+
+== XcodeGen (02:28:21)
+xcodegen: Version: 2.46.0
+
+== Generate the project (02:28:22)
+maplibre-globe: downloading MapLibre.dynamic.xcframework.zip (169968107 bytes) from ios-v2026.10.19-globe
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  4  162M    4 7983k    0     0  24.3M      0  0:00:06 --:--:--  0:00:06 24.3M 62  162M   62  101M    0     0  77.2M      0  0:00:02  0:00:01  0:00:01 94.1M100  162M  100  162M    0     0  87.4M      0  0:00:01  0:00:01 --:--:--  100M
+maplibre-globe ios-v2026.10.19-globe: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/MapLibre.xcframework (578M on disk)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (02:28:26)
+  SWCompression: https://github.com/tsolomko/SWCompression @ 4.9.1
+
+resolved source packages: BitByteData, SWCompression
+(resolve: 19 s)
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+
+== Pick a simulator (02:28:45)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (600A45A3-B3A0-4A39-8A9C-5D051F9FDA9C) (Shutdown) 
+
+== Build for the simulator (02:28:47)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 143 s)
+simulator build: ok
+
+== Boot the simulator (02:31:10)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (02:34:44)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 89 s)
+tests: ok, Executed 188 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=19877
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=57327 rate=22050 wav_frames=57327
+
+== Launch and screenshot (02:36:13)
+app.vela.ios: 34612
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: A8DF9DE5-EA4E-46F4-AA84-08B9673F6EA4 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (02:36:51)
+xcodebuild uitest failed after 991 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/OfflineUITests.swift:146: error: -[VelaUITests.OfflineUITests testMonacoDeltaUpdateStorageAndWorldFallback] : XCTAssertTrue failed - the places delete is not reachable
+Test Case '-[VelaUITests.OfflineUITests testMonacoDeltaUpdateStorageAndWorldFallback]' failed (47.902 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/OfflineUITests.swift:26: error: -[VelaUITests.OfflineUITests testMonacoDownloadOfflineMapAndSearch] : XCTAssertGreaterThanOrEqual failed: ("42.24875621890544") is less than ("44.0") - the area entry is under 44 pt
+Test Case '-[VelaUITests.OfflineUITests testMonacoDownloadOfflineMapAndSearch]' failed (54.848 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/PrivacyUITests.swift:199: error: -[VelaUITests.PrivacyUITests testRequestCounterAndClearHistory] : XCTAssertTrue failed - no request counter
+Test Case '-[VelaUITests.PrivacyUITests testRequestCounterAndClearHistory]' failed (91.665 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =    73.95s     Synthesize event
+    t =    74.42s     Wait for app.vela.ios to idle
+    t =    76.55s Waiting 10.0s for "privacy-counter-total" Any to exist
+    t =    77.60s     Checking `Expect predicate `existsNoRetry == 1` for object "privacy-counter-total" Any`
+    t =    77.60s         Checking existence of `"privacy-counter-total" Any`
+    t =    78.03s         Capturing element debug description
+    t =    78.65s     Checking `Expect predicate `existsNoRetry == 1` for object "privacy-counter-total" Any`
+    t =    78.65s         Checking existence of `"privacy-counter-total" Any`
+    t =    79.07s         Capturing element debug description
+    t =    79.59s     Checking `Expect predicate `existsNoRetry == 1` for object "privacy-counter-total" Any`
+    t =    79.59s         Checking existence of `"privacy-counter-total" Any`
+    t =    80.05s         Capturing element debug description
+    t =    80.56s     Checking `Expect predicate `existsNoRetry == 1` for object "privacy-counter-total" Any`
+    t =    80.56s         Checking existence of `"privacy-counter-total" Any`
+    t =    81.09s         Capturing element debug description
+    t =    81.62s     Checking `Expect predicate `existsNoRetry == 1` for object "privacy-counter-total" Any`
+    t =    81.62s         Checking existence of `"privacy-counter-total" Any`
+    t =    82.14s         Capturing element debug description
+    t =    82.65s     Checking `Expect predicate `existsNoRetry == 1` for object "privacy-counter-total" Any`
+    t =    82.65s         Checking existence of `"privacy-counter-total" Any`
+    t =    83.23s         Capturing element debug description
+    t =    83.64s     Checking `Expect predicate `existsNoRetry == 1` for object "privacy-counter-total" Any`
+    t =    83.64s         Checking existence of `"privacy-counter-total" Any`
+    t =    84.32s         Capturing element debug description
+    t =    84.62s     Checking `Expect predicate `existsNoRetry == 1` for object "privacy-counter-total" Any`
+    t =    84.62s         Checking existence of `"privacy-counter-total" Any`
+    t =    85.15s         Capturing element debug description
+    t =    85.56s     Checking `Expect predicate `existsNoRetry == 1` for object "privacy-counter-total" Any`
+    t =    85.56s         Checking existence of `"privacy-counter-total" Any`
+    t =    86.16s         Capturing element debug description
+    t =    86.56s     Checking `Expect predicate `existsNoRetry == 1` for object "privacy-counter-total" Any`
+    t =    86.56s         Checking existence of `"privacy-counter-total" Any`
+    t =    86.88s         Capturing element debug description
+    t =    86.88s     Checking existence of `"privacy-counter-total" Any`
+    t =    89.25s Collecting debug information to assist test failure triage
+    t =    89.25s     Requesting snapshot of accessibility hierarchy for app with pid 64975
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/PrivacyUITests.swift:199: error: -[VelaUITests.PrivacyUITests testRequestCounterAndClearHistory] : XCTAssertTrue failed - no request counter
+    t =    90.15s Tear Down
+Test Case '-[VelaUITests.PrivacyUITests testRequestCounterAndClearHistory]' failed (91.665 seconds).
+Test Suite 'PrivacyUITests' failed at 2026-10-30 02:52:39.962.
+	 Executed 5 tests, with 1 failure (0 unexpected) in 348.038 (348.044) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-30 02:52:39.963.
+	 Executed 24 tests, with 3 failures (0 unexpected) in 915.640 (915.671) seconds
+Test Suite 'Selected tests' failed at 2026-10-30 02:52:39.963.
+	 Executed 24 tests, with 3 failures (0 unexpected) in 915.640 (915.673) seconds
+2026-10-30 02:53:14.773 xcodebuild[35617:97669] [MT] IDETestOperationsObserverDebug: 964.990 elapsed -- Testing started completed.
+2026-10-30 02:53:14.774 xcodebuild[35617:97669] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-30 02:53:14.774 xcodebuild[35617:97669] [MT] IDETestOperationsObserverDebug: 964.990 sec, +964.990 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.RD89hvDFK4/uitest.xcresult
+
+Failing tests:
+	OfflineUITests.testMonacoDeltaUpdateStorageAndWorldFallback()
+	OfflineUITests.testMonacoDownloadOfflineMapAndSearch()
+	PrivacyUITests.testRequestCounterAndClearHistory()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+scripts/ios/ci-ipa.sh: line 284: 35614 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui IncomingLinksUITests.testBareCidLinkShowsTheVelaError: passed (17.906 seconds)
+ui IncomingLinksUITests.testIncomingDirectionsLinkOpensTheChooser: passed (14.116 seconds)
+ui IncomingLinksUITests.testIncomingDirectionsLinkWithOneStopOpensIt: passed (18.164 seconds)
+ui IncomingLinksUITests.testIncomingDirectionsLinkWithTwoStopsKeepsTheirOrder: passed (15.352 seconds)
+ui IncomingLinksUITests.testIncomingPlaceLinkOpensThePlaceSheet: passed (10.242 seconds)
+ui IncomingLinksUITests.testMalformedStopLinkShowsTheVelaError: passed (10.638 seconds)
+ui IntentsUITests.testDeepLinkOpensSavedPlace: passed (37.973 seconds)
+ui IntentsUITests.testDeepLinkOpensSearch: passed (15.678 seconds)
+ui IntentsUITests.testHomeUnsetErrorOpensSavedSetup: passed (12.173 seconds)
+ui IntentsUITests.testParkingDeepLinkOpensPlaceAndCleansUp: passed (17.771 seconds)
+ui IntentsUITests.testSpotlightFixtureAddsAndDeletesThroughRealIndex: passed (8.102 seconds)
+ui LocalizationUITests.testFrenchLabelsWithoutChangingSimulatorLanguage: passed (18.470 seconds)
+ui LocalizationUITests.testFrenchSatelliteCard: passed (86.648 seconds)
+ui LocalizationUITests.testFrenchTerrainScreen: passed (18.532 seconds)
+ui LocalizationUITests.testFrenchTransitWorldAndSearchSurfaces: passed (72.950 seconds)
+ui LocalizationUITests.testGermanSettingsLayout: passed (18.845 seconds)
+ui LocalizationUITests.testSettingsPersistAcrossRelaunch: passed (71.294 seconds)
+ui OfflineUITests.testMonacoDeltaUpdateStorageAndWorldFallback: failed (47.902 seconds)
+ui OfflineUITests.testMonacoDownloadOfflineMapAndSearch: failed (54.848 seconds)
+ui PrivacyUITests.testConsentAndFullPrivacyPage: passed (98.590 seconds)
+ui PrivacyUITests.testNoGoogleDirectionsAndTransitSendNothingToGoogle: passed (50.480 seconds)
+ui PrivacyUITests.testNoGoogleSearchSendsNothingToGoogle: passed (45.910 seconds)
+ui PrivacyUITests.testPrivacyControlsAndSessionRotation: passed (61.392 seconds)
+ui PrivacyUITests.testRequestCounterAndClearHistory: failed (91.665 seconds)
+ui design_offline_area_height=42
+ui design_offline_done_height=34
+ui incoming_cid_error=shown
+ui incoming_directions=Dropped_pin
+ui incoming_place=Davis_Food_Co-op
+ui intents_home_unset=saved_setup
+ui intents_parking=opened
+ui intents_saved_place=opened
+ui intents_search_rows=45
+ui intents_spotlight_add=1
+ui intents_spotlight_delete=1
+ui l10n_de_language=Sprache
+ui l10n_de_no_google=Vela_ohne_Google_nutzen
+ui l10n_de_placeholder=Suchen
+ui l10n_de_title=Einstellungen
+ui l10n_fr_go_departures=Prochains
+ui l10n_fr_language=Langue
+ui l10n_fr_line_close=Fermer
+ui l10n_fr_no_google=Utiliser_Vela_sans_Google
+ui l10n_fr_placeholder=Rechercher
+ui l10n_fr_satellite_velocity=Vitesse_7.64_km/s
+ui l10n_fr_search_everywhere=Recherchez_"coffee"_partout
+ui l10n_fr_terrain_status=Relief_activé,_ciel_et_atmosphère
+ui l10n_fr_title=Paramètres
+ui l10n_fr_units=Unités
+ui l10n_fr_world_aviation=Avions,_Indisponible,_pas_encore_de_données
+ui link_malformed_stop=shown
+ui link_stop_single=count=1
+ui link_stops=count=2
+ui offline_fixture_downloads=1
+ui offline_fixture_pieces=5/5
+ui offline_fixture_world=1
+ui privacy_consent_lookup=0
+ui privacy_no_google_blocked=0
+ui privacy_no_google_routes_blocked=0
+ui privacy_no_google_routes_sent=0
+ui privacy_no_google_sent=0
+ui privacy_rotation=day
+ui privacy_telemetry=1
+ui settings_google_after=1
+ui settings_google_before=0
+ui settings_google_debug=language=system,units=imperial,clock=24,google=1,rot=week,telemetry=0,lookup=1,links=1,greq=0,gblocked=0
+ui settings_persistence=language=fr,units=imperial,clock=24,google=1,rot=week,telemetry=0,lookup=1,links=1,greq=0,gblocked=0
+ui screenshots: incoming-directions.png incoming-place.png settings-de.png settings-fr.png 
+
+== Route replay (02:53:25)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: A8DF9DE5-EA4E-46F4-AA84-08B9673F6EA4 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: A8DF9DE5-EA4E-46F4-AA84-08B9673F6EA4 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (02:54:47)
+240785
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 63815 bytes
+directions reply: directions-drive-sf 107677 bytes
+directions reply: directions-walk-sf 34604 bytes
+search reply: 240785 bytes, 28 feature ids
+failed steps: ui-scenarios
