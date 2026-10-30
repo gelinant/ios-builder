@@ -1,0 +1,3 @@
+src=src/val3-fix-nav
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=NavBannerUITests,NavCameraUITests,TransitCitymapperUITests,TransitLineViewUITests,TransitTimeUITests,TransitWiredUITests VELA_SKIP_ARCHIVE=1
