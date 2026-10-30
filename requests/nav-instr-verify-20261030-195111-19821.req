@@ -1,0 +1,3 @@
+src=src/nav-instr-verify
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=NavBannerUITests,AccessibilitySuiteUITests VELA_SKIP_ARCHIVE=1
