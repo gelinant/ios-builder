@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>Terrain</title>
+<link rel="stylesheet" href="maplibre-gl.css" />
+<style>
+  html, body { margin: 0; padding: 0; width: 100%; height: 100%; background: #080b0e; overflow: hidden; }
+  #map { position: absolute; inset: 0; background: #080b0e; }
+  #unavailable {
+    position: absolute; inset: 0; display: none; align-items: center; justify-content: center;
+    background: #080b0e; color: #e8ecef; padding: 32px; box-sizing: border-box;
+    font: 15px/1.4 -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif; text-align: center;
+  }
+  #unavailable.visible { display: flex; }
+  .maplibregl-ctrl-attrib { font: 10px/1.3 -apple-system, BlinkMacSystemFont, sans-serif; }
+  .maplibregl-ctrl-bottom-right { margin-bottom: 52px; }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<div id="unavailable">Terrain is unavailable. The elevation tiles need a network connection.</div>
+<script src="maplibre-gl.js"></script>
+<script>
+// M-2: a separate, read-only terrain screen. There is no app camera bridge and no offline
+// fallback: when the elevation tiles cannot be reached the screen says so instead of drawing a
+// flat map that pretends to be terrain.
+(function () {
+  "use strict";
+
+  var VECTOR_SOURCE = "https://tiles.openfreemap.org/planet";
+  // The elevation host sends no CORS header, so the app serves these tiles on a custom scheme
+  // after fetching them with URLSession (TerrainWebView.swift).
+  var DEM_TILES = "vela-dem://tile/{z}/{x}/{y}.png";
+  var DEM_ATTRIBUTION = "Terrain: Mapzen terrain tiles (AWS Open Data elevation-tiles-prod). " +
+    "Multiple licences, see tilezen/joerd attribution.";
+
+  var map = null;
+  var demReady = false;
+  var unavailableShown = false;
+  var frameShown = false;
+
+  function post(payload) {
+    try {
+      if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.terrain) {
+        window.webkit.messageHandlers.terrain.postMessage(payload);
+      }
+    } catch (error) {
+      // The Swift side has gone away; nothing to report to.
+    }
+  }
+
+  // "Unavailable" means the renderer or the document itself failed. A late first frame or a
+  // failed tile is not that: those stay in the loading or ready state and are retried by
+  // MapLibre. Keeping this distinction removes the startup flakiness of the screen.
+  function showUnavailable(reason) {
+    if (unavailableShown) { return; }
+    unavailableShown = true;
+    document.getElementById("unavailable").classList.add("visible");
+    try { if (map) { map.remove(); map = null; } } catch (error) { /* already gone */ }
+    post({ event: "unavailable", reason: reason });
+  }
+
+  // Without a network the screen says so in its own words; it never reports the generic
+  // renderer failure.
+  function showOffline() {
+    if (unavailableShown) { return; }
+    unavailableShown = true;
+    document.getElementById("unavailable").classList.add("visible");
+    try { if (map) { map.remove(); map = null; } } catch (error) { /* already gone */ }
+    post({ event: "offline" });
+  }
+
+  // Tells the app that the bundled document ran at all, before any network request.
+  post({ event: "document" });
+  window.addEventListener("error", function (event) {
+    var message = String(event.message || "script");
+    post({ event: "failure", message: message });
+    // An uncaught error before the map exists is a document failure, not a slow start.
+    if (!map) { showUnavailable("load"); }
+  });
+
+  function hasWebGL() {
+    try {
+      var canvas = document.createElement("canvas");
+      return !!(canvas.getContext("webgl2") || canvas.getContext("webgl"));
+    } catch (error) {
+      return false;
+    }
+  }
+
+  if (!hasWebGL()) {
+    post({ event: "webgl", ok: false });
+    showUnavailable("webgl");
+    return;
+  }
+  post({ event: "webgl", ok: true });
+
+  if (navigator.onLine === false) {
+    showOffline();
+    return;
+  }
+
+  window.addEventListener("offline", showOffline);
+
+  // The elevation host sends no CORS header, so the app fetches each tile with URLSession and
+  // hands the encoded PNG back to this page. addProtocol is the supported MapLibre hook for a
+  // raster-dem source and runs on the main thread.
+  var demSequence = 0;
+  var demPending = {};
+
+  function base64ToArrayBuffer(base64) {
+    var binary = atob(base64);
+    var bytes = new Uint8Array(binary.length);
+    for (var i = 0; i < binary.length; i += 1) { bytes[i] = binary.charCodeAt(i); }
+    return bytes.buffer;
+  }
+
+  window.terrainDEM = {
+    resolve: function (id, base64) {
+      var pending = demPending[id];
+      if (!pending) { return; }
+      delete demPending[id];
+      try {
+        pending.resolve({ data: base64ToArrayBuffer(base64) });
+      } catch (error) {
+        pending.reject(new Error("bad elevation tile"));
+      }
+    },
+    reject: function (id) {
+      var pending = demPending[id];
+      if (!pending) { return; }
+      delete demPending[id];
+      pending.reject(new Error("elevation tile unavailable"));
+    }
+  };
+
+  if (typeof maplibregl.addProtocol !== "function") {
+    showUnavailable("webgl");
+    return;
+  }
+  maplibregl.addProtocol("vela-dem", function (params, abortController) {
+    return new Promise(function (resolve, reject) {
+      var id = "dem" + (++demSequence);
+      demPending[id] = { resolve: resolve, reject: reject };
+      if (abortController && abortController.signal) {
+        abortController.signal.addEventListener("abort", function () {
+          if (demPending[id]) {
+            delete demPending[id];
+            reject(new Error("aborted"));
+          }
+        });
+      }
+      post({ event: "dem_request", id: id, url: params.url });
+    });
+  });
+
+  var style = {
+    version: 8,
+    // MapLibre GL JS 5 takes the atmosphere as a top-level style object, not a layer: the layer
+    // form is rejected by the style spec, which is why the sky lives here.
+    sky: {
+      "sky-color": "#101d2c",
+      "sky-horizon-blend": 0.55,
+      "horizon-color": "#2a3540",
+      "horizon-fog-blend": 0.5,
+      "fog-color": "#0b1117",
+      "fog-ground-blend": 0.25
+    },
+    sources: {
+      openmaptiles: { type: "vector", url: VECTOR_SOURCE },
+      terrain: {
+        type: "raster-dem",
+        tiles: [DEM_TILES],
+        tileSize: 256,
+        encoding: "terrarium",
+        minzoom: 0,
+        maxzoom: 15,
+        attribution: DEM_ATTRIBUTION
+      }
+    },
+    layers: [
+      { id: "background", type: "background", paint: { "background-color": "#0d1418" } },
+      {
+        id: "landcover", type: "fill", source: "openmaptiles", "source-layer": "landcover",
+        paint: { "fill-color": ["match", ["get", "class"],
+          "wood", "#1b2a20", "grass", "#1f2c22", "ice", "#dfe7ea", "#1a2329"], "fill-opacity": 0.85 }
+      },
+      {
+        id: "landuse", type: "fill", source: "openmaptiles", "source-layer": "landuse",
+        minzoom: 7,
+        paint: { "fill-color": "#18232a", "fill-opacity": 0.7 }
+      },
+      {
+        id: "water", type: "fill", source: "openmaptiles", "source-layer": "water",
+        paint: { "fill-color": "#0e1a22" }
+      },
+      {
+        id: "waterway", type: "line", source: "openmaptiles", "source-layer": "waterway",
+        paint: { "line-color": "#16303f", "line-width": ["interpolate", ["linear"], ["zoom"], 10, 0.6, 16, 3] }
+      },
+      {
+        id: "hillshade", type: "hillshade", source: "terrain",
+        paint: {
+          "hillshade-shadow-color": "#000000",
+          "hillshade-highlight-color": "#7f9184",
+          "hillshade-accent-color": "#10181c",
+          "hillshade-exaggeration": 0.35
+        }
+      },
+      {
+        id: "building", type: "fill", source: "openmaptiles", "source-layer": "building",
+        minzoom: 15,
+        paint: { "fill-color": "#20272c", "fill-outline-color": "#2b343a" }
+      },
+      {
+        id: "road-casing", type: "line", source: "openmaptiles", "source-layer": "transportation",
+        minzoom: 6,
+        filter: ["match", ["get", "class"], ["motorway", "trunk", "primary", "secondary", "tertiary"], true, false],
+        layout: { "line-cap": "round", "line-join": "round" },
+        paint: { "line-color": "#05080a", "line-width": ["interpolate", ["exponential", 1.2], ["zoom"], 6, 1, 12, 3, 18, 22] }
+      },
+      {
+        id: "road", type: "line", source: "openmaptiles", "source-layer": "transportation",
+        minzoom: 6,
+        filter: ["match", ["get", "class"], ["motorway", "trunk", "primary", "secondary", "tertiary", "minor", "service"], true, false],
+        layout: { "line-cap": "round", "line-join": "round" },
+        paint: { "line-color": ["match", ["get", "class"],
+          "motorway", "#5d6a72", "trunk", "#56636b", "primary", "#4e5a62",
+          "#404a51"], "line-width": ["interpolate", ["exponential", 1.2], ["zoom"], 6, 0.5, 12, 2, 18, 16] }
+      },
+      {
+        id: "boundary", type: "line", source: "openmaptiles", "source-layer": "boundary",
+        filter: ["all", ["<=", ["get", "admin_level"], 4], ["!=", ["get", "maritime"], 1]],
+        paint: { "line-color": "#3f4a52", "line-dasharray": [2, 2], "line-width": 1 }
+      },
+      {
+        id: "place-country", type: "symbol", source: "openmaptiles", "source-layer": "place",
+        filter: ["==", ["get", "class"], "country"], maxzoom: 9,
+        layout: {
+          "text-field": ["coalesce", ["get", "name:en"], ["get", "name"]],
+          "text-font": ["Noto Sans Regular"],
+          "text-transform": "uppercase",
+          "text-letter-spacing": 0.15,
+          "text-size": ["interpolate", ["linear"], ["zoom"], 3, 10, 7, 15]
+        },
+        paint: { "text-color": "#c6d2d8", "text-halo-color": "#080b0e", "text-halo-width": 1.2 }
+      },
+      {
+        id: "place-city", type: "symbol", source: "openmaptiles", "source-layer": "place",
+        filter: ["match", ["get", "class"], ["city", "town"], true, false],
+        layout: {
+          "text-field": ["coalesce", ["get", "name:en"], ["get", "name"]],
+          "text-font": ["Noto Sans Regular"],
+          "text-size": ["interpolate", ["linear"], ["zoom"], 4, 11, 10, 14, 16, 17]
+        },
+        paint: { "text-color": "#eef3f5", "text-halo-color": "#080b0e", "text-halo-width": 1.4 }
+      },
+      {
+        id: "place-village", type: "symbol", source: "openmaptiles", "source-layer": "place",
+        minzoom: 9,
+        filter: ["match", ["get", "class"], ["village", "hamlet", "suburb"], true, false],
+        layout: {
+          "text-field": ["coalesce", ["get", "name:en"], ["get", "name"]],
+          "text-font": ["Noto Sans Regular"],
+          "text-size": ["interpolate", ["linear"], ["zoom"], 9, 10, 14, 13]
+        },
+        paint: { "text-color": "#d5dee2", "text-halo-color": "#080b0e", "text-halo-width": 1.2 }
+      }
+    ]
+  };
+
+  try {
+    map = new maplibregl.Map({
+      container: "map",
+      style: style,
+      center: [6.8694, 45.9237],
+      zoom: 10.6,
+      pitch: 70,
+      bearing: -18,
+      maxPitch: 85,
+      maxZoom: 17,
+      minZoom: 3,
+      attributionControl: false,
+      fadeDuration: 0,
+      maxTileCacheSize: 64,
+      pixelRatio: Math.min(window.devicePixelRatio || 1, 2),
+      antialias: false
+    });
+  } catch (error) {
+    showUnavailable("webgl");
+    return;
+  }
+
+  // The credits are part of the SwiftUI chrome, one readable row over a dark pill, so the
+  // default attribution box is not duplicated over the terrain.
+
+  map.on("error", function (event) {
+    var sourceId = (event && event.sourceId) || "style";
+    var message = String((event && event.error && event.error.message) || "error");
+    post({ event: "failure", message: sourceId + ": " + message });
+    // A tile error is transient: MapLibre retries and a slow DEM tile must not turn the whole
+    // screen into a failure. Only an explicit offline signal changes the state here.
+    if (navigator.onLine === false) { showOffline(); }
+  });
+
+  map.on("render", function () {
+    if (!frameShown) {
+      frameShown = true;
+      post({ event: "frame" });
+    }
+  });
+
+  map.on("style.load", function () {
+    map.setTerrain({ source: "terrain", exaggeration: 1.35 });
+    post({ event: "loaded" });
+  });
+
+  map.on("sourcedata", function (event) {
+    if (demReady || event.sourceId !== "terrain" || !event.isSourceLoaded) { return; }
+    demReady = true;
+    post({ event: "dem" });
+  });
+
+  map.on("idle", function () {
+    if (map.getTerrain() && !demReady) {
+      var elevation = map.queryTerrainElevation(map.getCenter());
+      if (typeof elevation === "number" && isFinite(elevation)) {
+        demReady = true;
+        post({ event: "dem" });
+      }
+    }
+  });
+})();
+</script>
+</body>
+</html>
