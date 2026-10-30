@@ -1,0 +1,21 @@
+tag=layer-info-compile-20261030-130105-26730 src=src/layer-info-compile 733582e src: d79496bb LAYER-INFO: read transit visibility from the layer data
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+
+== Voice framework
+
+== String catalog
+
+== XcodeGen
+xcodegen: Version: 2.46.0
+
+== Generate and build
+maplibre-globe: downloading MapLibre.dynamic.xcframework.zip (169968107 bytes) from ios-v2026.10.19-globe
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 14  162M   14 23.0M    0     0  42.5M      0  0:00:03 --:--:--  0:00:03 42.5M 65  162M   65  105M    0     0  68.3M      0  0:00:02  0:00:01  0:00:01 82.3M100  162M  100  162M    0     0  65.6M      0  0:00:02  0:00:02 --:--:-- 72.1M
+maplibre-globe ios-v2026.10.19-globe: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/MapLibre.xcframework (577M on disk)
+simulator: 2263B19F-42E8-4C8B-8AF1-D79508216C90
+simulator build: ok
+compile check green
