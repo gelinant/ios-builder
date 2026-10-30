@@ -29,20 +29,20 @@
       "category": "utilities",
       "versions": [
         {
-          "version": "0.1.202610301130",
-          "buildVersion": "1793359815",
-          "date": "2026-10-30T11:58:01Z",
-          "localizedDescription": "Build 30 octobre 12 h : interface francaise complete (pluriels compris), satellites GPS et geostationnaires, globe, relief, guidage avec recherche, zone accessible, hors ligne repare.\n\nBuild 1793359815.",
+          "version": "0.1.202610302311",
+          "buildVersion": "1793401876",
+          "date": "2026-10-30T23:29:44Z",
+          "localizedDescription": "Build 30 octobre soir : instruction de manoeuvre visible en tres grands caracteres, options transport dans le choix d'itineraire, vue d'ensemble qui s'aplatit et se restaure exactement, zone hors ligne installee et durable, corrections d'accessibilite et de parcours.\n\nBuild 1793401876.",
           "downloadURL": "https://raw.githubusercontent.com/gelinant/ios-builder/dist/Vela.ipa",
-          "size": 27273596,
+          "size": 27334926,
           "minOSVersion": "17.0"
         }
       ],
-      "version": "0.1.202610301130",
-      "versionDate": "2026-10-30T11:58:01Z",
-      "versionDescription": "Build 30 octobre 12 h : interface francaise complete (pluriels compris), satellites GPS et geostationnaires, globe, relief, guidage avec recherche, zone accessible, hors ligne repare.\n\nBuild 1793359815.",
+      "version": "0.1.202610302311",
+      "versionDate": "2026-10-30T23:29:44Z",
+      "versionDescription": "Build 30 octobre soir : instruction de manoeuvre visible en tres grands caracteres, options transport dans le choix d'itineraire, vue d'ensemble qui s'aplatit et se restaure exactement, zone hors ligne installee et durable, corrections d'accessibilite et de parcours.\n\nBuild 1793401876.",
       "downloadURL": "https://raw.githubusercontent.com/gelinant/ios-builder/dist/Vela.ipa",
-      "size": 27273596,
+      "size": 27334926,
       "appPermissions": {
         "entitlements": [],
         "privacy": {
