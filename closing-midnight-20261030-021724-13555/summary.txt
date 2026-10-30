@@ -1,0 +1,48 @@
+commit: f6a9c9d src: 6f8b0953 Place closing: read 12:xx AM as after midnight
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610300218 (1793326722)
+java: openjdk version "17.0.21" 2026-10-20
+notices: ok, 39 entries (8 libraries, 30 data sources)
+gradle: ok in 662 s
+kotlin jvmTest: 655 tests, 0 failures
+kotlin iosSimulatorArm64Test: 544 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  88M, static library 87280456 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  58M, static library 55008656 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 2101 keys, 24 resource locales (24 with translations), 38494 localized values, 971 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+simulator: iPhone 17 (062CFAA4-9ACF-40ED-A1E2-3625F5ED4DA9) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (F6F146B6-18AA-4FE2-9F0B-AA6D02028DDA) (Shutdown) 
+simulator build: ok
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+tests: ok, Executed 188 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=19505
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=58696 rate=22050 wav_frames=58696
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: ok
+ui PlaceFuelUITests.testClosingCountdownAcrossMidnight: passed (21.675 seconds)
+ui PlaceFuelUITests.testClosingTimeCard: passed (13.317 seconds)
+ui PlaceFuelUITests.testFuelPlaceCard: passed (16.415 seconds)
+ui closing_minutes=55
+ui place_closing=Closes
+ui place_fuel_nearby=Cheaper
+ui place_fuel=172.9p/E10
+ui screenshots: place-closing-midnight.png place-closing.png place-fuel.png 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 88841 bytes
+directions reply: directions-drive-sf 112778 bytes
+directions reply: directions-walk-sf 34604 bytes
+search reply: 234193 bytes, 25 feature ids
