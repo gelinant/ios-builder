@@ -1,0 +1,3 @@
+src=src/perf-guard
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=PlaceReviewsUITests,PerformanceUITests,LaunchUITests VELA_SKIP_ARCHIVE=1
