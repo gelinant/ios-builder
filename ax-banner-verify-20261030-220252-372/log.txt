@@ -1,0 +1,204 @@
+tag=ax-banner-verify-20261030-220252-372 src=src/ax-banner-verify fce8bd5 src: 8020b402 iOS tests: wait for the nav banner rather than the debug flag
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: fce8bd5 src: 8020b402 iOS tests: wait for the nav banner rather than the debug flag
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610302203 (1793397826)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (22:03:47)
+notices: ok, 39 entries (8 libraries, 30 data sources)
+
+== Kotlin: tests and the VelaCore framework (22:03:47)
+gradle: ok in 700 s
+kotlin jvmTest: 667 tests, 0 failures
+kotlin iosSimulatorArm64Test: 555 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87578000 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55208824 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (22:15:28)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 30.3M  100 30.3M    0     0  36.4M      0 --:--:-- --:--:-- --:--:-- 36.4M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (22:15:30)
+string catalog: 2145 keys, 24 resource locales (24 with translations), 38583 localized values, 1036 Swift references, 24 picker languages
+
+== XcodeGen (22:15:33)
+xcodegen: Version: 2.46.0
+
+== Generate the project (22:15:33)
+maplibre-globe: downloading MapLibre.dynamic.xcframework.zip (169968107 bytes) from ios-v2026.10.19-globe
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 41  162M   41 66.7M    0     0  76.3M      0  0:00:02 --:--:--  0:00:02 76.3M100  162M  100  162M    0     0   104M      0  0:00:01  0:00:01 --:--:--  142M
+maplibre-globe ios-v2026.10.19-globe: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/MapLibre.xcframework (577M on disk)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (22:15:37)
+  SWCompression: https://github.com/tsolomko/SWCompression @ 4.9.1
+
+resolved source packages: BitByteData, SWCompression
+(resolve: 13 s)
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+
+== Pick a simulator (22:15:50)
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (600A45A3-B3A0-4A39-8A9C-5D051F9FDA9C) (Shutdown) 
+
+== Build for the simulator (22:15:51)
+note: Run script build phase 'Fetch MapLibre globe' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 126 s)
+simulator build: ok
+
+== Boot the simulator (22:17:57)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (22:21:40)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 162 s)
+tests: ok, Executed 200 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=19319
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=56791 rate=22050 wav_frames=56791
+
+== Launch and screenshot (22:24:22)
+app.vela.ios: 30906
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 8C92F85B-DB6B-4DC8-9E12-1B75A85F816D (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (22:25:16)
+Parsed 8 waypoints
+Parsed 8 waypoints
+Parsed 8 waypoints
+Parsed 8 waypoints
+xcodebuild uitest failed after 505 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/NavBannerUITests.swift:92: error: -[VelaUITests.NavBannerUITests testBannerAtAccessibilityXXXL] : XCTAssertTrue failed - the card shows no instruction at AX: nav=1 active=1 starting=0 free=0 simple=0 recalc=0 stopadds=0 arrived=0 left=2875 eta=1026 follow=1 camera=31 voice=8 idle=1 background=1 offroute=0 activity=1 actenabled=1 actrequests=1 actupdates=21 actended=0 acterror=0 limit=0 speeding=0 alertgroups=0 offer=0 delay=229 paused=0 starved=0 reckoning=0 bg=0 interruptions=0 routechanges=0 accuracy=5 suppressed=0 stops=0 nextstop=0 reached=0 closing=0 parked=0 lanes=4 ref=US 50 currentref=I 80 preview=-1 voicemode=on step=2 sessions=1 bridges=0 navsegments=1 navcongestion=0 navahead=2 navlanes=0 instr=1 resuming=0 resumefailed=0 resumed=0 notifreq=0 notifpost=0 notifopen=0 notifauth=undetermined notiferr=0 carpad=73 camzoom=16.8 camtilt=55 camoverview=0 camfollow=1 camlat=37.77828 camlng=-122.41460 camauto=0 camdetached=0
+Test Case '-[VelaUITests.NavBannerUITests testBannerAtAccessibilityXXXL]' failed (174.375 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =    22.88s Find the "route-start" Button
+    t =    23.16s Tap "route-start" Button
+    t =    23.16s     Wait for app.vela.ios to idle
+    t =    23.16s     Find the "route-start" Button
+    t =    23.76s     Check for interrupting elements affecting "route-start" Button
+    t =    24.13s     Synthesize event
+    t =    24.58s     Wait for app.vela.ios to idle
+    t =    25.41s Checking existence of `"nav-banner" Other`
+    t =    29.64s Checking existence of `"nav-debug" StaticText`
+    t =    29.97s Find the "nav-debug" StaticText
+    t =    30.29s Waiting 10.0s for "nav-shield" Any to exist
+    t =    31.33s     Checking `Expect predicate `existsNoRetry == 1` for object "nav-shield" Any`
+    t =    31.34s         Checking existence of `"nav-shield" Any`
+    t =    32.17s Find the "nav-shield" Any
+    t =    32.78s Checking existence of `"nav-debug" StaticText`
+    t =    32.93s Find the "nav-debug" StaticText
+    t =    33.72s Added attachment named 'nav-banner-shield-gb'
+    t =    33.73s Find the "nav-shield" Other
+UITEST nav_banner_shield_gb=M25
+    t =    34.29s Tear Down
+    t =    34.29s     Checking existence of `"nav-end" Button`
+    t =    34.45s     Tap "nav-end" Button
+    t =    34.45s         Wait for app.vela.ios to idle
+    t =    34.46s         Find the "nav-end" Button
+    t =    34.66s         Check for interrupting elements affecting "nav-end" Button
+    t =    34.82s         Synthesize event
+    t =    35.17s         Wait for app.vela.ios to idle
+    t =    35.38s     Waiting 2.0s for "nav-end-confirm" Button to exist
+    t =    36.58s         Checking `Expect predicate `existsNoRetry == 1` for object "nav-end-confirm" Button`
+    t =    36.58s             Checking existence of `"nav-end-confirm" Button`
+    t =    37.67s             Capturing element debug description
+    t =    37.67s         Checking existence of `"nav-end-confirm" Button`
+    t =    40.53s     Tap "nav-end-confirm" Button
+    t =    40.53s         Wait for app.vela.ios to idle
+    t =    40.90s         Find the "nav-end-confirm" Button
+    t =    43.63s         Check for interrupting elements affecting "nav-end-confirm" Button
+    t =    44.61s         Synthesize event
+    t =    45.12s         Wait for app.vela.ios to idle
+    t =    45.52s     Checking existence of `"nav-debug" StaticText`
+    t =    46.37s     Find the "nav-debug" StaticText
+Test Case '-[VelaUITests.NavBannerUITests testUkShieldStyles]' passed (47.346 seconds).
+Test Suite 'NavBannerUITests' failed at 2026-10-30 22:32:43.446.
+	 Executed 4 tests, with 1 failure (0 unexpected) in 403.188 (403.199) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-30 22:32:43.447.
+	 Executed 4 tests, with 1 failure (0 unexpected) in 403.188 (403.201) seconds
+Test Suite 'Selected tests' failed at 2026-10-30 22:32:43.448.
+	 Executed 4 tests, with 1 failure (0 unexpected) in 403.188 (403.203) seconds
+2026-10-30 22:33:34.315 xcodebuild[32094:92019] [MT] IDETestOperationsObserverDebug: 474.092 elapsed -- Testing started completed.
+2026-10-30 22:33:34.316 xcodebuild[32094:92019] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-30 22:33:34.316 xcodebuild[32094:92019] [MT] IDETestOperationsObserverDebug: 474.093 sec, +474.093 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.Eo47elxiZw/uitest.xcresult
+
+Failing tests:
+	NavBannerUITests.testBannerAtAccessibilityXXXL()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui NavBannerUITests.testBannerAtAccessibilityXXXL: failed (174.375 seconds)
+ui NavBannerUITests.testFrenchShieldStyles: passed (66.638 seconds)
+ui NavBannerUITests.testLanesShieldPreviewAndPerStopEta: passed (114.829 seconds)
+ui NavBannerUITests.testUkShieldStyles: passed (47.346 seconds)
+scripts/ios/ci-ipa.sh: line 286: 32091 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui nav_banner_lanes=4
+ui nav_banner_preview=-1
+ui nav_banner_restored=1
+ui nav_banner_shield_fr=A7
+ui nav_banner_shield_gb=M25
+ui nav_banner_shield=US
+ui nav_banner_stop_eta=8
+ui nav_banner_stops=1
+ui nav_banner_trip=Trip
+ui screenshots: nav-banner-lanes-shield-stop.png nav-banner-live-restored.png nav-banner-preview.png nav-banner-shield-fr.png nav-banner-shield-gb.png 
+
+== Route replay (22:33:43)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 8C92F85B-DB6B-4DC8-9E12-1B75A85F816D (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 8C92F85B-DB6B-4DC8-9E12-1B75A85F816D (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (22:35:28)
+268584
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 76269 bytes
+directions reply: directions-drive-sf 107874 bytes
+directions reply: directions-walk-sf 34594 bytes
+search reply: 268584 bytes, 32 feature ids
+failed steps: ui-scenarios
