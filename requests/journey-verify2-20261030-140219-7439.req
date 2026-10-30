@@ -1,0 +1,3 @@
+src=src/journey-verify2
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=JourneyUITests VELA_SKIP_ARCHIVE=1
