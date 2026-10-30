@@ -1,0 +1,118 @@
+tag=a11y-split-b-20261030-142801-26091 src=src/a11y-split-b 888c277 src: e2dc37e4 A11Y-SPLIT: measure one hierarchy snapshot per case
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 888c277 src: e2dc37e4 A11Y-SPLIT: measure one hierarchy snapshot per case
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610301429 (1793370583)
+java: openjdk version "17.0.21" 2026-10-20
+
+== Notices (14:29:43)
+notices: ok, 39 entries (8 libraries, 30 data sources)
+
+== Kotlin: tests and the VelaCore framework (14:29:44)
+gradle: ok in 740 s
+kotlin jvmTest: 662 tests, 0 failures
+kotlin iosSimulatorArm64Test: 551 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87549872 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55180680 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (14:42:05)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 48 30.3M   48 14.6M    0     0  16.1M      0  0:00:01 --:--:--  0:00:01 16.1M100 30.3M  100 30.3M    0     0  27.0M      0  0:00:01  0:00:01 --:--:-- 73.1M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (14:42:07)
+string catalog: 2128 keys, 24 resource locales (24 with translations), 38549 localized values, 1009 Swift references, 24 picker languages
+
+== XcodeGen (14:42:09)
+xcodegen: Version: 2.46.0
+
+== Generate the project (14:42:10)
+maplibre-globe: downloading MapLibre.dynamic.xcframework.zip (169968107 bytes) from ios-v2026.10.19-globe
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0  162M    0  334k    0     0  1031k      0  0:02:40 --:--:--  0:02:40 1031k 66  162M   66  108M    0     0  81.7M      0  0:00:01  0:00:01 --:--:--  107M100  162M  100  162M    0     0  90.7M      0  0:00:01  0:00:01 --:--:--  110M
+maplibre-globe ios-v2026.10.19-globe: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/MapLibre.xcframework (584M on disk)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (14:42:14)
+  SWCompression: https://github.com/tsolomko/SWCompression @ 4.9.1
+
+resolved source packages: BitByteData, SWCompression
+(resolve: 18 s)
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+
+== Pick a simulator (14:42:32)
+simulator: iPhone 17 (062CFAA4-9ACF-40ED-A1E2-3625F5ED4DA9) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (F6F146B6-18AA-4FE2-9F0B-AA6D02028DDA) (Shutdown) 
+
+== Build for the simulator (14:42:35)
+xcodebuild build-sim failed after 121 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/AccessibilitySuiteUITests.swift:455:14: error: call can throw, but it is not marked with 'try' and the error is not handled
+** TEST BUILD FAILED **
+--- tail of build-sim log ---
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TransitPolishUITests.swift (in target 'VelaUITests' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TransitReachUITests.swift (in target 'VelaUITests' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TransitTimeUITests.swift (in target 'VelaUITests' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TransitVehiclesUITests.swift (in target 'VelaUITests' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TransitWiredUITests.swift (in target 'VelaUITests' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TreesUITests.swift (in target 'VelaUITests' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TripsUITests.swift (in target 'VelaUITests' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/UnifiedSearchUITests.swift (in target 'VelaUITests' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/VelaUITestCase.swift (in target 'VelaUITests' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/VoiceUITests.swift (in target 'VelaUITests' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/WorldLayersUITests.swift (in target 'VelaUITests' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+PrecompileModule /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/ExplicitPrecompiledModules/CoreVideo-9QJNDBVDJBQNDCOL9MR9PYECD.scan
+    cd /
+    builtin-precompileModule /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/ExplicitPrecompiledModules/CoreVideo-9QJNDBVDJBQNDCOL9MR9PYECD.scan
+
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+note: Run script build phase 'Fetch MapLibre globe' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD FAILED **
+
+
+The following build commands failed:
+	SwiftCompile normal arm64 Compiling\ AccessibilitySuiteUITests.swift,\ AppearanceUITests.swift,\ AviationLayerUITests.swift,\ BikeProfileUITests.swift,\ CalibrationUITests.swift,\ DiagnosticsUITests.swift,\ DirectionsUITests.swift,\ DriveSearchUITests.swift,\ EnergyRadarUITests.swift,\ FreeDriveUITests.swift,\ GlobeUITests.swift,\ IncomingLinksUITests.swift,\ IntentsUITests.swift,\ LaunchUITests.swift,\ LocalizationUITests.swift,\ Map3DUITests.swift,\ MapChromeUITests.swift,\ MapGestureUITests.swift,\ MapLayersUITests.swift,\ MapPoiResolveUITests.swift,\ MapPoiUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/AccessibilitySuiteUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/AppearanceUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/AviationLayerUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/BikeProfileUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/CalibrationUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/DiagnosticsUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/DirectionsUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/DriveSearchUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/EnergyRadarUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/FreeDriveUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/GlobeUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/IncomingLinksUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/IntentsUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/LaunchUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/LocalizationUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/Map3DUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/MapChromeUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/MapGestureUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/MapLayersUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/MapPoiResolveUITests.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/MapPoiUITests.swift (in target 'VelaUITests' from project 'Vela')
+	SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/AccessibilitySuiteUITests.swift (in target 'VelaUITests' from project 'Vela')
+	Building project Vela for testing with scheme Vela
+(3 failures)
