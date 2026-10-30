@@ -1,0 +1,205 @@
+tag=transit-options-20261030-192615-19609 src=src/transit-options b6254b4 src: 1b3b24df Let the transit chooser open its options from the pinned header
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: b6254b4 src: 1b3b24df Let the transit chooser open its options from the pinned header
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610301927 (1793388459)
+java: openjdk version "17.0.21" 2026-10-20
+
+== Notices (19:27:40)
+notices: ok, 39 entries (8 libraries, 30 data sources)
+
+== Kotlin: tests and the VelaCore framework (19:27:40)
+gradle: ok in 778 s
+kotlin jvmTest: 666 tests, 0 failures
+kotlin iosSimulatorArm64Test: 555 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87573328 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55204640 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (19:40:39)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
+  0 30.3M    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100 30.3M  100 30.3M    0     0  20.3M      0  0:00:01  0:00:01 --:--:-- 98.3M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (19:40:41)
+string catalog: 2145 keys, 24 resource locales (24 with translations), 38583 localized values, 1036 Swift references, 24 picker languages
+
+== XcodeGen (19:40:44)
+xcodegen: Version: 2.46.0
+
+== Generate the project (19:40:45)
+maplibre-globe: downloading MapLibre.dynamic.xcframework.zip (169968107 bytes) from ios-v2026.10.19-globe
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0
+  0  162M    0 32759    0     0  12739      0  3:42:22  0:00:02  3:42:20 12739 64  162M   64  103M    0     0  29.0M      0  0:00:05  0:00:03  0:00:02  103M100  162M  100  162M    0     0  39.8M      0  0:00:04  0:00:04 --:--:--  108M
+maplibre-globe ios-v2026.10.19-globe: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/MapLibre.xcframework (578M on disk)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (19:40:52)
+  SWCompression: https://github.com/tsolomko/SWCompression @ 4.9.1
+
+resolved source packages: BitByteData, SWCompression
+(resolve: 20 s)
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+
+== Pick a simulator (19:41:12)
+simulator: iPhone 17 (062CFAA4-9ACF-40ED-A1E2-3625F5ED4DA9) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (F6F146B6-18AA-4FE2-9F0B-AA6D02028DDA) (Shutdown) 
+
+== Build for the simulator (19:41:15)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 142 s)
+simulator build: ok
+
+== Boot the simulator (19:43:37)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (19:48:57)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 120 s)
+tests: ok, Executed 200 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.59 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Navigate_to_coffee samples=20062
+VOICE_ASR_PLAN action=navigate query=coffee
+VOICE_SYNTH samples=59933 rate=22050 wav_frames=59933
+
+== Launch and screenshot (19:50:57)
+app.vela.ios: 38052
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: C21C03B7-ADD1-446C-AC36-16355D25D7A4 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (19:51:46)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(uitest: 914 s)
+ui scenarios: ok
+ui DirectionsUITests.testAvoidCameras: passed (94.780 seconds)
+ui DirectionsUITests.testBikeRouteUsesTheSafetyProfile: passed (59.176 seconds)
+ui DirectionsUITests.testDirectionsToTheFirstCoffeeResult: passed (184.627 seconds)
+ui DirectionsUITests.testNoGoogleDriveNeverAsksGoogle: passed (97.756 seconds)
+ui DirectionsUITests.testRouteAvoidOptionsScrollAtLargeText: passed (24.288 seconds)
+ui DirectionsUITests.testRoutePickerStyleAndTrafficOnDemand: passed (70.530 seconds)
+ui DirectionsUITests.testStepTapFocusesMap: passed (59.380 seconds)
+ui DirectionsUITests.testWaypointAndDepartureTime: passed (93.301 seconds)
+ui TransitTimeUITests.testTimeEverywhere: passed (126.693 seconds)
+scripts/ios/ci-ipa.sh: line 286: 39522 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui bike_meters=1442
+ui bike_routes=3
+ui bike_safe=1
+ui bike_seconds=300
+ui bike_steps=7
+ui camera_avoided=2
+ui camera_extra_meters=0
+ui camera_extra_seconds=8
+ui camera_on_active=0
+ui camera_side_streets=0
+ui directions_center=0
+ui directions_drive_meters=1337
+ui directions_drive_routes=1
+ui directions_drive_seconds=165
+ui directions_drive_steps=12
+ui directions_drive_traffic_spans=0
+ui directions_far_meters=1450
+ui directions_far_routes=2
+ui directions_far_seconds=173
+ui directions_far_selected=1
+ui directions_far_steps=6
+ui directions_far_traffic_spans=0
+ui directions_transit_itineraries=12
+ui directions_transit_legs=3
+ui directions_walk_meters=79
+ui directions_walk_routes=1
+ui directions_walk_seconds=63
+ui directions_walk_steps=4
+ui nogoogle_flag=1
+ui nogoogle_google_requests=0
+ui nogoogle_open_requests=8
+ui nogoogle_routes=2
+ui nogoogle_seconds=464
+ui picker_expanded_alternatives=4
+ui picker_traffic_live=1
+ui picker_traffic_on_tap=1
+ui picker_traffic_requested_before=0
+ui route_avoid_swipes=2
+ui route_scroll_debug=scroll=354x321
+ui route_scroll_frame=354x321
+ui route_sheet_expanded_ratio=0.76
+ui route_time_epoch=1793391600
+ui route_time_mode=1
+ui route_time_note=Estimate_only,_no_live_departure_forecast
+ui route_waypoint_routes=1
+ui route_waypoints=1
+ui step_focus_steps=7
+ui step_focus=1
+ui step_next=2
+ui step_whole_route=1
+ui step_zoom=16.5
+ui time_board_query=Depart_at_8:20_PM_·_GMT_·_asked_8:04 PM
+ui time_route_mode=1
+ui time_route_query=Depart_at_8:25_PM_·_GMT_·_asked_8:05 PM
+ui time_segment_query=Depart_at_8:21 PM_from_Metro_Van_Ness_Station_·_fixture,_display_only
+ui time_surfaces=4
+ui time_transit_query=Depart_at_8:40_PM_·_GMT_·_asked_8:05 PM
+ui time_trip_query=Depart_at_8:35_PM_·_GMT_·_asked_8:04 PM
+ui transit_options_from_chooser=1
+ui transit_options_hittable=1
+ui screenshots: directions-drive.png directions-far-alt.png directions-far-steps.png directions-far.png directions-steps.png directions-transit-steps.png directions-transit.png directions-walk.png 
+
+== Route replay (20:07:05)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: C21C03B7-ADD1-446C-AC36-16355D25D7A4 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: C21C03B7-ADD1-446C-AC36-16355D25D7A4 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=27919 parsed=true times=false
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=26520 parsed=true times=false
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=27919 parsed=true times=false
+place load: photos: rpc 10
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (20:08:46)
+249411
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 88808 bytes
+directions reply: directions-drive-sf 147636 bytes
+directions reply: directions-walk-sf 44669 bytes
+search reply: 249411 bytes, 30 feature ids
