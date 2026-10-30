@@ -1,0 +1,209 @@
+tag=ipa-30e-20261030-231033-23261 src=src/ipa-30e 3b1334a src: 25be6bcf Merge A11Y-FIX: the turn instruction is drawn at accessibility sizes
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 3b1334a src: 25be6bcf Merge A11Y-FIX: the turn instruction is drawn at accessibility sizes
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610302311 (1793401876)
+java: openjdk version "17.0.21" 2026-10-20
+
+== Notices (23:11:16)
+notices: ok, 39 entries (8 libraries, 30 data sources)
+
+== Kotlin: tests and the VelaCore framework (23:11:16)
+gradle: ok in 288 s
+kotlin jvmTest: 667 tests, 0 failures
+kotlin iosSimulatorArm64Test: 555 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87578000 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55208824 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (23:16:04)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 30.3M  100 30.3M    0     0  54.8M      0 --:--:-- --:--:-- --:--:-- 54.8M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (23:16:05)
+string catalog: 2145 keys, 24 resource locales (24 with translations), 38583 localized values, 1036 Swift references, 24 picker languages
+
+== XcodeGen (23:16:07)
+xcodegen: Version: 2.46.0
+
+== Generate the project (23:16:07)
+maplibre-globe: downloading MapLibre.dynamic.xcframework.zip (169968107 bytes) from ios-v2026.10.19-globe
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 71  162M   71  115M    0     0   116M      0  0:00:01 --:--:--  0:00:01  116M100  162M  100  162M    0     0   130M      0  0:00:01  0:00:01 --:--:--  192M
+maplibre-globe ios-v2026.10.19-globe: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/MapLibre.xcframework (577M on disk)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (23:16:10)
+  BitByteData: https://github.com/tsolomko/BitByteData @ 2.1.0
+
+resolved source packages: SWCompression, BitByteData
+(resolve: 8 s)
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+
+== Pick a simulator (23:16:18)
+simulator: iPhone 17 (062CFAA4-9ACF-40ED-A1E2-3625F5ED4DA9) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (F6F146B6-18AA-4FE2-9F0B-AA6D02028DDA) (Shutdown) 
+
+== Build for the simulator (23:16:18)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 52 s)
+simulator build: ok
+
+== Boot the simulator (23:17:10)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (23:18:52)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 34 s)
+tests: ok, Executed 200 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Navigate_the_coffee samples=18762
+VOICE_ASR_PLAN action=search query=Navigate the coffee
+VOICE_SYNTH samples=55982 rate=22050 wav_frames=55982
+
+== Launch and screenshot (23:19:26)
+app.vela.ios: 14487
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 29900749-B98F-455E-BB23-1004DC157805 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (23:19:52)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(uitest: 62 s)
+ui scenarios: ok
+ui LaunchUITests.testLaunchShowsTheMapOverSanFrancisco: passed (16.612 seconds)
+ui LaunchUITests.testStartCameraArgumentMovesTheMapToDavis: passed (14.303 seconds)
+scripts/ios/ci-ipa.sh: line 286: 15765 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui map_element=yes
+ui screenshots: launch-davis.png launch-sf.png 
+
+== Route replay (23:20:56)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 29900749-B98F-455E-BB23-1004DC157805 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 29900749-B98F-455E-BB23-1004DC157805 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (23:21:56)
+246499
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 76192 bytes
+directions reply: directions-drive-sf 100869 bytes
+directions reply: directions-walk-sf 34594 bytes
+search reply: 246499 bytes, 31 feature ids
+
+== Archive for iOS devices, unsigned (23:21:59)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** ARCHIVE SUCCEEDED **
+
+(archive: 103 s)
+
+== Package the IPA (23:23:42)
+ipa: Vela-unsigned.ipa 27334926 bytes ( 27M)
+app frameworks: MapLibre.framework SherpaOnnxC.framework 
+app binary: arm64, 26904608 bytes
+live activity extension: PlugIns/NavActivityExtension.appex present in IPA, 220888 bytes
+extension plist CFBundleIdentifier: app.vela.ios.navactivity
+extension plist NSExtensionPointIdentifier: com.apple.widgetkit-extension
+extension signing: none
+kotlin code in the device binary: yes
+plist CFBundleIdentifier: app.vela.ios
+plist CFBundleDisplayName: Vela
+plist CFBundleShortVersionString: 0.1.202610302311
+plist MinimumOSVersion: 17.0
+plist UIBackgroundModes: ["location","audio"]
+plist NSSupportsLiveActivities: true
+
+== Summary
+commit: 3b1334a src: 25be6bcf Merge A11Y-FIX: the turn instruction is drawn at accessibility sizes
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610302311 (1793401876)
+java: openjdk version "17.0.21" 2026-10-20
+notices: ok, 39 entries (8 libraries, 30 data sources)
+gradle: ok in 288 s
+kotlin jvmTest: 667 tests, 0 failures
+kotlin iosSimulatorArm64Test: 555 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87578000 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55208824 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 2145 keys, 24 resource locales (24 with translations), 38583 localized values, 1036 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+simulator: iPhone 17 (062CFAA4-9ACF-40ED-A1E2-3625F5ED4DA9) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (F6F146B6-18AA-4FE2-9F0B-AA6D02028DDA) (Shutdown) 
+simulator build: ok
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+tests: ok, Executed 200 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Navigate_the_coffee samples=18762
+VOICE_ASR_PLAN action=search query=Navigate the coffee
+VOICE_SYNTH samples=55982 rate=22050 wav_frames=55982
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: ok
+ui LaunchUITests.testLaunchShowsTheMapOverSanFrancisco: passed (16.612 seconds)
+ui LaunchUITests.testStartCameraArgumentMovesTheMapToDavis: passed (14.303 seconds)
+ui map_element=yes
+ui screenshots: launch-davis.png launch-sf.png 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 76192 bytes
+directions reply: directions-drive-sf 100869 bytes
+directions reply: directions-walk-sf 34594 bytes
+search reply: 246499 bytes, 31 feature ids
+ipa: Vela-unsigned.ipa 27334926 bytes ( 27M)
+app frameworks: MapLibre.framework SherpaOnnxC.framework 
+app binary: arm64, 26904608 bytes
+live activity extension: PlugIns/NavActivityExtension.appex present in IPA, 220888 bytes
+extension plist CFBundleIdentifier: app.vela.ios.navactivity
+extension plist NSExtensionPointIdentifier: com.apple.widgetkit-extension
+extension signing: none
+kotlin code in the device binary: yes
+plist CFBundleIdentifier: app.vela.ios
+plist CFBundleDisplayName: Vela
+plist CFBundleShortVersionString: 0.1.202610302311
+plist MinimumOSVersion: 17.0
+plist UIBackgroundModes: ["location","audio"]
+plist NSSupportsLiveActivities: true
