@@ -1,0 +1,262 @@
+commit: f4e1e17 src: bfb47a26 Docs: record the 30 October noon build
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610301454 (1793372099)
+java: openjdk version "17.0.20.1" 2026-08-18
+notices: ok, 39 entries (8 libraries, 30 data sources)
+gradle: ok in 835 s
+kotlin jvmTest: 662 tests, 0 failures
+kotlin iosSimulatorArm64Test: 551 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87549872 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55180680 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 2128 keys, 24 resource locales (24 with translations), 38549 localized values, 1009 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+simulator: iPhone 17 (10B884BF-749F-4E8B-AFCD-26AB8F1DBD01) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (600A45A3-B3A0-4A39-8A9C-5D051F9FDA9C) (Shutdown) 
+simulator build: ok
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+tests: ok, Executed 189 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee samples=17647
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=57344 rate=22050 wav_frames=57344
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: FAILED
+ui BikeProfileUITests.testBikePreferencesChangeTheRoute: passed (101.470 seconds)
+ui DirectionsUITests.testAvoidCameras: passed (63.150 seconds)
+ui DirectionsUITests.testBikeRouteUsesTheSafetyProfile: passed (50.500 seconds)
+ui DirectionsUITests.testDirectionsToTheFirstCoffeeResult: passed (131.337 seconds)
+ui DirectionsUITests.testNoGoogleDriveNeverAsksGoogle: passed (97.106 seconds)
+ui DirectionsUITests.testRouteAvoidOptionsScrollAtLargeText: passed (25.932 seconds)
+ui DirectionsUITests.testRoutePickerStyleAndTrafficOnDemand: passed (90.524 seconds)
+ui DirectionsUITests.testStepTapFocusesMap: passed (62.362 seconds)
+ui DirectionsUITests.testWaypointAndDepartureTime: passed (102.540 seconds)
+ui DriveSearchUITests.testSearchAndAddStopDuringDrive: passed (133.288 seconds)
+ui FreeDriveUITests.testSpeedLimitRoadShieldAndSimpleMap: failed (36.495 seconds)
+ui NavAlertsUITests.testAlertsOnlySilencesGuidanceAndKeepsAlerts: passed (105.295 seconds)
+ui NavAlertsUITests.testBackgroundNotificationAndTapBridge: failed (97.893 seconds)
+ui NavAlertsUITests.testRouteAlertsFromFixtureProvider: passed (73.499 seconds)
+ui NavArrivalUITests.testWaypointArrivalParkingAndEnd: failed (140.183 seconds)
+ui NavBannerUITests.testBannerAtAccessibilityXXXL: failed (39.046 seconds)
+ui NavBannerUITests.testFrenchShieldStyles: passed (39.344 seconds)
+ui NavBannerUITests.testLanesShieldPreviewAndPerStopEta: passed (47.714 seconds)
+ui NavBannerUITests.testUkShieldStyles: passed (24.518 seconds)
+ui NavCameraUITests.testThirdOfScreenZoomAndOverview: failed (39.755 seconds)
+ui NavLifecycleUITests.testBackgroundSuspensionKeepsSessionStepAndVoice: passed (77.944 seconds)
+ui NavLifecycleUITests.testRelaunchResumesTheDrive: passed (105.144 seconds)
+ui NavRenderUITests.testCongestionGrayAndRoadAhead: passed (43.362 seconds)
+ui NavRobustnessUITests.testPauseGpsLossResumeAndEnd: passed (216.388 seconds)
+ui NavStopsUITests.testStopAddedDuringTheDriveRefreshesTheEta: passed (90.086 seconds)
+ui NavUITests.testGuidedDriveAndEnd: passed (214.893 seconds)
+ui PlaceFuelUITests.testClosingCountdownAcrossMidnight: passed (18.501 seconds)
+ui PlaceFuelUITests.testClosingTimeCard: passed (12.500 seconds)
+ui PlaceFuelUITests.testFuelPlaceCard: passed (14.866 seconds)
+ui PlaceReviewsUITests.testGalleryViewerSwipesWithCaptionAndSource: passed (26.092 seconds)
+ui PlaceReviewsUITests.testMoreReviewsAppendsAPage: passed (48.942 seconds)
+ui PlaceReviewsUITests.testReviewsHistogramAndControls: passed (56.863 seconds)
+ui PlaceReviewsUITests.testSwipeKeepsThePanelResponsive: passed (39.835 seconds)
+ui PlaceUITests.testCompleteFixturePlace: passed (80.614 seconds)
+ui PlaceUITests.testDetailsHoursTabsActionsAndRelated: passed (33.655 seconds)
+ui PlaceUITests.testPhotosTabOpensAtLargestText: passed (65.326 seconds)
+ui bike_fast_meters=2600
+ui bike_fast_profile=0
+ui bike_fast_seconds=600
+ui bike_meters=3924
+ui bike_mode_after_profile=BICYCLE
+ui bike_routes=2
+ui bike_safe_meters=4200
+ui bike_safe_profile=1
+ui bike_safe_seconds=900
+ui bike_safe=1
+ui bike_seconds=898
+ui bike_settings_default=1
+ui bike_steps=13
+ui camera_avoided=2
+ui camera_extra_meters=0
+ui camera_extra_seconds=38
+ui camera_on_active=0
+ui camera_side_streets=0
+ui closing_minutes=55
+ui directions_center=0
+ui directions_drive_meters=3043
+ui directions_drive_routes=1
+ui directions_drive_seconds=357
+ui directions_drive_steps=12
+ui directions_drive_traffic_spans=0
+ui directions_far_meters=1858
+ui directions_far_routes=2
+ui directions_far_seconds=236
+ui directions_far_selected=1
+ui directions_far_steps=5
+ui directions_far_traffic_spans=0
+ui directions_transit_itineraries=5
+ui directions_transit_legs=3
+ui directions_walk_meters=2296
+ui directions_walk_routes=2
+ui directions_walk_seconds=1837
+ui directions_walk_steps=14
+ui drive_search_added=1
+ui drive_search_cmd=search
+ui drive_search_directions_choice=1
+ui drive_search_open=1
+ui drive_search_session_starts=1
+ui free_drive_limit=80
+ui free_drive_speed=45
+ui gallery_categories=0
+ui gallery_menu_fallback=1
+ui gallery_photos=8
+ui history=5
+ui mainloop_stall_before_ms=475
+ui mainloop_stall_ms=475
+ui nav_activity_updates=73
+ui nav_activity=started_updated_ended
+ui nav_alerts_end=restored
+ui nav_alerts_only=on_alerts_off_on
+ui nav_banner_ax_fraction=0.41
+ui nav_banner_lanes=4
+ui nav_banner_preview=3
+ui nav_banner_restored=1
+ui nav_banner_shield_fr=A7
+ui nav_banner_shield_gb=M25
+ui nav_banner_shield=US
+ui nav_banner_stop_eta=5
+ui nav_banner_stops=1
+ui nav_banner_trip=Trip
+ui nav_camera_groups=1
+ui nav_camera_third=1
+ui nav_camera_updates=95
+ui nav_camera_zoom=18.5
+ui nav_congestion=1
+ui nav_driving_meters=709
+ui nav_end=restored
+ui nav_gps_back=1
+ui nav_initial_meters=2697
+ui nav_lanes_map=4
+ui nav_life_background=session=1
+ui nav_life_end=restored
+ui nav_life_left_before=1337
+ui nav_life_relaunch_left=1337
+ui nav_life_resume=step=7
+ui nav_life_sessions_before=1
+ui nav_lifecycle=background_foreground_kept_session
+ui nav_notification_authorization=granted
+ui nav_pause=frozen
+ui nav_reckoning=1
+ui nav_replay=sf-market
+ui nav_resume=state-only
+ui nav_road_ahead=2
+ui nav_robustness_end=restored
+ui nav_robustness_replay=sf-market
+ui nav_route_segments=3
+ui nav_speed_limit=80
+ui nav_starved=1
+ui nav_stops_added=1
+ui nav_stops_eta=14
+ui nav_voice_count=11
+ui nav_voice_line=spoken=7_text=In_half_a_mile,_Turn_left_onto_5th_Street_last=system_next=engine=system_reason=no-voice
+ui nogoogle_flag=1
+ui nogoogle_google_requests=0
+ui nogoogle_open_requests=7
+ui nogoogle_routes=2
+ui nogoogle_seconds=484
+ui pager=2/8
+ui photos=8
+ui picker_expanded_alternatives=3
+ui picker_traffic_live=1
+ui picker_traffic_on_tap=1
+ui picker_traffic_requested_before=0
+ui place_about=google-omitted
+ui place_action_link=0
+ui place_action_primary=directions
+ui place_avatars_loaded=13
+ui place_avatars_nonblack=13
+ui place_call=0
+ui place_closing=Closes
+ui place_fuel_nearby=Cheaper
+ui place_fuel=172.9p/E10
+ui place_gallery_categories=0
+ui place_gallery_count=8
+ui place_gallery_page=2/8
+ui place_gallery_paging=single-page
+ui place_gallery_walk=not-run-on-ci
+ui place_header=photo
+ui place_hours_expanded=google-omitted
+ui place_hours=0
+ui place_menu_photos=google-omitted
+ui place_open=1
+ui place_phone=0
+ui place_photos_ax5=1
+ui place_photos_tab=8
+ui place_popular_fallback=empty
+ui place_popular_hours=0
+ui place_related=0
+ui place_reviews_from=page
+ui place_reviews_initial=12
+ui place_reviews_paging=added-6
+ui place_reviews=18
+ui place_tabs_present=overview,reviews,about,photos
+ui place_tabs=underlined
+ui place_updates=google-omitted
+ui place_viewer_state=1
+ui place_website=0
+ui reviews_after_more=18
+ui reviews_histogram=5
+ui reviews_initial=12
+ui reviews_live_pages=0
+ui reviews_paging=added-6
+ui reviews_sort=1
+ui reviews_stall_action_ms=475
+ui reviews_stall_baseline_ms=890
+ui reviews_stall_ratio=0.53
+ui reviews_swipe_action_ms=485
+ui reviews_swipe_answer_ms=485
+ui reviews_swipe_baseline_ms=890
+ui reviews_swipe_fps=26
+ui reviews_swipe_ratio=0.54
+ui reviews_translated=0
+ui reviews=12
+ui reviews=18
+ui route_avoid_swipes=2
+ui route_scroll_debug=scroll=354x321
+ui route_scroll_frame=354x321
+ui route_sheet_expanded_ratio=0.76
+ui route_time_epoch=1793375100
+ui route_time_mode=1
+ui route_time_note=Estimate_only,_no_live_departure_forecast
+ui route_waypoint_routes=1
+ui route_waypoints=1
+ui step_focus_steps=5
+ui step_focus=1
+ui step_next=2
+ui step_whole_route=1
+ui step_zoom=16.5
+ui screenshots: directions-drive.png directions-far-alt.png directions-far-steps.png directions-far.png directions-steps.png directions-transit-steps.png directions-transit.png directions-walk.png nav-alerts-cycle.png nav-alerts-only.png nav-banner-lanes-shield-stop.png nav-banner-live-restored.png nav-banner-preview.png nav-banner-shield-fr.png nav-banner-shield-gb.png nav-camera-tilt.png nav-camera.png nav-congestion.png nav-driving.png nav-end.png nav-lanes-map.png nav-life-background.png nav-life-before-background.png nav-life-before-relaunch.png nav-life-resume.png nav-paused.png nav-road-ahead.png nav-speed.png nav-start.png nav-starved.png nav-stop-added.png place-actions.png place-after-gallery.png place-after-photo-tap.png place-avatars.png place-closing-midnight.png place-closing.png place-fuel.png place-gallery-grid.png place-gallery.png place-photos-ax5.png place-photos.png place-related-empty.png place-reviews-full.png place-reviews.png place-tab-about.png place-tab-photos.png place-tab-reviews.png place-tabs-ax5.png place-tabs.png place-top.png 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 27; highest after refresh: 27
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: photos: rpc 0
+place load: details: plain search (no popular times)
+place load: photos: rpc 8
+place load: details: nothing
+place load: details: page raw=-1 parsed=false times=false
+place load: photos: rpc 8
+place load: details: nothing
+place load: details: page raw=-1 parsed=false times=false
+place load: reviews: feed 0, scraping the page
+place load: reviews: page 12
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 63693 bytes
+directions reply: directions-drive-sf 118675 bytes
+directions reply: directions-walk-sf 37127 bytes
+search reply: 246873 bytes, 29 feature ids
+failed steps: ui-scenarios
