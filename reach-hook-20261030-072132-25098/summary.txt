@@ -1,0 +1,62 @@
+commit: cbada44 src: a37d0100 iOS: open the full reachable-area screen from the transit panel
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610300722 (1793344973)
+java: openjdk version "17.0.20.1" 2026-08-18
+notices: ok, 39 entries (8 libraries, 30 data sources)
+gradle: ok in 828 s
+kotlin jvmTest: 660 tests, 0 failures
+kotlin iosSimulatorArm64Test: 549 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87497440 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55124576 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 2121 keys, 24 resource locales (24 with translations), 38535 localized values, 1001 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (582B068E-2ACA-440E-8D01-417AEDF26981) (Shutdown) 
+simulator build: ok
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+tests: ok, Executed 188 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=18576
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=57856 rate=22050 wav_frames=57856
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: ok
+ui TransitAdvancedUITests.testIsochroneAndColoredLines: passed (55.844 seconds)
+ui TransitAdvancedUITests.testLineDelayColors: passed (29.237 seconds)
+ui TransitAdvancedUITests.testLiveTripBadgeOnlyWhenRealTime: passed (27.242 seconds)
+ui TransitAdvancedUITests.testViaAlternativeInsideTrip: passed (50.777 seconds)
+ui TransitReachUITests.testReachListAndHull: passed (26.962 seconds)
+ui reach_hull=1
+ui reach_minutes=30
+ui reach_stops=14
+ui transit_delay_amber=2
+ui transit_delay_green=2
+ui transit_delay_red=1
+ui transit_lines_colored=5
+ui transit_lines_fixture=1
+ui transit_lines=8
+ui transit_live_lines=5
+ui transit_live_total=8
+ui transit_reach_fixture=1
+ui transit_reach_hull=6
+ui transit_reach_stops=14
+ui transit_via_candidates=3
+ui transit_via_options=2
+ui screenshots: 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 92035 bytes
+directions reply: directions-drive-sf 124244 bytes
+directions reply: directions-walk-sf 49836 bytes
+search reply: 257215 bytes, 34 feature ids
