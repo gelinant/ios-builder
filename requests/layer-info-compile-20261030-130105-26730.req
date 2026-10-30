@@ -1,0 +1,3 @@
+src=src/layer-info-compile
+script=scripts/ios/ci-compile.sh
+args=
