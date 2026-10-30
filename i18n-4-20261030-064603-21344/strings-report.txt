@@ -1,0 +1,43 @@
+Locales:
+  en      strings=2085 plurals=23 array_items=0
+  ar      strings=601 plurals=0 array_items=0
+  de      strings=1945 plurals=22 array_items=0
+  en-GB   strings=600 plurals=0 array_items=0
+  es      strings=1838 plurals=13 array_items=0
+  et      strings=684 plurals=0 array_items=0
+  fr      strings=1901 plurals=14 array_items=0
+  hu      strings=1838 plurals=13 array_items=0
+  it      strings=1895 plurals=15 array_items=0
+  he      strings=1849 plurals=13 array_items=0
+  ja      strings=1838 plurals=13 array_items=0
+  kmr     strings=288 plurals=0 array_items=0
+  nl      strings=1838 plurals=13 array_items=0
+  pl      strings=1983 plurals=22 array_items=0
+  pt-PT   strings=1946 plurals=22 array_items=0
+  pt-BR   strings=1838 plurals=13 array_items=0
+  ro      strings=1983 plurals=22 array_items=0
+  ru      strings=1838 plurals=13 array_items=0
+  sl      strings=1387 plurals=0 array_items=0
+  sv      strings=1838 plurals=13 array_items=0
+  tr      strings=696 plurals=3 array_items=0
+  uk      strings=1838 plurals=13 array_items=0
+  zh-Hans strings=1838 plurals=13 array_items=0
+  zh-Hant strings=1838 plurals=13 array_items=0
+Skipped: 3
+  translatable=false outside source: 3
+    - ja app_name
+    - zh-Hans app_name
+    - zh-Hant app_name
+Warnings: 10
+  plural count is argument 2 (substitution): 1
+    - area_pick_cells
+  unbalanced double quote: 1
+    - values-iw/strings.xml settings_km_h
+  unescaped apostrophe: 8
+    - values/strings.xml map3d_hint
+    - values-fr/strings.xml map3d_hint
+    - values-fr/strings.xml map3d_hint
+    - values-fr/strings.xml map3d_hint
+    - values-fr/strings.xml map3d_hint
+    ... 3 more
+Keys: 2108
