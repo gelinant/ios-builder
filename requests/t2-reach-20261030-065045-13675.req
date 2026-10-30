@@ -1,0 +1,3 @@
+src=src/t2-reach
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=TransitReachUITests VELA_SKIP_ARCHIVE=1
