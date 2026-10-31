@@ -1,0 +1,119 @@
+tag=transit-citymapper-20261031-034109-7593 src=src/transit-citymapper 5671441 src: 0792fe50 TRANSIT-CITYMAPPER: one shell for stops, trip and nearby
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 5671441 src: 0792fe50 TRANSIT-CITYMAPPER: one shell for stops, trip and nearby
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610310342 (1793418130)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (03:42:11)
+notices: ok, 39 entries (8 libraries, 30 data sources)
+
+== Kotlin: tests and the VelaCore framework (03:42:11)
+gradle: ok in 374 s
+kotlin jvmTest: 667 tests, 0 failures
+kotlin iosSimulatorArm64Test: 555 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87578000 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55208824 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (03:48:25)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 30.3M  100 30.3M    0     0  61.1M      0 --:--:-- --:--:-- --:--:-- 61.1M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (03:48:26)
+string catalog: 2165 keys, 24 resource locales (24 with translations), 38623 localized values, 1051 Swift references, 24 picker languages
+
+== XcodeGen (03:48:28)
+xcodegen: Version: 2.46.0
+
+== Generate the project (03:48:28)
+maplibre-globe: downloading MapLibre.dynamic.xcframework.zip (169968107 bytes) from ios-v2026.10.19-globe
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 18  162M   18 30.1M    0     0  44.9M      0  0:00:03 --:--:--  0:00:03 44.9M 67  162M   67  110M    0     0  67.9M      0  0:00:02  0:00:01  0:00:01 84.1M100  162M  100  162M    0     0  72.0M      0  0:00:02  0:00:02 --:--:-- 83.5M
+maplibre-globe ios-v2026.10.19-globe: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/MapLibre.xcframework (577M on disk)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (03:48:32)
+  BitByteData: https://github.com/tsolomko/BitByteData @ 2.1.0
+
+resolved source packages: SWCompression, BitByteData
+(resolve: 11 s)
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+
+== Pick a simulator (03:48:43)
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (582B068E-2ACA-440E-8D01-417AEDF26981) (Shutdown) 
+
+== Build for the simulator (03:48:45)
+xcodebuild build-sim failed after 70 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitBoardSheet.swift:119:13: error: argument 'countdown' must precede argument 'subtitle'
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitBoardSheet.swift:308:21: error: the compiler is unable to type-check this expression in reasonable time; try breaking up the expression into distinct sub-expressions
+** TEST BUILD FAILED **
+--- tail of build-sim log ---
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Voice/VoiceModelInstaller.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Voice/VoiceSearchModel.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Voice/VoiceSearchView.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Voice/VoiceSettingsSection.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/App/WidgetDeepLink.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaWidgets/WidgetSnapshot.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/App/WidgetStatePublisher.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/WikiLayer.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/WorldLayerSection.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/WorldLayers.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Offline/ZipArchive.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftDriverJobDiscovery normal arm64 Compiling SettingsChrome.swift, SettingsModel.swift, SettingsPages.swift, SettingsPersistence.swift, SettingsScreen.swift, SheetSurface.swift, SherpaAsr.swift, SherpaTts.swift, ShortLinkResolver.swift, SpotlightIndexer.swift, StartCamera.swift, StreetViewFixture.swift, StreetViewModel.swift, StreetViewScene.swift, StreetViewTilesModel.swift, StreetViewView.swift, SystemClock.swift, TerrainScreen.swift, TerrainWebView.swift, TestSupport.swift, TimeChoice.swift, TimeChoiceModel.swift, TraceFolder.swift (in target 'Vela' from project 'Vela')
+
+note: Run script build phase 'Fetch MapLibre globe' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD FAILED **
+
+
+The following build commands failed:
+	SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitBoardSheet.swift (in target 'Vela' from project 'Vela')
+	SwiftCompile normal arm64 Compiling\ TraceRecorder.swift,\ TransitActivityAttributes.swift,\ TransitActivityComponents.swift,\ TransitActivityController.swift,\ TransitActivityPalette.swift,\ TransitActivityState.swift,\ TransitBoardSheet.swift,\ TransitDetail.swift,\ TransitDetailSheet.swift,\ TransitGoCue.swift,\ TransitGoModel.swift,\ TransitGoScreen.swift,\ TransitGoTestSupport.swift,\ TransitGuidanceCard.swift,\ TransitLegMode.swift,\ TransitLineLink.swift,\ TransitLineModel.swift,\ TransitLineSheet.swift,\ TransitLinesLayer.swift,\ TransitLiveFixtures.swift,\ TransitLiveModel.swift,\ TransitLiveSheet.swift,\ TransitModel.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Trips/TraceRecorder.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Shared/TransitActivityAttributes.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Shared/TransitActivityComponents.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/LiveActivity/TransitActivityController.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Shared/TransitActivityPalette.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/LiveActivity/TransitActivityState.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitBoardSheet.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitDetail.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitDetailSheet.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitGoCue.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitGoModel.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitGoScreen.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitGoTestSupport.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitGuidanceCard.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitLegMode.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitLineLink.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitLineModel.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitLineSheet.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/TransitLinesLayer.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitLiveFixtures.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitLiveModel.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitLiveSheet.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Transit/TransitModel.swift (in target 'Vela' from project 'Vela')
+	Building project Vela for testing with scheme Vela
+(3 failures)
