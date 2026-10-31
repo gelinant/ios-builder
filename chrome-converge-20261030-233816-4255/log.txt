@@ -1,0 +1,227 @@
+tag=chrome-converge-20261030-233816-4255 src=src/chrome-converge 785ab58 src: eb31b6bd ios: converge the map chrome to two controls and one actions sheet
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 785ab58 src: eb31b6bd ios: converge the map chrome to two controls and one actions sheet
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610302339 (1793403573)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (23:39:33)
+notices: ok, 39 entries (8 libraries, 30 data sources)
+
+== Kotlin: tests and the VelaCore framework (23:39:34)
+gradle: ok in 744 s
+kotlin jvmTest: 667 tests, 0 failures
+kotlin iosSimulatorArm64Test: 555 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87578000 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55208824 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (23:51:59)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 23 30.3M   23 7326k    0     0  15.7M      0  0:00:01 --:--:--  0:00:01 15.7M100 30.3M  100 30.3M    0     0  39.0M      0 --:--:-- --:--:-- --:--:-- 72.1M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (23:52:01)
+string catalog: 2149 keys, 24 resource locales (24 with translations), 38591 localized values, 1040 Swift references, 24 picker languages
+
+== XcodeGen (23:52:04)
+xcodegen: Version: 2.46.0
+
+== Generate the project (23:52:05)
+maplibre-globe: downloading MapLibre.dynamic.xcframework.zip (169968107 bytes) from ios-v2026.10.19-globe
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  5  162M    5 8924k    0     0  17.2M      0  0:00:09 --:--:--  0:00:09 17.2M 53  162M   53 86.0M    0     0  57.3M      0  0:00:02  0:00:01  0:00:01 77.4M100  162M  100  162M    0     0  67.7M      0  0:00:02  0:00:02 --:--:-- 81.1M
+maplibre-globe ios-v2026.10.19-globe: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/MapLibre.xcframework (579M on disk)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (23:52:11)
+  SWCompression: https://github.com/tsolomko/SWCompression @ 4.9.1
+
+resolved source packages: BitByteData, SWCompression
+(resolve: 17 s)
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+
+== Pick a simulator (23:52:28)
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (582B068E-2ACA-440E-8D01-417AEDF26981) (Shutdown) 
+
+== Build for the simulator (23:52:30)
+note: Run script build phase 'Fetch MapLibre globe' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 128 s)
+simulator build: ok
+
+== Boot the simulator (23:54:38)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (23:58:41)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 188 s)
+tests: ok, Executed 200 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=18762
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=55705 rate=22050 wav_frames=55705
+
+== Launch and screenshot (00:01:50)
+app.vela.ios: 35310
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 31CFF35D-51B3-4B44-9E18-7B24EDF9A439 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (00:02:34)
+Parsed 8 waypoints
+xcodebuild uitest failed after 794 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/MapChromeUITests.swift:129: error: -[VelaUITests.MapChromeUITests testConvergedChromeKeepsTwoControls] : XCTAssertTrue failed - the actions sheet has no trips-open row
+Test Case '-[VelaUITests.MapChromeUITests testConvergedChromeKeepsTwoControls]' failed (26.732 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =   183.11s Waiting 10.0s for "Saved" NavigationBar to exist
+    t =   184.13s     Checking `Expect predicate `existsNoRetry == 1` for object "Saved" NavigationBar`
+    t =   184.13s         Checking existence of `"Saved" NavigationBar`
+    t =   184.53s Waiting 10.0s for "saved-list" Button to exist
+    t =   185.57s     Checking `Expect predicate `existsNoRetry == 1` for object "saved-list" Button`
+    t =   185.57s         Checking existence of `"saved-list" Button`
+    t =   186.62s Tap "saved-close" Button
+    t =   186.62s     Wait for app.vela.ios to idle
+    t =   186.63s     Find the "saved-close" Button
+    t =   186.87s     Check for interrupting elements affecting "saved-close" Button
+    t =   187.35s     Synthesize event
+    t =   187.70s     Wait for app.vela.ios to idle
+    t =   190.81s Waiting 20.0s for "map" Any to exist
+    t =   191.85s     Checking `Expect predicate `existsNoRetry == 1` for object "map" Any`
+    t =   191.85s         Checking existence of `"map" Any`
+    t =   192.16s Tap "map" Any[0.50, 0.50]
+    t =   192.16s     Wait for app.vela.ios to idle
+    t =   192.17s     Find the "map" Any
+    t =   192.29s     Check for interrupting elements affecting "map" Other
+    t =   192.34s     Synthesize event
+    t =   192.34s         Find the "map" Other
+    t =   192.45s         Find the "map" Other
+    t =   192.57s         Find the "map" Other
+    t =   193.03s     Wait for app.vela.ios to idle
+    t =   193.04s Waiting 20.0s for "place-name" StaticText to exist
+    t =   194.07s     Checking `Expect predicate `existsNoRetry == 1` for object "place-name" StaticText`
+    t =   194.07s         Checking existence of `"place-name" StaticText`
+    t =   194.49s Find the "place-name" StaticText
+    t =   195.22s Added attachment named 'tap-saved'
+UITEST tap_kind=saved
+    t =   195.23s Checking existence of `"layers-debug" StaticText`
+    t =   195.35s Find the "layers-debug" StaticText
+UITEST tap_debug=layers painted=off:0 speed=off:0 alpr=off:0 controls=off:0 fuel=off:0 bridges=off:0 trees=off:0 poi=both cats=food,fuel,transit,parking,other pack=337 density=normal icon=1.00 look=vela appearance=system names=english_latin house=normal traffic=off satellite=off raster=none tiles=0 cam=live oriented=0 unoriented=0 tree_source=none marks_source=tiles marks_count=0 marks_zoom=15.0 zoom=15.0 paint_apply=3 paint_layers=9 paint_features=0 paint_vis=0 paint_z=15.0 paint_marks=0 paint_built=0 paint_src=1 world_layers=5 world_requests=0 world_on=0 world_viewport=0 tap=0 tap_at=- tap_layers=0 tap_features=0 tap_center=- tap_detail=- tap_ids=- tap_layer=- tap_id=- tap_event=- tap_note=- tap_unaudited=vela-canopy-fill,vela-tree-shadow,vela-tree-canopy,vela-paint-surface,vela-paint-median,vela-paint-bus,vela-paint-center,vela-paint-lane,vela-paint-bike,vela-paint-crosswalk,vela-paint-stop,vela-paint-arrow
+    t =   195.52s Tap "place-close" Button
+    t =   195.52s     Wait for app.vela.ios to idle
+    t =   195.53s     Find the "place-close" Button
+    t =   195.63s     Check for interrupting elements affecting "place-close" Button
+    t =   195.70s     Synthesize event
+    t =   196.00s     Wait for app.vela.ios to idle
+    t =   196.08s Tear Down
+Test Case '-[VelaUITests.MapTapUITests testTapEachKindOpensItsSheet]' passed (196.777 seconds).
+Test Suite 'MapTapUITests' passed at 2026-10-31 00:15:07.636.
+	 Executed 1 test, with 0 failures (0 unexpected) in 196.777 (196.779) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-31 00:15:07.637.
+	 Executed 8 tests, with 1 failure (0 unexpected) in 694.365 (694.384) seconds
+Test Suite 'Selected tests' failed at 2026-10-31 00:15:07.637.
+	 Executed 8 tests, with 1 failure (0 unexpected) in 694.365 (694.386) seconds
+2026-10-31 00:15:41.009 xcodebuild[36235:101762] [MT] IDETestOperationsObserverDebug: 763.137 elapsed -- Testing started completed.
+2026-10-31 00:15:41.017 xcodebuild[36235:101762] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-31 00:15:41.017 xcodebuild[36235:101762] [MT] IDETestOperationsObserverDebug: 763.137 sec, +763.137 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.CjU1r0C6Tu/uitest.xcresult
+
+Failing tests:
+	MapChromeUITests.testConvergedChromeKeepsTwoControls()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui MapChromeUITests.testChromeFitsWithSheetOpen: passed (60.968 seconds)
+ui MapChromeUITests.testConvergedChromeKeepsTwoControls: failed (26.732 seconds)
+ui MapChromeUITests.testDesignDetentsMatchMapInset: passed (69.508 seconds)
+ui MapTapUITests.testTapEachKindOpensItsSheet: passed (196.777 seconds)
+scripts/ios/ci-ipa.sh: line 286: 36232 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui chrome_controls=2
+ui chrome_overflow=0
+ui chrome_search_y=87.0
+ui chrome_steps_close_y=376.7
+ui detent_expanded=0.85
+ui detent=0.42
+ui journey_1_camera=37.77317,-122.41779,15.0
+ui journey_1=ok
+ui journey_2_language=fr
+ui journey_2=ok
+ui journey_3=ok
+ui journey_4_first_pieces=1
+ui journey_4_reopened_pieces=4
+ui journey_4_second_open_pieces=100
+ui journey_4=ok
+ui map_inset_matches_sheet=1
+ui merged_chrome=1
+ui tap_chain=tap_seen=1
+ui tap_debug=layers
+ui tap_kind=aircraft
+ui tap_kind=camera
+ui tap_kind=place
+ui tap_kind=saved
+ui screenshots: 
+
+== Route replay (00:15:52)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 31CFF35D-51B3-4B44-9E18-7B24EDF9A439 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 31CFF35D-51B3-4B44-9E18-7B24EDF9A439 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=26520 parsed=true times=false
+place load: photos: rpc 8
+place load: details: nothing
+place load: details: page raw=-1 parsed=false times=false
+place load: photos: cache 8
+place load: details: nothing
+place load: details: page raw=-1 parsed=false times=false
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=26520 parsed=true times=false
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (00:17:38)
+249430
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 76217 bytes
+directions reply: directions-drive-sf 69509 bytes
+directions reply: directions-walk-sf 34594 bytes
+search reply: 249430 bytes, 30 feature ids
+failed steps: ui-scenarios
