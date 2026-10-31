@@ -1,0 +1,233 @@
+tag=transit-citymapper-20261031-035402-9220 src=src/transit-citymapper e914344 src: 93af165e TRANSIT-CITYMAPPER: fix shell header argument order and split the nearby row
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: e914344 src: 93af165e TRANSIT-CITYMAPPER: fix shell header argument order and split the nearby row
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610310355 (1793418918)
+java: openjdk version "17.0.21" 2026-10-20
+
+== Notices (03:55:18)
+notices: ok, 39 entries (8 libraries, 30 data sources)
+
+== Kotlin: tests and the VelaCore framework (03:55:19)
+gradle: ok in 807 s
+kotlin jvmTest: 667 tests, 0 failures
+kotlin iosSimulatorArm64Test: 555 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87578000 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55208824 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (04:08:46)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 30.3M  100 30.3M    0     0  36.2M      0 --:--:-- --:--:-- --:--:-- 36.2M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (04:08:49)
+string catalog: 2165 keys, 24 resource locales (24 with translations), 38623 localized values, 1051 Swift references, 24 picker languages
+
+== XcodeGen (04:08:52)
+xcodegen: Version: 2.46.0
+
+== Generate the project (04:08:53)
+maplibre-globe: downloading MapLibre.dynamic.xcframework.zip (169968107 bytes) from ios-v2026.10.19-globe
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 37  162M   37 61.3M    0     0  71.1M      0  0:00:02 --:--:--  0:00:02 71.1M100  162M  100  162M    0     0  92.6M      0  0:00:01  0:00:01 --:--:--  113M
+maplibre-globe ios-v2026.10.19-globe: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/MapLibre.xcframework (588M on disk)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (04:08:57)
+  BitByteData: https://github.com/tsolomko/BitByteData @ 2.1.0
+
+resolved source packages: SWCompression, BitByteData
+(resolve: 20 s)
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+
+== Pick a simulator (04:09:17)
+simulator: iPhone 17 (062CFAA4-9ACF-40ED-A1E2-3625F5ED4DA9) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (F6F146B6-18AA-4FE2-9F0B-AA6D02028DDA) (Shutdown) 
+
+== Build for the simulator (04:09:19)
+note: Run script build phase 'Fetch MapLibre globe' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 144 s)
+simulator build: ok
+
+== Boot the simulator (04:11:43)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (04:15:11)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 82 s)
+tests: ok, Executed 200 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=18762
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=57856 rate=22050 wav_frames=57856
+
+== Launch and screenshot (04:16:33)
+app.vela.ios: 40746
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: DEB3A9F8-BEBE-48B3-B64E-4AD6439D84FF (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (04:17:09)
+xcodebuild uitest failed after 294 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TransitCitymapperUITests.swift:50: error: -[VelaUITests.TransitCitymapperUITests testSingleTransitShellTabsAndSelection] : XCTAssertEqual failed: ("false") is not equal to ("true") - the segmented control is below 44 pt
+Test Case '-[VelaUITests.TransitCitymapperUITests testSingleTransitShellTabsAndSelection]' failed (19.446 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =     9.72s Get number of matches for: Elements matching predicate '"transit-line-direction-0" IN identifiers'
+    t =     9.83s Get number of matches for: Elements matching predicate '"transit-line-direction-1" IN identifiers'
+UITEST line_directions=2
+    t =    10.07s Added attachment named 'transit-line'
+    t =    10.07s Get number of matches for: Elements matching predicate '"transit-line-stop" IN identifiers'
+    t =    10.20s Checking existence of `"transit-line-vehicle" Any`
+    t =    10.30s Find the "transit-line-vehicle" Any
+    t =    10.44s Checking existence of `ScrollView (First Match)`
+    t =    10.50s Swipe up ScrollView (First Match)
+    t =    10.50s     Wait for app.vela.ios to idle
+    t =    10.50s     Find the ScrollView (First Match)
+    t =    10.56s     Check for interrupting elements affecting ScrollView
+    t =    10.72s     Synthesize event
+    t =    11.23s     Wait for app.vela.ios to idle
+    t =    13.33s Find the "transit-line-vehicle" Other
+    t =    13.43s Find the "transit-line-vehicle" Other
+    t =    13.55s Find the "transit-line-vehicle" Other
+    t =    13.63s Get number of matches for: Elements matching predicate 'label CONTAINS "Next stop"'
+    t =    14.33s Get number of matches for: Elements matching predicate 'label CONTAINS "Passed"'
+    t =    14.58s Get number of matches for: Elements matching predicate 'label CONTAINS "Transfer to line"'
+    t =    14.89s Added attachment named 'transit-line-ribbon'
+    t =    14.89s Checking existence of `"transit-line-map" Button`
+    t =    15.04s Find the "transit-line-map" Button
+    t =    15.20s Tap "transit-line-map" Button
+    t =    15.20s     Wait for app.vela.ios to idle
+    t =    15.21s     Find the "transit-line-map" Button
+    t =    15.39s     Check for interrupting elements affecting "transit-line-map" Button
+    t =    15.55s     Synthesize event
+    t =    15.88s     Wait for app.vela.ios to idle
+    t =    15.89s Waiting 10.0s for "transit-line-map-sent" StaticText to exist
+    t =    16.93s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-line-map-sent" StaticText`
+    t =    16.93s         Checking existence of `"transit-line-map-sent" StaticText`
+    t =    17.06s Tap "transit-line-close" Button
+    t =    17.06s     Wait for app.vela.ios to idle
+    t =    17.06s     Find the "transit-line-close" Button
+    t =    17.17s     Check for interrupting elements affecting "transit-line-close" Button
+    t =    17.26s     Synthesize event
+    t =    17.56s     Wait for app.vela.ios to idle
+    t =    17.56s Checking existence of `"transit-line-sheet" Other`
+    t =    17.60s Tear Down
+Test Case '-[VelaUITests.TransitLineViewUITests testLineRibbonAndColors]' passed (17.863 seconds).
+Test Suite 'TransitLineViewUITests' passed at 2026-10-31 04:21:31.970.
+	 Executed 1 test, with 0 failures (0 unexpected) in 17.863 (17.864) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-31 04:21:31.970.
+	 Executed 9 tests, with 1 failure (0 unexpected) in 232.966 (232.976) seconds
+Test Suite 'Selected tests' failed at 2026-10-31 04:21:31.971.
+	 Executed 9 tests, with 1 failure (0 unexpected) in 232.966 (232.977) seconds
+2026-10-31 04:21:56.579 xcodebuild[41921:112063] [MT] IDETestOperationsObserverDebug: 274.473 elapsed -- Testing started completed.
+2026-10-31 04:21:56.579 xcodebuild[41921:112063] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-31 04:21:56.579 xcodebuild[41921:112063] [MT] IDETestOperationsObserverDebug: 274.473 sec, +274.473 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.PBIUwpn5E0/uitest.xcresult
+
+Failing tests:
+	TransitCitymapperUITests.testSingleTransitShellTabsAndSelection()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui TransitCitymapperUITests.testLiveTripScreenWhenTheFeedAnswers: passed (70.720 seconds)
+ui TransitCitymapperUITests.testNearbyLinesTabListsTheStopsLines: passed (18.295 seconds)
+ui TransitCitymapperUITests.testSegmentTimeChangeShowsANewOptionSet: passed (29.575 seconds)
+ui TransitCitymapperUITests.testSingleTransitShellTabsAndSelection: failed (19.446 seconds)
+ui TransitCitymapperUITests.testSkipLetsTheRunPassAndAdvancesTheHeader: passed (15.731 seconds)
+ui TransitCitymapperUITests.testTripScreenShowsSegmentCardsAndNextDepartures: passed (18.092 seconds)
+ui TransitGoUITests.testGoModeCuesAndRail: passed (21.348 seconds)
+ui TransitGoUITests.testLeaveLaterAnchorsOnTheBoardOrSaysItCannot: passed (21.895 seconds)
+ui TransitLineViewUITests.testLineRibbonAndColors: passed (17.863 seconds)
+scripts/ios/ci-ipa.sh: line 286: 41918 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui go_anchor=board
+ui go_anchor=now
+ui go_cue=none
+ui go_cue=stop
+ui go_estimated=0
+ui go_estimated=1
+ui go_fallback_notice=0
+ui go_fallback_notice=1
+ui go_step=done
+ui go_step=ride
+ui go_step=transfer
+ui line_color=437c93
+ui line_directions=2
+ui line_estimated=1
+ui line_fixture=1
+ui line_source=feed
+ui line_stops=20
+ui transit_go_degraded=offline=1
+ui transit_trip_fixture=1
+ui transit_trip_header_after_skip=3
+ui transit_trip_header_before_skip=4
+ui transit_trip_header=4
+ui transit_trip_live_available=1
+ui transit_trip_live_header=4
+ui transit_trip_live_segments=10
+ui transit_trip_nearby_lines=3
+ui transit_trip_nearby_rows=3
+ui transit_trip_option_rows=2
+ui transit_trip_rides=1
+ui transit_trip_segments=4
+ui transit_trip_shift_options=2
+ui transit_trip_shift_query=Depart
+ui transit_trip_skip_options=2
+ui transit_trip=segments_and_header
+ui screenshots: 
+
+== Route replay (04:22:05)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: DEB3A9F8-BEBE-48B3-B64E-4AD6439D84FF (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: DEB3A9F8-BEBE-48B3-B64E-4AD6439D84FF (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 0
+place load: details: nothing
+place load: details: page raw=32802 parsed=true times=false
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (04:23:17)
+240522
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 76239 bytes
+directions reply: directions-drive-sf 75364 bytes
+directions reply: directions-walk-sf 34593 bytes
+search reply: 240522 bytes, 27 feature ids
+failed steps: ui-scenarios
