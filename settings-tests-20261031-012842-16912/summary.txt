@@ -1,0 +1,81 @@
+commit: f34b8ae src: a5ab6639 iOS settings tests: use the Privacy page identifiers
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610310129 (1793410192)
+java: openjdk version "17.0.21" 2026-10-20
+notices: ok, 39 entries (8 libraries, 30 data sources)
+gradle: ok in 602 s
+kotlin jvmTest: 667 tests, 0 failures
+kotlin iosSimulatorArm64Test: 555 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87578000 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55208824 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 2148 keys, 24 resource locales (24 with translations), 38589 localized values, 1037 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+simulator: iPhone 17 (062CFAA4-9ACF-40ED-A1E2-3625F5ED4DA9) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (F6F146B6-18AA-4FE2-9F0B-AA6D02028DDA) (Shutdown) 
+simulator build: ok
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+tests: ok, Executed 200 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=18948
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=56832 rate=22050 wav_frames=56832
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: FAILED
+ui AppearanceUITests.testThemesSpeedAndVehicle: passed (177.990 seconds)
+ui PrivacyUITests.testConsentAndFullPrivacyPage: passed (84.673 seconds)
+ui PrivacyUITests.testNoGoogleDirectionsAndTransitSendNothingToGoogle: passed (51.850 seconds)
+ui PrivacyUITests.testNoGoogleSearchSendsNothingToGoogle: passed (46.701 seconds)
+ui PrivacyUITests.testPrivacyControlsAndSessionRotation: passed (74.156 seconds)
+ui PrivacyUITests.testRequestCounterAndClearHistory: failed (173.317 seconds)
+ui SettingsUITests.testContentAndData: failed (107.362 seconds)
+ui SettingsUITests.testDesignTokensApplied: passed (38.482 seconds)
+ui SettingsUITests.testTopLevelRowsAndPrivacyPage: passed (47.277 seconds)
+ui SettingsVoiceUITests.testVoiceAndLanguage: passed (49.809 seconds)
+ui appearance_chrome_unit=mph
+ui appearance_chrome_vehicle=UFO
+ui appearance_google_swipes=0
+ui appearance_settings=theme=dark,look=bright,map=dark,icon=large,label=xl,speed=1,unit=imperial,vehicle=ufo,detail=compact
+ui design_about_search_height=22
+ui design_offline_area_height=49
+ui design_offline_done_height=34
+ui design_offline=1
+ui design_settings_done_height=44
+ui design_settings_google_height=28
+ui design_settings_google_row_height=44
+ui design_settings=1
+ui privacy_consent_lookup=0
+ui privacy_counter_after_relaunch=8
+ui privacy_counter_today=8
+ui privacy_no_google_blocked=0
+ui privacy_no_google_routes_blocked=0
+ui privacy_no_google_routes_sent=0
+ui privacy_no_google_sent=0
+ui privacy_rotation=day
+ui privacy_telemetry=1
+ui settings_rows=8
+ui voice_download=Downloading_LibriTTS-R…_42%
+ui voice_engine=Voice:_HFC_Female_(Vela)
+ui voice_fallback=Directions_are_in_Français,_but_no_Vela_voice_for_Français_is_installed._The_iPhone_voice_speaks_them_and_cannot_be_levelled_or_amplified.
+ui voice_language=fr
+ui voice_mode=alerts
+ui screenshots: settings-privacy-page.png settings-top.png settings-voice-alerts.png settings-voice-download.png settings-voice-language.png settings-voice-section.png settings-voice.png voice-library.png 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 63689 bytes
+directions reply: directions-drive-sf 109343 bytes
+directions reply: directions-walk-sf 34591 bytes
+search reply: 254889 bytes, 32 feature ids
+failed steps: ui-scenarios
