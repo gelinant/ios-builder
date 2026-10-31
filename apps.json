@@ -29,20 +29,20 @@
       "category": "utilities",
       "versions": [
         {
-          "version": "0.1.202610302311",
-          "buildVersion": "1793401876",
-          "date": "2026-10-30T23:29:44Z",
-          "localizedDescription": "Build 30 octobre soir : instruction de manoeuvre visible en tres grands caracteres, options transport dans le choix d'itineraire, vue d'ensemble qui s'aplatit et se restaure exactement, zone hors ligne installee et durable, corrections d'accessibilite et de parcours.\n\nBuild 1793401876.",
+          "version": "0.1.202610310609",
+          "buildVersion": "1793426972",
+          "date": "2026-10-31T06:43:42Z",
+          "localizedDescription": "Build 31 octobre : transports en une seule coque (Arrets / Trajet / Proximite), selection partagee carte et listes, carte a deux boutons avec feuille d'actions, reglages en huit lignes, accueil de recherche, editeur de liste qui accepte le clavier.\n\nBuild 1793426972.",
           "downloadURL": "https://raw.githubusercontent.com/gelinant/ios-builder/dist/Vela.ipa",
-          "size": 27334926,
+          "size": 27438798,
           "minOSVersion": "17.0"
         }
       ],
-      "version": "0.1.202610302311",
-      "versionDate": "2026-10-30T23:29:44Z",
-      "versionDescription": "Build 30 octobre soir : instruction de manoeuvre visible en tres grands caracteres, options transport dans le choix d'itineraire, vue d'ensemble qui s'aplatit et se restaure exactement, zone hors ligne installee et durable, corrections d'accessibilite et de parcours.\n\nBuild 1793401876.",
+      "version": "0.1.202610310609",
+      "versionDate": "2026-10-31T06:43:42Z",
+      "versionDescription": "Build 31 octobre : transports en une seule coque (Arrets / Trajet / Proximite), selection partagee carte et listes, carte a deux boutons avec feuille d'actions, reglages en huit lignes, accueil de recherche, editeur de liste qui accepte le clavier.\n\nBuild 1793426972.",
       "downloadURL": "https://raw.githubusercontent.com/gelinant/ios-builder/dist/Vela.ipa",
-      "size": 27334926,
+      "size": 27438798,
       "appPermissions": {
         "entitlements": [],
         "privacy": {
