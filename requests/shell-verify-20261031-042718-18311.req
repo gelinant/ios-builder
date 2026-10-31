@@ -1,0 +1,3 @@
+src=src/shell-verify
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=TransitCitymapperUITests,TransitGoUITests,TransitLineViewUITests,SelectionSyncUITests VELA_SKIP_ARCHIVE=1
