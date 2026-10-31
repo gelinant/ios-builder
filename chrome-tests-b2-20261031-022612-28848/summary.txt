@@ -1,0 +1,142 @@
+commit: 7cf907d src: 37b2dfd2 CHROME-TESTS: reach former map buttons through the actions sheet
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610310227 (1793413642)
+java: openjdk version "17.0.21" 2026-10-20
+notices: ok, 39 entries (8 libraries, 30 data sources)
+gradle: ok in 624 s
+kotlin jvmTest: 667 tests, 0 failures
+kotlin iosSimulatorArm64Test: 555 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87578000 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55208824 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 2152 keys, 24 resource locales (24 with translations), 38597 localized values, 1041 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+simulator: iPhone 17 (062CFAA4-9ACF-40ED-A1E2-3625F5ED4DA9) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (F6F146B6-18AA-4FE2-9F0B-AA6D02028DDA) (Shutdown) 
+simulator build: ok
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+tests: ok, Executed 200 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.54 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=18576
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=55261 rate=22050 wav_frames=55261
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: FAILED
+ui FreeDriveUITests.testSpeedLimitRoadShieldAndSimpleMap: failed (51.720 seconds)
+ui MapGestureUITests.testKeepNorthUp: failed (47.156 seconds)
+ui MapGestureUITests.testLongPressDropsPin: passed (18.418 seconds)
+ui MapGestureUITests.testRotationReturnsNorth: passed (16.362 seconds)
+ui MapGestureUITests.testStartPosition: failed (43.499 seconds)
+ui MapLayersUITests.testCameraConesFollowTheMap: passed (36.038 seconds)
+ui MapLayersUITests.testGoogleTrafficAndSatelliteOverSanFrancisco: passed (78.738 seconds)
+ui MapLayersUITests.testLayerSheetLoadsOverlaysAtCloseZoom: passed (29.950 seconds)
+ui MapLayersUITests.testNamesModesHouseNumbersAndExits: passed (87.992 seconds)
+ui MapLayersUITests.testOfflineCameraPackDraws: passed (80.874 seconds)
+ui MapLayersUITests.testStyleVariantsRender: passed (100.436 seconds)
+ui OfflineAreaUITests.testFrameAreaAndPreferences: passed (55.367 seconds)
+ui OfflineUITests.testMonacoDeltaUpdateStorageAndWorldFallback: failed (42.911 seconds)
+ui OfflineUITests.testMonacoDownloadOfflineMapAndSearch: passed (130.100 seconds)
+ui SavedFinishingUITests.testHomeAndWorkOpenFromSavedAndMap: passed (140.579 seconds)
+ui SavedFinishingUITests.testListEditingSelectionAndSound: failed (277.271 seconds)
+ui SavedFinishingUITests.testTakeoutFixtureImportsIntoNamedList: passed (14.381 seconds)
+ui SavedUITests.testSavedPlaceListAndRecentsPersist: passed (54.728 seconds)
+ui TerrainUITests.testTerrainScreenRenders: passed (30.763 seconds)
+ui TripsUITests.testFullTraceAndDemoMode: passed (104.185 seconds)
+ui TripsUITests.testRecordDriveAndOpenTrip: passed (114.081 seconds)
+ui area_addresses=-1
+ui area_basemap_bytes=524
+ui area_cameras=-1
+ui area_durable=1
+ui area_estimate_mb=43
+ui area_free_bytes=93.65
+ui area_glyphs_bytes=14
+ui area_installed=1
+ui area_pack_bytes=20480
+ui area_pct=100
+ui area_pieces=5/5
+ui area_places_bytes=238
+ui area_pref_addresses=0
+ui area_pref_cameras=0
+ui area_prefs=100
+ui area_progress_seen=1
+ui area_remote_urls=0
+ui area_stage=-
+ui area_total_bytes=21481
+ui cameras_oriented=1
+ui cameras_pack_count=11
+ui cameras_pack_date=2026-07-21
+ui cameras_pack=camera-pack-2026-07-21
+ui cameras_unoriented=1
+ui design_offline_area_height=49
+ui design_offline_done_height=34
+ui diagnostics_lines=16
+ui dropped_pin=37.77490,-122.41940
+ui free_drive_limit=80
+ui free_drive_speed=45
+ui gesture_bearing=302.0
+ui gesture_north=1
+ui layers_alpr=2
+ui layers_controls=2
+ui layers_painted=23
+ui layers_speed=3
+ui offline_area_entry_height=49
+ui offline_basemap_bytes=11382167
+ui offline_fixture_downloads=1
+ui offline_fixture_pieces=5/5
+ui offline_fixture_world=1
+ui offline_glyphs_bytes=104667742
+ui offline_installed=1
+ui offline_pack_bytes=364544
+ui offline_places_bytes=571133
+ui offline_remote_urls=0
+ui offline_resume_downloads=1
+ui offline_search_results=29
+ui offline_total_bytes=116985834
+ui saved_lists_after_restart=4
+ui saved_lists=4
+ui saved_map_home=directions_opened
+ui saved_places=2
+ui saved_recents_after_restart=8
+ui saved_selection=1
+ui saved_shortcuts=home_and_work_opened
+ui saved_takeout_places=2
+ui terrain_dem=1
+ui terrain_frame=1
+ui terrain_retry=0
+ui terrain_return=1
+ui terrain_state=ready
+ui terrain_web=1
+ui terrain_webgl=1
+ui trip_fixes=Fixes,
+ui trips_flow=full_trace_map_demo_replay
+ui trips_flow=recorded_opened_exportable
+ui screenshots: place-save.png 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 27; highest after refresh: 27
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=26520 parsed=true times=false
+place load: details: nothing
+place load: details: page raw=26520 parsed=true times=false
+place load: details: nothing
+place load: details: page raw=26520 parsed=true times=false
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=26520 parsed=true times=false
+place load: photos: rpc 0
+place load: details: plain search (no popular times)
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 63772 bytes
+directions reply: directions-drive-sf 76308 bytes
+directions reply: directions-walk-sf 34591 bytes
+search reply: 256188 bytes, 33 feature ids
+failed steps: ui-scenarios

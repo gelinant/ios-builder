@@ -1,0 +1,298 @@
+tag=chrome-tests-b2-20261031-022612-28848 src=src/chrome-tests-b2 7cf907d src: 37b2dfd2 CHROME-TESTS: reach former map buttons through the actions sheet
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 7cf907d src: 37b2dfd2 CHROME-TESTS: reach former map buttons through the actions sheet
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610310227 (1793413642)
+java: openjdk version "17.0.21" 2026-10-20
+
+== Notices (02:27:22)
+notices: ok, 39 entries (8 libraries, 30 data sources)
+
+== Kotlin: tests and the VelaCore framework (02:27:23)
+gradle: ok in 624 s
+kotlin jvmTest: 667 tests, 0 failures
+kotlin iosSimulatorArm64Test: 555 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87578000 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55208824 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (02:37:48)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 30.3M  100 30.3M    0     0  39.9M      0 --:--:-- --:--:-- --:--:-- 39.9M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (02:37:49)
+string catalog: 2152 keys, 24 resource locales (24 with translations), 38597 localized values, 1041 Swift references, 24 picker languages
+
+== XcodeGen (02:37:52)
+xcodegen: Version: 2.46.0
+
+== Generate the project (02:37:54)
+maplibre-globe: downloading MapLibre.dynamic.xcframework.zip (169968107 bytes) from ios-v2026.10.19-globe
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 61  162M   61 99.0M    0     0  71.7M      0  0:00:02  0:00:01  0:00:01 99.2M100  162M  100  162M    0     0  84.6M      0  0:00:01  0:00:01 --:--:--  105M
+maplibre-globe ios-v2026.10.19-globe: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/MapLibre.xcframework (591M on disk)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (02:37:59)
+  SWCompression: https://github.com/tsolomko/SWCompression @ 4.9.1
+
+resolved source packages: BitByteData, SWCompression
+(resolve: 25 s)
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+
+== Pick a simulator (02:38:24)
+simulator: iPhone 17 (062CFAA4-9ACF-40ED-A1E2-3625F5ED4DA9) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (F6F146B6-18AA-4FE2-9F0B-AA6D02028DDA) (Shutdown) 
+
+== Build for the simulator (02:38:26)
+note: Run script build phase 'Fetch MapLibre globe' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 122 s)
+simulator build: ok
+
+== Boot the simulator (02:40:28)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (02:43:59)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 197 s)
+tests: ok, Executed 200 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.54 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=18576
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=55261 rate=22050 wav_frames=55261
+
+== Launch and screenshot (02:47:16)
+app.vela.ios: 32459
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 57F3B136-3E3E-49BF-8403-B8027A342B84 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (02:48:03)
+Parsed 8 waypoints
+Parsed 8 waypoints
+Parsed 8 waypoints
+xcodebuild uitest failed after 1812 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/FreeDriveUITests.swift:49: error: -[VelaUITests.FreeDriveUITests testSpeedLimitRoadShieldAndSimpleMap] : XCTAssertEqual failed: ("Optional("Off")") is not equal to ("Optional("off")")
+Test Case '-[VelaUITests.FreeDriveUITests testSpeedLimitRoadShieldAndSimpleMap]' failed (51.720 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/MapGestureUITests.swift:138: error: -[VelaUITests.MapGestureUITests testKeepNorthUp] : XCTAssertTrue failed - no settings-keep-north-up switch
+Test Case '-[VelaUITests.MapGestureUITests testKeepNorthUp]' failed (47.156 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/MapGestureUITests.swift:152: error: -[VelaUITests.MapGestureUITests testStartPosition] : XCTAssertTrue failed - no start view menu
+Test Case '-[VelaUITests.MapGestureUITests testStartPosition]' failed (43.499 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/VelaUITestCase.swift:46: error: -[VelaUITests.OfflineUITests testMonacoDeltaUpdateStorageAndWorldFallback] : Failed to swipe up "offline-sheet" CollectionView: No matches found for first query match sequence: `Descendants matching type CollectionView` -> `Elements matching predicate '"offline-sheet" IN identifiers'`, given input App element pid: 65616
+Test Case '-[VelaUITests.OfflineUITests testMonacoDeltaUpdateStorageAndWorldFallback]' failed (42.911 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/SavedFinishingUITests.swift:264: error: -[VelaUITests.SavedFinishingUITests testListEditingSelectionAndSound] : Failed to synthesize event: Neither element nor any descendant has keyboard focus. Event dispatch snapshot: TextField, {{32.0, 77.7}, {338.0, 22.0}}, identifier: 'saved-name-field', placeholderValue: 'List name', value: UI Finish
+Test Case '-[VelaUITests.SavedFinishingUITests testListEditingSelectionAndSound]' failed (277.271 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =   100.08s         Check for interrupting elements affecting "trips-diagnostics" Button
+    t =   100.54s         Synthesize event
+    t =   100.97s         Wait for app.vela.ios to idle
+    t =   101.16s     Waiting 10.0s for "diagnostics-text" StaticText to exist
+    t =   102.21s         Checking `Expect predicate `existsNoRetry == 1` for object "diagnostics-text" StaticText`
+    t =   102.21s             Checking existence of `"diagnostics-text" StaticText`
+    t =   102.96s     Find the "diagnostics-text" StaticText
+    t =   103.41s     Find the "diagnostics-text" StaticText
+    t =   103.82s     Find the "diagnostics-text" StaticText
+    t =   104.24s     Find the "diagnostics-text" StaticText
+UITEST diagnostics_lines=16
+    t =   104.84s Added attachment named 'diagnostics'
+    t =   104.84s     Tap "diagnostics-done" Button
+    t =   104.84s         Wait for app.vela.ios to idle
+    t =   104.85s         Find the "diagnostics-done" Button
+    t =   105.46s         Check for interrupting elements affecting "diagnostics-done" Button
+    t =   105.85s         Synthesize event
+    t =   106.21s         Wait for app.vela.ios to idle
+    t =   106.22s     Checking existence of `"trip-row" Any`
+    t =   106.56s     Swipe left "trip-row" Any
+    t =   106.56s         Wait for app.vela.ios to idle
+    t =   106.58s         Find the "trip-row" Any
+    t =   106.90s         Check for interrupting elements affecting "trip-row" Button
+    t =   107.16s         Synthesize event
+    t =   108.07s         Wait for app.vela.ios to idle
+    t =   108.07s     Waiting 5.0s for "Delete" Button to exist
+    t =   109.11s         Checking `Expect predicate `existsNoRetry == 1` for object "Delete" Button`
+    t =   109.11s             Checking existence of `"Delete" Button`
+    t =   111.42s     Tap "Delete" Button
+    t =   111.42s         Wait for app.vela.ios to idle
+    t =   111.43s         Find the "Delete" Button
+    t =   112.72s         Check for interrupting elements affecting "trash" Button
+    t =   112.94s         Synthesize event
+    t =   113.28s         Wait for app.vela.ios to idle
+UITEST trips_flow=recorded_opened_exportable
+    t =   113.29s Tear Down
+Test Case '-[VelaUITests.TripsUITests testRecordDriveAndOpenTrip]' passed (114.081 seconds).
+Test Suite 'TripsUITests' passed at 2026-10-31 03:17:44.289.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 218.267 (218.271) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-31 03:17:44.292.
+	 Executed 22 tests, with 1 test skipped and 5 failures (0 unexpected) in 1730.535 (1730.572) seconds
+Test Suite 'Selected tests' failed at 2026-10-31 03:17:44.297.
+	 Executed 22 tests, with 1 test skipped and 5 failures (0 unexpected) in 1730.535 (1730.579) seconds
+2026-10-31 03:18:08.549 xcodebuild[33841:95113] [MT] IDETestOperationsObserverDebug: 1772.566 elapsed -- Testing started completed.
+2026-10-31 03:18:08.550 xcodebuild[33841:95113] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-31 03:18:08.550 xcodebuild[33841:95113] [MT] IDETestOperationsObserverDebug: 1772.566 sec, +1772.566 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.LVVLYz1EnP/uitest.xcresult
+
+Failing tests:
+	FreeDriveUITests.testSpeedLimitRoadShieldAndSimpleMap()
+	MapGestureUITests.testKeepNorthUp()
+	MapGestureUITests.testStartPosition()
+	OfflineUITests.testMonacoDeltaUpdateStorageAndWorldFallback()
+	SavedFinishingUITests.testListEditingSelectionAndSound()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui FreeDriveUITests.testSpeedLimitRoadShieldAndSimpleMap: failed (51.720 seconds)
+ui MapGestureUITests.testKeepNorthUp: failed (47.156 seconds)
+ui MapGestureUITests.testLongPressDropsPin: passed (18.418 seconds)
+ui MapGestureUITests.testRotationReturnsNorth: passed (16.362 seconds)
+ui MapGestureUITests.testStartPosition: failed (43.499 seconds)
+ui MapLayersUITests.testCameraConesFollowTheMap: passed (36.038 seconds)
+ui MapLayersUITests.testGoogleTrafficAndSatelliteOverSanFrancisco: passed (78.738 seconds)
+ui MapLayersUITests.testLayerSheetLoadsOverlaysAtCloseZoom: passed (29.950 seconds)
+ui MapLayersUITests.testNamesModesHouseNumbersAndExits: passed (87.992 seconds)
+ui MapLayersUITests.testOfflineCameraPackDraws: passed (80.874 seconds)
+ui MapLayersUITests.testStyleVariantsRender: passed (100.436 seconds)
+ui OfflineAreaUITests.testFrameAreaAndPreferences: passed (55.367 seconds)
+ui OfflineUITests.testMonacoDeltaUpdateStorageAndWorldFallback: failed (42.911 seconds)
+ui OfflineUITests.testMonacoDownloadOfflineMapAndSearch: passed (130.100 seconds)
+ui SavedFinishingUITests.testHomeAndWorkOpenFromSavedAndMap: passed (140.579 seconds)
+ui SavedFinishingUITests.testListEditingSelectionAndSound: failed (277.271 seconds)
+ui SavedFinishingUITests.testTakeoutFixtureImportsIntoNamedList: passed (14.381 seconds)
+ui SavedUITests.testSavedPlaceListAndRecentsPersist: passed (54.728 seconds)
+ui TerrainUITests.testTerrainScreenRenders: passed (30.763 seconds)
+ui TripsUITests.testFullTraceAndDemoMode: passed (104.185 seconds)
+ui TripsUITests.testRecordDriveAndOpenTrip: passed (114.081 seconds)
+scripts/ios/ci-ipa.sh: line 286: 33838 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui area_addresses=-1
+ui area_basemap_bytes=524
+ui area_cameras=-1
+ui area_durable=1
+ui area_estimate_mb=43
+ui area_free_bytes=93.65
+ui area_glyphs_bytes=14
+ui area_installed=1
+ui area_pack_bytes=20480
+ui area_pct=100
+ui area_pieces=5/5
+ui area_places_bytes=238
+ui area_pref_addresses=0
+ui area_pref_cameras=0
+ui area_prefs=100
+ui area_progress_seen=1
+ui area_remote_urls=0
+ui area_stage=-
+ui area_total_bytes=21481
+ui cameras_oriented=1
+ui cameras_pack_count=11
+ui cameras_pack_date=2026-07-21
+ui cameras_pack=camera-pack-2026-07-21
+ui cameras_unoriented=1
+ui design_offline_area_height=49
+ui design_offline_done_height=34
+ui diagnostics_lines=16
+ui dropped_pin=37.77490,-122.41940
+ui free_drive_limit=80
+ui free_drive_speed=45
+ui gesture_bearing=302.0
+ui gesture_north=1
+ui layers_alpr=2
+ui layers_controls=2
+ui layers_painted=23
+ui layers_speed=3
+ui offline_area_entry_height=49
+ui offline_basemap_bytes=11382167
+ui offline_fixture_downloads=1
+ui offline_fixture_pieces=5/5
+ui offline_fixture_world=1
+ui offline_glyphs_bytes=104667742
+ui offline_installed=1
+ui offline_pack_bytes=364544
+ui offline_places_bytes=571133
+ui offline_remote_urls=0
+ui offline_resume_downloads=1
+ui offline_search_results=29
+ui offline_total_bytes=116985834
+ui saved_lists_after_restart=4
+ui saved_lists=4
+ui saved_map_home=directions_opened
+ui saved_places=2
+ui saved_recents_after_restart=8
+ui saved_selection=1
+ui saved_shortcuts=home_and_work_opened
+ui saved_takeout_places=2
+ui terrain_dem=1
+ui terrain_frame=1
+ui terrain_retry=0
+ui terrain_return=1
+ui terrain_state=ready
+ui terrain_web=1
+ui terrain_webgl=1
+ui trip_fixes=Fixes,
+ui trips_flow=full_trace_map_demo_replay
+ui trips_flow=recorded_opened_exportable
+ui screenshots: place-save.png 
+
+== Route replay (03:18:19)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 57F3B136-3E3E-49BF-8403-B8027A342B84 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 57F3B136-3E3E-49BF-8403-B8027A342B84 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 27; highest after refresh: 27
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=26520 parsed=true times=false
+place load: details: nothing
+place load: details: page raw=26520 parsed=true times=false
+place load: details: nothing
+place load: details: page raw=26520 parsed=true times=false
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=26520 parsed=true times=false
+place load: photos: rpc 0
+place load: details: plain search (no popular times)
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (03:19:47)
+256188
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 63772 bytes
+directions reply: directions-drive-sf 76308 bytes
+directions reply: directions-walk-sf 34591 bytes
+search reply: 256188 bytes, 33 feature ids
+failed steps: ui-scenarios
