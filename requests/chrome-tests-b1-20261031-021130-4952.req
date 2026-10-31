@@ -1,0 +1,3 @@
+src=src/chrome-tests-b1
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=MapLayersUITests,MapGestureUITests,TripsUITests,FreeDriveUITests VELA_SKIP_ARCHIVE=1
