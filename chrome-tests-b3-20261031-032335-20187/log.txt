@@ -1,0 +1,127 @@
+tag=chrome-tests-b3-20261031-032335-20187 src=src/chrome-tests-b3 25a4950 src: b2a8d84c CHROME-TESTS: keep the affected batches green after convergence
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 25a4950 src: b2a8d84c CHROME-TESTS: keep the affected batches green after convergence
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610310324 (1793417077)
+java: openjdk version "17.0.20.1" 2026-08-18
+
+== Notices (03:24:38)
+notices: ok, 39 entries (8 libraries, 30 data sources)
+
+== Kotlin: tests and the VelaCore framework (03:24:38)
+gradle: ok in 615 s
+kotlin jvmTest: 667 tests, 0 failures
+kotlin iosSimulatorArm64Test: 555 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87578000 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55208824 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (03:34:53)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 30.3M  100 30.3M    0     0  54.3M      0 --:--:-- --:--:-- --:--:-- 54.3M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (03:34:54)
+string catalog: 2152 keys, 24 resource locales (24 with translations), 38597 localized values, 1041 Swift references, 24 picker languages
+
+== XcodeGen (03:34:56)
+xcodegen: Version: 2.46.0
+
+== Generate the project (03:34:56)
+maplibre-globe: downloading MapLibre.dynamic.xcframework.zip (169968107 bytes) from ios-v2026.10.19-globe
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 52  162M   52 85.9M    0     0  86.4M      0  0:00:01 --:--:--  0:00:01 86.4M100  162M  100  162M    0     0  98.5M      0  0:00:01  0:00:01 --:--:--  117M
+maplibre-globe ios-v2026.10.19-globe: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/MapLibre.xcframework (577M on disk)
+No "base" settings found
+No "debug config" settings found
+No "release config" settings found
+No "iOS" settings found
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (03:35:00)
+  BitByteData: https://github.com/tsolomko/BitByteData @ 2.1.0
+
+resolved source packages: SWCompression, BitByteData
+(resolve: 11 s)
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+
+== Pick a simulator (03:35:11)
+simulator: iPhone 17 (F94FB7BA-C33C-4B3B-B505-F0FB478DB847) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (582B068E-2ACA-440E-8D01-417AEDF26981) (Shutdown) 
+
+== Build for the simulator (03:35:11)
+xcodebuild build-sim failed after 6 s. Error lines:
+error: Multiple commands produce '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/Vela.app/PlugIns/.xctest'
+error: Multiple commands produce '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/-Runner.app/PlugIns/.xctest'
+error: Multiple commands produce '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo'
+error: Multiple commands produce '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/.swiftmodule/arm64-apple-ios-simulator.abi.json'
+error: Multiple commands produce '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/.swiftmodule/arm64-apple-ios-simulator.swiftdoc'
+error: Multiple commands produce '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/.swiftmodule/arm64-apple-ios-simulator.swiftmodule'
+** TEST BUILD FAILED **
+--- tail of build-sim log ---
+
+ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/usr/bin/xcstringstool compile --dry-run --output-directory /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaWidgets.build /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Resources/Localizable.xcstrings
+
+ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/usr/bin/xcstringstool compile --dry-run --output-directory /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/Vela.build /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Resources/Localizable.xcstrings
+
+ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -x objective-c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Resources/Assets.xcassets
+
+Build description signature: e43cba7f2ced55331a3220dbaaaa5539
+Build description path: /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/XCBuildData/e43cba7f2ced55331a3220dbaaaa5539.xcbuilddata
+error: Multiple commands produce '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/Vela.app/PlugIns/.xctest'
+    note: Target 'VelaTests' (project 'Vela') has create directory command with output '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/Vela.app/PlugIns/.xctest'
+    note: Target 'VelaTests' (project 'Vela') has link command with output '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/Vela.app/PlugIns/.xctest'
+error: Multiple commands produce '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/-Runner.app/PlugIns/.xctest'
+    note: Target 'VelaUITests' (project 'Vela') has create directory command with output '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/-Runner.app/PlugIns/.xctest'
+    note: Target 'VelaUITests' (project 'Vela') has link command with output '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/-Runner.app/PlugIns/.xctest'
+error: Multiple commands produce '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo'
+    note: Target 'VelaTests' (project 'Vela') has copy command from '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaTests.build/Objects-normal/arm64/.swiftsourceinfo' to '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo'
+    note: Target 'VelaUITests' (project 'Vela') has copy command from '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/.swiftsourceinfo' to '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo'
+error: Multiple commands produce '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/.swiftmodule/arm64-apple-ios-simulator.abi.json'
+    note: Target 'VelaTests' (project 'Vela') has copy command from '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaTests.build/Objects-normal/arm64/.abi.json' to '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/.swiftmodule/arm64-apple-ios-simulator.abi.json'
+    note: Target 'VelaUITests' (project 'Vela') has copy command from '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/.abi.json' to '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/.swiftmodule/arm64-apple-ios-simulator.abi.json'
+error: Multiple commands produce '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/.swiftmodule/arm64-apple-ios-simulator.swiftdoc'
+    note: Target 'VelaTests' (project 'Vela') has copy command from '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaTests.build/Objects-normal/arm64/.swiftdoc' to '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/.swiftmodule/arm64-apple-ios-simulator.swiftdoc'
+    note: Target 'VelaUITests' (project 'Vela') has copy command from '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/.swiftdoc' to '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/.swiftmodule/arm64-apple-ios-simulator.swiftdoc'
+error: Multiple commands produce '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/.swiftmodule/arm64-apple-ios-simulator.swiftmodule'
+    note: Target 'VelaTests' (project 'Vela') has copy command from '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaTests.build/Objects-normal/arm64/.swiftmodule' to '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/.swiftmodule/arm64-apple-ios-simulator.swiftmodule'
+    note: Target 'VelaUITests' (project 'Vela') has copy command from '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/.swiftmodule' to '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/.swiftmodule/arm64-apple-ios-simulator.swiftmodule'
+ClangStatCache /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-688ef53f1462e2c8f657fdc38a81448ff45c64a1807a658693f2a61704f17a36.sdkstatcache
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela.xcodeproj
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -o /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-688ef53f1462e2c8f657fdc38a81448ff45c64a1807a658693f2a61704f17a36.sdkstatcache
+
+warning: Traditional headermap style is no longer supported; please migrate to using separate headermaps and set 'ALWAYS_SEARCH_USER_PATHS' to NO. (in target 'VelaUITests' from project 'Vela')
+warning: duplicate output file '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo' on task: Copy /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/.swiftsourceinfo (in target 'VelaUITests' from project 'Vela')
+warning: duplicate output file '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/.swiftmodule/arm64-apple-ios-simulator.abi.json' on task: Copy /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/.swiftmodule/arm64-apple-ios-simulator.abi.json /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/.abi.json (in target 'VelaUITests' from project 'Vela')
+warning: duplicate output file '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/.swiftmodule/arm64-apple-ios-simulator.swiftdoc' on task: Copy /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/.swiftmodule/arm64-apple-ios-simulator.swiftdoc /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/.swiftdoc (in target 'VelaUITests' from project 'Vela')
+warning: duplicate output file '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/.swiftmodule/arm64-apple-ios-simulator.swiftmodule' on task: Copy /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/.swiftmodule/arm64-apple-ios-simulator.swiftmodule /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Intermediates.noindex/Vela.build/Debug-iphonesimulator/VelaUITests.build/Objects-normal/arm64/.swiftmodule (in target 'VelaUITests' from project 'Vela')
+warning: duplicate output file '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/-Runner.app/PlugIns/.xctest' on task: Ld /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/-Runner.app/PlugIns/.xctest normal (in target 'VelaUITests' from project 'Vela')
+warning: Traditional headermap style is no longer supported; please migrate to using separate headermaps and set 'ALWAYS_SEARCH_USER_PATHS' to NO. (in target 'VelaWidgets' from project 'Vela')
+warning: Traditional headermap style is no longer supported; please migrate to using separate headermaps and set 'ALWAYS_SEARCH_USER_PATHS' to NO. (in target 'VelaTests' from project 'Vela')
+warning: duplicate output file '/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/Vela.app/PlugIns/.xctest' on task: Ld /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Build/Products/Debug-iphonesimulator/Vela.app/PlugIns/.xctest normal (in target 'VelaTests' from project 'Vela')
+warning: Traditional headermap style is no longer supported; please migrate to using separate headermaps and set 'ALWAYS_SEARCH_USER_PATHS' to NO. (in target 'Vela' from project 'Vela')
+note: Run script build phase 'Fetch MapLibre globe' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+warning: Traditional headermap style is no longer supported; please migrate to using separate headermaps and set 'ALWAYS_SEARCH_USER_PATHS' to NO. (in target 'NavActivityExtension' from project 'Vela')
+** TEST BUILD FAILED **
+
+
+The following build commands failed:
+	Building project Vela for testing with scheme Vela
+(1 failure)
