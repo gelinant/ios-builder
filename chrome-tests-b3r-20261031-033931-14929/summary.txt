@@ -1,0 +1,112 @@
+commit: 1edd415 src: b2a8d84c CHROME-TESTS: keep the affected batches green after convergence
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610310340 (1793418008)
+java: openjdk version "17.0.21" 2026-10-20
+notices: ok, 39 entries (8 libraries, 30 data sources)
+gradle: ok in 244 s
+kotlin jvmTest: 667 tests, 0 failures
+kotlin iosSimulatorArm64Test: 555 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87578000 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55208824 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 2152 keys, 24 resource locales (24 with translations), 38597 localized values, 1041 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+simulator: iPhone 17 (062CFAA4-9ACF-40ED-A1E2-3625F5ED4DA9) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (F6F146B6-18AA-4FE2-9F0B-AA6D02028DDA) (Shutdown) 
+simulator build: ok
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+tests: ok, Executed 200 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=18948
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=53636 rate=22050 wav_frames=53636
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: FAILED
+ui FreeDriveUITests.testSpeedLimitRoadShieldAndSimpleMap: passed (21.542 seconds)
+ui LayerInfoUITests.testLegendAndInfoParity: passed (97.628 seconds)
+ui MapGestureUITests.testKeepNorthUp: passed (37.000 seconds)
+ui MapGestureUITests.testLongPressDropsPin: passed (12.323 seconds)
+ui MapGestureUITests.testRotationReturnsNorth: passed (12.980 seconds)
+ui MapGestureUITests.testStartPosition: passed (61.859 seconds)
+ui OfflineUITests.testMonacoDeltaUpdateStorageAndWorldFallback: failed (61.244 seconds)
+ui OfflineUITests.testMonacoDownloadOfflineMapAndSearch: failed (139.648 seconds)
+ui PrivacyUITests.testConsentAndFullPrivacyPage: passed (67.732 seconds)
+ui PrivacyUITests.testNoGoogleDirectionsAndTransitSendNothingToGoogle: passed (32.795 seconds)
+ui PrivacyUITests.testNoGoogleSearchSendsNothingToGoogle: passed (24.739 seconds)
+ui PrivacyUITests.testPrivacyControlsAndSessionRotation: passed (56.095 seconds)
+ui PrivacyUITests.testRequestCounterAndClearHistory: passed (178.796 seconds)
+ui SavedFinishingUITests.testHomeAndWorkOpenFromSavedAndMap: passed (37.033 seconds)
+ui SavedFinishingUITests.testListEditingSelectionAndSound: failed (77.114 seconds)
+ui SavedFinishingUITests.testSavedLineReopensBesideComputedRoutes: failed (44.482 seconds)
+ui SavedFinishingUITests.testTakeoutFixtureImportsIntoNamedList: passed (8.652 seconds)
+ui SettingsUITests.testContentAndData: passed (95.735 seconds)
+ui SettingsUITests.testDesignTokensApplied: passed (31.046 seconds)
+ui SettingsUITests.testTopLevelRowsAndPrivacyPage: passed (40.224 seconds)
+ui design_about_search_height=22
+ui design_offline_area_height=49
+ui design_offline_done_height=34
+ui design_offline=1
+ui design_settings_done_height=44
+ui design_settings_google_height=28
+ui design_settings_google_row_height=44
+ui design_settings=1
+ui dropped_pin=37.77490,-122.41940
+ui free_drive_exit=1
+ui free_drive_limit=80
+ui free_drive_simple=1
+ui free_drive_speed=45
+ui gesture_bearing=302.0
+ui gesture_north=1
+ui gesture_scale=2000
+ui gesture_start_zoom=12.0
+ui keep_north_up=1
+ui legend_layers=2
+ui legend_parity=1
+ui offline_area_entry_height=49
+ui offline_fixture_downloads=1
+ui offline_fixture_pieces=5/5
+ui offline_fixture_world=1
+ui privacy_consent_lookup=0
+ui privacy_counter_after_relaunch=7
+ui privacy_counter_today=7
+ui privacy_history_recents=0
+ui privacy_no_google_blocked=0
+ui privacy_no_google_routes_blocked=0
+ui privacy_no_google_routes_sent=0
+ui privacy_no_google_sent=0
+ui privacy_rotation=day
+ui privacy_telemetry=1
+ui saved_map_home=directions_opened
+ui saved_selection=1
+ui saved_shortcuts=home_and_work_opened
+ui saved_takeout_places=2
+ui settings_content=lowData=1,lowRam=1,place=tiles,reviews=1,photos=1,wifi=1,quality=low,cacheMb=50,full=0,retry=1,adult=0,ext=0,redact=0,trips=0,tripBytes=0,photoBytes=0
+ui settings_rows=8
+ui settings_trips=lowData=1,lowRam=1,place=tiles,reviews=1,photos=1,wifi=1,quality=low,cacheMb=50,full=0,retry=1,adult=0,ext=0,redact=1,trips=0,tripBytes=0,photoBytes=0
+ui screenshots: settings-content.png settings-privacy-page.png settings-top.png 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 27; highest after refresh: 27
+place load: photos: rpc 10
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=26520 parsed=true times=false
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=26520 parsed=true times=false
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 76311 bytes
+directions reply: directions-drive-sf 69375 bytes
+directions reply: directions-walk-sf 34610 bytes
+search reply: 238550 bytes, 27 feature ids
+failed steps: ui-scenarios
