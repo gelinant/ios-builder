@@ -1,0 +1,103 @@
+Timestamp               Ty Process[PID:TID]
+2026-10-31 05:15:44.371 I  Vela[20699:f3e2] [app.vela.ios:Calibration] calibration at startup: version 1
+2026-10-31 05:15:44.960 Df Vela[20699:f54c] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-31 05:15:45.658 I  Vela[20699:f3e2] [app.vela.ios:VelaRegion] start installed=0 pending=false completed=0
+2026-10-31 05:15:45.795 I  Vela[20699:f3e2] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-31 05:15:50.660 I  Vela[20699:f3e2] [app.vela.ios:NeuralVoice] loaded en_US-hfc_female-medium: 22050 Hz, 1 speakers
+2026-10-31 05:15:52.235 Df Vela[20699:f60a] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-31 05:15:53.340 I  Vela[20699:f3e2] [app.vela.ios:NeuralVoice] loaded en_US-hfc_female-medium: 22050 Hz, 1 speakers
+2026-10-31 05:15:53.747 I  Vela[20699:f3e2] [app.vela.ios:VoiceSearch] loaded whisper-tiny for en
+2026-10-31 05:15:59.833 I  Vela[21535:fd49] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-31 05:16:00.175 Df Vela[21535:fd8d] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-31 05:16:00.647 I  Vela[21535:fd49] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-31 05:16:00.706 I  Vela[21535:fd49] [app.vela.ios:VelaRegion] start installed=0 pending=false completed=0
+2026-10-31 05:16:35.458 I  Vela[24239:11849] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-31 05:16:35.884 Df Vela[24239:1188c] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-31 05:16:36.662 I  Vela[24239:11849] [app.vela.ios:VelaRegion] start installed=0 pending=false completed=0
+2026-10-31 05:16:36.842 I  Vela[24239:11849] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-31 05:16:50.989 I  Vela[24239:11849] [app.vela.ios:PlaceLoad] photos: rpc 10
+2026-10-31 05:16:53.167 Db Vela[24239:118c4] [app.vela.ios:VelaWalk] walk: open 54 m, google null m
+2026-10-31 05:16:58.373 I  Vela[24239:11849] [app.vela.ios:PlaceLoad] details: plain search (no popular times)
+2026-10-31 05:16:58.913 Db Vela[24239:11849] [app.vela.ios:Web] popular: view created
+2026-10-31 05:17:03.094 Db Vela[24239:11849] [app.vela.ios:Web] popular: same-origin details fetch
+2026-10-31 05:17:03.437 Db Vela[24239:11849] [app.vela.ios:Web] popular: replied with 27497 characters
+2026-10-31 05:17:03.439 Db Vela[24239:11849] [app.vela.ios:Web] popular: view destroyed
+2026-10-31 05:17:03.477 I  Vela[24239:11849] [app.vela.ios:PlaceLoad] details: page raw=27497 parsed=true times=false
+2026-10-31 05:17:05.011 I  Vela[24239:11849] [app.vela.ios:VelaDirections] route start: OSRM, trip 600s typical, 720s live, 3 steps summing 400s
+2026-10-31 05:17:05.369 Db Vela[24239:11849] [app.vela.ios:Navigation] nav replay: start
+2026-10-31 05:17:05.777 Db Vela[24239:11849] [app.vela.ios:NavVoice] spoken: Starting navigation. Head north on Market Street
+2026-10-31 05:17:05.777 Db Vela[24239:11849] [app.vela.ios:NeuralVoice] spoken: Starting navigation. Head north on Market Street
+2026-10-31 05:17:07.245 I  Vela[24239:11849] [app.vela.ios:Location] location update failed: The operation couldn’t be completed. (kCLErrorDomain error 0.)
+2026-10-31 05:17:09.076 Db Vela[24239:11849] [app.vela.ios:Navigation] nav replay: end
+2026-10-31 05:17:09.391 I  Vela[24239:11849] [app.vela.ios:Location] location update failed: The operation couldn’t be completed. (kCLErrorDomain error 0.)
+2026-10-31 05:17:15.156 I  Vela[26640:12f79] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-31 05:17:15.429 Df Vela[26640:12f8e] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-31 05:17:16.090 I  Vela[26640:12f79] [app.vela.ios:VelaRegion] start installed=0 pending=false completed=0
+2026-10-31 05:17:16.525 I  Vela[26640:12f79] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-31 05:17:16.800 I  Vela[26640:12f79] [app.vela.ios:PlaceLoad] photos: rpc 8
+2026-10-31 05:17:22.045 I  Vela[26640:12f79] [app.vela.ios:PlaceLoad] details: nothing
+2026-10-31 05:17:22.046 I  Vela[26640:12f79] [app.vela.ios:PlaceLoad] details: page raw=-1 parsed=false times=false
+2026-10-31 05:17:53.534 I  Vela[29422:14797] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-31 05:17:53.797 Df Vela[29422:147b0] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-31 05:17:54.684 I  Vela[29422:14797] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-31 05:17:55.054 I  Vela[29422:14797] [app.vela.ios:VelaRegion] start installed=0 pending=false completed=0
+2026-10-31 05:17:55.096 Db Vela[29422:14797] [app.vela.ios:NavVoice] spoken: Start your route
+2026-10-31 05:17:55.096 Db Vela[29422:14797] [app.vela.ios:NeuralVoice] spoken: Start your route
+2026-10-31 05:17:55.202 Db Vela[29422:147e2] [app.vela.ios:VelaWalk] walk: open 30 m, google 23 m, google named (2 steps) tiles 227 ms (332 lines), named share 1.00, total 236 ms
+2026-10-31 05:18:17.601 I  Vela[30997:155b7] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-31 05:18:17.656 I  Vela[30997:155b7] [app.vela.ios:VelaFixture] reset: deleting offline root and the pending plan
+2026-10-31 05:18:17.890 Df Vela[30997:155cf] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-31 05:18:18.587 I  Vela[30997:155b7] [app.vela.ios:VelaRegion] start installed=0 pending=false completed=0
+2026-10-31 05:18:18.750 I  Vela[30997:155b7] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-31 05:18:44.678 I  Vela[30997:155b7] [app.vela.ios:VelaRegion] monaco: installed
+2026-10-31 05:18:52.266 I  Vela[33755:16de8] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-31 05:18:52.566 Df Vela[33755:16e02] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-31 05:18:53.180 I  Vela[33755:16de8] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-31 05:18:53.288 I  Vela[33755:16de8] [app.vela.ios:VelaRegion] start installed=1 pending=false completed=0
+2026-10-31 05:19:08.243 I  Vela[33755:16de8] [app.vela.ios:PlaceLoad] photos: rpc 0
+2026-10-31 05:19:08.426 I  Vela[33755:16de8] [app.vela.ios:PlaceLoad] details: plain search (no popular times)
+2026-10-31 05:19:08.485 Db Vela[33755:16de8] [app.vela.ios:Web] popular: replied with -1 characters
+2026-10-31 05:19:20.125 I  Vela[33755:16e2f] [app.vela.ios:VelaDirections] open names: kept 8 renamed 0 bare 0 unplaced 1, waited 454 ms more
+2026-10-31 05:19:20.293 Db Vela[33755:16e2f] [app.vela.ios:VelaWalk] walk: open 2296 m, google null m
+2026-10-31 05:19:25.997 I  Vela[35394:17c77] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-31 05:19:26.269 Df Vela[35394:17c9b] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-31 05:19:26.976 I  Vela[35394:17c77] [app.vela.ios:VelaRegion] start installed=1 pending=false completed=0
+2026-10-31 05:19:27.069 I  Vela[35394:17c77] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-31 05:19:37.171 I  Vela[35394:17c77] [app.vela.ios:PlaceLoad] photos: rpc 10
+2026-10-31 05:19:45.071 I  Vela[35394:17c77] [app.vela.ios:PlaceLoad] details: plain search (no popular times)
+2026-10-31 05:19:45.464 Db Vela[35394:17c77] [app.vela.ios:Web] popular: view created
+2026-10-31 05:19:49.199 Db Vela[35394:17c77] [app.vela.ios:Web] popular: same-origin details fetch
+2026-10-31 05:19:49.670 Db Vela[35394:17c77] [app.vela.ios:Web] popular: replied with 27497 characters
+2026-10-31 05:19:49.671 Db Vela[35394:17c77] [app.vela.ios:Web] popular: view destroyed
+2026-10-31 05:19:49.681 I  Vela[35394:17c77] [app.vela.ios:PlaceLoad] details: page raw=27497 parsed=true times=false
+2026-10-31 05:20:08.832 I  Vela[38491:19874] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-31 05:20:09.120 Df Vela[38491:19a71] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-31 05:20:09.829 I  Vela[38491:19874] [app.vela.ios:VelaRegion] start installed=1 pending=false completed=0
+2026-10-31 05:20:09.853 I  Vela[38491:19874] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-31 05:20:21.650 I  Vela[38491:19874] [app.vela.ios:PlaceLoad] photos: rpc 10
+2026-10-31 05:20:24.654 I  Vela[38491:19cb3] [app.vela.ios:VelaDirections] open names: kept 7 renamed 0 bare 0 unplaced 1, waited 403 ms more
+2026-10-31 05:20:24.866 Db Vela[38491:19c1f] [app.vela.ios:VelaWalk] walk: open 54 m, google null m
+2026-10-31 05:20:28.075 I  Vela[38491:19874] [app.vela.ios:PlaceLoad] details: plain search (no popular times)
+2026-10-31 05:20:28.506 Db Vela[38491:19874] [app.vela.ios:Web] popular: view created
+2026-10-31 05:20:33.342 Db Vela[38491:19874] [app.vela.ios:Web] popular: same-origin details fetch
+2026-10-31 05:20:33.978 Db Vela[38491:19874] [app.vela.ios:Web] popular: replied with 27497 characters
+2026-10-31 05:20:33.979 Db Vela[38491:19874] [app.vela.ios:Web] popular: view destroyed
+2026-10-31 05:20:34.009 I  Vela[38491:19874] [app.vela.ios:PlaceLoad] details: page raw=27497 parsed=true times=false
+2026-10-31 05:21:32.252 I  Vela[38491:19f84] [app.vela.ios:VelaDirections] open names: kept 7 renamed 0 bare 0 unplaced 1, waited 133 ms more
+2026-10-31 05:21:32.377 Db Vela[38491:19f84] [app.vela.ios:VelaWalk] walk: open 72 m, google null m
+2026-10-31 05:21:38.217 I  Vela[38491:19874] [app.vela.ios:PlaceLoad] details: nothing
+2026-10-31 05:21:38.235 Db Vela[38491:19874] [app.vela.ios:Web] popular: view created
+2026-10-31 05:21:41.734 Db Vela[38491:19874] [app.vela.ios:Web] popular: same-origin details fetch
+2026-10-31 05:21:42.131 Db Vela[38491:19874] [app.vela.ios:Web] popular: replied with 54934 characters
+2026-10-31 05:21:42.135 Db Vela[38491:19874] [app.vela.ios:Web] popular: view destroyed
+2026-10-31 05:21:42.155 I  Vela[38491:19874] [app.vela.ios:PlaceLoad] details: page raw=54772 parsed=true times=false
+2026-10-31 05:23:39.686 I  Vela[47558:1eab7] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-31 05:23:39.980 Df Vela[47558:1eb3f] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-31 05:23:40.671 I  Vela[47558:1eab7] [app.vela.ios:VelaRegion] start installed=1 pending=false completed=0
+2026-10-31 05:23:40.760 I  Vela[47558:1eab7] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-31 05:24:06.778 I  Vela[49340:2061b] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-10-31 05:24:07.056 Df Vela[49340:20639] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-10-31 05:24:07.316 I  Vela[49340:2061b] [app.vela.ios:Location] location update failed: The operation couldn’t be completed. (kCLErrorDomain error 0.)
+2026-10-31 05:24:07.502 I  Vela[49340:2061b] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-10-31 05:24:07.574 I  Vela[49340:2061b] [app.vela.ios:VelaRegion] start installed=1 pending=false completed=0
+2026-10-31 05:24:59.401 I  Vela[49340:2061b] [app.vela.ios:Location] location update failed: The operation couldn’t be completed. (kCLErrorDomain error 0.)
