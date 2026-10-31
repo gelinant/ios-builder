@@ -1,0 +1,205 @@
+tag=layer-debug-20261031-021043-2035 src=src/layer-debug 75f6972 src: 4222a858 LAYER-DEBUG: keep the sheet debug lines outside the lazy form
+ProductName:		macOS ProductVersion:		26.6.2 BuildVersion:		25G83 
+Xcode 26.6 Build version 17F113 
+commit: 75f6972 src: 4222a858 LAYER-DEBUG: keep the sheet debug lines outside the lazy form
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202610310211 (1793412712)
+java: openjdk version "17.0.21" 2026-10-20
+
+== Notices (02:11:53)
+notices: ok, 39 entries (8 libraries, 30 data sources)
+
+== Kotlin: tests and the VelaCore framework (02:11:53)
+gradle: ok in 706 s
+kotlin jvmTest: 667 tests, 0 failures
+kotlin iosSimulatorArm64Test: 555 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87578000 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55208824 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (02:23:39)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 30.3M  100 30.3M    0     0  46.7M      0 --:--:-- --:--:-- --:--:-- 46.7M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (02:23:41)
+string catalog: 2152 keys, 24 resource locales (24 with translations), 38597 localized values, 1041 Swift references, 24 picker languages
+
+== XcodeGen (02:23:44)
+xcodegen: Version: 2.46.0
+
+== Generate the project (02:23:44)
+maplibre-globe: downloading MapLibre.dynamic.xcframework.zip (169968107 bytes) from ios-v2026.10.19-globe
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 46  162M   46 74.9M    0     0  74.9M      0  0:00:02 --:--:--  0:00:02 74.9M100  162M  100  162M    0     0  90.8M      0  0:00:01  0:00:01 --:--:--  111M
+maplibre-globe ios-v2026.10.19-globe: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/MapLibre.xcframework (593M on disk)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (02:23:50)
+  BitByteData: https://github.com/tsolomko/BitByteData @ 2.1.0
+
+resolved source packages: SWCompression, BitByteData
+(resolve: 17 s)
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+
+== Pick a simulator (02:24:07)
+simulator: iPhone 17 (062CFAA4-9ACF-40ED-A1E2-3625F5ED4DA9) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (F6F146B6-18AA-4FE2-9F0B-AA6D02028DDA) (Shutdown) 
+
+== Build for the simulator (02:24:09)
+note: Run script build phase 'Fetch MapLibre globe' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 131 s)
+simulator build: ok
+
+== Boot the simulator (02:26:20)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (02:29:04)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 172 s)
+tests: ok, Executed 200 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=19319
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=56376 rate=22050 wav_frames=56376
+
+== Launch and screenshot (02:31:56)
+app.vela.ios: 32975
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 688EA074-D82A-4FEF-85D2-4251430D943D (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (02:32:39)
+xcodebuild uitest failed after 688 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/LayerInfoUITests.swift:65: error: -[VelaUITests.LayerInfoUITests testLegendAndInfoParity] : XCTAssertTrue failed - no layers button
+Test Case '-[VelaUITests.LayerInfoUITests testLegendAndInfoParity]' failed (95.201 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/MapLayersUITests.swift:207: error: -[VelaUITests.MapLayersUITests testCameraConesFollowTheMap] : XCTAssertTrue failed - no layers button
+Test Case '-[VelaUITests.MapLayersUITests testCameraConesFollowTheMap]' failed (46.872 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/MapLayersUITests.swift:62: error: -[VelaUITests.MapLayersUITests testGoogleTrafficAndSatelliteOverSanFrancisco] : XCTAssertTrue failed - no layers button
+Test Case '-[VelaUITests.MapLayersUITests testGoogleTrafficAndSatelliteOverSanFrancisco]' failed (41.665 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/MapLayersUITests.swift:13: error: -[VelaUITests.MapLayersUITests testLayerSheetLoadsOverlaysAtCloseZoom] : XCTAssertTrue failed - no layers button
+Test Case '-[VelaUITests.MapLayersUITests testLayerSheetLoadsOverlaysAtCloseZoom]' failed (41.822 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/MapLayersUITests.swift:169: error: -[VelaUITests.MapLayersUITests testOfflineCameraPackDraws] : XCTAssertTrue failed - no layers button
+Test Case '-[VelaUITests.MapLayersUITests testOfflineCameraPackDraws]' failed (112.831 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TransitMapUITests.swift:171: error: -[VelaUITests.TransitMapUITests testLinesAndVehiclesOnTheMap] : XCTAssertTrue failed - the browser chrome did not return after the trip
+Test Case '-[VelaUITests.TransitMapUITests testLinesAndVehiclesOnTheMap]' failed (47.648 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =    37.98s     Checking `Expect predicate `existsNoRetry == 1` for object "layers-button" Button`
+    t =    37.98s         Checking existence of `"layers-button" Button`
+    t =    38.05s         Capturing element debug description
+    t =    38.99s     Checking `Expect predicate `existsNoRetry == 1` for object "layers-button" Button`
+    t =    38.99s         Checking existence of `"layers-button" Button`
+    t =    39.08s         Capturing element debug description
+    t =    40.02s     Checking `Expect predicate `existsNoRetry == 1` for object "layers-button" Button`
+    t =    40.03s         Checking existence of `"layers-button" Button`
+    t =    40.09s         Capturing element debug description
+    t =    41.03s     Checking `Expect predicate `existsNoRetry == 1` for object "layers-button" Button`
+    t =    41.03s         Checking existence of `"layers-button" Button`
+    t =    41.09s         Capturing element debug description
+    t =    42.03s     Checking `Expect predicate `existsNoRetry == 1` for object "layers-button" Button`
+    t =    42.03s         Checking existence of `"layers-button" Button`
+    t =    42.08s         Capturing element debug description
+    t =    43.03s     Checking `Expect predicate `existsNoRetry == 1` for object "layers-button" Button`
+    t =    43.03s         Checking existence of `"layers-button" Button`
+    t =    43.10s         Capturing element debug description
+    t =    44.02s     Checking `Expect predicate `existsNoRetry == 1` for object "layers-button" Button`
+    t =    44.02s         Checking existence of `"layers-button" Button`
+    t =    44.09s         Capturing element debug description
+    t =    45.02s     Checking `Expect predicate `existsNoRetry == 1` for object "layers-button" Button`
+    t =    45.02s         Checking existence of `"layers-button" Button`
+    t =    45.07s         Capturing element debug description
+    t =    46.01s     Checking `Expect predicate `existsNoRetry == 1` for object "layers-button" Button`
+    t =    46.01s         Checking existence of `"layers-button" Button`
+    t =    46.11s         Capturing element debug description
+    t =    46.98s     Checking `Expect predicate `existsNoRetry == 1` for object "layers-button" Button`
+    t =    46.98s         Checking existence of `"layers-button" Button`
+    t =    47.11s         Capturing element debug description
+    t =    47.11s     Checking existence of `"layers-button" Button`
+    t =    47.22s Collecting debug information to assist test failure triage
+    t =    47.22s     Requesting snapshot of accessibility hierarchy for app with pid 58106
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TransitMapUITests.swift:171: error: -[VelaUITests.TransitMapUITests testLinesAndVehiclesOnTheMap] : XCTAssertTrue failed - the browser chrome did not return after the trip
+    t =    47.39s Tear Down
+Test Case '-[VelaUITests.TransitMapUITests testLinesAndVehiclesOnTheMap]' failed (47.648 seconds).
+Test Suite 'TransitMapUITests' failed at 2026-10-31 02:43:30.141.
+	 Executed 1 test, with 1 failure (0 unexpected) in 47.648 (47.648) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-10-31 02:43:30.142.
+	 Executed 8 tests, with 6 failures (0 unexpected) in 606.898 (606.910) seconds
+Test Suite 'Selected tests' failed at 2026-10-31 02:43:30.142.
+	 Executed 8 tests, with 6 failures (0 unexpected) in 606.898 (606.912) seconds
+2026-10-31 02:44:01.760 xcodebuild[34224:94954] [MT] IDETestOperationsObserverDebug: 661.105 elapsed -- Testing started completed.
+2026-10-31 02:44:01.761 xcodebuild[34224:94954] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-31 02:44:01.761 xcodebuild[34224:94954] [MT] IDETestOperationsObserverDebug: 661.105 sec, +661.105 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/tmp.IK6pxfR0uL/uitest.xcresult
+
+Failing tests:
+	LayerInfoUITests.testLegendAndInfoParity()
+	MapLayersUITests.testCameraConesFollowTheMap()
+	MapLayersUITests.testGoogleTrafficAndSatelliteOverSanFrancisco()
+	MapLayersUITests.testLayerSheetLoadsOverlaysAtCloseZoom()
+	MapLayersUITests.testOfflineCameraPackDraws()
+	TransitMapUITests.testLinesAndVehiclesOnTheMap()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui LayerInfoUITests.testLegendAndInfoParity: failed (95.201 seconds)
+ui MapLayersUITests.testCameraConesFollowTheMap: failed (46.872 seconds)
+ui MapLayersUITests.testGoogleTrafficAndSatelliteOverSanFrancisco: failed (41.665 seconds)
+ui MapLayersUITests.testLayerSheetLoadsOverlaysAtCloseZoom: failed (41.822 seconds)
+ui MapLayersUITests.testNamesModesHouseNumbersAndExits: passed (100.960 seconds)
+ui MapLayersUITests.testOfflineCameraPackDraws: failed (112.831 seconds)
+ui MapLayersUITests.testStyleVariantsRender: passed (119.899 seconds)
+ui TransitMapUITests.testLinesAndVehiclesOnTheMap: failed (47.648 seconds)
+scripts/ios/ci-ipa.sh: line 286: 34221 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui screenshots: 
+
+== Route replay (02:44:10)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 688EA074-D82A-4FEF-85D2-4251430D943D (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 688EA074-D82A-4FEF-85D2-4251430D943D (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (02:45:33)
+258729
+open reply: osrm-car-sf 18579 bytes
+open reply: osrm-foot-sf 28840 bytes
+open reply: transit-plan-sf 63665 bytes
+directions reply: directions-drive-sf 108675 bytes
+directions reply: directions-walk-sf 34594 bytes
+search reply: 258729 bytes, 34 feature ids
+failed steps: ui-scenarios
