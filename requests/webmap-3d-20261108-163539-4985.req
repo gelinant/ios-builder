@@ -1,0 +1,3 @@
+src=src/webmap-3d
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=LaunchUITests,MapTapUITests,Map3DUITests,DirectionsUITests,MapSearchUITests VELA_SKIP_ARCHIVE=1
