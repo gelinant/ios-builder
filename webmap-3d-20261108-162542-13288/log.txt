@@ -1,0 +1,15 @@
+tag=webmap-3d-20261108-162542-13288 src=src/webmap-3d bc3aac6 src: dd0ccc22 iOS map: fix the first compile errors of the GL JS map
+ProductName:		macOS ProductVersion:		26.7.2 BuildVersion:		25G332 
+Xcode 26.6 Build version 17F113 
+
+== Voice framework
+
+== String catalog
+
+== XcodeGen
+xcodegen: Version: 2.46.0
+
+== Generate and build
+simulator: 98A0BFA3-CEC3-4FD6-9916-5A2149774DBF
+simulator build: ok
+compile check green
