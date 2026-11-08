@@ -1,0 +1,3 @@
+src=src/terrain-hd
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=LaunchUITests
