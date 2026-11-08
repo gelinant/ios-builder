@@ -29,20 +29,20 @@
       "category": "utilities",
       "versions": [
         {
-          "version": "0.1.202610310609",
-          "buildVersion": "1793426972",
-          "date": "2026-10-31T06:43:42Z",
-          "localizedDescription": "Build 31 octobre : transports en une seule coque (Arrets / Trajet / Proximite), selection partagee carte et listes, carte a deux boutons avec feuille d'actions, reglages en huit lignes, accueil de recherche, editeur de liste qui accepte le clavier.\n\nBuild 1793426972.",
+          "version": "0.1.202611082223",
+          "buildVersion": "1794176595",
+          "date": "2026-11-08T22:55:27Z",
+          "localizedDescription": "Main map in MapLibre GL JS with 3D terrain, sky and globe. Test build from ios/webmap-3d.\n\nBuild 1794176595.",
           "downloadURL": "https://raw.githubusercontent.com/gelinant/ios-builder/dist/Vela.ipa",
-          "size": 27438798,
+          "size": 24231705,
           "minOSVersion": "17.0"
         }
       ],
-      "version": "0.1.202610310609",
-      "versionDate": "2026-10-31T06:43:42Z",
-      "versionDescription": "Build 31 octobre : transports en une seule coque (Arrets / Trajet / Proximite), selection partagee carte et listes, carte a deux boutons avec feuille d'actions, reglages en huit lignes, accueil de recherche, editeur de liste qui accepte le clavier.\n\nBuild 1793426972.",
+      "version": "0.1.202611082223",
+      "versionDate": "2026-11-08T22:55:27Z",
+      "versionDescription": "Main map in MapLibre GL JS with 3D terrain, sky and globe. Test build from ios/webmap-3d.\n\nBuild 1794176595.",
       "downloadURL": "https://raw.githubusercontent.com/gelinant/ios-builder/dist/Vela.ipa",
-      "size": 27438798,
+      "size": 24231705,
       "appPermissions": {
         "entitlements": [],
         "privacy": {
