@@ -1,0 +1,110 @@
+package app.vela.core
+
+import app.vela.core.data.AlprCamera
+import app.vela.core.model.LatLng
+import app.vela.core.model.distanceTo
+import app.vela.core.nav.CameraDetour
+import kotlin.test.Test
+import kotlin.test.assertEquals
+import kotlin.test.assertTrue
+
+/** Side-street candidates around camera clusters (issue #600). Davis-fixture grid. */
+class CameraDetourTest {
+    // A road running due north, 101 vertices, ~11 km.
+    private val north = (0..100).map { LatLng(38.5 + it * 0.001, -121.7) }
+
+    @Test fun `a candidate sits 150 m to either side of the road at the cluster`() {
+        val c = CameraDetour.candidates(north, listOf(3000.0)).single()
+        assertEquals(3000.0, c.atM, 1.0)
+        assertEquals(1, c.count)
+        // Driving north: left is west (smaller longitude), right is east; both level with the road point.
+        assertTrue(c.left.lng < -121.7 && c.right.lng > -121.7)
+        assertEquals(c.left.lat, c.right.lat, 1e-6)
+        val p = LatLng(38.5 + 3000.0 / 111_320.0, -121.7)
+        assertEquals(150.0, p.distanceTo(c.left), 2.0)
+        assertEquals(150.0, p.distanceTo(c.right), 2.0)
+    }
+
+    @Test fun `heads on one corner are one cluster clusters are capped nearest first`() {
+        // Three heads within 40 m at 1 km, then singles at 4, 6 and 8 km: four clusters, three kept.
+        val cams = listOf(1010.0, 1000.0, 1030.0, 8000.0, 4000.0, 6000.0)
+        val out = CameraDetour.candidates(north, cams)
+        assertEquals(listOf(1000.0, 4000.0, 6000.0), out.map { it.atM })
+        assertEquals(3, out.first().count)
+    }
+
+    @Test fun `the plan keeps stops and detour points in travel order`() {
+        val a = LatLng(1.0, 1.0); val b = LatLng(2.0, 2.0); val v = LatLng(9.0, 9.0)
+        // Stop a at 500 m, stop b with no position on the line, a via at 2 km: a, via, b? No: b's
+        // position is unknown and it comes after a, so it fills in past a and the via sorts by its own.
+        val plan = CameraDetour.mergePlan(listOf(500.0 to a, null to b), listOf(2000.0 to v))
+        assertEquals(listOf(a, b, v), plan)
+        val plan2 = CameraDetour.mergePlan(listOf(500.0 to a, 3000.0 to b), listOf(2000.0 to v))
+        assertEquals(listOf(a, v, b), plan2)
+        assertEquals(listOf(v), CameraDetour.mergePlan(emptyList(), listOf(2000.0 to v)))
+    }
+
+    @Test fun `an edited visible list gets the silent vias back where they were`() {
+        // A drive with stops A (1 km) and B (5 km) and a detour via at 3 km; the user removes A
+        // and adds C, which is not on the current route: the via stays between what remains.
+        val merged = CameraDetour.mergeOrdered(listOf(5000.0 to "B", null to "C"), listOf(3000.0 to "via"))
+        assertEquals(listOf("via", "B", "C"), merged)
+    }
+
+    @Test fun `the camera choice leads with the lightest route inside the cap and never over it`() {
+        val o = { c: Int, eta: Double -> CameraDetour.Option(c, eta) }
+        // Fewest cameras wins, ties go to the faster one.
+        assertEquals(2, CameraDetour.choose(listOf(o(3, 1000.0), o(1, 1150.0), o(1, 1100.0)), 1000.0, 250.0))
+        // The lighter route is over the cap: the leader stays.
+        assertEquals(null, CameraDetour.choose(listOf(o(3, 1000.0), o(0, 1300.0)), 1000.0, 250.0))
+        // Nothing beats the leader on cameras: the leader stays, even when something is faster.
+        assertEquals(null, CameraDetour.choose(listOf(o(1, 1000.0), o(1, 900.0), o(2, 800.0)), 1000.0, 250.0))
+        assertEquals(null, CameraDetour.choose(emptyList(), 1000.0, 250.0))
+    }
+
+    @Test fun `a cluster already tried from another route is not tried again`() {
+        val cands = CameraDetour.candidates(north, listOf(1000.0, 4000.0))
+        // The first cluster's corner, reached 30 m off along the road, counts as tried; the second does not.
+        val tried = listOf(LatLng(38.5 + 1030.0 / 111_320.0, -121.7))
+        val left = CameraDetour.untried(cands, tried)
+        assertEquals(listOf(4000.0), left.map { it.atM })
+        assertEquals(2, CameraDetour.untried(cands, emptyList()).size)
+    }
+
+    // The counting rule is Android's FlockCameras.along (45 m, direction-aware), mirrored here so
+    // the two apps badge the same route with the same number.
+    @Test fun `only cameras on the road and facing it count`() {
+        val onRoad = AlprCamera(LatLng(38.52, -121.7))
+        val acrossTheRoad = AlprCamera(LatLng(38.53, -121.7), direction = "90")
+        val facingNorth = AlprCamera(LatLng(38.54, -121.7), direction = "0")
+        val oneBlockOver = AlprCamera(LatLng(38.55, -121.7 + 60.0 / (111_320.0 * 0.78)))
+        val all = listOf(onRoad, acrossTheRoad, facingNorth, oneBlockOver)
+        assertEquals(listOf(onRoad, facingNorth), CameraDetour.onRoute(north, all).map { it.camera })
+        assertEquals(2, CameraDetour.count(north, all))
+        // The distance along the route travels with the camera, as the side-street pass needs it.
+        val at = CameraDetour.onRoute(north, listOf(onRoad)).single().atM
+        assertEquals(38.52 - 38.5, at / 111_320.0, 0.001)
+    }
+
+    @Test fun `the detour cap is a quarter capped at ten minutes`() {
+        assertEquals(250.0, CameraDetour.cap(1000.0), 0.001)
+        assertEquals(600.0, CameraDetour.cap(10_000.0), 0.001)
+        assertEquals(2.5, CameraDetour.cap(10.0), 0.001)
+    }
+
+    @Test fun `the chosen route leads the list with the rest keeping their order`() {
+        assertEquals(listOf("b", "a", "c"), CameraDetour.lead(listOf("a", "b", "c"), 1))
+        assertEquals(listOf("a", "b", "c"), CameraDetour.lead(listOf("a", "b", "c"), 0))
+        assertEquals(listOf("a", "b", "c"), CameraDetour.lead(listOf("a", "b", "c"), 9))
+    }
+
+    @Test fun `a router that hands back the same road is recognised as the same route`() {
+        assertTrue(CameraDetour.sameRoute(north, north))
+        // Re-snapped vertices of the same road: a few meters off, still the same line.
+        val resnapped = north.map { LatLng(it.lat + 0.00002, it.lng + 0.00002) }
+        assertTrue(CameraDetour.sameRoute(north, resnapped))
+        // A side street 150 m over is a real detour, not the same road.
+        val detour = north.map { LatLng(it.lat, it.lng + 150.0 / (111_320.0 * 0.78)) }
+        assertTrue(!CameraDetour.sameRoute(north, detour))
+    }
+}
