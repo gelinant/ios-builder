@@ -1,0 +1,406 @@
+tag=merge-1109-20261109-103113-24812 src=src/merge-1109 996a39a src: 35ce349c Merge branch 'ios/camera-fit' into ios/main
+ProductName:		macOS ProductVersion:		26.7.2 BuildVersion:		25G332 
+Xcode 26.6 Build version 17F113 
+commit: 996a39a src: 35ce349c Merge branch 'ios/camera-fit' into ios/main
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202611091032 (1794220373)
+java: openjdk version "17.0.21" 2026-10-20
+
+== Notices (10:32:53)
+notices: ok, 39 entries (7 libraries, 31 data sources)
+
+== Kotlin: tests and the VelaCore framework (10:32:54)
+gradle: ok in 741 s
+kotlin jvmTest: 687 tests, 0 failures
+kotlin iosSimulatorArm64Test: 575 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87857120 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55511248 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (10:45:16)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 30.3M  100 30.3M    0     0  40.6M      0 --:--:-- --:--:-- --:--:-- 40.6M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (10:45:18)
+string catalog: 2174 keys, 24 resource locales (24 with translations), 38641 localized values, 1057 Swift references, 24 picker languages
+
+== XcodeGen (10:45:21)
+xcodegen: Version: 2.46.0
+
+== Generate the project (10:45:22)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (10:45:23)
+  SWCompression: https://github.com/tsolomko/SWCompression @ 4.9.1
+
+resolved source packages: BitByteData, SWCompression
+(resolve: 22 s)
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+
+== Pick a simulator (10:45:45)
+simulator: iPhone 17 (23C8F95C-765D-46A9-AE82-0BEE2921C8D7) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (73903A6E-DECF-4552-ADBB-B4B1F348F51F) (Shutdown) 
+
+== Build for the simulator (10:45:47)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 143 s)
+simulator build: ok
+
+== Boot the simulator (10:48:10)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (10:51:29)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 142 s)
+tests: ok, Executed 209 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.54 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=navigate_to_coffee samples=18948
+VOICE_ASR_PLAN action=navigate query=coffee
+VOICE_SYNTH samples=56599 rate=22050 wav_frames=56599
+
+== Launch and screenshot (10:53:51)
+app.vela.ios: 36132
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 5B1BF6C1-C572-4572-BC9A-11439FFC6954 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (10:54:33)
+xcodebuild uitest failed after 487 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TransitActivityTests.swift:163: error: -[VelaUITests.TransitActivityTests testTransitOptionsChangeTheDepartureAndVehicles] : XCTAssertGreaterThanOrEqual failed: ("0") is less than ("1") - no transit trip
+Test Case '-[VelaUITests.TransitActivityTests testTransitOptionsChangeTheDepartureAndVehicles]' failed (43.349 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TransitGoUITests.swift:274: error: -[VelaUITests.TransitGoUITests testGoMapFramesUserAndTargetWithEstimatedVehicles] : Failed to unable to perform Swipe up on "transit-go-action" StaticText: visible frame is empty, which may happen if the element is offscreen.
+Test Case '-[VelaUITests.TransitGoUITests testGoMapFramesUserAndTargetWithEstimatedVehicles]' failed (23.551 seconds).
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TransitGoUITests.swift:214: error: -[VelaUITests.TransitGoUITests testGoStepsMoveTheSessionAndItsActivity] : XCTAssertTrue failed - the session did not follow GO's Next
+Test Case '-[VelaUITests.TransitGoUITests testGoStepsMoveTheSessionAndItsActivity]' failed (25.512 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =    15.62s Checking existence of `"transit-go-debug" StaticText`
+    t =    15.67s Find the "transit-go-debug" StaticText
+    t =    15.72s Checking existence of `"transit-go-debug" StaticText`
+    t =    15.81s Find the "transit-go-debug" StaticText
+    t =    15.90s Checking existence of `"transit-go-debug" StaticText`
+    t =    16.05s Find the "transit-go-debug" StaticText
+UITEST go_cues_replayed=0
+    t =    16.11s Tap "transit-go-next" Button
+    t =    16.11s     Wait for app.vela.ios to idle
+    t =    16.12s     Find the "transit-go-next" Button
+    t =    16.19s     Check for interrupting elements affecting "transit-go-next" Button
+    t =    16.26s     Synthesize event
+    t =    16.65s     Wait for app.vela.ios to idle
+    t =    16.66s Tap "transit-go-next" Button
+    t =    16.66s     Wait for app.vela.ios to idle
+    t =    16.67s     Find the "transit-go-next" Button
+    t =    16.72s     Check for interrupting elements affecting "transit-go-next" Button
+    t =    16.78s     Synthesize event
+    t =    17.12s     Wait for app.vela.ios to idle
+    t =    17.13s Checking existence of `"transit-go-debug" StaticText`
+    t =    17.21s Find the "transit-go-debug" StaticText
+    t =    17.27s Checking existence of `"transit-go-debug" StaticText`
+    t =    17.33s Find the "transit-go-debug" StaticText
+    t =    17.40s Find the "transit-go-next" Button
+UITEST go_step=done
+    t =    17.44s Tap "transit-go-previous" Button
+    t =    17.44s     Wait for app.vela.ios to idle
+    t =    17.44s     Find the "transit-go-previous" Button
+    t =    17.51s     Check for interrupting elements affecting "transit-go-previous" Button
+    t =    17.56s     Synthesize event
+    t =    17.87s     Wait for app.vela.ios to idle
+    t =    17.87s Checking existence of `"transit-go-debug" StaticText`
+    t =    17.94s Find the "transit-go-debug" StaticText
+    t =    17.99s Checking existence of `"transit-go-debug" StaticText`
+    t =    18.08s Find the "transit-go-debug" StaticText
+UITEST go_step=transfer
+    t =    18.35s Added attachment named 'transit-go-steps'
+    t =    18.35s Tear Down
+Test Case '-[VelaUITests.TransitGoUITests testPreviousAndNextStepThroughTheTrip]' passed (18.642 seconds).
+Test Suite 'TransitGoUITests' failed at 2026-11-09 11:01:52.098.
+	 Executed 5 tests, with 2 failures (0 unexpected) in 116.299 (116.302) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-11-09 11:01:52.099.
+	 Executed 13 tests, with 3 failures (0 unexpected) in 386.262 (386.277) seconds
+Test Suite 'Selected tests' failed at 2026-11-09 11:01:52.099.
+	 Executed 13 tests, with 3 failures (0 unexpected) in 386.262 (386.278) seconds
+2026-11-09 11:02:36.014 xcodebuild[37148:102458] [MT] IDETestOperationsObserverDebug: 459.711 elapsed -- Testing started completed.
+2026-11-09 11:02:36.024 xcodebuild[37148:102458] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-11-09 11:02:36.030 xcodebuild[37148:102458] [MT] IDETestOperationsObserverDebug: 459.711 sec, +459.711 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/h5/t85nd63d71x27_8gl5gw3l_w0000gn/T/tmp.WLIlNBEq4b/uitest.xcresult
+
+Failing tests:
+	TransitActivityTests.testTransitOptionsChangeTheDepartureAndVehicles()
+	TransitGoUITests.testGoMapFramesUserAndTargetWithEstimatedVehicles()
+	TransitGoUITests.testGoStepsMoveTheSessionAndItsActivity()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui CameraFitUITests.testSearchFramesTheCityAndTheRouteFitsBothEnds: passed (101.182 seconds)
+ui LaunchUITests.testLaunchShowsTheMapOverSanFrancisco: passed (23.525 seconds)
+ui LaunchUITests.testStartCameraArgumentMovesTheMapToDavis: passed (16.766 seconds)
+ui TransitActivityTests.testFixtureStartsAdvancesAndEnds: passed (23.882 seconds)
+ui TransitActivityTests.testOfflineBoardShowsCachedDepartures: passed (17.942 seconds)
+ui TransitActivityTests.testStopBoardShowsDeparturesAndRefreshes: passed (21.128 seconds)
+ui TransitActivityTests.testTransitOptionsChangeTheDepartureAndVehicles: failed (43.349 seconds)
+ui TransitActivityTests.testWalkingLegShowsTurnByTurn: passed (22.189 seconds)
+ui TransitGoUITests.testGoMapFramesUserAndTargetWithEstimatedVehicles: failed (23.551 seconds)
+ui TransitGoUITests.testGoModeCuesAndRail: passed (20.926 seconds)
+ui TransitGoUITests.testGoStepsMoveTheSessionAndItsActivity: failed (25.512 seconds)
+ui TransitGoUITests.testLeaveLaterAnchorsOnTheBoardOrSaysItCannot: passed (27.667 seconds)
+ui TransitGoUITests.testPreviousAndNextStepThroughTheTrip: passed (18.642 seconds)
+scripts/ios/ci-ipa.sh: line 286: 37146 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui camera_fit_alternate=0
+ui camera_fit_route=fit=route|fit_points=2|fit_inside=2|fit_zoom=7.23|fit_pitch=0|fit_bearing=0|fit_center=38.3998,-121.9569|fit_count=3|fit_settled=1
+ui camera_fit_search_km=0
+ui camera_fit_search_zoom=12.0
+ui camera_fit_search=fit=search_area|fit_points=1|fit_inside=1|fit_zoom=12.00|fit_pitch=0|fit_bearing=0|fit_center=38.5781,-121.4944|fit_type=none|fit_count=1|fit_settled=1
+ui camera_fit_transit=fit=route|fit_points=10|fit_inside=10|fit_zoom=7.06|fit_pitch=0|fit_bearing=0|fit_center=38.3895,-121.8484|fit_count=5|fit_settled=1
+ui go_anchor=board
+ui go_anchor=now
+ui go_cue=none
+ui go_cue=stop
+ui go_cues_replayed=0
+ui go_dots=1
+ui go_estimated=0
+ui go_estimated=1
+ui go_fallback_notice=0
+ui go_fallback_notice=1
+ui go_held=1
+ui go_lines=1
+ui go_map_fit=1
+ui go_map_target=alight
+ui go_map_user=1
+ui go_step_previous_label=Previous
+ui go_step=done
+ui go_step=ride
+ui go_step=transfer
+ui go_step=wait
+ui go_step=walk
+ui go_vehicles=2
+ui go_web_error=-
+ui go_web_errors=0
+ui map_element=yes
+ui transit_activity_updates=2
+ui transit_activity=started_updated_ended
+ui transit_board_after_refresh=50
+ui transit_board_departures=50
+ui transit_board_error=none
+ui transit_board_lines=4
+ui transit_board_live=0
+ui transit_board_offline_departures=5
+ui transit_board_offline=1
+ui transit_board_soon=11
+ui transit_end=restored
+ui transit_go_degraded=offline=1
+ui transit_next_leg=1
+ui transit_options_trips_before=0
+ui transit_start_leg=0
+ui transit_stops_remaining=4
+ui transit_walk_instructions=2
+ui transit_walk_named=1
+ui transit_walk_prompts=1
+ui transit_walk_source=steps
+ui transit_walk=guidance
+ui screenshots: launch-davis.png launch-sf.png transit-board.png 
+
+== Route replay (11:02:46)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 5B1BF6C1-C572-4572-BC9A-11439FFC6954 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 5B1BF6C1-C572-4572-BC9A-11439FFC6954 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: details: nothing
+place load: details: page raw=0 parsed=false times=false
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=26372 parsed=true times=false
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (11:04:27)
+246502
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 28951 bytes
+open reply: transit-plan-sf 92156 bytes
+directions reply: directions-drive-sf 125574 bytes
+directions reply: directions-walk-sf 44469 bytes
+search reply: 246502 bytes, 29 feature ids
+
+== Archive for iOS devices, unsigned (11:04:31)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** ARCHIVE SUCCEEDED **
+
+(archive: 210 s)
+
+== Package the IPA (11:08:01)
+ipa: Vela-unsigned.ipa 24315073 bytes ( 23M)
+app frameworks: SherpaOnnxC.framework 
+app binary: arm64, 27549640 bytes
+live activity extension: PlugIns/NavActivityExtension.appex present in IPA, 226408 bytes
+extension plist CFBundleIdentifier: app.vela.ios.navactivity
+extension plist NSExtensionPointIdentifier: com.apple.widgetkit-extension
+extension signing: none
+kotlin code in the device binary: yes
+plist CFBundleIdentifier: app.vela.ios
+plist CFBundleDisplayName: Vela
+plist CFBundleShortVersionString: 0.1.202611091032
+plist MinimumOSVersion: 17.0
+plist UIBackgroundModes: ["location","audio"]
+plist NSSupportsLiveActivities: true
+
+== Summary
+commit: 996a39a src: 35ce349c Merge branch 'ios/camera-fit' into ios/main
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202611091032 (1794220373)
+java: openjdk version "17.0.21" 2026-10-20
+notices: ok, 39 entries (7 libraries, 31 data sources)
+gradle: ok in 741 s
+kotlin jvmTest: 687 tests, 0 failures
+kotlin iosSimulatorArm64Test: 575 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87857120 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55511248 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 2174 keys, 24 resource locales (24 with translations), 38641 localized values, 1057 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+simulator: iPhone 17 (23C8F95C-765D-46A9-AE82-0BEE2921C8D7) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (73903A6E-DECF-4552-ADBB-B4B1F348F51F) (Shutdown) 
+simulator build: ok
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+tests: ok, Executed 209 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.54 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=navigate_to_coffee samples=18948
+VOICE_ASR_PLAN action=navigate query=coffee
+VOICE_SYNTH samples=56599 rate=22050 wav_frames=56599
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: FAILED
+ui CameraFitUITests.testSearchFramesTheCityAndTheRouteFitsBothEnds: passed (101.182 seconds)
+ui LaunchUITests.testLaunchShowsTheMapOverSanFrancisco: passed (23.525 seconds)
+ui LaunchUITests.testStartCameraArgumentMovesTheMapToDavis: passed (16.766 seconds)
+ui TransitActivityTests.testFixtureStartsAdvancesAndEnds: passed (23.882 seconds)
+ui TransitActivityTests.testOfflineBoardShowsCachedDepartures: passed (17.942 seconds)
+ui TransitActivityTests.testStopBoardShowsDeparturesAndRefreshes: passed (21.128 seconds)
+ui TransitActivityTests.testTransitOptionsChangeTheDepartureAndVehicles: failed (43.349 seconds)
+ui TransitActivityTests.testWalkingLegShowsTurnByTurn: passed (22.189 seconds)
+ui TransitGoUITests.testGoMapFramesUserAndTargetWithEstimatedVehicles: failed (23.551 seconds)
+ui TransitGoUITests.testGoModeCuesAndRail: passed (20.926 seconds)
+ui TransitGoUITests.testGoStepsMoveTheSessionAndItsActivity: failed (25.512 seconds)
+ui TransitGoUITests.testLeaveLaterAnchorsOnTheBoardOrSaysItCannot: passed (27.667 seconds)
+ui TransitGoUITests.testPreviousAndNextStepThroughTheTrip: passed (18.642 seconds)
+ui camera_fit_alternate=0
+ui camera_fit_route=fit=route|fit_points=2|fit_inside=2|fit_zoom=7.23|fit_pitch=0|fit_bearing=0|fit_center=38.3998,-121.9569|fit_count=3|fit_settled=1
+ui camera_fit_search_km=0
+ui camera_fit_search_zoom=12.0
+ui camera_fit_search=fit=search_area|fit_points=1|fit_inside=1|fit_zoom=12.00|fit_pitch=0|fit_bearing=0|fit_center=38.5781,-121.4944|fit_type=none|fit_count=1|fit_settled=1
+ui camera_fit_transit=fit=route|fit_points=10|fit_inside=10|fit_zoom=7.06|fit_pitch=0|fit_bearing=0|fit_center=38.3895,-121.8484|fit_count=5|fit_settled=1
+ui go_anchor=board
+ui go_anchor=now
+ui go_cue=none
+ui go_cue=stop
+ui go_cues_replayed=0
+ui go_dots=1
+ui go_estimated=0
+ui go_estimated=1
+ui go_fallback_notice=0
+ui go_fallback_notice=1
+ui go_held=1
+ui go_lines=1
+ui go_map_fit=1
+ui go_map_target=alight
+ui go_map_user=1
+ui go_step_previous_label=Previous
+ui go_step=done
+ui go_step=ride
+ui go_step=transfer
+ui go_step=wait
+ui go_step=walk
+ui go_vehicles=2
+ui go_web_error=-
+ui go_web_errors=0
+ui map_element=yes
+ui transit_activity_updates=2
+ui transit_activity=started_updated_ended
+ui transit_board_after_refresh=50
+ui transit_board_departures=50
+ui transit_board_error=none
+ui transit_board_lines=4
+ui transit_board_live=0
+ui transit_board_offline_departures=5
+ui transit_board_offline=1
+ui transit_board_soon=11
+ui transit_end=restored
+ui transit_go_degraded=offline=1
+ui transit_next_leg=1
+ui transit_options_trips_before=0
+ui transit_start_leg=0
+ui transit_stops_remaining=4
+ui transit_walk_instructions=2
+ui transit_walk_named=1
+ui transit_walk_prompts=1
+ui transit_walk_source=steps
+ui transit_walk=guidance
+ui screenshots: launch-davis.png launch-sf.png transit-board.png 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: details: nothing
+place load: details: page raw=0 parsed=false times=false
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=26372 parsed=true times=false
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 28951 bytes
+open reply: transit-plan-sf 92156 bytes
+directions reply: directions-drive-sf 125574 bytes
+directions reply: directions-walk-sf 44469 bytes
+search reply: 246502 bytes, 29 feature ids
+ipa: Vela-unsigned.ipa 24315073 bytes ( 23M)
+app frameworks: SherpaOnnxC.framework 
+app binary: arm64, 27549640 bytes
+live activity extension: PlugIns/NavActivityExtension.appex present in IPA, 226408 bytes
+extension plist CFBundleIdentifier: app.vela.ios.navactivity
+extension plist NSExtensionPointIdentifier: com.apple.widgetkit-extension
+extension signing: none
+kotlin code in the device binary: yes
+plist CFBundleIdentifier: app.vela.ios
+plist CFBundleDisplayName: Vela
+plist CFBundleShortVersionString: 0.1.202611091032
+plist MinimumOSVersion: 17.0
+plist UIBackgroundModes: ["location","audio"]
+plist NSSupportsLiveActivities: true
+failed steps: ui-scenarios
