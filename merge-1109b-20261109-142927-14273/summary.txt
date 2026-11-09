@@ -1,0 +1,176 @@
+commit: a23d500 src: a19ba33c iOS transit trips test: two whole rows before any scroll, the fifth after a scroll
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202611091430 (1794234653)
+java: openjdk version "17.0.21" 2026-10-20
+notices: ok, 39 entries (7 libraries, 31 data sources)
+gradle: ok in 818 s
+kotlin jvmTest: 697 tests, 0 failures
+kotlin iosSimulatorArm64Test: 585 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  90M, static library 87923760 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55582720 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 2178 keys, 24 resource locales (24 with translations), 38645 localized values, 1063 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+simulator: iPhone 17 (23C8F95C-765D-46A9-AE82-0BEE2921C8D7) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (73903A6E-DECF-4552-ADBB-B4B1F348F51F) (Shutdown) 
+simulator build: ok
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+tests: ok, Executed 209 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=18576
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=57856 rate=22050 wav_frames=57856
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: FAILED
+ui CameraFitUITests.testSearchFramesTheCityAndTheRouteFitsBothEnds: failed (116.814 seconds)
+ui LaunchUITests.testLaunchShowsTheMapOverSanFrancisco: passed (32.363 seconds)
+ui LaunchUITests.testStartCameraArgumentMovesTheMapToDavis: passed (23.910 seconds)
+ui TransitActivityTests.testFixtureStartsAdvancesAndEnds: passed (34.646 seconds)
+ui TransitActivityTests.testOfflineBoardShowsCachedDepartures: passed (23.089 seconds)
+ui TransitActivityTests.testStopBoardShowsDeparturesAndRefreshes: passed (22.780 seconds)
+ui TransitActivityTests.testTransitOptionsChangeTheDepartureAndVehicles: passed (48.622 seconds)
+ui TransitActivityTests.testWalkingLegShowsTurnByTurn: passed (20.627 seconds)
+ui TransitCitymapperUITests.testLiveTripScreenWhenTheFeedAnswers: passed (68.249 seconds)
+ui TransitCitymapperUITests.testNearbyLinesTabListsTheStopsLines: passed (25.670 seconds)
+ui TransitCitymapperUITests.testSegmentTimeChangeShowsANewOptionSet: passed (35.433 seconds)
+ui TransitCitymapperUITests.testSingleTransitShellTabsAndSelection: passed (25.332 seconds)
+ui TransitCitymapperUITests.testSkipLetsTheRunPassAndAdvancesTheHeader: passed (22.534 seconds)
+ui TransitCitymapperUITests.testTripScreenShowsSegmentCardsAndNextDepartures: passed (24.007 seconds)
+ui TransitGoUITests.testGoMapFramesUserAndTargetWithEstimatedVehicles: passed (24.282 seconds)
+ui TransitGoUITests.testGoModeCuesAndRail: passed (24.168 seconds)
+ui TransitGoUITests.testGoStepsMoveTheSessionAndItsActivity: passed (23.420 seconds)
+ui TransitGoUITests.testLeaveLaterAnchorsOnTheBoardOrSaysItCannot: passed (29.168 seconds)
+ui TransitGoUITests.testPreviousAndNextStepThroughTheTrip: passed (21.313 seconds)
+ui TransitTripsUITests.testSeveralTripsAndTheSecondFeedsGo: passed (103.282 seconds)
+ui camera_fit_alternate=0
+ui camera_fit_route=fit=route|fit_points=2|fit_inside=2|fit_zoom=6.65|fit_pitch=0|fit_bearing=0|fit_center=38.4440,-121.9569|fit_count=3|fit_settled=1
+ui camera_fit_search_km=0
+ui camera_fit_search_zoom=12.0
+ui camera_fit_search=fit=search_area|fit_points=1|fit_inside=1|fit_zoom=12.00|fit_pitch=0|fit_bearing=0|fit_center=38.5781,-121.4944|fit_type=none|fit_count=1|fit_settled=1
+ui go_activity=updates=4
+ui go_anchor=board
+ui go_anchor=now
+ui go_cue=none
+ui go_cue=stop
+ui go_cues_replayed=0
+ui go_dots=1
+ui go_estimated=0
+ui go_estimated=1
+ui go_fallback_notice=0
+ui go_fallback_notice=1
+ui go_held=1
+ui go_lines=1
+ui go_map_fit=1
+ui go_map_recenter=1
+ui go_map_step_refit=1
+ui go_map_steps_pinned=1
+ui go_map_target=alight
+ui go_map_user=1
+ui go_session=leg=1
+ui go_step_previous_label=Previous
+ui go_step=done
+ui go_step=ride
+ui go_step=transfer
+ui go_step=wait
+ui go_step=walk
+ui go_vehicles=2
+ui go_web_error=-
+ui go_web_errors=0
+ui map_element=yes
+ui transit_activity_updates=2
+ui transit_activity=started_updated_ended
+ui transit_board_after_refresh=50
+ui transit_board_departures=50
+ui transit_board_error=none
+ui transit_board_lines=2
+ui transit_board_live=0
+ui transit_board_offline_departures=5
+ui transit_board_offline=1
+ui transit_board_soon=7
+ui transit_end=restored
+ui transit_go_degraded=offline=1
+ui transit_next_leg=1
+ui transit_options_epoch=1794237600
+ui transit_options_origin=link
+ui transit_options_pref=0
+ui transit_options_rail_result=empty
+ui transit_options_time_mode=1
+ui transit_options_train=1
+ui transit_options_trips_after_filters=0
+ui transit_options_trips_after_time=5
+ui transit_options_trips_before=5
+ui transit_options_vehicle_filter=applied
+ui transit_shell_selection=1
+ui transit_shell_tabs=3
+ui transit_start_leg=0
+ui transit_stops_remaining=4
+ui transit_trip_fixture=1
+ui transit_trip_header_after_skip=3
+ui transit_trip_header_before_skip=4
+ui transit_trip_header=4
+ui transit_trip_live_available=1
+ui transit_trip_live_header=4
+ui transit_trip_live_segments=10
+ui transit_trip_nearby_lines=3
+ui transit_trip_nearby_rows=3
+ui transit_trip_option_rows=2
+ui transit_trip_rides=1
+ui transit_trip_segments=4
+ui transit_trip_shift_options=2
+ui transit_trip_shift_query=Depart
+ui transit_trip_skip_options=2
+ui transit_trip=segments_and_header
+ui transit_walk_instructions=2
+ui transit_walk_named=1
+ui transit_walk_prompts=1
+ui transit_walk_source=steps
+ui transit_walk=guidance
+ui trips_feed_colors=8
+ui trips_go_lines=Yellow-N,14R
+ui trips_leg=Yellow-N,_Yellow-N,_towards_Antioch,_4:31_PM__24th_Street_/_Mission,_5_stops_·_9_min_·_Scheduled,_4:40_PM__Embarcadero_BART
+ui trips_live=2
+ui trips_refit=1
+ui trips_rides=8
+ui trips_rows=5
+ui trips_whole_rows=2
+ui screenshots: launch-davis.png launch-sf.png transit-board.png transit-options.png 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: details: nothing
+place load: details: page raw=15483 parsed=true times=false
+place load: photos: rpc 0
+place load: details: nothing
+place load: details: page raw=0 parsed=false times=false
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=0 parsed=false times=false
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 28951 bytes
+open reply: transit-plan-sf 76219 bytes
+directions reply: directions-drive-sf 127094 bytes
+directions reply: directions-walk-sf 34500 bytes
+search reply: 262753 bytes, 34 feature ids
+ipa: Vela-unsigned.ipa 24352824 bytes ( 23M)
+app frameworks: SherpaOnnxC.framework 
+app binary: arm64, 27615416 bytes
+live activity extension: PlugIns/NavActivityExtension.appex present in IPA, 226408 bytes
+extension plist CFBundleIdentifier: app.vela.ios.navactivity
+extension plist NSExtensionPointIdentifier: com.apple.widgetkit-extension
+extension signing: none
+kotlin code in the device binary: yes
+plist CFBundleIdentifier: app.vela.ios
+plist CFBundleDisplayName: Vela
+plist CFBundleShortVersionString: 0.1.202611091430
+plist MinimumOSVersion: 17.0
+plist UIBackgroundModes: ["location","audio"]
+plist NSSupportsLiveActivities: true
+failed steps: ui-scenarios
