@@ -1,0 +1,17 @@
+commit: 4c921ea src: 3bac60e3 iOS transit chooser: trip rows with colored line pills, mode symbols, times, transfers and unfolding legs
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202611091120 (1794223234)
+java: openjdk version "17.0.21" 2026-10-20
+notices: ok, 39 entries (7 libraries, 31 data sources)
+gradle: ok in 512 s
+kotlin jvmTest: 697 tests, 0 failures
+kotlin iosSimulatorArm64Test: 585 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  90M, static library 87923760 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55582720 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 2178 keys, 24 resource locales (24 with translations), 38645 localized values, 1063 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+simulator: iPhone 17 (23C8F95C-765D-46A9-AE82-0BEE2921C8D7) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (73903A6E-DECF-4552-ADBB-B4B1F348F51F) (Shutdown) 
