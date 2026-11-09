@@ -1,0 +1,88 @@
+commit: 5501f2c src: fcbe1525 iOS Mapbox: ship the Vela public token in every build, the IPA included
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202611091422 (1794234127)
+java: openjdk version "17.0.21" 2026-10-20
+notices: ok, 40 entries (8 libraries, 31 data sources)
+gradle: ok in 546 s
+kotlin jvmTest: 687 tests, 0 failures
+kotlin iosSimulatorArm64Test: 575 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87857120 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55511248 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 2174 keys, 24 resource locales (24 with translations), 38641 localized values, 1057 Swift references, 24 picker languages
+mapbox_token=1 (committed)
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 mapbox-common-ios@24.34.2 mapbox-core-maps-ios@11.34.2 mapbox-maps-ios@11.34.2 swcompression@4.9.1 turf-swift@4.1.0
+simulator: iPhone 17 (23C8F95C-765D-46A9-AE82-0BEE2921C8D7) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (73903A6E-DECF-4552-ADBB-B4B1F348F51F) (Shutdown) 
+simulator build: ok
+debug app: 239632 KiB, frameworks: BitByteData_286D841A9215A038_PackageProduct.framework libXCTestBundleInject.dylib libXCTestSwiftSupport.dylib MapboxCommon.framework MapboxCoreMaps.framework SherpaOnnxC.framework SWCompression_24577EEF38A77749_PackageProduct.framework Testing.framework Turf.framework XCTAutomationSupport.framework XCTest.framework XCTestCore.framework XCTestSupport.framework XCUIAutomation.framework XCUnit.framework 
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+tests: ok, Executed 209 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=navigate_the_coffee samples=19691
+VOICE_ASR_PLAN action=search query=navigate the coffee
+VOICE_SYNTH samples=57635 rate=22050 wav_frames=57635
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: FAILED
+ui LaunchUITests.testLaunchShowsTheMapOverSanFrancisco: passed (42.441 seconds)
+ui LaunchUITests.testStartCameraArgumentMovesTheMapToDavis: passed (19.344 seconds)
+ui MapboxSpikeUITests.testMapboxSpikeOnTheFixtureCameras: failed (110.576 seconds)
+ui MapboxSpikeUITests.testWebMapOnTheSameCamerasAndFps: passed (124.018 seconds)
+ui map_element=yes
+ui mapbox_sdk=11.34.2
+ui mapbox_token=1
+ui webmap_fps_downtown_z16=1.5
+ui webmap_fps_twinpeaks_z15=1.0
+ui webmap_fps_twinpeaks_z17=3.5
+ui webmap_fps=1.0
+ui webmap_frames_downtown_z16=15
+ui webmap_frames_twinpeaks_z15=11
+ui webmap_frames_twinpeaks_z17=35
+ui webmap_frames=11
+ui webmap_settle_downtown_z16=settled
+ui webmap_settle_ms_downtown_z16=2577
+ui webmap_settle_ms_twinpeaks_z15=5356
+ui webmap_settle_ms_twinpeaks_z17=9668
+ui webmap_settle_twinpeaks_z15=settled
+ui webmap_settle_twinpeaks_z17=settled
+ui webmap_ticks_downtown_z16=16
+ui webmap_ticks_twinpeaks_z15=12
+ui webmap_ticks_twinpeaks_z17=36
+ui screenshots: launch-davis.png launch-sf.png webmap-downtown-z16.png webmap-fps-end.png webmap-twinpeaks-z15.png webmap-twinpeaks-z17.png 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 28951 bytes
+open reply: transit-plan-sf 69425 bytes
+directions reply: directions-drive-sf 113445 bytes
+directions reply: directions-walk-sf 35538 bytes
+search reply: 252819 bytes, 31 feature ids
+ipa: Vela-unsigned.ipa 36417090 bytes ( 35M)
+app frameworks: MapboxCommon.framework MapboxCoreMaps.framework SherpaOnnxC.framework Turf.framework 
+app binary: arm64, 31924680 bytes
+app bundle: 94680 KiB
+framework MapboxCommon.framework: 7904 KiB
+framework MapboxCoreMaps.framework: 15036 KiB
+framework SherpaOnnxC.framework: 25816 KiB
+framework Turf.framework: 368 KiB
+plist MBXAccessToken: set
+live activity extension: PlugIns/NavActivityExtension.appex present in IPA, 226408 bytes
+extension plist CFBundleIdentifier: app.vela.ios.navactivity
+extension plist NSExtensionPointIdentifier: com.apple.widgetkit-extension
+extension signing: none
+kotlin code in the device binary: yes
+plist CFBundleIdentifier: app.vela.ios
+plist CFBundleDisplayName: Vela
+plist CFBundleShortVersionString: 0.1.202611091422
+plist MinimumOSVersion: 17.0
+plist UIBackgroundModes: ["location","audio"]
+plist NSSupportsLiveActivities: true
+failed steps: ui-scenarios

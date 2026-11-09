@@ -1,0 +1,326 @@
+tag=mapbox-20261109-141958-24009 src=src/mapbox 5501f2c src: fcbe1525 iOS Mapbox: ship the Vela public token in every build, the IPA included
+ProductName:		macOS ProductVersion:		26.7.2 BuildVersion:		25G332 
+Xcode 26.6 Build version 17F113 
+commit: 5501f2c src: fcbe1525 iOS Mapbox: ship the Vela public token in every build, the IPA included
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202611091422 (1794234127)
+java: openjdk version "17.0.21" 2026-10-20
+
+== Notices (14:22:08)
+notices: ok, 40 entries (8 libraries, 31 data sources)
+
+== Kotlin: tests and the VelaCore framework (14:22:09)
+gradle: ok in 546 s
+kotlin jvmTest: 687 tests, 0 failures
+kotlin iosSimulatorArm64Test: 575 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87857120 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55511248 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (14:31:16)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 30.3M  100 30.3M    0     0  49.6M      0 --:--:-- --:--:-- --:--:-- 49.6M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (14:31:17)
+string catalog: 2174 keys, 24 resource locales (24 with translations), 38641 localized values, 1057 Swift references, 24 picker languages
+
+== Mapbox token (14:31:21)
+mapbox_token=1 (committed)
+
+== XcodeGen (14:31:21)
+xcodegen: Version: 2.46.0
+
+== Generate the project (14:31:21)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (14:31:21)
+  SWCompression: https://github.com/tsolomko/SWCompression @ 4.9.1
+
+resolved source packages: Turf, MapboxMaps, MapboxCoreMaps, BitByteData, MapboxCommon, SWCompression
+(resolve: 25 s)
+packages: bitbytedata@2.1.0 mapbox-common-ios@24.34.2 mapbox-core-maps-ios@11.34.2 mapbox-maps-ios@11.34.2 swcompression@4.9.1 turf-swift@4.1.0
+
+== Pick a simulator (14:31:46)
+simulator: iPhone 17 (23C8F95C-765D-46A9-AE82-0BEE2921C8D7) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (73903A6E-DECF-4552-ADBB-B4B1F348F51F) (Shutdown) 
+
+== Build for the simulator (14:31:49)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 208 s)
+simulator build: ok
+debug app: 239632 KiB, frameworks: BitByteData_286D841A9215A038_PackageProduct.framework libXCTestBundleInject.dylib libXCTestSwiftSupport.dylib MapboxCommon.framework MapboxCoreMaps.framework SherpaOnnxC.framework SWCompression_24577EEF38A77749_PackageProduct.framework Testing.framework Turf.framework XCTAutomationSupport.framework XCTest.framework XCTestCore.framework XCTestSupport.framework XCUIAutomation.framework XCUnit.framework 
+
+== Boot the simulator (14:35:17)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (14:39:19)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 157 s)
+tests: ok, Executed 209 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=navigate_the_coffee samples=19691
+VOICE_ASR_PLAN action=search query=navigate the coffee
+VOICE_SYNTH samples=57635 rate=22050 wav_frames=57635
+
+== Launch and screenshot (14:41:56)
+app.vela.ios: 33439
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 94AB2F96-F606-4D72-90D3-C7FA3A54B46D (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (14:42:44)
+xcodebuild uitest failed after 398 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/MapboxSpikeUITests.swift:36: error: -[VelaUITests.MapboxSpikeUITests testMapboxSpikeOnTheFixtureCameras] : XCTAssertTrue failed - the Standard style never loaded: token=1 sdk=11.34.2 style=0 style_ms=-1 loaded_ms=-1 terrain=0 elevation=- peak=0 camera=twinpeaks-z15 idle=0 errors=1 error=Failed_to_load_style_'mapbox://styles/mapbox/standard':_HTTP fps=-
+Test Case '-[VelaUITests.MapboxSpikeUITests testMapboxSpikeOnTheFixtureCameras]' failed (110.576 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =    87.34s Open app.vela.ios
+    t =    87.34s     Launch app.vela.ios
+2026-11-09 14:48:01.894 xcodebuild[34618:96754] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-11-09 14:48:01.894 xcodebuild[34618:96754] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =    89.60s         Setting up automation session
+    t =    93.45s         Wait for app.vela.ios to idle
+    t =    98.22s Waiting 60.0s for "search-field" TextField to exist
+    t =    99.22s     Checking `Expect predicate `existsNoRetry == 1` for object "search-field" TextField`
+    t =    99.23s         Checking existence of `"search-field" TextField`
+    t =   100.14s Waiting 10.0s for "map-fps-debug" StaticText to exist
+    t =   101.15s     Checking `Expect predicate `existsNoRetry == 1` for object "map-fps-debug" StaticText`
+    t =   101.15s         Checking existence of `"map-fps-debug" StaticText`
+    t =   102.00s Find the "map-fps-debug" StaticText
+    t =   102.93s Find the "map-fps-debug" StaticText
+    t =   104.07s Find the "map-fps-debug" StaticText
+    t =   105.06s Find the "map-fps-debug" StaticText
+    t =   105.71s Find the "map-fps-debug" StaticText
+    t =   107.08s Find the "map-fps-debug" StaticText
+    t =   107.70s Find the "map-fps-debug" StaticText
+UITEST webmap_settle_downtown_z16=settled
+UITEST webmap_settle_ms_downtown_z16=2577
+    t =   109.08s Added attachment named 'webmap-downtown-z16'
+    t =   109.11s Find the "map-fps-debug" StaticText
+    t =   110.01s Find the "map-fps-debug" StaticText
+    t =   110.74s Find the "map-fps-debug" StaticText
+    t =   111.55s Find the "map-fps-debug" StaticText
+    t =   112.56s Find the "map-fps-debug" StaticText
+    t =   113.83s Find the "map-fps-debug" StaticText
+    t =   114.80s Find the "map-fps-debug" StaticText
+    t =   115.63s Find the "map-fps-debug" StaticText
+    t =   116.98s Find the "map-fps-debug" StaticText
+    t =   118.43s Find the "map-fps-debug" StaticText
+    t =   119.47s Find the "map-fps-debug" StaticText
+    t =   121.21s Find the "map-fps-debug" StaticText
+    t =   121.85s Find the "map-fps-debug" StaticText
+UITEST webmap_fps_downtown_z16=1.5
+UITEST webmap_frames_downtown_z16=15
+UITEST webmap_ticks_downtown_z16=16
+    t =   122.34s Terminate app.vela.ios:44721
+    t =   123.38s Tear Down
+Test Case '-[VelaUITests.MapboxSpikeUITests testWebMapOnTheSameCamerasAndFps]' passed (124.018 seconds).
+Test Suite 'MapboxSpikeUITests' failed at 2026-11-09 14:48:37.170.
+	 Executed 2 tests, with 1 failure (0 unexpected) in 234.594 (234.602) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-11-09 14:48:37.173.
+	 Executed 4 tests, with 1 failure (0 unexpected) in 296.379 (296.398) seconds
+Test Suite 'Selected tests' failed at 2026-11-09 14:48:37.174.
+	 Executed 4 tests, with 1 failure (0 unexpected) in 296.379 (296.400) seconds
+2026-11-09 14:49:16.310 xcodebuild[34618:96754] [MT] IDETestOperationsObserverDebug: 365.914 elapsed -- Testing started completed.
+2026-11-09 14:49:16.311 xcodebuild[34618:96754] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-11-09 14:49:16.311 xcodebuild[34618:96754] [MT] IDETestOperationsObserverDebug: 365.914 sec, +365.914 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/h5/t85nd63d71x27_8gl5gw3l_w0000gn/T/tmp.Jpgw8pTA09/uitest.xcresult
+
+Failing tests:
+	MapboxSpikeUITests.testMapboxSpikeOnTheFixtureCameras()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+scripts/ios/ci-ipa.sh: line 306: 34615 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui LaunchUITests.testLaunchShowsTheMapOverSanFrancisco: passed (42.441 seconds)
+ui LaunchUITests.testStartCameraArgumentMovesTheMapToDavis: passed (19.344 seconds)
+ui MapboxSpikeUITests.testMapboxSpikeOnTheFixtureCameras: failed (110.576 seconds)
+ui MapboxSpikeUITests.testWebMapOnTheSameCamerasAndFps: passed (124.018 seconds)
+ui map_element=yes
+ui mapbox_sdk=11.34.2
+ui mapbox_token=1
+ui webmap_fps_downtown_z16=1.5
+ui webmap_fps_twinpeaks_z15=1.0
+ui webmap_fps_twinpeaks_z17=3.5
+ui webmap_fps=1.0
+ui webmap_frames_downtown_z16=15
+ui webmap_frames_twinpeaks_z15=11
+ui webmap_frames_twinpeaks_z17=35
+ui webmap_frames=11
+ui webmap_settle_downtown_z16=settled
+ui webmap_settle_ms_downtown_z16=2577
+ui webmap_settle_ms_twinpeaks_z15=5356
+ui webmap_settle_ms_twinpeaks_z17=9668
+ui webmap_settle_twinpeaks_z15=settled
+ui webmap_settle_twinpeaks_z17=settled
+ui webmap_ticks_downtown_z16=16
+ui webmap_ticks_twinpeaks_z15=12
+ui webmap_ticks_twinpeaks_z17=36
+ui screenshots: launch-davis.png launch-sf.png webmap-downtown-z16.png webmap-fps-end.png webmap-twinpeaks-z15.png webmap-twinpeaks-z17.png 
+
+== Route replay (14:49:25)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 94AB2F96-F606-4D72-90D3-C7FA3A54B46D (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 94AB2F96-F606-4D72-90D3-C7FA3A54B46D (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (14:50:53)
+252819
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 28951 bytes
+open reply: transit-plan-sf 69425 bytes
+directions reply: directions-drive-sf 113445 bytes
+directions reply: directions-walk-sf 35538 bytes
+search reply: 252819 bytes, 31 feature ids
+
+== Archive for iOS devices, unsigned (14:50:59)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** ARCHIVE SUCCEEDED **
+
+(archive: 312 s)
+
+== Package the IPA (14:56:11)
+ipa: Vela-unsigned.ipa 36417090 bytes ( 35M)
+app frameworks: MapboxCommon.framework MapboxCoreMaps.framework SherpaOnnxC.framework Turf.framework 
+app binary: arm64, 31924680 bytes
+app bundle: 94680 KiB
+framework MapboxCommon.framework: 7904 KiB
+framework MapboxCoreMaps.framework: 15036 KiB
+framework SherpaOnnxC.framework: 25816 KiB
+framework Turf.framework: 368 KiB
+plist MBXAccessToken: set
+live activity extension: PlugIns/NavActivityExtension.appex present in IPA, 226408 bytes
+extension plist CFBundleIdentifier: app.vela.ios.navactivity
+extension plist NSExtensionPointIdentifier: com.apple.widgetkit-extension
+extension signing: none
+kotlin code in the device binary: yes
+plist CFBundleIdentifier: app.vela.ios
+plist CFBundleDisplayName: Vela
+plist CFBundleShortVersionString: 0.1.202611091422
+plist MinimumOSVersion: 17.0
+plist UIBackgroundModes: ["location","audio"]
+plist NSSupportsLiveActivities: true
+
+== Summary
+commit: 5501f2c src: fcbe1525 iOS Mapbox: ship the Vela public token in every build, the IPA included
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202611091422 (1794234127)
+java: openjdk version "17.0.21" 2026-10-20
+notices: ok, 40 entries (8 libraries, 31 data sources)
+gradle: ok in 546 s
+kotlin jvmTest: 687 tests, 0 failures
+kotlin iosSimulatorArm64Test: 575 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87857120 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55511248 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 2174 keys, 24 resource locales (24 with translations), 38641 localized values, 1057 Swift references, 24 picker languages
+mapbox_token=1 (committed)
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 mapbox-common-ios@24.34.2 mapbox-core-maps-ios@11.34.2 mapbox-maps-ios@11.34.2 swcompression@4.9.1 turf-swift@4.1.0
+simulator: iPhone 17 (23C8F95C-765D-46A9-AE82-0BEE2921C8D7) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (73903A6E-DECF-4552-ADBB-B4B1F348F51F) (Shutdown) 
+simulator build: ok
+debug app: 239632 KiB, frameworks: BitByteData_286D841A9215A038_PackageProduct.framework libXCTestBundleInject.dylib libXCTestSwiftSupport.dylib MapboxCommon.framework MapboxCoreMaps.framework SherpaOnnxC.framework SWCompression_24577EEF38A77749_PackageProduct.framework Testing.framework Turf.framework XCTAutomationSupport.framework XCTest.framework XCTestCore.framework XCTestSupport.framework XCUIAutomation.framework XCUnit.framework 
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+tests: ok, Executed 209 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=navigate_the_coffee samples=19691
+VOICE_ASR_PLAN action=search query=navigate the coffee
+VOICE_SYNTH samples=57635 rate=22050 wav_frames=57635
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: FAILED
+ui LaunchUITests.testLaunchShowsTheMapOverSanFrancisco: passed (42.441 seconds)
+ui LaunchUITests.testStartCameraArgumentMovesTheMapToDavis: passed (19.344 seconds)
+ui MapboxSpikeUITests.testMapboxSpikeOnTheFixtureCameras: failed (110.576 seconds)
+ui MapboxSpikeUITests.testWebMapOnTheSameCamerasAndFps: passed (124.018 seconds)
+ui map_element=yes
+ui mapbox_sdk=11.34.2
+ui mapbox_token=1
+ui webmap_fps_downtown_z16=1.5
+ui webmap_fps_twinpeaks_z15=1.0
+ui webmap_fps_twinpeaks_z17=3.5
+ui webmap_fps=1.0
+ui webmap_frames_downtown_z16=15
+ui webmap_frames_twinpeaks_z15=11
+ui webmap_frames_twinpeaks_z17=35
+ui webmap_frames=11
+ui webmap_settle_downtown_z16=settled
+ui webmap_settle_ms_downtown_z16=2577
+ui webmap_settle_ms_twinpeaks_z15=5356
+ui webmap_settle_ms_twinpeaks_z17=9668
+ui webmap_settle_twinpeaks_z15=settled
+ui webmap_settle_twinpeaks_z17=settled
+ui webmap_ticks_downtown_z16=16
+ui webmap_ticks_twinpeaks_z15=12
+ui webmap_ticks_twinpeaks_z17=36
+ui screenshots: launch-davis.png launch-sf.png webmap-downtown-z16.png webmap-fps-end.png webmap-twinpeaks-z15.png webmap-twinpeaks-z17.png 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 28951 bytes
+open reply: transit-plan-sf 69425 bytes
+directions reply: directions-drive-sf 113445 bytes
+directions reply: directions-walk-sf 35538 bytes
+search reply: 252819 bytes, 31 feature ids
+ipa: Vela-unsigned.ipa 36417090 bytes ( 35M)
+app frameworks: MapboxCommon.framework MapboxCoreMaps.framework SherpaOnnxC.framework Turf.framework 
+app binary: arm64, 31924680 bytes
+app bundle: 94680 KiB
+framework MapboxCommon.framework: 7904 KiB
+framework MapboxCoreMaps.framework: 15036 KiB
+framework SherpaOnnxC.framework: 25816 KiB
+framework Turf.framework: 368 KiB
+plist MBXAccessToken: set
+live activity extension: PlugIns/NavActivityExtension.appex present in IPA, 226408 bytes
+extension plist CFBundleIdentifier: app.vela.ios.navactivity
+extension plist NSExtensionPointIdentifier: com.apple.widgetkit-extension
+extension signing: none
+kotlin code in the device binary: yes
+plist CFBundleIdentifier: app.vela.ios
+plist CFBundleDisplayName: Vela
+plist CFBundleShortVersionString: 0.1.202611091422
+plist MinimumOSVersion: 17.0
+plist UIBackgroundModes: ["location","audio"]
+plist NSSupportsLiveActivities: true
+failed steps: ui-scenarios
