@@ -1,0 +1,112 @@
+tag=merge-1109-20261109-112323-31492 src=src/merge-1109 44d9d21 src: 9be3a653 iOS GO: pin Previous and Next above the bottom controls, so the map and the action card cannot push them under the bar
+ProductName:		macOS ProductVersion:		26.7.2 BuildVersion:		25G332 
+Xcode 26.6 Build version 17F113 
+commit: 44d9d21 src: 9be3a653 iOS GO: pin Previous and Next above the bottom controls, so the map and the action card cannot push them under the bar
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202611091124 (1794223464)
+java: openjdk version "17.0.21" 2026-10-20
+
+== Notices (11:24:24)
+notices: ok, 39 entries (7 libraries, 31 data sources)
+
+== Kotlin: tests and the VelaCore framework (11:24:24)
+gradle: ok in 270 s
+kotlin jvmTest: 687 tests, 0 failures
+kotlin iosSimulatorArm64Test: 575 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  90M, static library 87857120 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55511248 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (11:28:54)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 30.3M  100 30.3M    0     0  49.4M      0 --:--:-- --:--:-- --:--:-- 49.4M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (11:28:55)
+string catalog: 2174 keys, 24 resource locales (24 with translations), 38641 localized values, 1057 Swift references, 24 picker languages
+
+== XcodeGen (11:28:57)
+xcodegen: Version: 2.46.0
+
+== Generate the project (11:28:57)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (11:28:57)
+  SWCompression: https://github.com/tsolomko/SWCompression @ 4.9.1
+
+resolved source packages: BitByteData, SWCompression
+(resolve: 8 s)
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+
+== Pick a simulator (11:29:05)
+simulator: iPhone 17 (23C8F95C-765D-46A9-AE82-0BEE2921C8D7) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (73903A6E-DECF-4552-ADBB-B4B1F348F51F) (Shutdown) 
+
+== Build for the simulator (11:29:06)
+xcodebuild build-sim failed after 23 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/CameraFit.swift:40:5: error: '@discardableResult' attribute cannot be applied to this declaration
+** TEST BUILD FAILED **
+--- tail of build-sim log ---
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/MapStyleBuilder.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/MapStyleImages.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/MapStyleSettings.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapTapRegistry.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/MapTileNetwork.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/MapView.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/MaritimeLayer.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Shared/NavActivityAttributes.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/LiveActivity/NavActivityController.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/LiveActivity/NavActivityState.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Nav/NavAlertTestSupport.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Nav/NavBannerTestSupport.swift (in target 'Vela' from project 'Vela')
+    cd /Users/runner/work/ios-builder/ios-builder/src/iosApp
+    
+
+SwiftCompile normal arm64 Compiling\ NavChrome.swift,\ NavHaptics.swift,\ NavLifecycle.swift,\ NavModel.swift,\ NavNotifications.swift,\ NavRenderTestSupport.swift,\ NavShield.swift,\ NavStopSheet.swift,\ NavVoice.swift,\ NotamLayer.swift,\ OSLogLog.swift,\ OfflineAreaView.swift,\ OfflineModel.swift,\ OfflineNetworkMonitor.swift,\ OfflineSheet.swift,\ OfflineStyleFactory.swift,\ OfflineTestSupport.swift,\ PaintedMarksLayer.swift,\ PerfOverlay.swift,\ PhotosWebFetcher.swift,\ PlaceBranchesView.swift,\ PlaceDictionary.swift,\ PlaceFuel.swift,\ PlaceKnowledgeSection.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Nav/NavChrome.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Nav/NavHaptics.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Nav/NavLifecycle.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Nav/NavModel.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Nav/NavNotifications.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Nav/NavRenderTestSupport.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Nav/NavShield.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Nav/NavStopSheet.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Nav/NavVoice.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/NotamLayer.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Platform/OSLogLog.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Offline/OfflineAreaView.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Offline/OfflineModel.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Offline/OfflineNetworkMonitor.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Offline/OfflineSheet.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Offline/OfflineStyleFactory.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Offline/OfflineTestSupport.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Map/Layers/PaintedMarksLayer.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Diagnostics/PerfOverlay.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Web/PhotosWebFetcher.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Search/PlaceBranchesView.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Voice/PlaceDictionary.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Place/PlaceFuel.swift /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vela/Place/PlaceKnowledgeSection.swift (in target 'Vela' from project 'Vela')
+
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD FAILED **
+
+
+The following build commands failed:
+	SwiftEmitModule normal arm64 Emitting\ module\ for\ Vela (in target 'Vela' from project 'Vela')
+	EmitSwiftModule normal arm64 (in target 'Vela' from project 'Vela')
+	Building project Vela for testing with scheme Vela
+(3 failures)
