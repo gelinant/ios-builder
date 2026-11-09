@@ -1,11 +1,11 @@
 Locales:
-  en      strings=2122 plurals=23 array_items=0
+  en      strings=2155 plurals=23 array_items=0
   ar      strings=601 plurals=0 array_items=0
   de      strings=1945 plurals=22 array_items=0
   en-GB   strings=600 plurals=0 array_items=0
   es      strings=1838 plurals=13 array_items=0
   et      strings=684 plurals=0 array_items=0
-  fr      strings=1938 plurals=14 array_items=0
+  fr      strings=1967 plurals=14 array_items=0
   hu      strings=1838 plurals=13 array_items=0
   it      strings=1895 plurals=15 array_items=0
   he      strings=1849 plurals=13 array_items=0
@@ -45,4 +45,4 @@ Warnings: 14
     - values/strings.xml layer_age_hours
     - values-fr/strings.xml layer_age_minutes
     - values-fr/strings.xml layer_age_hours
-Keys: 2145
+Keys: 2178

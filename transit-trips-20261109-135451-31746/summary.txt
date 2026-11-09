@@ -1,0 +1,88 @@
+commit: 4215076 src: a19ba33c iOS transit trips test: two whole rows before any scroll, the fifth after a scroll
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202611091356 (1794232581)
+java: openjdk version "17.0.21" 2026-10-20
+notices: ok, 39 entries (7 libraries, 31 data sources)
+gradle: ok in 797 s
+kotlin jvmTest: 697 tests, 0 failures
+kotlin iosSimulatorArm64Test: 585 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87923760 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55582720 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 2178 keys, 24 resource locales (24 with translations), 38645 localized values, 1063 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+simulator: iPhone 17 (23C8F95C-765D-46A9-AE82-0BEE2921C8D7) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (73903A6E-DECF-4552-ADBB-B4B1F348F51F) (Shutdown) 
+simulator build: ok
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+tests: ok, Executed 209 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.54 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=18948
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=55040 rate=22050 wav_frames=55040
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: ok
+ui TransitGoUITests.testGoMapFramesUserAndTargetWithEstimatedVehicles: passed (61.946 seconds)
+ui TransitGoUITests.testGoModeCuesAndRail: passed (32.735 seconds)
+ui TransitGoUITests.testGoStepsMoveTheSessionAndItsActivity: passed (45.179 seconds)
+ui TransitGoUITests.testLeaveLaterAnchorsOnTheBoardOrSaysItCannot: passed (48.776 seconds)
+ui TransitGoUITests.testPreviousAndNextStepThroughTheTrip: passed (37.742 seconds)
+ui TransitTripsUITests.testSeveralTripsAndTheSecondFeedsGo: passed (119.806 seconds)
+ui go_activity=updates=4
+ui go_anchor=board
+ui go_anchor=now
+ui go_cue=none
+ui go_cue=stop
+ui go_cues_replayed=0
+ui go_dots=1
+ui go_estimated=0
+ui go_estimated=1
+ui go_fallback_notice=0
+ui go_fallback_notice=1
+ui go_held=1
+ui go_lines=1
+ui go_map_fit=1
+ui go_map_recenter=1
+ui go_map_step_refit=1
+ui go_map_steps_pinned=1
+ui go_map_target=alight
+ui go_map_user=1
+ui go_session=leg=1
+ui go_step_previous_label=Previous
+ui go_step=done
+ui go_step=ride
+ui go_step=transfer
+ui go_step=wait
+ui go_step=walk
+ui go_vehicles=2
+ui go_web_error=-
+ui go_web_errors=0
+ui transit_go_degraded=offline=1
+ui trips_feed_colors=8
+ui trips_go_lines=Yellow-N,14R
+ui trips_leg=Yellow-N,_Yellow-N,_towards_Antioch,_4:31_PM__24th_Street_/_Mission,_5_stops_·_9_min_·_Scheduled,_4:40_PM__Embarcadero_BART
+ui trips_live=2
+ui trips_refit=1
+ui trips_rides=8
+ui trips_rows=5
+ui trips_whole_rows=2
+ui screenshots: 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=0 parsed=false times=false
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 28951 bytes
+open reply: transit-plan-sf 76260 bytes
+directions reply: directions-drive-sf 120362 bytes
+directions reply: directions-walk-sf 35534 bytes
+search reply: 251026 bytes, 32 feature ids
