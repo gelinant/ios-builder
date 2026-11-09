@@ -1,0 +1,139 @@
+tag=camera-fit-20261109-021006-27250 src=src/camera-fit 3886faf src: b368ee62 iOS search: a new search moves the map to the city or region it found, or to results found elsewhere
+ProductName:		macOS ProductVersion:		26.7.2 BuildVersion:		25G332 
+Xcode 26.6 Build version 17F113 
+commit: 3886faf src: b368ee62 iOS search: a new search moves the map to the city or region it found, or to results found elsewhere
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202611090211 (1794190295)
+java: openjdk version "17.0.21" 2026-10-20
+
+== Notices (02:11:35)
+notices: ok, 38 entries (7 libraries, 30 data sources)
+
+== Kotlin: tests and the VelaCore framework (02:11:36)
+gradle: ok in 640 s
+kotlin jvmTest: 668 tests, 0 failures
+kotlin iosSimulatorArm64Test: 556 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87581336 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55212536 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (02:22:17)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 30.3M  100 30.3M    0     0  44.3M      0 --:--:-- --:--:-- --:--:-- 44.3M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (02:22:19)
+string catalog: 2165 keys, 24 resource locales (24 with translations), 38623 localized values, 1051 Swift references, 24 picker languages
+
+== XcodeGen (02:22:22)
+xcodegen: Version: 2.46.0
+
+== Generate the project (02:22:23)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (02:22:23)
+  SWCompression: https://github.com/tsolomko/SWCompression @ 4.9.1
+
+resolved source packages: BitByteData, SWCompression
+(resolve: 18 s)
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+
+== Pick a simulator (02:22:41)
+simulator: iPhone 17 (23C8F95C-765D-46A9-AE82-0BEE2921C8D7) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (73903A6E-DECF-4552-ADBB-B4B1F348F51F) (Shutdown) 
+
+== Build for the simulator (02:22:43)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 146 s)
+simulator build: ok
+
+== Boot the simulator (02:25:09)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (02:29:28)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 131 s)
+tests: ok, Executed 205 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=navigate_to_coffee samples=19319
+VOICE_ASR_PLAN action=navigate query=coffee
+VOICE_SYNTH samples=56120 rate=22050 wav_frames=56120
+
+== Launch and screenshot (02:31:39)
+app.vela.ios: 38504
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 584C6FDB-A218-43C1-8B21-86DD51B9E6D8 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (02:32:40)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(uitest: 834 s)
+ui scenarios: ok
+ui CameraFitUITests.testSearchFramesTheCityAndTheRouteFitsBothEnds: passed (108.907 seconds)
+ui SearchAreaUITests.testSearchThisAreaAndMoreResults: passed (629.384 seconds)
+scripts/ios/ci-ipa.sh: line 286: 40826 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui camera_fit_alternate=0
+ui camera_fit_route=fit=route|fit_points=2|fit_inside=2|fit_zoom=7.34|fit_pitch=0|fit_bearing=0|fit_center=38.4134,-121.9569|fit_count=3|fit_settled=1
+ui camera_fit_search_km=0
+ui camera_fit_search_zoom=12.0
+ui camera_fit_search=fit=search_area|fit_points=1|fit_inside=1|fit_zoom=12.00|fit_pitch=0|fit_bearing=0|fit_center=38.5781,-121.4944|fit_type=none|fit_count=1|fit_settled=1
+ui camera_fit_transit=fit=route|fit_points=10|fit_inside=10|fit_zoom=7.33|fit_pitch=0|fit_bearing=0|fit_center=38.4228,-121.9566|fit_count=5|fit_settled=1
+ui search_area_debug=offline=0
+ui search_area_dropped=0
+ui search_area_label=Search
+ui search_area_rows_after=59
+ui search_area_rows_before=60
+ui search_area_searches_before=1
+ui search_more_dropped=0
+ui search_more_rows_after=116
+ui search_more_rows_before=59
+ui search_more_scrolls=13
+ui screenshots: search-area-button.png search-area-refreshed.png 
+
+== Route replay (02:46:38)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 584C6FDB-A218-43C1-8B21-86DD51B9E6D8 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 584C6FDB-A218-43C1-8B21-86DD51B9E6D8 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: details: nothing
+place load: details: page raw=15508 parsed=true times=false
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (02:48:11)
+254672
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 28951 bytes
+open reply: transit-plan-sf 103505 bytes
+directions reply: directions-drive-sf 133038 bytes
+directions reply: directions-walk-sf 60433 bytes
+search reply: 254672 bytes, 29 feature ids
