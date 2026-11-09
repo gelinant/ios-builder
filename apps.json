@@ -29,20 +29,20 @@
       "category": "utilities",
       "versions": [
         {
-          "version": "0.1.202611091139",
-          "buildVersion": "1794224377",
-          "date": "2026-11-09T12:20:47Z",
-          "localizedDescription": "Transit: GO avec carte (toi + prochain arret, rames estimees), Precedent/Suivant dans GO et la Live Activity; la carte cadre l'itineraire et va sur la ville recherchee; relief 3D HD\n\nBuild 1794224377.",
+          "version": "0.1.202611091842",
+          "buildVersion": "1794249726",
+          "date": "2026-11-09T20:01:01Z",
+          "localizedDescription": "Transit: plusieurs itineraires (5 max) avec pastilles de ligne, horaires, correspondances et detail des etapes; le trajet choisi alimente GO; cadrage corrige sous le grand panneau; un itineraire sans position se calcule des la premiere position\n\nBuild 1794249726.",
           "downloadURL": "https://raw.githubusercontent.com/gelinant/ios-builder/dist/Vela.ipa",
-          "size": 24317019,
+          "size": 24353700,
           "minOSVersion": "17.0"
         }
       ],
-      "version": "0.1.202611091139",
-      "versionDate": "2026-11-09T12:20:47Z",
-      "versionDescription": "Transit: GO avec carte (toi + prochain arret, rames estimees), Precedent/Suivant dans GO et la Live Activity; la carte cadre l'itineraire et va sur la ville recherchee; relief 3D HD\n\nBuild 1794224377.",
+      "version": "0.1.202611091842",
+      "versionDate": "2026-11-09T20:01:01Z",
+      "versionDescription": "Transit: plusieurs itineraires (5 max) avec pastilles de ligne, horaires, correspondances et detail des etapes; le trajet choisi alimente GO; cadrage corrige sous le grand panneau; un itineraire sans position se calcule des la premiere position\n\nBuild 1794249726.",
       "downloadURL": "https://raw.githubusercontent.com/gelinant/ios-builder/dist/Vela.ipa",
-      "size": 24317019,
+      "size": 24353700,
       "appPermissions": {
         "entitlements": [],
         "privacy": {
