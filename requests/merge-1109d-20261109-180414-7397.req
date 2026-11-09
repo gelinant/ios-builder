@@ -1,0 +1,3 @@
+src=src/merge-1109d
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=LaunchUITests,CameraFitUITests,TransitTripsUITests,TransitGoUITests,TransitActivityTests,TransitTimeUITests
