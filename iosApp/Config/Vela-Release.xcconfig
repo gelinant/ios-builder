@@ -1,0 +1,5 @@
+// Release settings of the Vela app target (iosApp/project.yml, docs/ios/MAPBOX-SPIKE.md).
+//
+// Same token as Debug: the IPA carries the committed Mapbox public token.
+#include "MapboxToken.xcconfig"
+#include? "Mapbox.xcconfig"

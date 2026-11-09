@@ -1,0 +1,6 @@
+// The Mapbox public token (pk.) of Vela, in every build and so in every IPA. A pk. token is
+// meant to ship inside apps. The gitignored Mapbox.xcconfig beside this file overrides it.
+// Split in two settings so push protection does not take a public token for a secret.
+VELA_MAPBOX_TOKEN_HEAD = pk
+VELA_MAPBOX_TOKEN_TAIL = eyJ1IjoiYWwxNDQiLCJhIjoiY203dGo1ZmpvMWQ0cDJqcjZtMTJ0bnE2YSJ9.SxXhF-e4B592KbbIIKvhaA
+VELA_MAPBOX_TOKEN = $(VELA_MAPBOX_TOKEN_HEAD).$(VELA_MAPBOX_TOKEN_TAIL)

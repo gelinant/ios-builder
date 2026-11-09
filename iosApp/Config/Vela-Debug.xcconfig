@@ -1,0 +1,7 @@
+// Debug settings of the Vela app target (iosApp/project.yml, docs/ios/MAPBOX-SPIKE.md).
+//
+// VELA_MAPBOX_TOKEN fills MBXAccessToken in the Info.plist: the committed token, unless the
+// gitignored Mapbox.xcconfig sets another one (scripts/ios/ci-ipa.sh writes it from the
+// MAPBOX_ACCESS_TOKEN secret when the runner has one).
+#include "MapboxToken.xcconfig"
+#include? "Mapbox.xcconfig"
