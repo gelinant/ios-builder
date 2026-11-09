@@ -29,20 +29,20 @@
       "category": "utilities",
       "versions": [
         {
-          "version": "0.1.202611082223",
-          "buildVersion": "1794176595",
-          "date": "2026-11-08T22:55:27Z",
-          "localizedDescription": "Main map in MapLibre GL JS with 3D terrain, sky and globe. Test build from ios/webmap-3d.\n\nBuild 1794176595.",
+          "version": "0.1.202611082357",
+          "buildVersion": "1794182252",
+          "date": "2026-11-09T00:37:12Z",
+          "localizedDescription": "Carte MapLibre GL JS, relief 3D haute resolution (Mapterhorn, jusqu'a z17)\n\nBuild 1794182252.",
           "downloadURL": "https://raw.githubusercontent.com/gelinant/ios-builder/dist/Vela.ipa",
-          "size": 24231705,
+          "size": 24231429,
           "minOSVersion": "17.0"
         }
       ],
-      "version": "0.1.202611082223",
-      "versionDate": "2026-11-08T22:55:27Z",
-      "versionDescription": "Main map in MapLibre GL JS with 3D terrain, sky and globe. Test build from ios/webmap-3d.\n\nBuild 1794176595.",
+      "version": "0.1.202611082357",
+      "versionDate": "2026-11-09T00:37:12Z",
+      "versionDescription": "Carte MapLibre GL JS, relief 3D haute resolution (Mapterhorn, jusqu'a z17)\n\nBuild 1794182252.",
       "downloadURL": "https://raw.githubusercontent.com/gelinant/ios-builder/dist/Vela.ipa",
-      "size": 24231705,
+      "size": 24231429,
       "appPermissions": {
         "entitlements": [],
         "privacy": {
