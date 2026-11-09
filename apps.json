@@ -29,20 +29,20 @@
       "category": "utilities",
       "versions": [
         {
-          "version": "0.1.202611082357",
-          "buildVersion": "1794182252",
-          "date": "2026-11-09T00:37:12Z",
-          "localizedDescription": "Carte MapLibre GL JS, relief 3D haute resolution (Mapterhorn, jusqu'a z17)\n\nBuild 1794182252.",
+          "version": "0.1.202611091139",
+          "buildVersion": "1794224377",
+          "date": "2026-11-09T12:20:47Z",
+          "localizedDescription": "Transit: GO avec carte (toi + prochain arret, rames estimees), Precedent/Suivant dans GO et la Live Activity; la carte cadre l'itineraire et va sur la ville recherchee; relief 3D HD\n\nBuild 1794224377.",
           "downloadURL": "https://raw.githubusercontent.com/gelinant/ios-builder/dist/Vela.ipa",
-          "size": 24231429,
+          "size": 24317019,
           "minOSVersion": "17.0"
         }
       ],
-      "version": "0.1.202611082357",
-      "versionDate": "2026-11-09T00:37:12Z",
-      "versionDescription": "Carte MapLibre GL JS, relief 3D haute resolution (Mapterhorn, jusqu'a z17)\n\nBuild 1794182252.",
+      "version": "0.1.202611091139",
+      "versionDate": "2026-11-09T12:20:47Z",
+      "versionDescription": "Transit: GO avec carte (toi + prochain arret, rames estimees), Precedent/Suivant dans GO et la Live Activity; la carte cadre l'itineraire et va sur la ville recherchee; relief 3D HD\n\nBuild 1794224377.",
       "downloadURL": "https://raw.githubusercontent.com/gelinant/ios-builder/dist/Vela.ipa",
-      "size": 24231429,
+      "size": 24317019,
       "appPermissions": {
         "entitlements": [],
         "privacy": {
