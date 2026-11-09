@@ -61,6 +61,8 @@ jobs:
       - name: Run
         env:
           OUT: ${{ github.workspace }}/out
+          # Public Mapbox token (pk.), repository secret. Empty when unset; never written to src.
+          MAPBOX_ACCESS_TOKEN: ${{ secrets.MAPBOX_ACCESS_TOKEN }}
         run: |
           mkdir -p "$OUT"
           cd src
