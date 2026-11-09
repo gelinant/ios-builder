@@ -1,0 +1,83 @@
+commit: 64b3e7d src: 0ccd8d61 GO screen: a live map that frames the user and the next target, with the nearby line and its estimated vehicles
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202611090118 (1794187088)
+java: openjdk version "17.0.21" 2026-10-20
+notices: ok, 38 entries (7 libraries, 30 data sources)
+gradle: ok in 519 s
+kotlin jvmTest: 675 tests, 0 failures
+kotlin iosSimulatorArm64Test: 563 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87730776 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55380144 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 2168 keys, 24 resource locales (24 with translations), 38629 localized values, 1054 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+simulator: iPhone 17 (23C8F95C-765D-46A9-AE82-0BEE2921C8D7) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (73903A6E-DECF-4552-ADBB-B4B1F348F51F) (Shutdown) 
+simulator build: ok
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+tests: ok, Executed 200 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.51 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=navigate_to_coffee samples=18576
+VOICE_ASR_PLAN action=navigate query=coffee
+VOICE_SYNTH samples=56968 rate=22050 wav_frames=56968
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: FAILED
+ui TransitGoUITests.testGoMapFramesUserAndTargetWithEstimatedVehicles: passed (36.157 seconds)
+ui TransitGoUITests.testGoModeCuesAndRail: passed (31.776 seconds)
+ui TransitGoUITests.testLeaveLaterAnchorsOnTheBoardOrSaysItCannot: passed (28.769 seconds)
+ui TransitWiredUITests.testTapTransitEverywhereAndSeeTheLine: failed (47.360 seconds)
+ui go_anchor=board
+ui go_anchor=now
+ui go_cue=none
+ui go_cue=stop
+ui go_dots=1
+ui go_estimated=0
+ui go_estimated=1
+ui go_fallback_notice=0
+ui go_fallback_notice=1
+ui go_lines=1
+ui go_map_fit=1
+ui go_map_recenter=1
+ui go_map_step_refit=1
+ui go_map_target=alight
+ui go_map_user=1
+ui go_step=done
+ui go_step=ride
+ui go_step=transfer
+ui go_vehicles=2
+ui go_web_error=-
+ui go_web_errors=0
+ui transit_go_degraded=offline=1
+ui wired_board_lines=3
+ui screenshots: 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 28951 bytes
+open reply: transit-plan-sf 63598 bytes
+directions reply: directions-drive-sf 128386 bytes
+directions reply: directions-walk-sf 34592 bytes
+search reply: 251650 bytes, 30 feature ids
+ipa: Vela-unsigned.ipa 24273531 bytes ( 23M)
+app frameworks: SherpaOnnxC.framework 
+app binary: arm64, 27465096 bytes
+live activity extension: PlugIns/NavActivityExtension.appex present in IPA, 220888 bytes
+extension plist CFBundleIdentifier: app.vela.ios.navactivity
+extension plist NSExtensionPointIdentifier: com.apple.widgetkit-extension
+extension signing: none
+kotlin code in the device binary: yes
+plist CFBundleIdentifier: app.vela.ios
+plist CFBundleDisplayName: Vela
+plist CFBundleShortVersionString: 0.1.202611090118
+plist MinimumOSVersion: 17.0
+plist UIBackgroundModes: ["location","audio"]
+plist NSSupportsLiveActivities: true
+failed steps: ui-scenarios
