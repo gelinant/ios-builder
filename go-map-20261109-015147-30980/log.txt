@@ -1,0 +1,328 @@
+tag=go-map-20261109-015147-30980 src=src/go-map 539d799 src: a7ff40e7 Web map: send the data of a shape source created with its shape
+ProductName:		macOS ProductVersion:		26.7.2 BuildVersion:		25G332 
+Xcode 26.6 Build version 17F113 
+commit: 539d799 src: a7ff40e7 Web map: send the data of a shape source created with its shape
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202611090154 (1794189251)
+java: openjdk version "17.0.21" 2026-10-20
+
+== Notices (01:54:11)
+notices: ok, 38 entries (7 libraries, 30 data sources)
+
+== Kotlin: tests and the VelaCore framework (01:54:12)
+gradle: ok in 634 s
+kotlin jvmTest: 675 tests, 0 failures
+kotlin iosSimulatorArm64Test: 563 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87730776 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55380144 bytes, SKIE Swift module: yes
+
+== Neural voice runtime (02:04:46)
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 30.3M  100 30.3M    0     0  35.3M      0 --:--:-- --:--:-- --:--:-- 35.3M
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+
+== String Catalog (02:04:48)
+string catalog: 2168 keys, 24 resource locales (24 with translations), 38629 localized values, 1054 Swift references, 24 picker languages
+
+== XcodeGen (02:04:51)
+xcodegen: Version: 2.46.0
+
+== Generate the project (02:04:52)
+Vela.xcodeproj
+Vela/Info.plist
+
+== Resolve packages (02:04:52)
+  SWCompression: https://github.com/tsolomko/SWCompression @ 4.9.1
+
+resolved source packages: BitByteData, SWCompression
+(resolve: 19 s)
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+
+== Pick a simulator (02:05:11)
+simulator: iPhone 17 (23C8F95C-765D-46A9-AE82-0BEE2921C8D7) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (73903A6E-DECF-4552-ADBB-B4B1F348F51F) (Shutdown) 
+
+== Build for the simulator (02:05:13)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** TEST BUILD SUCCEEDED **
+
+(build-sim: 142 s)
+simulator build: ok
+
+== Boot the simulator (02:07:36)
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+
+== Unit tests (02:11:43)
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
+(test: 89 s)
+tests: ok, Executed 200 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=18762
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=54793 rate=22050 wav_frames=54793
+
+== Launch and screenshot (02:13:13)
+app.vela.ios: 43938
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 178F9E38-261A-43E5-BDFF-C77A41303C46 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/screenshot.png
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+
+== UI scenarios (02:14:13)
+xcodebuild uitest failed after 612 s. Error lines:
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TransitWiredUITests.swift:34: error: -[VelaUITests.TransitWiredUITests testTapTransitEverywhereAndSeeTheLine] : XCTAssertTrue failed - the line sheet did not open from a board line
+Test Case '-[VelaUITests.TransitWiredUITests testTapTransitEverywhereAndSeeTheLine]' failed (42.316 seconds).
+Failing tests:
+** TEST EXECUTE FAILED **
+--- tail of uitest log ---
+    t =    30.18s         Checking existence of `"transit-line-sheet" Other`
+    t =    30.22s         Capturing element debug description
+    t =    31.26s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-line-sheet" Other`
+    t =    31.26s         Checking existence of `"transit-line-sheet" Other`
+    t =    31.32s         Capturing element debug description
+    t =    32.18s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-line-sheet" Other`
+    t =    32.18s         Checking existence of `"transit-line-sheet" Other`
+    t =    32.22s         Capturing element debug description
+    t =    33.23s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-line-sheet" Other`
+    t =    33.23s         Checking existence of `"transit-line-sheet" Other`
+    t =    33.27s         Capturing element debug description
+    t =    34.21s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-line-sheet" Other`
+    t =    34.21s         Checking existence of `"transit-line-sheet" Other`
+    t =    34.26s         Capturing element debug description
+    t =    35.21s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-line-sheet" Other`
+    t =    35.21s         Checking existence of `"transit-line-sheet" Other`
+    t =    35.25s         Capturing element debug description
+    t =    36.19s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-line-sheet" Other`
+    t =    36.19s         Checking existence of `"transit-line-sheet" Other`
+    t =    36.23s         Capturing element debug description
+    t =    37.19s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-line-sheet" Other`
+    t =    37.19s         Checking existence of `"transit-line-sheet" Other`
+    t =    37.23s         Capturing element debug description
+    t =    38.26s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-line-sheet" Other`
+    t =    38.26s         Checking existence of `"transit-line-sheet" Other`
+    t =    38.30s         Capturing element debug description
+    t =    39.23s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-line-sheet" Other`
+    t =    39.23s         Checking existence of `"transit-line-sheet" Other`
+    t =    39.27s         Capturing element debug description
+    t =    40.23s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-line-sheet" Other`
+    t =    40.23s         Checking existence of `"transit-line-sheet" Other`
+    t =    40.27s         Capturing element debug description
+    t =    41.18s     Checking `Expect predicate `existsNoRetry == 1` for object "transit-line-sheet" Other`
+    t =    41.18s         Checking existence of `"transit-line-sheet" Other`
+    t =    41.21s         Capturing element debug description
+    t =    41.22s     Checking existence of `"transit-line-sheet" Other`
+    t =    41.26s Collecting debug information to assist test failure triage
+    t =    41.26s     Requesting snapshot of accessibility hierarchy for app with pid 62379
+/Users/runner/work/ios-builder/ios-builder/src/iosApp/VelaUITests/TransitWiredUITests.swift:34: error: -[VelaUITests.TransitWiredUITests testTapTransitEverywhereAndSeeTheLine] : XCTAssertTrue failed - the line sheet did not open from a board line
+    t =    41.81s Tear Down
+Test Case '-[VelaUITests.TransitWiredUITests testTapTransitEverywhereAndSeeTheLine]' failed (42.316 seconds).
+Test Suite 'TransitWiredUITests' failed at 2026-11-09 02:23:47.106.
+	 Executed 1 test, with 1 failure (0 unexpected) in 42.316 (42.318) seconds
+Test Suite 'VelaUITests.xctest' failed at 2026-11-09 02:23:47.107.
+	 Executed 5 tests, with 1 failure (0 unexpected) in 532.959 (532.971) seconds
+Test Suite 'Selected tests' failed at 2026-11-09 02:23:47.107.
+	 Executed 5 tests, with 1 failure (0 unexpected) in 532.959 (532.973) seconds
+2026-11-09 02:24:16.356 xcodebuild[45155:119050] [MT] IDETestOperationsObserverDebug: 588.870 elapsed -- Testing started completed.
+2026-11-09 02:24:16.356 xcodebuild[45155:119050] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-11-09 02:24:16.357 xcodebuild[45155:119050] [MT] IDETestOperationsObserverDebug: 588.870 sec, +588.870 sec -- end
+
+Test session results, code coverage, and logs:
+	/var/folders/h5/t85nd63d71x27_8gl5gw3l_w0000gn/T/tmp.LYuxYxy47C/uitest.xcresult
+
+Failing tests:
+	TransitWiredUITests.testTapTransitEverywhereAndSeeTheLine()
+
+** TEST EXECUTE FAILED **
+
+Testing started
+ui scenarios: FAILED
+ui TransitGoUITests.testGoMapFramesUserAndTargetWithEstimatedVehicles: passed (40.219 seconds)
+ui TransitGoUITests.testGoModeCuesAndRail: passed (32.569 seconds)
+ui TransitGoUITests.testLeaveLaterAnchorsOnTheBoardOrSaysItCannot: passed (31.544 seconds)
+ui TransitMapUITests.testLinesAndVehiclesOnTheMap: passed (386.310 seconds)
+ui TransitWiredUITests.testTapTransitEverywhereAndSeeTheLine: failed (42.316 seconds)
+scripts/ios/ci-ipa.sh: line 286: 45152 Terminated: 15          ( xcrun simctl spawn "$udid" log stream --style compact --info --debug --predicate 'subsystem == "app.vela.ios"' 2> /dev/null | while IFS= read -r line; do
+    case "$line" in 
+        *"nav replay: start"*)
+            sim_route_start "$udid" "$route" "$speed" "$interval"
+        ;;
+        *"nav replay: end"*)
+            sim_location_clear "$udid" || true; sim_location_set "$udid" sf || true
+        ;;
+    esac;
+done )
+ui go_anchor=board
+ui go_anchor=now
+ui go_cue=none
+ui go_cue=stop
+ui go_dots=1
+ui go_estimated=0
+ui go_estimated=1
+ui go_fallback_notice=0
+ui go_fallback_notice=1
+ui go_lines=1
+ui go_map_fit=1
+ui go_map_recenter=1
+ui go_map_step_refit=1
+ui go_map_target=alight
+ui go_map_user=1
+ui go_step=done
+ui go_step=ride
+ui go_step=transfer
+ui go_vehicles=2
+ui go_web_error=-
+ui go_web_errors=0
+ui map_transit_estimated=1
+ui map_transit_globe=1
+ui map_transit_line_tap=1
+ui map_transit_lines=5
+ui map_transit_vehicle_tap=1
+ui map_transit_vehicles=4
+ui transit_go_degraded=offline=1
+ui wired_board_lines=3
+ui screenshots: 
+
+== Route replay (02:24:28)
+Parsed 8 waypoints
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 178F9E38-261A-43E5-BDFF-C77A41303C46 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-1.png
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 178F9E38-261A-43E5-BDFF-C77A41303C46 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/runner/work/ios-builder/ios-builder/out/route-2.png
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+
+== Record a search reply (02:27:02)
+242727
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 28951 bytes
+open reply: transit-plan-sf 63648 bytes
+directions reply: directions-drive-sf 121982 bytes
+directions reply: directions-walk-sf 37528 bytes
+search reply: 242727 bytes, 31 feature ids
+
+== Archive for iOS devices, unsigned (02:27:07)
+note: Run script build phase 'Build VelaCore (Kotlin)' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Vela' from project 'Vela')
+** ARCHIVE SUCCEEDED **
+
+(archive: 211 s)
+
+== Package the IPA (02:30:38)
+ipa: Vela-unsigned.ipa 24274343 bytes ( 23M)
+app frameworks: SherpaOnnxC.framework 
+app binary: arm64, 27465096 bytes
+live activity extension: PlugIns/NavActivityExtension.appex present in IPA, 220888 bytes
+extension plist CFBundleIdentifier: app.vela.ios.navactivity
+extension plist NSExtensionPointIdentifier: com.apple.widgetkit-extension
+extension signing: none
+kotlin code in the device binary: yes
+plist CFBundleIdentifier: app.vela.ios
+plist CFBundleDisplayName: Vela
+plist CFBundleShortVersionString: 0.1.202611090154
+plist MinimumOSVersion: 17.0
+plist UIBackgroundModes: ["location","audio"]
+plist NSSupportsLiveActivities: true
+
+== Summary
+commit: 539d799 src: a7ff40e7 Web map: send the data of a shape source created with its shape
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202611090154 (1794189251)
+java: openjdk version "17.0.21" 2026-10-20
+notices: ok, 38 entries (7 libraries, 30 data sources)
+gradle: ok in 634 s
+kotlin jvmTest: 675 tests, 0 failures
+kotlin iosSimulatorArm64Test: 563 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87730776 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55380144 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 2168 keys, 24 resource locales (24 with translations), 38629 localized values, 1054 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+simulator: iPhone 17 (23C8F95C-765D-46A9-AE82-0BEE2921C8D7) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (73903A6E-DECF-4552-ADBB-B4B1F348F51F) (Shutdown) 
+simulator build: ok
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+tests: ok, Executed 200 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.53 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=18762
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=54793 rate=22050 wav_frames=54793
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: FAILED
+ui TransitGoUITests.testGoMapFramesUserAndTargetWithEstimatedVehicles: passed (40.219 seconds)
+ui TransitGoUITests.testGoModeCuesAndRail: passed (32.569 seconds)
+ui TransitGoUITests.testLeaveLaterAnchorsOnTheBoardOrSaysItCannot: passed (31.544 seconds)
+ui TransitMapUITests.testLinesAndVehiclesOnTheMap: passed (386.310 seconds)
+ui TransitWiredUITests.testTapTransitEverywhereAndSeeTheLine: failed (42.316 seconds)
+ui go_anchor=board
+ui go_anchor=now
+ui go_cue=none
+ui go_cue=stop
+ui go_dots=1
+ui go_estimated=0
+ui go_estimated=1
+ui go_fallback_notice=0
+ui go_fallback_notice=1
+ui go_lines=1
+ui go_map_fit=1
+ui go_map_recenter=1
+ui go_map_step_refit=1
+ui go_map_target=alight
+ui go_map_user=1
+ui go_step=done
+ui go_step=ride
+ui go_step=transfer
+ui go_vehicles=2
+ui go_web_error=-
+ui go_web_errors=0
+ui map_transit_estimated=1
+ui map_transit_globe=1
+ui map_transit_line_tap=1
+ui map_transit_lines=5
+ui map_transit_vehicle_tap=1
+ui map_transit_vehicles=4
+ui transit_go_degraded=offline=1
+ui wired_board_lines=3
+ui screenshots: 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 28951 bytes
+open reply: transit-plan-sf 63648 bytes
+directions reply: directions-drive-sf 121982 bytes
+directions reply: directions-walk-sf 37528 bytes
+search reply: 242727 bytes, 31 feature ids
+ipa: Vela-unsigned.ipa 24274343 bytes ( 23M)
+app frameworks: SherpaOnnxC.framework 
+app binary: arm64, 27465096 bytes
+live activity extension: PlugIns/NavActivityExtension.appex present in IPA, 220888 bytes
+extension plist CFBundleIdentifier: app.vela.ios.navactivity
+extension plist NSExtensionPointIdentifier: com.apple.widgetkit-extension
+extension signing: none
+kotlin code in the device binary: yes
+plist CFBundleIdentifier: app.vela.ios
+plist CFBundleDisplayName: Vela
+plist CFBundleShortVersionString: 0.1.202611090154
+plist MinimumOSVersion: 17.0
+plist UIBackgroundModes: ["location","audio"]
+plist NSSupportsLiveActivities: true
+failed steps: ui-scenarios
