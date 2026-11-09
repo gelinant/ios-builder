@@ -1,0 +1,107 @@
+commit: 28ee2e2 src: b77c309e iOS transit chooser: trip rows with colored line pills, mode symbols, times, transfers and unfolding legs
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202611091137 (1794224230)
+java: openjdk version "17.0.21" 2026-10-20
+notices: ok, 39 entries (7 libraries, 31 data sources)
+gradle: ok in 832 s
+kotlin jvmTest: 697 tests, 0 failures
+kotlin iosSimulatorArm64Test: 585 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87923760 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55582720 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 2178 keys, 24 resource locales (24 with translations), 38645 localized values, 1063 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+simulator: iPhone 17 (23C8F95C-765D-46A9-AE82-0BEE2921C8D7) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (73903A6E-DECF-4552-ADBB-B4B1F348F51F) (Shutdown) 
+simulator build: ok
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+tests: ok, Executed 209 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.54 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=19133
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=56037 rate=22050 wav_frames=56037
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: FAILED
+ui TransitCitymapperUITests.testLiveTripScreenWhenTheFeedAnswers: passed (70.302 seconds)
+ui TransitCitymapperUITests.testNearbyLinesTabListsTheStopsLines: passed (21.571 seconds)
+ui TransitCitymapperUITests.testSegmentTimeChangeShowsANewOptionSet: passed (29.427 seconds)
+ui TransitCitymapperUITests.testSingleTransitShellTabsAndSelection: passed (24.691 seconds)
+ui TransitCitymapperUITests.testSkipLetsTheRunPassAndAdvancesTheHeader: passed (23.652 seconds)
+ui TransitCitymapperUITests.testTripScreenShowsSegmentCardsAndNextDepartures: passed (20.413 seconds)
+ui TransitGoUITests.testGoMapFramesUserAndTargetWithEstimatedVehicles: failed (24.424 seconds)
+ui TransitGoUITests.testGoModeCuesAndRail: passed (17.811 seconds)
+ui TransitGoUITests.testGoStepsMoveTheSessionAndItsActivity: failed (22.217 seconds)
+ui TransitGoUITests.testLeaveLaterAnchorsOnTheBoardOrSaysItCannot: passed (28.303 seconds)
+ui TransitGoUITests.testPreviousAndNextStepThroughTheTrip: passed (18.531 seconds)
+ui TransitTripsUITests.testSeveralTripsAndTheSecondFeedsGo: failed (83.758 seconds)
+ui go_anchor=board
+ui go_anchor=now
+ui go_cue=none
+ui go_cue=stop
+ui go_cues_replayed=0
+ui go_dots=1
+ui go_estimated=0
+ui go_estimated=1
+ui go_fallback_notice=0
+ui go_fallback_notice=1
+ui go_held=1
+ui go_lines=1
+ui go_map_fit=1
+ui go_map_target=alight
+ui go_map_user=1
+ui go_step_previous_label=Previous
+ui go_step=done
+ui go_step=ride
+ui go_step=transfer
+ui go_step=wait
+ui go_step=walk
+ui go_vehicles=2
+ui go_web_error=-
+ui go_web_errors=0
+ui transit_go_degraded=offline=1
+ui transit_shell_selection=1
+ui transit_shell_tabs=3
+ui transit_trip_fixture=1
+ui transit_trip_header_after_skip=3
+ui transit_trip_header_before_skip=4
+ui transit_trip_header=4
+ui transit_trip_live_available=1
+ui transit_trip_live_header=2
+ui transit_trip_live_segments=7
+ui transit_trip_nearby_lines=3
+ui transit_trip_nearby_rows=3
+ui transit_trip_option_rows=2
+ui transit_trip_rides=1
+ui transit_trip_segments=4
+ui transit_trip_shift_options=2
+ui transit_trip_shift_query=Depart
+ui transit_trip_skip_options=2
+ui transit_trip=segments_and_header
+ui trips_feed_colors=8
+ui trips_live=2
+ui trips_rides=8
+ui trips_rows=5
+ui screenshots: 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=0 parsed=false times=false
+place load: photos: rpc 10
+place load: details: plain search (no popular times)
+place load: details: page raw=26373 parsed=true times=false
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 28951 bytes
+open reply: transit-plan-sf 83544 bytes
+directions reply: directions-drive-sf 126013 bytes
+directions reply: directions-walk-sf 34590 bytes
+search reply: 247290 bytes, 30 feature ids
+failed steps: ui-scenarios
