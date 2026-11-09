@@ -23,9 +23,11 @@ push_dir() { # <branch> <srcdir> <single-commit?>
     # A new tag has no directory yet: `ls` failing here must not abort the publish.
     old="$(ls -1d res/"$tag"-* 2>/dev/null | head -n -6 || true)"
     [ -z "$old" ] || rm -rf $old
-    # Keep the twelve most recent runs overall, newest first by mtime. Per-tag pruning alone let
-    # dozens of distinct lots accumulate and made every shallow clone gigabytes wide.
-    old="$(ls -1dt res/*/ 2>/dev/null | tail -n +13 || true)"
+    # Keep the twelve most recent runs overall. Per-tag pruning alone let dozens of distinct lots
+    # accumulate and made every shallow clone gigabytes wide. Order by the date and time in the
+    # name (<lot>-YYYYMMDD-HHMMSS-<n>): after a fresh clone every mtime is the checkout time.
+    old="$(ls -1d res/*/ 2>/dev/null | awk -F- '{print $(NF-2)$(NF-1), $0}' | sort -r \
+      | tail -n +13 | cut -d' ' -f2- || true)"
     [ -z "$old" ] || rm -rf $old
   fi
   git -C res config user.name ios-builder; git -C res config user.email ios-builder@users.noreply.github.com
