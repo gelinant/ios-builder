@@ -1,0 +1,22 @@
+## ndw fetch
+GET https://opendata.ndw.nu/planningsfeed_brugopeningen.xml.gz body=false call=20000 connect=8000 read=20000 write=10000
+  User-Agent: <VELA_UA>
+=> [BridgeOpening(loc=LatLng(lat=52.3731, lng=4.8922), startMs=1791537780000, endMs=1791538140500, openNow=false), BridgeOpening(loc=LatLng(lat=52.36, lng=4.9), startMs=1791533112000, endMs=null, openNow=true)]
+## fuel first ensure
+GET https://example.org/fuel-gb/fuel-gb-manifest.json body=false call=0 connect=15000 read=60000 write=10000
+  User-Agent: <VELA_UA>
+GET https://example.org/fuel-gb/fuel-gb.csv.gz body=false call=0 connect=15000 read=60000 write=10000
+  User-Agent: <VELA_UA>
+=> true 5 [checked 10, fuel-gb-manifest.json 130, fuel-gb.csv.gz 175]
+## fuel recheck
+GET https://example.org/fuel-gb/fuel-gb-manifest.json body=false call=0 connect=15000 read=60000 write=10000
+  User-Agent: <VELA_UA>
+=> false 5 [checked 10, fuel-gb-manifest.json 130, fuel-gb.csv.gz 175]
+## ndw refused
+GET https://opendata.ndw.nu/planningsfeed_brugopeningen.xml.gz body=false call=20000 connect=8000 read=20000 write=10000
+  User-Agent: <VELA_UA>
+=> null
+## fuel refused
+GET https://example.org/fuel-gb/fuel-gb-manifest.json body=false call=0 connect=15000 read=60000 write=10000
+  User-Agent: <VELA_UA>
+=> false 5 [checked 10, fuel-gb-manifest.json 130, fuel-gb.csv.gz 175]
