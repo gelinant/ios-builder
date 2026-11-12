@@ -1,0 +1,97 @@
+commit: 5d6064f src: db0f9153 fix(transit): render the guidance clearly at each sheet detent
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202611121440 (1794494426)
+java: openjdk version "17.0.21" 2026-10-20
+notices: ok, 39 entries (7 libraries, 31 data sources)
+gradle: ok in 705 s
+kotlin jvmTest: 698 tests, 0 failures
+kotlin iosSimulatorArm64Test: 586 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  90M, static library 87924424 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55583904 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 2178 keys, 24 resource locales (24 with translations), 38645 localized values, 1063 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+simulator: iPhone 17 (23C8F95C-765D-46A9-AE82-0BEE2921C8D7) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (73903A6E-DECF-4552-ADBB-B4B1F348F51F) (Shutdown) 
+simulator build: ok
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+tests: ok, Executed 210 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.51 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=Never_get_to_coffee. samples=18019
+VOICE_ASR_PLAN action=route query=
+VOICE_SYNTH samples=56832 rate=22050 wav_frames=56832
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: ok
+ui SelectionSyncUITests.testVehicleAndStopSelectionTravelBothWays: passed (275.758 seconds)
+ui TransitCitymapperUITests.testLiveTripScreenWhenTheFeedAnswers: passed (69.422 seconds)
+ui TransitCitymapperUITests.testNearbyLinesTabListsTheStopsLines: passed (35.258 seconds)
+ui TransitCitymapperUITests.testSegmentTimeChangeShowsANewOptionSet: passed (37.874 seconds)
+ui TransitCitymapperUITests.testSingleTransitShellTabsAndSelection: passed (25.792 seconds)
+ui TransitCitymapperUITests.testSkipLetsTheRunPassAndAdvancesTheHeader: passed (37.370 seconds)
+ui TransitCitymapperUITests.testTripScreenShowsSegmentCardsAndNextDepartures: passed (30.482 seconds)
+ui TransitModesUITests.testAllLegsAndModes: passed (27.750 seconds)
+ui TransitPolishUITests.testSegmentAnchorAndPinnedClose: passed (85.419 seconds)
+ui TransitTimeUITests.testTimeEverywhere: passed (131.410 seconds)
+ui anchor_source=board
+ui card_buttons_wrapped=1
+ui detail_close_hittable=1
+ui selection_halo=1
+ui selection_kind=stop
+ui selection_kind=vehicle
+ui selection_row_match=1
+ui selection_source=list
+ui selection_source=map
+ui time_board_query=Depart_at_3:30_PM_·_GMT_·_asked_3:14 PM
+ui time_route_mode=1
+ui time_route_query=Depart_at_3:35_PM_·_GMT_·_asked_3:15 PM
+ui time_segment_query=Depart_at_3:31 PM_from_Metro_Van_Ness_Station_·_fixture,_display_only
+ui time_surfaces=4
+ui time_transit_query=Depart_at_3:50_PM_·_GMT_·_asked_3:16 PM
+ui time_trip_query=Depart_at_3:45_PM_·_GMT_·_asked_3:14 PM
+ui transit_all_legs_and_modes=ok
+ui transit_legs=5
+ui transit_modes=walk,metro,walk,rail,walk
+ui transit_options_from_chooser=1
+ui transit_options_hittable=1
+ui transit_shell_selection=1
+ui transit_shell_tabs=3
+ui transit_transfer=1
+ui transit_trip_fixture=1
+ui transit_trip_header_after_skip=3
+ui transit_trip_header_before_skip=4
+ui transit_trip_header=4
+ui transit_trip_live_available=1
+ui transit_trip_live_header=4
+ui transit_trip_live_segments=7
+ui transit_trip_nearby_lines=3
+ui transit_trip_nearby_rows=3
+ui transit_trip_option_rows=2
+ui transit_trip_rides=1
+ui transit_trip_segments=4
+ui transit_trip_shift_options=2
+ui transit_trip_shift_query=Depart
+ui transit_trip_skip_options=2
+ui transit_trip=segments_and_header
+ui screenshots: 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 5
+place load: details: plain search (no popular times)
+place load: details: page raw=21571 parsed=true times=false
+place load: details: plain search (no popular times)
+place load: photos: rpc 0
+place load: details: page raw=176312 parsed=true times=false
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 27432 bytes
+open reply: transit-plan-sf 88752 bytes
+directions reply: directions-drive-sf 119463 bytes
+directions reply: directions-walk-sf 35606 bytes
+search reply: 256650 bytes, 33 feature ids
