@@ -1,0 +1,3 @@
+src=src/transit-fiche
+script=scripts/ios/ci-ipa.sh
+args=VELA_ONLY_UI=TransitGuidanceSheetUITests,TransitGoUITests,TransitTripsUITests,TransitActivityTests VELA_SKIP_ARCHIVE=1
