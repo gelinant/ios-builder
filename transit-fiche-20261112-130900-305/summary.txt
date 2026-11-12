@@ -1,0 +1,128 @@
+commit: 3aacaee src: 64f0073f test(transit): drive the guidance sheet through its three detents
+xcode: Xcode 26.6 Build version 17F113 
+version: 0.1.202611121310 (1794489018)
+java: openjdk version "17.0.21" 2026-10-20
+notices: ok, 39 entries (7 libraries, 31 data sources)
+gradle: ok in 857 s
+kotlin jvmTest: 698 tests, 0 failures
+kotlin iosSimulatorArm64Test: 586 tests, 0 failures
+VelaCore.framework iosSimulatorArm64/debugFramework:  89M, static library 87924424 bytes, SKIE Swift module: yes
+VelaCore.framework iosArm64/releaseFramework:  59M, static library 55583904 bytes, SKIE Swift module: yes
+sherpa-onnx: downloading sherpa-onnx-v1.13.8-ios-shared-onnxruntime-static.xcframework.zip
+sherpa-onnx 1.13.8: ready at /Users/runner/work/ios-builder/ios-builder/src/iosApp/Vendor/SherpaOnnxC.xcframework
+string catalog: 2178 keys, 24 resource locales (24 with translations), 38645 localized values, 1063 Swift references, 24 picker languages
+xcodegen: Version: 2.46.0
+packages: bitbytedata@2.1.0 swcompression@4.9.1
+simulator: iPhone 17 (23C8F95C-765D-46A9-AE82-0BEE2921C8D7) (Shutdown)  runtime -- iOS 26.5 --
+compact simulators: iPhone 16e (73903A6E-DECF-4552-ADBB-B4B1F348F51F) (Shutdown) 
+simulator build: ok
+voice fixture:  78M in the Debug app
+asr fixture:  99M in the Debug app
+tests: ok, Executed 210 tests, with 0 failures
+js transform: ok
+js while(true) killed after 0.52 s, next call ok
+signature: real calibration.json verified, tampered byte refused
+VOICE_ASR text=navigate_to_coffee samples=19133
+VOICE_ASR_PLAN action=navigate query=coffee
+VOICE_SYNTH samples=58880 rate=22050 wav_frames=58880
+screenshot: saved 20 s after launch
+app running after 20 s: yes
+ui scenarios: ok
+ui TransitActivityTests.testFixtureStartsAdvancesAndEnds: passed (52.577 seconds)
+ui TransitActivityTests.testOfflineBoardShowsCachedDepartures: passed (27.387 seconds)
+ui TransitActivityTests.testStopBoardShowsDeparturesAndRefreshes: passed (23.931 seconds)
+ui TransitActivityTests.testTransitOptionsChangeTheDepartureAndVehicles: passed (60.812 seconds)
+ui TransitActivityTests.testWalkingLegShowsTurnByTurn: passed (23.863 seconds)
+ui TransitGoUITests.testGoMapFramesUserAndTargetWithEstimatedVehicles: passed (22.690 seconds)
+ui TransitGoUITests.testGoModeCuesAndRail: passed (26.438 seconds)
+ui TransitGoUITests.testGoStepsMoveTheSessionAndItsActivity: passed (30.496 seconds)
+ui TransitGoUITests.testLeaveLaterAnchorsOnTheBoardOrSaysItCannot: passed (42.579 seconds)
+ui TransitGoUITests.testPreviousAndNextStepThroughTheTrip: passed (30.533 seconds)
+ui TransitGuidanceSheetUITests.testGuidanceSheetCyclesThroughItsThreeDetents: passed (29.758 seconds)
+ui TransitTripsUITests.testSeveralTripsAndTheSecondFeedsGo: passed (94.685 seconds)
+ui go_activity=updates=3
+ui go_anchor=board
+ui go_anchor=now
+ui go_cue=none
+ui go_cue=stop
+ui go_cues_replayed=0
+ui go_dots=1
+ui go_estimated=0
+ui go_estimated=1
+ui go_fallback_notice=0
+ui go_fallback_notice=1
+ui go_held=1
+ui go_lines=1
+ui go_map_fit=1
+ui go_map_recenter=1
+ui go_map_step_refit=1
+ui go_map_steps_pinned=1
+ui go_map_target=alight
+ui go_map_user=1
+ui go_session=leg=1
+ui go_step_previous_label=Previous
+ui go_step=done
+ui go_step=ride
+ui go_step=transfer
+ui go_step=wait
+ui go_step=walk
+ui go_vehicles=2
+ui go_web_error=-
+ui go_web_errors=0
+ui sheet_detent=expanded
+ui sheet_detent=go
+ui sheet_detent=peek
+ui sheet_end=restored
+ui transit_activity_updates=1
+ui transit_activity=started_updated_ended
+ui transit_board_after_refresh=50
+ui transit_board_departures=50
+ui transit_board_error=none
+ui transit_board_lines=3
+ui transit_board_live=3
+ui transit_board_offline_departures=5
+ui transit_board_offline=1
+ui transit_board_soon=4
+ui transit_end=restored
+ui transit_go_degraded=offline=1
+ui transit_next_leg=1
+ui transit_options_epoch=1794491700
+ui transit_options_origin=link
+ui transit_options_pref=0
+ui transit_options_rail_result=empty
+ui transit_options_time_mode=1
+ui transit_options_train=1
+ui transit_options_trips_after_filters=0
+ui transit_options_trips_after_time=5
+ui transit_options_trips_before=5
+ui transit_options_vehicle_filter=applied
+ui transit_start_leg=0
+ui transit_stops_remaining=4
+ui transit_walk_instructions=2
+ui transit_walk_named=1
+ui transit_walk_prompts=1
+ui transit_walk_source=steps
+ui transit_walk=guidance
+ui trips_feed_colors=8
+ui trips_fit_zoom=11.61
+ui trips_go_lines=Yellow-N,14R
+ui trips_leg=Yellow-N,_Yellow-N,_towards_Antioch,_4:31_PM__24th_Street_/_Mission,_5_stops_·_9_min_·_Scheduled,_4:40_PM__Embarcadero_BART
+ui trips_live=2
+ui trips_refit=1
+ui trips_rides=8
+ui trips_rows=5
+ui trips_whole_rows=2
+ui screenshots: transit-board.png transit-options.png 
+route replay: sf-market at 20 m/s, route-1.png and route-2.png
+calibration log: calibration at startup: version 1; highest after refresh: 27
+place load: photos: rpc 5
+place load: details: plain search (no popular times)
+place load: details: page raw=21571 parsed=true times=false
+live calibration: scenario skipped by VELA_ONLY_UI
+kotlin call at launch: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+open reply: osrm-car-sf 19982 bytes
+open reply: osrm-foot-sf 27432 bytes
+open reply: transit-plan-sf 79613 bytes
+directions reply: directions-drive-sf 126953 bytes
+directions reply: directions-walk-sf 38006 bytes
+search reply: 250630 bytes, 31 feature ids
