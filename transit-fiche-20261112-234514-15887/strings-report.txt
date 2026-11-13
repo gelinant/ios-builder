@@ -1,5 +1,5 @@
 Locales:
-  en      strings=2151 plurals=23 array_items=0
+  en      strings=2155 plurals=23 array_items=0
   ar      strings=601 plurals=0 array_items=0
   de      strings=1945 plurals=22 array_items=0
   en-GB   strings=600 plurals=0 array_items=0
@@ -45,4 +45,4 @@ Warnings: 14
     - values/strings.xml layer_age_hours
     - values-fr/strings.xml layer_age_minutes
     - values-fr/strings.xml layer_age_hours
-Keys: 2174
+Keys: 2178
