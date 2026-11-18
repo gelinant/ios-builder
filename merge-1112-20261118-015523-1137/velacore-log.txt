@@ -1,0 +1,63 @@
+Timestamp               Ty Process[PID:TID]
+2026-11-18 02:23:09.150 I  Vela[43529:1c11c] [app.vela.ios:Calibration] calibration at startup: version 1
+2026-11-18 02:23:11.167 Df Vela[43529:1c3bd] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-11-18 02:23:12.236 I  Vela[43529:1c11c] [app.vela.ios:VelaRegion] start installed=0 pending=false completed=0
+2026-11-18 02:23:13.521 I  Vela[43529:1c11c] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-11-18 02:23:43.030 I  Vela[43529:1c11c] [app.vela.ios:NeuralVoice] loaded en_US-hfc_female-medium: 22050 Hz, 1 speakers
+2026-11-18 02:23:45.980 Df Vela[43529:1c432] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-11-18 02:23:48.968 I  Vela[43529:1c11c] [app.vela.ios:NeuralVoice] loaded en_US-hfc_female-medium: 22050 Hz, 1 speakers
+2026-11-18 02:23:49.771 I  Vela[43529:1c11c] [app.vela.ios:VoiceSearch] loaded whisper-tiny for en
+2026-11-18 02:24:12.278 I  Vela[44853:1d079] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-11-18 02:24:13.536 Df Vela[44853:1d0d2] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-11-18 02:24:14.065 I  Vela[44853:1d079] [app.vela.ios:VelaRegion] start installed=0 pending=false completed=0
+2026-11-18 02:24:14.410 I  Vela[44853:1d079] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-11-18 02:25:58.742 I  Vela[48263:1f370] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-11-18 02:26:01.269 Df Vela[48263:1f497] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-11-18 02:26:04.297 I  Vela[48263:1f370] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-11-18 02:26:04.416 I  Vela[48263:1f370] [app.vela.ios:VelaRegion] start installed=0 pending=false completed=0
+2026-11-18 02:26:47.255 I  Vela[49580:201d2] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-11-18 02:26:48.603 Df Vela[49580:2033f] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-11-18 02:26:50.569 I  Vela[49580:201d2] [app.vela.ios:VelaRegion] start installed=0 pending=false completed=0
+2026-11-18 02:26:53.905 I  Vela[49580:201d2] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-11-18 02:27:09.028 Db Vela[49580:201d2] [app.vela.ios:NavVoice] spoken: Get off now at Belleville
+2026-11-18 02:27:09.303 Db Vela[49580:201d2] [app.vela.ios:NeuralVoice] spoken: Get off now at Belleville
+2026-11-18 02:27:22.544 I  Vela[50049:207f1] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-11-18 02:27:23.573 Df Vela[50049:20883] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-11-18 02:27:26.087 I  Vela[50049:207f1] [app.vela.ios:VelaRegion] start installed=0 pending=false completed=0
+2026-11-18 02:27:26.668 I  Vela[50049:207f1] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-11-18 02:27:46.288 I  Vela[50604:20e52] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-11-18 02:27:47.350 Df Vela[50604:20fdb] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-11-18 02:27:50.317 I  Vela[50604:20e52] [app.vela.ios:VelaRegion] start installed=0 pending=false completed=0
+2026-11-18 02:27:50.809 Db Vela[50604:20e52] [app.vela.ios:NavVoice] spoken: Start your route
+2026-11-18 02:27:50.809 Db Vela[50604:20e52] [app.vela.ios:NeuralVoice] spoken: Start your route
+2026-11-18 02:27:51.771 I  Vela[50604:20e52] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-11-18 02:27:54.054 Db Vela[50604:21088] [app.vela.ios:VelaWalk] walk: open 30 m, google null m
+2026-11-18 02:28:30.737 I  Vela[51237:2165b] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-11-18 02:28:31.799 Df Vela[51237:21702] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-11-18 02:28:33.836 I  Vela[51237:2165b] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-11-18 02:28:33.910 I  Vela[51237:2165b] [app.vela.ios:VelaRegion] start installed=0 pending=false completed=0
+2026-11-18 02:28:50.215 I  Vela[51449:219aa] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-11-18 02:28:51.564 Df Vela[51449:21a3e] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-11-18 02:28:53.020 I  Vela[51449:219aa] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-11-18 02:28:53.210 I  Vela[51449:219aa] [app.vela.ios:VelaRegion] start installed=0 pending=false completed=0
+2026-11-18 02:29:07.187 I  Vela[51976:21eb1] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-11-18 02:29:08.512 Df Vela[51976:21f00] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-11-18 02:29:10.240 I  Vela[51976:21eb1] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-11-18 02:29:10.362 I  Vela[51976:21eb1] [app.vela.ios:VelaRegion] start installed=0 pending=false completed=0
+2026-11-18 02:29:21.546 Db Vela[51976:21eb1] [app.vela.ios:NavVoice] spoken: Get off in two stops at Belleville
+2026-11-18 02:29:21.546 Db Vela[51976:21eb1] [app.vela.ios:NeuralVoice] spoken: Get off in two stops at Belleville
+2026-11-18 02:29:26.423 Db Vela[51976:21eb1] [app.vela.ios:NavVoice] spoken: Get off now at Belleville
+2026-11-18 02:29:26.423 Db Vela[51976:21eb1] [app.vela.ios:NeuralVoice] spoken: Get off now at Belleville
+2026-11-18 02:29:37.089 I  Vela[53115:22a87] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-11-18 02:29:38.115 Df Vela[53115:22ad6] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-11-18 02:29:40.621 I  Vela[53115:22a87] [app.vela.ios:VelaRegion] start installed=0 pending=false completed=0
+2026-11-18 02:29:42.844 Db Vela[53115:22a87] [app.vela.ios:NavVoice] spoken: Start your route
+2026-11-18 02:29:42.845 Db Vela[53115:22a87] [app.vela.ios:NeuralVoice] spoken: Start your route
+2026-11-18 02:29:44.677 Db Vela[53115:22afc] [app.vela.ios:VelaWalk] walk: open null m, google null m
+2026-11-18 02:29:47.341 I  Vela[53115:22a87] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-11-18 02:31:37.910 I  Vela[55912:24c6a] [app.vela.ios:Calibration] calibration at startup: version 27
+2026-11-18 02:31:39.975 Df Vela[55912:24cb7] [app.vela.ios:VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-11-18 02:31:40.350 I  Vela[55912:24c6a] [app.vela.ios:Location] location update failed: The operation couldn’t be completed. (kCLErrorDomain error 0.)
+2026-11-18 02:31:41.057 I  Vela[55912:24c6a] [app.vela.ios:VelaRegion] start installed=0 pending=false completed=0
+2026-11-18 02:31:41.577 I  Vela[55912:24c6a] [app.vela.ios:Calibration] calibration after refresh: version 27
+2026-11-18 02:33:02.868 I  Vela[55912:24c6a] [app.vela.ios:Location] location update failed: The operation couldn’t be completed. (kCLErrorDomain error 0.)
