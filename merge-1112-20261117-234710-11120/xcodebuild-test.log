@@ -1,0 +1,581 @@
+Command line invocation:
+    /Applications/Xcode_26.6.app/Contents/Developer/usr/bin/xcodebuild test-without-building -project Vela.xcodeproj -scheme Vela -configuration Debug -destination "platform=iOS Simulator,id=F5450765-59B9-4D0C-9B64-845B8C9EE51F" -derivedDataPath /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci -clonedSourcePackagesDirPath /Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/SourcePackages CODE_SIGNING_ALLOWED=NO "-only-testing:VelaTests" MARKETING_VERSION=0.1.202611172348 CURRENT_PROJECT_VERSION=1794959315
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+    CURRENT_PROJECT_VERSION = 1794959315
+    MARKETING_VERSION = 0.1.202611172348
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  BitByteData: https://github.com/tsolomko/BitByteData @ 2.1.0
+  SWCompression: https://github.com/tsolomko/SWCompression @ 4.9.1
+
+2026-11-18 00:15:09.361471+0000 Vela[44048:116751] [Calibration] calibration at startup: version 1
+2026-11-18 00:15:09.922659+0000 Vela[44048:116751] [SwiftUI] Publishing changes from within view updates is not allowed, this will cause undefined behavior.
+2026-11-18 00:15:11.765394+0000 Vela[44048:117539] [VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+2026-11-18 00:15:12.385711+0000 Vela[44048:116751] [ResourceLoadStatistics] Failed to request storage access quirks from WebPrivacy.
+2026-11-18 00:15:12.386891+0000 Vela[44048:116751] [ResourceLoadStatistics] Failed to request known fingerprinting scripts from WebPrivacy: Error Domain=WebPrivacyErrorDomain Code=1001 "List data not found" UserInfo={NSLocalizedDescription=List data not found}
+2026-11-18 00:15:12.387292+0000 Vela[44048:116751] [ResourceLoadStatistics] Failed to request storage access user agent string quirks from WebPrivacy.
+2026-11-18 00:15:12.394383+0000 Vela[44048:116751] [Process] GPU process (0x1161541e0) took 2.041323 seconds to launch
+2026-11-18 00:15:12.404238+0000 Vela[44048:116751] [Process] WebContent process (0x11610c0c0) took 2.190328 seconds to launch
+2026-11-18 00:15:12.439066+0000 Vela[44048:117541] [default] Failed to resolve host network app id to config: bundleID: com.apple.WebKit.Networking instance ID: Optional([_EXExtensionInstanceIdentifier: 9D3A1EEF-D0AA-4148-9963-07957742026-11-18 00:15:12.713498+0000 Vela[44048:116751] [VelaRegion] start installed=0 pending=false completed=0
+FC032])
+2026-11-18 00:15:13.387702+0000 Vela[44048:116751] [Calibration] calibration after refresh: version 27
+2026-11-18 00:15:13.445552+0000 Vela[44048:116751] [Process] Networking process (0x11618c190) took 1.037160 seconds to launch
+Test Suite 'All tests' started at 2026-11-18 00:15:15.780.
+Test Suite 'VelaTests.xctest' started at 2026-11-18 00:15:15.781.
+Test Suite 'AppearanceTests' started at 2026-11-18 00:15:15.781.
+Test Case '-[VelaTests.AppearanceTests testAccentFillPairsClearBodyText]' started.
+Test Case '-[VelaTests.AppearanceTests testAccentFillPairsClearBodyText]' passed (0.006 seconds).
+Test Case '-[VelaTests.AppearanceTests testAndroidThemeAndChromeKeysAreRead]' started.
+Test Case '-[VelaTests.AppearanceTests testAndroidThemeAndChromeKeysAreRead]' passed (0.001 seconds).
+Test Case '-[VelaTests.AppearanceTests testBrandTealNeverCarriesWhiteBodyText]' started.
+Test Case '-[VelaTests.AppearanceTests testBrandTealNeverCarriesWhiteBodyText]' passed (0.001 seconds).
+Test Case '-[VelaTests.AppearanceTests testChromePreferencesPersistUnderAndroidKeys]' started.
+Test Case '-[VelaTests.AppearanceTests testChromePreferencesPersistUnderAndroidKeys]' passed (0.071 seconds).
+Test Case '-[VelaTests.AppearanceTests testRouteChipTokensUseTheLegiblePair]' started.
+Test Case '-[VelaTests.AppearanceTests testRouteChipTokensUseTheLegiblePair]' passed (0.001 seconds).
+Test Case '-[VelaTests.AppearanceTests testStarStaysDecorative]' started.
+Test Case '-[VelaTests.AppearanceTests testStarStaysDecorative]' passed (0.000 seconds).
+Test Suite 'AppearanceTests' passed at 2026-11-18 00:15:15.864.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.080 (0.084) seconds
+Test Suite 'CameraFitTests' started at 2026-11-18 00:15:15.865.
+Test Case '-[VelaTests.CameraFitTests testABareGeocodedRowIsFramedAsACity]' started.
+Test Case '-[VelaTests.CameraFitTests testABareGeocodedRowIsFramedAsACity]' passed (0.001 seconds).
+Test Case '-[VelaTests.CameraFitTests testAreaZoomReadsPhotonAndGoogleKinds]' started.
+Test Case '-[VelaTests.CameraFitTests testAreaZoomReadsPhotonAndGoogleKinds]' passed (0.001 seconds).
+Test Case '-[VelaTests.CameraFitTests testATallSheetStillLeavesACityWideFit]' started.
+Test Case '-[VelaTests.CameraFitTests testATallSheetStillLeavesACityWideFit]' passed (0.001 seconds).
+Test Case '-[VelaTests.CameraFitTests testFlatFitCapsTheZoomOfAShortRoute]' started.
+Test Case '-[VelaTests.CameraFitTests testFlatFitCapsTheZoomOfAShortRoute]' passed (0.000 seconds).
+Test Case '-[VelaTests.CameraFitTests testFlatFitPutsBothEndsInsideThePaddingAboveTheSheet]' started.
+Test Case '-[VelaTests.CameraFitTests testFlatFitPutsBothEndsInsideThePaddingAboveTheSheet]' passed (0.000 seconds).
+Test Case '-[VelaTests.CameraFitTests testMainClusterDropsAFarNamesake]' started.
+Test Case '-[VelaTests.CameraFitTests testMainClusterDropsAFarNamesake]' passed (0.913 seconds).
+Test Suite 'CameraFitTests' passed at 2026-11-18 00:15:17.177.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.917 (1.312) seconds
+Test Suite 'CameraPackTests' started at 2026-11-18 00:15:17.177.
+Test Case '-[VelaTests.CameraPackTests testBundledPackParsesWithItsDateAndWorldCoverage]' started.
+Test Case '-[VelaTests.CameraPackTests testBundledPackParsesWithItsDateAndWorldCoverage]' passed (0.321 seconds).
+Test Case '-[VelaTests.CameraPackTests testCameraSourceNeverFallsBackBetweenLiveAndPack]' started.
+Test Case '-[VelaTests.CameraPackTests testCameraSourceNeverFallsBackBetweenLiveAndPack]' passed (0.001 seconds).
+Test Case '-[VelaTests.CameraPackTests testCoverageFiltersTheViewportAndCapsThePoints]' started.
+Test Case '-[VelaTests.CameraPackTests testCoverageFiltersTheViewportAndCapsThePoints]' passed (0.001 seconds).
+Test Case '-[VelaTests.CameraPackTests testDebugLineNamesThePackAndTheSource]' started.
+Test Case '-[VelaTests.CameraPackTests testDebugLineNamesThePackAndTheSource]' passed (0.000 seconds).
+Test Case '-[VelaTests.CameraPackTests testOfflineStyleStaysRemoteFreeWithThePackOn]' started.
+Test Case '-[VelaTests.CameraPackTests testOfflineStyleStaysRemoteFreeWithThePackOn]' passed (0.032 seconds).
+Test Case '-[VelaTests.CameraPackTests testParserKeepsPairsAndTaggedObjectsAndDropsInvalidPoints]' started.
+Test Case '-[VelaTests.CameraPackTests testParserKeepsPairsAndTaggedObjectsAndDropsInvalidPoints]' passed (0.004 seconds).
+Test Case '-[VelaTests.CameraPackTests testStalePackIsReportedAndDrawsNothing]' started.
+Test Case '-[VelaTests.CameraPackTests testStalePackIsReportedAndDrawsNothing]' passed (0.310 seconds).
+Test Suite 'CameraPackTests' passed at 2026-11-18 00:15:17.849.
+	 Executed 7 tests, with 0 failures (0 unexpected) in 0.670 (0.672) seconds
+Test Suite 'FuelWireTests' started at 2026-11-18 00:15:17.850.
+Test Case '-[VelaTests.FuelWireTests testClockFollowsTheDeviceFormat]' started.
+Test Case '-[VelaTests.FuelWireTests testClockFollowsTheDeviceFormat]' passed (0.009 seconds).
+Test Case '-[VelaTests.FuelWireTests testClosingSentenceNamesBothHours]' started.
+Test Case '-[VelaTests.FuelWireTests testClosingSentenceNamesBothHours]' passed (0.002 seconds).
+Test Case '-[VelaTests.FuelWireTests testFuelDetourSentenceCarriesBrandPriceAndDistance]' started.
+Test Case '-[VelaTests.FuelWireTests testFuelDetourSentenceCarriesBrandPriceAndDistance]' passed (0.001 seconds).
+Test Suite 'FuelWireTests' passed at 2026-11-18 00:15:17.865.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.013 (0.015) seconds
+Test Suite 'GuidanceSpeechTests' started at 2026-11-18 00:15:17.865.
+Test Case '-[VelaTests.GuidanceSpeechTests testAnotherLanguageIsUntouched]' started.
+Test Case '-[VelaTests.GuidanceSpeechTests testAnotherLanguageIsUntouched]' passed (0.004 seconds).
+Test Case '-[VelaTests.GuidanceSpeechTests testRefsNumbersUnitsAndClock]' started.
+Test Case '-[VelaTests.GuidanceSpeechTests testRefsNumbersUnitsAndClock]' passed (0.007 seconds).
+Test Case '-[VelaTests.GuidanceSpeechTests testStreetAbbreviations]' started.
+Test Case '-[VelaTests.GuidanceSpeechTests testStreetAbbreviations]' passed (0.007 seconds).
+Test Suite 'GuidanceSpeechTests' passed at 2026-11-18 00:15:17.890.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.019 (0.025) seconds
+Test Suite 'IncomingLinksTests' started at 2026-11-18 00:15:17.890.
+Test Case '-[VelaTests.IncomingLinksTests testCidOnlyLinkIsParsedButHasNoTarget]' started.
+Test Case '-[VelaTests.IncomingLinksTests testCidOnlyLinkIsParsedButHasNoTarget]' passed (0.007 seconds).
+Test Case '-[VelaTests.IncomingLinksTests testClassicDaddrChainKeepsStopsAndDataPins]' started.
+Test Case '-[VelaTests.IncomingLinksTests testClassicDaddrChainKeepsStopsAndDataPins]' passed (0.029 seconds).
+Test Case '-[VelaTests.IncomingLinksTests testClassicMapsQueryIsASearch]' started.
+Test Case '-[VelaTests.IncomingLinksTests testClassicMapsQueryIsASearch]' passed (0.001 seconds).
+Test Case '-[VelaTests.IncomingLinksTests testDirectLinkPublishesWithoutWaitingForAResolver]' started.
+Test Case '-[VelaTests.IncomingLinksTests testDirectLinkPublishesWithoutWaitingForAResolver]' passed (0.001 seconds).
+Test Case '-[VelaTests.IncomingLinksTests testDraggedRoutePointsAreNotStops]' started.
+Test Case '-[VelaTests.IncomingLinksTests testDraggedRoutePointsAreNotStops]' passed (0.001 seconds).
+Test Case '-[VelaTests.IncomingLinksTests testGeoPointAndNamedPoint]' started.
+Test Case '-[VelaTests.IncomingLinksTests testGeoPointAndNamedPoint]' passed (0.001 seconds).
+Test Case '-[VelaTests.IncomingLinksTests testGeoQueryWithNoPointIsASearch]' started.
+Test Case '-[VelaTests.IncomingLinksTests testGeoQueryWithNoPointIsASearch]' passed (0.001 seconds).
+Test Case '-[VelaTests.IncomingLinksTests testGoogleNavigationIntentIsDirections]' started.
+Test Case '-[VelaTests.IncomingLinksTests testGoogleNavigationIntentIsDirections]' passed (0.001 seconds).
+Test Case '-[VelaTests.IncomingLinksTests testGooglePlaceLinkCarriesNamePointAndZoom]' started.
+Test Case '-[VelaTests.IncomingLinksTests testGooglePlaceLinkCarriesNamePointAndZoom]' passed (0.001 seconds).
+Test Case '-[VelaTests.IncomingLinksTests testGoogleSearchLinkListsResults]' started.
+Test Case '-[VelaTests.IncomingLinksTests testGoogleSearchLinkListsResults]' passed (0.001 seconds).
+Test Case '-[VelaTests.IncomingLinksTests testInvalidAndForeignLinksAreRejected]' started.
+Test Case '-[VelaTests.IncomingLinksTests testInvalidAndForeignLinksAreRejected]' passed (0.032 seconds).
+Test Case '-[VelaTests.IncomingLinksTests testMalformedStopsAreRejected]' started.
+Test Case '-[VelaTests.IncomingLinksTests testMalformedStopsAreRejected]' passed (0.001 seconds).
+Test Case '-[VelaTests.IncomingLinksTests testMapsUrlsDirectionsPairAndMode]' started.
+Test Case '-[VelaTests.IncomingLinksTests testMapsUrlsDirectionsPairAndMode]' passed (0.001 seconds).
+Test Case '-[VelaTests.IncomingLinksTests testMapsUrlsWaypointsKeepNamesCoordinatesAndOrder]' started.
+Test Case '-[VelaTests.IncomingLinksTests testMapsUrlsWaypointsKeepNamesCoordinatesAndOrder]' passed (0.001 seconds).
+Test Case '-[VelaTests.IncomingLinksTests testMoreStopsThanTheCapKeepTheFirstOnes]' started.
+Test Case '-[VelaTests.IncomingLinksTests testMoreStopsThanTheCapKeepTheFirstOnes]' passed (0.001 seconds).
+Test Case '-[VelaTests.IncomingLinksTests testMoreStopsThanTheCapKeepTheFirstOnesWithPlusSpaces]' started.
+Test Case '-[VelaTests.IncomingLinksTests testMoreStopsThanTheCapKeepTheFirstOnesWithPlusSpaces]' passed (0.003 seconds).
+Test Case '-[VelaTests.IncomingLinksTests testPathDirectionsKeepIntermediateStopsInOrder]' started.
+Test Case '-[VelaTests.IncomingLinksTests testPathDirectionsKeepIntermediateStopsInOrder]' passed (0.003 seconds).
+Test Case '-[VelaTests.IncomingLinksTests testPathDirectionsPairByNames]' started.
+Test Case '-[VelaTests.IncomingLinksTests testPathDirectionsPairByNames]' passed (0.001 seconds).
+Test Case '-[VelaTests.IncomingLinksTests testShortLinkNeedsOneResolutionAndIsNotFetchedHere]' started.
+Test Case '-[VelaTests.IncomingLinksTests testShortLinkNeedsOneResolutionAndIsNotFetchedHere]' passed (0.001 seconds).
+Test Case '-[VelaTests.IncomingLinksTests testShortLinkResolutionPublishesTheParsedTarget]' started.
+2026-11-18 00:15:18.778804+0000 Vela[44048:116751] [ResourceLoadStatistics] Failed to request query parameters from WebPrivacy.
+2026-11-18 00:15:18.838287+0000 Vela[44048:117675] [ResourceLoadStatistics] WebContent[44314] Unable to filter tracking query parameters (missing data)
+2026-11-18 00:15:18.854315+0000 Vela[44048:117675] [ResourceLoadStatistics] WebContent[44314] Unable to hide query parameters from script (missing data)
+Test Case '-[VelaTests.IncomingLinksTests testShortLinkResolutionPublishesTheParsedTarget]' passed (0.142 seconds).
+Test Case '-[VelaTests.IncomingLinksTests testShortLinkTargetOutsideGoogleIsRefused]' started.
+2026-11-18 00:15:18.926294+0000 Vela[44048:116751] [ResourceLoadStatistics] Failed to request allowed query parameters from WebPrivacy.
+2026-11-18 00:15:19.269506+0000 Vela[44048:116751] [ResourceLoadStatistics] Failed to request restricted opener domains from WebPrivacy
+Test Case '-[VelaTests.IncomingLinksTests testShortLinkTargetOutsideGoogleIsRefused]' passed (0.362 seconds).
+Test Case '-[VelaTests.IncomingLinksTests testTrackingParametersDoNotChangeTheParsedPlace]' started.
+Test Case '-[VelaTests.IncomingLinksTests testTrackingParametersDoNotChangeTheParsedPlace]' passed (0.005 seconds).
+Test Suite 'IncomingLinksTests' passed at 2026-11-18 00:15:19.280.
+	 Executed 22 tests, with 0 failures (0 unexpected) in 0.595 (1.390) seconds
+Test Suite 'IntentsTests' started at 2026-11-18 00:15:19.281.
+Test Case '-[VelaTests.IntentsTests testDeepLinkCenterRepeatsURLsAndIgnoresStaleConsumption]' started.
+Test Case '-[VelaTests.IntentsTests testDeepLinkCenterRepeatsURLsAndIgnoresStaleConsumption]' passed (0.002 seconds).
+Test Case '-[VelaTests.IntentsTests testIntentValidationAndSetupErrors]' started.
+Test Case '-[VelaTests.IntentsTests testIntentValidationAndSetupErrors]' passed (0.006 seconds).
+Test Case '-[VelaTests.IntentsTests testRouterParsesAndRoundTripsEveryRoute]' started.
+Test Case '-[VelaTests.IntentsTests testRouterParsesAndRoundTripsEveryRoute]' passed (0.006 seconds).
+Test Case '-[VelaTests.IntentsTests testRouterRejectsMalformedOrForeignLinks]' started.
+Test Case '-[VelaTests.IntentsTests testRouterRejectsMalformedOrForeignLinks]' passed (0.001 seconds).
+Test Case '-[VelaTests.IntentsTests testSpotlightItemUsesDeepLinkAndSavedMetadata]' started.
+Test Case '-[VelaTests.IntentsTests testSpotlightItemUsesDeepLinkAndSavedMetadata]' passed (0.007 seconds).
+Test Suite 'IntentsTests' passed at 2026-11-18 00:15:20.955.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.022 (1.674) seconds
+Test Suite 'LayerInfoParityTests' started at 2026-11-18 00:15:21.107.
+Test Case '-[VelaTests.LayerInfoParityTests testAgeRuleUsesRelativeLiveAbsoluteScheduleAndNoData]' started.
+Test Case '-[VelaTests.LayerInfoParityTests testAgeRuleUsesRelativeLiveAbsoluteScheduleAndNoData]' passed (0.008 seconds).
+Test Case '-[VelaTests.LayerInfoParityTests testAviationParity]' started.
+Test Case '-[VelaTests.LayerInfoParityTests testAviationParity]' passed (0.001 seconds).
+Test Case '-[VelaTests.LayerInfoParityTests testCamerasParity]' started.
+Test Case '-[VelaTests.LayerInfoParityTests testCamerasParity]' passed (0.001 seconds).
+Test Case '-[VelaTests.LayerInfoParityTests testEnergyParity]' started.
+Test Case '-[VelaTests.LayerInfoParityTests testEnergyParity]' passed (0.001 seconds).
+Test Case '-[VelaTests.LayerInfoParityTests testEveryLegendLayerIsParityClean]' started.
+Test Case '-[VelaTests.LayerInfoParityTests testEveryLegendLayerIsParityClean]' passed (0.071 seconds).
+Test Case '-[VelaTests.LayerInfoParityTests testMaritimeParity]' started.
+Test Case '-[VelaTests.LayerInfoParityTests testMaritimeParity]' passed (0.001 seconds).
+Test Case '-[VelaTests.LayerInfoParityTests testRadarParity]' started.
+Test Case '-[VelaTests.LayerInfoParityTests testRadarParity]' passed (0.001 seconds).
+Test Case '-[VelaTests.LayerInfoParityTests testSatelliteParity]' started.
+Test Case '-[VelaTests.LayerInfoParityTests testSatelliteParity]' passed (0.001 seconds).
+Test Case '-[VelaTests.LayerInfoParityTests testTrafficParity]' started.
+Test Case '-[VelaTests.LayerInfoParityTests testTrafficParity]' passed (0.002 seconds).
+Test Case '-[VelaTests.LayerInfoParityTests testTransitParity]' started.
+Test Case '-[VelaTests.LayerInfoParityTests testTransitParity]' passed (0.226 seconds).
+Test Case '-[VelaTests.LayerInfoParityTests testWikiParity]' started.
+Test Case '-[VelaTests.LayerInfoParityTests testWikiParity]' passed (0.001 seconds).
+Test Suite 'LayerInfoParityTests' passed at 2026-11-18 00:15:21.428.
+	 Executed 11 tests, with 0 failures (0 unexpected) in 0.312 (0.321) seconds
+Test Suite 'LiveActivityTests' started at 2026-11-18 00:15:21.428.
+Test Case '-[VelaTests.LiveActivityTests testActivityKitStartsUpdatesAndEndsWhenSupported]' started.
+2026-11-18 00:15:22.940468+0000 Vela[44048:117483] [api] Updating content for activity 2BDD8315-DC28-4142-AC7D-BD89745BDE3B
+Test Case '-[VelaTests.LiveActivityTests testActivityKitStartsUpdatesAndEndsWhenSupported]' passed (1.732 seconds).
+Test Case '-[VelaTests.LiveActivityTests testAppAndExtensionDeclareLiveActivities]' started.
+Test Case '-[VelaTests.LiveActivityTests testAppAndExtensionDeclareLiveActivities]' passed (0.009 seconds).
+Test Case '-[VelaTests.LiveActivityTests testDistanceAndFiveSecondThrottle]' started.
+Test Case '-[VelaTests.LiveActivityTests testDistanceAndFiveSecondThrottle]' passed (0.002 seconds).
+Test Case '-[VelaTests.LiveActivityTests testInstructionAndRerouteChangesBypassThrottle]' started.
+Test Case '-[VelaTests.LiveActivityTests testInstructionAndRerouteChangesBypassThrottle]' passed (0.002 seconds).
+Test Case '-[VelaTests.LiveActivityTests testMappingCarriesGuidanceEtaModeAndProgress]' started.
+Test Case '-[VelaTests.LiveActivityTests testMappingCarriesGuidanceEtaModeAndProgress]' passed (4.403 seconds).
+Test Case '-[VelaTests.LiveActivityTests testMappingSupportsWalkingAndRejectsOtherModes]' started.
+Test Case '-[VelaTests.LiveActivityTests testMappingSupportsWalkingAndRejectsOtherModes]' passed (0.002 seconds).
+Test Case '-[VelaTests.LiveActivityTests testReducerEndsNavigationWithoutArrival]' started.
+Test Case '-[VelaTests.LiveActivityTests testReducerEndsNavigationWithoutArrival]' passed (0.002 seconds).
+Test Case '-[VelaTests.LiveActivityTests testReducerStartsUpdatesArrivesOnceAndEnds]' started.
+Test Case '-[VelaTests.LiveActivityTests testReducerStartsUpdatesArrivesOnceAndEnds]' passed (0.002 seconds).
+Test Case '-[VelaTests.LiveActivityTests testStaleActivityAdoptionHasAMaximumAge]' started.
+Test Case '-[VelaTests.LiveActivityTests testStaleActivityAdoptionHasAMaximumAge]' passed (0.393 seconds).
+Test Suite 'LiveActivityTests' passed at 2026-11-18 00:15:27.981.
+	 Executed 9 tests, with 0 failures (0 unexpected) in 6.546 (6.552) seconds
+Test Suite 'LocalizationTests' started at 2026-11-18 00:15:27.981.
+Test Case '-[VelaTests.LocalizationTests testAreaPickCellsUsesCountAsSecondArgument]' started.
+Test Case '-[VelaTests.LocalizationTests testAreaPickCellsUsesCountAsSecondArgument]' passed (0.004 seconds).
+Test Case '-[VelaTests.LocalizationTests testPreferenceAndCatalogLanguageMapping]' started.
+Test Case '-[VelaTests.LocalizationTests testPreferenceAndCatalogLanguageMapping]' passed (0.001 seconds).
+Test Case '-[VelaTests.LocalizationTests testRealCatalogLabelsAndEnglishFallback]' started.
+Test Case '-[VelaTests.LocalizationTests testRealCatalogLabelsAndEnglishFallback]' passed (0.044 seconds).
+Test Case '-[VelaTests.LocalizationTests testResultCountPluralAndI18N4Keys]' started.
+Test Case '-[VelaTests.LocalizationTests testResultCountPluralAndI18N4Keys]' passed (0.013 seconds).
+Test Case '-[VelaTests.LocalizationTests testSwiftIntUsesLongIntegerSpecifiers]' started.
+Test Case '-[VelaTests.LocalizationTests testSwiftIntUsesLongIntegerSpecifiers]' passed (0.001 seconds).
+Test Suite 'LocalizationTests' passed at 2026-11-18 00:15:28.211.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.063 (0.230) seconds
+Test Suite 'MapAccessibilityTests' started at 2026-11-18 00:15:28.211.
+Test Case '-[VelaTests.MapAccessibilityTests testDropPinRotorActionUsesTheLongPressPathAtCenter]' started.
+Test Case '-[VelaTests.MapAccessibilityTests testDropPinRotorActionUsesTheLongPressPathAtCenter]' passed (0.053 seconds).
+Test Case '-[VelaTests.MapAccessibilityTests testMapElementExposesLabelHintAndRotorActions]' started.
+Test Case '-[VelaTests.MapAccessibilityTests testMapElementExposesLabelHintAndRotorActions]' passed (0.001 seconds).
+Test Case '-[VelaTests.MapAccessibilityTests testSelectFeatureRotorActionIsSafeWithoutAFeature]' started.
+Test Case '-[VelaTests.MapAccessibilityTests testSelectFeatureRotorActionIsSafeWithoutAFeature]' passed (0.012 seconds).
+Test Suite 'MapAccessibilityTests' passed at 2026-11-18 00:15:29.184.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.066 (0.973) seconds
+Test Suite 'MapCamTests' started at 2026-11-18 00:15:29.185.
+Test Case '-[VelaTests.MapCamTests testConesShareTheDotZoomGate]' started.
+Test Case '-[VelaTests.MapCamTests testConesShareTheDotZoomGate]' passed (0.001 seconds).
+Test Case '-[VelaTests.MapCamTests testMissingBearingStaysWithoutACone]' started.
+Test Case '-[VelaTests.MapCamTests testMissingBearingStaysWithoutACone]' passed (0.435 seconds).
+Test Case '-[VelaTests.MapCamTests testReportLineCountsOrientedAndUnorientedCameras]' started.
+Test Case '-[VelaTests.MapCamTests testReportLineCountsOrientedAndUnorientedCameras]' passed (0.001 seconds).
+Test Case '-[VelaTests.MapCamTests testScreenBearingTurnsWithTheMap]' started.
+Test Case '-[VelaTests.MapCamTests testScreenBearingTurnsWithTheMap]' passed (0.001 seconds).
+Test Case '-[VelaTests.MapCamTests testTheBundledPackCarriesBearingsForMostCameras]' started.
+Test Case '-[VelaTests.MapCamTests testTheBundledPackCarriesBearingsForMostCameras]' passed (0.334 seconds).
+Test Case '-[VelaTests.MapCamTests testWedgePointsAlongTheBearing]' started.
+Test Case '-[VelaTests.MapCamTests testWedgePointsAlongTheBearing]' passed (0.001 seconds).
+Test Case '-[VelaTests.MapCamTests testWedgeShrinksOnTheGroundAtHighZoom]' started.
+Test Case '-[VelaTests.MapCamTests testWedgeShrinksOnTheGroundAtHighZoom]' passed (0.001 seconds).
+Test Suite 'MapCamTests' passed at 2026-11-18 00:15:30.043.
+	 Executed 7 tests, with 0 failures (0 unexpected) in 0.774 (0.858) seconds
+Test Suite 'MapLayersTests' started at 2026-11-18 00:15:30.043.
+Test Case '-[VelaTests.MapLayersTests testEveryOverlaySourceIsLocal]' started.
+Test Case '-[VelaTests.MapLayersTests testEveryOverlaySourceIsLocal]' passed (0.001 seconds).
+Test Case '-[VelaTests.MapLayersTests testFuelLabelShowsThePencePrice]' started.
+Test Case '-[VelaTests.MapLayersTests testFuelLabelShowsThePencePrice]' passed (0.001 seconds).
+Test Case '-[VelaTests.MapLayersTests testGoogleTileRequestsCarryTheSafariIdentity]' started.
+Test Case '-[VelaTests.MapLayersTests testGoogleTileRequestsCarryTheSafariIdentity]' passed (0.116 seconds).
+Test Case '-[VelaTests.MapLayersTests testPoiSourcePersistsUnderTheAndroidKey]' started.
+Test Case '-[VelaTests.MapLayersTests testPoiSourcePersistsUnderTheAndroidKey]' passed (0.005 seconds).
+Test Case '-[VelaTests.MapLayersTests testRastersArePlannedOfflineAndPinnedToAndroidLimits]' started.
+Test Case '-[VelaTests.MapLayersTests testRastersArePlannedOfflineAndPinnedToAndroidLimits]' passed (0.001 seconds).
+Test Case '-[VelaTests.MapLayersTests testSwitchChangesTheKotlinLayerState]' started.
+Test Case '-[VelaTests.MapLayersTests testSwitchChangesTheKotlinLayerState]' passed (0.001 seconds).
+Test Case '-[VelaTests.MapLayersTests testTrafficAndSatelliteFollowTheAndroidKeys]' started.
+Test Case '-[VelaTests.MapLayersTests testTrafficAndSatelliteFollowTheAndroidKeys]' passed (0.004 seconds).
+Test Case '-[VelaTests.MapLayersTests testVelaPackIsReadFromTheCommittedDavisFixture]' started.
+Test Case '-[VelaTests.MapLayersTests testVelaPackIsReadFromTheCommittedDavisFixture]' passed (0.001 seconds).
+Test Case '-[VelaTests.MapLayersTests testVelaPackLayerIsLocalAndKeepsTheOfflineStyleRemoteFree]' started.
+Test Case '-[VelaTests.MapLayersTests testVelaPackLayerIsLocalAndKeepsTheOfflineStyleRemoteFree]' passed (0.021 seconds).
+Test Suite 'MapLayersTests' passed at 2026-11-18 00:15:30.223.
+	 Executed 9 tests, with 0 failures (0 unexpected) in 0.151 (0.180) seconds
+Test Suite 'MapStyleTests' started at 2026-11-18 00:15:30.224.
+Test Case '-[VelaTests.MapStyleTests testEveryLookHasALocalGeneratedStyle]' started.
+Test Case '-[VelaTests.MapStyleTests testEveryLookHasALocalGeneratedStyle]' passed (0.018 seconds).
+Test Case '-[VelaTests.MapStyleTests testHouseNumbersAndExitNumbersUseTheVectorFields]' started.
+Test Case '-[VelaTests.MapStyleTests testHouseNumbersAndExitNumbersUseTheVectorFields]' passed (0.014 seconds).
+Test Case '-[VelaTests.MapStyleTests testHouseNumberSettingMovesTheZoomGate]' started.
+Test Case '-[VelaTests.MapStyleTests testHouseNumberSettingMovesTheZoomGate]' passed (0.003 seconds).
+Test Case '-[VelaTests.MapStyleTests testNameModesRewriteRoadAndPlaceLabels]' started.
+Test Case '-[VelaTests.MapStyleTests testNameModesRewriteRoadAndPlaceLabels]' passed (0.005 seconds).
+Test Case '-[VelaTests.MapStyleTests testOfflineStyleHasNoRemoteURLForEveryLook]' started.
+Test Case '-[VelaTests.MapStyleTests testOfflineStyleHasNoRemoteURLForEveryLook]' passed (0.129 seconds).
+Test Case '-[VelaTests.MapStyleTests testStyleDocumentIsLocalAndOnlyTheTileSourceIsRemote]' started.
+Test Case '-[VelaTests.MapStyleTests testStyleDocumentIsLocalAndOnlyTheTileSourceIsRemote]' passed (0.213 seconds).
+Test Suite 'MapStyleTests' passed at 2026-11-18 00:15:30.727.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.383 (0.503) seconds
+Test Suite 'MapTapRegistryTests' started at 2026-11-18 00:15:30.727.
+Test Case '-[VelaTests.MapTapRegistryTests testAuditAcceptsTheDeclaredSetAndReportsAFutureLayer]' started.
+Test Case '-[VelaTests.MapTapRegistryTests testAuditAcceptsTheDeclaredSetAndReportsAFutureLayer]' passed (0.001 seconds).
+Test Case '-[VelaTests.MapTapRegistryTests testDrawnSectionIdentifiersEqualRegisteredHandlers]' started.
+Test Case '-[VelaTests.MapTapRegistryTests testDrawnSectionIdentifiersEqualRegisteredHandlers]' passed (0.002 seconds).
+Test Case '-[VelaTests.MapTapRegistryTests testDynamicFamiliesAreRegistered]' started.
+Test Case '-[VelaTests.MapTapRegistryTests testDynamicFamiliesAreRegistered]' passed (0.094 seconds).
+Test Case '-[VelaTests.MapTapRegistryTests testEveryAnnotationChannelHasAHandler]' started.
+Test Case '-[VelaTests.MapTapRegistryTests testEveryAnnotationChannelHasAHandler]' passed (0.001 seconds).
+Test Case '-[VelaTests.MapTapRegistryTests testFeatureWithoutAnIdStillProducesItsKindAndCoordinate]' started.
+Test Case '-[VelaTests.MapTapRegistryTests testFeatureWithoutAnIdStillProducesItsKindAndCoordinate]' passed (0.000 seconds).
+Test Case '-[VelaTests.MapTapRegistryTests testNamedPlaceKeepsItsOsmIdAndKind]' started.
+Test Case '-[VelaTests.MapTapRegistryTests testNamedPlaceKeepsItsOsmIdAndKind]' passed (0.000 seconds).
+Test Case '-[VelaTests.MapTapRegistryTests testPointFeatureBecomesATypedCameraEvent]' started.
+Test Case '-[VelaTests.MapTapRegistryTests testPointFeatureBecomesATypedCameraEvent]' passed (0.000 seconds).
+Test Case '-[VelaTests.MapTapRegistryTests testRastersAreRegisteredAndInert]' started.
+Test Case '-[VelaTests.MapTapRegistryTests testRastersAreRegisteredAndInert]' passed (0.001 seconds).
+Test Case '-[VelaTests.MapTapRegistryTests testRequiredKindsRouteToTheirHandler]' started.
+Test Case '-[VelaTests.MapTapRegistryTests testRequiredKindsRouteToTheirHandler]' passed (0.001 seconds).
+Test Case '-[VelaTests.MapTapRegistryTests testSavedShapeCarriesItsListAndIndex]' started.
+Test Case '-[VelaTests.MapTapRegistryTests testSavedShapeCarriesItsListAndIndex]' passed (0.000 seconds).
+Test Suite 'MapTapRegistryTests' passed at 2026-11-18 00:15:30.842.
+	 Executed 10 tests, with 0 failures (0 unexpected) in 0.101 (0.115) seconds
+Test Suite 'NavLifecycleTests' started at 2026-11-18 00:15:30.843.
+Test Case '-[VelaTests.NavLifecycleTests testACallCutsSpeechThenRearmsWithoutPausing]' started.
+Test Case '-[VelaTests.NavLifecycleTests testACallCutsSpeechThenRearmsWithoutPausing]' passed (0.001 seconds).
+Test Case '-[VelaTests.NavLifecycleTests testBackgroundAndScreenLockLeaveTheDriveAlone]' started.
+Test Case '-[VelaTests.NavLifecycleTests testBackgroundAndScreenLockLeaveTheDriveAlone]' passed (0.001 seconds).
+Test Case '-[VelaTests.NavLifecycleTests testBluetoothRouteChangeRearmsAudioOnly]' started.
+Test Case '-[VelaTests.NavLifecycleTests testBluetoothRouteChangeRearmsAudioOnly]' passed (0.001 seconds).
+Test Case '-[VelaTests.NavLifecycleTests testForegroundRefollowsOnlyLiveGuidance]' started.
+Test Case '-[VelaTests.NavLifecycleTests testForegroundRefollowsOnlyLiveGuidance]' passed (0.000 seconds).
+Test Case '-[VelaTests.NavLifecycleTests testInactiveGuidanceIgnoresEveryEvent]' started.
+Test Case '-[VelaTests.NavLifecycleTests testInactiveGuidanceIgnoresEveryEvent]' passed (0.070 seconds).
+Test Suite 'NavLifecycleTests' passed at 2026-11-18 00:15:30.924.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.072 (0.081) seconds
+Test Suite 'NeuralSynthesisTests' started at 2026-11-18 00:15:30.924.
+Test Case '-[VelaTests.NeuralSynthesisTests testPiperModelSynthesizesDecodableAudio]' started.
+2026-11-18 00:15:31.957595+0000 Vela[44048:116751] [NeuralVoice] loaded en_US-hfc_female-medium: 22050 Hz, 1 speakers
+SEAM_TEST VOICE_SYNTH samples=54034 rate=22050 wav_frames=54034
+Test Case '-[VelaTests.NeuralSynthesisTests testPiperModelSynthesizesDecodableAudio]' passed (1.543 seconds).
+Test Suite 'NeuralSynthesisTests' passed at 2026-11-18 00:15:32.467.
+	 Executed 1 test, with 0 failures (0 unexpected) in 1.543 (1.543) seconds
+Test Suite 'OfflineTests' started at 2026-11-18 00:15:32.467.
+Test Case '-[VelaTests.OfflineTests testCompleteArchiveAtomicallyReplacesAnInstalledFile]' started.
+Test Case '-[VelaTests.OfflineTests testCompleteArchiveAtomicallyReplacesAnInstalledFile]' passed (0.011 seconds).
+Test Case '-[VelaTests.OfflineTests testCutOffArchiveNeverReplacesAnInstalledFile]' started.
+Test Case '-[VelaTests.OfflineTests testCutOffArchiveNeverReplacesAnInstalledFile]' passed (0.005 seconds).
+Test Case '-[VelaTests.OfflineTests testOfflineStyleHasOnlyLocalResources]' started.
+Test Case '-[VelaTests.OfflineTests testOfflineStyleHasOnlyLocalResources]' passed (0.033 seconds).
+Test Case '-[VelaTests.OfflineTests testOfflineStyleStaysRemoteFreeWithTrafficAndSatelliteOn]' started.
+Test Case '-[VelaTests.OfflineTests testOfflineStyleStaysRemoteFreeWithTrafficAndSatelliteOn]' passed (0.043 seconds).
+Test Case '-[VelaTests.OfflineTests testTransferJournalRestoresProgressAndResumeDecision]' started.
+Test Case '-[VelaTests.OfflineTests testTransferJournalRestoresProgressAndResumeDecision]' passed (0.007 seconds).
+Test Case '-[VelaTests.OfflineTests testZipReaderRejectsATruncatedFile]' started.
+Test Case '-[VelaTests.OfflineTests testZipReaderRejectsATruncatedFile]' passed (0.005 seconds).
+Test Suite 'OfflineTests' passed at 2026-11-18 00:15:32.748.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.104 (0.281) seconds
+Test Suite 'PlaceDictionaryTests' started at 2026-11-18 00:15:32.748.
+Test Case '-[VelaTests.PlaceDictionaryTests testInstallsOncePerVersionAndKeepsTheStock]' started.
+Test Case '-[VelaTests.PlaceDictionaryTests testInstallsOncePerVersionAndKeepsTheStock]' passed (0.006 seconds).
+Test Case '-[VelaTests.PlaceDictionaryTests testMissingDataDirectoryFailsQuietly]' started.
+Test Case '-[VelaTests.PlaceDictionaryTests testMissingDataDirectoryFailsQuietly]' passed (0.002 seconds).
+Test Case '-[VelaTests.PlaceDictionaryTests testOnlyEnglishVoicesAreTouched]' started.
+Test Case '-[VelaTests.PlaceDictionaryTests testOnlyEnglishVoicesAreTouched]' passed (0.002 seconds).
+Test Suite 'PlaceDictionaryTests' passed at 2026-11-18 00:15:32.766.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.009 (0.018) seconds
+Test Suite 'PlaceImageTests' started at 2026-11-18 00:15:32.767.
+Test Case '-[VelaTests.PlaceImageTests testColorSrgbPngKeepsItsPixelsThroughUIImageView]' started.
+Test Case '-[VelaTests.PlaceImageTests testColorSrgbPngKeepsItsPixelsThroughUIImageView]' passed (0.026 seconds).
+Test Case '-[VelaTests.PlaceImageTests testFullyBlackTransparentAvatarDoesNotCountAsVisibleColor]' started.
+Test Case '-[VelaTests.PlaceImageTests testFullyBlackTransparentAvatarDoesNotCountAsVisibleColor]' passed (0.010 seconds).
+Test Suite 'PlaceImageTests' passed at 2026-11-18 00:15:32.806.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.036 (0.039) seconds
+Test Suite 'PlatformTests' started at 2026-11-18 00:15:32.806.
+Test Case '-[VelaTests.PlatformTests testCookieJarSharesAParentDomainCookieWithItsHosts]' started.
+Test Case '-[VelaTests.PlatformTests testCookieJarSharesAParentDomainCookieWithItsHosts]' passed (0.001 seconds).
+Test Case '-[VelaTests.PlatformTests testCookieJarStartsWithGoogleConsent]' started.
+Test Case '-[VelaTests.PlatformTests testCookieJarStartsWithGoogleConsent]' passed (0.397 seconds).
+Test Case '-[VelaTests.PlatformTests testLegacyLanguageCodesMatchAndroid]' started.
+Test Case '-[VelaTests.PlatformTests testLegacyLanguageCodesMatchAndroid]' passed (0.001 seconds).
+Test Suite 'PlatformTests' passed at 2026-11-18 00:15:33.206.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.399 (0.400) seconds
+Test Suite 'PrivacyTests' started at 2026-11-18 00:15:33.206.
+Test Case '-[VelaTests.PrivacyTests testConsentGateBlocksGoogleBeforeTheAnswer]' started.
+Test Case '-[VelaTests.PrivacyTests testConsentGateBlocksGoogleBeforeTheAnswer]' passed (0.005 seconds).
+Test Case '-[VelaTests.PrivacyTests testDiagnosticsNeverCarryACoordinateQueryOrName]' started.
+Test Case '-[VelaTests.PrivacyTests testDiagnosticsNeverCarryACoordinateQueryOrName]' passed (0.065 seconds).
+Test Case '-[VelaTests.PrivacyTests testRotationModesAndPeriods]' started.
+Test Case '-[VelaTests.PrivacyTests testRotationModesAndPeriods]' passed (0.004 seconds).
+Test Case '-[VelaTests.PrivacyTests testTelemetryRulesParseAndCompile]' started.
+Test Case '-[VelaTests.PrivacyTests testTelemetryRulesParseAndCompile]' passed (0.394 seconds).
+Test Case '-[VelaTests.PrivacyTests testTheCounterCountsPerHostAndSurvivesRelaunch]' started.
+Test Case '-[VelaTests.PrivacyTests testTheCounterCountsPerHostAndSurvivesRelaunch]' passed (0.027 seconds).
+Test Suite 'PrivacyTests' passed at 2026-11-18 00:15:33.707.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.496 (0.501) seconds
+Test Suite 'SavedFinishingTests' started at 2026-11-18 00:15:33.708.
+Test Case '-[VelaTests.SavedFinishingTests testDocumentReaderBalancesSecurityScopeAfterRead]' started.
+Test Case '-[VelaTests.SavedFinishingTests testDocumentReaderBalancesSecurityScopeAfterRead]' passed (0.002 seconds).
+Test Case '-[VelaTests.SavedFinishingTests testDocumentReaderDoesNotStopDeniedScope]' started.
+Test Case '-[VelaTests.SavedFinishingTests testDocumentReaderDoesNotStopDeniedScope]' passed (0.002 seconds).
+Test Case '-[VelaTests.SavedFinishingTests testDocumentReaderReleasesScopeAfterDecodingFailure]' started.
+Test Case '-[VelaTests.SavedFinishingTests testDocumentReaderReleasesScopeAfterDecodingFailure]' passed (0.002 seconds).
+Test Case '-[VelaTests.SavedFinishingTests testExportDocumentUsesTheReadableNameAndExtension]' started.
+Test Case '-[VelaTests.SavedFinishingTests testExportDocumentUsesTheReadableNameAndExtension]' passed (0.002 seconds).
+Test Case '-[VelaTests.SavedFinishingTests testListExportWritesReadableJsonDocument]' started.
+Test Case '-[VelaTests.SavedFinishingTests testListExportWritesReadableJsonDocument]' passed (0.004 seconds).
+Test Suite 'SavedFinishingTests' passed at 2026-11-18 00:15:34.313.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.012 (0.605) seconds
+Test Suite 'SeamTests' started at 2026-11-18 00:15:34.314.
+Test Case '-[VelaTests.SeamTests testJsEngineKillsAnEndlessLoopAndStillWorksAfterward]' started.
+SEAM_TEST js while(true) killed after 0.53 s, next call ok
+Test Case '-[VelaTests.SeamTests testJsEngineKillsAnEndlessLoopAndStillWorksAfterward]' passed (0.857 seconds).
+Test Case '-[VelaTests.SeamTests testJsEngineReturnsNilOnErrorsAndOddResults]' started.
+Test Case '-[VelaTests.SeamTests testJsEngineReturnsNilOnErrorsAndOddResults]' passed (0.206 seconds).
+Test Case '-[VelaTests.SeamTests testJsEngineRunsATransform]' started.
+SEAM_TEST js transform: ok
+Test Case '-[VelaTests.SeamTests testJsEngineRunsATransform]' passed (0.003 seconds).
+Test Case '-[VelaTests.SeamTests testLaunchOptionsReadTheCamera]' started.
+Test Case '-[VelaTests.SeamTests testLaunchOptionsReadTheCamera]' passed (0.002 seconds).
+Test Case '-[VelaTests.SeamTests testSignatureVerifiesTheRealCalibrationAndRefusesATamperedByte]' started.
+2026-11-18 00:15:35.388346+0000 Vela[44048:116751] [seckey] SecKeyVerifySignature failed: Error Domain=NSOSStatusErrorDomain Code=-67808 "EC signature verification failed, no match" UserInfo={numberOfErrorsDeep=0, NSDescription=EC signature verification failed, no match}
+2026-11-18 00:15:35.785202+0000 Vela[44048:116751] [seckey] SecKeyVerifySignature failed: Error Domain=NSOSStatusErrorDomain Code=-67808 "EC signature verification failed, no match" UserInfo={numberOfErrorsDeep=0, NSDescription=EC signature verification failed, no match}
+SEAM_TEST signature: real calibration.json verified, tampered byte refused
+Test Case '-[VelaTests.SeamTests testSignatureVerifiesTheRealCalibrationAndRefusesATamperedByte]' passed (0.401 seconds).
+Test Suite 'SeamTests' passed at 2026-11-18 00:15:35.786.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 1.469 (1.472) seconds
+Test Suite 'ShellTests' started at 2026-11-18 00:15:35.786.
+Test Case '-[VelaTests.ShellTests testAttributionCreditsOpenFreeMapAndOpenStreetMap]' started.
+Test Case '-[VelaTests.ShellTests testAttributionCreditsOpenFreeMapAndOpenStreetMap]' passed (0.088 seconds).
+Test Case '-[VelaTests.ShellTests testInfoPlistDeclaresLocationAndBackgroundModes]' started.
+Test Case '-[VelaTests.ShellTests testInfoPlistDeclaresLocationAndBackgroundModes]' passed (0.001 seconds).
+Test Case '-[VelaTests.ShellTests testInitialCameraIsSanFrancisco]' started.
+Test Case '-[VelaTests.ShellTests testInitialCameraIsSanFrancisco]' passed (0.001 seconds).
+Test Case '-[VelaTests.ShellTests testStyleIsBundledLibertyWithoutARemoteStyleFetch]' started.
+Test Case '-[VelaTests.ShellTests testStyleIsBundledLibertyWithoutARemoteStyleFetch]' passed (0.001 seconds).
+Test Case '-[VelaTests.ShellTests testVelaCoreSelfCheckAnswersAcrossTheAsyncBridge]' started.
+2026-11-18 00:15:35.880934+0000 Vela[44048:117541] [VelaCore] Kotlin call ok: VelaCore 0.1.0: West Covell Boulevard -> W Covell Blvd
+Test Case '-[VelaTests.ShellTests testVelaCoreSelfCheckAnswersAcrossTheAsyncBridge]' passed (1.158 seconds).
+Test Case '-[VelaTests.ShellTests testVelaCoreShortensThroughCoreCommon]' started.
+Test Case '-[VelaTests.ShellTests testVelaCoreShortensThroughCoreCommon]' passed (0.003 seconds).
+Test Suite 'ShellTests' passed at 2026-11-18 00:15:37.040.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 1.250 (1.254) seconds
+Test Suite 'StartCameraTests' started at 2026-11-18 00:15:37.041.
+Test Case '-[VelaTests.StartCameraTests testAnExplicitTargetCancelsTheLateMove]' started.
+Test Case '-[VelaTests.StartCameraTests testAnExplicitTargetCancelsTheLateMove]' passed (0.007 seconds).
+Test Case '-[VelaTests.StartCameraTests testAPanCancelsTheLateMoveForGood]' started.
+Test Case '-[VelaTests.StartCameraTests testAPanCancelsTheLateMoveForGood]' passed (0.005 seconds).
+Test Case '-[VelaTests.StartCameraTests testAStoredCameraFromAnotherVersionIsIgnored]' started.
+Test Case '-[VelaTests.StartCameraTests testAStoredCameraFromAnotherVersionIsIgnored]' passed (0.008 seconds).
+Test Case '-[VelaTests.StartCameraTests testDefaultWhenNothingIsKnownYet]' started.
+Test Case '-[VelaTests.StartCameraTests testDefaultWhenNothingIsKnownYet]' passed (0.006 seconds).
+Test Case '-[VelaTests.StartCameraTests testDeniedPermissionNeverMoves]' started.
+Test Case '-[VelaTests.StartCameraTests testDeniedPermissionNeverMoves]' passed (0.011 seconds).
+Test Case '-[VelaTests.StartCameraTests testExplicitCameraWinsOverTheLastCameraAndThePosition]' started.
+Test Case '-[VelaTests.StartCameraTests testExplicitCameraWinsOverTheLastCameraAndThePosition]' passed (0.005 seconds).
+Test Case '-[VelaTests.StartCameraTests testFixAfterTheDeadlineLeavesTheCameraWhereItWas]' started.
+Test Case '-[VelaTests.StartCameraTests testFixAfterTheDeadlineLeavesTheCameraWhereItWas]' passed (0.005 seconds).
+Test Case '-[VelaTests.StartCameraTests testFixAtTheDeadlineStillMoves]' started.
+Test Case '-[VelaTests.StartCameraTests testFixAtTheDeadlineStillMoves]' passed (0.002 seconds).
+Test Case '-[VelaTests.StartCameraTests testInvalidCameraIsNeverStored]' started.
+Test Case '-[VelaTests.StartCameraTests testInvalidCameraIsNeverStored]' passed (0.005 seconds).
+Test Case '-[VelaTests.StartCameraTests testInvalidFixesAreIgnored]' started.
+Test Case '-[VelaTests.StartCameraTests testInvalidFixesAreIgnored]' passed (0.003 seconds).
+Test Case '-[VelaTests.StartCameraTests testLastCameraWinsWithoutAFix]' started.
+Test Case '-[VelaTests.StartCameraTests testLastCameraWinsWithoutAFix]' passed (0.006 seconds).
+Test Case '-[VelaTests.StartCameraTests testOnlyTheFirstFixMovesTheCamera]' started.
+Test Case '-[VelaTests.StartCameraTests testOnlyTheFirstFixMovesTheCamera]' passed (0.029 seconds).
+Test Case '-[VelaTests.StartCameraTests testPositionWinsOverTheLastCameraAndOpensAtCityZoom]' started.
+Test Case '-[VelaTests.StartCameraTests testPositionWinsOverTheLastCameraAndOpensAtCityZoom]' passed (0.005 seconds).
+Test Case '-[VelaTests.StartCameraTests testRememberWritesThroughTheDecision]' started.
+Test Case '-[VelaTests.StartCameraTests testRememberWritesThroughTheDecision]' passed (0.005 seconds).
+Test Case '-[VelaTests.StartCameraTests testStoredCameraRoundTrips]' started.
+Test Case '-[VelaTests.StartCameraTests testStoredCameraRoundTrips]' passed (0.005 seconds).
+Test Case '-[VelaTests.StartCameraTests testUndeterminedPermissionWaitsForTheAnswer]' started.
+Test Case '-[VelaTests.StartCameraTests testUndeterminedPermissionWaitsForTheAnswer]' passed (0.133 seconds).
+Test Suite 'StartCameraTests' passed at 2026-11-18 00:15:37.890.
+	 Executed 16 tests, with 0 failures (0 unexpected) in 0.240 (0.849) seconds
+Test Suite 'TransitActivityTests' started at 2026-11-18 00:15:37.890.
+Test Case '-[VelaTests.TransitActivityTests testActivityKitStartsUpdatesAndEndsWhenSupported]' started.
+2026-11-18 00:15:38.127211+0000 Vela[44048:117541] [api] Updating content for activity 55E1273E-E054-4C48-9476-298B9701F515
+Test Case '-[VelaTests.TransitActivityTests testActivityKitStartsUpdatesAndEndsWhenSupported]' passed (0.383 seconds).
+Test Case '-[VelaTests.TransitActivityTests testMappingKeepsScheduledAndLiveTimesSeparate]' started.
+Test Case '-[VelaTests.TransitActivityTests testMappingKeepsScheduledAndLiveTimesSeparate]' passed (0.003 seconds).
+Test Case '-[VelaTests.TransitActivityTests testNewSessionStartsInsteadOfUpdatingTheOldOne]' started.
+Test Case '-[VelaTests.TransitActivityTests testNewSessionStartsInsteadOfUpdatingTheOldOne]' passed (0.002 seconds).
+Test Case '-[VelaTests.TransitActivityTests testProgressOnlyChangeWaitsFiveSeconds]' started.
+Test Case '-[VelaTests.TransitActivityTests testProgressOnlyChangeWaitsFiveSeconds]' passed (0.001 seconds).
+Test Case '-[VelaTests.TransitActivityTests testReducerStartsUpdatesArrivesAndEnds]' started.
+Test Case '-[VelaTests.TransitActivityTests testReducerStartsUpdatesArrivesAndEnds]' passed (0.817 seconds).
+Test Case '-[VelaTests.TransitActivityTests testSemanticChangesBypassFiveSecondThrottle]' started.
+Test Case '-[VelaTests.TransitActivityTests testSemanticChangesBypassFiveSecondThrottle]' passed (0.001 seconds).
+Test Case '-[VelaTests.TransitActivityTests testStaleActivityHasAMaximumAge]' started.
+Test Case '-[VelaTests.TransitActivityTests testStaleActivityHasAMaximumAge]' passed (0.001 seconds).
+Test Case '-[VelaTests.TransitActivityTests testWalkingAndAlightingInstructions]' started.
+Test Case '-[VelaTests.TransitActivityTests testWalkingAndAlightingInstructions]' passed (0.001 seconds).
+Test Suite 'TransitActivityTests' passed at 2026-11-18 00:15:39.102.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 1.207 (1.212) seconds
+Test Suite 'TransitModeTests' started at 2026-11-18 00:15:39.154.
+Test Case '-[VelaTests.TransitModeTests testGenericModeNeverBecomesAVehicle]' started.
+Test Case '-[VelaTests.TransitModeTests testGenericModeNeverBecomesAVehicle]' passed (0.003 seconds).
+Test Case '-[VelaTests.TransitModeTests testGlyphsAreDistinctPerVehicle]' started.
+Test Case '-[VelaTests.TransitModeTests testGlyphsAreDistinctPerVehicle]' passed (0.002 seconds).
+Test Case '-[VelaTests.TransitModeTests testModesComeFromThePlannerModeAndTheAgency]' started.
+Test Case '-[VelaTests.TransitModeTests testModesComeFromThePlannerModeAndTheAgency]' passed (0.003 seconds).
+Test Case '-[VelaTests.TransitModeTests testTheWholeTwoLegTripIsInTravelOrder]' started.
+Test Case '-[VelaTests.TransitModeTests testTheWholeTwoLegTripIsInTravelOrder]' passed (0.059 seconds).
+Test Case '-[VelaTests.TransitModeTests testTransferWaitComesFromTheFeedsClocks]' started.
+Test Case '-[VelaTests.TransitModeTests testTransferWaitComesFromTheFeedsClocks]' passed (0.040 seconds).
+Test Suite 'TransitModeTests' passed at 2026-11-18 00:15:39.420.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.107 (0.266) seconds
+Test Suite 'TransitStepTests' started at 2026-11-18 00:15:39.420.
+Test Case '-[VelaTests.TransitStepTests testArrivalHasNoStepButtons]' started.
+Test Case '-[VelaTests.TransitStepTests testArrivalHasNoStepButtons]' passed (0.016 seconds).
+Test Case '-[VelaTests.TransitStepTests testCommandMovesTheSessionAndChangesTheActivityContent]' started.
+Test Case '-[VelaTests.TransitStepTests testCommandMovesTheSessionAndChangesTheActivityContent]' passed (0.001 seconds).
+Test Case '-[VelaTests.TransitStepTests testCommandWithoutAMatchingSessionFailsGracefully]' started.
+Test Case '-[VelaTests.TransitStepTests testCommandWithoutAMatchingSessionFailsGracefully]' passed (0.091 seconds).
+Test Case '-[VelaTests.TransitStepTests testIntentMapsToTheStepCommandAndItsSession]' started.
+Test Case '-[VelaTests.TransitStepTests testIntentMapsToTheStepCommandAndItsSession]' passed (0.032 seconds).
+Test Suite 'TransitStepTests' passed at 2026-11-18 00:15:39.562.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.140 (0.142) seconds
+Test Suite 'VoiceControlTests' started at 2026-11-18 00:15:39.562.
+Test Case '-[VelaTests.VoiceControlTests testAppleVolumeCapsTheLoudTiers]' started.
+Test Case '-[VelaTests.VoiceControlTests testAppleVolumeCapsTheLoudTiers]' passed (0.001 seconds).
+Test Case '-[VelaTests.VoiceControlTests testLevelBringsAQuietVoiceUpAndKeepsALoudOne]' started.
+Test Case '-[VelaTests.VoiceControlTests testLevelBringsAQuietVoiceUpAndKeepsALoudOne]' passed (0.042 seconds).
+Test Case '-[VelaTests.VoiceControlTests testLevelLimitNeverExceedsFullScale]' started.
+Test Case '-[VelaTests.VoiceControlTests testLevelLimitNeverExceedsFullScale]' passed (0.002 seconds).
+Test Case '-[VelaTests.VoiceControlTests testMeterKeepsTheMeanAndIgnoresPauses]' started.
+Test Case '-[VelaTests.VoiceControlTests testMeterKeepsTheMeanAndIgnoresPauses]' passed (0.002 seconds).
+Test Case '-[VelaTests.VoiceControlTests testMeterPersistsPerVoice]' started.
+Test Case '-[VelaTests.VoiceControlTests testMeterPersistsPerVoice]' passed (0.005 seconds).
+Test Case '-[VelaTests.VoiceControlTests testSpeedPresetsMapToAppleRates]' started.
+Test Case '-[VelaTests.VoiceControlTests testSpeedPresetsMapToAppleRates]' passed (0.001 seconds).
+Test Case '-[VelaTests.VoiceControlTests testSpeedStaysInsideTheAndroidRange]' started.
+Test Case '-[VelaTests.VoiceControlTests testSpeedStaysInsideTheAndroidRange]' passed (0.001 seconds).
+Test Case '-[VelaTests.VoiceControlTests testSpeedStepperStepsAndClamps]' started.
+Test Case '-[VelaTests.VoiceControlTests testSpeedStepperStepsAndClamps]' passed (0.012 seconds).
+Test Case '-[VelaTests.VoiceControlTests testVolumeAndSpeedPersist]' started.
+Test Case '-[VelaTests.VoiceControlTests testVolumeAndSpeedPersist]' passed (0.008 seconds).
+Test Suite 'VoiceControlTests' passed at 2026-11-18 00:15:39.688.
+	 Executed 9 tests, with 0 failures (0 unexpected) in 0.073 (0.126) seconds
+Test Suite 'VoiceSearchTests' started at 2026-11-18 00:15:39.689.
+Test Case '-[VelaTests.VoiceSearchTests testCatalogMatchesTheAndroidRelease]' started.
+Test Case '-[VelaTests.VoiceSearchTests testCatalogMatchesTheAndroidRelease]' passed (0.001 seconds).
+Test Case '-[VelaTests.VoiceSearchTests testInstalledEnginesComeFromTheFilesystem]' started.
+Test Case '-[VelaTests.VoiceSearchTests testInstalledEnginesComeFromTheFilesystem]' passed (0.013 seconds).
+Test Case '-[VelaTests.VoiceSearchTests testRecognizedPhrasesBecomeTheSameActionsAsAndroid]' started.
+Test Case '-[VelaTests.VoiceSearchTests testRecognizedPhrasesBecomeTheSameActionsAsAndroid]' passed (0.017 seconds).
+Test Case '-[VelaTests.VoiceSearchTests testWhisperTinyTranscribesSynthesizedSpeech]' started.
+2026-11-18 00:15:40.883928+0000 Vela[44048:116751] [NeuralVoice] loaded en_US-hfc_female-medium: 22050 Hz, 1 speakers
+2026-11-18 00:15:41.654330+0000 Vela[44048:116751] [VoiceSearch] loaded whisper-tiny for en
+SEAM_TEST VOICE_ASR text=Never_get_to_coffee. samples=19319
+SEAM_TEST VOICE_ASR_PLAN action=route query=
+Test Case '-[VelaTests.VoiceSearchTests testWhisperTinyTranscribesSynthesizedSpeech]' passed (1.835 seconds).
+Test Suite 'VoiceSearchTests' passed at 2026-11-18 00:15:41.887.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 1.867 (2.198) seconds
+Test Suite 'VoiceSelectionTests' started at 2026-11-18 00:15:41.887.
+Test Case '-[VelaTests.VoiceSelectionTests testAnotherLanguageFallsBackToSystem]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testAnotherLanguageFallsBackToSystem]' passed (0.020 seconds).
+Test Case '-[VelaTests.VoiceSelectionTests testCatalogMatchesAndroidIds]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testCatalogMatchesAndroidIds]' passed (0.005 seconds).
+Test Case '-[VelaTests.VoiceSelectionTests testCorruptModelFallsBackToSystem]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testCorruptModelFallsBackToSystem]' passed (0.008 seconds).
+Test Case '-[VelaTests.VoiceSelectionTests testExtractionStripsTopFolderAndValidatesModel]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testExtractionStripsTopFolderAndValidatesModel]' passed (0.765 seconds).
+Test Case '-[VelaTests.VoiceSelectionTests testInstalledSetComesFromCompleteDirectories]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testInstalledSetComesFromCompleteDirectories]' passed (0.018 seconds).
+Test Case '-[VelaTests.VoiceSelectionTests testMissingModelKeepsSystemVoice]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testMissingModelKeepsSystemVoice]' passed (0.005 seconds).
+Test Case '-[VelaTests.VoiceSelectionTests testSelectedVoiceWinsAndMissingSelectionFallsBack]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testSelectedVoiceWinsAndMissingSelectionFallsBack]' passed (0.018 seconds).
+Test Case '-[VelaTests.VoiceSelectionTests testUnsafeArchiveEntryIsRejected]' started.
+Test Case '-[VelaTests.VoiceSelectionTests testUnsafeArchiveEntryIsRejected]' passed (0.010 seconds).
+Test Suite 'VoiceSelectionTests' passed at 2026-11-18 00:15:42.741.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.850 (0.854) seconds
+Test Suite 'WebTests' started at 2026-11-18 00:15:42.742.
+Test Case '-[VelaTests.WebTests testBlockedHostsCompileAsAContentRuleList]' started.
+Test Case '-[VelaTests.WebTests testBlockedHostsCompileAsAContentRuleList]' passed (0.013 seconds).
+Test Case '-[VelaTests.WebTests testBridgeNamesAreSwappedForRandomOnes]' started.
+Test Case '-[VelaTests.WebTests testBridgeNamesAreSwappedForRandomOnes]' passed (0.004 seconds).
+Test Case '-[VelaTests.WebTests testTheSheetShowsTheSiteHost]' started.
+Test Case '-[VelaTests.WebTests testTheSheetShowsTheSiteHost]' passed (0.004 seconds).
+Test Suite 'WebTests' passed at 2026-11-18 00:15:42.766.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.021 (0.024) seconds
+Test Suite 'VelaTests.xctest' passed at 2026-11-18 00:15:42.767.
+	 Executed 210 tests, with 0 failures (0 unexpected) in 20.604 (26.986) seconds
+Test Suite 'All tests' passed at 2026-11-18 00:15:42.768.
+	 Executed 210 tests, with 0 failures (0 unexpected) in 20.604 (26.988) seconds
+2026-11-18 00:15:45.417 xcodebuild[42668:112847] [MT] IDETestOperationsObserverDebug: 79.547 elapsed -- Testing started completed.
+2026-11-18 00:15:45.418 xcodebuild[42668:112847] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-11-18 00:15:45.418 xcodebuild[42668:112847] [MT] IDETestOperationsObserverDebug: 79.547 sec, +79.547 sec -- end
+
+Test session results, code coverage, and logs:
+	/Users/runner/Library/Developer/Xcode/DerivedData/Vela-ci/Logs/Test/Test-Vela-2026.11.18_00-14-15-+0000.xcresult
+
+** TEST EXECUTE SUCCEEDED **
+
+Testing started
