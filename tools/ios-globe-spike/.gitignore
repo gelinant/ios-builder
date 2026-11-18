@@ -1,0 +1,6 @@
+# The globe xcframework is fetched, not committed (scripts/ios/fetch-maplibre-globe.sh).
+Vendor/
+Generated/
+*.xcodeproj
+xcuserdata/
+build/

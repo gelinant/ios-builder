@@ -1,0 +1,56 @@
+name: TerrainSpike
+
+# Throwaway spike app for the custom terrain renderer (docs/ios/TERRAIN-SPIKE.md). It shares no
+# source with iosApp/ and is never shipped. MapLibre comes from the same SPM pin as the app so the
+# API under test is the API Vela already links.
+
+options:
+  bundleIdPrefix: app.vela
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+
+packages:
+  MapLibre:
+    url: https://github.com/maplibre/maplibre-gl-native-distribution
+    exactVersion: 6.31.0
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    SWIFT_STRICT_CONCURRENCY: minimal
+    ENABLE_USER_SCRIPT_SANDBOXING: "NO"
+
+targets:
+  TerrainSpike:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+    dependencies:
+      - package: MapLibre
+        product: MapLibre
+    info:
+      path: Generated/TerrainSpike-Info.plist
+      properties:
+        CFBundleDisplayName: TerrainSpike
+        UILaunchScreen: {}
+        UIRequiresFullScreen: true
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: app.vela.terrainspike
+        TARGETED_DEVICE_FAMILY: "1"
+        GENERATE_INFOPLIST_FILE: "NO"
+        # Mesh build loops and the DEM decode are measured; -Onone would measure the Swift debug
+        # runtime instead of the algorithm.
+        SWIFT_OPTIMIZATION_LEVEL: "-O"
+
+schemes:
+  TerrainSpike:
+    build:
+      targets:
+        TerrainSpike: all
+    run:
+      config: Debug

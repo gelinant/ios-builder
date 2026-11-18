@@ -1,0 +1,46 @@
+## osrm fetchAll
+GET https://routing.openstreetmap.de/routed-car/route/v1/driving/-121.7405,38.5449;-121.4944,38.5816?overview=full&geometries=polyline6&alternatives=3 type=- call=12000 connect=15000 read=20000 write=10000
+  User-Agent: VelaMaps/0.4 (+https://github.com/PimpinPumpkin/Vela)
+## osrm route
+GET https://routing.openstreetmap.de/routed-car/route/v1/driving/-121.7405,38.5449;-121.4944,38.5816?overview=full&geometries=polyline6&steps=true&alternatives=3&bearings=93,65; type=- call=12000 connect=15000 read=20000 write=10000
+  User-Agent: VelaMaps/0.4 (+https://github.com/PimpinPumpkin/Vela)
+## osrm routeVia bounded
+GET https://routing.openstreetmap.de/routed-bike/route/v1/driving/-121.7405,38.5449;-121.73,38.552;-121.4944,38.5816?overview=full&geometries=polyline6&steps=true&bearings=;45,65; type=- call=3000 connect=3000 read=3000 write=3000
+  User-Agent: VelaMaps/0.4 (+https://github.com/PimpinPumpkin/Vela)
+## osrm route retried under a budget
+GET https://routing.openstreetmap.de/routed-car/route/v1/driving/-121.7405,38.5449;-121.4944,38.5816?overview=full&geometries=polyline6&steps=true&alternatives=3 type=- call=3000 connect=3000 read=3000 write=3000
+  User-Agent: VelaMaps/0.4 (+https://github.com/PimpinPumpkin/Vela)
+GET https://routing.openstreetmap.de/routed-car/route/v1/driving/-121.7405,38.5449;-121.4944,38.5816?overview=full&geometries=polyline6&steps=true&alternatives=3 type=- call=3000 connect=3000 read=3000 write=3000
+  User-Agent: VelaMaps/0.4 (+https://github.com/PimpinPumpkin/Vela)
+GET https://routing.openstreetmap.de/routed-car/route/v1/driving/-121.7405,38.5449;-121.4944,38.5816?overview=full&geometries=polyline6&steps=true&alternatives=3 type=- call=3000 connect=3000 read=3000 write=3000
+  User-Agent: VelaMaps/0.4 (+https://github.com/PimpinPumpkin/Vela)
+## osrm route retried
+GET https://routing.openstreetmap.de/routed-foot/route/v1/driving/-121.7405,38.5449;-121.4944,38.5816?overview=full&geometries=polyline6&steps=true&alternatives=3 type=- call=12000 connect=15000 read=20000 write=10000
+  User-Agent: VelaMaps/0.4 (+https://github.com/PimpinPumpkin/Vela)
+GET https://routing.openstreetmap.de/routed-foot/route/v1/driving/-121.7405,38.5449;-121.4944,38.5816?overview=full&geometries=polyline6&steps=true&alternatives=3 type=- call=12000 connect=15000 read=20000 write=10000
+  User-Agent: VelaMaps/0.4 (+https://github.com/PimpinPumpkin/Vela)
+## osrm route refused
+GET https://routing.openstreetmap.de/routed-car/route/v1/driving/-121.7405,38.5449;-121.4944,38.5816?overview=full&geometries=polyline6&steps=true&alternatives=3 type=- call=12000 connect=15000 read=20000 write=10000
+  User-Agent: VelaMaps/0.4 (+https://github.com/PimpinPumpkin/Vela)
+## valhalla route retried
+POST https://valhalla1.openstreetmap.de/route type=application/json; charset=utf-8 call=12000 connect=15000 read=20000 write=10000
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
+  body {"locations":[{"lat":38.5449,"lon":-121.7405},{"lat":38.552,"lon":-121.73,"type":"through"},{"lat":38.5816,"lon":-121.4944}],"costing":"bicycle","costing_options":{"bicycle":{"bicycle_type":"Hybrid","use_roads":0.1,"use_hills":0.5}},"units":"kilometers"}
+POST https://valhalla1.openstreetmap.de/route type=application/json; charset=utf-8 call=12000 connect=15000 read=20000 write=10000
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
+  body {"locations":[{"lat":38.5449,"lon":-121.7405},{"lat":38.552,"lon":-121.73,"type":"through"},{"lat":38.5816,"lon":-121.4944}],"costing":"bicycle","costing_options":{"bicycle":{"bicycle_type":"Hybrid","use_roads":0.1,"use_hills":0.5}},"units":"kilometers"}
+## valhalla driveRoute
+POST https://valhalla1.openstreetmap.de/route type=application/json; charset=utf-8 call=4000 connect=15000 read=20000 write=10000
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
+  body {"locations":[{"lat":38.5449,"lon":-121.7405},{"lat":38.5816,"lon":-121.4944}],"costing":"auto","costing_options":{"auto":{"use_tracks":0.0,"use_tolls":0.0,"use_ferry":0.0}},"units":"kilometers"}
+## valhalla edges
+POST https://valhalla1.openstreetmap.de/trace_attributes type=application/json; charset=utf-8 call=1000 connect=15000 read=20000 write=10000
+  User-Agent: VelaMaps/0.4 (+https://github.com/PimpinPumpkin/Vela)
+  body {"shape":[{"lat":38.5449,"lon":-121.7405},{"lat":38.552,"lon":-121.73},{"lat":38.5816,"lon":-121.4944}],"costing":"auto","shape_match":"map_snap","filters":{"attributes":["edge.names","edge.length","edge.begin_shape_index","edge.internal_intersection","edge.use","shape"],"action":"include"}}
+## valhalla matchWithEdges
+POST https://valhalla1.openstreetmap.de/trace_attributes type=application/json; charset=utf-8 call=2000 connect=15000 read=20000 write=10000
+  User-Agent: VelaMaps/0.4 (+https://github.com/PimpinPumpkin/Vela)
+  body {"shape":[{"lat":38.5449,"lon":-121.7405},{"lat":38.552,"lon":-121.73},{"lat":38.5816,"lon":-121.4944}],"costing":"auto","shape_match":"map_snap","filters":{"attributes":["edge.names","edge.length","edge.begin_shape_index","edge.internal_intersection","edge.use","shape"],"action":"include"}}
+POST https://valhalla1.openstreetmap.de/trace_route type=application/json; charset=utf-8 call=2000 connect=15000 read=20000 write=10000
+  User-Agent: VelaMaps/0.4 (+https://github.com/PimpinPumpkin/Vela)
+  body {"shape":[{"lat":38.5449,"lon":-121.7405},{"lat":38.552,"lon":-121.73},{"lat":38.5816,"lon":-121.4944}],"costing":"auto","shape_match":"map_snap","units":"kilometers"}

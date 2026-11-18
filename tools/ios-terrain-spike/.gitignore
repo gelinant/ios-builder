@@ -1,0 +1,6 @@
+# Fetched DEM tiles, generated Xcode project and build products (docs/ios/TERRAIN-SPIKE.md).
+DEM/
+Generated/
+*.xcodeproj
+xcuserdata/
+build/
