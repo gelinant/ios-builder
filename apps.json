@@ -29,20 +29,20 @@
       "category": "utilities",
       "versions": [
         {
-          "version": "0.1.202611091842",
-          "buildVersion": "1794249726",
-          "date": "2026-11-09T20:01:01Z",
-          "localizedDescription": "Transit: plusieurs itineraires (5 max) avec pastilles de ligne, horaires, correspondances et detail des etapes; le trajet choisi alimente GO; cadrage corrige sous le grand panneau; un itineraire sans position se calcule des la premiere position\n\nBuild 1794249726.",
+          "version": "0.1.202611180156",
+          "buildVersion": "1794967012",
+          "date": "2026-11-18T02:42:37Z",
+          "localizedDescription": "iOS: merge transit-fiche (transit UI in one bottom multi-detent sheet + permanent GO bar) v0.1.202611180156\n\nBuild 1794967012.",
           "downloadURL": "https://raw.githubusercontent.com/gelinant/ios-builder/dist/Vela.ipa",
-          "size": 24353700,
+          "size": 24382183,
           "minOSVersion": "17.0"
         }
       ],
-      "version": "0.1.202611091842",
-      "versionDate": "2026-11-09T20:01:01Z",
-      "versionDescription": "Transit: plusieurs itineraires (5 max) avec pastilles de ligne, horaires, correspondances et detail des etapes; le trajet choisi alimente GO; cadrage corrige sous le grand panneau; un itineraire sans position se calcule des la premiere position\n\nBuild 1794249726.",
+      "version": "0.1.202611180156",
+      "versionDate": "2026-11-18T02:42:37Z",
+      "versionDescription": "iOS: merge transit-fiche (transit UI in one bottom multi-detent sheet + permanent GO bar) v0.1.202611180156\n\nBuild 1794967012.",
       "downloadURL": "https://raw.githubusercontent.com/gelinant/ios-builder/dist/Vela.ipa",
-      "size": 24353700,
+      "size": 24382183,
       "appPermissions": {
         "entitlements": [],
         "privacy": {
